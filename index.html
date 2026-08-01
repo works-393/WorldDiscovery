@@ -121,10 +121,12 @@
 <!-- TopNavBar -->
 <header class="bg-secondary dark:bg-inverse-surface text-on-secondary dark:text-inverse-on-surface docked full-width top-0 sticky z-50 border-b border-outline-variant dark:border-outline">
 <div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
-<div class="flex items-center gap-4">
-<span class="material-symbols-outlined text-tertiary-fixed text-3xl">public</span>
-<span class="font-headline-md text-headline-md text-tertiary-fixed dark:text-tertiary-fixed-dim tracking-tight">Atlas of World History</span>
-</div>
+<a class="flex items-center gap-3 group cursor-pointer" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">
+    <div class="flex items-center gap-4">
+        <span class="material-symbols-outlined text-tertiary-fixed text-3xl">public</span>
+        <span class="font-headline-md text-headline-md text-tertiary-fixed dark:text-tertiary-fixed-dim tracking-tight">Atlas of World History</span>
+    </div>
+</a>
 <nav class="hidden lg:flex items-center gap-8">
 <a class="font-headline-sm text-headline-sm text-tertiary-fixed border-b-2 border-tertiary-fixed pb-1" href="#">Eras</a>
 <a class="font-headline-sm text-headline-sm text-on-secondary opacity-80 hover:opacity-100 transition-opacity hover:text-tertiary-fixed" href="#">Archives</a>
@@ -162,17 +164,16 @@
                     A comprehensive cartographic journey through the rise and fall of civilizations across the global landscape.
                 </p>
 <div class="mt-12 flex flex-col sm:flex-row items-center justify-center gap-6">
-<button class="bg-tertiary text-on-tertiary px-8 py-3 font-headline-sm text-headline-sm shadow-lg hover:brightness-110 active:opacity-70 transition-all">
-                        Begin Expedition
-                    </button>
-<button class="border border-secondary text-secondary px-8 py-3 font-headline-sm text-headline-sm hover:bg-secondary/10 active:opacity-70 transition-all">
+<a href="#Region" class="inline-block bg-tertiary text-on-tertiary px-8 py-3 font-headline-sm text-headline-sm shadow-lg hover:brightness-110 active:opacity-70 transition-all no-underline text-center"> Begin Expedition </a>
+<!--<button class="border border-secondary text-secondary px-8 py-3 font-headline-sm text-headline-sm hover:bg-secondary/10 active:opacity-70 transition-all">
                         Explore Timelines
-                    </button>
+                    </button> -->
+<a href="#Region" class="inline-block text-center border border-secondary text-secondary px-8 py-3 font-headline-sm text-headline-sm hover:bg-secondary/10 active:opacity-70 transition-all no-underline">    Explore Timelines</a>
 </div>
 </div>
 </section>
 <!-- Regional Grid Section -->
-<section class="py-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<section class="py-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto" id="Region">
 <div class="flex flex-col md:flex-row items-end justify-between mb-16 gap-4">
 <div class="max-w-xl">
 <span class="font-label-caps text-label-caps text-tertiary uppercase tracking-widest block mb-2">Global Jurisdictions</span>
@@ -185,7 +186,7 @@
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-gutter">
 <!-- Region Card: East Asia -->
-<div class="group region-card-hover relative bg-surface-container-lowest border border-outline-variant p-2 transition-all hover:border-tertiary/50 hover:shadow-xl cursor-pointer">
+<a href="East_Asia/top.html" target="_blank" rel="noopener noreferrer" class="block no-underline group region-card-hover relative bg-surface-container-lowest border border-outline-variant p-2 transition-all hover:border-tertiary/50 hover:shadow-xl cursor-pointer">
 <div class="relative h-64 overflow-hidden mb-4">
 <img class="image-zoom w-full h-full object-cover transition-transform duration-700" data-alt="A detailed panoramic photograph of the Great Wall of China winding through misty, emerald green mountains at sunrise. The lighting is soft and ethereal, emphasizing the textures of the ancient stone. The style is cinematic and historical, utilizing a color palette of deep greens, earthy greys, and a touch of golden morning sun." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBU4AFpxjDbkSUn_1537fM27qoOOBvXm5arY6RVhXt1uAtsTu_Lbi6TGJ3lIZFh1ikCFY2Zedy4hG1IuDJq8mF68eInR5hzRbNSUcxViGaeZgHB7k8NPighYF9A5UTBIxoTePNhPGwyEnTddui_PjXWNNTHGabSWbKnMOAcUiMpwBaZAtCMs9-oxdg4SopJVjIi9v6e48VbxQ9YhtcSde9bkFjxgYATJN4r0Y1wRXO9Q_wfL96RLoA6jw">
 <div class="absolute inset-0 card-inner-border"></div>
@@ -197,9 +198,9 @@
                             Enter Archive <span class="material-symbols-outlined ml-2 text-sm">arrow_forward</span>
 </div>
 </div>
-</div>
+</a>
 <!-- Region Card: Southeast Asia -->
-<div class="group region-card-hover relative bg-surface-container-lowest border border-outline-variant p-2 transition-all hover:border-tertiary/50 hover:shadow-xl cursor-pointer">
+<a href="South_East_Asia/top.html" target="_blank" rel="noopener noreferrer" class="block no-underline group region-card-hover relative bg-surface-container-lowest border border-outline-variant p-2 transition-all hover:border-tertiary/50 hover:shadow-xl cursor-pointer">
 <div class="relative h-64 overflow-hidden mb-4">
 <img class="image-zoom w-full h-full object-cover transition-transform duration-700" data-alt="The ornate stone spires of Angkor Wat in Cambodia reflecting in a still lily pond at dusk. The sky is a deep indigo and magenta, casting a mystical shadow over the intricate carvings of the temple. The aesthetic is scholarly and serene, focusing on the architectural grandeur of Khmer history." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrdibxj0qbbJxVntMr3djtC9CZcCfEAPDlrbPyJaTPkxIZQ4RXyCmcjiZOaNA_aevVtZwV5_JwMWAxwLuj8nlifb8uIZaUUhgRQwO0nfhUOLay9GGSla9teSf83ndCMO9TMSgSiagGFsSQ2xGXpV9ZRBwVD1_GrN9vYNOH9Q7k0qsPPw_IcHl18vbDf3KCOj3tHOskQ2Aiqn2F9y4iqzftKLdioNMGUkR8qnpR0roHvQI5beVTRPwIXg">
 <div class="absolute inset-0 card-inner-border"></div>
@@ -211,9 +212,9 @@
                             Enter Archive <span class="material-symbols-outlined ml-2 text-sm">arrow_forward</span>
 </div>
 </div>
-</div>
+</a>
 <!-- Region Card: South Asia -->
-<div class="group region-card-hover relative bg-surface-container-lowest border border-outline-variant p-2 transition-all hover:border-tertiary/50 hover:shadow-xl cursor-pointer">
+<a href="south_Asia/top.html" target="_blank" rel="noopener noreferrer" class="block no-underline group region-card-hover relative bg-surface-container-lowest border border-outline-variant p-2 transition-all hover:border-tertiary/50 hover:shadow-xl cursor-pointer">
 <div class="relative h-64 overflow-hidden mb-4">
 <img class="image-zoom w-full h-full object-cover transition-transform duration-700" data-alt="An atmospheric view of the Taj Mahal in Agra, India, framed by a red sandstone archway. The white marble glows with a soft pearlescent quality under a clear morning sky. The composition emphasizes Mughal architectural precision and a palette of warm terracotta and brilliant white." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDGoVzIWm8y80IFcAAI2gEkk5EXEfjzwv7IBrHTaBPsllerSXdmm0mmmnItJoNRzXQofkF5xnrelQciCWdf6ShcxbenCiqPs3NCAIUYdjbgDPmwjbC1qgaJa-S4yoKLob80pHRXwWh8f1bbfZtlFhsbkQjWwDQlERCsrOE5MvEWw5x2MazD_2ZTl-AI1i2mtDzaNoDkfICudcXjzXjZkTsSitZD5Zlxn3ZSZoEMSv2pEIsaT02Effe1Q">
 <div class="absolute inset-0 card-inner-border"></div>
@@ -225,9 +226,9 @@
                             Enter Archive <span class="material-symbols-outlined ml-2 text-sm">arrow_forward</span>
 </div>
 </div>
-</div>
+</a>
 <!-- Region Card: West Asia -->
-<div class="group region-card-hover relative bg-surface-container-lowest border border-outline-variant p-2 transition-all hover:border-tertiary/50 hover:shadow-xl cursor-pointer">
+<a href="West_Asia/top.html" target="_blank" rel="noopener noreferrer" class="block no-underline group region-card-hover relative bg-surface-container-lowest border border-outline-variant p-2 transition-all hover:border-tertiary/50 hover:shadow-xl cursor-pointer">
 <div class="relative h-64 overflow-hidden mb-4">
 <img class="image-zoom w-full h-full object-cover transition-transform duration-700" data-alt="The ancient stone ruins of Persepolis in Iran, featuring towering columns and intricate bas-reliefs of Persian soldiers. The setting is a vast desert plain under a harsh noon sun, creating deep, dramatic shadows. The style is archaeological and grand, using sun-bleached ochre and deep shadow tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCH-RNsXhgZyRTzOJX7aqf5YLSembrMvDyWzdR7wZy_kt506R-IbqiJLLJq2CQ_LG5Ks_RPU1HtyDqaOKgPMlXfX8-a7xBLEjULN9FzL8S27WQBoplVY5HcIzZXubyiCwXs3ncnoegKHSB60o_dA5o-l7jNFVQOHjOWyPn4X2hIBqeS94yOAubjVJnXn6oaYn-JCnZ_iloEi4vCXaCwo13IxFA88lmKCJC5VpplFiLXXdnbZWZKQdc6_Q">
 <div class="absolute inset-0 card-inner-border"></div>
@@ -239,9 +240,9 @@
                             Enter Archive <span class="material-symbols-outlined ml-2 text-sm">arrow_forward</span>
 </div>
 </div>
-</div>
+</a>
 <!-- Region Card: Central Asia -->
-<div class="group region-card-hover relative bg-surface-container-lowest border border-outline-variant p-2 transition-all hover:border-tertiary/50 hover:shadow-xl cursor-pointer">
+<a href="Central_Asia/top.html" target="_blank" rel="noopener noreferrer" class="block no-underline group region-card-hover relative bg-surface-container-lowest border border-outline-variant p-2 transition-all hover:border-tertiary/50 hover:shadow-xl cursor-pointer">
 <div class="relative h-64 overflow-hidden mb-4">
 <img class="image-zoom w-full h-full object-cover transition-transform duration-700" data-alt="The vibrant blue-tiled Registan Square in Samarkand, Uzbekistan, at twilight. The turquoise domes and intricate geometric patterns of the madrasas are illuminated from below, contrasting against a darkening sky. The color palette is dominated by royal blue, gold, and deep azure." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZYQhOdwbfFPwVsqujetdGowEd8N1Y7DLHvz20AZq8Qhgs_LAc4C-R9phV9dOBGubxj9N7_y-RceGu3_8AAbq--jSgpYKZj-j7SHfH5omMGyssri336BKO0Qb-MS23HYzj4owgxvn2GcnAJw3YeXxb-doIPpDEeC5YPkxzGSgM2gGeW7Ru1xgWJYQctdKxi9djMBjp4jd2v_UWEXIzwU_GsT_lXjhXOdkxw3zxTmP5YdKmLDoWY1HY7g">
 <div class="absolute inset-0 card-inner-border"></div>
@@ -253,9 +254,9 @@
                             Enter Archive <span class="material-symbols-outlined ml-2 text-sm">arrow_forward</span>
 </div>
 </div>
-</div>
+</a>
 <!-- Region Card: Western to Eastern Europe -->
-<div class="group region-card-hover relative bg-surface-container-lowest border border-outline-variant p-2 transition-all hover:border-tertiary/50 hover:shadow-xl cursor-pointer">
+<a href="top.html" target="_blank" rel="noopener noreferrer" class="block no-underline group region-card-hover relative bg-surface-container-lowest border border-outline-variant p-2 transition-all hover:border-tertiary/50 hover:shadow-xl cursor-pointer">
 <div class="relative h-64 overflow-hidden mb-4">
 <img class="image-zoom w-full h-full object-cover transition-transform duration-700" data-alt="A classical view of the Parthenon in Athens, Greece, standing proudly against a brilliant blue Mediterranean sky. The weathered white marble columns show centuries of history. The aesthetic is clean, academic, and timeless, emphasizing the foundations of Western philosophy and architecture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdFHqdwf9cMG1G6oBx2ZQg_zLPRZleWT2Y5MGmTG7RcAcs80blj2aK9sqz0UrbxY6uWEK4MCznFORO-9UbZfHbhXB-9RIRN3Jp9Ij0EecXThEW-9EI89p86rRBcsEx3gYH1NrCHLpXPJeZygCQG-1b5rVTadNYBHZDMRz3BaCdAurFz-hAuXDqgDR92oIjsf-hxgosm_-Hx1AXALAybOCvzWAH3Wsg-6_4Pm5H9sOqSV2SwtuaCB8L2A">
 <div class="absolute inset-0 card-inner-border"></div>
@@ -267,9 +268,9 @@
                             Enter Archive <span class="material-symbols-outlined ml-2 text-sm">arrow_forward</span>
 </div>
 </div>
-</div>
+</a>
 <!-- Region Card: Africa -->
-<div class="group region-card-hover relative bg-surface-container-lowest border border-outline-variant p-2 transition-all hover:border-tertiary/50 hover:shadow-xl cursor-pointer">
+<a href="top.html" target="_blank" rel="noopener noreferrer" class="block no-underline group region-card-hover relative bg-surface-container-lowest border border-outline-variant p-2 transition-all hover:border-tertiary/50 hover:shadow-xl cursor-pointer">
 <div class="relative h-64 overflow-hidden mb-4">
 <img class="image-zoom w-full h-full object-cover transition-transform duration-700" data-alt="The Great Pyramids of Giza rising from the golden Egyptian sands under a soft pink and orange sunrise. A single camel caravan is silhouetted in the distance. The lighting is warm and evocative, using a palette of sands, soft oranges, and deep desert shadows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDU84EbKU_t1y2oq4h3ColkCuzQRbvK5FOB2lInU5JgYfTx8mMHgyDR4mrBo23J2X6cPbxKFaFG6_7Cit-qFvpzJyxfSzB2MQpwiIWROMjshkj4atOKqcOwg3aNNmsNlTlTqmDayPeRusTKzid4m0YYMnbPST6iUM9pLaIrzL-QTG5IsqpN6wX1VeEmCgPaQSOn-_thkNFvb3ZzoW7DivgqcfQSLIOgSlTI_jmgIT19uhGLb5CcdogQPQ">
 <div class="absolute inset-0 card-inner-border"></div>
@@ -281,9 +282,9 @@
                             Enter Archive <span class="material-symbols-outlined ml-2 text-sm">arrow_forward</span>
 </div>
 </div>
-</div>
+</a>
 <!-- Region Card: North America -->
-<div class="group region-card-hover relative bg-surface-container-lowest border border-outline-variant p-2 transition-all hover:border-tertiary/50 hover:shadow-xl cursor-pointer">
+<a href="top.html" target="_blank" rel="noopener noreferrer" class="block no-underline group region-card-hover relative bg-surface-container-lowest border border-outline-variant p-2 transition-all hover:border-tertiary/50 hover:shadow-xl cursor-pointer">
 <div class="relative h-64 overflow-hidden mb-4">
 <img class="image-zoom w-full h-full object-cover transition-transform duration-700" data-alt="A majestic view of Mesa Verde cliff dwellings in Colorado, carved into the red rock canyon. The evening light highlights the texture of the sandstone and the architectural ingenuity of the Ancestral Puebloans. The style is rustic and historical, with deep reds and dusty browns." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAv3IXsLyXzWOidV-Jl6qCgnUl-jpGYQ88I0skmzLF2NXCtOrZdDtQte8cK8ZhgDcBst8apiu9Dm4Am3ol5yFJteFQc-bAApDggnKVUKvImapfhTwNwXE4HG52qiORgnmuB12Ipp0JZtmxl1wiVhhVIsYR0OoPOElBmFzKAIq7TdH2kPmxJKn2UkNFByb8wzUtJ5wrWbuZVDiYkZD2TdMnoS1TtRt743iqv-6DAU3M6saFjCxLjGesyzg">
 <div class="absolute inset-0 card-inner-border"></div>
@@ -295,9 +296,9 @@
                             Enter Archive <span class="material-symbols-outlined ml-2 text-sm">arrow_forward</span>
 </div>
 </div>
-</div>
+</a>
 <!-- Region Card: Central & South America -->
-<div class="group region-card-hover relative bg-surface-container-lowest border border-outline-variant p-2 transition-all hover:border-tertiary/50 hover:shadow-xl cursor-pointer">
+<a href="Latin_America/top.html" target="_blank" rel="noopener noreferrer" class="block no-underline group region-card-hover relative bg-surface-container-lowest border border-outline-variant p-2 transition-all hover:border-tertiary/50 hover:shadow-xl cursor-pointer">
 <div class="relative h-64 overflow-hidden mb-4">
 <img class="image-zoom w-full h-full object-cover transition-transform duration-700" data-alt="The misty ruins of Machu Picchu perched high in the Andes mountains of Peru. The vibrant green grass of the terraces contrasts with the grey stone and the surrounding cloud-covered peaks. The mood is mysterious and grand, emphasizing the scale of Incan achievement." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMl_fkPqySOUYKi-_GfUUBrsxsEdd98HKCN38tHyVOCm4IuSRdlG_3-GVVWH287xafkBsBF74HHkL5fGf5VV9uDxSp0DOtXSJdfwYjcYIlE1VUC3wVCcMAdtlqvpdIShRrZAEErydpPV8Q197MzmrC5D6sveZRFr5B0yogAVZ25PIJWKdYN5SeEWfdtSU183mqN6RPVolZxYBaXHUDDK-SyuidGN6UtwkDLMgVJuLbwAQjR23J5-g9TQ">
 <div class="absolute inset-0 card-inner-border"></div>
@@ -309,9 +310,9 @@
                             Enter Archive <span class="material-symbols-outlined ml-2 text-sm">arrow_forward</span>
 </div>
 </div>
-</div>
+</a>
 <!-- Region Card: The Pacific -->
-<div class="group region-card-hover relative bg-surface-container-lowest border border-outline-variant p-2 transition-all hover:border-tertiary/50 hover:shadow-xl cursor-pointer">
+<a href="top.html" target="_blank" rel="noopener noreferrer" class="block no-underline group region-card-hover relative bg-surface-container-lowest border border-outline-variant p-2 transition-all hover:border-tertiary/50 hover:shadow-xl cursor-pointer">
 <div class="relative h-64 overflow-hidden mb-4">
 <img class="image-zoom w-full h-full object-cover transition-transform duration-700" data-alt="A high-quality, professional photograph of ancient Latte Stones in Guam, Micronesia. Large, megalithic limestone pillars with capstones (tasa) standing in a lush tropical setting at sunset." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZikwZeafzsHGBvw_G0MUNFYqziv_JOmjVJ_5qpeg95pYZTVttcI7MUTJQuhWtQ41zhxYmB1FOK4KTOQGpTeJ54vfkuGrd_dMuT3G5exCVfeT4nSGei1SCiimW6xgoJy6fY8LNfxQc1ai3ryA4E5KrM52e3bHv2m7q5DCrtBcHaxAKi2eL5Segq-H8tgMxi4f6xaiHgylyYUjmuQfasMdzDlQpwiGI3r3EcuqjGnHHGUjKioLG8S_nGA">
 <div class="absolute inset-0 card-inner-border"></div>
@@ -323,9 +324,9 @@
                             Enter Archive <span class="material-symbols-outlined ml-2 text-sm">arrow_forward</span>
 </div>
 </div>
-</div>
+</a>
 <!-- Region Card: Autonomous Republics -->
-<div class="group region-card-hover relative bg-surface-container-lowest border border-outline-variant p-2 transition-all hover:border-tertiary/50 hover:shadow-xl cursor-pointer">
+<a href="top.html" target="_blank" rel="noopener noreferrer" class="block no-underline group region-card-hover relative bg-surface-container-lowest border border-outline-variant p-2 transition-all hover:border-tertiary/50 hover:shadow-xl cursor-pointer">
 <div class="relative h-64 overflow-hidden mb-4">
 <img class="image-zoom w-full h-full object-cover transition-transform duration-700" data-alt="The colorful, swirling onion domes of Saint Basil's Cathedral in Moscow, covered in a light dusting of snow. The lighting is crisp and cool, emphasizing the vibrant reds, blues, and golds of the architecture against a pale winter sky. The style is ornate and historically rich." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBK2FG4gSk10XLe0YUclC68rvvn1OX3hGuWl-aecZZmrrW2AzvLKxnm0hdZU19rFbKxzCDgVE1pblvJk1DniDI1z82vp3Jzu6Dl2UzjAXsfCqIBToZgl7PnLRNqSEPKp_81X60DlFnTCFJjeAs-R1Onw4kN4hq49gYCf3Hd6-WAYaV0DaTks2NKfYmqWx5wWD3tniTeHObYTaDP8LSOptlvcVuU7K2DwsRO3MiWFSc8ti_76sWezPUXww">
 <div class="absolute inset-0 card-inner-border"></div>
@@ -337,9 +338,9 @@
                             Enter Archive <span class="material-symbols-outlined ml-2 text-sm">arrow_forward</span>
 </div>
 </div>
-</div>
+</a>
 <!-- Russia -->
-<div class="group region-card-hover relative bg-surface-container-lowest border border-outline-variant p-2 transition-all hover:border-tertiary/50 hover:shadow-xl cursor-pointer">
+<a href="top.html" target="_blank" rel="noopener noreferrer" class="block no-underline group region-card-hover relative bg-surface-container-lowest border border-outline-variant p-2 transition-all hover:border-tertiary/50 hover:shadow-xl cursor-pointer">
 <div class="relative h-64 overflow-hidden mb-4">
 <img class="image-zoom w-full h-full object-cover transition-transform duration-700" data-alt="The colorful, swirling onion domes of Saint Basil's Cathedral in Moscow, covered in a light dusting of snow. The lighting is crisp and cool, emphasizing the vibrant reds, blues, and golds of the architecture against a pale winter sky. The style is ornate and historically rich." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQj-EoJaiBsBfHXxUAHrh4vnAsolpExuFXZ9Ff-AD3JiTiSISaw40cHK0_0rTqcGhRV4oPJYxZVIipbu8J_Apir9WeIc8iAeM3t0DkY0badPhrKvS0NDCAjLxx_ecKnq5nFWGIR5EYYOPEX1ecWKnrLeDSkyJJzQHpxg6fdnzhlQtxWtIBi-tkUiGypjj8LP1TLOUDRJobMIrb1tz0UE4RWMLvOYTJIiICZJ8MFJXOw2esb9lVcQDX6g">
 <div class="absolute inset-0 card-inner-border"></div>
@@ -350,8 +351,8 @@
 <div class="mt-4 flex items-center text-tertiary font-label-caps text-xs tracking-widest uppercase font-bold opacity-0 group-hover:opacity-100 transition-opacity">
                             Enter Archive <span class="material-symbols-outlined ml-2 text-sm">arrow_forward</span>
 </div>
-
 </div>
+</a>
 </section>
 <!-- Newsletter / Archival Updates -->
 <section class="bg-surface-container-high py-20 px-margin-mobile">
@@ -380,7 +381,6 @@
 <a class="text-on-surface-variant dark:text-on-surface hover:text-tertiary underline transition-all font-bold" href="#">Archives</a>
 <a class="text-on-surface-variant dark:text-on-surface hover:text-tertiary underline transition-all" href="#">Sitemap</a>
 <a class="text-on-surface-variant dark:text-on-surface hover:text-tertiary underline transition-all" href="#">Privacy Policy</a>
-<a class="text-on-surface-variant dark:text-on-surface hover:text-tertiary underline transition-all" href="#">Language: English</a>
 <a class="text-on-surface-variant dark:text-on-surface hover:text-tertiary underline transition-all" href="#">Contact</a>
 </nav>
 <div class="flex gap-4">
