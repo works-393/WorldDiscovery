@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>United Arab Emirates Discovery | Luxury Travel Experience</title>
+<meta content="Explore the ancient landmarks, vibrant cities, and rich history of Lebanon." name="description"/>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'lebanon-dark': '#102219',
+            'lebanon-gold': '#C5A059',
+            'lebanon-green': '#2D5A27',
+          },
+          fontFamily: {
+            serif: ['Newsreader', 'serif'],
+            sans: ['Inter', 'sans-serif'],
+          },
+          
+          backgroundImage: {
+            'saudi-hero': "url('img/Saudi_bg.jpg')",
+          }
+        }
+      }
+    }
+  </script>
+<style data-purpose="custom-styling">body {
+    background-color: #102219;
+    color: #f8fafc
+    }
+.glass-card {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 1rem
+    }
+.text-balance {
+    text-wrap: balance
+    }
+.section-spacing {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem
+    }
+/* Pattern Overlay */
+.bg-pattern {
+    background-image: url(img/Saudi_bg.jpg);
+    opacity: 0.25
+    }</style>
+</head>
+<body class="font-sans antialiased overflow-x-hidden">
+<!-- BEGIN: Background Texture -->
+<div class="fixed inset-0 bg-pattern pointer-events-none z-0"></div>
+<!-- END: Background Texture -->
+<!-- BEGIN: MainHeader -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-lebanon-dark/80 backdrop-blur-md border-b border-white/5">
+<nav class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<!-- Logo -->
+<a class="flex items-center gap-3 group" href="#">
+<div class="text-emerald-500 transform group-hover:scale-110 transition-transform">
+<svg fill="none" height="32" viewbox="0 0 24 24" width="32" xmlns="http://www.w3.org/2000/svg">
+  <!-- 樹冠（葉）：ガフの木特有の水平に広がるフラットな傘の形 -->
+  <!-- 上層 -->
+  <path d="M12 10C15 10 21 8 22 6" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+  <path d="M12 10C9 10 3 8 2 6" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+  <!-- 中層：密度を出すためのライン -->
+  <path d="M12 10C16 11 20 11 22 13" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+  <path d="M12 10C8 11 4 11 2 13" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+  <!-- 中央の立ち上がり -->
+  <path d="M12 10C12 8 13 5 12 3" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+  
+  <!-- 幹：根元に向かってわずかに広がる安定感 -->
+  <path d="M11.2 10L10.5 22H13.5L12.8 10H11.2Z" fill="currentColor"/>
+  
+  <!-- 砂地のライン（オプション：地面があることでガフの木らしさが強調されます） -->
+  <path d="M7 22H17" stroke="currentColor" stroke-width="1" stroke-linecap="round"/>
+</svg>
+</div>
+<span class="font-serif text-xl tracking-wider font-semibold">United Arab Emirates Discovery</span>
+</a>
+<!-- Desktop Navigation -->
+<div class="hidden md:flex items-center gap-10">
+<a class="text-sm font-medium hover:text-lebanon-gold transition-colors tracking-widest uppercase" href="#landmarks">Landmarks</a>
+<a class="text-sm font-medium hover:text-lebanon-gold transition-colors tracking-widest uppercase" href="#cities">Cities</a>
+<a class="text-sm font-medium hover:text-lebanon-gold transition-colors tracking-widest uppercase" href="#cuisine">Cuisine</a>
+<a class="text-sm font-medium hover:text-lebanon-gold transition-colors tracking-widest uppercase" href="#history">History</a>
+</div>
+<!-- Search Bar -->
+<div class="relative hidden lg:block" data-purpose="search-container">
+<span class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+<svg class="w-4 h-4 text-lebanon-gold/50" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</span>
+<input id="searchInput" class="bg-white/5 border-white/10 text-white pl-10 pr-4 py-2 rounded-lg focus:ring-lebanon-gold focus:border-lebanon-gold w-64 text-sm" placeholder="Wikipedia検索" type="text"/>
+</div>
+
+<!-- Mobile Menu Toggle (Simplified) -->
+<button class="md:hidden text-white">
+<svg class="h-6 w-6" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 6h16M4 12h16m-7 6h7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</button>
+</nav>
+</header>
+<!-- END: MainHeader -->
+<!-- BEGIN: HeroSection -->
+<main class="relative">
+<section class="relative flex items-center justify-center overflow-hidden h-[75vh]">
+<!-- Hero Background Image -->
+<div class="absolute inset-0 z-0">
+<img alt="Baalbek Temple of Bacchus" class="w-full h-full object-cover brightness-50" src="img/UAE.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-b from-lebanon-dark/40 via-transparent to-lebanon-dark"></div>
+</div>
+<div class="relative z-10 text-center px-6 max-w-4xl">
+<h2 class="text-lebanon-gold font-serif italic text-xl md:text-2xl mb-4 opacity-0 animate-[fadeIn_1s_ease-out_forwards]">The Crossroads of Horizons </h2>
+<h1 class="text-4xl md:text-7xl lg:text-4xl font-serif mb-8 leading-tight opacity-0 animate-[fadeIn_1s_ease-out_0.3s_forwards]">
+         United Arab Emirates: Embrace the Golden Legacy       </h1>
+<p class="text-lg md:text-xl text-white/80 font-light max-w-2xl mx-auto mb-10 text-balance opacity-0 animate-[fadeIn_1s_ease-out_0.6s_forwards]">
+          From the starlit dunes of Liwa to the soaring heights of the Burj Khalifa, witness a masterclass in human ambition where Bedouin traditions meet the cutting edge of tomorrow’s luxury.
+        </p>
+<!-- <a class="inline-block bg-lebanon-gold text-lebanon-dark px-10 py-4 font-semibold tracking-widest uppercase text-sm hover:scale-105 transition-transform opacity-0 animate-[fadeIn_1s_ease-out_0.9s_forwards]" href="#landmarks">
+          Explore Destinations
+        </a>-->
+</div>
+<!-- Scroll Indicator -->
+<!--<div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce opacity-60">
+<svg class="h-6 w-6" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M19 14l-7 7m0 0l-7-7m7 7V3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>-->
+</section>
+<!-- END: HeroSection -->
+<!-- BEGIN: LandmarksSection -->
+<section class="section-spacing px-6 relative" id="landmarks">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
+<div class="max-w-2xl">
+<h2 class="text-lebanon-gold font-serif text-sm mb-2 uppercase tracking-[0.3em]">Sacred Roots & Modern Wonders</h2>
+<h3 class="text-3xl md:text-4xl font-serif">Iconic Landmarks</h3>
+</div>
+<p class="text-white/60 max-w-md text-sm">From the quiet shade of the sacred Ghaf tree to the soaring heights of the Burj Khalifa, witness the majestic soul of an ancient land in every horizon.</p>
+</div>
+<div class="grid grid-cols-2 lg:grid-cols-3 gap-4">
+<!-- Item 1: Sheikh Zayed Grand Mosque -->
+<div class="flex flex-col">
+<div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+<img alt="Sheikh Zayed Grand Mosque" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="img/Sheikh_Zayed_Grand_Mosque.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+<div class="absolute bottom-0 left-0 p-4">
+<span class="text-[10px] text-lebanon-gold uppercase tracking-widest block mb-1">Landmark</span>
+<h4 class="text-lg font-serif">Sheikh Zayed Grand Mosque (Abu Dhabi) </h4>
+</div>
+</div>
+<!-- キャプション部分：写真の直下に配置 -->
+     <p class="mt-6 text-sm text-lebanon-gold font-serif leading-snug px-4">
+      The mosque is one of the largest in the world, and its pure white marble and intricate floral carvings are breathtaking. It is one of the most sacred and magnificent places in the UAE, where traditional Islamic architecture blends with modern craftsmanship.
+    </p>
+  </div>
+<!-- Item 2: Burj Khalifa -->
+ <div class="flex flex-col">
+<div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+<img alt="Burj Khalifa" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="img/Burj_Khalifa.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+<div class="absolute bottom-0 left-0 p-4">
+<span class="text-[10px] text-lebanon-gold uppercase tracking-widest block mb-1">Landmark</span>
+<h4 class="text-lg font-serif">Burj Khalifa (Dubai) </h4>
+</div>
+</div>
+<!-- キャプション部分：写真の直下に配置 -->
+     <p class="mt-6 text-sm text-lebanon-gold font-serif leading-snug px-4">
+      At 828 meters above the ground, it is the tallest tower in the world. Its design is inspired by the desert flower Hymenocallis (the spider lily), and it represents a modern marvel where traditional geometric patterns are brought to life through cutting-edge engineering.
+    </p>
+  </div>
+<!-- Item 3: Qasr Al Hosn -->
+ <div class="flex flex-col">
+<div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+<img alt="Qasr Al Hosn" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="img/Qasr_Al_Hosn.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+<div class="absolute bottom-0 left-0 p-4">
+<span class="text-[10px] text-lebanon-gold uppercase tracking-widest block mb-1">Landmark</span>
+<h4 class="text-lg font-serif">Qasr Al Hosn (Abu Dhabi)</h4>
+</div>
+</div>
+<!-- キャプション部分：写真の直下に配置 -->
+     <p class="mt-6 text-sm text-lebanon-gold font-serif leading-snug px-4">
+      Quietly standing among modern skyscrapers, it is the oldest fort in Abu Dhabi. Once the residence of the ruling family, it preserves the nation’s roots, telling the story of the time when people made their living from pearl diving and fishing to the prosperity of the present day.
+    </p>
+  </div>
+</div>
+</div>
+</section>
+<!-- END: LandmarksSection -->
+<!-- BEGIN: CitiesSection -->
+<section class="section-spacing px-6 relative" id="cities">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
+<div class="max-w-2xl">
+<h2 class="text-lebanon-gold font-serif text-sm mb-2 uppercase tracking-[0.3em]">Sacred Roots & Modern Wonders</h2>
+<h3 class="text-3xl md:text-4xl font-serif">Cities of Distinction</h3>
+</div>
+<p class="text-white/60 max-w-md text-sm">From the timeless whispers of historic souks to the vibrant pulse of futuristic metropolises, experience a visionary world where tradition meets luxury.
+</p>
+</div>
+<div class="space-y-20">
+<!-- Dubai -->
+<div class="flex flex-col md:flex-row items-center gap-10">
+<div class="w-full md:w-1/2">
+<img alt="Dubai" class="rounded-2xl shadow-xl" src="img/Dubai.jpg"/>
+</div>
+<div class="w-full md:w-1/2">
+<span class="text-primary font-bold uppercase tracking-widest text-sm">The Capital of the Future</span>
+<h3 class="text-3xl mt-2 mb-4">Dubai</h3>
+<p class="text-orange-50 dark:text-orange-100 text-lg mb-6 leading-relaxed font-serif">Home to the world’s tallest building, Burj Khalifa, along with vast shopping malls and the artificial island Palm Jumeirah, the city is a showcase of world-class ambition and cutting-edge innovation. Its skyline, reminiscent of a science-fiction film, makes it a symbol of the UAE’s rapid modernization and a place full of constant surprises.</p>
+</div>
+</div>
+<!-- Abu Dhabi -->
+<div class="flex flex-col md:flex-row-reverse items-center gap-10">
+<div class="w-full md:w-1/2">
+<img alt="Abu Dhabi" class="rounded-2xl shadow-xl" src="img/Abu_Dhabi.jpg"/>
+</div>
+<div class="w-full md:w-1/2">
+<span class="text-primary font-bold uppercase tracking-widest text-sm">The Cultural Capital</span>
+<h3 class="text-3xl mt-2 mb-4">Abu Dhabi</h3>
+<p class="text-orange-50 dark:text-orange-100 text-lg mb-6 leading-relaxed font-serif">As the capital of the UAE, it is distinguished by a refined sense of luxury different from that of Dubai. With world-renowned landmarks such as the Louvre Abu Dhabi and the breathtaking Sheikh Zayed Grand Mosque, it is a sophisticated modern city where high technology and art blend seamlessly.</p>
+</div>
+</div>
+<!-- Al Ain -->
+<div class="flex flex-col md:flex-row items-center gap-10">
+<div class="w-full md:w-1/2">
+<img alt="Al Ain" class="rounded-2xl shadow-xl" src="img/Al_Ain.jpg"/>
+</div>
+<div class="w-full md:w-1/2">
+<span class="text-primary font-bold uppercase tracking-widest text-sm">The Oasis of Grandeur</span>
+<h3 class="text-3xl mt-2 mb-4">Al Ain</h3>
+<p class="text-orange-50 dark:text-orange-100 text-lg mb-6 leading-relaxed font-serif">Located in the Emirate of Abu Dhabi, this UNESCO World Heritage city is known as the “Garden City.” Free from skyscrapers, it preserves traditional date palm groves sustained by the ancient falaj irrigation system and historic mud-brick forts. Far from the bustle of modern cities, it offers a glimpse into the traditions and history of the Bedouin.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Cities Section -->
+
+</div>
+</div>
+</section>
+<!-- END: CitiesSection -->
+<!-- BEGIN: Cuisine -->
+<section class="mb-20" id="cuisine">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-serif italic text-white mb-4">A Heritage of Desert Gold</h2>
+<p class="text-brand-gold font-medium tracking-widest uppercase text-xs">Oasis Flavors & Coastal Spices</p>
+</div>
+
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4">
+<div class="flex flex-col gap-3 group cursor-pointer">
+<div class="w-full aspect-square rounded-2xl overflow-hidden shadow-lg">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Jasheed" style='background-image: url("img/Jasheed.jpg");'>
+</div>
+</div>
+<div>
+<h3 class="text-amber-600 dark:text-amber-400 text-xl font-bold font-display mb-1">Jasheed</h3>
+<p class="text-orange-50 dark:text-orange-100 text-sm leading-relaxed">
+                                    Finely shredded small shark meat is sautéed with spices and dried lemon, then served over white rice. It is a traditional dish unique to the UAE.
+                                </p>
+</div>
+</div>
+<div class="flex flex-col gap-3 group cursor-pointer">
+<div class="w-full aspect-square rounded-2xl overflow-hidden shadow-lg">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Saloona" style='background-image: url("img/Saloona.jpg");'>
+</div>
+</div>
+<div>
+<h3 class="text-amber-600 dark:text-amber-400 text-xl font-bold font-display mb-1">Saloona</h3>
+<p class="text-orange-50 dark:text-orange-100 text-sm leading-relaxed">
+                                    A traditional Emirati stew made with vegetables, spices, and tender meat.
+                                </p>
+</div>
+</div>
+<div class="flex flex-col gap-3 group cursor-pointer">
+<div class="w-full aspect-square rounded-2xl overflow-hidden shadow-lg">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Gahwa" style='background-image: url("img/Gahwa.jpg");'>
+</div>
+</div>
+<div>
+<h3 class="text-amber-600 dark:text-amber-400 text-xl font-bold font-display mb-1">Gahwa</h3>
+<p class="text-orange-50 dark:text-orange-100 text-sm leading-relaxed">
+                                    Lightly roasted coffee flavored with cardamom, a symbol of hospitality in Emirati culture.
+                                </p>
+</div>
+</div>
+<div class="flex flex-col gap-3 group cursor-pointer">
+<div class="w-full aspect-square rounded-2xl overflow-hidden shadow-lg">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Luqaimat" style='background-image: url("img/Luqaimat.jpg");'>
+</div>
+</div>
+<div>
+<h3 class="text-amber-600 dark:text-amber-400 text-xl font-bold font-display mb-1">Luqaimat</h3>
+<p class="text-orange-50 dark:text-orange-100 text-sm leading-relaxed">
+                                    Crispy fried dumplings drizzled with date syrup, a popular sweet dessert.
+                                </p>
+</div>
+</div>
+</div>
+</section>
+<!-- BEGIN: HistorySection -->
+<section class="bg-[#0b1812] section-spacing px-6 relative overflow-hidden" id="history">
+<div class="max-w-5xl mx-auto"><div class="text-center mb-12">
+<h2 class="text-lebanon-gold font-serif text-sm mb-2 uppercase tracking-[0.3em]">アラブ首長国連邦の歴史</h2>
+<h3 class="text-3xl md:text-4xl font-serif">United Arab Emirates</h3>
+<p class="text-xs text-white/80 max-w-2xl mx-auto">Rooted in a proud heritage, centuries of trade, seafaring, and desert traditions continue shaping the identity of the United Arab Emirates as a global beacon of vision and unity.</p>
+</div>
+<div class="max-w-3xl mx-auto space-y-8 relative border-l border-white/10 pl-8">
+<!-- History: Ancient -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-lebanon-gold"></div>
+<h4 class="text-lebanon-gold font-sans text-xl font-semibold mb-6">古代</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-white mb-1">マガン文明 <span class="text-xs text-white/40 block md:inline md:ml-2">（紀元前2500年頃 - 紀元前2100年頃）  </span></h5>
+<p class="text-xs text-white/50 leading-relaxed">メソポタミア文明とインダス文明を結ぶ交易の中継地として栄えました。
+
+</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-white mb-1">アケメネス朝ペルシア <span class="text-xs text-white/40 block md:inline md:ml-2">（紀元前539年 - 紀元前330年）  </span></h5>
+<p class="text-xs text-white/50 leading-relaxed">ペルシャ帝国の一部として統治され、文化的影響を受けました。
+
+</p>
+</div>
+
+</div>
+</div>
+<!-- History: Medieval -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-lebanon-gold"></div>
+<h4 class="text-lebanon-gold font-sans text-xl font-semibold mb-6">中世</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-white mb-1">イスラム帝国（ウマイヤ朝・アッバース朝） <span class="text-xs text-white/40 block md:inline md:ml-2">（7世紀 - 13世紀）  </span></h5>
+<p class="text-xs text-white/50 leading-relaxed">イスラム教が広まり、交易と文化交流が活発化しました。
+
+</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-white mb-1">ポルトガルの支配 <span class="text-xs text-white/40 block md:inline md:ml-2">（16世紀）  </span></h5>
+<p class="text-xs text-white/50 leading-relaxed">インド洋航路を発見したポルトガルがペルシャ湾沿岸を支配しました。
+
+</div>
+<div>
+<h5 class="text-lg font-serif text-white mb-1">オスマン帝国 <span class="text-xs text-white/40 block md:inline md:ml-2">（16世紀 - 18世紀）  </span></h5>
+<p class="text-xs text-white/50 leading-relaxed">オスマン帝国の宗主権下に入りましたが、部族社会が一定の自治権を維持しました。
+
+</p>
+</div>
+</div>
+</div>
+<!-- History: Early Modern -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-lebanon-gold"></div>
+<h4 class="text-lebanon-gold font-sans text-xl font-semibold mb-6">近世</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-white mb-1">カワーシム家の統治 <span class="text-xs text-white/40 block md:inline md:ml-2">（18世紀 - 19世紀）  </span></h5>
+<p class="text-xs text-white/50 leading-relaxed">ラアス・アル＝ハイマやシャルジャを支配した部族。
+
+</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-white mb-1">イギリスの保護領<span class="text-xs text-white/40 block md:inline md:ml-2">（19世紀後半 - 1971年）  </span></h5>
+<p class="text-xs text-white/50 leading-relaxed">イギリスとの保護条約により、外交と軍事面でイギリスの影響を受けました。
+
+</p>
+</div>
+</div>
+</div>
+<!-- History: Modern -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-lebanon-gold"></div>
+<h4 class="text-lebanon-gold font-sans text-xl font-semibold mb-6">近現代・現代</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-white mb-1">アラブ首長国連邦の成立 <span class="text-xs text-white/40 block md:inline md:ml-2">（1971年）  </span></h5>
+<p class="text-xs text-white/50 leading-relaxed">7つの首長国が連邦を結成し、独立国家として発展。
+
+
+</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-white mb-1">アラブ首長国連邦（UAE） <span class="text-xs text-white/40 block md:inline md:ml-2">（1971年 - 現在）  </span></h5>
+<p class="text-xs text-white/50 leading-relaxed">石油資源を基盤に経済発展を遂げ、国際的な影響力を高めています。特にドバイやアブダビが世界的な都市として注目されています。UAEの地は、古代から現代に至るまで、交易や文化交流の重要な拠点として機能してきました。
+<p class="text-xs text-white/50 leading-relaxed font-bold">7つの首長国が集まって形成された連邦国家</p>
+<p class="text-xs text-white/50 leading-relaxed px-2">アブダビ首長国: アール・ナヒヤーン家</p>
+<p class="text-xs text-white/50 leading-relaxed px-2">ドバイ首長国: アール・マクトゥーム家</p>
+<p class="text-xs text-white/50 leading-relaxed px-2">シャルジャ首長国: アール・カースィミー家</p>
+<p class="text-xs text-white/50 leading-relaxed px-2">アジュマーン首長国: アール・ナウアイミー家</p>
+<p class="text-xs text-white/50 leading-relaxed px-2">ウム・アル＝カイワイン首長国: アール・ムアッラ家</p>
+<p class="text-xs text-white/50 leading-relaxed px-2">ラアス・アル＝ハイマ首長国: アール・カースィミー家（シャルジャ家と同じ家系）</p>
+<p class="text-xs text-white/50 leading-relaxed px-2">フジャイラ首長国: アール・シャルキー家</p>
+<p class="text-xs text-white/50 leading-relaxed px-2">これらの家系がそれぞれの首長国を統治しており、UAE全体の統治の柱となっています。特に、アブダビとドバイは経済的・政治的に大きな影響力を持っています。UAEの体制は君主制でありながら、7つの首長国が連邦制を形成するという独特の仕組みで機能しています。カワーシム家は、アラブ首長国連邦のラアス・アル＝ハイマとシャルジャ首長国を統治する家系であり、現在もこれらの首長国の統治者として存在しています。</p>
+
+
+
+
+</div>
+</div>
+</div>
+</div>
+<p class="text-left text-white/60 text-sm mt-12 italic max-w-2xl mx-auto">
+    紀元前3000年頃にさかのぼる居住痕が存在。7世紀イスラム帝国、次いでオスマン・トルコ、ポルトガル、オランダの支配を受ける。17世紀以降、英国のインド支配との関係で、この地域の戦略的重要性が認識された。18世紀にアラビア半島南部から移住した部族が現在のUAEの基礎を作った。1853年、英国は現在の北部首長国周辺の「海賊勢力」と恒久休戦協定を結び、以後同地域は休戦海岸と呼ばれた。1892年には、英国の保護領となった。1968年英国がスエズ運河以東撤退を宣言したため、独立達成の努力を続け、1971年12月、アブダビ及びドバイを中心とする6首長国（翌年2月ラアス・ル・ハイマ首長国が参加）が統合してアラブ首長国連邦を結成した。
+
+</p>
+</div>
+</section>
+<!-- END: HistorySection -->
+<!-- BEGIN: Footer -->
+<footer class="bg-lebanon-dark py-20 px-6 border-t border-white/5 relative z-10">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="col-span-1 md:col-span-2">
+<div class="flex items-center gap-3 mb-6">
+<div class="text-emerald-500">
+<svg fill="none" height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 2L15 8H9L12 2Z" fill="currentColor"></path>
+<path d="M12 6L17 14H7L12 6Z" fill="currentColor"></path>
+<path d="M12 11L19 20H5L12 11Z" fill="currentColor"></path>
+<path d="M11 20H13V22H11V20Z" fill="currentColor"></path>
+</svg>
+</div>
+<span class="font-serif text-lg tracking-wider font-semibold">United Arab Emirates Discovery</span>
+</div>
+<p class="text-white/40 text-sm max-w-sm mb-8">
+            Curating bespoke luxury travel experiences for discerning explorers seeking the authentic soul of the Mediterranean.
+          </p>
+</div>
+<div>
+<h6 class="text-lebanon-gold font-serif text-sm mb-6 uppercase tracking-widest">Navigation</h6>
+<ul class="space-y-4 text-sm text-white/60">
+<li><a class="hover:text-white transition-colors" href="#landmarks">Landmarks</a></li>
+<li><a class="hover:text-white transition-colors" href="#cities">Cities</a></li>
+<li><a class="hover:text-white transition-colors" href="#cuisine">Cuisine</a></li>
+<li><a class="hover:text-white transition-colors" href="#history">History</a></li>
+</ul>
+</div>
+<div>
+<h6 class="text-lebanon-gold font-serif text-sm mb-6 uppercase tracking-widest">Connect</h6>
+<ul class="space-y-4 text-sm text-white/60">
+<li><a class="hover:text-white transition-colors" href="#">Instagram</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Twitter</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Contact Us</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 mt-10"><p class="text-xs text-white/20">© 2023 Lebanon Discovery. All rights reserved.</p>
+<div class="flex gap-8 text-xs text-white/20">
+<a href="#">Privacy Policy</a>
+<a href="#">Terms of Service</a>
+</div></div>
+</footer>
+<!-- END: Footer -->
+</main>
+<style data-purpose="animations">
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+<script>
+    document.getElementById('searchInput').addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+            const searchTerm = this.value.trim();
+            if (searchTerm) {
+                const wikipediaUrl = `https://ja.wikipedia.org/wiki/特別:検索?search=${encodeURIComponent(searchTerm)}`;
+                window.open(wikipediaUrl, '_blank');
+            }
+        }
+    });
+</script>
+</body></html>

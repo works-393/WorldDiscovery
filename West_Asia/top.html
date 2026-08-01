@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>West Asia Top</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#11d473",
+                        "background-light": "#f6f8f7",
+                        "background-dark": "#102219",
+                        "gold": "#d4af37",
+                        "sand": "#e3c9a6",
+                    },
+                    fontFamily: {
+                        "display": ["Newsreader", "serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .arabesque-pattern {
+            background-color: transparent;
+            background-image: radial-gradient(circle at 2px 2px, rgba(17, 212, 115, 0.1) 1px, transparent 0);
+            background-size: 24px 24px;
+        }
+        .islamic-border {
+            border: 2px solid #d4af37;
+            position: relative;
+        }
+        .islamic-border::before {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            right: -10px;
+            bottom: -10px;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen selection:bg-primary selection:text-white">
+<!-- Header / Nav -->
+<header class="border-b border-primary/20 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md sticky top-0 z-50">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-3xl">star_half</span>
+<h2 class="text-xl font-bold tracking-tight text-slate-900 dark:text-slate-100">West Asia Discovery</h2>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="../index.html">Home</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">History</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Regions</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Architecture</a>
+</nav>
+<div class="flex items-center gap-4">
+<div class="search-container">
+            <label class="search-box flex items-center p-2 rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors cursor-text w-64">
+                <span class="material-symbols-outlined search-icon text-slate-500 dark:text-slate-400">search</span>
+                <input id="searchInput" class="search-input bg-transparent border-none focus:ring-0 text-sm text-slate-900 dark:text-slate-100 placeholder-slate-500 dark:placeholder-slate-400 w-full" placeholder="Wikipedia検索" value=""/>
+            </label>
+</div>
+
+</div>
+</header>
+<main class="relative overflow-hidden">
+<!-- Hero Section -->
+<section class="relative px-6 pt-12 pb-16">
+<div class="absolute inset-0 arabesque-pattern opacity-40"></div>
+<div class="max-w-4xl mx-auto text-center relative z-7"><div class="max-w-[800px] mx-auto">
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 text-primary border border-primary/20 mb-8">
+<span class="material-symbols-outlined text-sm">temple_hindu</span>
+<span class="text-xs font-bold tracking-widest uppercase">The Cradle of Civilization</span>
+</div>
+<h1 class="text-3xl md:text-4xl font-bold mb-8 leading-tight italic">
+                    Explore <span class="text-primary">West Asia</span>
+</h1>
+
+
+</div></div>
+</section>
+<!-- Image Banner -->
+<div class="max-w-7xl mx-auto px-6 mb-24">
+<div class="w-full rounded-2xl overflow-hidden relative group h-[350px]">
+<img alt="Islamic Architecture" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Stunning intricate Islamic dome architecture with gold patterns" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTZDmY9MZXikjsoAE8DAvjB4p8MDEC_KNOlsnahyjXP_Xkjnk28UCWUW2uEl1bhWqCS9KdGx6YTZwm90fUz5qs-plqwpYpL6E9ErfxqO3HaLja2MgJSJZl90KMAkY2xvwGi2izHMXN9RYZ6PyrkkyNWa3vqbS_KFKdO3wNvNAo_PWJ3diewX7G13mbSOiqRd_heLwugGYncRhqHh4C3l7T7pO6YuDQnyapCl3xxqzG6O8saSSUl3NsnwmaGhXIjQL8DDLnjdB8xZo"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent to-transparent"></div>
+<div class="absolute bottom-10 left-10">
+<p class="text-gold text-sm font-bold tracking-widest uppercase mb-2">Featured Destination</p>
+<h3 class="text-2xl md:text-4xl font-bold text-white italic leading-none">The Great Mosque of Isfahan</h3>
+</div>
+</div>
+</div>
+<!-- Countries Grid -->
+<section class="max-w-7xl mx-auto px-6 pb-32">
+<div class="flex items-center justify-between mb-12">
+<div>
+<h2 class="text-2xl md:text-4xl font-bold italic mb-2">Nations of the East</h2>
+<p class="text-slate-500 dark:text-slate-400">Discover the unique heritage of each sovereign state.</p>
+</div>
+<div class="h-px flex-grow mx-8 bg-primary/20 hidden md:block"></div>
+<span class="material-symbols-outlined text-gold text-4xl">mosque</span>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-5 lg:grid-cols-8 gap-4">
+<!-- Country Card Generator - 15 Countries -->
+<a class="group flex flex-col items-center justify-center p-4 bg-slate-50 dark:bg-slate-900/50 rounded-2xl border border-primary/10 hover:border-primary transition-all hover:bg-primary/5" href="Turkey.html" target="_blank" rel="noopener noreferrer">
+<span class="material-symbols-outlined text-3xl text-gold mb-2 transition-transform group-hover:scale-110">fort</span>
+<span class="text-sm font-medium text-slate-900 dark:text-slate-100">Turkey</span>
+</a>
+<a class="group flex flex-col items-center justify-center p-4 bg-slate-50 dark:bg-slate-900/50 rounded-2xl border border-primary/10 hover:border-primary transition-all hover:bg-primary/5" href="Syria.html" target="_blank" rel="noopener noreferrer">
+<span class="material-symbols-outlined text-3xl text-gold mb-2 transition-transform group-hover:scale-110">castle</span>
+<span class="text-sm font-medium text-slate-900 dark:text-slate-100">Syria</span>
+</a>
+<a class="group flex flex-col items-center justify-center p-4 bg-slate-50 dark:bg-slate-900/50 rounded-2xl border border-primary/10 hover:border-primary transition-all hover:bg-primary/5" href="Lebanon.html" target="_blank" rel="noopener noreferrer">
+<span class="material-symbols-outlined text-3xl text-gold mb-2 transition-transform group-hover:scale-110">nature</span>
+<span class="text-sm font-medium text-slate-900 dark:text-slate-100">Lebanon</span>
+</a>
+<a class="group flex flex-col items-center justify-center p-4 bg-slate-50 dark:bg-slate-900/50 rounded-2xl border border-primary/10 hover:border-primary transition-all hover:bg-primary/5" href="Israel.html" target="_blank" rel="noopener noreferrer">
+<span class="material-symbols-outlined text-3xl text-gold mb-2 transition-transform group-hover:scale-110">temple_buddhist</span>
+<span class="text-sm font-medium text-slate-900 dark:text-slate-100">Israel</span>
+</a>
+<a class="group flex flex-col items-center justify-center p-4 bg-slate-50 dark:bg-slate-900/50 rounded-2xl border border-primary/10 hover:border-primary transition-all hover:bg-primary/5" href="Jordan.html" target="_blank" rel="noopener noreferrer">
+<span class="material-symbols-outlined text-3xl text-gold mb-2 transition-transform group-hover:scale-110">landscape</span>
+<span class="text-sm font-medium text-slate-900 dark:text-slate-100">Jordan</span>
+</a>
+<a class="group flex flex-col items-center justify-center p-4 bg-slate-50 dark:bg-slate-900/50 rounded-2xl border border-primary/10 hover:border-primary transition-all hover:bg-primary/5" href="Iraq.html" target="_blank" rel="noopener noreferrer">
+<span class="material-symbols-outlined text-3xl text-gold mb-2 transition-transform group-hover:scale-110">waves</span>
+<span class="text-sm font-medium text-slate-900 dark:text-slate-100">Iraq</span>
+</a>
+<a class="group flex flex-col items-center justify-center p-4 bg-slate-50 dark:bg-slate-900/50 rounded-2xl border border-primary/10 hover:border-primary transition-all hover:bg-primary/5" href="Iran.html" target="_blank" rel="noopener noreferrer">
+<span class="material-symbols-outlined text-3xl text-gold mb-2 transition-transform group-hover:scale-110">brightness_high</span>
+<span class="text-sm font-medium text-slate-900 dark:text-slate-100">Iran</span>
+</a>
+<a class="group flex flex-col items-center justify-center p-4 bg-slate-50 dark:bg-slate-900/50 rounded-2xl border border-primary/10 hover:border-primary transition-all hover:bg-primary/5" href="Kuwait.html" target="_blank" rel="noopener noreferrer">
+<span class="material-symbols-outlined text-3xl text-gold mb-2 transition-transform group-hover:scale-110">apartment</span>
+<span class="text-sm font-medium text-slate-900 dark:text-slate-100">Kuwait</span>
+</a>
+<a class="group flex flex-col items-center justify-center p-4 bg-slate-50 dark:bg-slate-900/50 rounded-2xl border border-primary/10 hover:border-primary transition-all hover:bg-primary/5" href="Saudi_Arabia.html" target="_blank" rel="noopener noreferrer">
+<span class="material-symbols-outlined text-3xl text-gold mb-2 transition-transform group-hover:scale-110">mp</span>
+<span class="text-sm font-medium text-slate-900 dark:text-slate-100">Saudi Arabia</span>
+</a>
+<a class="group flex flex-col items-center justify-center p-4 bg-slate-50 dark:bg-slate-900/50 rounded-2xl border border-primary/10 hover:border-primary transition-all hover:bg-primary/5" href="Qatar.html" target="_blank" rel="noopener noreferrer">
+<span class="material-symbols-outlined text-3xl text-gold mb-2 transition-transform group-hover:scale-110">diamond</span>
+<span class="text-sm font-medium text-slate-900 dark:text-slate-100">Qatar</span>
+</a>
+<a class="group flex flex-col items-center justify-center p-4 bg-slate-50 dark:bg-slate-900/50 rounded-2xl border border-primary/10 hover:border-primary transition-all hover:bg-primary/5" href="UAE.html" target="_blank" rel="noopener noreferrer">
+<span class="material-symbols-outlined text-3xl text-gold mb-2 transition-transform group-hover:scale-110">location_city</span>
+<span class="text-sm font-medium text-slate-900 dark:text-slate-100">United Arab Emirates</span>
+</a>
+<a class="group flex flex-col items-center justify-center p-4 bg-slate-50 dark:bg-slate-900/50 rounded-2xl border border-primary/10 hover:border-primary transition-all hover:bg-primary/5" href="Palestine.html" target="_blank" rel="noopener noreferrer">
+<span class="material-symbols-outlined text-3xl text-gold mb-2 transition-transform group-hover:scale-110">water_drop</span>
+<span class="text-sm font-medium text-slate-900 dark:text-slate-100">Palestine</span>
+</a>
+<a class="group flex flex-col items-center justify-center p-4 bg-slate-50 dark:bg-slate-900/50 rounded-2xl border border-primary/10 hover:border-primary transition-all hover:bg-primary/5" href="Oman.html" target="_blank" rel="noopener noreferrer">
+<span class="material-symbols-outlined text-3xl text-gold mb-2 transition-transform group-hover:scale-110">sailing</span>
+<span class="text-sm font-medium text-slate-900 dark:text-slate-100">Oman</span>
+</a>
+<a class="group flex flex-col items-center justify-center p-4 bg-slate-50 dark:bg-slate-900/50 rounded-2xl border border-primary/10 hover:border-primary transition-all hover:bg-primary/5" href="Yemen.html" target="_blank" rel="noopener noreferrer">
+<span class="material-symbols-outlined text-3xl text-gold mb-2 transition-transform group-hover:scale-110">terrain</span>
+<span class="text-sm font-medium text-slate-900 dark:text-slate-100">Yemen</span>
+</a>
+<a class="group flex flex-col items-center justify-center p-4 bg-slate-50 dark:bg-slate-900/50 rounded-2xl border border-primary/10 hover:border-primary transition-all hover:bg-primary/5" href="Bahrain.html" target="_blank" rel="noopener noreferrer">
+<span class="material-symbols-outlined text-3xl text-gold mb-2 transition-transform group-hover:scale-110">scuba_diving</span>
+<span class="text-sm font-medium text-slate-900 dark:text-slate-100">Bahrain</span>
+</a>
+</div>
+</section>
+
+
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-900 text-slate-300 py-10 md:py-20 px-6 mt-12">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12">
+<div class="col-span-1 md:col-span-2">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-primary text-4xl">star_half</span>
+<h2 class="text-2xl font-bold text-white italic tracking-tight">West Asia Discovery</h2>
+</div>
+<p class="text-lg max-w-sm mb-8 leading-relaxed italic">
+                    A dedicated platform for exploring the cultural wealth and historical depth of West Asian nations.
+                </p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-primary transition-colors" href="#"><span class="material-symbols-outlined text-lg">public</span></a>
+<a class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-primary transition-colors" href="#"><span class="material-symbols-outlined text-lg">mail</span></a>
+<a class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-primary transition-colors" href="#"><span class="material-symbols-outlined text-lg">share</span></a>
+</div>
+</div>
+<div>
+<h4 class="text-white font-bold mb-6 uppercase tracking-widest text-sm">Quick Links</h4>
+<ul class="space-y-4 text-sm font-medium">
+<li><a class="hover:text-primary transition-colors" href="#">Cultural Heritage</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Historical Sites</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Modern Wonders</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Travel Safety</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-bold mb-6 uppercase tracking-widest text-sm">Newsletter</h4>
+<p class="text-sm mb-4">Receive monthly insights into the region's hidden gems.</p>
+<div class="flex h-12">
+<input class="bg-slate-800 border-none rounded-l-lg px-4 text-sm focus:ring-1 focus:ring-primary flex-grow" placeholder="Email address" type="email"/>
+<button class="bg-primary text-background-dark font-bold px-4 rounded-r-lg text-sm">Join</button>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto border-t border-slate-800 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-bold uppercase tracking-widest text-slate-500">
+<p>© 2024 West Asia Discovery. All rights reserved.</p>
+<div class="flex gap-8">
+<a href="#">Privacy Policy</a>
+<a href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+<script>
+    document.getElementById('searchInput').addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+            const searchTerm = this.value.trim();
+            if (searchTerm) {
+                const wikipediaUrl = `https://ja.wikipedia.org/wiki/特別:検索?search=${encodeURIComponent(searchTerm)}`;
+                window.open(wikipediaUrl, '_blank');
+            }
+        }
+    });
+</script>
+</body></html>

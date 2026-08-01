@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Turkey Discovery | West Asia Discovery</title>
+<!-- Tailwind CSS v3 CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Google Fonts: Newsreader for serif titles -->
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@1,6..72,400;1,6..72,600;1,6..72,700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              dark: '#102219',
+              emerald: '#11d473',
+              gold: '#d4af37',
+              sand: '#e3c9a6',
+              deep: '#0a1610'
+            }
+          },
+          fontFamily: {
+            serif: ['Newsreader', 'serif'],
+            sans: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+<style data-purpose="custom-layout">
+    body {
+      background-color: #102219;
+      color: #e3c9a6;
+      font-family: 'Inter', sans-serif;
+    }
+    
+    /* Arabesque Pattern Decoration */
+    .arabesque-pattern {
+      background-image: radial-gradient(circle at 2px 2px, rgba(17, 212, 115, 0.05) 1px, transparent 0);
+      background-size: 40px 40px;
+    }
+
+    .hero-gradient {
+      background: linear-gradient(to bottom, rgba(16, 34, 25, 0.4), rgba(16, 34, 25, 1));
+    }
+
+    .glass-card {
+      background: rgba(255, 255, 255, 0.03);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+  </style>
+</head>
+<body class="arabesque-pattern min-h-screen">
+<!-- BEGIN: MainHeader -->
+<header class="sticky top-0 z-50 bg-brand-dark/90 backdrop-blur-md border-b border-white/5" data-purpose="site-navigation">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-20">
+<!-- Logo -->
+<div class="flex items-center gap-2">
+<svg class="w-8 h-8 text-brand-emerald" fill="currentColor" viewbox="0 0 24 24">
+<path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"></path>
+</svg>
+<a class="flex items-center gap-3 group" href="#">
+<span class="text-xl font-bold tracking-tight text-white">Turkey Discovery</span>
+</a>
+</div>
+<!-- Navigation -->
+<nav class="hidden md:flex space-x-8 text-sm font-medium">
+<a class="text-brand-sand hover:text-brand-emerald transition-colors" href="#history">Landmarks</a>
+<a class="text-brand-sand hover:text-brand-emerald transition-colors" href="#cities">Cities</a>
+<a class="text-brand-sand hover:text-brand-emerald transition-colors" href="#cuisine">Cuisine</a>
+<a class="text-brand-sand hover:text-brand-emerald transition-colors" href="#timeline">Hystory</a>
+</nav>
+<!-- Search Bar -->
+<div class="relative hidden lg:block" data-purpose="search-container">
+<span class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+<svg class="w-4 h-4 text-brand-sand/50" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</span>
+<input id="searchInput" class="bg-white/5 border-white/10 text-white pl-10 pr-4 py-2 rounded-lg focus:ring-brand-emerald focus:border-brand-emerald w-64 text-sm" placeholder="Wikipedia検索" type="text"/>
+</div>
+<!-- Mobile Menu Button (Icon only) -->
+<div class="md:hidden">
+<button class="text-brand-sand p-2">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-width="2"></path></svg>
+</button>
+</div>
+</div>
+</div>
+</header>
+<!-- END: MainHeader -->
+<!-- BEGIN: HeroSection -->
+<section class="relative h-[70vh] flex items-center justify-center overflow-hidden" data-purpose="hero-banner">
+<!-- Hero Background Image -->
+<div class="absolute inset-0 z-0">
+<img alt="Bosphorus Bridge Istanbul" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4RsHPA1XiCUF7nztdQCkcO4tRgT698kSKBvlgP3EB9yGQfQnyE7u_yFh372U_U22thMndTsU3Zo3b-wNIzQGxZqmYBhF2TpmvyyYzuZ8A0yUdNZHWSMzjyUxGB_WEUoMbMngWMBjjr4XvGcVq6CyAdrdP_tbWe83Ujbdw1F3vFxH6ff72ttXcjJwNJ033DTSbxvmv6iDs-jL10ETZyAU9osu2_y9BtlbqA_LJYgyqPKflLcxBRQXsx4xMnaN96MfNsE9LqDTbx1Z0"/>
+<div class="absolute inset-0 hero-gradient"></div>
+</div>
+<div class="relative z-10 text-center px-4">
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-emerald/10 border border-brand-emerald/20 text-brand-emerald text-xs font-bold tracking-widest uppercase mb-6">
+<svg class="w-3 h-3" fill="currentColor" viewbox="0 0 20 20"><path d="M10.394 2.827a1 1 0 00-.788 0l-7 3a1 1 0 000 1.846l7 3a1 1 0 00.788 0l7-3a1 1 0 000-1.846l-7-3zM3.108 8.175l6.892 2.954 6.892-2.954-6.892-2.954-6.892 2.954zm16.082 2.535a1 1 0 00-1.19.851 1 1 0 101.973.324l.01-.063a1 1 0 00-.793-1.112zM3 12.064l6.892 2.954 6.892-2.954-6.892-2.954-6.892 2.954z"></path></svg>
+        The Cradle of Civilization
+      </div>
+<h1 class="text-5xl md:text-4xl font-serif italic text-white mb-6">
+        Turkey: <span class="text-brand-emerald">Where East Meets West</span>
+</h1>
+<p class="max-w-2xl mx-auto text-brand-sand/80 text-lg leading-relaxed">
+        Discover the timeless allure of Anatolia, a land where empires rose and fell, leaving behind a tapestry of breathtaking architecture and vibrant heritage.
+      </p>
+</div>
+</section>
+<!-- END: HeroSection -->
+<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+<!-- BEGIN: HistoricalLandmarks -->
+<section class="mb-32" id="history">
+<div class="flex justify-between items-end mb-12">
+<div>
+<h2 class="text-4xl font-serif italic text-white mb-2">Historical Landmarks</h2>
+<div class="h-1 w-24 bg-brand-gold"></div>
+</div>
+<a class="text-brand-emerald text-sm font-semibold hover:underline" href="#">View all sites →</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Card 1: Hagia Sophia -->
+<article class="glass-card rounded-2xl overflow-hidden group">
+<div class="h-64 overflow-hidden">
+<img alt="Hagia Sophia" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXNB6p_ZWbcrbzm-ZfJXOEIuUJxI9LXBUkcVLhIC9VYfjpVRir-MfKlRRSRcFpUHa-hcqlrY8rN1ewYERqY7KJgeXARnnMdlC9LtAB7i-1jZkY5Q8fRWgwfiGOZucs6dq741XU91pTso2j7TPXaBCejIgc_SlMvxdT2O9vN3LsnENNHiBlXe_YlUMtaovMv5DD2YIBiIMlg_5-QqwbQsVrwbjtVdS4DEihHKW6bqDdxDEAFWpmFjEHEZpRdxFKhm6fr5IMuaaU2f0x"/>
+</div>
+<div class="p-6">
+<span class="text-brand-gold text-[10px] font-bold uppercase tracking-widest mb-2 block">Istanbul</span>
+<h3 class="text-xl font-serif italic text-white mb-3">Hagia Sophia</h3>
+<p class="text-brand-sand/70 text-sm leading-relaxed mb-4">A marvel of Byzantine architecture, this former cathedral and mosque represents the intersection of religions.</p>
+<button class="text-brand-emerald text-xs font-bold uppercase tracking-wider">Explore History</button>
+</div>
+</article>
+<!-- Card 2: Ephesus -->
+<article class="glass-card rounded-2xl overflow-hidden group">
+<div class="h-64 overflow-hidden">
+<img alt="Ephesus" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAN6h1Gdk_a_s8ldBQEETvVP_t80AW4AydE5yy6-90cxVlC_MFvo8UrWzTg-DioMFVyzZh7JcWnDWMg6YYEqE2b04Q7zndSSkTMMRReK25cmaKuBq1r-bpMD9jXDMzEPiMpADzlKBB8iwwZGOip0tXadk_xyWEnUbZnLdFtYNhd3uO8MQkwmNk4jJ0Dy8Jx23yllVJlawtt-Wz-gXcdq5OeiUI9ijXSWhjdEpmJM--uvDd5xDOJjFYU_bHxaicYfx3mJc0nwMAUlnjC"/>
+</div>
+<div class="p-6">
+<span class="text-brand-gold text-[10px] font-bold uppercase tracking-widest mb-2 block">Selçuk</span>
+<h3 class="text-xl font-serif italic text-white mb-3">Ancient Ephesus</h3>
+<p class="text-brand-sand/70 text-sm leading-relaxed mb-4">Walk the marble streets of one of the best-preserved Greek and Roman cities in the Mediterranean.</p>
+<button class="text-brand-emerald text-xs font-bold uppercase tracking-wider">Explore History</button>
+</div>
+</article>
+<!-- Card 3: Cappadocia -->
+<article class="glass-card rounded-2xl overflow-hidden group">
+<div class="h-64 overflow-hidden">
+<img alt="Cappadocia" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBF_3G5_HzEGalLd1O2vsRbhrLkgF8V9Vcvrl9MXRqmJUWtwiWpob9gDv67VXZud84_5fEszwvb_0BQrxmoC_2KYbmrPDvtydMA6pecUvt3H7odbloaHTKzOrS484gxAHI60QzWrQpdF2yqP8XdaI_FDASakX9rvt6GKTpysDo8g6DJAR4PMacg_qOg5enRXJ6-jqA9ALmFtQCnbaifz9DJeRIVH4lkCpqjLD7cdpYD06iD32sMAd2_aJuPgZXQDvBSEGPmGSIzFlWH"/>
+</div>
+<div class="p-6">
+<span class="text-brand-gold text-[10px] font-bold uppercase tracking-widest mb-2 block">Nevşehir</span>
+<h3 class="text-xl font-serif italic text-white mb-3">Fairy Chimneys</h3>
+<p class="text-brand-sand/70 text-sm leading-relaxed mb-4">Discover subterranean cities and unique geological formations carved by nature and humans over centuries.</p>
+<button class="text-brand-emerald text-xs font-bold uppercase tracking-wider">Explore History</button>
+</div>
+</article>
+</div>
+</section>
+<!-- END: HistoricalLandmarks -->
+<!-- BEGIN: VibrantCities -->
+<section class="mb-32 bg-brand-deep rounded-3xl overflow-hidden flex flex-col lg:flex-row" id="cities">
+<div class="lg:w-1/2 p-12 flex flex-col justify-center">
+<h2 class="text-4xl font-serif italic text-white mb-8">Vibrant Cities</h2>
+<div class="space-y-10">
+<div class="flex gap-6 items-start">
+<span class="text-brand-emerald font-serif italic text-2xl">01</span>
+<div>
+<h4 class="text-white font-bold mb-1">Istanbul</h4>
+<p class="text-brand-sand/60 text-sm">The only city in the world spanning two continents, offering an endless mix of culture, food, and history.</p>
+</div>
+</div>
+<div class="flex gap-6 items-start">
+<span class="text-brand-emerald font-serif italic text-2xl">02</span>
+<div>
+<h4 class="text-white font-bold mb-1">Antalya</h4>
+<p class="text-brand-sand/60 text-sm">The gateway to the Turkish Riviera, famous for its turquoise waters and the historic old town, Kaleiçi.</p>
+</div>
+</div>
+<div class="flex gap-6 items-start">
+<span class="text-brand-emerald font-serif italic text-2xl">03</span>
+<div>
+<h4 class="text-white font-bold mb-1">Bodrum</h4>
+<p class="text-brand-sand/60 text-sm">A chic coastal escape featuring the Mausoleum at Halicarnassus and a bustling harbor of sailboats.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:w-1/2 h-96 lg:h-auto">
+<img alt="Istanbul cityscape" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANpnYx08JREAHY0NRVZjcteh842ubUMw9WyqqOVp-DK7tme3s4ExxYGqu9JovENadAbVv5IPYjK3QWB8wPo5Ohf2DgjAB9vPz0IsZZTO1nCh460txsnp0lcJR_wVpruzADh9fyzS-nop0ul-M9VOo32kIIGXZM8IavewG20Xm01NABGpkIgYvhqdgVShz3mq1ilkjtKDbawwDdGe7mkiaR_qLa8cjhmLS2NFocju1N0wJHKI3fXJDue1__YidA5v706igZdjSWLHY2"/>
+</div>
+</section>
+<!-- END: VibrantCities -->
+<!-- BEGIN: TurkishCuisine -->
+<section class="mb-20" id="cuisine">
+<div class="text-center mb-16">
+<h2 class="text-5xl font-serif italic text-white mb-4">A Taste of Anatolia</h2>
+<p class="text-brand-gold font-medium tracking-widest uppercase text-xs">Explore Turkish Cuisine</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+<!-- Cuisine Item 1 -->
+<div class="text-center group">
+<div class="w-48 h-48 mx-auto rounded-full overflow-hidden mb-6 border-4 border-brand-emerald/20 p-2">
+<img alt="Turkish Kebab" class="w-full h-full object-cover rounded-full group-hover:scale-110 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVL0yQiMpgHC9MopR8q6YS5XeYOfxYvBhRWVWL8VUeD3g8T-638rMa9ZrodVFZdlmDJBiKHt_qazjiYaR6fK0yhKHkPbPYek-GkmEyuEudsFOZivb5wPXzl9X-LgSEK1VGVvCfHRGJc20EDUyGo0ab19N6bAnK4mrYAuPpFp6m_ijv1yLPYoDyxzu3-2t47vH5YqUkJVKQAjjb4Upq_iCitEXxvBT3FaxbjqsDHwko_apBiOuZwGKjdw8nJMnJqBI0SLh7EBS7CPI_"/>
+</div>
+<h3 class="text-2xl font-serif italic text-white mb-2">Traditional Kebab</h3>
+<p class="text-brand-sand/70 text-sm">Masterfully grilled meats seasoned with local herbs, served with fire-roasted peppers and flatbread.</p>
+</div>
+<!-- Cuisine Item 2 -->
+<div class="text-center group">
+<div class="w-48 h-48 mx-auto rounded-full overflow-hidden mb-6 border-4 border-brand-gold/20 p-2">
+<img alt="Baklava" class="w-full h-full object-cover rounded-full group-hover:scale-110 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrEs58ghMtN7MPOGHYFnxUO2w_zBYFN42gMv7GJoFwWiLia7_eTVTfH2cBUSj9sO0W56lMXc3__u6j1GSzxNQRhvApIml9eQUe3C46ZnUs1_O3pEp6Sci54OkXtYdza_OdvHfWqHNh8VzLAvfy1vLCtrV_NHpyVA9q9J5GIwtxVAgrvZaUNS0IsBu9VAsdD3gYwdqkUNUSiF4LxG9W_TKoLAZWff2jdQ2DjYxjEXyPPhw8SbqrFUVq_-FvTOcg4vOt5N8dUjxi0W-a"/>
+</div>
+<h3 class="text-2xl font-serif italic text-white mb-2">Pistachio Baklava</h3>
+<p class="text-brand-sand/70 text-sm">Paper-thin layers of filo pastry, honey, and crushed pistachios - a sweet legacy of the Ottoman palaces.</p>
+</div>
+<!-- Cuisine Item 3 -->
+<div class="text-center group">
+<div class="w-48 h-48 mx-auto rounded-full overflow-hidden mb-6 border-4 border-brand-emerald/20 p-2">
+<img alt="Turkish Tea" class="w-full h-full object-cover rounded-full group-hover:scale-110 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_OSjpYAo_ecZSyEuRRMQ3DE8ni6BBjhTw1ovhfDAk39TJsSRcC0bfP0s_pqp3YUM3liEc0yZweWYvCuHNo0Wd-v9ACowqkYRQlp33JvubahV1QYX8JZGm1wEkb8U1xXcFnLXtIDv5N2fQj4QPX-HQxhzpN2Y61aXxk6hf-wDtdhsCdYuTtvScnizHy7qOZuA7TD189VS9XFXuZLE3RZh8cQjMTF3A-EdbZEqD493gnOXwMoFqh2YM_y-pGbOIRiM4rMWEFUiGxDrE"/>
+</div>
+<h3 class="text-2xl font-serif italic text-white mb-2">Turkish Cay</h3>
+<p class="text-brand-sand/70 text-sm">Dark mahogany tea served in tulip-shaped glasses, symbolizing the heart of Turkish hospitality.</p>
+</div>
+</div>
+</section>
+<!-- END: TurkishCuisine -->
+<!-- BEGIN: HistoricalTimeline -->
+<section class="mb-20" id="timeline">
+<div class="max-w-5xl mx-auto"><div class="text-center mb-12">
+<h2 class="text-B-purple-dark font-serif text-sm mb-2 uppercase tracking-[0.3em]">トルコ共和国の歴史</h2>
+<h3 class="text-3xl text-brand-emerald md:text-4xl font-serif">Republic of Türkiye</h3>
+<p class="text-xs text-B-purple-dark max-w-2xl mx-auto">Fascinated by how beautifully the Roman, Byzantine, and Ottoman histories blend together in Türkiye. Standing in places that have witnessed the rise and fall of great civilizations leaves me completely speechless. It is incredible to see how the past still breathes so vibrantly in the modern world. </p>
+</div>
+<div class="space-y-12 max-w-5xl mx-auto">
+<!-- Ancient Era -->
+<div class="relative pl-8 border-l border-brand-emerald/20">
+<span class="absolute -left-3 top-0 w-6 h-6 rounded-full bg-brand-dark border-2 border-brand-emerald flex items-center justify-center">
+<div class="w-2 h-2 rounded-full bg-brand-emerald"></div>
+</span>
+<h3 class="text-3xl text-brand-emerald font-serif italic mb-6">古代</h3>
+<div class="grid gap-6">
+<div class="glass-card p-6 rounded-xl hover:bg-white/5 transition-colors">
+<h4 class="text-xl font-bold text-white mb-1">ヒッタイト帝国 <span class="text-brand-sand/60 text-sm font-normal ml-2 block md:inline">（紀元前1650年頃 - 紀元前1200年頃）</span></h4>
+<p class="text-brand-sand/80 text-sm leading-relaxed">アナトリアを中心に栄えた鉄器時代の強力な王国で、軍事力と高度な文明で知られています。</p>
+</div>
+<div class="glass-card p-6 rounded-xl hover:bg-white/5 transition-colors">
+<h4 class="text-xl font-bold text-white mb-1">フリギア王国 <span class="text-brand-sand/60 text-sm font-normal ml-2 block md:inline">（紀元前1200年頃 - 紀元前700年頃）</span></h4>
+<p class="text-brand-sand/80 text-sm leading-relaxed">ミダス王の伝説で知られる王国で、豊かな文化と芸術を持っていました。</p>
+</div>
+<div class="glass-card p-6 rounded-xl hover:bg-white/5 transition-colors">
+<h4 class="text-xl font-bold text-white mb-1">リュディア王国 <span class="text-brand-sand/60 text-sm font-normal ml-2 block md:inline">（紀元前7世紀 - 紀元前546年）</span></h4>
+<p class="text-brand-sand/80 text-sm leading-relaxed">世界初の硬貨を導入した王国で、商業と経済の発展を促進しました。</p>
+</div>
+<div class="glass-card p-6 rounded-xl hover:bg-white/5 transition-colors">
+<h4 class="text-xl font-bold text-white mb-1">アケメネス朝ペルシア <span class="text-brand-sand/60 text-sm font-normal ml-2 block md:inline">（紀元前546年 - 紀元前330年）</span></h4>
+<p class="text-brand-sand/80 text-sm leading-relaxed">ペルシャ帝国の一部として統治され、文化的影響を受けました。</p>
+</div>
+</div>
+</div>
+<!-- Medieval Era -->
+<div class="relative pl-8 border-l border-brand-emerald/20">
+<span class="absolute -left-3 top-0 w-6 h-6 rounded-full bg-brand-dark border-2 border-brand-emerald flex items-center justify-center">
+<div class="w-2 h-2 rounded-full bg-brand-emerald"></div>
+</span>
+<h3 class="text-3xl text-brand-emerald font-serif italic mb-6">中世</h3>
+<div class="grid gap-6">
+<div class="glass-card p-6 rounded-xl hover:bg-white/5 transition-colors">
+<h4 class="text-xl font-bold text-white mb-1">東ローマ帝国（ビザンツ帝国） <span class="text-brand-sand/60 text-sm font-normal ml-2 block md:inline">（330年 - 1453年）</span></h4>
+<p class="text-brand-sand/80 text-sm leading-relaxed">コンスタンティノープル（現在のイスタンブール）が首都となり、キリスト教文化の中心地として栄えました。</p>
+</div>
+<div class="glass-card p-6 rounded-xl hover:bg-white/5 transition-colors">
+<h4 class="text-xl font-bold text-white mb-1">セルジューク朝 <span class="text-brand-sand/60 text-sm font-normal ml-2 block md:inline">（1037年 - 1194年）</span></h4>
+<p class="text-brand-sand/80 text-sm leading-relaxed">トルコ系民族によるイスラム王朝で、アナトリアを支配し、トルコ化の始まりとなりました。</p>
+</div>
+<div class="glass-card p-6 rounded-xl hover:bg-white/5 transition-colors">
+<h4 class="text-xl font-bold text-white mb-1">ルーム・セルジューク朝 <span class="text-brand-sand/60 text-sm font-normal ml-2 block md:inline">（1077年 - 1307年）</span></h4>
+<p class="text-brand-sand/80 text-sm leading-relaxed">セルジューク朝の後継王朝で、アナトリアを中心に繁栄しました。</p>
+</div>
+</div>
+</div>
+<!-- Modern Era -->
+<div class="relative pl-8 border-l border-brand-emerald/20">
+<span class="absolute -left-3 top-0 w-6 h-6 rounded-full bg-brand-dark border-2 border-brand-emerald flex items-center justify-center">
+<div class="w-2 h-2 rounded-full bg-brand-emerald"></div>
+</span>
+<h3 class="text-3xl text-brand-emerald font-serif italic mb-6">近代</h3>
+<div class="grid gap-6">
+<div class="glass-card p-6 rounded-xl hover:bg-white/5 transition-colors">
+<h4 class="text-xl font-bold text-white mb-1">オスマン帝国 <span class="text-brand-sand/60 text-sm font-normal ml-2 block md:inline">（1299年 - 1922年）</span></h4>
+<p class="text-brand-sand/80 text-sm leading-relaxed">トルコの歴史で最も重要な王朝であり、600年以上にわたり広大な領土を支配しました。最盛期にはヨーロッパ、アジア、アフリカにまたがる大帝国となりました。</p>
+</div>
+</div>
+</div>
+<!-- Late Modern / Contemporary -->
+<div class="relative pl-8 border-l border-brand-emerald/20">
+<span class="absolute -left-3 top-0 w-6 h-6 rounded-full bg-brand-dark border-2 border-brand-emerald flex items-center justify-center">
+<div class="w-2 h-2 rounded-full bg-brand-emerald"></div>
+</span>
+<h3 class="text-3xl text-brand-emerald font-serif italic mb-6">近現代・現代</h3>
+<div class="grid gap-6">
+<div class="glass-card p-6 rounded-xl hover:bg-white/5 transition-colors">
+<h4 class="text-xl font-bold text-white mb-1">トルコ革命とトルコ共和国の成立 <span class="text-brand-sand/60 text-sm font-normal ml-2 block md:inline">（1923年）</span></h4>
+<p class="text-brand-sand/80 text-sm leading-relaxed">ムスタファ・ケマル・アタテュルクの指導のもと、オスマン帝国が解体され、世俗主義を基盤とするトルコ共和国が設立されました。</p>
+</div>
+<div class="glass-card p-6 rounded-xl hover:bg-white/5 transition-colors">
+<h4 class="text-xl font-bold text-white mb-1">トルコ共和国 <span class="text-brand-sand/60 text-sm font-normal ml-2 block md:inline">（1923年 - 現在）</span></h4>
+<p class="text-brand-sand/80 text-sm leading-relaxed">現在は共和制国家として、経済発展と国際的な影響力を強化しています。</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: HistoricalTimeline -->
+</main>
+<!-- BEGIN: Footer -->
+<footer class="bg-brand-deep border-t border-white/5 py-16" data-purpose="site-footer">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+<div class="col-span-1 md:col-span-2">
+<div class="flex items-center gap-2 mb-6">
+<svg class="w-6 h-6 text-brand-emerald" fill="currentColor" viewbox="0 0 24 24">
+<path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"></path>
+</svg>
+<span class="text-lg font-bold text-white uppercase tracking-tighter">West Asia Discovery</span>
+</div>
+<p class="text-brand-sand/50 text-sm max-w-sm mb-6">
+            Dedicated to documenting and celebrating the rich cultural tapestry, historical depth, and architectural wonders of the West Asian region.
+          </p>
+<div class="flex space-x-4">
+<!-- Social Icons Placeholders -->
+<a class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-brand-sand hover:bg-brand-emerald hover:text-brand-dark transition-all" href="#">
+<svg class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg>
+</a>
+<a class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-brand-sand hover:bg-brand-emerald hover:text-brand-dark transition-all" href="#">
+<svg class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.332 3.608 1.308.975.975 1.245 2.242 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.063 1.366-.333 2.633-1.308 3.608-.975.975-2.242 1.245-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.063-2.633-.333-3.608-1.308-.975-.975-1.245-2.242-1.308-3.608-.058-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85c.062-1.366.332-2.633 1.308-3.608.975-.975 2.242-1.245 3.608-1.308 1.266-.058 1.646-.07 4.85-.07zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+</a>
+</div>
+</div>
+<div>
+<h5 class="text-white font-bold mb-6 text-sm">Navigation</h5>
+<ul class="space-y-4 text-brand-sand/60 text-sm">
+<li><a class="hover:text-brand-emerald" href="#history">Landmarks</a></li>
+<li><a class="hover:text-brand-emerald" href="#cities">Cities</a></li>
+<li><a class="hover:text-brand-emerald" href="#cuisine">Cuisine</a></li>
+<li><a class="hover:text-brand-emerald" href="#timeline">Hystory</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-white font-bold mb-6 text-sm">Connect</h5>
+<ul class="space-y-4 text-brand-sand/60 text-sm">
+<li><a class="hover:text-brand-emerald" href="#">Instagram</a></li>
+<li><a class="hover:text-brand-emerald" href="#">Twitter</a></li>
+<li><a class="hover:text-brand-emerald" href="#">Contact Us</a></li>
+</ul>
+</div>
+</div>
+<div class="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-brand-sand/30">
+<p>© 2023 West Asia Discovery. All rights reserved.</p>
+<p class="mt-4 md:mt-0 italic font-serif">Bridging cultures across the ages.</p>
+</div>
+</div>
+</footer>
+<!-- END: Footer -->
+<script>
+    document.getElementById('searchInput').addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+            const searchTerm = this.value.trim();
+            if (searchTerm) {
+                const wikipediaUrl = `https://ja.wikipedia.org/wiki/特別:検索?search=${encodeURIComponent(searchTerm)}`;
+                window.open(wikipediaUrl, '_blank');
+            }
+        }
+    });
+</script>
+</body></html>

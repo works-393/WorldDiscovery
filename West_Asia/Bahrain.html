@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Bahrain Discovery | Luxury Travel Experience</title>
+<meta content="Explore the ancient landmarks, vibrant cities, and rich history of Lebanon." name="description"/>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'lebanon-dark': '#102219',
+            'lebanon-gold': '#C5A059',
+            'lebanon-green': '#2D5A27',
+            "primary": "#144bb8",
+            "background-light": "#f6f6f8",
+            "background-dark": "#111621",
+            // 追加
+            "al-adaam": "#8D1B3D",
+            "qatar-gold": "#C5A059",  
+            "e-green": "#50C878",
+            "B-purple-dark": "#006400",
+            "qatar-gold": "#C5A059",
+            "qatar-blue": "#1e3a8a",
+            "oman-blue": "#003153",
+            "yemen-red": "#CE1126",
+            "Bahrain-red": "#DA291C",
+            "B-purple-dark": "#632276",
+            "B-purple": "#D1A7E2",
+            "B-yellow": "#ffff66",
+             },
+          fontFamily: {
+            serif: ['Newsreader', 'serif'],
+            sans: ['Inter', 'sans-serif'],
+          },
+          backgroundImage: {
+            'Bahrain-hero': "url('img/Bahrain_bg.jpg')",
+          }
+        }
+      }
+    }
+  </script>
+<style data-purpose="custom-styling">body {
+    background-color: #f0f9ff;
+    color: #1e293b
+    }
+.glass-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 1rem
+    }
+.text-balance {
+    text-wrap: balance
+    }
+.section-spacing {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem
+    }
+/* Pattern Overlay */
+.bg-pattern {
+    background-image: url(img/Bahrain_bg.jpg);
+    opacity: 0.15
+    }</style>
+</head>
+<body class="font-sans antialiased overflow-x-hidden">
+<!-- BEGIN: Background Texture -->
+<div class="fixed inset-0 bg-pattern pointer-events-none z-0"></div>
+<!-- END: Background Texture -->
+<!-- BEGIN: MainHeader -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-B-purple-dark backdrop-blur-md border-b border-white/5">
+<nav class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<!-- Logo -->
+<a class="flex items-center gap-3 group" href="#">
+<div class="text-white-500 transform group-hover:scale-110 transition-transform">
+<svg fill="none" height="32" viewbox="0 0 24 24" width="32" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背後の交差する伝統的なダウ船の「帆」のライン -->
+  <path d="M4 20L12 4L20 20" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/>
+  <path d="M12 4V20" stroke="white" stroke-width="1.2" stroke-linecap="round" opacity="0.4"/>
+  
+  <!-- 中央：バーレーン国旗を象徴する5つのジグザグ（ギザギザ） -->
+  <path d="M8 8L10 10L12 8L14 10L16 8" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- 下部：波または船の船体をイメージした曲線 -->
+  <path d="M5 17C8 19 16 19 19 17" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+  
+  <!-- 中央下：バーレーンの誇りである「真珠」 -->
+  <circle cx="12" cy="14.5" r="2" fill="white"/>
+  <circle cx="12" cy="14.5" r="3.5" stroke="white" stroke-width="0.8" opacity="0.5"/>
+</svg>
+</div>
+<span class="text-white font-serif text-xl tracking-wider font-semibold">Bahrain Discovery</span>
+</a>
+<!-- Desktop Navigation -->
+<div class="hidden md:flex items-center gap-10">
+<a class="text-white text-sm font-medium hover:text-B-yellow transition-colors tracking-widest uppercase" href="#Landmarks&Places">Landmarks</a>
+<a class="text-white text-sm font-medium hover:text-B-yellow transition-colors tracking-widest uppercase" href="#Landmarks&Places">Places</a>
+<a class="text-white text-sm font-medium hover:text-B-yellow transition-colors tracking-widest uppercase" href="#cuisine">Cuisine</a>
+<a class="text-white text-sm font-medium hover:text-B-yellow transition-colors tracking-widest uppercase" href="#history">History</a>
+</div>
+<!-- Search Bar -->
+<div class="relative hidden lg:block" data-purpose="search-container">
+<span class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+<svg class="w-4 h-4 text-B-purple-dark/50" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</span>
+<input id="searchInput" class="bg-white/5 border-white/10 text-white pl-10 pr-4 py-2 rounded-lg focus:ring-B-purple-dark focus:border-B-purple-dark w-64 text-sm" placeholder="Wikipedia検索" type="text"/>
+</div>
+
+<!-- Mobile Menu Toggle (Simplified) -->
+<button class="md:hidden text-white">
+<svg class="h-6 w-6" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 6h16M4 12h16m-7 6h7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</button>
+</nav>
+</header>
+<!-- END: MainHeader -->
+<!-- BEGIN: HeroSection -->
+<main class="relative">
+<section class="relative flex items-center justify-center overflow-hidden h-[80vh]">
+<!-- Hero Background Image -->
+<div class="absolute inset-0 z-0">
+<img alt="Bahrain" class="w-full h-full object-cover brightness-50" src="img/Bahrain.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-b from-[#003153]/60 via-transparent to-[#f0f9ff]"></div>
+</div>
+<div class="relative z-10 text-center px-6 max-w-4xl">
+<h2 class="text-lebanon-gold font-serif italic text-xl md:text-2xl mb-4 opacity-0 animate-[fadeIn_1s_ease-out_forwards]">The Pearl of the Arabian Gulf </h2>
+<h1 class="text-white text-4xl md:text-7xl lg:text-4xl font-serif mb-8 leading-tight opacity-0 animate-[fadeIn_1s_ease-out_0.3s_forwards]">
+          Bahrain: Where Modernity Meets the Cradle of Dilmun  </h1>
+<p class="text-lg md:text-xl text-white/80 font-light max-w-2xl mx-auto mb-10 text-balance opacity-0 animate-[fadeIn_1s_ease-out_0.6s_forwards]">
+          From the ancient corridors of Qal'at al-Bahrain to the soaring lights of Manama, discover a Kingdom where timeless heritage and island hospitality create the ultimate desert escape.  </p>
+<!-- <a class="inline-block bg-B-purple-dark text-lebanon-dark px-10 py-4 font-semibold tracking-widest uppercase text-sm hover:scale-105 transition-transform opacity-0 animate-[fadeIn_1s_ease-out_0.9s_forwards]" href="#landmarks">
+          Explore Destinations
+        </a>-->
+</div>
+<!-- Scroll Indicator -->
+<!--<div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce opacity-60">
+<svg class="h-6 w-6" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M19 14l-7 7m0 0l-7-7m7 7V3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>-->
+</section>
+<!-- END: HeroSection -->
+<!-- BEGIN: LandmarksSection -->
+<section class="section-spacing px-6 relative" id="Landmarks&Places">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
+<div class="max-w-2xl">
+<h2 class="text-B-purple-dark font-serif text-sm mb-2 uppercase tracking-[0.3em]">Island Echoes & Modern Wonders</h2>
+<h3 class="text-3xl md:text-4xl font-serif">Iconic Landmarks</h3>
+</div>
+<p class="text-slate-600 max-w-md text-sm">From the sail-shaped towers of Manama to the golden domes of Al Fateh, experience a skyline where architectural daring meets the spiritual heart of the Kingdom.</p>
+</div>
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Item 1:Bahrain World Trade Center-->
+<div class="flex flex-col">
+<div class="group relative overflow-hidden rounded-xl aspect-[3/4] cursor-pointer">
+<img alt="Bahrain World Trade Center" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="img/Bahrain_World_Trade_Center.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-90"></div>
+<div class="absolute bottom-0 left-0 p-4">
+<span class="text-[10px] text-white uppercase tracking-widest block mb-1">Landmark</span>
+<h4 class="text-lg font-serif text-white">Bahrain World Trade Center</h4>
+</div>
+</div>
+<p class="mt-4 text-sm text-slate-600 font-serif leading-snug px-2">Inspired by the sails of traditional dhow ships, this modern architectural masterpiece defines the Manama skyline.</p>
+</div>
+<!-- Item 2: Al Fateh Grand Mosque-->
+<div class="flex flex-col">
+<div class="group relative overflow-hidden rounded-xl aspect-[3/4] cursor-pointer">
+<img alt="Al Fateh Grand Mosque" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="img/Al_Fateh_Grand_Mosque.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-90"></div>
+<div class="absolute bottom-0 left-0 p-4">
+<span class="text-[10px] text-white uppercase tracking-widest block mb-1">Landmark</span>
+<h4 class="text-lg font-serif text-white">Al Fateh Grand Mosque</h4>
+</div>
+</div>
+<p class="mt-4 text-sm text-slate-600 font-serif leading-snug px-2">Featuring a massive fiberglass dome, it boasts a magnificent beauty that symbolizes the religious and cultural heritage of Bahrain.</p>
+</div>
+<!-- Item 3: Qal'at al-Bahrain -->
+<div class="flex flex-col">
+<div class="group relative overflow-hidden rounded-xl aspect-[3/4] cursor-pointer">
+<img alt="Qal'at al-Bahrain" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="img/Qal'at_al-Bahrain.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-90"></div>
+<div class="absolute bottom-0 left-0 p-4">
+<span class="text-[10px] text-white uppercase tracking-widest block mb-1">Places</span>
+<h4 class="text-lg font-serif text-white">Qal'at al-Bahrain</h4>
+</div>
+</div>
+<p class="mt-4 text-sm text-slate-600 font-serif leading-snug px-2">A sentinel of history rising from the shore, where 4,000 years of the Dilmun civilization whisper through sun-drenched stones.</p>
+</div>
+<!-- Item 4: Bab Al Bahrain & Manama Souq -->
+<div class="flex flex-col">
+<div class="group relative overflow-hidden rounded-xl aspect-[3/4] cursor-pointer">
+<img alt="Bab Al Bahrain & Manama Souq" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="img/Bab_Al_Bahrain.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-90"></div>
+<div class="absolute bottom-0 left-0 p-4">
+<span class="text-[10px] text-white uppercase tracking-widest block mb-1">Places</span>
+<h4 class="text-lg font-serif text-white">Bab Al Bahrain & Manama Souq</h4>
+</div>
+</div>
+<p class="mt-4 text-sm text-slate-600 font-serif leading-snug px-2">Beyond the iconic Gateway of Bahrain, lose yourself in a sensory labyrinth of exotic spices, shimmering gold, and the timeless echoes of Arabian hospitality.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: LandmarksSection -->
+<!-- BEGIN: CitiesSection -->
+<!-- END: CitiesSection -->
+<!-- BEGIN: TurkishCuisine -->
+<section class="mb-20" id="cuisine">
+<div class="text-center mb-16">
+<h2 class="text-5xl font-serif italic text-slate-900 mb-4">A Symphony of Saffron & Sea</h2>
+<p class="text-B-purple-dark font-medium tracking-widest uppercase text-xs">A Legacy Carved in Spices</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+<!-- Cuisine Item 1 -->
+<div class="text-center group">
+<div class="w-48 h-48 mx-auto rounded-full overflow-hidden mb-6 border-4 border-brand-emerald/20 p-2">
+<img alt="Muhammar" class="w-full h-full object-cover rounded-full group-hover:scale-110 transition-transform" src="img/Muhammar.jpg"/>
+</div>
+<h3 class="text-2xl font-serif italic text-slate-800 mb-2">Muhammar</h3>
+<p class="text-slate-600 text-sm">A golden harmony of sweet and savory: Fragrant rice glistening with date syrup, traditionally paired with crisp fried fish to honor the island’s seafaring soul.</p>
+</div>
+<!-- Cuisine Item 2 -->
+<div class="text-center group">
+<div class="w-48 h-48 mx-auto rounded-full overflow-hidden mb-6 border-4 border-brand-gold/20 p-2">
+<img alt="Haress" class="w-full h-full object-cover rounded-full group-hover:scale-110 transition-transform" src="img/Haress.jpg"/>
+</div>
+<h3 class="text-2xl font-serif italic text-slate-800 mb-2">Haress</h3>
+<p class="text-slate-600 text-sm">The heart-warming soul of the Bahraini hearth: A slow-cooked fusion of wheat and tender meat, finished with a fragrant dusting of cinnamon and melted ghee.</p>
+</div>
+<!-- Cuisine Item 3 -->
+<div class="text-center group">
+<div class="w-48 h-48 mx-auto rounded-full overflow-hidden mb-6 border-4 border-brand-emerald/20 p-2">
+<img alt="Halwa Showaiter" class="w-full h-full object-cover rounded-full group-hover:scale-110 transition-transform" src="img/Halwa_Showaiter.jpg"/>
+</div>
+<h3 class="text-2xl font-serif italic text-slate-800 mb-2">Halwa Showaiter</h3>
+<p class="text-slate-600 text-sm">The jewel of Bahraini hospitality: A legendary, rose-scented confection crafted with saffron and nuts, carrying the legacy of the Showaiter family for over a century.</p>
+</div>
+</div>
+</section>
+<!-- BEGIN: HistorySection -->
+<section class="bg-[#cc99cc]/30 section-spacing px-6 relative overflow-hidden" id="history">
+<div class="max-w-5xl mx-auto"><div class="text-center mb-12">
+<h2 class="text-B-purple-dark font-serif text-sm mb-2 uppercase tracking-[0.3em]">バーレーン王国の歴史</h2>
+<h3 class="text-3xl md:text-4xl font-serif">Kingdom of Bahrain
+</h3>
+<p class="text-xs text-B-purple-dark max-w-3xl mx-auto">Discovering the captivating charm of the Kingdom of Bahrain, where ancient history seamlessly meets a futuristic skyline. Every corner of this island nation tells a story of rich heritage and vibrant culture. It is truly a hidden gem in the heart of the Gulf that steals your heart. </p>
+</div>
+<div class="max-w-3xl mx-auto space-y-8 relative border-l border-slate-300 pl-8">
+<!-- History: Ancient -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-B-purple-dark"></div>
+<h4 class="text-B-purple-dark font-sans text-xl font-semibold mb-6">古代</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">ディルムン文明<span class="text-xs text-slate-500 block md:inline md:ml-2">（紀元前3000年頃 - 紀元前1800年頃）  </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">バーレーンはディルムン文明の中心地で、メソポタミアとインダス文明を結ぶ交易の要所として繁栄しました。『ギルガメシュ叙事詩』にも登場し、不老不死の地として描かれています。
+</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">アケメネス朝ペルシア<span class="text-xs text-slate-500 block md:inline md:ml-2">（紀元前539年 - 紀元前330年）  </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">ペルシャ帝国の一部として統治され、交易と文化交流が行われました。
+</p>
+</div>
+
+</div>
+</div>
+<!-- History: Medieval -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-B-purple-dark"></div>
+<h4 class="text-B-purple-dark font-sans text-xl font-semibold mb-6">中世</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">サーサーン朝ペルシア <span class="text-xs text-slate-500 block md:inline md:ml-2">（224年 - 651年） </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">ゾロアスター教が広まり、真珠採取が盛んでした。
+</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">イスラム帝国（正統カリフ時代・ウマイヤ朝・アッバース朝） <span class="text-xs text-slate-500 block md:inline md:ml-2">（7世紀 - 13世紀）   </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">イスラム教が広まり、バーレーンはイスラム文化の一部となりました。
+</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">カルマト派 <span class="text-xs text-slate-500 block md:inline md:ml-2">（9世紀 - 11世紀）  </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">イスラム教の異端派であるカルマト派が一時的に独立国家を築きました。</p>
+<p class="text-xs text-slate-600 leading-relaxed">カルマト派は、イスラム教のシーア派の分派であり、特にイスマーイール派の一部に属します。9世紀末から11世紀にかけて活動し、アッバース朝に対抗する革命運動を展開しました。ただし、カルマト派はイスマーイール派の中でも独自の教義や政治的立場を持ち、他のシーア派やスンニ派とは異なる特徴を持っています。</p>
+</p>
+</div>
+
+</div>
+</div>
+<!-- History: Early Modern -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-B-purple-dark"></div>
+<h4 class="text-B-purple-dark font-sans text-xl font-semibold mb-6">近世</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">ポルトガル支配 <span class="text-xs text-slate-500 block md:inline md:ml-2">（16世紀）  </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">ポルトガルがペルシャ湾を支配し、バーレーンもその影響下に入りました。
+</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">サファヴィー朝ペルシア <span class="text-xs text-slate-500 block md:inline md:ml-2">（1602年 - 18世紀）</span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">ペルシャのサファヴィー朝がバーレーンを奪還し、シーア派イスラム教が広まりました。
+</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">アル＝ハリーファ家の統治  <span class="text-xs text-slate-500 block md:inline md:ml-2">（1783年 - 現在）  </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">カタールから移住したアル＝ハリーファ家がバーレーンを征服し、支配を確立しました。
+</p>
+</div>
+</div>
+</div>
+<!-- History: Modern -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-B-purple-dark"></div>
+<h4 class="text-B-purple-dark font-sans text-xl font-semibold mb-6">近現代・現代</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">イギリスの保護領  <span class="text-xs text-slate-500 block md:inline md:ml-2">（1861年 - 1971年）  </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">イギリスとの保護条約により、外交と軍事面でイギリスの影響を受けました。</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">バーレーンの独立<span class="text-xs text-slate-500 block md:inline md:ml-2">（1971年）   </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">イギリスから独立を果たし、首長国として発展しました。
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">バーレーン王国 <span class="text-xs text-slate-500 block md:inline md:ml-2">（2002年 - 現在）   </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">立憲君主制に移行し、経済多角化を進めています。特に金融業や観光業が発展し、国際的なイベントも開催されています。
+バーレーンは、古代から現代に至るまで、交易や文化交流の重要な拠点として機能してきました。
+
+<p class="text-xs text-slate-600 leading-relaxed"></p>
+
+</div>
+</div>
+</div>
+</div>
+<p class="text-left text-slate-600 text-sm mt-6 font-bold max-w-2xl mx-auto">アル＝ハリーファ家の統治</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto">
+  バーレーンを統治しているのはハリーファ家です。ハリーファ家は、1783年に現在のバーレーン地域を支配し始め、現在もその統治を続けています。現国王はハマド・ビン・イーサ・アール・ハリーファで、2002年にバーレーンが王国へ移行した際に初代国王となりました。
+バーレーンは君主制国家です。現在は立憲君主制を採用しており、統治者はハリーファ家の一員である国王です。ただし、立憲君主制とは言え、実際には国王の権限が強い側面があります。例えば、行政や立法の多くの権限を保持しており、議会もある程度国王の影響を受けています。一方で、立憲君主制のもとで一部の市民が議会選挙に参加できる仕組みも整えられています。
+
+</p>
+</div>
+</section>
+<!-- END: HistorySection -->
+<!-- BEGIN: Footer -->
+<footer class="bg-B-purple-dark py-20 px-6 border-t border-white/5 relative z-10">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="col-span-1 md:col-span-2">
+<div class="flex items-center gap-3 mb-6">
+<div class="text-emerald-500">
+<svg fill="none" height="32" viewbox="0 0 24 24" width="32" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背後の交差する伝統的なダウ船の「帆」のライン -->
+  <path d="M4 20L12 4L20 20" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/>
+  <path d="M12 4V20" stroke="white" stroke-width="1.2" stroke-linecap="round" opacity="0.4"/>
+  
+  <!-- 中央：バーレーン国旗を象徴する5つのジグザグ（ギザギザ） -->
+  <path d="M8 8L10 10L12 8L14 10L16 8" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- 下部：波または船の船体をイメージした曲線 -->
+  <path d="M5 17C8 19 16 19 19 17" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+  
+  <!-- 中央下：バーレーンの誇りである「真珠」 -->
+  <circle cx="12" cy="14.5" r="2" fill="white"/>
+  <circle cx="12" cy="14.5" r="3.5" stroke="white" stroke-width="0.8" opacity="0.5"/>
+</svg>
+</div>
+<span class="text-white/40 font-serif text-lg tracking-wider font-semibold">Bahrain Discovery</span>
+</div>
+<p class="text-white/40 text-sm max-w-sm mb-8">
+            Curating bespoke luxury travel experiences for discerning explorers seeking the authentic soul of the Mediterranean.
+          </p>
+</div>
+<div>
+<h6 class="text-B-purple-dark font-serif text-sm mb-6 uppercase tracking-widest">Navigation</h6>
+<ul class="space-y-4 text-sm text-white/60">
+<li><a class="hover:text-white transition-colors" href="#Landmarks&Places">Landmarks</a></li>
+<li><a class="hover:text-white transition-colors" href="#Landmarks&Places">Places</a></li>
+<li><a class="hover:text-white transition-colors" href="#cuisine">Cuisine</a></li>
+<li><a class="hover:text-white transition-colors" href="#history">History</a></li>
+</ul>
+</div>
+<div>
+<h6 class="text-B-purple-dark font-serif text-sm mb-6 uppercase tracking-widest">Connect</h6>
+<ul class="space-y-4 text-sm text-white/60">
+<li><a class="hover:text-white transition-colors" href="#">Instagram</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Twitter</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Contact Us</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 mt-10"><p class="text-xs text-white/20">© 2026 Bahrain Discovery. All rights reserved.</p>
+<div class="flex gap-8 text-xs text-white/20">
+<a href="#">Privacy Policy</a>
+<a href="#">Terms of Service</a>
+</div></div>
+</footer>
+<!-- END: Footer -->
+</main>
+<style data-purpose="animations">
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+<script>
+    document.getElementById('searchInput').addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+            const searchTerm = this.value.trim();
+            if (searchTerm) {
+                const wikipediaUrl = `https://ja.wikipedia.org/wiki/特別:検索?search=${encodeURIComponent(searchTerm)}`;
+                window.open(wikipediaUrl, '_blank');
+            }
+        }
+    });
+</script>
+</body></html>

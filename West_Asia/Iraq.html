@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Iraq: The Cradle of Civilization</title>
+<!-- Google Fonts: Noto Sans and Noto Serif for a sophisticated look -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            'iraq-gold': '#C5A059',
+            'iraq-blue': '#1B4965',
+            'iraq-brick': '#A45D41',
+            'iraq-sand': '#F4EBD0',
+          },
+          fontFamily: {
+            sans: ['Noto Sans', 'sans-serif'],
+            serif: ['Noto Serif', 'serif'],
+          },
+        }
+      }
+    }
+  </script>
+<style data-purpose="custom-layout">
+    /* Smooth transition for dark mode and hover effects */
+    body {
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    .hero-gradient {
+      background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.7));
+    }
+  </style>
+</head>
+<body class="bg-stone-50 text-stone-900 dark:bg-stone-950 dark:text-stone-100 font-sans">
+<!-- BEGIN: MainHeader -->
+<header class="sticky top-0 z-50 bg-white/90 dark:bg-stone-900/90 backdrop-blur-md border-b border-iraq-gold/20 shadow-sm" data-purpose="main-navigation">
+<nav class="container mx-auto px-4 py-4 flex flex-wrap items-center justify-between">
+<div class="flex items-center space-x-2">
+<span class="text-2xl font-serif font-bold text-iraq-brick">IRAQ Discovery</span>
+</div>
+<!-- Desktop Navigation -->
+<ul class="hidden md:flex space-x-8 font-medium">
+<li><a class="hover:text-iraq-gold transition-colors" href="#landmarks">Landmarks</a></li>
+<li><a class="hover:text-iraq-gold transition-colors" href="#cities">Cities</a></li>
+<li><a class="hover:text-iraq-gold transition-colors" href="#cuisine">Cuisine</a></li>
+<li><a class="hover:text-iraq-gold transition-colors" href="#history">History</a></li>
+</ul>
+<!-- Wikipedia Search Bar -->
+<div class="flex items-center space-x-4">
+<form action="https://en.wikipedia.org/wiki/Special:Search" class="relative group" method="GET" target="_blank">
+<input class="rounded-full bg-stone-100 dark:bg-stone-800 border-none px-4 py-1 text-sm focus:ring-2 focus:ring-iraq-gold w-32 md:w-48 transition-all" name="search" placeholder="Search history..." type="text"/>
+<button class="absolute right-2 top-1.5 text-stone-400 group-hover:text-iraq-gold" type="submit">
+<svg class="h-4 w-4" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</button>
+</form>
+<button class="p-2 rounded-full hover:bg-stone-200 dark:hover:bg-stone-800 transition-colors" data-purpose="theme-switcher" id="dark-mode-toggle">
+<svg class="h-5 w-5 block dark:hidden" fill="currentColor" id="moon-icon" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+<svg class="h-5 w-5 hidden dark:block text-iraq-gold" fill="currentColor" id="sun-icon" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd"></path></svg>
+</button>
+</div>
+</nav>
+</header>
+<!-- END: MainHeader -->
+<!-- BEGIN: HeroSection -->
+<section class="relative h-[80vh] flex items-center justify-center overflow-hidden" data-purpose="hero">
+<!-- Image Placeholder for Ziggurat of Ur -->
+<img alt="Great Ziggurat of Ur" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCy71DdNRnMiy9YIeTRYezVuAG6Cmrz_Gwb7xRtqeIAP5etcaMqNvNSFUtsC8gQ-cXTzt5gLdovj9xSNzXOy8GD5r5EUv6jwvLTvOYZ9hoSDv-MYXHy6Tl9T7blCRbsZnfe7ftJp8XtD0uEdymtaPvAB2WeXyCBuCC2Mr0VbcRT1CdeeA7oloOBHg1wosmtvUGDqn-jwdHumQOy1Qu3wEQD-UB-45q7GO4O3iO6_ebUqT3e5BcSvP4RVWOtjp1bTCgvorMfUKfOOwF0"/>
+<div class="absolute inset-0 hero-gradient"></div>
+<div class="relative z-10 text-center px-4 max-w-4xl">
+<h1 class="text-4xl md:text-4xl font-serif text-white mb-4 drop-shadow-lg">Iraq: A Journey to the Beginning of Time</h1>
+<p class="text-1xl md:text-1xl font-serif text-stone-200 font-light mb-8">Exploring the cradle of human civilization and the legacy of Mesopotamia.</p>
+
+</div>
+</section>
+<!-- END: HeroSection -->
+<main class="container mx-auto px-4 py-16">
+<!-- BEGIN: LandmarksSection -->
+<section class="mb-24" data-purpose="landmarks-gallery" id="landmarks">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-serif mb-4 border-b-2 border-iraq-gold inline-block pb-2">Historic Landmarks</h2>
+<p class="text-stone-600 dark:text-stone-400 max-w-2xl mx-auto">Witness the architectural marvels that have stood for millennia through the sands of time.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Babylon -->
+<article class="group relative overflow-hidden rounded-2xl shadow-lg h-96">
+<img alt="Babylon Ishtar Gate" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsLFGhbKsSFJExuJRKnDSSeSdgJ0N6EyHa8Q0LL3n9yvezB0RRI3ykuVYMvg5YbklOAdIa8HwmO-oW9xD8tp0fCUzY-L3oQpxJX0225ics9jQ4lBPqU2lozl94_1bd_FDhzkro01QZc2auN8Vy5FzIrdMY7G5AcP7WxnGQs9IcTrYQQnzrOuS76vuayVVT8dkBZopSLh9K__jYrhdRJEKhItWhKHo6JgcLv4MxBuaCiwRyUizc4eW3oBIG7uPkhj6H5H4ZLkC_BxjA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-stone-900 via-transparent to-transparent"></div>
+<div class="absolute bottom-0 p-8 text-white">
+<span class="bg-iraq-gold text-xs font-bold px-3 py-1 rounded-full uppercase mb-4 inline-block">UNESCO World Heritage</span>
+<h3 class="text-3xl font-serif mb-2">Babylon</h3>
+<p class="text-stone-300">The legendary city of the Hanging Gardens and the reconstructed Ishtar Gate.</p>
+</div>
+</article>
+<!-- Ziggurat of Ur -->
+<article class="group relative overflow-hidden rounded-2xl shadow-lg h-96">
+<img alt="Ziggurat of Ur" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGPpOT9v6Yq7o6aE4TocgKIKVkeOGTGTSF7yuKWthhsPPjGe0UdqH08KUsbZh1G9OrAPocloIgnsTsGWvV-To9-_Gg2C6LKbl5QLkaS__NfGwvR6_dsDbm0xcuNBhbIdamfT_XqiQqFQ_YhpT1UgkKMMXJhi_oCc7pDkv98vzumMR-FjUqZt9ODKCuQPXh6Qw0CJhrpzbrX26mPisQcyFuL1yXRbw-nb2jHfKYQQ7P92WdM--tfh0tHxJpHlBA8ziD6RFWtVMaoOQE"/>
+<div class="absolute inset-0 bg-gradient-to-t from-stone-900 via-transparent to-transparent"></div>
+<div class="absolute bottom-0 p-8 text-white">
+<h3 class="text-3xl font-serif mb-2">The Ziggurat of Ur</h3>
+<p class="text-stone-300">A massive Mesopotamian temple complex dating back to the Early Bronze Age.</p>
+</div>
+</article>
+<!-- Erbil Citadel -->
+<article class="group relative overflow-hidden rounded-2xl shadow-lg h-80">
+<img alt="Erbil Citadel" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDxEnl4e9obTnl8mdysARthGEC_lYaOXmUQXPhGOSwhSJbIrDY8dejKJe9JcGPXbs8oVx9PUkf0g2E5rexzHv8oHzoxypy4QdVMsOFQmqTwLJ1fvSljKOo6y1etYrVILAud91RqjasSTiJNB0_qJt_yEdKvURVUFjHdih8UZEB0IbwAj9xbXFsOK40Z6T0-OVGLkdS6kN4m-PDh-KxH2D0EJDrTtgTRkcdEqrJH_eiwd04HusdaUkq55SX_6I5Jo4_ZuVvLHgmwRlD"/>
+<div class="absolute inset-0 bg-gradient-to-t from-stone-900 via-transparent to-transparent"></div>
+<div class="absolute bottom-0 p-8 text-white">
+<h3 class="text-2xl font-serif mb-2">Erbil Citadel</h3>
+<p class="text-stone-300 text-sm">One of the oldest continuously inhabited cities on Earth.</p>
+</div>
+</article>
+<!-- Marshes -->
+<article class="group relative overflow-hidden rounded-2xl shadow-lg h-80">
+<img alt="Marshes of Mesopotamia" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBetIwAA0eVtzuwfGgto-IJMNd7gyq4UAMxZQ8-BXSSO7MwQsMTuA3Xo1viD04M8VWhOFRdyuRbOmW3_MkmAKMOJa59ZxIOuj86B0P_2-8csXi15OhjfSaLgdZko1Bgi_jFiC96bqybqTJfAOrRaOSkUgsQnNFUOkKEfIAS-E4n0lpLJrhfjsKylDOL8AFsq92dedkIzCX43cjXQ8PihgT1JZTg7zLI8n8dXu-kt68tt1pKESSpkvp_s7EstGLwlXlbUNT1bfL1Rirn"/>
+<div class="absolute inset-0 bg-gradient-to-t from-stone-900 via-transparent to-transparent"></div>
+<div class="absolute bottom-0 p-8 text-white">
+<h3 class="text-2xl font-serif mb-2">Marshes of Mesopotamia</h3>
+<p class="text-stone-300 text-sm">Southern Iraq's unique eco-system, often associated with the Garden of Eden.</p>
+</div>
+</article>
+</div>
+</section>
+<!-- END: LandmarksSection -->
+<!-- BEGIN: CitiesSection -->
+<section class="mb-24 py-16 bg-iraq-blue/5 dark:bg-stone-900/50 rounded-3xl p-8" data-purpose="city-guides" id="cities">
+<div class="text-center mb-12">
+<h2 class="text-4xl font-serif mb-4">Cities of Distinction</h2>
+</div>
+<div class="space-y-12">
+<!-- Baghdad -->
+<div class="flex flex-col md:flex-row items-center gap-8">
+<div class="w-full md:w-1/2">
+<img alt="Baghdad" class="w-full h-64 object-cover rounded-2xl shadow-lg" src="img/Baghdad.jpg"/>
+</div>
+<div class="w-full md:w-1/2 text-left">
+<h3 class="text-2xl font-bold mb-3">Baghdad</h3>
+<p class="text-stone-600 dark:text-stone-400">The capital of culture, once the scientific center of the world during the Islamic Golden Age.</p>
+</div>
+</div>
+<!-- Erbil -->
+<div class="flex flex-col md:flex-row-reverse items-center gap-8">
+<div class="w-full md:w-1/2">
+<img alt="Erbil" class="w-full h-64 object-cover rounded-2xl shadow-lg" src="img/Erbil.jpg"/>
+</div>
+<div class="w-full md:w-1/2 text-left">
+<h3 class="text-2xl font-bold mb-3">Erbil</h3>
+<p class="text-stone-600 dark:text-stone-400">A modern hub where history meets rapid development, known for its security and hospitality.</p>
+</div>
+</div>
+<!-- Basra -->
+<div class="flex flex-col md:flex-row items-center gap-8">
+<div class="w-full md:w-1/2">
+<img alt="Basra" class="w-full h-64 object-cover rounded-2xl shadow-lg" src="img/Basra.jpg"/>
+</div>
+<div class="w-full md:w-1/2 text-left">
+<h3 class="text-2xl font-bold mb-3">Basra</h3>
+<p class="text-stone-600 dark:text-stone-400">"The Venice of the East," famous for its canals, palm groves, and rich maritime history.</p>
+</div>
+</div>
+</section>
+<!-- END: CitiesSection -->
+<!-- BEGIN: CuisineSection -->
+<section class="mb-24" data-purpose="culinary-heritage" id="cuisine">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-serif mb-4">A Taste of Mesopotamia</h2>
+<p class="text-stone-600 dark:text-stone-400 max-w-2xl mx-auto">A melting pot of flavors passed down through generations.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Masgouf Card -->
+<div class="flex flex-col group">
+<div class="overflow-hidden rounded-lg shadow-lg">
+<img alt="Masgouf dish" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300 ease-in-out" src="img/Masgouf.jpg"/>
+</div>
+<div class="pt-4">
+<h3 class="font-bold text-lg px-3">Masgouf</h3>
+<p class="text-stone-600 dark:text-stone-400 text-sm px-3">Iraq's national dish—seasoned carp slow-grilled over an open fire.</p>
+</div>
+</div>
+<!-- Dolma Card -->
+<div class="flex flex-col group">
+<div class="overflow-hidden rounded-lg shadow-lg">
+<img alt="Dolma dish" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300 ease-in-out" src="img/Dolma.jpg"/>
+</div>
+<div class="pt-4">
+<h3 class="font-bold text-lg px-3">Dolma</h3>
+<p class="text-stone-600 dark:text-stone-400 text-sm px-3">Vibrant vegetables stuffed with aromatic rice and minced meat.</p>
+</div>
+</div>
+<!-- Biryani Card -->
+<div class="flex flex-col group">
+<div class="overflow-hidden rounded-lg shadow-lg">
+<img alt="Biryani dish" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300 ease-in-out" src="img/Biryani.jpg"/>
+</div>
+<div class="pt-4">
+<h3 class="font-bold text-lg px-3">Biryani</h3>
+<p class="text-stone-600 dark:text-stone-400 text-sm px-3">Saffron rice with nuts, raisins, and spices, often served with meat.</p>
+</div>
+</div>
+<!-- Kleicha Card -->
+<div class="flex flex-col group">
+<div class="overflow-hidden rounded-lg shadow-lg">
+<img alt="Kleicha cookies" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300 ease-in-out" src="img/Kleicha.jpg"/>
+</div>
+<div class="pt-4">
+<h3 class="font-bold text-lg px-3">Kleicha</h3>
+<p class="text-stone-600 dark:text-stone-400 text-sm px-3">The beloved date-filled cookies, a staple for celebrations.</p>
+</div>
+</div>
+</section>
+<!-- END: CuisineSection -->
+<!-- BEGIN: HistorySection -->
+<section class="mb-16 bg-stone-100 dark:bg-stone-900 rounded-2xl p-8 md:p-12 shadow-sm border border-stone-200 dark:border-stone-800" id="history">
+<div class="max-w-5xl mx-auto">
+<div class="text-center mb-12">
+  <h2 class="text-iraq-gold font-sans text-sm mb-2 uppercase tracking-[0.5em]">イラク共和国の歴史</h2>
+<h3 class="text-3xl md:text-4xl font-serif text-iraq-brick dark:text-stone-100 mb-4">Republic of Iraq Timeline: The Cradle of Civilization</h3>
+<p class="text-xs text-slate-500 max-w-3xl mx-auto">Iraq, often called the "Cradle of Civilization," is home to ancient Mesopotamia where writing and agriculture first emerged. The modern republic was established in 1958 after the overthrow of the monarchy, later enduring decades of conflict and political transitions. Today, the nation continues to rebuild and redefine its rich cultural heritage amidst ongoing socio-political evolution.</p>
+</div>
+<div class="max-w-3xl mx-auto space-y-8 relative border-l border-stone-300 dark:border-stone-700 pl-8">
+<!-- History: Ancient -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-iraq-gold ring-4 ring-stone-100 dark:ring-stone-900"></div>
+<h4 class="text-iraq-brick font-sans text-xl font-semibold mb-6">古代</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif font-bold text-stone-900 dark:text-stone-100 mb-1">シュメール文明 <span class="text-xs text-stone-500 block md:inline md:ml-2">（紀元前3000年頃 - 紀元前2000年頃）</span></h5>
+<p class="text-sm text-stone-600 dark:text-stone-400 leading-relaxed font-sans">世界最古の文明の一つで、ウルやウルクなどの都市国家が栄えました。</p>
+</div>
+<div>
+<h5 class="text-lg font-serif font-bold text-stone-900 dark:text-stone-100 mb-1">アッカド帝国 <span class="text-xs text-stone-500 block md:inline md:ml-2">（紀元前2334年 - 紀元前2154年）</span></h5>
+<p class="text-sm text-stone-600 dark:text-stone-400 leading-relaxed font-sans">サルゴン王によるメソポタミア統一。</p>
+</div>
+<div>
+<h5 class="text-lg font-serif font-bold text-stone-900 dark:text-stone-100 mb-1">バビロニア王国 <span class="text-xs text-stone-500 block md:inline md:ml-2">（紀元前1894年 - 紀元前539年）</span></h5>
+<p class="text-sm text-stone-600 dark:text-stone-400 leading-relaxed font-sans">ハンムラビ法典で知られる古代王国。</p>
+</div>
+<div>
+<h5 class="text-lg font-serif font-bold text-stone-900 dark:text-stone-100 mb-1">アッシリア帝国 <span class="text-xs text-stone-500 block md:inline md:ml-2">（紀元前1975年 - 紀元前609年）</span></h5>
+<p class="text-sm text-stone-600 dark:text-stone-400 leading-relaxed font-sans">北部メソポタミアを中心に広大な領域を支配。</p>
+</div>
+</div>
+</div>
+<!-- History: Medieval -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-stone-300 dark:bg-stone-700 ring-4 ring-stone-100 dark:ring-stone-900"></div>
+<h4 class="text-iraq-brick font-sans text-xl font-semibold mb-6">中世</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif font-bold text-stone-900 dark:text-stone-100 mb-1">アッバース朝 <span class="text-xs text-stone-500 block md:inline md:ml-2">（750年 - 1258年）</span></h5>
+<p class="text-sm text-stone-600 dark:text-stone-400 leading-relaxed font-sans">バグダードが首都となり、イスラム文化の黄金時代を迎える。</p>
+</div>
+<div>
+<h5 class="text-lg font-serif font-bold text-stone-900 dark:text-stone-100 mb-1">イル・ハン朝 <span class="text-xs text-stone-500 block md:inline md:ml-2">（1258年 - 1411年）</span></h5>
+<p class="text-sm text-stone-600 dark:text-stone-400 leading-relaxed font-sans">モンゴル帝国の支配下に入る。</p>
+</div>
+<div>
+<h5 class="text-lg font-serif font-bold text-stone-900 dark:text-stone-100 mb-1">ティムール朝<span class="text-xs text-stone-500 block md:inline md:ml-2">（14世紀後半）</span></h5>
+<p class="text-sm text-stone-600 dark:text-stone-400 leading-relaxed font-sans">ティムールの遠征により一時的に支配。
+</p>
+</div>
+<div>
+<h5 class="text-lg font-serif font-bold text-stone-900 dark:text-stone-100 mb-1">黒羊朝・白羊朝  <span class="text-xs text-stone-500 block md:inline md:ml-2">（15世紀）</span></h5>
+<p class="text-sm text-stone-600 dark:text-stone-400 leading-relaxed font-sans">トルコ系王朝がイラクを支配。
+</p>
+</div>
+</div>
+
+</div>
+<!-- History: Early Modern -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-stone-300 dark:bg-stone-700 ring-4 ring-stone-100 dark:ring-stone-900"></div>
+<h4 class="text-iraq-brick font-sans text-xl font-semibold mb-6">近世</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif font-bold text-stone-900 dark:text-stone-100 mb-1">オスマン帝国 <span class="text-xs text-stone-500 block md:inline md:ml-2">（1534年 - 1918年）</span></h5>
+<p class="text-sm text-stone-600 dark:text-stone-400 leading-relaxed font-sans">長期間にわたりイラクを統治し、バグダードが重要な都市となる。</p>
+</div>
+</div>
+</div>
+<!-- History: Modern -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-stone-300 dark:bg-stone-700 ring-4 ring-stone-100 dark:ring-stone-900"></div>
+<h4 class="text-iraq-brick font-sans text-xl font-semibold mb-6">近現代・現代</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif font-bold text-stone-900 dark:text-stone-100 mb-1">イギリス委任統治領メソポタミア <span class="text-xs text-stone-500 block md:inline md:ml-2">（1920年 - 1932年）</span></h5>
+<p class="text-sm text-stone-600 dark:text-stone-400 leading-relaxed font-sans">第一次世界大戦後、イギリスの委任統治下に置かれる。</p>
+</div>
+<div>
+<h5 class="text-lg font-serif font-bold text-stone-900 dark:text-stone-100 mb-1">イラク王国 <span class="text-xs text-stone-500 block md:inline md:ml-2">（1932年 - 1958年）</span></h5>
+<p class="text-sm text-stone-600 dark:text-stone-400 leading-relaxed font-sans">イギリスから独立し、ハシミテ家による君主制が成立。</p>
+</div>
+<div>
+<h5 class="text-lg font-serif font-bold text-stone-900 dark:text-stone-100 mb-1">イラク共和国 <span class="text-xs text-stone-500 block md:inline md:ml-2">（1958年 - 現在）</span></h5>
+<p class="text-sm text-stone-600 dark:text-stone-400 leading-relaxed font-sans">1958年の革命で君主制が廃止。1979年にサダム・フセインが大統領に就任し、フセイン政権の下、イラン・イラク戦争（1980年9月～1988年8月）、クウェート侵攻（1990年8月）、湾岸戦争（1991年1月～2月）等が行われた。2003年3月、米国等による対イラク武力行使が開始され、4月にはバグダッドが事実上陥落、フセイン政権は崩壊し、その後、新政府が樹立された。</p>
+</div>
+</div>
+</div>
+</div>
+<p class="text-left text-stone-500 dark:text-stone-400 text-sm mt-12 max-w-2xl mx-auto">
+            イラクの地は、古代から現代に至るまで、数多くの王朝や国家が交代し、文明の中心地として重要な役割を果たしてきました。
+        </p>
+</div>
+</section>
+<!-- END: HistorySection -->
+</main>
+<!-- BEGIN: Footer -->
+<footer class="bg-stone-900 text-stone-400 py-12 px-4 border-t border-iraq-gold/30">
+<div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+<div>
+<h4 class="text-white font-serif text-xl mb-4">Iraq Guide</h4>
+<p class="text-sm">Explore the deep history and vibrant culture of the land between the two rivers.</p>
+</div>
+<div>
+<h4 class="text-white font-serif text-xl mb-4">Navigation</h4>
+<ul class="text-sm space-y-2">
+<li><a class="hover:text-iraq-gold" href="#landmarks">Landmarks</a></li>
+<li><a class="hover:text-iraq-gold" href="#cities">Cities</a></li>
+<li><a class="hover:text-iraq-gold" href="#cuisine">Cuisine</a></li>
+<li><a class="hover:text-iraq-gold" href="#history">History</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-serif text-xl mb-4">Connect</h4>
+<div class="flex justify-center md:justify-start space-x-4">
+<a class="hover:text-iraq-gold" href="#">Instagram</a>
+<a class="hover:text-iraq-gold" href="#">Twitter</a>
+<a class="hover:text-iraq-gold" href="#">Facebook</a>
+</div>
+</div>
+</div>
+<div class="container mx-auto mt-12 pt-8 border-t border-stone-800 text-center text-xs">
+<p>© 2026 Mesopotamian Journeys. All rights reserved.</p>
+</div>
+</footer>
+<!-- END: Footer -->
+<script data-purpose="event-handlers">
+    // Dark Mode Toggle Logic
+    const toggleBtn = document.getElementById('dark-mode-toggle');
+    const html = document.documentElement;
+
+    toggleBtn.addEventListener('click', () => {
+      html.classList.toggle('dark');
+      localStorage.setItem('theme', html.classList.contains('dark') ? 'dark' : 'light');
+    });
+
+    // Check for saved user preference
+    if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      html.classList.add('dark');
+    } else {
+      html.classList.remove('dark');
+    }
+  </script>
+</body></html>

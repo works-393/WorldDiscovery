@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Oman Discovery | Luxury Travel Experience</title>
+<meta content="Explore the ancient landmarks, vibrant cities, and rich history of Lebanon." name="description"/>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'lebanon-dark': '#102219',
+            'lebanon-gold': '#C5A059',
+            'lebanon-green': '#2D5A27',
+            "primary": "#144bb8",
+            "background-light": "#f6f6f8",
+            "background-dark": "#111621",
+            // 追加
+            "al-adaam": "#8D1B3D",
+            "qatar-gold": "#C5A059",  
+            "e-green": "#50C878",
+            "g-green": "#006400",
+            "qatar-gold": "#C5A059",
+            "qatar-blue": "#1e3a8a",
+            "oman-blue": "#003153",
+             },
+          fontFamily: {
+            serif: ['Newsreader', 'serif'],
+            sans: ['Inter', 'sans-serif'],
+          },
+          backgroundImage: {
+            'Oman-hero': "url('img/Oman_bg.jpg')",
+          }
+        }
+      }
+    }
+  </script>
+<style data-purpose="custom-styling">body {
+    background-color: #f0f9ff;
+    color: #1e293b
+    }
+.glass-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 1rem
+    }
+.text-balance {
+    text-wrap: balance
+    }
+.section-spacing {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem
+    }
+/* Pattern Overlay */
+.bg-pattern {
+    background-image: url(img/Oman_bg.jpg);
+    opacity: 0.15
+    }</style>
+</head>
+<body class="font-sans antialiased overflow-x-hidden">
+<!-- BEGIN: Background Texture -->
+<div class="fixed inset-0 bg-pattern pointer-events-none z-0"></div>
+<!-- END: Background Texture -->
+<!-- BEGIN: MainHeader -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-oman-blue backdrop-blur-md border-b border-white/5">
+<nav class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<!-- Logo -->
+<a class="flex items-center gap-3 group" href="#">
+<div class="text-white-500 transform group-hover:scale-110 transition-transform">
+<svg fill="none" height="32" viewbox="0 0 24 24" width="32" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背後の交差する剣：色を白色(stroke="white")に変更 -->
+  <path d="M5 5L19 19" stroke="white" stroke-width="1.2" stroke-linecap="round" opacity="0.8"/>
+  <path d="M19 5L5 19" stroke="white" stroke-width="1.2" stroke-linecap="round" opacity="0.8"/>
+  
+  <!-- 中央のハンジャル：存在感を出すため少し太めの白線 -->
+  <path d="M12 7C12 7 15 9 15 13C15 17 12 19 8 20" stroke="white" stroke-width="1.8" stroke-linecap="round"/>
+  
+  <!-- 柄（つか）の部分 -->
+  <path d="M10 7H14M12 7V4" stroke="white" stroke-width="1.8" stroke-linecap="round"/>
+  
+  <!-- 中央の装飾：塗りつぶしも白(fill="white")に -->
+  <circle cx="12" cy="12" r="1.5" fill="white"/>
+</svg>
+</div>
+<span class="text-white font-serif text-xl tracking-wider font-semibold">Oman Discovery</span>
+</a>
+<!-- Desktop Navigation -->
+<div class="hidden md:flex items-center gap-10">
+<a class="text-white text-sm font-medium hover:text-g-green transition-colors tracking-widest uppercase" href="#explore">Landmarks</a>
+<a class="text-white text-sm font-medium hover:text-g-green transition-colors tracking-widest uppercase" href="#explore">Cities</a>
+<a class="text-white text-sm font-medium hover:text-g-green transition-colors tracking-widest uppercase" href="#cuisine">Cuisine</a>
+<a class="text-white text-sm font-medium hover:text-g-green transition-colors tracking-widest uppercase" href="#history">History</a>
+</div>
+<!-- Search Bar -->
+<div class="relative hidden lg:block" data-purpose="search-container">
+<span class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+<svg class="w-4 h-4 text-g-green/50" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</span>
+<input id="searchInput" class="bg-white/5 border-white/10 text-white pl-10 pr-4 py-2 rounded-lg focus:ring-g-green focus:border-g-green w-64 text-sm" placeholder="Wikipedia検索" type="text"/>
+</div>
+
+<!-- Mobile Menu Toggle (Simplified) -->
+<button class="md:hidden text-white">
+<svg class="h-6 w-6" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 6h16M4 12h16m-7 6h7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</button>
+</nav>
+</header>
+<!-- END: MainHeader -->
+<!-- BEGIN: HeroSection -->
+<main class="relative">
+<section class="relative flex items-center justify-center overflow-hidden h-[80vh]">
+<!-- Hero Background Image -->
+<div class="absolute inset-0 z-0">
+<img alt="Baalbek Temple of Bacchus" class="w-full h-full object-cover brightness-50" src="img/Oman.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-b from-[#003153]/60 via-transparent to-[#f0f9ff]"></div>
+</div>
+<div class="relative z-10 text-center px-6 max-w-4xl">
+<h2 class="text-white font-serif italic text-xl md:text-2xl mb-4 opacity-0 animate-[fadeIn_1s_ease-out_forwards]">The Gem of the Gulf </h2>
+<h1 class="text-white text-4xl md:text-7xl lg:text-4xl font-serif mb-8 leading-tight opacity-0 animate-[fadeIn_1s_ease-out_0.3s_forwards]">
+          Oman: Embrace the Soul of the Sultanate  </h1>
+<p class="text-lg md:text-xl text-white/80 font-light max-w-2xl mx-auto mb-10 text-balance opacity-0 animate-[fadeIn_1s_ease-out_0.6s_forwards]">
+          From the ancient forts of Nizwa to the serene skyline of Muscat, experience a harmony of maritime legacy, desert majesty, and the warm heart of Arabian hospitality.
+        </p>
+<!-- <a class="inline-block bg-g-green text-lebanon-dark px-10 py-4 font-semibold tracking-widest uppercase text-sm hover:scale-105 transition-transform opacity-0 animate-[fadeIn_1s_ease-out_0.9s_forwards]" href="#landmarks">
+          Explore Destinations
+        </a>-->
+</div>
+<!-- Scroll Indicator -->
+<!--<div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce opacity-60">
+<svg class="h-6 w-6" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M19 14l-7 7m0 0l-7-7m7 7V3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>-->
+</section>
+<!-- END: HeroSection -->
+<!-- BEGIN: LandmarksSection -->
+<section class="section-spacing px-6 relative" id="explore">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
+<div class="max-w-2xl">
+<h2 class="text-g-green font-serif text-sm mb-2 uppercase tracking-[0.3em]">Royal Traditions & Beyond</h2>
+<h3 class="text-3xl md:text-4xl font-serif">Iconic Landmarks</h3>
+</div>
+<p class="text-slate-600 max-w-md text-sm">From the rugged whispers of the Hajar Mountains to the tranquil shores of the Arabian Sea, witness the serene soul of the Sultanate in every horizon.</p>
+</div>
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Item 1: Sultan Qaboos Grand Mosque-->
+<div class="flex flex-col">
+<div class="group relative overflow-hidden rounded-xl aspect-[3/4] cursor-pointer">
+<img alt="Sultan Qaboos Grand Mosque" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="img/Sultan_Qaboos_Grand_Mosque.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-90"></div>
+<div class="absolute bottom-0 left-0 p-4">
+<span class="text-[10px] text-white uppercase tracking-widest block mb-1">Landmark</span>
+<h4 class="text-lg font-serif text-white">Sultan Qaboos Grand Mosque</h4>
+</div>
+</div>
+<p class="mt-4 text-sm text-slate-600 font-serif leading-snug px-2">A masterpiece of modern Islamic architecture, this mosque is a symbol of Oman's spiritual heritage and artistic excellence.</p>
+</div>
+<!-- Item 2: Jebel Akhdar-->
+<div class="flex flex-col">
+<div class="group relative overflow-hidden rounded-xl aspect-[3/4] cursor-pointer">
+<img alt="Jabal Tuwaiq" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="img/Jebel_Akhdar.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-90"></div>
+<div class="absolute bottom-0 left-0 p-4">
+<span class="text-[10px] text-white uppercase tracking-widest block mb-1">Landmark</span>
+<h4 class="text-lg font-serif text-white">Jebel Akhdar</h4>
+</div>
+</div>
+<p class="mt-4 text-sm text-slate-600 font-serif leading-snug px-2">Known as the 'Green Mountain,' this majestic range is famous for its terraced farms, fragrant rose gardens, and dramatic canyons.</p>
+</div>
+<!-- Item 3: Muscat -->
+<div class="flex flex-col">
+<div class="group relative overflow-hidden rounded-xl aspect-[3/4] cursor-pointer">
+<img alt="Muscat" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="img/Muscat.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-90"></div>
+<div class="absolute bottom-0 left-0 p-4">
+<span class="text-[10px] text-white uppercase tracking-widest block mb-1">City</span>
+<h4 class="text-lg font-serif text-white">Muscat</h4>
+</div>
+</div>
+<p class="mt-4 text-sm text-slate-600 font-serif leading-snug px-2">The capital city, where historic forts and traditional souqs meet a serene coastline and modern elegance.</p>
+</div>
+<!-- Item 4: Nizwa -->
+<div class="flex flex-col">
+<div class="group relative overflow-hidden rounded-xl aspect-[3/4] cursor-pointer">
+<img alt="Nizwa" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="img/Nizwa.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-90"></div>
+<div class="absolute bottom-0 left-0 p-4">
+<span class="text-[10px] text-white uppercase tracking-widest block mb-1">City</span>
+<h4 class="text-lg font-serif text-white">Nizwa</h4>
+</div>
+</div>
+<p class="mt-4 text-sm text-slate-600 font-serif leading-snug px-2">The ancient capital of Oman, renowned for its formidable fort, bustling souq, and rich cultural history.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: LandmarksSection -->
+<!-- BEGIN: CitiesSection -->
+<!-- END: CitiesSection -->
+<!-- BEGIN: TurkishCuisine -->
+<section class="mb-20" id="cuisine">
+<div class="text-center mb-16">
+<h2 class="text-5xl font-serif italic text-slate-900 mb-4">A Fragrance of Omani Hospitality</h2>
+<p class="text-g-green font-medium tracking-widest uppercase text-xs">A Caravan of Spices</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+<!-- Cuisine Item 1 -->
+<div class="text-center group">
+<div class="w-48 h-48 mx-auto rounded-full overflow-hidden mb-6 border-4 border-brand-emerald/20 p-2">
+<img alt="Shuwa" class="w-full h-full object-cover rounded-full group-hover:scale-110 transition-transform" src="img/Shuwa.jpg"/>
+</div>
+<h3 class="text-2xl font-serif italic text-slate-800 mb-2">Shuwa</h3>
+<p class="text-slate-600 text-sm">A Celebration of Slow-Cooked Tradition</p>
+</div>
+<!-- Cuisine Item 2 -->
+<div class="text-center group">
+<div class="w-48 h-48 mx-auto rounded-full overflow-hidden mb-6 border-4 border-brand-gold/20 p-2">
+<img alt="Kahwa" class="w-full h-full object-cover rounded-full group-hover:scale-110 transition-transform" src="img/Kahwa.jpg"/>
+</div>
+<h3 class="text-2xl font-serif italic text-slate-800 mb-2">Kahwa</h3>
+<p class="text-slate-600 text-sm">The Scent of Golden Hospitality</p>
+</div>
+<!-- Cuisine Item 3 -->
+<div class="text-center group">
+<div class="w-48 h-48 mx-auto rounded-full overflow-hidden mb-6 border-4 border-brand-emerald/20 p-2">
+<img alt="Omani Halwa" class="w-full h-full object-cover rounded-full group-hover:scale-110 transition-transform" src="img/Omani_Halwa.jpg"/>
+</div>
+<h3 class="text-2xl font-serif italic text-slate-800 mb-2">Omani Halwa</h3>
+<p class="text-slate-600 text-sm">A Symphony of Rose and Saffron</p>
+</div>
+</div>
+</section>
+<!-- BEGIN: HistorySection -->
+<section class="bg-[#bae6fd]/30 section-spacing px-6 relative overflow-hidden" id="history">
+<div class="max-w-5xl mx-auto"><div class="text-center mb-12">
+<h2 class="text-g-green font-serif text-sm mb-2 uppercase tracking-[0.3em]">オマーン国の歴史</h2>
+<h3 class="text-3xl md:text-4xl font-serif">Sultanate of Oman</h3>
+<p class="text-xs text-slate-500 max-w-2xl mx-auto">A seafaring legacy carved in stone and sand, where the enduring legacy of the Al Said Dynasty continues guiding a maritime empire toward a horizon of peace and modernity through generations.</p>
+</div>
+<div class="max-w-3xl mx-auto space-y-8 relative border-l border-slate-300 pl-8">
+<!-- History: Ancient -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-g-green"></div>
+<h4 class="text-g-green font-sans text-xl font-semibold mb-6">古代</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">マガン文明<span class="text-xs text-slate-500 block md:inline md:ml-2">（紀元前2500年頃 - 紀元前2100年頃）  </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">オマーンはマガン文明の中心地の一つで、銅の産地としてメソポタミア文明との交易で重要な役割を果たしました。
+</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">アケメネス朝ペルシア<span class="text-xs text-slate-500 block md:inline md:ml-2">（紀元前539年 - 紀元前330年） </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">ペルシャ帝国の一部として統治され、交易と文化交流が行われました。
+</p>
+</div>
+
+</div>
+</div>
+<!-- History: Medieval -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-g-green"></div>
+<h4 class="text-g-green font-sans text-xl font-semibold mb-6">中世</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">イスラム帝国（ウマイヤ朝・アッバース朝） <span class="text-xs text-slate-500 block md:inline md:ml-2">（7世紀 - 13世紀） </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">イスラム教が広まり、オマーンはイスラム文化の一部となりました。
+</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">ナブハーニー朝 <span class="text-xs text-slate-500 block md:inline md:ml-2">（12世紀 - 15世紀）  </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">オマーン内陸部を中心に成立した王朝で、詳細は不明ですが、地域の統治を担いました。
+</p>
+</div>
+
+</div>
+</div>
+<!-- History: Early Modern -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-g-green"></div>
+<h4 class="text-g-green font-sans text-xl font-semibold mb-6">近世</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">ポルトガル支配 <span class="text-xs text-slate-500 block md:inline md:ml-2">（16世紀）  </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">ポルトガルがインド洋航路を支配する中で、オマーンもその影響下に入りました。
+</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">ヤアーリバ朝 <span class="text-xs text-slate-500 block md:inline md:ml-2">（1624年 - 1749年）</span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">ポルトガル支配を排除し、オマーンの独立を回復しました。
+</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">ブーサイード朝 <span class="text-xs text-slate-500 block md:inline md:ml-2">（1749年 - 現在）  </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">現在のオマーンを統治する王朝で、海洋帝国としてインド洋や東アフリカに影響を広げました。
+</p>
+</div>
+</div>
+</div>
+<!-- History: Modern -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-g-green"></div>
+<h4 class="text-g-green font-sans text-xl font-semibold mb-6">近現代・現代</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">イギリスの保護領  <span class="text-xs text-slate-500 block md:inline md:ml-2">（19世紀後半 - 1971年） </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">イギリスとの保護条約により、外交と軍事面でイギリスの影響を受けました。
+</p>
+<p class="text-xs text-slate-600 leading-relaxed">1913年～1920年内戦</p>
+<p class="text-xs text-slate-600 leading-relaxed">1960年～1975年ドファール地方の反乱</p>
+<p class="text-xs text-slate-600 leading-relaxed">1970年カブース前国王即位</p>
+
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">オマーンの独立<span class="text-xs text-slate-500 block md:inline md:ml-2">（1971年）  </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">イギリスから独立を果たし、スルタン制国家として発展しました。
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">オマーン国 <span class="text-xs text-slate-500 block md:inline md:ml-2">（1971年 - 現在）  </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">絶対君主制のもとで、石油資源を基盤に経済発展を遂げています。特に近年では観光業や経済多角化が進められています。
+オマーンは、古代から現代に至るまで、交易や文化交流の重要な拠点として機能してきました。
+<p class="text-xs text-slate-600 leading-relaxed">2020年カブース前国王の崩御に伴い、ハイサム国王即位</p>
+
+</div>
+</div>
+</div>
+</div>
+<p class="text-left text-slate-600 text-sm mt-6 font-bold max-w-2xl mx-auto">サイード家が統治</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto">
+    オマーンは現在もブーサイード朝が続いています。この王朝は1749年にアフマド・ビン・サイードによって設立され、現在のスルタン（国王）はハイサム・ビン・ターリク・アール＝サイードです。彼は2020年に即位し、ブーサイード朝の14代目のスルタンとして統治しています。
+ブーサイード朝は、オマーンの安定と発展を支えてきた歴史ある王朝であり、特に近代以降、石油資源を活用した経済成長や国際的な外交関係の構築に成功しています。
+
+</p>
+</div>
+</section>
+<!-- END: HistorySection -->
+<!-- BEGIN: Footer -->
+<footer class="bg-oman-blue py-20 px-6 border-t border-white/5 relative z-10">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="col-span-1 md:col-span-2">
+<div class="flex items-center gap-3 mb-6">
+<div class="text-emerald-500">
+<svg fill="none" height="32" viewbox="0 0 24 24" width="32" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背後の交差する剣（伝統的な直剣） -->
+  <path d="M5 5L19 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M19 5L5 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- 中央のハンジャル（短剣）：オマーン独自の三日月形 -->
+  <path d="M12 7C12 7 15 9 15 13C15 17 12 19 8 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  <!-- 柄（つか）の部分：装飾的なT字型 -->
+  <path d="M10 7H14M12 7V4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  <!-- ベルトの装飾：中央で剣を束ねるパーツ -->
+  <circle cx="12" cy="12" r="2" fill="currentColor"/>
+</svg>
+</div>
+<span class="text-white/40 font-serif text-lg tracking-wider font-semibold">Oman Discovery</span>
+</div>
+<p class="text-white/40 text-sm max-w-sm mb-8">
+            Curating bespoke luxury travel experiences for discerning explorers seeking the authentic soul of the Mediterranean.
+          </p>
+</div>
+<div>
+<h6 class="text-lebanon-gold font-serif text-sm mb-6 uppercase tracking-widest">Navigation</h6>
+<ul class="space-y-4 text-sm text-white/60">
+<li><a class="hover:text-white transition-colors" href="#landmarks">Landmarks</a></li>
+<li><a class="hover:text-white transition-colors" href="#cities">Cities</a></li>
+<li><a class="hover:text-white transition-colors" href="#cuisine">Cuisine</a></li>
+<li><a class="hover:text-white transition-colors" href="#history">History</a></li>
+</ul>
+</div>
+<div>
+<h6 class="text-lebanon-gold font-serif text-sm mb-6 uppercase tracking-widest">Connect</h6>
+<ul class="space-y-4 text-sm text-white/60">
+<li><a class="hover:text-white transition-colors" href="#">Instagram</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Twitter</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Contact Us</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 mt-10"><p class="text-xs text-white/20">© 2026 Oman Discovery. All rights reserved.</p>
+<div class="flex gap-8 text-xs text-white/20">
+<a href="#">Privacy Policy</a>
+<a href="#">Terms of Service</a>
+</div></div>
+</footer>
+<!-- END: Footer -->
+</main>
+<style data-purpose="animations">
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+<script>
+    document.getElementById('searchInput').addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+            const searchTerm = this.value.trim();
+            if (searchTerm) {
+                const wikipediaUrl = `https://ja.wikipedia.org/wiki/特別:検索?search=${encodeURIComponent(searchTerm)}`;
+                window.open(wikipediaUrl, '_blank');
+            }
+        }
+    });
+</script>
+</body></html>

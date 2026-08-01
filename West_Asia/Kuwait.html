@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#144bb8",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#111621",
+                        "ku-green": "#5ebc62",
+
+                    },
+                    fontFamily: {
+                        "display": ["Noto Serif", "serif"],
+                        "sans": ["Noto Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-sans text-slate-900 dark:text-slate-100">
+<div class="relative flex h-auto min-screen w-full flex-col bg-background-light dark:bg-background-dark group/design-root">
+<div class="layout-container flex h-full grow flex-col">
+<header class="fixed w-full flex items-center justify-between whitespace-nowrap border-b border-solid border-slate-200 dark:border-slate-800 px-10 py-3 bg-ku-green top-0 z-50">
+<div class="flex items-center gap-4 text-green-700">
+<div class="size-8 flex items-center justify-center">
+<span class="material-symbols-outlined 
+  text-2lg 
+  bg-clip-text text-transparent"
+  style="background-image: linear-gradient(
+    to bottom,
+    #007A3D 0%,
+    #FFFFFF 33%,
+    #CE1126 66%,
+    #000000 100%
+  );">
+  explore
+</span>
+</div>
+<a class="flex items-center gap-3 group" href="#">
+<h2 class="text-slate-900 dark:text-slate-100 text-lg font-bold leading-tight tracking-tight font-display">Kuwait Discovery</h2>
+</a>
+</div>
+<nav class="hidden md:flex items-center gap-9 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+<a class="text-slate-700 dark:text-slate-300 text-sm font-medium hover:text-green-700 transition-colors" href="#landmarks">Landmarks</a>
+<a class="text-slate-700 dark:text-slate-300 text-sm font-medium hover:text-green-700 transition-colors" href="#cities">Cities</a>
+<a class="text-slate-700 dark:text-slate-300 text-sm font-medium hover:text-green-700 transition-colors" href="#cuisine">Cuisine</a>
+<a class="text-slate-700 dark:text-slate-300 text-sm font-medium hover:text-green-700 transition-colors" href="#history">History</a>
+</nav>
+<div class="flex flex-1 justify-end gap-4 md:gap-8">
+<label class="hidden sm:flex flex-col min-w-40 h-10 max-w-64">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+<div class="text-slate-500 flex border-none bg-slate-100 dark:bg-slate-800 items-center justify-center pl-4 rounded-l-lg" data-icon="search">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input id="searchInput" class="form-input flex w-full min-w-0 flex-1 border-none bg-slate-100 dark:bg-slate-800 focus:ring-0 h-full placeholder:text-slate-500 px-4 rounded-r-lg pl-2 text-base font-normal" placeholder="Wikipedia検索" value=""/>
+</div>
+</label>
+
+</div>
+</header>
+<main class="max-w-[1200px] mx-auto w-full px-4 md:px-10 py-5 mt-16">
+<section class="@container mb-12">
+<div class="@[480px]:p-0">
+<div class="flex min-h-[520px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:rounded-xl items-center justify-center p-6 text-center" data-alt="Wide shot of the Treasury building in Petra at dusk" style='background-image: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.6) 100%), url("img/kuwait.jpg");'>
+<div class="flex flex-col gap-4 max-w-2xl">
+<h1 class="text-white text-4xl md:text-5xl font-bold leading-tight tracking-tight font-display">
+                                    Kuwait: A Journey Through Time
+                                </h1>
+<p class="text-white/90 text-lg md:text-xl font-normal max-w-lg mx-auto">
+                                    Experience the energy of Kuwait through its dynamic hubs, where soaring modern skylines meet the timeless pulse of traditional souqs.
+                                </p>
+</div>
+
+</div>
+</div>
+</div>
+</section>
+<section class="mb-16" id="landmarks">
+<div class="flex items-center justify-between mb-8 px-4">
+<h2 class="text-green-800 dark:text-green-400 text-3xl font-bold font-display">Iconic Landmarks</h2>
+<a class="text-green-700 font-medium flex items-center gap-1" href="#">View all <span class="material-symbols-outlined">chevron_right</span></a>
+</div>
+<div class="flex flex-col gap-16 px-4">
+<div class="flex flex-col md:flex-row items-center gap-8 group cursor-pointer">
+<div class="w-full md:w-1/2 aspect-[3/2] bg-center bg-no-repeat bg-cover rounded-xl overflow-hidden shadow-lg" data-alt="Kuwait Towers" style='background-image: url("img/Kuwait_Towers.jpg");'>
+<div class="w-full h-full bg-black/0 group-hover:bg-black/10 transition-colors"></div>
+</div>
+<div class="w-full md:w-1/2">
+<h3 class="text-slate-900 dark:text-slate-100 text-3xl font-bold font-display mb-3">Kuwait Towers</h3>
+<p class="text-slate-500 dark:text-slate-400 text-lg leading-relaxed">The iconic symbol of Kuwait. Modern design meets a breathtaking 360° view of the city and the Gulf.</p>
+</div>
+</div>
+<div class="flex flex-col md:flex-row-reverse items-center gap-8 group cursor-pointer">
+<div class="w-full md:w-1/2 aspect-[3/2] bg-center bg-no-repeat bg-cover rounded-xl overflow-hidden shadow-lg" data-alt="Grand Mosque" style='background-image: url("img/Grand_Mosque.jpg");'>
+<div class="w-full h-full bg-black/0 group-hover:bg-black/10 transition-colors"></div>
+</div>
+<div class="w-full md:w-1/2">
+<h3 class="text-slate-900 dark:text-slate-100 text-3xl font-bold font-display mb-3">Grand Mosque</h3>
+<p class="text-slate-500 dark:text-slate-400 text-lg leading-relaxed">A masterpiece of Islamic architecture. Kuwait’s largest mosque, filled with stunning details and serenity.</p>
+</div>
+</div>
+<div class="flex flex-col md:flex-row items-center gap-8 group cursor-pointer">
+<div class="w-full md:w-1/2 aspect-[3/2] bg-center bg-no-repeat bg-cover rounded-xl overflow-hidden shadow-lg" data-alt="Liberation Tower" style='background-image: url("img/Liberation_Tower.jpg");'>
+<div class="w-full h-full bg-black/0 group-hover:bg-black/10 transition-colors"></div>
+</div>
+<div class="w-full md:w-1/2">
+<h3 class="text-slate-900 dark:text-slate-100 text-3xl font-bold font-display mb-3">Liberation Tower</h3>
+<p class="text-slate-500 dark:text-slate-400 text-lg leading-relaxed">A global-scale communication tower built to celebrate liberation from the Iraqi occupation.</p>
+</div>
+</div>
+<div class="flex flex-col md:flex-row-reverse items-center gap-8 group cursor-pointer">
+<div class="w-full md:w-1/2 aspect-[3/2] bg-center bg-no-repeat bg-cover rounded-xl overflow-hidden shadow-lg" data-alt="Failaka Island" style='background-image: url("img/Failaka_Island.jpg");'>
+<div class="w-full h-full bg-black/0 group-hover:bg-black/10 transition-colors"></div>
+</div>
+<div class="w-full md:w-1/2">
+<h3 class="text-slate-900 dark:text-slate-100 text-3xl font-bold font-display mb-3">Failaka Island</h3>
+<p class="text-slate-500 dark:text-slate-400 text-lg leading-relaxed">A journey through time. From ancient Greek ruins to modern history, all on one unique island.</p>
+</div>
+</div>
+</section>
+<section class="mb-16" id="cities">
+<h2 class="text-green-800 dark:text-slate-100 text-3xl font-bold font-display px-4 mb-8">The Heart of Kuwait</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
+<div class="relative overflow-hidden rounded-xl group h-[300px]">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Kuwait City" src="img/Kuwait_City.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-6">
+<h3 class="text-white text-2xl font-bold font-display">Kuwait City</h3>
+<p class="text-white/80 text-sm mt-1">The heartbeat of the nation’s skyline.</p>
+</div>
+</div>
+<div class="relative overflow-hidden rounded-xl group h-[300px]">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Al Mubarakiya" src="img/Al_Mubarakiya.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-6">
+<h3 class="text-white text-2xl font-bold font-display">Al Mubarakiya</h3>
+<p class="text-white/80 text-sm mt-1">The historic soul of old Kuwait.</p>
+</div>
+</div>
+<div class="relative overflow-hidden rounded-xl group h-[300px]">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Salmiya" src="img/Salmiya.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-6">
+<h3 class="text-white text-2xl font-bold font-display">Salmiya</h3>
+<p class="text-white/80 text-sm mt-1">The vibrant pulse of modern life.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="mb-16" id="cuisine">
+<div class="text-center mb-10 px-4">
+<h2 class="text-green-800 dark:text-slate-100 text-3xl font-bold font-display">The Kuwaiti Table</h2>
+<p class="text-slate-500 dark:text-slate-400 mt-2">From the fragrant Machboos to the sweet crunch of Lugaimat, discover the true essence of hospitality on The Kuwaiti Table.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4">
+<div class="flex flex-col gap-3 group cursor-pointer">
+<div class="w-full aspect-square rounded-2xl overflow-hidden shadow-lg">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Machboos" style='background-image: url("img/Machboos.jpg");'>
+</div>
+</div>
+<div>
+<h3 class="text-slate-900 dark:text-slate-100 text-xl font-bold font-display mb-1">Machboos</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">The National Dish</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 group cursor-pointer">
+<div class="w-full aspect-square rounded-2xl overflow-hidden shadow-lg">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Mutabbaq Zubaidi" style='background-image: url("img/Mutabbaq_Zubaidi.jpg");'>
+</div>
+</div>
+<div>
+<h3 class="text-slate-900 dark:text-slate-100 text-xl font-bold font-display mb-1">Mutabbaq Zubaidi</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">Bounty of the Sea</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 group cursor-pointer">
+<div class="w-full aspect-square rounded-2xl overflow-hidden shadow-lg">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Margoog" style='background-image: url("img/Margoog.jpg");'>
+</div>
+</div>
+<div>
+<h3 class="text-slate-900 dark:text-slate-100 text-xl font-bold font-display mb-1">Margoog</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">A rich, spice-infused stew that tastes like a warm Kuwaiti home. </p>
+</div>
+</div>
+<div class="flex flex-col gap-3 group cursor-pointer">
+<div class="w-full aspect-square rounded-2xl overflow-hidden shadow-lg">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Lugaimat" style='background-image: url("img/Lugaimat.jpg");'>
+</div>
+</div>
+<div>
+<h3 class="text-slate-900 dark:text-slate-100 text-xl font-bold font-display mb-1">Lugaimat</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">Heavenly Sweets     </p>
+</div>
+</div>
+</div>
+</section>
+<section class="mb-16 bg-white dark:bg-slate-900 rounded-2xl p-8 md:p-12 shadow-sm border border-slate-100 dark:border-slate-800" id="history">
+<div class="max-w-5xl mx-auto">
+<div class="text-center mb-12">
+    <h2 class="text-green-700 font-display text-sm mb-2 uppercase tracking-[0.5em]">クウェート国の歴史</h2>
+<h3 class="text-3xl md:text-4xl font-display text-green-800 dark:text-slate-100 mb-4">State of Kuwait</h3>
+<p class="text-xs text-slate-500 max-w-3xl mx-auto">Kuwait's unique geography allowed it to flourish as an Ancient Crossroads, connecting major civilizations through maritime trade and pearling. Today, the nation honors this enduring legacy of openness and exchange, bridging its historic roots with a dynamic modern identity.</p>
+
+</div>
+<div class="max-w-3xl mx-auto space-y-8 relative border-l border-slate-200 dark:border-slate-700 pl-8">
+<!-- History: Ancient -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-green-700 ring-4 ring-white dark:ring-slate-900"></div>
+<h4 class="text-green-700 font-display text-xl font-bold mb-6">古代</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-display font-bold text-slate-900 dark:text-slate-100 mb-1">シュメール文明 <span class="text-xs text-slate-500 block md:inline md:ml-2">（紀元前3000年頃 - 紀元前2000年頃） </span></h5>
+<p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed font-sans">メソポタミア文明の一部として、交易や文化が発展。
+</p>
+</div>
+<div>
+<h5 class="text-lg font-display font-bold text-slate-900 dark:text-slate-100 mb-1">アッカド帝国 <span class="text-xs text-slate-500 block md:inline md:ml-2">（紀元前2334年 - 紀元前2154年） </span></h5>
+<p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed font-sans">メソポタミア全域を統一した帝国。
+</p>
+</div>
+<div>
+<h5 class="text-lg font-display font-bold text-slate-900 dark:text-slate-100 mb-1">バビロニア王国 <span class="text-xs text-slate-500 block md:inline md:ml-2">（紀元前1894年 - 紀元前539年） </span></h5>
+<p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed font-sans">ペルシャ湾沿岸地域も影響を受ける。
+</p>
+</div>
+<div>
+<h5 class="text-lg font-display font-bold text-slate-900 dark:text-slate-100 mb-1">アケメネス朝ペルシア <span class="text-xs text-slate-500 block md:inline md:ml-2">（紀元前539年 - 紀元前330年）</span></h5>
+<p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed font-sans">ペルシャ帝国の一部として統治。
+</p>
+</div>
+</div>
+</div>
+<!-- History: Medieval -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-green-700 ring-4 ring-white dark:ring-slate-900"></div>
+<h4 class="text-green-700 font-display text-xl font-bold mb-6">中世</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-display font-bold text-slate-900 dark:text-slate-100 mb-1">イスラム帝国（ウマイヤ朝・アッバース朝） <span class="text-xs text-slate-500 block md:inline md:ml-2">（7世紀 - 13世紀） </span></h5>
+<p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed font-sans">イスラム教の拡大に伴い、クウェート地域もイスラム文化の影響を受ける。
+</p>
+</div>
+<div>
+<h5 class="text-lg font-display font-bold text-slate-900 dark:text-slate-100 mb-1">モンゴル帝国の影響 <span class="text-xs text-slate-500 block md:inline md:ml-2">（13世紀） </span></h5>
+<p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed font-sans">中央アジアからの影響が広がる。
+</p>
+</div>
+</div>
+</div>
+<!-- History: Early Modern -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-green-700 ring-4 ring-white dark:ring-slate-900"></div>
+<h4 class="text-green-700 font-display text-xl font-bold mb-6">近世</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-display font-bold text-slate-900 dark:text-slate-100 mb-1">オスマン帝国 <span class="text-xs text-slate-500 block md:inline md:ml-2">（16世紀 - 18世紀） </span></h5>
+<p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed font-sans">クウェート地域はオスマン帝国の宗主権下に置かれる。
+</p>
+</div>
+</div>
+</div>
+<!-- History: Modern -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-green-700 ring-4 ring-white dark:ring-slate-900"></div>
+<h4 class="text-green-700 font-display text-xl font-bold mb-6">近現代・現代</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-display font-bold text-slate-900 dark:text-slate-100 mb-1">サバーハ家の統治<span class="text-xs text-slate-500 block md:inline md:ml-2">（1756年 - 現在） </span></h5>
+<p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed font-sans">サバーハ家が首長としてクウェートを統治し始める。
+</p>
+</div>
+<div>
+<h5 class="text-lg font-display font-bold text-slate-900 dark:text-slate-100 mb-1">イギリスの保護領 <span class="text-xs text-slate-500 block md:inline md:ml-2">（1899年 - 1961年） </span></h5>
+<p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed font-sans">イギリスとの保護条約により、外交と軍事面でイギリスの影響を受ける。1938年に大油田の発見。
+
+</p>
+</div>
+<div>
+<h5 class="text-lg font-display font-bold text-slate-900 dark:text-slate-100 mb-1">クウェートの独立 <span class="text-xs text-slate-500 block md:inline md:ml-2">（1961年） </span></h5>
+<p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed font-sans">イギリスから独立を達成し、立憲君主制国家として発展。</p>
+</div>
+<div>
+<h5 class="text-lg font-display font-bold text-slate-900 dark:text-slate-100 mb-1">湾岸戦争 <span class="text-xs text-slate-500 block md:inline md:ml-2">（1990年 - 1991年） </span></h5>
+<p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed font-sans">イラクによる侵攻を受け、多国籍軍の介入により主権を回復。
+</p>
+</div>
+<div>
+<h5 class="text-lg font-display font-bold text-slate-900 dark:text-slate-100 mb-1">クウェート国 <span class="text-xs text-slate-500 block md:inline md:ml-2">（1991年 - 現在） </span></h5>
+<p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed font-sans">石油資源を活用し、経済発展を遂げる。中東地域の安定に向けた努力を続ける。
+クウェートは、古代から現代に至るまで、交易や文化の交差点として重要な役割を果たしてきました。
+</p>
+</div>
+</div>
+</div>
+</div>
+<!-- 歴史の概要 -->
+<p class="text-justify break-words text-slate-500 dark:text-slate-400 text-sm mt-8 italic max-w-2xl mx-auto px-4 leading-relaxed">
+  16世紀にヨーロッパ列強が湾岸地域へ進出するようになりクウェートの存在が知られるようになった。</p>
+<p class="text-left text-slate-500 dark:text-slate-400 text-sm mt-1 italic max-w-2xl mx-auto px-4 leading-relaxed">
+  18世紀、アラビア半島中央部から移住した部族がクウェートの基礎をつくった。
+</p>
+
+<!-- 見出し：サバーハ家の始まり -->
+<p class="text-left text-slate-500 dark:text-slate-400 text-base mt-4 font-bold max-w-2xl mx-auto px-4">
+  サバーハ家の始まり
+</p>
+
+<!-- サバーハ家の詳細 -->
+<p class="text-justify break-words text-slate-500 dark:text-slate-400 text-sm mt-2 italic max-w-2xl mx-auto px-4 leading-relaxed">
+  1756年に、クウェートでサバーハ家が統治を開始しました。この年、地元の部族による合意で、サバーハ家が首長として選ばれたのです。<br>
+  この家系は、湾岸地域の交易と政治を統率し、安定した統治を維持しました。統治スタイルは、立憲君主制の枠組みの中で、国民との協調を重視しています。
+</p>
+</div>
+</section>
+
+</main>
+<footer class="bg-ku-green border-t border-slate-200 dark:border-slate-800 py-12">
+<div class="max-w-[1200px] mx-auto px-10 grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="col-span-1 md:col-span-2">
+<div class="flex items-center gap-4 text-green-700 mb-6">
+<span class="material-symbols-outlined text-3xl">explore</span>
+<h2 class="text-slate-900 dark:text-slate-100 text-xl font-bold font-display">Kuwait Discovery</h2>
+</div>
+<p class="text-white/80 dark:text-slate-400 max-w-sm mb-6">
+                            Dedicated to sharing the authentic wonders and warm hospitality of the State of Kuwait with every visitor
+                        </p>
+<div class="flex gap-4">
+<a class="text-white/80 hover:text-green-700" href="#"><span class="material-symbols-outlined">public</span></a>
+<a class="text-white/80 hover:text-green-700" href="#"><span class="material-symbols-outlined">mail</span></a>
+<a class="text-white/80 hover:text-green-700" href="#"><span class="material-symbols-outlined">share</span></a>
+</div>
+</div>
+<div>
+<h4 class="text-slate-900 dark:text-slate-100 font-bold mb-6">Navigation</h4>
+<ul class="space-y-3 text-slate-500 dark:text-slate-400 text-sm">
+<li><a class="text-white/80 hover:text-green-700" href="#landmarks">Landmarks</a></li>
+<li><a class="text-white/80 hover:text-green-700" href="#cities">Cities</a></li>
+<li><a class="text-white/80 hover:text-green-700" href="#cuisine">Cuisine</a></li>
+<li><a class="text-white/80 hover:text-green-700" href="#history">History</a></li>
+</ul>
+</div>
+
+
+
+
+<div>
+<h4 class="text-slate-900 dark:text-slate-100 font-bold mb-6">Connect</h4>
+<ul class="space-y-3 text-slate-500 dark:text-slate-400 text-sm">
+<li><a class="text-white/80 hover:text-green-700" href="#">Instagram</a></li>
+<li><a class="text-white/80 hover:text-green-700" href="#">Twitter</a></li>
+<li><a class="text-white/80 hover:text-green-700" href="#">Contact</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-[1200px] mx-auto px-10 pt-12 mt-12 dark:border-slate-800 text-white/80 text-xs">
+                    © 2026 Kuwait Travel Guide. All rights reserved.
+                </div>
+</footer>
+</div>
+</div>
+<script>
+    document.getElementById('searchInput').addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+            const searchTerm = this.value.trim();
+            if (searchTerm) {
+                const wikipediaUrl = `https://ja.wikipedia.org/wiki/特別:検索?search=${encodeURIComponent(searchTerm)}`;
+                window.open(wikipediaUrl, '_blank');
+            }
+        }
+    });
+</script>
+</body></html>

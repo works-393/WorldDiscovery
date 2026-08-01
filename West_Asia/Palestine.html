@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<title>Palestine Discovery | Living Through History</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#144bb8",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#111621",
+                        // 追加
+                        "e-green": "#50C878",
+                        "g-green": "#006400",
+                        "qatar-gold": "#C5A059",
+                        "qatar-blue": "#1e3a8a",
+                    },
+                    fontFamily: {
+                        "display": ["Noto Serif", "serif"],
+                        "sans": ["Noto Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-sans text-slate-900 dark:text-slate-100">
+<div class="relative flex h-auto min-screen w-full flex-col bg-background-light dark:bg-background-dark group/design-root">
+<div class="layout-container flex h-full grow flex-col">
+<header class="fixed w-full flex items-center justify-between whitespace-nowrap border-b border-solid border-slate-200 dark:border-slate-800 px-10 py-3 bg-gradient-to-br from-emerald-50 via-blue-100 to-teal-100 top-0 z-50">
+<div class="flex items-center gap-4 text-green-700">
+<div class="size-8 flex items-center justify-center">
+<span class="material-symbols-outlined 
+  text-2lg 
+  bg-clip-text text-transparent"
+  style="
+    background-image: linear-gradient(
+      to bottom,
+      #000000 0%,    /* 黒 */
+      #000000 33%,
+      #FFFFFF 33%,   /* 白 */
+      #FFFFFF 66%,
+      #007A3D 66%,   /* 緑 */
+      #007A3D 100%
+    );
+    font-variation-settings: 'FILL' 1, 'wght' 700;
+  ">
+  explore
+</span>
+</div>
+<a class="flex items-center gap-3 group" href="#">
+<h2 class="text-slate-900 dark:text-slate-100 text-lg font-bold leading-tight tracking-tight font-display">Palestine Discovery</h2>
+</a>
+</div>
+<nav class="hidden md:flex items-center gap-9 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+<a class="text-slate-700 dark:text-slate-300 text-sm font-medium hover:text-green-700 transition-colors" href="#landmarks">Landmarks</a>
+<a class="text-slate-700 dark:text-slate-300 text-sm font-medium hover:text-green-700 transition-colors" href="#cities">Cities</a>
+<a class="text-slate-700 dark:text-slate-300 text-sm font-medium hover:text-green-700 transition-colors" href="#cuisine">Cuisine</a>
+<a class="text-slate-700 dark:text-slate-300 text-sm font-medium hover:text-green-700 transition-colors" href="#history">History</a>
+</nav>
+<div class="flex flex-1 justify-end gap-4 md:gap-8">
+<label class="hidden sm:flex flex-col min-w-40 h-10 max-w-64">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+<div class="text-slate-500 flex border-none bg-slate-100 dark:bg-slate-800 items-center justify-center pl-4 rounded-l-lg" data-icon="search">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input id="searchInput" class="form-input flex w-full min-w-0 flex-1 border-none bg-slate-100 dark:bg-slate-800 focus:ring-0 h-full placeholder:text-slate-500 px-4 rounded-r-lg pl-2 text-base font-normal" placeholder="Wikipedia検索" value=""/>
+</div>
+</label>
+
+</div>
+</header>
+<main class="max-w-[1200px] mx-auto w-full px-4 md:px-10 py-5 mt-16">
+<section class="@container mb-12">
+<div class="@[480px]:p-0">
+<div class="flex min-h-[520px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:rounded-xl items-center justify-center p-6 text-center" data-alt="Palestine" style='background-image: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.6) 100%), url("img/Palestine.jpg");'>
+<div class="flex flex-col gap-4 max-w-2xl">
+<h1 class="text-white text-4xl md:text-5xl font-bold leading-tight tracking-tight font-display">
+                                    Palestine: Living Through History
+                                </h1>
+<p class="text-white/90 text-lg md:text-xl font-normal max-w-lg mx-auto">
+                                    The enduring spirit of a people navigating conflict, loss, and hope.
+                                </p>
+</div>
+
+</div>
+</div>
+</div>
+</section>
+<section class="mb-16" id="landmarks">
+<div class="flex items-center justify-between mb-8 px-4">
+<h2 class="text-g-green dark:text-green-400 text-3xl font-bold font-display">Iconic Landmarks</h2>
+<a class="text-green-700 font-medium flex items-center gap-1" href="#">View all <span class="material-symbols-outlined">chevron_right</span></a>
+</div>
+<div class="flex flex-col gap-16 px-4">
+<div class="flex flex-col md:flex-row items-center gap-8 group cursor-pointer">
+<div class="w-full md:w-1/2 aspect-[3/2] bg-center bg-no-repeat bg-cover rounded-xl overflow-hidden shadow-lg" data-alt="Al-Aqsa Mosque" style='background-image: url("img/Al-Aqsa_Mosque.jpg");'>
+<div class="w-full h-full bg-black/0 group-hover:bg-black/10 transition-colors"></div>
+</div>
+<div class="w-full md:w-1/2">
+<h3 class="text-qatar-blue dark:text-qatar-blue text-3xl font-bold font-display mb-3">Al-Aqsa Mosque</h3>
+<p class="text-slate-500 dark:text-slate-400 text-lg leading-relaxed">One of Islam’s holiest sites, located in the historic compound of Jerusalem’s Old City.e</p>
+</div>
+</div>
+<div class="flex flex-col md:flex-row-reverse items-center gap-8 group cursor-pointer">
+<div class="w-full md:w-1/2 aspect-[3/2] bg-center bg-no-repeat bg-cover rounded-xl overflow-hidden shadow-lg" data-alt="Church of the Nativity" style='background-image: url("img/Nativity.jpg");'>
+<div class="w-full h-full bg-black/0 group-hover:bg-black/10 transition-colors"></div>
+</div>
+<div class="w-full md:w-1/2">
+<h3 class="text-qatar-blue dark:text-qatar-blue text-3xl font-bold font-display mb-3">Church of the Nativity</h3>
+<p class="text-slate-500 dark:text-slate-400 text-lg leading-relaxed">Built over the traditional birthplace of Jesus, this ancient church is one of Christianity’s most revered sites.</p>
+</div>
+</div>
+
+</section>
+<section class="mb-16" id="cities">
+<h2 class="text-g-green dark:text-slate-100 text-3xl font-bold font-display px-4 mb-8">Cities Shaped by History and Resilience</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
+<div class="relative overflow-hidden rounded-xl group h-[300px]">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Ramallah" src="img/Ramallah.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-6">
+<h3 class="text-white text-2xl font-bold font-display">Ramallah</h3>
+<p class="text-white/80 text-sm mt-1">A vibrant cultural and administrative center of the West Bank, known for its lively cafés, arts scene, and political institutions.
+</p>
+</div>
+</div>
+<div class="relative overflow-hidden rounded-xl group h-[300px]">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Gaza City" src="img/Gaza_City.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-6">
+<h3 class="text-white text-2xl font-bold font-display">Gaza City</h3>
+<p class="text-white/80 text-sm mt-1">A historic coastal city on the Mediterranean, long known as a crossroads of trade and culture in the region.</p>
+</div>
+</div>
+<div class="relative overflow-hidden rounded-xl group h-[300px]">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Bethlehem" src="img/Bethlehem.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-6">
+<h3 class="text-white text-2xl font-bold font-display">Bethlehem</h3>
+<p class="text-white/80 text-sm mt-1">A historic town revered as the birthplace of Jesus and home to one of Christianity’s most sacred sites.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="mb-16" id="cuisine">
+<div class="text-center mb-10 px-4">
+<h2 class="text-g-green dark:text-slate-100 text-3xl font-bold font-display">The Palestinian Table</h2>
+<p class="text-slate-500 dark:text-slate-400 mt-2">From the fragrant spice of Maqluba to the creamy sweetness of Knafeh, discover the rich flavors and enduring traditions of Palestinian cuisine.
+</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4">
+<div class="flex flex-col gap-3 group cursor-pointer">
+<div class="w-full aspect-square rounded-2xl overflow-hidden shadow-lg">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Maqluba" style='background-image: url("img/Maqluba.jpg");'>
+</div>
+</div>
+<div>
+<h3 class="text-qatar-gold dark:text-qatar-gold text-2xl font-bold font-display mb-1">Maqluba</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">A traditional rice dish layered with meat, vegetables, and fragrant spices, famously flipped upside down before serving.
+</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 group cursor-pointer">
+<div class="w-full aspect-square rounded-2xl overflow-hidden shadow-lg">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Shorbat Adas" style='background-image: url("img/Shorbat_Adas.jpg");'>
+</div>
+</div>
+<div>
+<h3 class="text-qatar-gold dark:text-qatar-gold text-2xl font-bold font-display mb-1">Shorbat Adas</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">A comforting lentil soup flavored with cumin, lemon, and olive oil, widely enjoyed across Palestinian homes.</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 group cursor-pointer">
+<div class="w-full aspect-square rounded-2xl overflow-hidden shadow-lg">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Mint Tea" style='background-image: url("img/Mint_Tea.jpg");'>
+</div>
+</div>
+<div>
+<h3 class="text-qatar-gold dark:text-qatar-gold text-2xl font-bold font-display mb-1">Mint Tea</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">A refreshing tea infused with fresh mint leaves, often shared as a symbol of hospitality and warmth.</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 group cursor-pointer">
+<div class="w-full aspect-square rounded-2xl overflow-hidden shadow-lg">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Knafeh Nabulsiyeh" style='background-image: url("img/Knafeh_Nabulsiyeh.jpg");'>
+</div>
+</div>
+<div>
+<h3 class="text-qatar-gold dark:text-qatar-gold text-2xl font-bold font-display mb-1">Knafeh Nabulsiyeh</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">A famous Palestinian dessert from Nablus, made with soft white cheese, crisp shredded pastry, and fragrant sugar syrup.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="mb-16 bg-white dark:bg-slate-900 rounded-2xl p-8 md:p-12 shadow-sm border border-slate-100 dark:border-slate-800" id="history">
+<div class="max-w-5xl mx-auto">
+<div class="text-center mb-12">
+<h3 class="text-3xl md:text-3xl font-display text-g-green dark:text-slate-100 mb-4">Palestine:From Ancient Crossroads to the Present</h3>
+<h2 class="text-g-green font-display text-sm mb-2 uppercase tracking-[0.5em]">パレスチナの歴史</h2>
+</div>
+<div class="max-w-3xl mx-auto space-y-8 relative border-l border-slate-200 dark:border-slate-700 pl-8">
+<!-- History: Ancient -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-g-green ring-4 ring-white dark:ring-slate-900"></div>
+<h4 class="text-g-green font-display text-xl font-bold mb-6">古代</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-display font-bold text-slate-900 dark:text-slate-100 mb-1">カナン人の都市国家 <span class="text-xs text-slate-500 block md:inline md:ml-2">（紀元前3000年頃 - 紀元前1000年頃）   </span></h5>
+<p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed font-sans">パレスチナ地域にはカナン人が住み、エリコやメギドなどの都市国家を築きました。
+
+
+</p>
+</div>
+<div>
+<h5 class="text-lg font-display font-bold text-slate-900 dark:text-slate-100 mb-1">イスラエル王国とユダ王国<span class="text-xs text-slate-500 block md:inline md:ml-2">（紀元前10世紀 - 紀元前6世紀）  </span></h5>
+<p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed font-sans">ダビデ王とソロモン王の時代に繁栄したイスラエル王国が分裂し、北のイスラエル王国と南のユダ王国が成立しました。
+
+
+</p>
+</div>
+<div>
+<h5 class="text-lg font-display font-bold text-slate-900 dark:text-slate-100 mb-1">アッシリア・バビロニア支配<span class="text-xs text-slate-500 block md:inline md:ml-2">（紀元前8世紀 - 紀元前6世紀）  </span></h5>
+<p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed font-sans">アッシリア帝国がイスラエル王国を滅ぼし、続いてバビロニアがユダ王国を征服しました。
+
+
+</p>
+</div>
+<div>
+<h5 class="text-lg font-display font-bold text-slate-900 dark:text-slate-100 mb-1">アケメネス朝ペルシア<span class="text-xs text-slate-500 block md:inline md:ml-2">（紀元前539年 - 紀元前332年）   </span></h5>
+<p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed font-sans">ペルシャ帝国の支配下で、ユダヤ人がバビロン捕囚から解放されました。
+
+</p>
+</div>
+</div>
+</div>
+<!-- History: Medieval -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-g-green ring-4 ring-white dark:ring-slate-900"></div>
+<h4 class="text-g-green font-display text-xl font-bold mb-6">中世</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-display font-bold text-slate-900 dark:text-slate-100 mb-1">イスラム帝国（ウマイヤ朝・アッバース朝） <span class="text-xs text-slate-500 block md:inline md:ml-2">（7世紀 - 11世紀）  </span></h5>
+<p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed font-sans">イスラム教の拡大に伴い、パレスチナはイスラム帝国の一部となり、エルサレムは重要な宗教都市となりました。</p>
+</div>
+<div>
+<h5 class="text-lg font-display font-bold text-slate-900 dark:text-slate-100 mb-1">十字軍国家（エルサレム王国） <span class="text-xs text-slate-500 block md:inline md:ml-2">（1099年 - 1291年）  </span></h5>
+<p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed font-sans">第1回十字軍によってエルサレム王国が建国されましたが、最終的にイスラム勢力に奪還されました。
+</p>
+</div>
+<div>
+<h5 class="text-lg font-display font-bold text-slate-900 dark:text-slate-100 mb-1">アイユーブ朝とマムルーク朝<span class="text-xs text-slate-500 block md:inline md:ml-2">（12世紀 - 16世紀）   </span></h5>
+<p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed font-sans">サラーフッディーン（サラディン）によるエルサレム奪還後、マムルーク朝が支配を引き継ぎました。
+
+</p>
+</div>
+</div>
+</div>
+<!-- History: Early Modern -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-g-green ring-4 ring-white dark:ring-slate-900"></div>
+<h4 class="text-g-green font-display text-xl font-bold mb-6">近世</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-display font-bold text-slate-900 dark:text-slate-100 mb-1">オスマン帝国 <span class="text-xs text-slate-500 block md:inline md:ml-2">（1517年 - 1917年）  </span></h5>
+<p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed font-sans">パレスチナはオスマン帝国の一部として統治され、農業や交易が発展しました。
+</p>
+</div>
+</div>
+</div>
+<!-- History: Modern -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-g-green ring-4 ring-white dark:ring-slate-900"></div>
+<h4 class="text-g-green font-display text-xl font-bold mb-6">近現代・現代</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-display font-bold text-slate-900 dark:text-slate-100 mb-1">イギリス委任統治領<span class="text-xs text-slate-500 block md:inline md:ml-2">（1920年 - 1948年）  </span></h5>
+<p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed font-sans">第一次世界大戦後、国際連盟の委任統治のもとでイギリスが統治しました。
+</p>
+</div>
+<div>
+<h5 class="text-lg font-display font-bold text-slate-900 dark:text-slate-100 mb-1">イスラエル建国とパレスチナ問題の発生<span class="text-xs text-slate-500 block md:inline md:ml-2">（1948年 - 現在）   </span></h5>
+<p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed font-sans">1948年にイスラエルが建国され、パレスチナ人の土地喪失と難民問題が発生しました。
+</p>
+</div>
+<div>
+<h5 class="text-lg font-display font-bold text-slate-900 dark:text-slate-100 mb-1">パレスチナ自治政府の成立 <span class="text-xs text-slate-500 block md:inline md:ml-2">（1994年 - 現在）   </span></h5>
+<p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed font-sans">オスロ合意に基づき、パレスチナ自治政府が設立されました。
+</p>
+
+</p>
+</div>
+<div>
+<h5 class="text-lg font-display font-bold text-slate-900 dark:text-slate-100 mb-1">パレスチナ国 <span class="text-xs text-slate-500 block md:inline md:ml-2">（1988年 - 現在） </span></h5>
+<p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed font-sans"> 1988年にパレスチナ解放機構（PLO）が独立を宣言し、現在も国際的な承認を求めています。一方で、イスラエルとの対立が続いています。
+パレスチナの歴史は、宗教的・地政学的な要因が絡み合い、多くの勢力が交代で支配してきた複雑なものです。
+</p>
+</div>
+
+</div>
+</div>
+</div>
+<!-- 歴史の概要 -->
+<p class="text-justify break-words text-slate-500 dark:text-slate-400 text-sm mt-8 italic max-w-2xl mx-auto px-4 leading-relaxed">
+  </p>
+<!-- 見出し： -->
+<p class="text-left text-slate-500 dark:text-slate-400 text-base mt-4 font-bold max-w-2xl mx-auto px-4">
+ </p>
+
+<!-- 詳細 -->
+<p class="text-justify break-words text-slate-500 dark:text-slate-400 text-sm mt-2 italic max-w-2xl mx-auto px-4 leading-relaxed">
+ 
+</p>
+</div>
+</section>
+
+</main>
+<footer class="bg-white dark:bg-background-dark border-t border-slate-200 dark:border-slate-800 py-12">
+<div class="max-w-[1200px] mx-auto px-10 grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="col-span-1 md:col-span-2">
+<div class="flex items-center gap-4 text-green-700 mb-6">
+<span class="material-symbols-outlined text-3xl">explore</span>
+<h2 class="text-slate-900 dark:text-slate-100 text-xl font-bold font-display">Palestine Discovery</h2>
+</div>
+<p class="text-slate-500 dark:text-slate-400 max-w-sm mb-6">
+                            rich heritage, enduring spirit, and living traditions
+                        </p>
+<div class="flex gap-4">
+<a class="text-slate-400 hover:text-green-700" href="#"><span class="material-symbols-outlined">public</span></a>
+<a class="text-slate-400 hover:text-green-700" href="#"><span class="material-symbols-outlined">mail</span></a>
+<a class="text-slate-400 hover:text-green-700" href="#"><span class="material-symbols-outlined">share</span></a>
+</div>
+</div>
+<div>
+<h4 class="text-slate-900 dark:text-slate-100 font-bold mb-6">Navigation</h4>
+<ul class="space-y-3 text-slate-500 dark:text-slate-400 text-sm">
+<li><a class="hover:text-green-700" href="#landmarks">Landmarks</a></li>
+<li><a class="hover:text-green-700" href="#cities">Cities</a></li>
+<li><a class="hover:text-green-700" href="#cuisine">Cuisine</a></li>
+<li><a class="hover:text-green-700" href="#history">History</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-slate-900 dark:text-slate-100 font-bold mb-6">Connect</h4>
+<ul class="space-y-3 text-slate-500 dark:text-slate-400 text-sm">
+<li><a class="hover:text-green-700" href="#">Instagram</a></li>
+<li><a class="hover:text-green-700" href="#">Twitter</a></li>
+<li><a class="hover:text-green-700" href="#">Contact Us</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-[1200px] mx-auto px-10 pt-12 mt-12 border-t border-slate-100 dark:border-slate-800 text-slate-400 text-xs">
+                    © 2026 Palestine Travel Guide. All rights reserved.
+                </div>
+</footer>
+</div>
+</div>
+<script>
+    document.getElementById('searchInput').addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+            const searchTerm = this.value.trim();
+            if (searchTerm) {
+                const wikipediaUrl = `https://ja.wikipedia.org/wiki/特別:検索?search=${encodeURIComponent(searchTerm)}`;
+                window.open(wikipediaUrl, '_blank');
+            }
+        }
+    });
+</script>
+</body></html>

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#144bb8",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#111621",
+                    },
+                    fontFamily: {
+                        "display": ["Noto Serif", "serif"],
+                        "sans": ["Noto Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-sans text-slate-900 dark:text-slate-100">
+<div class="relative flex h-auto min-screen w-full flex-col bg-background-light dark:bg-background-dark group/design-root">
+<div class="layout-container flex h-full grow flex-col">
+<header class="fixed w-full flex items-center justify-between whitespace-nowrap border-b border-solid border-slate-200 dark:border-slate-800 px-10 py-3 bg-white dark:bg-background-dark top-0 z-50">
+<div class="flex items-center gap-4 text-primary">
+<div class="size-8 flex items-center justify-center">
+<span class="material-symbols-outlined text-3xl">explore</span>
+</div>
+<a class="flex items-center gap-3 group" href="#">
+<h2 class="text-slate-900 dark:text-slate-100 text-lg font-bold leading-tight tracking-tight font-display">Jordan Discovery</h2>
+</a>
+</div>
+<nav class="hidden md:flex items-center gap-9 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+<a class="text-slate-700 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors" href="#landmarks">Landmarks</a>
+<a class="text-slate-700 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors" href="#cities">Cities</a>
+<a class="text-slate-700 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors" href="#cuisine">Cuisine</a>
+<a class="text-slate-700 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors" href="#history">History</a>
+</nav>
+<div class="flex flex-1 justify-end gap-4 md:gap-8">
+<label class="hidden sm:flex flex-col min-w-40 h-10 max-w-64">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+<div class="text-slate-500 flex border-none bg-slate-100 dark:bg-slate-800 items-center justify-center pl-4 rounded-l-lg" data-icon="search">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input id="searchInput" class="form-input flex w-full min-w-0 flex-1 border-none bg-slate-100 dark:bg-slate-800 focus:ring-0 h-full placeholder:text-slate-500 px-4 rounded-r-lg pl-2 text-base font-normal" placeholder="Wikipedia検索" value=""/>
+</div>
+</label>
+
+</div>
+</header>
+<main class="max-w-[1200px] mx-auto w-full px-4 md:px-10 py-5 mt-16">
+<section class="@container mb-12">
+<div class="@[480px]:p-0">
+<div class="flex min-h-[520px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:rounded-xl items-center justify-center p-6 text-center" data-alt="Wide shot of the Treasury building in Petra at dusk" style='background-image: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.6) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuBAcsrshGFIWteprmnCvUebjWvbLBPAyWbVTrepkAIiYWaLL749VScfcD4G8PIbGeSYgaXmYPPnZcxxH-_On68i-WZ0--Lymf4TTI-JaemsdMPStW3dQe3Jcx0e-sJoWZIBeu_GJFe-7ongXb7-YNYXTWApEJHA1iqzX2DWlsHGnRPehHgG7zfODzH_GkVG7nmLYS_aqobMYgIz21WF8D76LX2jYSBVaPXbeUSPZkWtyUCsrkjCSVp4-803ggkRXqS2GdPrNK16ygZ2");'>
+<div class="flex flex-col gap-4 max-w-2xl">
+<h1 class="text-white text-4xl md:text-5xl font-bold leading-tight tracking-tight font-display">
+                                    Jordan: A Journey Through Time
+                                </h1>
+<p class="text-white/90 text-lg md:text-xl font-normal max-w-lg mx-auto">
+                                    Discover the magic of the Hashemite Kingdom, where ancient history meets modern hospitality.
+                                </p>
+</div>
+
+</div>
+</div>
+</div>
+</section>
+<section class="mb-16" id="landmarks">
+<div class="flex items-center justify-between mb-8 px-4">
+<h2 class="text-slate-900 dark:text-slate-100 text-3xl font-bold font-display">Iconic Landmarks</h2>
+<a class="text-primary font-medium flex items-center gap-1" href="#">View all <span class="material-symbols-outlined">chevron_right</span></a>
+</div>
+<div class="flex flex-col gap-16 px-4">
+<div class="flex flex-col md:flex-row items-center gap-8 group cursor-pointer">
+<div class="w-full md:w-1/2 aspect-[3/2] bg-center bg-no-repeat bg-cover rounded-xl overflow-hidden shadow-lg" data-alt="The Monastery building in Petra Jordan carved in rock" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBPIUIF4wzdLooAUXmovl7rABpbQU7IgaMyVPCzAxdvPu-yBFc_TPbiE3N1OmNoVIKv9nVJg9KDS9xD18TvfJEN0TfOWCh8VDGNw59Fc56x3rt0ixcXnV_fKwFp1qdJs_F4KIj5VMrrVrdL-rkT5RfKtLjawHvGKxa7QenZGKDrfMnFd8H6sjVtEIqDfVcElYItokAxmKZpk0DHA52qxQ07_bx68x_BlgSiqEqxI6zxNvbG2g0UkseAiCayUs_yjn1zLfo-mHsB4UPd");'>
+<div class="w-full h-full bg-black/0 group-hover:bg-black/10 transition-colors"></div>
+</div>
+<div class="w-full md:w-1/2">
+<h3 class="text-slate-900 dark:text-slate-100 text-3xl font-bold font-display mb-3">Petra</h3>
+<p class="text-slate-500 dark:text-slate-400 text-lg leading-relaxed">The Rose City - UNESCO World Heritage</p>
+</div>
+</div>
+<div class="flex flex-col md:flex-row-reverse items-center gap-8 group cursor-pointer">
+<div class="w-full md:w-1/2 aspect-[3/2] bg-center bg-no-repeat bg-cover rounded-xl overflow-hidden shadow-lg" data-alt="Calm waters of the Dead Sea with salt formations" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAQoRyQ475Qr1uANbsFmhHwOM_ysfMpEG-5juK9h7jPNn7JnfIcD_dHC78sxEvLLL6lI_mvLA737_RXVHLeZfwSOY2xRF3Hn-MXMWF8IOuz_J30JvtynWen8omXHF9cg0UHm4mhfQiadtVz1bZTM6GosW-FFOAxTnEXK8hN_l6nDm79IiS_lacXNNsS4cyzj26QcNesNRJE0WRGweG7DTWEC5cX97O1cc3EN6Z9CYlwC1MMgr6vQKU0qdM1QQJgUKeyFOHg3Gwluadd");'>
+<div class="w-full h-full bg-black/0 group-hover:bg-black/10 transition-colors"></div>
+</div>
+<div class="w-full md:w-1/2">
+<h3 class="text-slate-900 dark:text-slate-100 text-3xl font-bold font-display mb-3">Dead Sea</h3>
+<p class="text-slate-500 dark:text-slate-400 text-lg leading-relaxed">Lowest point on Earth, mineral-rich waters</p>
+</div>
+</div>
+<div class="flex flex-col md:flex-row items-center gap-8 group cursor-pointer">
+<div class="w-full md:w-1/2 aspect-[3/2] bg-center bg-no-repeat bg-cover rounded-xl overflow-hidden shadow-lg" data-alt="Red sand dunes and rock formations of Wadi Rum desert" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDGVpQuEWioXV1Iz_-gisZ2kIDHcNoVEWR-PQfzHW6N0ji8XwhR53HYmKXK12iAe7W-8V2W7OU3bf23dz4lxUOjsOKNolMoIg8neXXkOMMgXBOPFxmet2UzgCSDxgXoaMgPyVwJC6_wBZyYnS8u3ns5a6gDlDoZt5joRPeuoLL992wbSTeuOrgDMxHWJGvKNaquCtPWrQ5IPKMqus9EM918a0Z7gqNsh0sWslOjtQSIJmST-S5mEPZfE0xh4em-vmtegNqedBLHirPD");'>
+<div class="w-full h-full bg-black/0 group-hover:bg-black/10 transition-colors"></div>
+</div>
+<div class="w-full md:w-1/2">
+<h3 class="text-slate-900 dark:text-slate-100 text-3xl font-bold font-display mb-3">Wadi Rum</h3>
+<p class="text-slate-500 dark:text-slate-400 text-lg leading-relaxed">The Valley of the Moon desert landscape</p>
+</div>
+</div>
+<div class="flex flex-col md:flex-row-reverse items-center gap-8 group cursor-pointer">
+<div class="w-full md:w-1/2 aspect-[3/2] bg-center bg-no-repeat bg-cover rounded-xl overflow-hidden shadow-lg" data-alt="Ancient Roman columns in Jerash archaeological site" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDdwNWGLdn5w_R0f6o3lnFoCgiQc9CrpmNJoh8ydAXz7aORGlmMF1sfUa9GD9Bonvq6R4Ytz2WnKzy6PRR38BHV8FJ1c-ZD9B79wSPhtMKkKtnhv4AXnLGVWIVYnYOd7Kpry8XuubyDhscHn2KnryzQJWwd9A3kFpf_A8SAuCshv0GnwzZaF5qFcNWyk8nnRmzyiLKq1G6uCT_bLCdzHtSd37gYKgJZW1m4OOAA_BVXs6-vRnBfWj-R-k4AGzMOh7_0oDJquSFguFV8");'>
+<div class="w-full h-full bg-black/0 group-hover:bg-black/10 transition-colors"></div>
+</div>
+<div class="w-full md:w-1/2">
+<h3 class="text-slate-900 dark:text-slate-100 text-3xl font-bold font-display mb-3">Jerash</h3>
+<p class="text-slate-500 dark:text-slate-400 text-lg leading-relaxed">Pompeii of the East, Roman ruins</p>
+</div>
+</div>
+</section>
+<section class="mb-16" id="cities">
+<h2 class="text-slate-900 dark:text-slate-100 text-3xl font-bold font-display mb-8 px-4 border-l-4 border-primary pl-6">Vibrant Cities</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
+<div class="relative overflow-hidden rounded-xl group h-[300px]">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Panoramic view of Amman city with white stone houses" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpz1teZNMzvS4i5owte1aAnhOiy8Tkc_R7m1MDohTq7oaz94fRRjLu13Zzs0Or3tm3YxBktmYT3Tc1zxM59eP4bSYbvAv2IgC2LYZek74ePpNWYSNBopwsxaTZZiBfDV5rvjQcDm_cR_hZ2LiUClbBKRtkxDfpAACpVe0BTakcJy_Ha0CwSI6N6X8RmREjQsa-kUohLGhuJJbHXyn_MjuWlF_Em9Q6Ps3u2-hreeNG5kPBokDqmiXgDn1BvmB8ldqzo09RTScvI7p2"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-6">
+<h3 class="text-white text-2xl font-bold font-display">Amman</h3>
+<p class="text-white/80 text-sm mt-1">The bustling capital city of 7 hills</p>
+</div>
+</div>
+<div class="relative overflow-hidden rounded-xl group h-[300px]">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Aqaba beach with palm trees and Red Sea water" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDh8RXA6jHwO0Wp1hU0gOk3hGTqu_eLhfxz-V7g4U9roB9GbwSanlFrrMR2BOPDszzb5lBy7qQedJu7knY1Bf8O-mC4Ohxgz6MJd3slfCOmito837ERi2Wn9rFRy9b7gHM3wOxCORSyIKcoL1iRkiIn8kRA5pvVVtu-IRC1n5pHkjXwAnTIKYUbm61Jmku57Mx7uhni97PRt6DNnFQZZc0O4HuwuaivqJ1xR6T-NAS0gH0bOIpSXAWsgafW_xD0ym5WNv0SOVDfb7IH"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-6">
+<h3 class="text-white text-2xl font-bold font-display">Aqaba</h3>
+<p class="text-white/80 text-sm mt-1">Coastal city on the Red Sea</p>
+</div>
+</div>
+<div class="relative overflow-hidden rounded-xl group h-[300px]">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="St. George Church in Madaba with mosaic floor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYzuZZDiSmODuewYKx3cdDi_i0jUDuC_yvS7DXg15ZvpkdT5Z68lKMOQVZwXRT-10UsLbUc2Ri34tA9pdpztck94kGjuKq1zFjhPD6ElU9ctwA4ZGVIBiscHptKWMqoSGQBUMIzODnMXvAUAmEam3bT2IB-XP_oQqGBXO_FoU7U8C44XACrw43BvSahIcH2iweS_jjIL8RsJktou_zVybxwvOWgU22InsafubkqjExaVqrpdxFgeXz5FqhuMKEKulLi5vkmSclcSND"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-6">
+<h3 class="text-white text-2xl font-bold font-display">Madaba</h3>
+<p class="text-white/80 text-sm mt-1">The City of Mosaics</p>
+</div>
+</div>
+</div>
+</section>
+<section class="mb-16" id="cuisine">
+<div class="text-center mb-10 px-4">
+<h2 class="text-slate-900 dark:text-slate-100 text-3xl font-bold font-display">Jordanian Cuisine</h2>
+<p class="text-slate-500 dark:text-slate-400 mt-2">A feast for the senses with centuries of tradition</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4">
+<div class="flex flex-col gap-3 group cursor-pointer">
+<div class="w-full aspect-square rounded-2xl overflow-hidden shadow-lg">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Traditional Mansaf dish with lamb, rice and yogurt sauce" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAosGftl88_7c7Rg_PdtcLMZfNyLJ_s0cnozitIn0XH6zLNIZKZa2ND2Qbm-ufwG4QgNO9DLCBbIpWYQ2OOp4ya6hb9X5ShQLq8fKNFyeNITTXc-lR_TPr6Xq3QiQ_lNjh63FPYsnTVwYs27SCudz3qkSAvsObXXWsJfyFg6_Nj2PngyrWc7wZMHLXd_kryGR_xO6usy9xKBlwRFjWlCNgBCyHlQgmE50yUCdy4rYZhi0nfgELyLjTRyUy5zPXUF1QZacySaAvfhl8g");'>
+</div>
+</div>
+<div>
+<h3 class="text-slate-900 dark:text-slate-100 text-xl font-bold font-display mb-1">Mansaf</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">
+                                    The national dish of Jordan. Tender lamb cooked in a sauce of fermented dried yogurt (Jameed) served over a bed of rice and thin flatbread.
+                                </p>
+</div>
+</div>
+<div class="flex flex-col gap-3 group cursor-pointer">
+<div class="w-full aspect-square rounded-2xl overflow-hidden shadow-lg">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Golden fried falafel balls on a plate with dip" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDG-1kQbIOIPY7jpnppTCIHFOuJU6hQFD_le0DVeGn9wYTn8LWp1iHqKa_i6o8NNpjXFyraXaTcMCRqsJ9uFOjsDJep5VP0gM42YwhZOnNWtq4BTclTZP-hU0XR6arA4PgKiw5sNpIcz-Jm_hegKlwxlhJkX5c6WMqz_-Q8akrCabu5qaI5boy7q9cfEPWOmMxR38DLULumRoiueREwkg3q3zjKLJfD-YJGQIyZQWkg8_fqViW8oKLgN08MmWD0ghSMlao3BNAT0Yr3");'>
+</div>
+</div>
+<div>
+<h3 class="text-slate-900 dark:text-slate-100 text-xl font-bold font-display mb-1">Falafel</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">
+                                    Deep-fried balls made from ground chickpeas and herbs. A staple street food often enjoyed in a sandwich or as part of a breakfast mezze.
+                                </p>
+</div>
+</div>
+<div class="flex flex-col gap-3 group cursor-pointer">
+<div class="w-full aspect-square rounded-2xl overflow-hidden shadow-lg">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Creamy hummus topped with olive oil and chickpeas" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDo63PK8DsujHCcX5s2UCynU81zQHhac8zq70O6rZAEXi24MKcydmdaaXZYFiNzn6loAFMARmDn_mtOxd7mcGqOUA2TMxtWZ4d80rDpZ4HJ7_V6Pa9va4jCKh1Z6jO77QJBnPEn7AIFtDDOEkJQXkPgxg1wb2hblueOokK8p8xhwC_AYpKCqteRYsIHlBt0gjM6eExtHd5Znzz_cmX-SU48BhgF6Am5tzsUJjAak2xIRMBYLwCdv-Ztks2RwSHj8HmH2buGoTTJhhz8");'>
+</div>
+</div>
+<div>
+<h3 class="text-slate-900 dark:text-slate-100 text-xl font-bold font-display mb-1">Hummus</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">
+                                    Creamy chickpea dip blended with tahini, lemon juice, and garlic, topped with premium Jordanian olive oil.
+                                </p>
+</div>
+</div>
+<div class="flex flex-col gap-3 group cursor-pointer">
+<div class="w-full aspect-square rounded-2xl overflow-hidden shadow-lg">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Kunafeh pastry with melted cheese and syrup" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAQxHeUc1YonYTzPXbr_qG-2SxTXzBxPuDzoKexeOKPQfNZMYdV-x6MZqLKDbTsf8EdioNwJLXRXAvayCQ8-p0_fbOpeJ3M16i1wBy1LxpUwrVhoSkXQvN8H1aXQjmMjb3ak9Yyy_cBPRIiDr6UjhF66ceOCfv_ayZNRTck7CWdGsH1LEjjOxP-Qg_Ra_E_PJAakVExeQUrKN4qFJbpInmArN-QGLnWXDOE99u42Tc088m96GSUcTb2l3B0oPtEsgktq9Eapbx7H1Dh");'>
+</div>
+</div>
+<div>
+<h3 class="text-slate-900 dark:text-slate-100 text-xl font-bold font-display mb-1">Kunafeh</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">
+                                    A heavenly dessert of spun pastry soaked in sweet syrup, layered with cheese, and topped with crunchy pistachios.
+                                </p>
+</div>
+</div>
+</div>
+</section>
+<section class="mb-16 bg-white dark:bg-slate-900 rounded-2xl p-8 md:p-12 shadow-sm border border-slate-100 dark:border-slate-800" id="history">
+<div class="max-w-5xl mx-auto">
+
+
+
+<div class="text-center font-serif mb-16">
+  <p class="text-brand-gold font-medium tracking-widest uppercase text-xs">ヨルダンの歴史</p>
+<h2 class="text-primary text-3xl md:text-4xl mb-4">Jordan</h2>
+
+<p class="text-xs text-slate-500 max-w-3xl mx-auto">Located at the crossroads of Asia, Africa, and Europe, Jordan has a long and complex history.After being ruled by various ancient empires, it gained independence as a kingdom in 1946.Its historic landscapes, like Petra and the Dead Sea, remain symbols of its enduring legacy.</p>
+
+</div>
+<div class="max-w-3xl mx-auto space-y-8 relative border-l border-slate-200 dark:border-slate-700 pl-8">
+<!-- History: Ancient -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-primary ring-4 ring-white dark:ring-slate-900"></div>
+<h4 class="text-primary font-display text-xl font-bold mb-6">古代</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-display font-bold text-slate-900 dark:text-slate-100 mb-1">エドム王国 <span class="text-xs text-slate-500 block md:inline md:ml-2">（紀元前13世紀頃 - 紀元前6世紀頃）</span></h5>
+<p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed font-sans">ヨルダン南部に存在した古代王国で、旧約聖書にも登場します。</p>
+</div>
+<div>
+<h5 class="text-lg font-display font-bold text-slate-900 dark:text-slate-100 mb-1">アンモン王国 <span class="text-xs text-slate-500 block md:inline md:ml-2">（紀元前13世紀頃 - 紀元前6世紀頃）</span></h5>
+<p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed font-sans">現在のアンマン周辺に存在した王国。</p>
+</div>
+<div>
+<h5 class="text-lg font-display font-bold text-slate-900 dark:text-slate-100 mb-1">ナバテア王国 <span class="text-xs text-slate-500 block md:inline md:ml-2">（紀元前4世紀 - 紀元106年）</span></h5>
+<p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed font-sans">ペトラを中心に繁栄した交易国家で、ローマ帝国に併合されました。</p>
+</div>
+<div>
+<h5 class="text-lg font-display font-bold text-slate-900 dark:text-slate-100 mb-1">ローマ帝国 <span class="text-xs text-slate-500 block md:inline md:ml-2">（紀元106年 - 395年）</span></h5>
+<p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed font-sans">ヨルダンは「アラビア・ペトラエア」としてローマ帝国の一部となり、交易と都市文化が発展しました。</p>
+</div>
+</div>
+</div>
+<!-- History: Medieval -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-slate-200 dark:bg-slate-700 ring-4 ring-white dark:ring-slate-900"></div>
+<h4 class="text-primary font-display text-xl font-bold mb-6">中世</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-display font-bold text-slate-900 dark:text-slate-100 mb-1">東ローマ帝国（ビザンツ帝国） <span class="text-xs text-slate-500 block md:inline md:ml-2">（395年 - 7世紀）</span></h5>
+<p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed font-sans">キリスト教が広まり、ヨルダンの地はビザンツ帝国の一部として統治されました。</p>
+</div>
+<div>
+<h5 class="text-lg font-display font-bold text-slate-900 dark:text-slate-100 mb-1">イスラム帝国（ウマイヤ朝・アッバース朝） <span class="text-xs text-slate-500 block md:inline md:ml-2">（7世紀 - 11世紀）</span></h5>
+<p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed font-sans">イスラム教が広まり、アンマンは軍事拠点として重要視されました。</p>
+</div>
+<div>
+<h5 class="text-lg font-display font-bold text-slate-900 dark:text-slate-100 mb-1">十字軍国家 <span class="text-xs text-slate-500 block md:inline md:ml-2">（12世紀）</span></h5>
+<p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed font-sans">一時的に十字軍の支配下に入りました。</p>
+</div>
+<div>
+<h5 class="text-lg font-display font-bold text-slate-900 dark:text-slate-100 mb-1">アイユーブ朝 <span class="text-xs text-slate-500 block md:inline md:ml-2">（12世紀 - 13世紀）</span></h5>
+<p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed font-sans">サラディンが十字軍を駆逐し、ヨルダンを統治。</p>
+</div>
+<div>
+<h5 class="text-lg font-display font-bold text-slate-900 dark:text-slate-100 mb-1">マムルーク朝 <span class="text-xs text-slate-500 block md:inline md:ml-2">（13世紀 - 1517年）</span></h5>
+<p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed font-sans">モンゴルの侵攻を防ぎ、ヨルダンを支配。</p>
+</div>
+</div>
+</div>
+<!-- History: Early Modern -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-slate-200 dark:bg-slate-700 ring-4 ring-white dark:ring-slate-900"></div>
+<h4 class="text-primary font-display text-xl font-bold mb-6">近世</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-display font-bold text-slate-900 dark:text-slate-100 mb-1">オスマン帝国 <span class="text-xs text-slate-500 block md:inline md:ml-2">（1517年 - 1918年）</span></h5>
+<p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed font-sans">ヨルダンはオスマン帝国の一部として統治され、アンマン周辺では自治的な部族社会が維持されました。</p>
+</div>
+</div>
+</div>
+<!-- History: Modern -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-slate-200 dark:bg-slate-700 ring-4 ring-white dark:ring-slate-900"></div>
+<h4 class="text-primary font-display text-xl font-bold mb-6">近現代・現代</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-display font-bold text-slate-900 dark:text-slate-100 mb-1">イギリス委任統治領トランスヨルダン <span class="text-xs text-slate-500 block md:inline md:ml-2">（1921年 - 1946年）</span></h5>
+<p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed font-sans">第一次世界大戦後、イギリスの委任統治下で「トランスヨルダン首長国」が成立しました。</p>
+</div>
+<div>
+<h5 class="text-lg font-display font-bold text-slate-900 dark:text-slate-100 mb-1">ヨルダン・ハシミテ王国の独立 <span class="text-xs text-slate-500 block md:inline md:ml-2">（1946年）</span></h5>
+<p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed font-sans">イギリスから独立を達成し、現在のヨルダンの基盤が築かれました。</p>
+</div>
+<div>
+<h5 class="text-lg font-display font-bold text-slate-900 dark:text-slate-100 mb-1">ヨルダン・ハシミテ王国 <span class="text-xs text-slate-500 block md:inline md:ml-2">（1946年 - 現在）</span></h5>
+<p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed font-sans">独立後、近代化と中東の安定に向けた努力を続けています。特に1994年にはイスラエルとの平和条約を締結し、地域の平和構築に貢献しています。</p>
+</div>
+</div>
+</div>
+</div>
+<p class="text-left text-slate-500 dark:text-slate-400 text-sm mt-12 italic max-w-2xl mx-auto">
+    ヨルダンは、古代から現代に至るまで、多くの文明が交差する歴史の舞台でした。
+</p>
+</div>
+</section>
+
+</main>
+<footer class="bg-white dark:bg-background-dark border-t border-slate-200 dark:border-slate-800 py-12">
+<div class="max-w-[1200px] mx-auto px-10 grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="col-span-1 md:col-span-2">
+<div class="flex items-center gap-4 text-primary mb-6">
+<span class="material-symbols-outlined text-3xl">explore</span>
+<h2 class="text-slate-900 dark:text-slate-100 text-xl font-bold font-display">Jordan Discovery</h2>
+</div>
+<p class="text-slate-500 dark:text-slate-400 max-w-sm mb-6">
+                            Dedicated to providing the most authentic and up-to-date travel information for visitors to the Hashemite Kingdom of Jordan.
+                        </p>
+<div class="flex gap-4">
+<a class="text-slate-400 hover:text-primary" href="#"><span class="material-symbols-outlined">public</span></a>
+<a class="text-slate-400 hover:text-primary" href="#"><span class="material-symbols-outlined">mail</span></a>
+<a class="text-slate-400 hover:text-primary" href="#"><span class="material-symbols-outlined">share</span></a>
+</div>
+</div>
+<div>
+<h4 class="text-slate-900 dark:text-slate-100 font-bold mb-6">Navigation</h4>
+<ul class="space-y-3 text-slate-500 dark:text-slate-400 text-sm">
+<li><a class="hover:text-primary" href="#landmarks">Landmarks</a></li>
+<li><a class="hover:text-primary" href="#cities">Cities</a></li>
+<li><a class="hover:text-primary" href="#cuisine">Cuisine</a></li>
+<li><a class="hover:text-primary" href="#history">History</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-slate-900 dark:text-slate-100 font-bold mb-6">Connect</h4>
+<ul class="space-y-3 text-slate-500 dark:text-slate-400 text-sm">
+<li><a class="hover:text-primary" href="#">Instagram</a></li>
+<li><a class="hover:text-primary" href="#">Twitter</a></li>
+<li><a class="hover:text-primary" href="#">Contact</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-[1200px] mx-auto px-10 pt-12 mt-12 border-t border-slate-100 dark:border-slate-800 text-center text-slate-400 text-xs">
+                    © 2026 Jordan Discovery. All rights reserved.                </div>
+                    
+</footer>
+</div>
+</div>
+<script>
+    document.getElementById('searchInput').addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+            const searchTerm = this.value.trim();
+            if (searchTerm) {
+                const wikipediaUrl = `https://ja.wikipedia.org/wiki/特別:検索?search=${encodeURIComponent(searchTerm)}`;
+                window.open(wikipediaUrl, '_blank');
+            }
+        }
+    });
+</script>
+</body></html>

@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Syria: The Heart of the Orient</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ec5b13",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#221610",
+                        "emerald-deep": "#064e3b",
+                        "gold-accent": "#d4af37",
+                        "sand-warm": "#f5e6d3",
+                        "B-yellow": "#ffff66",
+                    },
+                    fontFamily: {
+                        "display": ["Newsreader", "serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                   },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Newsreader', serif;
+        }
+        /* Pattern Overlay */
+.bg-pattern {
+    background-image: url("img/Syria_bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.10
+}
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100">
+    <!-- BEGIN: Background Texture -->
+<div class="fixed inset-0 bg-pattern pointer-events-none z-0"></div>
+<div class="relative flex h-auto min-screen w-full flex-col overflow-x-hidden">
+<header class="fixed top-0 left-0 right-0 z-50 bg-emerald-deep dark:bg-emerald-deep border-b border-gold-accent/30 backdrop-blur-md">
+<nav class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<!-- Logo -->
+<a class="flex items-center gap-3 group" href="#">
+<div class="text-white-500 transform group-hover:scale-110 transition-transform">
+<svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 国旗のベース（赤・白・黒の3層構造） -->
+  <!-- 上段：赤 -->
+  <rect width="24" height="8" rx="4" fill="#CE1126"/>
+  <!-- 下段：黒（角丸を維持するため一度全面に敷く） -->
+  <rect y="16" width="24" height="8" rx="4" fill="#000000"/>
+  <!-- 中段：白（上下の角丸を隠さないように配置） -->
+  <rect y="8" width="24" height="8" fill="#FFFFFF"/>
+  <!-- 角丸の補正（上下の四角形が重なる中央の境界線を綺麗にするため） -->
+  <rect y="7" width="24" height="2" fill="#CE1126"/>
+  <rect y="15" width="24" height="2" fill="#000000"/>
+
+  <!-- 中央の2つの緑の星 -->
+  <!-- 左側の星 -->
+  <path d="M7.5 10.3L8.3 11.9L10.1 12.1L8.8 13.4L9.2 15.2L7.5 14.3L5.8 15.2L6.2 13.4L4.9 12.1L6.7 11.9L7.5 10.3Z" fill="#007A3D"/>
+  
+  <!-- 右側の星 -->
+  <path d="M16.5 10.3L17.3 11.9L19.1 12.1L17.8 13.4L18.2 15.2L16.5 14.3L14.8 15.2L15.2 13.4L13.9 12.1L15.7 11.9L16.5 10.3Z" fill="#007A3D"/>
+</svg>
+</div>
+<span class="text-white font-serif text-xl tracking-wider font-semibold">SYRIA Discovery</span>
+</a>
+<!-- Desktop Navigation -->
+<div class="hidden md:flex items-center gap-10">
+<a class="text-white text-sm font-medium hover:text-B-yellow transition-colors tracking-widest uppercase" href="#landmarks">Landmarks</a>
+<a class="text-white text-sm font-medium hover:text-B-yellow transition-colors tracking-widest uppercase" href="#cities">Cities</a>
+<a class="text-white text-sm font-medium hover:text-B-yellow transition-colors tracking-widest uppercase" href="#cuisine">Cuisine</a>
+<a class="text-white text-sm font-medium hover:text-B-yellow transition-colors tracking-widest uppercase" href="#history">History</a>
+</div>
+<!-- Search Bar -->
+<div class="relative hidden lg:block" data-purpose="search-container">
+<span class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+<svg class="w-4 h-4 text-B-purple-dark/50" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</span>
+<input id="searchInput" class="bg-white/5 border-white/10 text-white pl-10 pr-4 py-2 rounded-lg focus:ring-B-purple-dark focus:border-B-purple-dark w-64 text-sm" placeholder="Wikipedia検索" type="text"/>
+</div>
+
+<!-- Mobile Menu Toggle (Simplified) -->
+<button class="md:hidden text-white">
+<svg class="h-6 w-6" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 6h16M4 12h16m-7 6h7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</button>
+</nav>
+</header>
+<main class="flex-1">
+<section class="relative h-[80vh] flex items-center justify-center text-center px-4 overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Ancient arches of Palmyra Syria at sunset" style="background-image: linear-gradient(rgba(6, 78, 59, 0.7), rgba(34, 22, 16, 0.8)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuCEyQsNThf30_bYMTdKG9eayv20vbn8pUEQDvVUMwFYP0dTA--Le0UnfqrV7wZZacIfaVkRgaS-GAy_9sX_q63ndEXkKOWXDqcZiPxhoQD6720EoEc6HmkJEqnLSwwjveGmyuzNb2SdLpoETQ3ASW1MzAyJd5qwfOGcKRBfSmMxv5xKBsl4BAn4W9b9qIEKinsQgBxGXng6gkRLzYElEBkv1Ef8p-dUNt1mkBJOWmDDcBENHFko2qFCH028WbTufSlHs63qiPUC2UY');"></div>
+<div class="relative z-10 max-w-4xl space-y-6">
+<h1 class="text-white text-5xl md:text-4xl font-black tracking-tight leading-tight">Syria: The Heart of the Orient</h1>
+<p class="text-gold-accent text-xl md:text-2xl font-light">Cradle of Civilizations</p>
+<p class="text-sand-warm/80 text-lg max-w-2xl mx-auto">Discover the ancient lands where history began and culture thrives. From the Silk Road to the Mediterranean, Syria remains the timeless gateway of humanity.</p>
+
+</div>
+</section>
+<section class="py-20 px-4 md:px-20 max-w-7xl mx-auto" id="landmarks">
+<div class="flex items-end justify-between mb-12">
+<div>
+<h2 class="text-3xl font-bold text-emerald-deep dark:text-gold-accent mb-2">Historical Landmarks</h2>
+<div class="h-1 w-20 bg-primary"></div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="group cursor-pointer">
+<div class="h-64 rounded-xl overflow-hidden mb-4 shadow-xl border-b-4 border-gold-accent">
+<img alt="" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="The ancient Roman ruins of Palmyra" src="https://lh3.googleusercontent.com/aida-public/AB6AXuApSOYRCsA3nFB9pdA-YE4JbqSI2TgwbGueoMRSvH8LDFZg61pbDo_gFwutVi69AlMiGGWLJ1gAFYbYfq5z5MvaMVi_tghQzcrmUhpstuSORc8i5VfoTxg7gcIOpedtiiTy0FTJxtFwVzYVU-E9cU7zRKpzkxxdPCOPd5slSJwvM9UFMHD7KY55ledSIaAX4glEOnZQhjiFajdfqmgbLuyJHkb53riXHmXcKz_mI8Dzssq0rP0LbdScnU4tlfmBl1TJuOwyRL_O2PY"/>
+</div>
+<h3 class="text-xl font-bold mb-1">Palmyra</h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm">The Pearl of the Desert. A magnificent Greco-Roman city that served as a vital caravan stop for merchants.</p>
+</div>
+<div class="group cursor-pointer">
+<div class="h-64 rounded-xl overflow-hidden mb-4 shadow-xl border-b-4 border-gold-accent">
+<img alt="" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Crac des Chevaliers medieval fortress" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsAjUE3swUZ7WPL9b2XzAN1qkrWtr2C-aIAAeVhuHoCxZUvzigOQB99s46XCu7YgG3i9eIq2zxDtpMsowlFdRcR_yz-q3d2F9lrWCDfZ-OAv5Q_aUFzRW-mdV7ua3gJ4f-0hrofjaxiVYr8PHKVBsqEwW0SHViou25kHOB8Rqeu0-L-XSFPfQdeNi8RxSopZwn4neYLvszVA5WN-vMLko_UhVHQbArWrA_Nzzgs_k6EuFSSpJRYeapBTLOuVLt6aue6IdpMK7n0es"/>
+</div>
+<h3 class="text-xl font-bold mb-1">Crac des Chevaliers</h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm">One of the best-preserved medieval crusader castles in the world, standing majestically on a hilltop.</p>
+</div>
+<div class="group cursor-pointer">
+<div class="h-64 rounded-xl overflow-hidden mb-4 shadow-xl border-b-4 border-gold-accent">
+<img alt="" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Umayyad Mosque courtyard Damascus" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXjOwEcAK5ENgW-iYo2JgTBlL7DM14Tx0rqf9acIsPsDivftqY53KzUG4r4U6Mgiih9jioH8krPR9T8OmLMcZX7nMyTGd4uCeEFR0_AjiqyjME5NusthsdUyBXQrIV_HhQTGPlk2udlgZhh5GbWA6ZvPV3TaR_IHV0zkf9hq0owZVthF55u7LXi1M6mqJDEXzYQ4kTqdX85PvhWTUhjJpPo27Sl7H-hS-d7W5PfEq-keGviMx1aUaDGZW5Tw9EvosFBJKPsO4cxOY"/>
+</div>
+<h3 class="text-xl font-bold mb-1">Umayyad Mosque</h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm">Located in the heart of Damascus, this masterpiece of Islamic architecture is one of the oldest and largest mosques.</p>
+</div>
+</div>
+</section>
+<section class="bg-emerald-deep py-20 px-4 md:px-20 text-white" id="cities">
+<div class="max-w-7xl mx-auto">
+<div class="mb-12">
+<h2 class="text-3xl font-bold text-gold-accent mb-2">Vibrant Cities</h2>
+<div class="h-1 w-20 bg-primary"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<div class="bg-background-dark/30 p-6 rounded-xl border border-white/10 hover:border-gold-accent/50 transition-colors">
+<span class="material-symbols-outlined text-gold-accent mb-4 text-4xl">location_city</span>
+<h3 class="text-2xl font-bold mb-2">Damascus</h3>
+<p class="text-sand-warm/70">The oldest continuously inhabited capital in the world, known for its jasmine-scented alleys and ancient souks.</p>
+</div>
+<div class="bg-background-dark/30 p-6 rounded-xl border border-white/10 hover:border-gold-accent/50 transition-colors">
+<span class="material-symbols-outlined text-gold-accent mb-4 text-4xl">domain</span>
+<h3 class="text-2xl font-bold mb-2">Aleppo</h3>
+<p class="text-sand-warm/70">A legendary trade hub on the Silk Road, famous for its massive Citadel and world-renowned textile heritage.</p>
+</div>
+<div class="bg-background-dark/30 p-6 rounded-xl border border-white/10 hover:border-gold-accent/50 transition-colors">
+<span class="material-symbols-outlined text-gold-accent mb-4 text-4xl">apartment</span>
+<h3 class="text-2xl font-bold mb-2">Homs</h3>
+<p class="text-sand-warm/70">A central hub linking northern and southern Syria, rich in diverse cultural layers and religious history.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 px-4 md:px-20 max-w-7xl mx-auto" id="cuisine">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="relative">
+<div class="grid grid-cols-2 gap-4">
+<div class="aspect-square rounded-xl overflow-hidden shadow-lg transform translate-y-8">
+<img alt="" class="w-full h-full object-cover" data-alt="Fresh bowl of hummus with olive oil" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB98smJB1aRro9YaspmtRXg3qdE4_r7ITUwm5KuC1qWYQZtButsww_U8NB3RGVnGeGomYyF5_vtQEIlxEeNNU4OAMzzE8I2KS7jOQ5PlraqYqbkQjmAzPIR6O9B-F6asH2Ie29SJgXkVDnRgO8yv6JEMsUOb8EJ69yowTNWx80vO3PnFflze18_OfKq-k9O30hg_G4uXsjsPgRVop7WhXm_iVLyXCFISAYUdUBa-e4fHgETqtlYeJrwcSSGNRburCgFOMgGrvLs6vQ"/>
+</div>
+<div class="aspect-square rounded-xl overflow-hidden shadow-lg">
+<img alt="" class="w-full h-full object-cover" data-alt="Traditional Syrian kibbeh balls" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnQEQnYwK3stASx0Iw_4hP3a29f-Und7cbegzZrOPhVmPtKfRGEpYlrHQ_6yjChpqOL-eqSHziOAHMecEk_mA4kI7hDReARqkClpSzWDuJrT30k0vyYsQHFlOALrLiFFdejyxsV8u8iuzFD5692aisBXvelTmOC0NQsiOuh19-Oxm7Z0H76r37yRZt16S0VyZzp8Wj_HwQPNgH0GRT7NQj8hQuX91mSEMWOeLLC2e-g7EAZCyofmYA0D05MOpmSrfVJVG0qewEgrA"/>
+</div>
+</div>
+</div>
+<div>
+<h2 class="text-3xl font-bold text-emerald-deep dark:text-gold-accent mb-6">Syrian Cuisine</h2>
+<div class="space-y-8">
+<div>
+<h4 class="text-xl font-bold flex items-center gap-2"><span class="text-primary">•</span> Hummus</h4>
+<p class="text-slate-600 dark:text-slate-400">Creamy blend of chickpeas, tahini, and lemon—a global staple perfected over centuries in the Levant.</p>
+</div>
+<div>
+<h4 class="text-xl font-bold flex items-center gap-2"><span class="text-primary">•</span> Kibbeh</h4>
+<p class="text-slate-600 dark:text-slate-400">Bulgur wheat and minced meat shells filled with spiced meat and nuts, often considered the national dish.</p>
+</div>
+<div>
+<h4 class="text-xl font-bold flex items-center gap-2"><span class="text-primary">•</span> Syrian Sweets</h4>
+<p class="text-slate-600 dark:text-slate-400">Exquisite Baklava, Ma'amoul, and Halawet el-Jibn, crafted with pistachios, rose water, and honey.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="bg-[#9cf3a4]/30 pt-12 pb-24 px-6 relative overflow-hidden" id="history">
+<div class="max-w-4xl mx-auto">
+<div class="max-w-5xl mx-auto"><div class="text-center mb-12">
+<h2 class="text-B-purple-dark font-serif text-sm mb-2 uppercase tracking-[0.3em]">シリア・アラブ共和国の歴史</h2>
+<h3 class="text-emerald-deep text-3xl md:text-4xl font-serif mb-4">Syrian Arab Republic</h3>
+<p class="text-xs text-slate-500 max-w-3xl mx-auto">Tracing the footprints of ancient civilizations in the Syrian Arab Republic, a land widely known as the cradle of history. From the timeless streets of Damascus and Aleppo to the stunning ruins of Palmyra, every single stone carries a whisper of the past. A profound journey into the very roots of human heritage.  </p>
+</div>
+<div class="relative border-l-2 border-emerald-deep/20 ml-4 space-y-12">
+<div class="relative pl-10">
+<div class="absolute -left-[9px] top-2 w-4 h-4 rounded-full bg-emerald-deep ring-4 ring-sand-warm"></div>
+<h3 class="text-2xl font-bold text-emerald-deep dark:text-gold-accent mb-6">古代 <span class="text-lg font-normal text-slate-500 block md:inline md:ml-2">（紀元前3500年頃 〜 7世紀）</span></h3>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-bold text-slate-800 dark:text-slate-200 mb-1">エブラ王国 <span class="text-sm font-normal text-slate-500">（紀元前3000年頃 - 紀元前2250年頃）</span></h5>
+<p class="text-slate-600 dark:text-slate-400 text-sm">肥沃な三日月地帯の一部として繁栄した都市国家。</p>
+</div>
+<div>
+<h5 class="text-lg font-bold text-slate-800 dark:text-slate-200 mb-1">アッカド帝国 <span class="text-sm font-normal text-slate-500">（紀元前24世紀 - 紀元前22世紀）</span></h5>
+<p class="text-slate-600 dark:text-slate-400 text-sm">エブラを征服し、メソポタミア全域を支配。</p>
+</div>
+<div>
+<h5 class="text-lg font-bold text-slate-800 dark:text-slate-200 mb-1">アムル人の王国 <span class="text-sm font-normal text-slate-500">（紀元前2000年頃）</span></h5>
+<p class="text-slate-600 dark:text-slate-400 text-sm">シリア地域に小王国を形成。</p>
+</div>
+<div>
+<h5 class="text-lg font-bold text-slate-800 dark:text-slate-200 mb-1">ミタンニ王国 <span class="text-sm font-normal text-slate-500">（紀元前15世紀 - 紀元前13世紀）</span></h5>
+<p class="text-slate-600 dark:text-slate-400 text-sm">北部シリアを支配したフルリ人の王国。</p>
+</div>
+<div>
+<h5 class="text-lg font-bold text-slate-800 dark:text-slate-200 mb-1">ヒッタイト帝国 <span class="text-sm font-normal text-slate-500">（紀元前1600年頃 - 紀元前1178年頃）</span></h5>
+<p class="text-slate-600 dark:text-slate-400 text-sm">シリア北部を一時支配。</p>
+</div>
+<div>
+<h5 class="text-lg font-bold text-slate-800 dark:text-slate-200 mb-1">アッシリア帝国 <span class="text-sm font-normal text-slate-500">（紀元前13世紀 - 紀元前612年）</span></h5>
+<p class="text-slate-600 dark:text-slate-400 text-sm">シリア全域を支配。</p>
+</div>
+<div>
+<h5 class="text-lg font-bold text-slate-800 dark:text-slate-200 mb-1">新バビロニア帝国 <span class="text-sm font-normal text-slate-500">（紀元前612年 - 紀元前539年）</span></h5>
+<p class="text-slate-600 dark:text-slate-400 text-sm">アッシリア滅亡後に支配。</p>
+</div>
+<div>
+<h5 class="text-lg font-bold text-slate-800 dark:text-slate-200 mb-1">アケメネス朝ペルシア <span class="text-sm font-normal text-slate-500">（紀元前539年 - 紀元前330年）</span></h5>
+<p class="text-slate-600 dark:text-slate-400 text-sm">キュロス大王がシリアを征服。</p>
+</div>
+<div>
+<h5 class="text-lg font-bold text-slate-800 dark:text-slate-200 mb-1">セレウコス朝シリア <span class="text-sm font-normal text-slate-500">（紀元前312年 - 紀元前64年）</span></h5>
+<p class="text-slate-600 dark:text-slate-400 text-sm">アレクサンドロス大王の後継者が建国。</p>
+</div>
+<div>
+<h5 class="text-lg font-bold text-slate-800 dark:text-slate-200 mb-1">ローマ帝国 <span class="text-sm font-normal text-slate-500">（紀元前64年 - 395年）</span></h5>
+<p class="text-slate-600 dark:text-slate-400 text-sm">シリア属州として統治。</p>
+</div>
+<div>
+<h5 class="text-lg font-bold text-slate-800 dark:text-slate-200 mb-1">東ローマ帝国（ビザンツ帝国） <span class="text-sm font-normal text-slate-500">（395年 - 637年）</span></h5>
+<p class="text-slate-600 dark:text-slate-400 text-sm">キリスト教文化が広がる。</p>
+</div>
+</div>
+</div>
+<div class="relative pl-10">
+<div class="absolute -left-[9px] top-2 w-4 h-4 rounded-full bg-emerald-deep ring-4 ring-sand-warm"></div>
+<h3 class="text-2xl font-bold text-emerald-deep dark:text-gold-accent mb-6">中世 <span class="text-lg font-normal text-slate-500 block md:inline md:ml-2">（7世紀 〜 15世紀）</span></h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm mb-4">イスラーム化が進み、地域の中心地として黄金期を迎えました。</p>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-bold text-slate-800 dark:text-slate-200 mb-1">ウマイヤ朝 <span class="text-sm font-normal text-slate-500">（661年 - 750年）</span></h5>
+<p class="text-slate-600 dark:text-slate-400 text-sm">ダマスカスを首都とし、イスラム帝国の中心地。</p>
+</div>
+<div>
+<h5 class="text-lg font-bold text-slate-800 dark:text-slate-200 mb-1">アッバース朝 <span class="text-sm font-normal text-slate-500">（750年 - 1258年）</span></h5>
+<p class="text-slate-600 dark:text-slate-400 text-sm">バグダードを中心に支配。</p>
+</div>
+<div>
+<h5 class="text-lg font-bold text-slate-800 dark:text-slate-200 mb-1">ファーティマ朝 <span class="text-sm font-normal text-slate-500">（10世紀）</span></h5>
+<p class="text-slate-600 dark:text-slate-400 text-sm">シリア南部を一時支配。</p>
+</div>
+<div>
+<h5 class="text-lg font-bold text-slate-800 dark:text-slate-200 mb-1">セルジューク朝 <span class="text-sm font-normal text-slate-500">（11世紀）</span></h5>
+<p class="text-slate-600 dark:text-slate-400 text-sm">トルコ系王朝がシリアを支配。</p>
+</div>
+<div>
+<h5 class="text-lg font-bold text-slate-800 dark:text-slate-200 mb-1">アイユーブ朝 <span class="text-sm font-normal text-slate-500">（12世紀 - 13世紀）</span></h5>
+<p class="text-slate-600 dark:text-slate-400 text-sm">サラディンが建国し、十字軍と対峙。</p>
+</div>
+<div>
+<h5 class="text-lg font-bold text-slate-800 dark:text-slate-200 mb-1">マムルーク朝 <span class="text-sm font-normal text-slate-500">（1260年 - 1517年）</span></h5>
+<p class="text-slate-600 dark:text-slate-400 text-sm">モンゴルの侵攻を防ぎ、シリアを支配。</p>
+</div>
+</div>
+</div>
+<div class="relative pl-10">
+<div class="absolute -left-[9px] top-2 w-4 h-4 rounded-full bg-emerald-deep ring-4 ring-sand-warm"></div>
+<h3 class="text-2xl font-bold text-emerald-deep dark:text-gold-accent mb-6">近世 <span class="text-lg font-normal text-slate-500 block md:inline md:ml-2">（16世紀 〜 19世紀）</span></h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm mb-4">オスマン帝国の版図に含まれ、長期の安定期に入りました。</p>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-bold text-slate-800 dark:text-slate-200 mb-1">オスマン帝国の支配</h5>
+<p class="text-slate-600 dark:text-slate-400 text-sm">1516年にオスマン帝国がマムルーク朝を破り、以後約400年にわたり統治しました。</p>
+</div>
+<div>
+<h5 class="text-lg font-bold text-slate-800 dark:text-slate-200 mb-1">近代化の兆し</h5>
+<p class="text-slate-600 dark:text-slate-400 text-sm">19世紀後半には州知事ミドハト・パシャらによる都市整備や、アラブ民族主義の台頭が見られるようになりました。</p>
+</div>
+</div>
+</div>
+<div class="relative pl-10">
+<div class="absolute -left-[9px] top-2 w-4 h-4 rounded-full bg-primary ring-4 ring-sand-warm animate-pulse"></div>
+<h3 class="text-2xl font-bold text-primary mb-6">近現代・現代 <span class="text-lg font-normal text-slate-500 block md:inline md:ml-2">（20世紀 〜 現在）</span></h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm mb-4">植民地支配からの独立と、その後の政治的不安・内戦の時代です。</p>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-bold text-slate-800 dark:text-slate-200 mb-1">フランス委任統治領シリア <span class="text-sm font-normal text-slate-500">（1920年 - 1946年）</span></h5>
+<p class="text-slate-600 dark:text-slate-400 text-sm">第一次世界大戦後、フランスの支配下に。</p>
+</div>
+<div>
+<h5 class="text-lg font-bold text-slate-800 dark:text-slate-200 mb-1">シリア共和国 <span class="text-sm font-normal text-slate-500">（1946年）</span></h5>
+<p class="text-slate-600 dark:text-slate-400 text-sm">独立を達成し、現在に至る。</p>
+</div>
+<div>
+<h5 class="text-lg font-bold text-slate-800 dark:text-slate-200 mb-1">アラブ連合共和国成立 <span class="text-sm font-normal text-slate-500">（1958年）</span></h5>
+<p class="text-slate-600 dark:text-slate-400 text-sm">エジプト・シリアによる連合国家。</p>
+</div>
+<div>
+<h5 class="text-lg font-bold text-slate-800 dark:text-slate-200 mb-1">アラブ連合共和国から離脱・シリア・アラブ共和国へと改称<span class="text-sm font-normal text-slate-500">（1961年）</span></h5>
+<p class="text-slate-600 dark:text-slate-400 text-sm">1961年9月28日、シリア軍部によるクーデターが発生。エジプトとの連合を解消することを宣言し、独立を回復。シリアが連合から離脱。</p>
+</div>
+<div>
+<h5 class="text-lg font-bold text-slate-800 dark:text-slate-200 mb-1">独立とアサド政権</h5>
+<p class="text-slate-600 dark:text-slate-400 text-sm">1946年に完全独立を達成、政変を繰り返した後、1970年にハフェズ・アル＝アサドが実権を握り、息子バシャールへと続く独裁体制を築きました。</p>
+</div>
+<div>
+<h5 class="text-lg font-bold text-slate-800 dark:text-slate-200 mb-1">シリア内戦と政権崩壊</h5>
+<p class="text-slate-600 dark:text-slate-400 text-sm">2011年の「アラブの春」を機に内戦が勃発。2024年12月、反体制派による電撃的な進攻によりアサド政権が崩壊し、歴史的な転換点を迎えています。</p>
+</div>
+<div>
+<h5 class="text-lg font-bold text-slate-800 dark:text-slate-200 mb-1">暫定政府による統治</h5>
+<p class="text-slate-600 dark:text-slate-400 text-sm">現在は、旧反体制派を中心とした暫定政府が国を運営しています。2026年3月には新たな憲法宣言が承認されるなど、正式な政権発足に向けた動きが進んでいます。
+    全土での大規模な内戦は収まりましたが、北東部のクルド人勢力（SDF）との小競り合いや、過激派組織（ISIL）の残党による攻撃など、局地的な衝突は今も続いています。
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-emerald-deep text-sand-warm py-12 px-4 md:px-20 border-t border-gold-accent/20">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="col-span-1 md:col-span-2">
+    
+<h2 class="flex items-center gap-3 text-2xl font-black text-white mb-6 w-fit">
+    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 国旗のベース（赤・白・黒の3層構造） -->
+  <!-- 上段：赤 -->
+  <rect width="24" height="8" rx="4" fill="#CE1126"/>
+  <!-- 下段：黒（角丸を維持するため一度全面に敷く） -->
+  <rect y="16" width="24" height="8" rx="4" fill="#000000"/>
+  <!-- 中段：白（上下の角丸を隠さないように配置） -->
+  <rect y="8" width="24" height="8" fill="#FFFFFF"/>
+  <!-- 角丸の補正（上下の四角形が重なる中央の境界線を綺麗にするため） -->
+  <rect y="7" width="24" height="2" fill="#CE1126"/>
+  <rect y="15" width="24" height="2" fill="#000000"/>
+
+  <!-- 中央の2つの緑の星 -->
+  <!-- 左側の星 -->
+  <path d="M7.5 10.3L8.3 11.9L10.1 12.1L8.8 13.4L9.2 15.2L7.5 14.3L5.8 15.2L6.2 13.4L4.9 12.1L6.7 11.9L7.5 10.3Z" fill="#007A3D"/>
+  
+  <!-- 右側の星 -->
+  <path d="M16.5 10.3L17.3 11.9L19.1 12.1L17.8 13.4L18.2 15.2L16.5 14.3L14.8 15.2L15.2 13.4L13.9 12.1L15.7 11.9L16.5 10.3Z" fill="#007A3D"/>
+</svg>
+    <span>SYRIA</span>
+</h2>
+<p class="text-sand-warm/60 max-w-sm mb-6">We are dedicated to preserving and sharing the rich cultural heritage of Syria. Join us in exploring the history, tastes, and resilience of this ancient land.</p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined cursor-pointer hover:text-gold-accent">public</span>
+<span class="material-symbols-outlined cursor-pointer hover:text-gold-accent">mail</span>
+<span class="material-symbols-outlined cursor-pointer hover:text-gold-accent">share</span>
+</div>
+</div>
+<div>
+<h4 class="text-white font-bold mb-4">Navigation</h4>
+<ul class="space-y-2 text-sm text-sand-warm/60">
+<li><a class="hover:text-gold-accent transition-colors" href="#landmarks">Landmarks</a></li>
+<li><a class="hover:text-gold-accent transition-colors" href="#cities">Cities</a></li>
+<li><a class="hover:text-gold-accent transition-colors" href="#cuisine">Cuisine</a></li>
+<li><a class="hover:text-gold-accent transition-colors" href="#history">History</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-bold mb-4">Location</h4>
+<div class="h-32 bg-background-dark/50 rounded-lg overflow-hidden border border-white/10">
+<img alt="" class="w-full h-full object-cover opacity-50 grayscale" data-alt="Map outline of Syria" data-location="Syria" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAo2pctUndmzlRvuInzIElWBAwR0XOrgT-il7hLeWLiHtLLPiwn3PV0TeFMdUNGvUnEI37mhn_OeNfujJpuP3q5u0SlNq61oLYcqFLHqgk8YIq_xIMNPQDDE6QAcx4_WSwX-bL-P9clZMK34D3vv1boKB4GOceop1q_mQdRse3p3Yt-7FfvO2t1vtFuDhBx_y00MnAjhT83vLYXmyB6rVXsiEy_Q3SI6mAWWBOPCFDfTTPl6KyJb-jyuKlT6m5P2oAh7X0sZpTjgm0"/>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-12 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-sand-warm/40">
+<p>© 2024 Syria Cultural Heritage Project. All rights reserved.</p>
+<div class="flex gap-6">
+<a class="hover:text-white" href="#">Privacy Policy</a>
+<a class="hover:text-white" href="#">Terms of Service</a>
+</div>
+</div>
+
+</footer>
+</div>
+<script>
+    document.getElementById('searchInput').addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+            const searchTerm = this.value.trim();
+            if (searchTerm) {
+                const wikipediaUrl = `https://ja.wikipedia.org/wiki/特別:検索?search=${encodeURIComponent(searchTerm)}`;
+                window.open(wikipediaUrl, '_blank');
+            }
+        }
+    });
+</script>
+</body></html>

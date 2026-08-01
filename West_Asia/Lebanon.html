@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Lebanon Discovery | Luxury Travel Experience</title>
+<meta content="Explore the ancient landmarks, vibrant cities, and rich history of Lebanon." name="description"/>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'lebanon-dark': '#102219',
+            'lebanon-gold': '#C5A059',
+            'lebanon-green': '#2D5A27',
+          },
+          fontFamily: {
+            serif: ['Newsreader', 'serif'],
+            sans: ['Inter', 'sans-serif'],
+          },
+          backgroundImage: {
+            'arabesque': "url('https://www.transparenttextures.com/patterns/arabesque.png')",
+          }
+        }
+      }
+    }
+  </script>
+<style data-purpose="custom-styling">body {
+    background-color: #102219;
+    color: #f8fafc
+    }
+.glass-card {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 1rem
+    }
+.text-balance {
+    text-wrap: balance
+    }
+.section-spacing {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem
+    }
+/* Pattern Overlay */
+.bg-pattern {
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuAqb2uMFaeb86EAhHvQfbxZaMSlHj3CCvb2oQwrPpMZG9Hp8rjUi5KMBE7t3mPLSJT46qb5UZj6l1V5iPD5f7TlB8ClicY9F4bD8k1MQkoDpnY7qfh3howSPfW9xqPNHVIOnZPtSxFrLmSAoswAX5-T3eHh11UhXVnt8A9OSiE8UwP_gWu6YTXnCYEzf7e-u4LpELOXuDbc1rmY0D3fZMXgUwoR7KXakS7F2sb5wpIZPr0TtwHpkT1Ljpw2TS3cNDzUBaPS2xOMLKM);
+    opacity: 0.15
+    }</style>
+</head>
+<body class="font-sans antialiased overflow-x-hidden">
+<!-- BEGIN: Background Texture -->
+<div class="fixed inset-0 bg-pattern pointer-events-none z-0"></div>
+<!-- END: Background Texture -->
+<!-- BEGIN: MainHeader -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-lebanon-dark/80 backdrop-blur-md border-b border-white/5">
+<nav class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<!-- Logo -->
+<a class="flex items-center gap-3 group" href="#">
+<div class="text-emerald-500 transform group-hover:scale-110 transition-transform">
+<svg fill="none" height="32" viewbox="0 0 24 24" width="32" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 2L15 8H9L12 2Z" fill="currentColor"></path>
+<path d="M12 6L17 14H7L12 6Z" fill="currentColor"></path>
+<path d="M12 11L19 20H5L12 11Z" fill="currentColor"></path>
+<path d="M11 20H13V22H11V20Z" fill="currentColor"></path>
+</svg>
+</div>
+<span class="font-serif text-xl tracking-wider font-semibold">Lebanon Discovery</span>
+</a>
+<!-- Desktop Navigation -->
+<div class="hidden md:flex items-center gap-10">
+<a class="text-sm font-medium hover:text-lebanon-gold transition-colors tracking-widest uppercase" href="#explore">Landmarks</a>
+<a class="text-sm font-medium hover:text-lebanon-gold transition-colors tracking-widest uppercase" href="#explore">Cities</a>
+<a class="text-sm font-medium hover:text-lebanon-gold transition-colors tracking-widest uppercase" href="#cuisine">Cuisine</a>
+<a class="text-sm font-medium hover:text-lebanon-gold transition-colors tracking-widest uppercase" href="#history">History</a>
+</div>
+<!-- Search Bar -->
+<div class="relative hidden lg:block" data-purpose="search-container">
+<span class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+<svg class="w-4 h-4 text-lebanon-gold/50" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</span>
+<input id="searchInput" class="bg-white/5 border-white/10 text-white pl-10 pr-4 py-2 rounded-lg focus:ring-lebanon-gold focus:border-lebanon-gold w-64 text-sm" placeholder="Wikipedia検索" type="text"/>
+</div>
+
+<!-- Mobile Menu Toggle (Simplified) -->
+<button class="md:hidden text-white">
+<svg class="h-6 w-6" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 6h16M4 12h16m-7 6h7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</button>
+</nav>
+</header>
+<!-- END: MainHeader -->
+<!-- BEGIN: HeroSection -->
+<main class="relative">
+<section class="relative flex items-center justify-center overflow-hidden h-[75vh]">
+<!-- Hero Background Image -->
+<div class="absolute inset-0 z-0">
+<img alt="Baalbek Temple of Bacchus" class="w-full h-full object-cover brightness-50" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-yTUKCLbWpfp-10E9Y9IMsfZ9Q7ZKc2WD5aM8-T_a0ds--cJ-X_usT_2oj5QFQhnv0-eRbcDnWc2OaYVDwseW040it-cFonprzoomVa-ildwPMU_YjWEe_kG9l0f9ICvwm5mRpOH3zxyhVdrtDWA3Hvqs_N3WvlUbjWzLXBfCOqit4FFTmNnrNRq8WYnDEoVuJmTYzvSYj-XQ0CO-dDeO_rJ89L89OFezrDSV9aQxnEwFRVEZ8kz5Uz8O_6gVckezss4biKSO2pk"/>
+<div class="absolute inset-0 bg-gradient-to-b from-lebanon-dark/40 via-transparent to-lebanon-dark"></div>
+</div>
+<div class="relative z-10 text-center px-6 max-w-4xl">
+<h2 class="text-lebanon-gold font-serif italic text-xl md:text-2xl mb-4 opacity-0 animate-[fadeIn_1s_ease-out_forwards]">The Jewel of the Levant</h2>
+<h1 class="text-4xl md:text-7xl lg:text-4xl font-serif mb-8 leading-tight opacity-0 animate-[fadeIn_1s_ease-out_0.3s_forwards]">
+          Lebanon: Discover the Soul of Lebanon
+        </h1>
+<p class="text-lg md:text-xl text-white/80 font-light max-w-2xl mx-auto mb-10 text-balance opacity-0 animate-[fadeIn_1s_ease-out_0.6s_forwards]">
+          From the ancient cedars to the vibrant streets of Beirut, experience a fusion of history, luxury, and breathtaking landscapes.
+        </p>
+<!-- <a class="inline-block bg-lebanon-gold text-lebanon-dark px-10 py-4 font-semibold tracking-widest uppercase text-sm hover:scale-105 transition-transform opacity-0 animate-[fadeIn_1s_ease-out_0.9s_forwards]" href="#landmarks">
+          Explore Destinations
+        </a>-->
+</div>
+<!-- Scroll Indicator -->
+<!--<div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce opacity-60">
+<svg class="h-6 w-6" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M19 14l-7 7m0 0l-7-7m7 7V3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>-->
+</section>
+<!-- END: HeroSection -->
+<!-- BEGIN: LandmarksSection -->
+<section class="section-spacing px-6 relative" id="explore">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
+<div class="max-w-2xl">
+<h2 class="text-lebanon-gold font-serif text-sm mb-2 uppercase tracking-[0.3em]">Curated Experiences</h2>
+<h3 class="text-3xl md:text-4xl font-serif">Explore Lebanon</h3>
+</div>
+<p class="text-white/60 max-w-md text-sm">From ancient wonders to vibrant coastal cities, discover the diverse beauty of the Levant in one glance.</p>
+</div>
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+<!-- Item 1: Baalbek -->
+<div class="group relative overflow-hidden rounded-xl aspect-[3/4] cursor-pointer">
+<img alt="Baalbek" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZvm1GZLZSzNiSmZ_aKlt8RA9JboFyMsMvvvmjrGi_2UvknJzGZFvVEGGUaBMgM3s0xliWVL3u1pHFW6BNORCYRv52eN9S9Mpe-99-V-iy5wOPKpAFFp_7glweLNSL_0X-vcUeOq5DyXZQVbpeDrxcUHvelzLJCnmW3n4GK1DHdZK3WpmFk-75X17J_Lt_cJTtbZW2wmi-Aq5mMf39xBn910wvPSeS4vfLk3vLazvyAMG4TTx5WSLBGotuKrMeCYA6QvY5tg4H5ME"/>
+<div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+<div class="absolute bottom-0 left-0 p-4">
+<span class="text-[10px] text-lebanon-gold uppercase tracking-widest block mb-1">Landmark</span>
+<h4 class="text-lg font-serif">Baalbek</h4>
+</div>
+</div>
+<!-- Item 2: Jeita -->
+<div class="group relative overflow-hidden rounded-xl aspect-[3/4] cursor-pointer">
+<img alt="Jeita Grotto" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvhukY55DSdzeOvf33cSXTaOBEOnshmsPSWayxe6jW3aXnTX3zRk9v0ynk2Z2O9ByNi4TJp2dM8CnY8r68JShc8c9O9c1dwSOKExWNHoqCLTKJ1GbjQxh5zqaSChR4FasdQrPILclRwFYo1uBQL0hCkAYxfT5WwkVrKZNFVQFbM1DPq0BqF_htl8y0H2A-DjQ7G-SbDW9vu__G0BBTQooGZhGP2cFCfhlIu3BZi-GEvTutg5dPHQ5nVAlujsUYXP3SvPDCI1MqlHY"/>
+<div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+<div class="absolute bottom-0 left-0 p-4">
+<span class="text-[10px] text-lebanon-gold uppercase tracking-widest block mb-1">Landmark</span>
+<h4 class="text-lg font-serif">Jeita Grotto</h4>
+</div>
+</div>
+<!-- Item 3: Beirut -->
+<div class="group relative overflow-hidden rounded-xl aspect-[3/4] cursor-pointer">
+<img alt="Beirut" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD50iEkfwc9esy19vNVm6nRaLLX4NSyY3YK15Xmtv0oOWCQZjsSkQwk_QSVtHJIisllVeGq5crI0Cxv-6u6omDvdKe_zGM053ZRWZ9H0Y4p1QBk0rtlV9UcQjdK_gBX2PKPX7BBJk3OCEb9YaJUn_Enu0yN_fHS0NaRkAjY9SbeEDFN5YzJJ6lAQX52YCE87OGq1ciBM-qas5_PBu_v23M5RXxYQ_1tYmyAuWHReVIqdu-x5WSCdDNnHSQtL2ychZKg7MrceWj6WNc"/>
+<div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+<div class="absolute bottom-0 left-0 p-4">
+<span class="text-[10px] text-lebanon-gold uppercase tracking-widest block mb-1">City</span>
+<h4 class="text-lg font-serif">Beirut</h4>
+</div>
+</div>
+<!-- Item 4: Byblos -->
+<div class="group relative overflow-hidden rounded-xl aspect-[3/4] cursor-pointer">
+<img alt="Byblos" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAahI_5L-lOtmeAuV4D_IZTFaDoxnX4gW9zpUTadg12k64ySeYTUgfx3c7wPAk9vPNl7ePozzZrCnw2fjYS2DBG6MpeZcJOas34jWFY6lJUCaY4PxYTcm1J_bJmwzqB3REQbEF4x1whGXMno2NQT_RHzbCFHrQAz9d4kOYGswTRc2-oCB5LU_snzTt6HTlS6SoxyWRn2pbuIgdMncl11W8sRqO2bkq4mN-V_uw32UZIu2b0U0mEN14dIb_CBOj65atPpE-lyKuwFS8"/>
+<div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+<div class="absolute bottom-0 left-0 p-4">
+<span class="text-[10px] text-lebanon-gold uppercase tracking-widest block mb-1">City</span>
+<h4 class="text-lg font-serif">Byblos</h4>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: LandmarksSection -->
+<!-- BEGIN: CitiesSection -->
+<!-- END: CitiesSection -->
+<!-- BEGIN: CuisineSection -->
+<section class="section-spacing px-6" id="cuisine">
+<div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16"><div class="flex flex-col lg:flex-row items-center gap-10">
+<div class="lg:w-1/3">
+<div class="relative">
+<img alt="Lebanese Mezze" class="rounded-2xl shadow-xl relative z-10 w-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoJRqzAnB2IPk4CGeuevRDLnw4rt7ZGEcvLzDSF1Kv-j391futFB8GidVFlnGrT-g513ck_o3964attlLptiRHs-TT5r6ptQvV-3rL2kSLgGSyhOy9MXUXpggVwFRNKvxMhtTz-kFOOkb97U1ICZjAGZa1_iC4g41bb8PVr-DiDdANQ_woNvvry5Y_tZiWaX8LGMdvEX6ob-yOGX6ylcRDp9pwhTVwDHsOs8l5WAyHt1kNVcGS4Dg9-4QLDvWNESvTOZ8G9WCn-Ts"/>
+<div class="absolute -top-4 -right-4 w-full h-full border border-lebanon-gold/20 rounded-2xl -z-0"></div>
+</div>
+</div>
+<div class="lg:w-2/3">
+<h2 class="text-lebanon-gold font-serif text-sm mb-2 uppercase tracking-[0.3em]">Gastronomy</h2>
+<h3 class="text-3xl font-serif mb-4">A Symphony of Flavors</h3>
+<p class="text-white/70 mb-6 text-sm leading-relaxed">
+            Experience world-renowned cuisine. From Mezze spreads to seasoned Kibbeh, every meal celebrates ancient culinary traditions.
+          </p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-3 mb-8">
+<div class="flex items-center gap-3 text-sm text-white/90">
+<span class="w-6 h-[1px] bg-lebanon-gold"></span> Traditional Mezze
+            </div>
+<div class="flex items-center gap-3 text-sm text-white/90">
+<span class="w-6 h-[1px] bg-lebanon-gold"></span> The National Dish
+            </div>
+<div class="flex items-center gap-3 text-sm text-white/90">
+<span class="w-6 h-[1px] bg-lebanon-gold"></span> Bekaa Valley Wines
+            </div>
+<div class="flex items-center gap-3 text-sm text-white/90">
+<span class="w-6 h-[1px] bg-lebanon-gold"></span> Historic Arak
+            </div>
+</div>
+<button class="bg-transparent border border-white/20 px-6 py-2 text-[10px] tracking-widest uppercase hover:bg-white hover:text-lebanon-dark transition-colors">
+            Explore the Menu
+          </button>
+</div>
+</div></div>
+</section>
+<!-- END: CuisineSection -->
+<!-- BEGIN: HistorySection -->
+<section class="bg-[#0b1812] section-spacing px-6 relative overflow-hidden" id="history">
+<div class="max-w-5xl mx-auto"><div class="text-center mb-12">
+<h2 class="text-lebanon-gold font-serif text-sm mb-2 uppercase tracking-[0.3em]">レバノン共和国の歴史</h2>
+<h3 class="text-3xl md:text-4xl font-serif">A Tapestry of Ages: Lebanese Republic</h3>
+</div>
+<div class="max-w-3xl mx-auto space-y-8 relative border-l border-white/10 pl-8">
+<!-- History: Ancient -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-lebanon-gold"></div>
+<h4 class="text-lebanon-gold font-sans text-xl font-semibold mb-6">古代</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-white mb-1">フェニキア人都市国家 <span class="text-xs text-white/40 block md:inline md:ml-2">（紀元前3000年頃 - 紀元前539年）</span></h5>
+<p class="text-xs text-white/50 leading-relaxed">地中海沿岸にティルス、シドン、ビュブロスなどの都市国家が栄え、海洋貿易で繁栄。</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-white mb-1">アケメネス朝ペルシア <span class="text-xs text-white/40 block md:inline md:ml-2">（紀元前539年 - 紀元前332年）</span></h5>
+<p class="text-xs text-white/50 leading-relaxed">キュロス大王による征服後、ペルシャ帝国の一部となる。</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-white mb-1">アレクサンドロス大王とヘレニズム時代 <span class="text-xs text-white/40 block md:inline md:ml-2">（紀元前332年 - 紀元前64年）</span></h5>
+<p class="text-xs text-white/50 leading-relaxed">アレクサンドロスの征服後、セレウコス朝の支配下に。</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-white mb-1">ローマ帝国 <span class="text-xs text-white/40 block md:inline md:ml-2">（紀元前64年 - 395年）</span></h5>
+<p class="text-xs text-white/50 leading-relaxed">シリア属州の一部として統治され、ベイルートが法学の中心地として発展。</p>
+</div>
+</div>
+</div>
+<!-- History: Medieval -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-white/20"></div>
+<h4 class="text-lebanon-gold font-sans text-xl font-semibold mb-6">中世</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-white mb-1">東ローマ帝国（ビザンツ帝国） <span class="text-xs text-white/40 block md:inline md:ml-2">（395年 - 637年）</span></h5>
+<p class="text-xs text-white/50 leading-relaxed">キリスト教文化が広がり、地中海交易の一部として機能。</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-white mb-1">イスラム帝国（ウマイヤ朝・アッバース朝） <span class="text-xs text-white/40 block md:inline md:ml-2">（637年 - 11世紀）</span></h5>
+<p class="text-xs text-white/50 leading-relaxed">アラブ人による征服後、イスラム教が広まる。</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-white mb-1">十字軍国家（トリポリ伯国） <span class="text-xs text-white/40 block md:inline md:ml-2">（1102年 - 1289年）</span></h5>
+<p class="text-xs text-white/50 leading-relaxed">第1回十字軍によって設立されたキリスト教国家。</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-white mb-1">マムルーク朝 <span class="text-xs text-white/40 block md:inline md:ml-2">（1289年 - 1517年）</span></h5>
+<p class="text-xs text-white/50 leading-relaxed">十字軍を駆逐し、レバノンを支配。</p>
+</div>
+</div>
+</div>
+<!-- History: Early Modern -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-white/20"></div>
+<h4 class="text-lebanon-gold font-sans text-xl font-semibold mb-6">近世</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-white mb-1">オスマン帝国 <span class="text-xs text-white/40 block md:inline md:ml-2">（1517年 - 1918年）</span></h5>
+<p class="text-xs text-white/50 leading-relaxed">レバノンはオスマン帝国の一部として統治され、レバノン山地では自治的なマロン派キリスト教徒やドルーズ派が活動。</p>
+</div>
+</div>
+</div>
+<!-- History: Modern -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-white/20"></div>
+<h4 class="text-lebanon-gold font-sans text-xl font-semibold mb-6">近現代・現代</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-white mb-1">フランス委任統治領（大レバノン） <span class="text-xs text-white/40 block md:inline md:ml-2">（1920年 - 1943年）</span></h5>
+<p class="text-xs text-white/50 leading-relaxed">第一次世界大戦後、フランスの委任統治下に置かれ、「大レバノン」が設立される。</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-white mb-1">レバノン共和国の独立 <span class="text-xs text-white/40 block md:inline md:ml-2">（1943年）</span></h5>
+<p class="text-xs text-white/50 leading-relaxed">フランスから独立を達成し、宗派バランスに基づく政治体制を確立。</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-white mb-1">レバノン内戦 <span class="text-xs text-white/40 block md:inline md:ml-2">（1975年 - 1990年）</span></h5>
+<p class="text-xs text-white/50 leading-relaxed">宗派間の対立が激化し、長期にわたる内戦が発生。</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-white mb-1">現在のレバノン共和国 <span class="text-xs text-white/40 block md:inline md:ml-2">（1990年 - 現在）</span></h5>
+<p class="text-xs text-white/50 leading-relaxed">内戦終結後も政治的混乱や経済危機が続くが、多様な宗教と文化を持つ国家として存続。</p>
+</div>
+</div>
+</div>
+</div>
+<p class="text-left text-white/60 text-sm mt-12 italic max-w-2xl mx-auto">
+    レバノンは、地中海と中東の交差点として、古代から現代に至るまで多くの文明や勢力が交差する舞台でした。
+</p>
+</div>
+</section>
+<!-- END: HistorySection -->
+<!-- BEGIN: Footer -->
+<footer class="bg-lebanon-dark py-20 px-6 border-t border-white/5 relative z-10">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="col-span-1 md:col-span-2">
+<div class="flex items-center gap-3 mb-6">
+<div class="text-emerald-500">
+<svg fill="none" height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 2L15 8H9L12 2Z" fill="currentColor"></path>
+<path d="M12 6L17 14H7L12 6Z" fill="currentColor"></path>
+<path d="M12 11L19 20H5L12 11Z" fill="currentColor"></path>
+<path d="M11 20H13V22H11V20Z" fill="currentColor"></path>
+</svg>
+</div>
+<span class="font-serif text-lg tracking-wider font-semibold">Lebanon Discovery</span>
+</div>
+<p class="text-white/40 text-sm max-w-sm mb-8">
+            Curating bespoke luxury travel experiences for discerning explorers seeking the authentic soul of the Mediterranean.
+          </p>
+</div>
+<div>
+<h6 class="text-lebanon-gold font-serif text-sm mb-6 uppercase tracking-widest">Navigation</h6>
+<ul class="space-y-4 text-sm text-white/60">
+<li><a class="hover:text-white transition-colors" href="#landmarks">Landmarks</a></li>
+<li><a class="hover:text-white transition-colors" href="#cities">Cities</a></li>
+<li><a class="hover:text-white transition-colors" href="#cuisine">Cuisine</a></li>
+<li><a class="hover:text-white transition-colors" href="#history">History</a></li>
+</ul>
+</div>
+<div>
+<h6 class="text-lebanon-gold font-serif text-sm mb-6 uppercase tracking-widest">Connect</h6>
+<ul class="space-y-4 text-sm text-white/60">
+<li><a class="hover:text-white transition-colors" href="#">Instagram</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Twitter</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Contact Us</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 mt-10"><p class="text-xs text-white/20">© 2023 Lebanon Discovery. All rights reserved.</p>
+<div class="flex gap-8 text-xs text-white/20">
+<a href="#">Privacy Policy</a>
+<a href="#">Terms of Service</a>
+</div></div>
+</footer>
+<!-- END: Footer -->
+</main>
+<style data-purpose="animations">
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+<script>
+    document.getElementById('searchInput').addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+            const searchTerm = this.value.trim();
+            if (searchTerm) {
+                const wikipediaUrl = `https://ja.wikipedia.org/wiki/特別:検索?search=${encodeURIComponent(searchTerm)}`;
+                window.open(wikipediaUrl, '_blank');
+            }
+        }
+    });
+</script>
+</body></html>
