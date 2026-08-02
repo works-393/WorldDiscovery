@@ -8,6 +8,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="../menu.js" defer></script>
 <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
@@ -62,6 +63,7 @@
 <h2 class="text-slate-900 dark:text-slate-100 text-lg font-bold leading-tight tracking-tight font-display">Qatar Discovery</h2>
 </a>
 </div>
+<!--ＰＣ・スマホ対応-->
 <nav id="navMenu" class="hidden md:flex items-center gap-9 
     absolute top-full left-0 w-full bg-white dark:bg-slate-900 flex-col p-6 shadow-lg z-50
     md:absolute md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 md:w-auto md:flex-row md:p-0 md:shadow-none">
@@ -389,17 +391,5 @@
         }
     });
 
-document.addEventListener("DOMContentLoaded", () => {
-    const btn = document.getElementById("menuButton");
-    const menu = document.getElementById("navMenu");
-
-    if (btn && menu) {
-        btn.addEventListener("click", () => {
-            // hidden（非表示）と flex（表示）を切り替える
-            menu.classList.toggle("hidden");
-            menu.classList.toggle("flex");
-        });
-    }
-});
 </script>
 </body></html>
