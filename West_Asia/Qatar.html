@@ -4,6 +4,7 @@
 <meta charset="utf-8"/>
 <title>Qatar Discovery | A Journey Through Time</title>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Explore the ancient landmarks, vibrant cities, and rich history of Qatar." name="description"/>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
@@ -93,20 +94,26 @@
 </header>
 <main class="max-w-[1200px] mx-auto w-full px-4 md:px-10 py-5 mt-16">
 <section class="@container mb-12">
-<div class="@[480px]:p-0">
-<div class="flex min-h-[520px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:rounded-xl items-center justify-center p-6 text-center" data-alt="Wide shot of the Treasury building in Petra at dusk" style='background-image: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.6) 100%), url("img/Qatar.jpg");'>
-<div class="flex flex-col gap-4 max-w-2xl">
-<h1 class="text-white text-4xl md:text-5xl font-bold leading-tight tracking-tight font-display">
-                                    Qatar: A Journey Through Time
-                                </h1>
-<p class="text-white/90 text-lg md:text-xl font-normal max-w-lg mx-auto">
-                                    Experience the energy of Qatar through its dynamic hubs, where soaring modern skylines meet the timeless pulse of traditional souqs.
-                                </p>
-</div>
+  <div class="@[480px]:p-0">
+    <div class="flex min-h-[520px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:rounded-xl items-center justify-center p-6 text-center" data-alt="Wide shot of the Treasury building in Petra at dusk" style='background-image: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.6) 100%), url("img/Qatar.jpg");'>
+      
+      <!-- テキストエリア -->
+      <div class="flex flex-col gap-4 max-w-2xl">
+        
+        <!-- 1行目：メインタイトル（0.3秒遅れてフワッと浮き上がります） -->
+        <h1 class="text-white text-4xl md:text-5xl font-bold leading-tight tracking-tight font-display opacity-0 animate-[fadeIn_1s_ease-out_0.3s_forwards]">
+          Qatar: A Journey Through Time
+        </h1>
+        
+        <!-- 2行目：説明文（0.6秒遅れてフワッと浮き上がります） -->
+        <p class="text-white/90 text-lg md:text-xl font-normal max-w-lg mx-auto opacity-0 animate-[fadeIn_1s_ease-out_0.6s_forwards]">
+          Experience the energy of Qatar through its dynamic hubs, where soaring modern skylines meet the timeless pulse of traditional souqs.
+        </p>
 
-</div>
-</div>
-</div>
+      </div>
+
+    </div>
+  </div>
 </section>
 <section class="mb-16" id="landmarks">
 <div class="flex items-center justify-between mb-8 px-4">
@@ -377,9 +384,20 @@
 <div class="max-w-[1200px] mx-auto px-10 pt-12 mt-12 border-t border-slate-100 dark:border-slate-800 text-center text-slate-400 text-xs">
                     © 2026 Qatar Travel Guide. All rights reserved.
                 </div>
+                <button onclick="window.close(); setTimeout(() => { window.location.href = 'https://google.com'; }, 100);" 
+          class="flex items-center gap-1 px-3 py-0.5 ml-auto md:ml-auto bg-slate-900 hover:opacity-80 text-white font-medium rounded-full transition-all shadow-sm">
+    <span class="material-symbols-outlined text-xs">logout</span>
+    <span class="tracking-wider text-xs">QUIT</span>
+  </button>
 </footer>
 </div>
 </div>
+<style data-purpose="animations">
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 <script>
     document.getElementById('searchInput').addEventListener('keypress', function(e) {
         if (e.key === 'Enter') {

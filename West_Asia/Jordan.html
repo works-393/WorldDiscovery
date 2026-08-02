@@ -3,10 +3,13 @@
 <html lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Jordan West Asia Discovery</title>
+<meta content="Explore the ancient landmarks, vibrant cities, and rich history of Jordan." name="description"/>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="../menu.js"></script>
 <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
@@ -44,7 +47,9 @@
 <h2 class="text-slate-900 dark:text-slate-100 text-lg font-bold leading-tight tracking-tight font-display">Jordan Discovery</h2>
 </a>
 </div>
-<nav class="hidden md:flex items-center gap-9 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+<nav id="navMenu" class="hidden md:flex items-center gap-9 
+    absolute top-full left-0 w-full bg-white dark:bg-slate-900 flex-col p-6 shadow-lg z-50
+    md:absolute md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 md:w-auto md:flex-row md:p-0 md:shadow-none">
 <a class="text-slate-700 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors" href="#landmarks">Landmarks</a>
 <a class="text-slate-700 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors" href="#cities">Cities</a>
 <a class="text-slate-700 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors" href="#cuisine">Cuisine</a>
@@ -59,25 +64,40 @@
 <input id="searchInput" class="form-input flex w-full min-w-0 flex-1 border-none bg-slate-100 dark:bg-slate-800 focus:ring-0 h-full placeholder:text-slate-500 px-4 rounded-r-lg pl-2 text-base font-normal" placeholder="Wikipedia検索" value=""/>
 </div>
 </label>
+<!-- Mobile Menu Button (Icon only) -->
+<div class="md:hidden">
+<button
+    id="menuButton"
+    class="md:hidden flex items-center justify-center">
+    <span class="material-symbols-outlined text-3xl">
+        menu
+    </span>
+</button>
 
 </div>
 </header>
 <main class="max-w-[1200px] mx-auto w-full px-4 md:px-10 py-5 mt-16">
 <section class="@container mb-12">
-<div class="@[480px]:p-0">
-<div class="flex min-h-[520px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:rounded-xl items-center justify-center p-6 text-center" data-alt="Wide shot of the Treasury building in Petra at dusk" style='background-image: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.6) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuBAcsrshGFIWteprmnCvUebjWvbLBPAyWbVTrepkAIiYWaLL749VScfcD4G8PIbGeSYgaXmYPPnZcxxH-_On68i-WZ0--Lymf4TTI-JaemsdMPStW3dQe3Jcx0e-sJoWZIBeu_GJFe-7ongXb7-YNYXTWApEJHA1iqzX2DWlsHGnRPehHgG7zfODzH_GkVG7nmLYS_aqobMYgIz21WF8D76LX2jYSBVaPXbeUSPZkWtyUCsrkjCSVp4-803ggkRXqS2GdPrNK16ygZ2");'>
-<div class="flex flex-col gap-4 max-w-2xl">
-<h1 class="text-white text-4xl md:text-5xl font-bold leading-tight tracking-tight font-display">
-                                    Jordan: A Journey Through Time
-                                </h1>
-<p class="text-white/90 text-lg md:text-xl font-normal max-w-lg mx-auto">
-                                    Discover the magic of the Hashemite Kingdom, where ancient history meets modern hospitality.
-                                </p>
-</div>
+  <div class="@[480px]:p-0">
+    <div class="flex min-h-[520px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:rounded-xl items-center justify-center p-6 text-center" data-alt="Wide shot of the Treasury building in Petra at dusk" style='background-image: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.6) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuBAcsrshGFIWteprmnCvUebjWvbLBPAyWbVTrepkAIiYWaLL749VScfcD4G8PIbGeSYgaXmYPPnZcxxH-_On68i-WZ0--Lymf4TTI-JaemsdMPStW3dQe3Jcx0e-sJoWZIBeu_GJFe-7ongXb7-YNYXTWApEJHA1iqzX2DWlsHGnRPehHgG7zfODzH_GkVG7nmLYS_aqobMYgIz21WF8D76LX2jYSBVaPXbeUSPZkWtyUCsrkjCSVp4-803ggkRXqS2GdPrNK16ygZ2");'>
+      
+      <!-- テキストエリア（gap-4 で文字同士の間隔を維持しています） -->
+      <div class="flex flex-col gap-4 max-w-2xl">
+        
+        <!-- 1行目：メインタイトル（0.3秒遅れてフワッと浮き上がります） -->
+        <h1 class="text-white text-4xl md:text-5xl font-bold leading-tight tracking-tight font-display opacity-0 animate-[fadeIn_1s_ease-out_0.3s_forwards]">
+          Jordan: A Journey Through Time
+        </h1>
+        
+        <!-- 2行目：説明文（0.6秒遅れてフワッと浮き上がります） -->
+        <p class="text-white/90 text-lg md:text-xl font-normal max-w-lg mx-auto opacity-0 animate-[fadeIn_1s_ease-out_0.6s_forwards]">
+          Discover the magic of the Hashemite Kingdom, where ancient history meets modern hospitality.
+        </p>
 
-</div>
-</div>
-</div>
+      </div>
+
+    </div>
+  </div>
 </section>
 <section class="mb-16" id="landmarks">
 <div class="flex items-center justify-between mb-8 px-4">
@@ -340,11 +360,22 @@
 </div>
 </div>
 <div class="max-w-[1200px] mx-auto px-10 pt-12 mt-12 border-t border-slate-100 dark:border-slate-800 text-center text-slate-400 text-xs">
-                    © 2026 Jordan Discovery. All rights reserved.                </div>
-                    
+                    © 2026 Jordan Discovery. All rights reserved.              
+                  </div>
+<button onclick="window.close(); setTimeout(() => { window.location.href = 'https://google.com'; }, 100);" 
+          class="flex items-center gap-1 px-3 py-0.5 ml-auto md:ml-auto bg-brand-emerald hover:opacity-80 text-white font-medium rounded-full transition-all shadow-sm">
+    <span class="material-symbols-outlined text-primary text-xs">logout</span>
+    <span class="tracking-wider text-primary text-xs">QUIT</span>
+  </button>        
 </footer>
 </div>
 </div>
+<style data-purpose="animations">
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 <script>
     document.getElementById('searchInput').addEventListener('keypress', function(e) {
         if (e.key === 'Enter') {

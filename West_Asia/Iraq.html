@@ -4,12 +4,12 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Iraq: The Cradle of Civilization</title>
-<!-- Google Fonts: Noto Sans and Noto Serif for a sophisticated look -->
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet"/>
-<!-- Tailwind CSS v3 -->
+<meta content="Explore the ancient landmarks, vibrant cities, and rich history of Iraq." name="description"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="../menu.js"></script>
 <script>
     tailwind.config = {
       darkMode: 'class',
@@ -44,28 +44,65 @@
 <header class="sticky top-0 z-50 bg-white/90 dark:bg-stone-900/90 backdrop-blur-md border-b border-iraq-gold/20 shadow-sm" data-purpose="main-navigation">
 <nav class="container mx-auto px-4 py-4 flex flex-wrap items-center justify-between">
 <div class="flex items-center space-x-2">
-<span class="text-2xl font-serif font-bold text-iraq-brick">IRAQ Discovery</span>
-</div>
-<!-- Desktop Navigation -->
-<ul class="hidden md:flex space-x-8 font-medium">
-<li><a class="hover:text-iraq-gold transition-colors" href="#landmarks">Landmarks</a></li>
-<li><a class="hover:text-iraq-gold transition-colors" href="#cities">Cities</a></li>
-<li><a class="hover:text-iraq-gold transition-colors" href="#cuisine">Cuisine</a></li>
-<li><a class="hover:text-iraq-gold transition-colors" href="#history">History</a></li>
-</ul>
-<!-- Wikipedia Search Bar -->
-<div class="flex items-center space-x-4">
-<form action="https://en.wikipedia.org/wiki/Special:Search" class="relative group" method="GET" target="_blank">
-<input class="rounded-full bg-stone-100 dark:bg-stone-800 border-none px-4 py-1 text-sm focus:ring-2 focus:ring-iraq-gold w-32 md:w-48 transition-all" name="search" placeholder="Search history..." type="text"/>
-<button class="absolute right-2 top-1.5 text-stone-400 group-hover:text-iraq-gold" type="submit">
-<svg class="h-4 w-4" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-<path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+  <a class="flex items-center gap-3 group" href="#">
+<div class="text-emerald-500 transform group-hover:scale-110 transition-transform"></div>
+<svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 国旗の土台（角丸にして少しおしゃれに見せています） -->
+  <g clip-path="url(#flag-clip)">
+    <!-- 上段：赤 -->
+    <rect x="2" y="5" width="20" height="4.66" fill="#CE1126"/>
+    <!-- 中段：白 -->
+    <rect x="2" y="9.66" width="20" height="4.66" fill="#FFFFFF"/>
+    <!-- 下段：黒 -->
+    <rect x="2" y="14.32" width="20" height="4.66" fill="#000000"/>
+    
+    <!-- 中央の文字（文字を簡略化した緑のアイコン風ライン） -->
+    <path d="M8 12H10M14 12H16" stroke="#007A3D" stroke-width="1.2" stroke-linecap="round"/>
+    <circle cx="12" cy="12" r="0.8" fill="#007A3D"/>
+  </g>
+  
+  <!-- 外枠（全体のバランスを引き締める薄い境界線） -->
+  <rect x="2" y="5" width="20" height="14" rx="2" stroke="currentColor" stroke-width="1" stroke-opacity="0.1"/>
+
+  <!-- 角丸にするための設定（クリッピングパス） -->
+  <defs>
+    <clipPath id="flag-clip">
+      <rect x="2" y="5" width="20" height="14" rx="2"/>
+    </clipPath>
+  </defs>
 </svg>
+</div>
+<span class="text-2xl font-serif font-bold text-iraq-brick">IRAQ Discovery</span>
+</a>
+</div>
+<!--ＰＣ・スマホ対応-->
+<nav id="navMenu" class="hidden md:flex items-center gap-9 
+    absolute top-full left-0 w-full bg-white dark:bg-slate-900 flex-col p-6 shadow-lg z-50
+    md:absolute md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 md:w-auto md:flex-row md:p-0 md:shadow-none">
+<a class="text-slate-700 dark:text-slate-300 text-sm font-medium hover:text-iraq-gold transition-colors" href="#landmarks">Landmarks</a>
+<a class="text-slate-700 dark:text-slate-300 text-sm font-medium hover:text-iraq-gold transition-colors" href="#cities">Cities</a>
+<a class="text-slate-700 dark:text-slate-300 text-sm font-medium hover:text-iraq-gold transition-colors" href="#cuisine">Cuisine</a>
+<a class="text-slate-700 dark:text-slate-300 text-sm font-medium hover:text-iraq-gold transition-colors" href="#history">History</a>
+</nav>
+<div class="flex flex-1 justify-end gap-4 md:gap-8">
+<label class="hidden sm:flex flex-col min-w-40 h-10 max-w-64">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+<div class="text-slate-500 flex border-none bg-slate-100 dark:bg-slate-800 items-center justify-center pl-4 rounded-l-lg" data-icon="search">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input id="searchInput" class="form-input flex w-full min-w-0 flex-1 border-none bg-slate-100 dark:bg-slate-800 focus:ring-0 h-full placeholder:text-slate-500 px-4 rounded-r-lg pl-2 text-base font-normal" placeholder="Wikipedia検索" value=""/>
+</div>
+</label>
+
+</div>
+<button
+    id="menuButton"
+    class="md:hidden flex items-center justify-center">
+    <span class="material-symbols-outlined text-3xl">
+        menu
+    </span>
 </button>
-</form>
-<button class="p-2 rounded-full hover:bg-stone-200 dark:hover:bg-stone-800 transition-colors" data-purpose="theme-switcher" id="dark-mode-toggle">
-<svg class="h-5 w-5 block dark:hidden" fill="currentColor" id="moon-icon" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
-<svg class="h-5 w-5 hidden dark:block text-iraq-gold" fill="currentColor" id="sun-icon" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd"></path></svg>
+</header>
 </button>
 </div>
 </nav>
@@ -73,14 +110,24 @@
 <!-- END: MainHeader -->
 <!-- BEGIN: HeroSection -->
 <section class="relative h-[80vh] flex items-center justify-center overflow-hidden" data-purpose="hero">
-<!-- Image Placeholder for Ziggurat of Ur -->
-<img alt="Great Ziggurat of Ur" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCy71DdNRnMiy9YIeTRYezVuAG6Cmrz_Gwb7xRtqeIAP5etcaMqNvNSFUtsC8gQ-cXTzt5gLdovj9xSNzXOy8GD5r5EUv6jwvLTvOYZ9hoSDv-MYXHy6Tl9T7blCRbsZnfe7ftJp8XtD0uEdymtaPvAB2WeXyCBuCC2Mr0VbcRT1CdeeA7oloOBHg1wosmtvUGDqn-jwdHumQOy1Qu3wEQD-UB-45q7GO4O3iO6_ebUqT3e5BcSvP4RVWOtjp1bTCgvorMfUKfOOwF0"/>
-<div class="absolute inset-0 hero-gradient"></div>
-<div class="relative z-10 text-center px-4 max-w-4xl">
-<h1 class="text-4xl md:text-4xl font-serif text-white mb-4 drop-shadow-lg">Iraq: A Journey to the Beginning of Time</h1>
-<p class="text-1xl md:text-1xl font-serif text-stone-200 font-light mb-8">Exploring the cradle of human civilization and the legacy of Mesopotamia.</p>
+  <!-- ウルのジッグラトの背景画像 -->
+  <img alt="Great Ziggurat of Ur" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCy71DdNRnMiy9YIeTRYezVuAG6Cmrz_Gwb7xRtqeIAP5etcaMqNvNSFUtsC8gQ-cXTzt5gLdovj9xSNzXOy8GD5r5EUv6jwvLTvOYZ9hoSDv-MYXHy6Tl9T7blCRbsZnfe7ftJp8XtD0uEdymtaPvAB2WeXyCBuCC2Mr0VbcRT1CdeeA7oloOBHg1wosmtvUGDqn-jwdHumQOy1Qu3wEQD-UB-45q7GO4O3iO6_ebUqT3e5BcSvP4RVWOtjp1bTCgvorMfUKfOOwF0"/>
+  <div class="absolute inset-0 hero-gradient"></div>
+  
+  <!-- テキストエリア -->
+  <div class="relative z-10 text-center px-4 max-w-4xl">
+    
+    <!-- 1行目：メインタイトル（0.3秒遅れてフワッと浮き上がります） -->
+    <h1 class="text-4xl md:text-5xl font-serif text-white mb-4 drop-shadow-lg opacity-0 animate-[fadeIn_1s_ease-out_0.3s_forwards]">
+      Iraq: A Journey to the Beginning of Time
+    </h1>
+    
+    <!-- 2行目：サブテキスト（0.6秒遅れてフワッと浮き上がります） -->
+    <p class="text-base md:text-lg font-serif text-stone-200 font-light mb-8 opacity-0 animate-[fadeIn_1s_ease-out_0.6s_forwards]">
+      Exploring the cradle of human civilization and the legacy of Mesopotamia.
+    </p>
 
-</div>
+  </div>
 </section>
 <!-- END: HeroSection -->
 <main class="container mx-auto px-4 py-16">
@@ -252,7 +299,7 @@
 </div>
 <!-- History: Medieval -->
 <div class="relative">
-<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-stone-300 dark:bg-stone-700 ring-4 ring-stone-100 dark:ring-stone-900"></div>
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-iraq-gold ring-4 ring-stone-100 dark:ring-stone-900"></div>
 <h4 class="text-iraq-brick font-sans text-xl font-semibold mb-6">中世</h4>
 <div class="space-y-4">
 <div>
@@ -278,7 +325,7 @@
 </div>
 <!-- History: Early Modern -->
 <div class="relative">
-<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-stone-300 dark:bg-stone-700 ring-4 ring-stone-100 dark:ring-stone-900"></div>
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-iraq-gold ring-4 ring-stone-100 dark:ring-stone-900"></div>
 <h4 class="text-iraq-brick font-sans text-xl font-semibold mb-6">近世</h4>
 <div class="space-y-4">
 <div>
@@ -289,7 +336,7 @@
 </div>
 <!-- History: Modern -->
 <div class="relative">
-<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-stone-300 dark:bg-stone-700 ring-4 ring-stone-100 dark:ring-stone-900"></div>
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-iraq-gold ring-4 ring-stone-100 dark:ring-stone-900"></div>
 <h4 class="text-iraq-brick font-sans text-xl font-semibold mb-6">近現代・現代</h4>
 <div class="space-y-4">
 <div>
@@ -318,8 +365,28 @@
 <footer class="bg-stone-900 text-stone-400 py-12 px-4 border-t border-iraq-gold/30">
 <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
 <div>
-<h4 class="text-white font-serif text-xl mb-4">Iraq Guide</h4>
-<p class="text-sm">Explore the deep history and vibrant culture of the land between the two rivers.</p>
+  <!-- flex を追加して、文字と国旗を綺麗に横並びにします -->
+  <h4 class="text-white font-serif text-xl mb-4 flex items-center justify-center md:justify-start gap-2.5">
+    <!-- イラク国旗のSVGアイコン -->
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://w3.org" class="shrink-0">
+      <g clip-path="url(#flag-clip)">
+        <rect x="2" y="5" width="20" height="4.66" fill="#CE1126"/>
+        <rect x="2" y="9.66" width="20" height="4.66" fill="#FFFFFF"/>
+        <rect x="2" y="14.32" width="20" height="4.66" fill="#000000"/>
+        <path d="M8 12H10M14 12H16" stroke="#007A3D" stroke-width="1.2" stroke-linecap="round"/>
+        <circle cx="12" cy="12" r="0.8" fill="#007A3D"/>
+      </g>
+      <rect x="2" y="5" width="20" height="14" rx="2" stroke="currentColor" stroke-width="1" stroke-opacity="0.1"/>
+      <defs>
+        <clipPath id="flag-clip"><rect x="2" y="5" width="20" height="14" rx="2"/></clipPath>
+      </defs>
+    </svg>
+    
+    <!-- 見出しテキスト -->
+    <span>Iraq Guide</span>
+  </h4>
+  
+  <p class="text-sm">Explore the deep history and vibrant culture of the land between the two rivers.</p>
 </div>
 <div>
 <h4 class="text-white font-serif text-xl mb-4">Navigation</h4>
@@ -341,9 +408,20 @@
 </div>
 <div class="container mx-auto mt-12 pt-8 border-t border-stone-800 text-center text-xs">
 <p>© 2026 Mesopotamian Journeys. All rights reserved.</p>
+<button onclick="window.close(); setTimeout(() => { window.location.href = 'https://google.com'; }, 100);" 
+          class="flex items-center gap-1 px-3 py-0.5 ml-auto md:ml-auto bg-brand-emerald hover:opacity-80 text-white font-medium rounded-full transition-all shadow-sm">
+    <span class="material-symbols-outlined text-white/80 text-xs">logout</span>
+    <span class="tracking-wider text-white/80 text-xs">QUIT</span>
+  </button>
 </div>
 </footer>
 <!-- END: Footer -->
+ <style data-purpose="animations">
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 <script data-purpose="event-handlers">
     // Dark Mode Toggle Logic
     const toggleBtn = document.getElementById('dark-mode-toggle');

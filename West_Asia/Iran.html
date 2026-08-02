@@ -4,10 +4,12 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Iran West Asia Discovery</title>
-<!-- Tailwind CSS v3 CDN -->
+<meta content="Explore the ancient landmarks, vibrant cities, and rich history of Iran." name="description"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<!-- Google Fonts: Newsreader for serif titles -->
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@1,6..72,400;1,6..72,600;1,6..72,700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<script src="../menu.js"></script>
 <script>
     tailwind.config = {
       theme: {
@@ -74,7 +76,9 @@
 </a>
 </div>
 <!-- Navigation -->
-<nav class="hidden md:flex space-x-8 text-sm font-medium">
+<nav id="navMenu" class="hidden md:flex items-center gap-9 
+    absolute top-full left-0 w-full bg-brand-dark/90 dark:bg-slate-900 flex-col p-6 shadow-lg z-50
+    md:absolute md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 md:w-auto md:flex-row md:p-0 md:shadow-none">
 <a class="text-brand-sand hover:text-brand-emerald transition-colors" href="#history">Landmarks</a>
 <a class="text-brand-sand hover:text-brand-emerald transition-colors" href="#cities">Cities</a>
 <a class="text-brand-sand hover:text-brand-emerald transition-colors" href="#cuisine">Cuisine</a>
@@ -91,8 +95,12 @@
 </div>
 <!-- Mobile Menu Button (Icon only) -->
 <div class="md:hidden">
-<button class="text-brand-sand p-2">
-<svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-width="2"></path></svg>
+<button
+    id="menuButton"
+    class="md:hidden flex items-center justify-center">
+    <span class="material-symbols-outlined text-3xl">
+        menu
+    </span>
 </button>
 </div>
 </div>
@@ -100,6 +108,7 @@
 </header>
 <!-- END: MainHeader -->
 <!-- BEGIN: HeroSection -->
+ <main class="relative">
 <section class="relative h-[70vh] flex items-center justify-center overflow-hidden" data-purpose="hero-banner">
 <!-- Hero Background Image -->
 <div class="absolute inset-0 z-0">
@@ -107,18 +116,25 @@
 <div class="absolute inset-0 hero-gradient"></div>
 </div>
 <div class="relative z-10 text-center px-4">
-<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-500 text-xs font-bold tracking-widest uppercase mb-6">
+  
+  <!-- 1行目：青いカプセル型のアイコン（0秒後にすぐフェードイン） -->
+  <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-500 text-xs font-bold tracking-widest uppercase mb-6 opacity-0 animate-[fadeIn_1s_ease-out_forwards]">
     <svg class="w-3 h-3" fill="currentColor" viewbox="0 0 20 20">
       <path d="M10.394 2.827a1 1 0 00-.788 0l-7 3a1 1 0 000 1.846l7 3a1 1 0 00.788 0l7-3a1 1 0 000-1.846l-7-3zM3.108 8.175l6.892 2.954 6.892-2.954-6.892-2.954-6.892 2.954zm16.082 2.535a1 1 0 00-1.19.851 1 1 0 101.973.324l.01-.063a1 1 0 00-.793-1.112zM3 12.064l6.892 2.954 6.892-2.954-6.892-2.954-6.892 2.954z"></path>
     </svg>
-        The Cradle of Civilization
-      </div>
-<h1 class="text-5xl md:text-4xl font-serif italic text-white mb-6">
-  Iran: <span class="text-blue-500">A Journey Through Time</span>
-</h1>
-<p class="max-w-2xl mx-auto text-brand-sand/80 text-lg leading-relaxed">
-        Explore the timeless land of Persia, where great empires once rose and fell, shaping a legacy of stunning architecture, poetic culture, and enduring traditions.
-      </p>
+    The Cradle of Civilization
+  </div>
+
+  <!-- 2行目：メイン見出しの「Iran: ...」（0.3秒遅れてフェードイン） -->
+  <h1 class="text-5xl md:text-4xl font-serif italic text-white mb-6 opacity-0 animate-[fadeIn_1s_ease-out_0.3s_forwards]">
+    Iran: <span class="text-blue-500">A Journey Through Time</span>
+  </h1>
+
+  <!-- 3行目：説明文（0.6秒遅れてフェードイン） -->
+  <p class="max-w-2xl mx-auto text-brand-sand/80 text-lg leading-relaxed opacity-0 animate-[fadeIn_1s_ease-out_0.6s_forwards]">
+    Explore the timeless land of Persia, where great empires once rose and fell, shaping a legacy of stunning architecture, poetic culture, and enduring traditions.
+  </p>
+
 </div>
 </section>
 <!-- END: HeroSection -->
@@ -409,13 +425,25 @@ West Asia Discovery
 </ul>
 </div>
 </div>
-<div class="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-brand-sand/30">
+<div class="border-t border-white/5 pt-8 mb-4 flex flex-col md:flex-row justify-between items-center text-xs text-brand-sand/30">
 <p>© 2026 West Asia Discovery. All rights reserved.</p>
 <p class="mt-4 md:mt-0 italic font-serif">Bridging cultures across the ages.</p>
 </div>
+<button onclick="window.close(); setTimeout(() => { window.location.href = 'https://google.com'; }, 100);" 
+          class="flex items-center gap-1 px-3 py-0.5 ml-auto md:ml-auto bg-brand-sand/60 hover:opacity-80 text-white font-medium rounded-full transition-all shadow-sm">
+    <span class="material-symbols-outlined text-xs">logout</span>
+    <span class="tracking-wider text-xs">QUIT</span>
+  </button>
 </div>
 </footer>
+</main>
 <!-- END: Footer -->
+ <style data-purpose="animations">
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 <script>
     document.getElementById('searchInput').addEventListener('keypress', function(e) {
         if (e.key === 'Enter') {

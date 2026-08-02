@@ -4,6 +4,7 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>West Asia Top</title>
+<meta content="Explore the ancient landmarks, vibrant cities, and rich history of West Asia." name="description"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap" rel="stylesheet"/>
@@ -54,10 +55,15 @@
 <!-- Header / Nav -->
 <header class="border-b border-primary/20 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md sticky top-0 z-50">
 <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-<div class="flex items-center gap-3">
-<span class="material-symbols-outlined text-primary text-3xl">star_half</span>
-<h2 class="text-xl font-bold tracking-tight text-slate-900 dark:text-slate-100">West Asia Discovery</h2>
-</div>
+
+<a class="flex items-center gap-3 group" href="#">
+  <div class="text-primary transform group-hover:scale-110 transition-transform flex items-center">
+    <span class="material-symbols-outlined text-3xl">star_half</span>
+  </div>
+  <h2 class="text-xl font-bold tracking-tight text-slate-900 dark:text-slate-100">
+    West Asia Discovery
+  </h2>
+</a>
 <nav class="hidden md:flex items-center gap-8">
 <a class="text-sm font-medium hover:text-primary transition-colors" href="../index.html">Home</a>
 <a class="text-sm font-medium hover:text-primary transition-colors" href="#">History</a>
