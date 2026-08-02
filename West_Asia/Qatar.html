@@ -62,7 +62,9 @@
 <h2 class="text-slate-900 dark:text-slate-100 text-lg font-bold leading-tight tracking-tight font-display">Qatar Discovery</h2>
 </a>
 </div>
-<nav class="hidden md:flex items-center gap-9 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+<nav id="navMenu" class="hidden md:flex items-center gap-9 
+    absolute top-full left-0 w-full bg-white dark:bg-slate-900 flex-col p-6 shadow-lg z-50
+    md:absolute md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 md:w-auto md:flex-row md:p-0 md:shadow-none">
 <a class="text-slate-700 dark:text-slate-300 text-sm font-medium hover:text-green-700 transition-colors" href="#landmarks">Landmarks</a>
 <a class="text-slate-700 dark:text-slate-300 text-sm font-medium hover:text-green-700 transition-colors" href="#cities">Cities</a>
 <a class="text-slate-700 dark:text-slate-300 text-sm font-medium hover:text-green-700 transition-colors" href="#cuisine">Cuisine</a>
@@ -387,9 +389,17 @@
         }
     });
 
-const btn = document.getElementById("menuButton");
-btn.addEventListener("click", () => {
-    alert("クリックされた");
+document.addEventListener("DOMContentLoaded", () => {
+    const btn = document.getElementById("menuButton");
+    const menu = document.getElementById("navMenu");
+
+    if (btn && menu) {
+        btn.addEventListener("click", () => {
+            // hidden（非表示）と flex（表示）を切り替える
+            menu.classList.toggle("hidden");
+            menu.classList.toggle("flex");
+        });
+    }
 });
 </script>
 </body></html>
