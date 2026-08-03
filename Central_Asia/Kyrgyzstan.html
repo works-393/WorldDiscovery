@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Kyrgyzstan Discovery | Luxury Travel Experience</title>
+<meta content="Explore the ancient landmarks, vibrant cities, and rich history of Kyrgyzstan." name="description"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="../menu.js"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'lebanon-dark': '#102219',
+            'lebanon-gold': '#C5A059',
+            'lebanon-green': '#2D5A27',
+            "primary": "#144bb8",
+            "background-light": "#f6f6f8",
+            "background-dark": "#111621",
+            // 追加
+            "al-adaam": "#8D1B3D",
+            "qatar-gold": "#C5A059",  
+            "e-green": "#50C878",
+            "B-purple-dark": "#006400",
+            "qatar-gold": "#C5A059",
+            "qatar-blue": "#1e3a8a",
+            "oman-blue": "#003153",
+            "yemen-red": "#CE1126",
+            "Bahrain-red": "#DA291C",
+            "B-purple-dark": "#632276",
+            "B-purple": "#D1A7E2",
+            "B-yellow": "#ffff66",
+            "Kaza-blue": "#00A3DD",
+            "Kaza-blue-dark": "#003366",
+            "U-blue": "#99ffcc", //ターコイズブルー//
+            "U-blue-bg": "#006699",
+            "k-yellow": "#ffcc00",
+            "k-red": "#cc3333",
+            "k-yellow-c": "#ffff66",
+            "silk-road-white": "#fdfdfd",
+                       },
+          fontFamily: {
+            serif: ['Newsreader', 'serif'],
+            sans: ['Inter', 'sans-serif'],
+          },
+          backgroundImage: {
+            'Kazakhstan-hero': "url('img/Kyrgyzstan_bg.jpg')",
+          }
+        }
+      }
+    }
+  </script>
+<style data-purpose="custom-styling">body {
+    background-color: #f0f9ff;
+    color: #1e293b
+    }
+.glass-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 1rem
+    }
+.text-balance {
+    text-wrap: balance
+    }
+.section-spacing {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem
+    }
+/* Pattern Overlay */
+.bg-pattern {
+    background-image: url(img/Kyrgyzstan_bg.jpg);
+    opacity: 0.35
+    }</style>
+</head>
+<body class="font-sans antialiased overflow-x-hidden">
+<!-- BEGIN: Background Texture -->
+<div class="fixed inset-0 bg-pattern pointer-events-none z-0"></div>
+<!-- END: Background Texture -->
+<!-- BEGIN: MainHeader -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-k-yellow backdrop-blur-md border-b border-white/5">
+<nav class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<!-- Logo -->
+<a class="flex items-center gap-3 group" href="#">
+<div class="text-white-500 transform group-hover:scale-110 transition-transform">
+<svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景色 -->
+  <rect width="24" height="24" rx="4" fill="#cc3333"/>
+  
+  <!-- 太陽の光（40本の光線の一部を表現） -->
+  <g stroke="white" stroke-width="1.2" stroke-linecap="round" opacity="0.8">
+    <path d="M12 3V5M12 19V21M3 12H5M19 12H21M5.6 5.6L7 7M17 17L18.4 18.4M18.4 5.6L17 7M7 17L5.6 18.4"/>
+  </g>
+
+  <!-- ユルタの天井窓（トゥンドゥク） -->
+  <circle cx="12" cy="12" r="5" stroke="white" stroke-width="1.5"/>
+  <path d="M8 12C8 12 10 11 12 11C14 11 16 12 16 12" stroke="white" stroke-width="1.2" stroke-linecap="round"/>
+  <path d="M8 12C8 12 10 13 12 13C14 13 16 12 16 12" stroke="white" stroke-width="1.2" stroke-linecap="round"/>
+  <path d="M12 8C12 8 11 10 11 12C11 14 12 16 12 16" stroke="white" stroke-width="1.2" stroke-linecap="round"/>
+  <path d="M12 8C12 8 13 10 13 12C13 14 12 16 12 16" stroke="white" stroke-width="1.2" stroke-linecap="round"/>
+</svg>
+</div>
+<span class="text-k-red font-serif text-xl font-semibold">Kyrgyzstan Discovery</span>
+</a>
+<!-- Desktop Navigation -->
+<div id="navMenu" class="hidden md:flex items-center gap-9 
+    absolute top-full left-0 w-full bg-k-yellow backdrop-blur-md flex-col p-6 shadow-lg z-50
+    md:absolute md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 md:w-auto md:flex-row md:p-0 md:shadow-none">
+<a class="text-k-red text-sm font-medium hover:text-B-yellow transition-colors tracking-widest uppercase" href="#Landmarks&Places">Landmarks</a>
+<a class="text-k-red text-sm font-medium hover:text-B-yellow transition-colors tracking-widest uppercase" href="#Landmarks&Places">Places</a>
+<a class="text-k-red text-sm font-medium hover:text-B-yellow transition-colors tracking-widest uppercase" href="#cuisine">Cuisine</a>
+<a class="text-k-red text-sm font-medium hover:text-B-yellow transition-colors tracking-widest uppercase" href="#history">History</a>
+</div>
+<!-- Search Bar -->
+<div class="relative hidden lg:block" data-purpose="search-container">
+<span class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+<svg class="w-4 h-4 text-B-purple-dark/50" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</span>
+<input id="searchInput" class="bg-white/5 border-white/10 text-white pl-10 pr-4 py-2 rounded-lg focus:ring-B-purple-dark focus:border-B-purple-dark w-64 text-sm" placeholder="Wikipedia検索" type="text"/>
+</div>
+
+<!-- Mobile Menu Button (Icon only) -->
+<div class="md:hidden">
+<button
+    id="menuButton"
+    class="md:hidden flex items-center justify-center text-white hover:text-white/80 transition-colors">
+    <span class="material-symbols-outlined text-3xl">
+        menu
+    </span>
+</button>
+</nav>
+</header>
+<!-- END: MainHeader -->
+<!-- BEGIN: HeroSection -->
+<main class="relative">
+<section class="relative flex items-center justify-center overflow-hidden h-[90vh]">
+<!-- Hero Background Image -->
+<div class="absolute inset-0 z-0">
+<img alt="Kyrgyzstan" class="w-full h-full object-cover brightness-50" src="img/Kyrgyzstan.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-b from-[#003153]/60 via-transparent to-[#f0f9ff]"></div>
+</div>
+<div class="relative z-10 text-center px-6 max-w-4xl">
+<h2 class="text-k-yellow-c font-serif italic text-xl md:text-2xl mb-4 opacity-0 animate-[fadeIn_1s_ease-out_forwards]">Under the Eternal Sky of the Tien Shan</h2>
+<h1 class="text-white text-4xl md:text-7xl lg:text-4xl font-serif mb-8 leading-tight opacity-0 animate-[fadeIn_1s_ease-out_0.3s_forwards]">
+          Kyrgyzstan: Where the Sun Meets the Red Horizon  </h1>
+<p class="text-lg md:text-xl text-white/80 font-light max-w-2xl mx-auto mb-10 text-balance opacity-0 animate-[fadeIn_1s_ease-out_0.6s_forwards]">
+          Step into a land where the red flag flies over snow-capped peaks, and the circular "Tunduk" opens a window to the heavens. Here, the nomadic heritage isn't just a memory; it’s a living breath felt in every yurt and every gallop across the high-altitude pastures.
+</p>
+<!-- <a class="inline-block bg-B-purple-dark text-lebanon-dark px-10 py-4 font-semibold tracking-widest uppercase text-sm hover:scale-105 transition-transform opacity-0 animate-[fadeIn_1s_ease-out_0.9s_forwards]" href="#landmarks">
+          Explore Destinations
+        </a>-->
+</div>
+<!-- Scroll Indicator -->
+<!--<div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce opacity-60">
+<svg class="h-6 w-6" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M19 14l-7 7m0 0l-7-7m7 7V3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>-->
+</section>
+<!-- END: HeroSection -->
+<!-- BEGIN: LandmarksSection -->
+<section class="section-spacing px-6 relative" id="Landmarks&Places">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
+<div class="max-w-2xl">
+<h2 class="text-B-purple-dark font-serif text-sm mb-2 uppercase tracking-[0.3em]">Timeless Monuments & Silk Road Legacy</h2>
+<h3 class="text-k-red text-3xl md:text-4xl font-serif">Iconic Landmarks</h3>
+</div>
+<p class="text-slate-600 max-w-md text-sm">From ancient towers and sacred sites to breathtaking natural wonders, discover landmarks that reflect centuries of history, cultural exchange, and the enduring spirit of Central Asia</p>
+</div>
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Item 1:Issyk-Kul-->
+<div class="flex flex-col">
+<div class="group relative overflow-hidden rounded-xl aspect-[3/4] cursor-pointer">
+<img alt="Issyk-Kul" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="img/Issyk-Kul.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-90"></div>
+<div class="absolute bottom-0 left-0 p-4">
+<span class="text-[10px] text-white uppercase tracking-widest block mb-1">Landmark</span>
+<h4 class="text-lg font-serif text-white">Issyk-Kul</h4>
+</div>
+</div>
+<p class="mt-4 text-sm text-slate-600 font-serif leading-snug px-2">A Vast Alpine Lake of Endless Horizons, where crystal-clear waters meet snow-capped mountains under an ever-changing sky
+</p>
+</div>
+<!-- Item 2: Skazka Canyon -->
+<div class="flex flex-col">
+<div class="group relative overflow-hidden rounded-xl aspect-[3/4] cursor-pointer">
+<img alt="Skazka Canyon" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="img/Skazka_Canyon.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-90"></div>
+<div class="absolute bottom-0 left-0 p-4">
+<span class="text-[10px] text-white uppercase tracking-widest block mb-1">Landmark</span>
+<h4 class="text-lg font-serif text-white">Skazka Canyon</h4>
+</div>
+</div>
+<p class="mt-4 text-sm text-slate-600 font-serif leading-snug px-2">A historic ensemble in Bukhara featuring the towering Kalyan Minaret and elegant mosques, once a spiritual and cultural center of the Silk Road.</p>
+</div>
+<!-- Item 3: Bishkek -->
+<div class="flex flex-col">
+<div class="group relative overflow-hidden rounded-xl aspect-[3/4] cursor-pointer">
+<img alt="Bishkek" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="img/Bishkek.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-90"></div>
+<div class="absolute bottom-0 left-0 p-4">
+<span class="text-[10px] text-white uppercase tracking-widest block mb-1">Places</span>
+<h4 class="text-lg font-serif text-white">Bishkek</h4>
+</div>
+</div>
+<p class="mt-4 text-sm text-slate-600 font-serif leading-snug px-2">The capital, Bishkek, is dotted with archaeological sites that were once capitals or seasonal centers of powers such as the Wusun, the Western Turkic Khaganate, the Kara-Khanid Khanate, and the Western Liao (Kara-Khitan).
+</p>
+</div>
+<!-- Item 4: Tokmok -->
+<div class="flex flex-col">
+<div class="group relative overflow-hidden rounded-xl aspect-[3/4] cursor-pointer">
+<img alt="Tokmok" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="img/Tokmok.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-90"></div>
+<div class="absolute bottom-0 left-0 p-4">
+<span class="text-[10px] text-white uppercase tracking-widest block mb-1">Places</span>
+<h4 class="text-lg font-serif text-white">Tokmok</h4>
+</div>
+</div>
+<p class="mt-4 text-sm text-slate-600 font-serif leading-snug px-2">A Gateway to Ancient Silk Road Echoes, home to the Burana Tower—once a 45-meter minaret, now standing at around 25 meters after centuries of earthquakes, quietly watching over the steppe</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!--BEGIN: Cuisine -->
+<section class="px-4 py-16 md:px-10" id="cuisine">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-12">
+<h2 class="text-k-red text-3xl md:text-4xl font-serif">Flavors of Nomadic Heritage</h2>
+<p class="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">Simple, hearty dishes shaped by the rhythms of the степpe, where dairy, grains, and tradition come together in every bite
+</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Package 1 -->
+<div class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:shadow-xl transition-shadow">
+<div class="h-56 w-full overflow-hidden">
+<img alt="Kurut" class="w-full h-full object-cover transition-transform group-hover:scale-105" data-alt="Kurut" src="img/Kurut.jpg"/>
+</div>
+<div class="p-4">
+<div class="flex justify-between items-start mb-1">
+<h3 class="text-xl font-bold">Kurut</h3>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-400 mb-6 line-clamp-2">A Traditional Nomadic Snack, these dried balls of salted yogurt offer a tangy flavor and long-lasting nourishment, once carried by herders across the vast степpe</p>
+<div class="flex items-center justify-between">
+</div>
+</div>
+</div>
+<!-- Package 2 -->
+<div class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:shadow-xl transition-shadow">
+<div class="h-56 w-full overflow-hidden">
+<img alt="Kyrgyz Honey (Jam)" class="w-full h-full object-cover transition-transform group-hover:scale-105" data-alt="Kyrgyz Honey (Jam)" src="img/Kyrgyz_Honey.jpg"/>
+</div>
+<div class="p-4">
+<div class="flex justify-between items-start mb-1">
+<h3 class="text-xl font-bold">Kyrgyz Honey (Jam)</h3>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-400 mb-6 line-clamp-2">A Taste of Mountain Purity, this rich golden honey—often enjoyed like jam—captures the essence of wild alpine flowers and the untouched nature of Kyrgyzstan</p>
+<div class="flex items-center justify-between">
+</div>
+</div>
+</div>
+<!-- Package 3 -->
+<div class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:shadow-xl transition-shadow">
+<div class="h-56 w-full overflow-hidden">
+<img alt="Maksym" class="w-full h-full object-cover transition-transform group-hover:scale-105" data-alt="Maksym" src="img/Maksym.jpg"/>
+</div>
+<div class="p-4">
+<div class="flex justify-between items-start mb-1">
+<h3 class="text-xl font-bold">Maksym</h3>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-400 mb-6 line-clamp-2">A Refreshing Grain Drink of the Steppes, made from fermented cereals, this slightly sour and hearty beverage has long been a staple of everyday life and summer refreshment</p>
+<div class="flex items-center justify-between">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- BEGIN: HistorySection -->
+<section class="bg-[#ccff99]/30 section-spacing px-6 relative overflow-hidden" id="history">
+<div class="max-w-5xl mx-auto"><div class="text-center mb-12">
+<h2 class="text-B-purple-dark font-serif text-sm mb-2 uppercase tracking-[0.3em]">キルギス共和国の歴史</h2>
+<h3 class="text-k-red text-3xl md:text-4xl font-serif">Echoes of Empires Beneath Azure Domes</h3>
+<p class="text-xs text-slate-500 max-w-3xl mx-auto">From the rise of Timurid splendor to the bustling caravan routes of the Silk Road, discover a history shaped by conquest, knowledge, and timeless artistry.
+</p>
+</div>
+<div class="max-w-3xl mx-auto space-y-8 relative border-l border-slate-300 pl-8">
+<!-- History: Ancient -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-k-red"></div>
+<h4 class="text-k-red font-sans text-xl font-semibold mb-6">古代</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">突厥帝国<span class="text-xs text-slate-500 block md:inline md:ml-2">（6世紀 - 8世紀）  </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">突厥帝国はテュルク系遊牧民による広大な帝国で、キルギス地域もその支配下に入りました。この時期、キルギス人の祖先は遊牧生活を送りながら、突厥文化や言語の影響を受けました。
+</p>
+</div>
+
+</div>
+</div>
+<!-- History: Medieval -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-k-red"></div>
+<h4 class="text-k-red font-sans text-xl font-semibold mb-6">中世</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">ウイグル可汗国 <span class="text-xs text-slate-500 block md:inline md:ml-2">（8～9世紀）</span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">
+テュルク系文化の継承 遊牧国家の流れ
+ウイグル可汗国はモンゴル高原が中心で、現在のキルギス全域を直接支配していたわけではありません。</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">エニセイ・キルギス<span class="text-xs text-slate-500 block md:inline md:ml-2">（9世紀）  </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">特徴：現在のキルギス人の祖先とされる存在です。</p>
+<p class="text-xs text-slate-600 leading-relaxed">拠点：エニセイ川流域（今のロシア南部） </p>
+<p class="text-xs text-slate-600 leading-relaxed">9世紀にウイグルを倒して勢力拡大 。その後、南下して現在のキルギス方面へ</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">モンゴル帝国<span class="text-xs text-slate-500 block md:inline md:ml-2">（13世紀）    </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">チンギス・ハーンの遠征により、キルギス地域はモンゴル帝国の支配下に入りました。モンゴル帝国の広大な交易ネットワークにより、キルギス地域もシルクロードの一部として重要な役割を果たしました。遊牧民文化は維持されつつも、モンゴルの政治体制や文化の影響を受けました。
+</p>
+</div>
+
+
+
+</div>
+</div>
+<!-- History: Early Modern -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-k-red"></div>
+<h4 class="text-k-red font-sans text-xl font-semibold mb-6">近世</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">コーカンド・ハン国<span class="text-xs text-slate-500 block md:inline md:ml-2">（18世紀後半 - 19世紀）  </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">フェルガナ盆地を拠点とするコーカンド・ハン国がキルギス地域を支配しました。この時期、キルギスの部族はコーカンド・ハン国に貢納を課され、軍事動員にも参加しましたが、高地の部族社会は比較的独立性を保っていました。
+</p>
+</div>
+
+</div>
+</div>
+<!-- History: Modern -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-k-red"></div>
+<h4 class="text-k-red font-sans text-xl font-semibold mb-6">近現代・現代</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">ロシア帝国  <span class="text-xs text-slate-500 block md:inline md:ml-2">（19世紀後半 - 1917年）   </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">ロシア帝国は中央アジアへの進出を進め、キルギス地域を併合しました。ロシアの支配下で、遊牧民の定住化が進められ、伝統的な生活様式が大きく変化しました。また、ロシア移民の増加により、キルギスの社会構造にも影響が及びました。
+</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">ソビエト連邦<span class="text-xs text-slate-500 block md:inline md:ml-2">（1924年 - 1991年）    </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">1924年10月: ロシア社会主義連邦ソビエト共和国の一部として、「カラ・キルギス自治州」が設立されました。</p>
+<p class="text-xs text-slate-600 leading-relaxed">1925年5月: 名称から「カラ（黒い）」が取られ、「キルギス自治州」に改称されました。</p>
+<p class="text-xs text-slate-600 leading-relaxed">1926年: 自治州からキルギス自治ソビエト社会主義共和国（キルギスASSR）へ昇格。</p>
+<p class="text-xs text-slate-600 leading-relaxed">1936年: ソ連の構成共和国である「キルギス・ソビエト社会主義共和国（キルギスSSR）」に昇格し、ロシア（RSFSR）から独立した単位となる。</p>
+<p class="text-xs text-slate-600 leading-relaxed">政策: 農業の集団化（コルホーズ）や工業化政策が進められ、多くのキルギス人が新しい生活様式を強いられました。</p>
+<p class="text-xs text-slate-600 leading-relaxed">影響: 教育や医療の整備が進む一方で、伝統的な遊牧文化の衰退や強制的な政策による犠牲も大きかったです。</p>
+<p class="text-xs text-slate-600 leading-relaxed">「近代化」と「伝統の抑制」が同時に進む</p>
+<p class="text-xs text-slate-600 leading-relaxed">1990年: オシュ事件（キルギス系住民とウズベク系住民の衝突）</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">キルギス共和国<span class="text-xs text-slate-500 block md:inline md:ml-2">（1991年 - 現在） </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">独立: ソビエト連邦の崩壊に伴い、1991年に独立を達成しました。</p>
+<p class="text-xs text-slate-600 leading-relaxed">政治的変動: 2005年の「チューリップ革命」や2010年の第二の革命（2010年キルギス騒乱）を経て、議会制を重視する憲法が採択されました。</p>
+<p class="text-xs text-slate-600 leading-relaxed">2010年6月南部にてキルギス系とウズベク系住民の大規模衝突(オシュ事件（第二次オシュ紛争）)</p>
+<p class="text-xs text-slate-600 leading-relaxed">文化と多様性: 現在も遊牧民文化の名残が色濃く残り、伝統的な馬上競技やゲル（ボズウイ）などが人々のアイデンティティを支えています。
+</p>
+
+</div>
+</div>
+</div>
+</div>
+<p class="text-left text-slate-600 text-sm mt-6 font-bold max-w-2xl mx-auto">カザフスタンとの区別がまぎらわしい
+</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto">1924年：カラ・キルギス自治州として誕生
+ロシアの「キルギス（＝カザフ）」と区別するため、あえて「カラ（黒）」を付けて呼ばれていました。
+</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto">1926年：キルギス自治ソビエト社会主義共和国（キルギスASSR）へ昇格
+カザフ側が「カザフ」と名乗りを変えたため、ようやく「キルギス」の名称がこちらに回ってきました。
+</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto"></p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto"></p>
+<p class="text-left text-slate-600 text-sm mt-6 font-bold max-w-2xl mx-auto">ウズベキスタンとキルギスタン</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto">2010年のオシュ事件（民族衝突）直後は、本当にお互い嫌い合っているような状態でした。
+  転機：2016年のウズベキスタン大統領交代
+ウズベキスタンの独裁的だったカリモフ大統領が亡くなり、ミルジヨエフ大統領に代わったことで空気が一変しました。
+彼は「隣国と仲良くする」という方針を打ち出し、キルギスに歩み寄りました。
+現在：歴史的な「和解」へ（2023年〜）
+2023年には、30年以上揉めていた国境線の画定がついに完了しました。
+大統領同士のハグ: 両国の大統領が互いの国を頻繁に訪問し、非常に親密なアピールをしています。
+経済協力: 一緒に車を作ったり、鉄道を引いたりするプロジェクトが進んでいます。
+</p>
+<p class="text-left text-slate-600 text-sm mt-6 font-bold max-w-2xl mx-auto">2022年キルギス・タジキスタン国境紛争</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto">ソ連崩壊後、約1,000kmに及ぶ国境の約半分が未確定のままでした。特に2021年と2022年には、単なる住民同士の喧嘩ではなく、軍が重火器やドローンを使用する大規模な戦闘に発展しました。
+  2022年9月の衝突: わずか数日間で両国あわせて100人以上の死者が出て、約14万人が避難する事態となりました。これは両国間で「過去最悪の紛争」と呼ばれています。
+  歴史的な和解（2025年3月）国境協定の署名: 2025年3月13日、キルギスのジャパロフ大統領とタジキスタンのラフモン大統領が国境に関する条約に署名し、全ての国境線が確定しました。
+
+<p class="text-left text-slate-600 text-sm mt-6 font-bold max-w-2xl mx-auto">キルギスにおける象徴</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto">キルギス国内では、マナス王は「建国の祖」のように扱われており、至る所でその名を目にします。
+  世界最長の詩: 『マナス』は数十万行（約50万行以上）に及ぶ非常に長い口承叙事詩で、ギネス世界記録にも認定されています。ユネスコの無形文化遺産にも登録されています。
+物語の内容: 40の氏族を統合してキルギス民族をまとめ上げ、外敵（主に契丹やカルムィク）から国を守り抜いた英雄マナスの生涯と、その息子セメテイ、孫セイテキへと続く3代の物語を描いています。
+</p>
+
+
+
+</div>
+</section>
+<!-- END: HistorySection -->
+<!-- BEGIN: Footer -->
+<footer class="bg-k-yellow py-20 px-6 border-t border-white/5 relative z-10">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="col-span-1 md:col-span-2">
+<div class="flex items-center gap-3 mb-6">
+<div class="text-emerald-500">
+<svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景色 -->
+  <rect width="24" height="24" rx="4" fill="#cc3333"/>
+  
+  <!-- 太陽の光（40本の光線の一部を表現） -->
+  <g stroke="white" stroke-width="1.2" stroke-linecap="round" opacity="0.8">
+    <path d="M12 3V5M12 19V21M3 12H5M19 12H21M5.6 5.6L7 7M17 17L18.4 18.4M18.4 5.6L17 7M7 17L5.6 18.4"/>
+  </g>
+
+  <!-- ユルタの天井窓（トゥンドゥク） -->
+  <circle cx="12" cy="12" r="5" stroke="white" stroke-width="1.5"/>
+  <path d="M8 12C8 12 10 11 12 11C14 11 16 12 16 12" stroke="white" stroke-width="1.2" stroke-linecap="round"/>
+  <path d="M8 12C8 12 10 13 12 13C14 13 16 12 16 12" stroke="white" stroke-width="1.2" stroke-linecap="round"/>
+  <path d="M12 8C12 8 11 10 11 12C11 14 12 16 12 16" stroke="white" stroke-width="1.2" stroke-linecap="round"/>
+  <path d="M12 8C12 8 13 10 13 12C13 14 12 16 12 16" stroke="white" stroke-width="1.2" stroke-linecap="round"/>
+</svg>
+</div>
+<span class="text-k-red font-serif text-lg tracking-wider font-semibold">Kyrgyzstan Discovery</span>
+</div>
+<p class="text-white text-sm max-w-sm mb-8">
+            Curating bespoke luxury travel experiences for discerning explorers seeking the golden Silk Road legacy and nomadic soul of the endless steppe.
+          </p>
+</div>
+<div>
+<h6 class="text-k-red font-serif text-sm mb-6 uppercase tracking-widest">Navigation</h6>
+<ul class="space-y-4 text-sm text-white/60">
+<li><a class="hover:text-white transition-colors" href="#Landmarks&Places">Landmarks</a></li>
+<li><a class="hover:text-white transition-colors" href="#Landmarks&Places">Places</a></li>
+<li><a class="hover:text-white transition-colors" href="#cuisine">Cuisine</a></li>
+<li><a class="hover:text-white transition-colors" href="#history">History</a></li>
+</ul>
+</div>
+<div>
+<h6 class="text-k-red font-serif text-sm mb-6 uppercase tracking-widest">Connect</h6>
+<ul class="space-y-4 text-sm text-white/60">
+<li><a class="hover:text-white transition-colors" href="#">Instagram</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Twitter</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Contact Us</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 mt-10"><p class="text-xs text-white/20">© 2026 Kyrgyzstan Discovery. All rights reserved.</p>
+<div class="flex gap-8 text-xs text-white/20">
+<a href="#">Privacy Policy</a>
+<a href="#">Terms of Service</a>
+</div>
+<button onclick="window.close(); setTimeout(() => { window.location.href = 'https://google.com'; }, 100);" 
+          class="flex items-center gap-1 px-3 py-0.5 ml-auto md:ml-auto bg-brand-emerald hover:opacity-80 text-white font-medium rounded-full transition-all shadow-sm">
+    <span class="material-symbols-outlined text-white/60 text-xs">logout</span>
+    <span class="tracking-wider text-white/60 text-xs">QUIT</span>
+  </button>
+</div>
+</footer>
+<!-- END: Footer -->
+</main>
+<style data-purpose="animations">
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+<script>
+    document.getElementById('searchInput').addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+            const searchTerm = this.value.trim();
+            if (searchTerm) {
+                const wikipediaUrl = `https://ja.wikipedia.org/wiki/特別:検索?search=${encodeURIComponent(searchTerm)}`;
+                window.open(wikipediaUrl, '_blank');
+            }
+        }
+    });
+</script>
+</body></html>

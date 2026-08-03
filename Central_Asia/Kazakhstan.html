@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Kazakhstan Discovery | Luxury Travel Experience</title>
+<meta content="Explore the ancient landmarks, vibrant cities, and rich history of Kazakhstan." name="description"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="../menu.js"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'lebanon-dark': '#102219',
+            'lebanon-gold': '#C5A059',
+            'lebanon-green': '#2D5A27',
+            "primary": "#144bb8",
+            "background-light": "#f6f6f8",
+            "background-dark": "#111621",
+            // 追加
+            "al-adaam": "#8D1B3D",
+            "e-green": "#50C878",
+            "B-purple-dark": "#006400",
+            "qatar-blue": "#1e3a8a",
+            "oman-blue": "#003153",
+            "yemen-red": "#CE1126",
+            "Bahrain-red": "#DA291C",
+            "B-purple-dark": "#632276",
+            "B-purple": "#D1A7E2",
+            "B-yellow": "#ffff66",
+            "Kaza-blue": "#00A3DD",
+            "Kaza-blue-dark": "#003366",
+             },
+          fontFamily: {
+            serif: ['Newsreader', 'serif'],
+            sans: ['Inter', 'sans-serif'],
+          },
+          backgroundImage: {
+            'Kazakhstan-hero': "url('img/Kazakhstan_bg.jpg')",
+          }
+        }
+      }
+    }
+  </script>
+<style data-purpose="custom-styling">body {
+    background-color: #f0f9ff;
+    color: #1e293b
+    }
+.glass-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 1rem
+    }
+.text-balance {
+    text-wrap: balance
+    }
+.section-spacing {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem
+    }
+/* Pattern Overlay */
+.bg-pattern {
+    background-image: url(img/Kazakhstan_bg.jpg);
+    opacity: 0.15
+    }</style>
+</head>
+<body class="font-sans antialiased overflow-x-hidden">
+<!-- BEGIN: Background Texture -->
+<div class="fixed inset-0 bg-pattern pointer-events-none z-0"></div>
+<!-- END: Background Texture -->
+<!-- BEGIN: MainHeader -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-Kaza-blue-dark backdrop-blur-md border-b border-white/5">
+<nav class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<!-- Logo -->
+<a class="flex items-center gap-3 group" href="#">
+<div class="text-white-500 transform group-hover:scale-110 transition-transform">
+<svg fill="none" height="32" viewBox="0 0 24 24" width="32" xmlns="http://www.w3.org/2000/svg">
+
+<!-- ステップの地平線 -->
+<path d="M3 17C7 19 17 19 21 17" stroke="white" stroke-width="1.2" stroke-linecap="round" opacity="0.6"/>
+
+<!-- 太陽 -->
+<circle cx="12" cy="9" r="3" stroke="white" stroke-width="1.4"/>
+<path d="M12 3V5M12 13V15M6 9H8M16 9H18M7.5 5.5L9 7M15 11L16.5 12.5M7.5 12.5L9 11M15 7L16.5 5.5"
+stroke="white" stroke-width="1" stroke-linecap="round" opacity="0.7"/>
+
+<!-- 鷲（簡略化） -->
+<path d="M6 13C8 11.5 10 11 12 12C14 11 16 11.5 18 13" 
+stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+
+</svg>
+</div>
+<span class="text-white font-serif text-xl font-semibold">Kazakhstan Discovery</span>
+</a>
+<!-- Desktop Navigation -->
+<div id="navMenu" class="hidden md:flex items-center gap-9 
+    absolute top-full left-0 w-full bg-Kaza-blue-dark dark:bg-slate-900 flex-col p-6 shadow-lg z-50
+    md:absolute md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 md:w-auto md:flex-row md:p-0 md:shadow-none">
+<a class="text-white text-sm font-medium hover:text-B-yellow transition-colors tracking-widest uppercase" href="#Landmarks&Places">Landmarks</a>
+<a class="text-white text-sm font-medium hover:text-B-yellow transition-colors tracking-widest uppercase" href="#Landmarks&Places">Places</a>
+<a class="text-white text-sm font-medium hover:text-B-yellow transition-colors tracking-widest uppercase" href="#cuisine">Cuisine</a>
+<a class="text-white text-sm font-medium hover:text-B-yellow transition-colors tracking-widest uppercase" href="#history">History</a>
+</div>
+<!-- Search Bar -->
+<div class="relative hidden lg:block" data-purpose="search-container">
+<span class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+<svg class="w-4 h-4 text-B-purple-dark/50" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</span>
+<input id="searchInput" class="bg-white/5 border-white/10 text-white pl-10 pr-4 py-2 rounded-lg focus:ring-B-purple-dark focus:border-B-purple-dark w-64 text-sm" placeholder="Wikipedia検索" type="text"/>
+</div>
+
+<!-- Mobile Menu Button (Icon only) -->
+<div class="md:hidden">
+<button
+    id="menuButton"
+    class="md:hidden flex items-center justify-center text-white hover:text-white/80 transition-colors">
+    <span class="material-symbols-outlined text-3xl">
+        menu
+    </span>
+</button>
+</nav>
+</header>
+<!-- END: MainHeader -->
+<!-- BEGIN: HeroSection -->
+<main class="relative">
+<section class="relative flex items-center justify-center overflow-hidden h-[90vh]">
+<!-- Hero Background Image -->
+<div class="absolute inset-0 z-0">
+<img alt="Kazakhstan" class="w-full h-full object-cover brightness-50" src="img/Kazakhstan.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-b from-[#003153]/60 via-transparent to-[#f0f9ff]"></div>
+</div>
+<div class="relative z-10 text-center px-6 max-w-4xl">
+<h2 class="text-lebanon-gold font-serif italic text-xl md:text-2xl mb-4 opacity-0 animate-[fadeIn_1s_ease-out_forwards]">The Heart of the Great Steppe</h2>
+<h1 class="text-white text-4xl md:text-7xl lg:text-4xl font-serif mb-8 leading-tight opacity-0 animate-[fadeIn_1s_ease-out_0.3s_forwards]">
+          Kazakhstan: Where the Silk Road Meets the Endless Sky  </h1>
+<p class="text-lg md:text-xl text-white/80 font-light max-w-2xl mx-auto mb-10 text-balance opacity-0 animate-[fadeIn_1s_ease-out_0.6s_forwards]">
+          From the ancient trade routes of the Silk Road to the futuristic skyline of Astana, discover a land of boundless steppes, soaring eagles, and nomadic traditions that still shape the spirit of Central Asia.  </p>
+<!-- <a class="inline-block bg-B-purple-dark text-lebanon-dark px-10 py-4 font-semibold tracking-widest uppercase text-sm hover:scale-105 transition-transform opacity-0 animate-[fadeIn_1s_ease-out_0.9s_forwards]" href="#landmarks">
+          Explore Destinations
+        </a>-->
+</div>
+<!-- Scroll Indicator -->
+<!--<div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce opacity-60">
+<svg class="h-6 w-6" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M19 14l-7 7m0 0l-7-7m7 7V3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>-->
+</section>
+<!-- END: HeroSection -->
+<!-- BEGIN: LandmarksSection -->
+<section class="section-spacing px-6 relative" id="Landmarks&Places">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
+<div class="max-w-2xl">
+<h2 class="text-B-purple-dark font-serif text-sm mb-2 uppercase tracking-[0.3em]">Silk Road Splendors & Timeless Cities</h2>
+<h3 class="text-3xl md:text-4xl font-serif">Iconic Landmarks</h3>
+</div>
+<p class="text-slate-600 max-w-md text-sm">From the turquoise domes of Samarkand to the ancient desert citadels of Khiva, discover architectural treasures where Silk Road heritage and timeless craftsmanship still shape the soul of Central Asia.</p>
+</div>
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Item 1:Palace of Peace and Reconciliation-->
+<div class="flex flex-col">
+<div class="group relative overflow-hidden rounded-xl aspect-[3/4] cursor-pointer">
+<img alt="Palace of Peace and Reconciliation" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="img/Palace_of_Peace.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-90"></div>
+<div class="absolute bottom-0 left-0 p-4">
+<span class="text-[10px] text-white uppercase tracking-widest block mb-1">Landmark</span>
+<h4 class="text-lg font-serif text-white">Palace of Peace and Reconciliation</h4>
+</div>
+</div>
+<p class="mt-4 text-sm text-slate-600 font-serif leading-snug px-2">A Pyramid of Harmony and Global Unity, where cultures, religions, and ideas converge beneath a striking architectural vision that reflects Kazakhstan’s commitment to dialogue, peace, and a shared future.</p>
+</div>
+<!-- Item 2: Astana Grand Mosque-->
+<div class="flex flex-col">
+<div class="group relative overflow-hidden rounded-xl aspect-[3/4] cursor-pointer">
+<img alt="Astana Grand Mosque" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="img/Astana_Grand_Mosque.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-90"></div>
+<div class="absolute bottom-0 left-0 p-4">
+<span class="text-[10px] text-white uppercase tracking-widest block mb-1">Landmark</span>
+<h4 class="text-lg font-serif text-white">Astana Grand Mosque</h4>
+</div>
+</div>
+<p class="mt-4 text-sm text-slate-600 font-serif leading-snug px-2">A breathtaking symbol of faith rising across the vast степpe, where intricate design, soaring domes, and serene interiors create a spiritual sanctuary that embodies both tradition and modern grandeur.</p>
+</div>
+<!-- Item 3: Charyn Canyon -->
+<div class="flex flex-col">
+<div class="group relative overflow-hidden rounded-xl aspect-[3/4] cursor-pointer">
+<img alt="Charyn Canyon" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="img/Charyn_Canyon.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-90"></div>
+<div class="absolute bottom-0 left-0 p-4">
+<span class="text-[10px] text-white uppercase tracking-widest block mb-1">Places</span>
+<h4 class="text-lg font-serif text-white">Charyn Canyon</h4>
+</div>
+</div>
+<p class="mt-4 text-sm text-slate-600 font-serif leading-snug px-2">A dramatic landscape carved over millions of years, where towering red rock formations and silent valleys evoke a sense of timeless wonder, often compared to the grandeur of the world’s greatest canyons.</p>
+</div>
+<!-- Item 4: Burhan-Bulak Falls -->
+<div class="flex flex-col">
+<div class="group relative overflow-hidden rounded-xl aspect-[3/4] cursor-pointer">
+<img alt="Burhan-Bulak Falls" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="img/Burhan-Bulak_Falls.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-90"></div>
+<div class="absolute bottom-0 left-0 p-4">
+<span class="text-[10px] text-white uppercase tracking-widest block mb-1">Places</span>
+<h4 class="text-lg font-serif text-white">Burhan-Bulak Falls</h4>
+</div>
+</div>
+<p class="mt-4 text-sm text-slate-600 font-serif leading-snug px-2">Hidden deep within untouched mountain wilderness, this cascading waterfall offers a powerful yet tranquil escape, where the sound of rushing water and pristine nature create an unforgettable sense of isolation and awe.
+</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!--BEGIN: Cuisine -->
+<section class="px-4 py-16 md:px-10" id="cuisine">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-12">
+<h2 class="text-3xl md:text-4xl font-serif">A Feast of the Endless Steppe</h2>
+<p class="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">Traditions Seasoned by Nomadic Life</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Package 1 -->
+<div class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:shadow-xl transition-shadow">
+<div class="h-56 w-full overflow-hidden">
+<img alt="Beshbarmak" class="w-full h-full object-cover transition-transform group-hover:scale-105" data-alt="The ancient sand-colored architecture of Bukhara" src="img/Beshbarmak.jpg"/>
+</div>
+<div class="p-4">
+<div class="flex justify-between items-start mb-1">
+<h3 class="text-xl font-bold">Beshbarmak</h3>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-400 mb-6 line-clamp-2">The Heart of Nomadic Feasting, where tender boiled meat and wide noodles are shared by hand, reflecting centuries of hospitality and life across the endless степpe.
+</p>
+<div class="flex items-center justify-between">
+</div>
+</div>
+</div>
+<!-- Package 2 -->
+<div class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:shadow-xl transition-shadow">
+<div class="h-56 w-full overflow-hidden">
+<img alt="Kumis" class="w-full h-full object-cover transition-transform group-hover:scale-105" data-alt="The ancient sand-colored architecture of Bukhara" src="img/Kumis.jpg"/>
+</div>
+<div class="p-4">
+<div class="flex justify-between items-start mb-1">
+<h3 class="text-xl font-bold">Kumis</h3>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-400 mb-6 line-clamp-2">A Fermented Taste of the Steppe, this slightly sour, lightly sparkling drink carries the spirit of nomadic heritage in every sip.</p>
+<div class="flex items-center justify-between">
+</div>
+</div>
+</div>
+<!-- Package 3 -->
+<div class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:shadow-xl transition-shadow">
+<div class="h-56 w-full overflow-hidden">
+<img alt="Baursak" class="w-full h-full object-cover transition-transform group-hover:scale-105" data-alt="The ancient sand-colored architecture of Bukhara" src="img/Baursak.jpg"/>
+</div>
+<div class="p-4">
+<div class="flex justify-between items-start mb-1">
+<h3 class="text-xl font-bold">Baursak</h3>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-400 mb-6 line-clamp-2">Golden Bites of Comfort, these soft fried dough pieces are a symbol of celebration, often shared with tea and warm conversation.</p>
+<div class="flex items-center justify-between">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- BEGIN: HistorySection -->
+<section class="bg-[#99cccc]/30 section-spacing px-6 relative overflow-hidden" id="history">
+<div class="max-w-5xl mx-auto"><div class="text-center mb-12">
+<h2 class="text-B-purple-dark font-serif text-sm mb-2 uppercase tracking-[0.3em]">カザフスタン共和国の歴史</h2>
+<h3 class="text-3xl md:text-4xl font-serif">A Silk Road Legacy Woven in Blue and Gold</h3>
+<p class="text-xs text-slate-500 max-w-4xl mx-auto">Where Empires Rose Along the Silk Road, leaving behind magnificent cities that reflect centuries of trade, culture, and intellectual exchange.</p>
+</div>
+<div class="max-w-3xl mx-auto space-y-8 relative border-l border-slate-300 pl-8">
+<!-- History: Ancient -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-Kaza-blue-dark"></div>
+<h4 class="text-Kaza-blue-dark font-sans text-xl font-semibold mb-6">古代</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">スキタイ人<span class="text-xs text-slate-500 block md:inline md:ml-2">（紀元前8世紀 - 紀元前3世紀）   </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">カザフスタンの草原地帯に住んでいた遊牧民で、金細工や騎馬文化が特徴。
+</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">アケメネス朝ペルシア<span class="text-xs text-slate-500 block md:inline md:ml-2">（紀元前6世紀 - 紀元前330年）   </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">南部地域を支配し、ゾロアスター教が広まる。
+</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">マケドニア王国<span class="text-xs text-slate-500 block md:inline md:ml-2">（紀元前330年 - 紀元前323年）  </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">アレクサンドロス大王が征服し、ギリシャ文化を導入。
+</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">セレウコス朝<span class="text-xs text-slate-500 block md:inline md:ml-2">（紀元前312年 - 紀元前250年頃）  </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">ギリシャ文化が広がり、東西交易が活発化。
+</p>
+</div>
+
+</div>
+</div>
+<!-- History: Medieval -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-Kaza-blue-dark"></div>
+<h4 class="text-Kaza-blue-dark font-sans text-xl font-semibold mb-6">中世</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">突厥帝国 <span class="text-xs text-slate-500 block md:inline md:ml-2">（6世紀 - 8世紀） </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">テュルク系遊牧民が支配し、草原地帯で勢力を拡大。
+
+</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">カラハン朝<span class="text-xs text-slate-500 block md:inline md:ml-2">（840年 - 1212年）  </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">トルコ系イスラム王朝で、イスラム教が広まる。
+</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">モンゴル帝国<span class="text-xs text-slate-500 block md:inline md:ml-2">（13世紀）   </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">チンギス・ハーンの侵攻により、カザフスタン全域が征服される。
+</p>
+</div>
+
+
+</div>
+</div>
+<!-- History: Early Modern -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-Kaza-blue-dark"></div>
+<h4 class="text-Kaza-blue-dark font-sans text-xl font-semibold mb-6">近世</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">カザフ・ハン国 <span class="text-xs text-slate-500 block md:inline md:ml-2">（1465年 - 1847年） </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">15世紀半ば、アブル＝ハイル・ハンが支配する「ウズベク・ハン国」から、一部の集団が離脱したことが「カザフ」の始まりです。カザフ民族の形成と独自の遊牧文化が発展。
+「離脱した側」がこれほど大きな土地を持てたのは、彼らが「定住せず、どこまでも続く草原を生活圏とするグループ」だったことが最大の理由と言えます。
+
+</p>
+</div>
+
+</div>
+</div>
+<!-- History: Modern -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-Kaza-blue-dark"></div>
+<h4 class="text-Kaza-blue-dark font-sans text-xl font-semibold mb-6">近現代・現代</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">ロシア帝国  <span class="text-xs text-slate-500 block md:inline md:ml-2">（19世紀後半 - 1917年）   </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">カザフ草原を支配し、遊牧民の定住化を進める。ロシア移民の増加により、伝統的な生活が変化。
+</p>
+<p class="text-xs text-slate-600 leading-relaxed">ロシア帝国は、カザフの遊牧民が活動していた広大な北方の草原地帯を一つの行政区画（カザフ領）として管理しました。この時の境界線が、後のソ連時代の「カザフ・ソビエト社会主義共和国」に引き継がれました。
+</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">ソビエト連邦<span class="text-xs text-slate-500 block md:inline md:ml-2">（1920年 - 1991年）   </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">1920年：「キルギス自治ソビエト社会主義共和国」として設立。</p>
+<p class="text-xs text-slate-600 leading-relaxed">1925年：「カザフ自治ソビエト社会主義共和国 (ASSR)」と改名</p>
+<p class="text-xs text-slate-600 leading-relaxed">1936年：「カザフ・ソビエト社会主義共和国 (SSR)」に改称。※ソ連直属の構成共和国へ昇格</p>
+<p class="text-xs text-slate-600 leading-relaxed">集団農場（コルホーズ）政策により、遊牧生活が破壊され、大飢饉が発生。</p>
+<p class="text-xs text-slate-600 leading-relaxed">カザフ大飢饉（アシャクシャラク）: 1931年から1933年にかけて、家畜の激減と不適切な穀物徴収により猛烈な飢饉が発生しました。これにより、カザフ人の人口の約3分の1（150万人以上）が餓死したと推定されています。
+ロシア人などの入植が大量に進み、1959年にはカザフ人の割合が約30%まで低下。
+</p>
+</p>
+<p class="text-xs text-slate-600 leading-relaxed">第二次世界大戦中、工業化が進む。
+</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">カザフスタン共和国 <span class="text-xs text-slate-500 block md:inline md:ml-2">（1991年 - 現在）   </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">1991年：ソビエト連邦の崩壊に伴い独立を宣言。石油や天然ガスなどの資源を活用し、経済成長を遂げる。</p>
+<p class="text-xs text-slate-600 leading-relaxed">1991年の独立後は、ロシア人の帰国やカザフ人の帰還・出生率の上昇により、再びカザフ人が多数派（約70%）に戻っています。 </p>
+<p class="text-xs text-slate-600 leading-relaxed">首都をアルマトイからアスタナ（現在のヌルスルタン）に遷都。</p>
+
+</div>
+</div>
+</div>
+</div>
+<p class="text-left text-slate-600 text-sm mt-6 font-bold max-w-2xl mx-auto">呼称のねじれ（1920年〜1925年）
+</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto">1920年代半ばまで、ロシア側は現在のカザフ人を「キルギス人」、現在のキルギス人を「カラ・キルギス人」と呼んでいました。そのため、名称が実態と逆転していました。
+旧キルギスASSR (1920-1925): 実体はカザフ人のための共和国です。1925年に「カザフASSR」へと改称されました。
+</p>
+<p class="text-left text-slate-600 text-sm mt-6 font-bold max-w-2xl mx-auto">ソ連時代の境界策定</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto">1920年代の中央アジアの国境画定（民族境界画定）において、カザフ人が住む広大な草原地帯がそのままカザフスタンの領土として設定されました。  </p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto">カザフスタンは、遊牧民文化、シルクロードの交易、そして近代化の波を受けながら、独自の歴史を築いてきました。多民族国家で、カザフ人以外にロシア人やウズベク人が約2割以上を占めます。</p>
+
+</div>
+</section>
+<!-- END: HistorySection -->
+<!-- BEGIN: Footer -->
+<footer class="bg-Kaza-blue-dark py-20 px-6 border-t border-white/5 relative z-10">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="col-span-1 md:col-span-2">
+<div class="flex items-center gap-3 mb-6">
+<div class="text-emerald-500">
+<svg fill="none" height="32" viewBox="0 0 24 24" width="32" xmlns="http://www.w3.org/2000/svg">
+
+<!-- ステップの地平線 -->
+<path d="M3 17C7 19 17 19 21 17" stroke="white" stroke-width="1.2" stroke-linecap="round" opacity="0.6"/>
+
+<!-- 太陽 -->
+<circle cx="12" cy="9" r="3" stroke="white" stroke-width="1.4"/>
+<path d="M12 3V5M12 13V15M6 9H8M16 9H18M7.5 5.5L9 7M15 11L16.5 12.5M7.5 12.5L9 11M15 7L16.5 5.5"
+stroke="white" stroke-width="1" stroke-linecap="round" opacity="0.7"/>
+
+<!-- 鷲（簡略化） -->
+<path d="M6 13C8 11.5 10 11 12 12C14 11 16 11.5 18 13" 
+stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+
+</svg>
+</div>
+<span class="text-white/40 font-serif text-lg tracking-wider font-semibold">Kazakhstan Discovery</span>
+</div>
+<p class="text-white/40 text-sm max-w-sm mb-8">
+            Curating bespoke luxury travel experiences for discerning explorers seeking the golden Silk Road legacy and nomadic soul of the endless steppe.
+          </p>
+</div>
+<div>
+<h6 class="text-B-yellow font-serif text-sm mb-6 uppercase tracking-widest">Navigation</h6>
+<ul class="space-y-4 text-sm text-white/60">
+<li><a class="hover:text-white transition-colors" href="#Landmarks&Places">Landmarks</a></li>
+<li><a class="hover:text-white transition-colors" href="#Landmarks&Places">Places</a></li>
+<li><a class="hover:text-white transition-colors" href="#cuisine">Cuisine</a></li>
+<li><a class="hover:text-white transition-colors" href="#history">History</a></li>
+</ul>
+</div>
+<div>
+<h6 class="text-B-yellow font-serif text-sm mb-6 uppercase tracking-widest">Connect</h6>
+<ul class="space-y-4 text-sm text-white/60">
+<li><a class="hover:text-white transition-colors" href="#">Instagram</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Twitter</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Contact Us</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 mt-10"><p class="text-xs text-white/20">© 2026 Kazakhstan Discovery. All rights reserved.</p>
+<div class="flex gap-8 text-xs text-white/20">
+<a href="#">Privacy Policy</a>
+<a href="#">Terms of Service</a>
+</div>
+<button onclick="window.close(); setTimeout(() => { window.location.href = 'https://google.com'; }, 100);" 
+          class="flex items-center gap-1 px-3 py-0.5 ml-auto md:ml-auto bg-brand-emerald hover:opacity-80 text-white font-medium rounded-full transition-all shadow-sm">
+    <span class="material-symbols-outlined text-white/80 text-xs">logout</span>
+    <span class="tracking-wider text-white/80 text-xs">QUIT</span>
+  </button>
+</div>
+</footer>
+<!-- END: Footer -->
+</main>
+<style data-purpose="animations">
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+<script>
+    document.getElementById('searchInput').addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+            const searchTerm = this.value.trim();
+            if (searchTerm) {
+                const wikipediaUrl = `https://ja.wikipedia.org/wiki/特別:検索?search=${encodeURIComponent(searchTerm)}`;
+                window.open(wikipediaUrl, '_blank');
+            }
+        }
+    });
+</script>
+</body></html>
