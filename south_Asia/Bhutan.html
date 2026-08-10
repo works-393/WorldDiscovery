@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Bhutan Discovery | Luxury Travel Experience</title>
+<meta content="Explore the ancient landmarks, vibrant cities, and rich history of Bhutan." name="description"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="../menu.js"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'lebanon-dark': '#102219',
+            'lebanon-gold': '#C5A059',
+            'lebanon-green': '#2D5A27',
+            "primary": "#144bb8",
+            "background-light": "#f6f6f8",
+            "background-dark": "#111621",
+            // 追加
+            "al-adaam": "#8D1B3D",
+            "qatar-gold": "#C5A059",  
+            "e-green": "#50C878",
+            "B-purple-dark": "#006400",
+            "qatar-gold": "#C5A059",
+            "qatar-blue": "#1e3a8a",
+            "oman-blue": "#003153",
+            "yemen-red": "#CE1126",
+            "Bahrain-red": "#DA291C",
+            "B-purple-dark": "#632276",
+            "B-purple": "#D1A7E2",
+            "B-yellow": "#ffff66",
+            "Kaza-blue": "#00A3DD",
+            "Kaza-blue-dark": "#003366",
+            "U-blue": "#99ffcc", //ターコイズブルー//
+            "U-blue-bg": "#006699",
+            "k-yellow": "#ffcc00",
+            "k-red": "#cc3333",
+            "k-yellow-c": "#ccff33",
+            "silk-road-white": "#fdfdfd",
+            "t-green": "#006600",
+            "t-green-light": "#99cc99",
+            "Af-red": "#ff0099",
+            "Af-navy": "#0B1F3A",
+            "Sr-Brown": "#993300",
+            "Sr-yellow": "#cc9933",
+            "B-green": "#33cc00",
+            "e-green-dark": "#006400",
+            "B-orange": "#ff6600",
+             },
+          fontFamily: {
+            serif: ['Newsreader', 'serif'],
+            sans: ['Inter', 'sans-serif'],
+          },
+          backgroundImage: {
+            'Kazakhstan-hero': "url('img/Sri Lanka_bg.jpg')",
+          }
+        }
+      }
+    }
+  </script>
+<style data-purpose="custom-styling">body {
+    background-color: #f0f9ff;
+    color: #1e293b
+    }
+.glass-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 1rem
+    }
+.text-balance {
+    text-wrap: balance
+    }
+.section-spacing {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem
+    }
+/* Pattern Overlay */
+.bg-pattern {
+    background-image: url(img/Bhutan_bg.jpg);
+    opacity: 0.45
+    }</style>
+</head>
+<body class="font-sans antialiased overflow-x-hidden">
+<!-- BEGIN: Background Texture -->
+<div class="fixed inset-0 bg-pattern pointer-events-none z-0"></div>
+<!-- END: Background Texture -->
+<!-- BEGIN: MainHeader -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-B-orange backdrop-blur-md border-b border-white/5">
+<nav class=" max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<!-- Logo -->
+<a class="flex items-center gap-3 group" href="#">
+<div class="text-white-500 transform group-hover:scale-110 transition-transform">
+<svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景（濃紺：ヒマラヤの静けさ） -->
+  <rect width="24" height="24" rx="4" fill="#1A237E"/>
+
+  <!-- 斜め分割（本来の旗構図を抽象化・オレンジ回避でゴールド寄り） -->
+  <path d="M0 0L24 24H0Z" fill="#FBC02D"/>
+
+  <!-- 龍（ドゥルク：簡略シンボル） -->
+  <path d="M7 14
+           C8 12, 10 12, 11 13
+           C12 11, 14 11, 15 13
+           C16 12, 18 13, 17 15
+           C16 17, 14 17, 13 16
+           C12 18, 10 18, 9 16
+           C8 17, 6 16, 7 14Z"
+        fill="#FFFFFF"/>
+
+  <!-- 宝珠（龍が持つ宝） -->
+  <circle cx="12" cy="14" r="0.8" fill="#FFFFFF"/>
+
+  <!-- 山のシルエット -->
+  <path d="M3 18L7 15L10 18Z" fill="#90CAF9" opacity="0.7"/>
+  <path d="M10 18L14 14L18 18Z" fill="#64B5F6" opacity="0.7"/>
+</svg>
+</div>
+<span class="text-white font-serif text-xl font-semibold">Bhutan Discovery</span>
+</a>
+<!-- Desktop Navigation -->
+<div id="navMenu" class="hidden md:flex items-center gap-9 
+    absolute top-full left-0 w-full bg-B-orange backdrop-blur-md flex-col p-6 shadow-lg z-50
+    md:absolute md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 md:w-auto md:flex-row md:p-0 md:shadow-none">
+<a class="text-white text-sm font-medium hover:text-k-red transition-colors tracking-widest uppercase" href="#Landmarks">Landmarks</a>
+<a class="text-white text-sm font-medium hover:text-k-red transition-colors tracking-widest uppercase" href="#cities">Cities</a>
+<a class="text-white text-sm font-medium hover:text-k-red transition-colors tracking-widest uppercase" href="#cuisine">Cuisine</a>
+<a class="text-white text-sm font-medium hover:text-k-red transition-colors tracking-widest uppercase" href="#history">History</a>
+</div>
+<!-- Search Bar -->
+<div class="relative hidden lg:block" data-purpose="search-container">
+<span class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+<svg class="w-4 h-4 text-B-purple-dark/50" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</span>
+<input id="searchInput" class="bg-white/5 border-white/10 text-white pl-10 pr-4 py-2 rounded-lg focus:ring-B-purple-dark focus:border-B-purple-dark w-64 text-sm" placeholder="Wikipedia検索" type="text"/>
+</div>
+
+<!-- Mobile Menu Button (Icon only) -->
+<div class="md:hidden">
+<button
+    id="menuButton"
+    class="md:hidden flex items-center justify-center text-white hover:text-white/80 transition-colors">
+    <span class="material-symbols-outlined text-3xl">
+        menu
+    </span>
+</button>
+</nav>
+</header>
+<!-- END: MainHeader -->
+<!-- BEGIN: HeroSection -->
+<main class="relative">
+<section class="relative flex items-center justify-center overflow-hidden h-[90vh]">
+<!-- Hero Background Image -->
+<div class="absolute inset-0 z-0">
+<img alt="Bhutan" class="w-full h-full object-cover brightness-50" src="img/Bhutan.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-b from-[#003153]/60 via-transparent to-[#f0f9ff]"></div>
+</div>
+<div class="relative z-10 text-center px-6 max-w-4xl">
+<h2 class="text-k-yellow font-serif italic text-xl md:text-2xl mb-4 opacity-0 animate-[fadeIn_1s_ease-out_forwards]">Kingdom of Stillness and Spirit</h2>
+<h1 class="text-white text-4xl md:text-7xl lg:text-4xl font-serif mb-8 leading-tight opacity-0 animate-[fadeIn_1s_ease-out_0.3s_forwards]">
+         Bhutan: A journey through misty mountains, sacred monasteries, and the quiet rhythm of prayer.</h1>
+<p class="text-lg md:text-xl text-white/80 font-light max-w-2xl mx-auto mb-10 text-balance opacity-0 animate-[fadeIn_1s_ease-out_0.6s_forwards]">
+        From fluttering prayer flags to serene mountain valleys.</p>
+<!-- <a class="inline-block bg-B-purple-dark text-lebanon-dark px-10 py-4 font-semibold tracking-widest uppercase text-sm hover:scale-105 transition-transform opacity-0 animate-[fadeIn_1s_ease-out_0.9s_forwards]" href="#landmarks">
+          Explore Destinations
+        </a>-->
+</div>
+<!-- Scroll Indicator -->
+<!--<div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce opacity-60">
+<svg class="h-6 w-6" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M19 14l-7 7m0 0l-7-7m7 7V3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>-->
+</section>
+<!-- END: HeroSection -->
+
+
+<!-- BEGIN: LandmarksSection -->
+<section class="section-spacing px-6 relative" id="Landmarks">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
+<div class="max-w-2xl">
+<h2 class="text-lebanon-green font-serif text-sm mb-2 uppercase tracking-[0.3em]">Kingdom of Prayer & Timeless Stillness</h2>
+<h3 class="text-B-orange text-3xl md:text-4xl font-serif">Iconic Landmarks</h3>
+</div>
+<p class="text-orange/90 max-w-md text-sm">From cliffside monasteries to fortress-like dzongs and sacred mountain passes, journey through Bhutan’s spiritual landscapes, where prayer, nature, and tradition quietly shape an enduring world.</p>
+</div>
+<!--<div class="grid grid-cols-2 lg:grid-cols-3 gap-4">-->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+<!-- Item 1: Paro Taktsang (Tiger’s Nest)-->
+<div class="flex flex-col">
+<div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+<img alt="Paro Taktsang" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="img/Paro_Taktsang.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+<div class="absolute bottom-0 left-0 p-4">
+<span class="text-[10px] text-lebanon-gold uppercase tracking-widest block mb-1">Landmark</span>
+<h4 class="text-lg font-serif text-white">Paro Taktsang (Tiger’s Nest)</h4>
+</div>
+</div>
+<!-- キャプション部分：写真の直下に配置 -->
+     <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4">An iconic sacred site clinging to a sheer cliffside. A visit to Bhutan is simply incomplete without seeing this legendary monastery.
+   </p>
+  </div>
+<!-- Item 2: Punakha Dzong -->
+ <div class="flex flex-col">
+<div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+<img alt="Punakha Dzong" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="img/Punakha_Dzong.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+<div class="absolute bottom-0 left-0 p-4">
+<span class="text-[10px] text-lebanon-gold uppercase tracking-widest block mb-1">Landmark</span>
+<h4 class="text-lg font-serif text-white">Punakha Dzong </h4>
+</div>
+</div>
+<!-- キャプション部分：写真の直下に配置 -->
+     <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4">A breathtaking fortress-monastery situated at the confluence of two rivers. It stands as a living symbol of Bhutan’s historical fusion of politics and religion.
+ </p>
+  </div>
+<!-- Item 3: Dochula Pass-->
+ <div class="flex flex-col">
+<div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+<img alt="Dochula Pass" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="img/Dochula_Pass.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+<div class="absolute bottom-0 left-0 p-4">
+<span class="text-[10px] text-lebanon-gold uppercase tracking-widest block mb-1">Landmark</span>
+<h4 class="text-lg font-serif text-white">Dochula Pass</h4>
+</div>
+</div>
+<!-- キャプション部分：写真の直下に配置 -->
+     <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4">Featuring 108 memorial stupas and panoramic Himalayan views, this pass perfectly captures Bhutan’s unique harmony between spiritual devotion and natural beauty.
+ </p>
+  </div>
+</div>
+</div>
+</section>
+<!-- END: LandmarksSection -->
+<!-- BEGIN: CitiesSection -->
+<section class="section-spacing px-6 relative" id="cities">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
+<div class="max-w-2xl">
+<h2 class="text-lebanon-green font-serif text-sm mb-2 uppercase tracking-[0.3em]">Quiet Capitals & Sacred Valleys</h2>
+<h3 class="text-B-orange text-3xl md:text-4xl font-serif">Cities of Distinction</h3>
+</div>
+<p class="text-orange/90 max-w-md text-sm">From the quiet rhythm of Thimphu to the serene valleys of Paro and the gentle warmth of Punakha, discover places where tradition, nature, and spirituality quietly shape everyday life in Bhutan.
+
+</p>
+</div>
+<div class="space-y-20">
+<!-- Thimphu-->
+<div class="flex flex-col md:flex-row items-center gap-10">
+<div class="w-full md:w-1/2">
+<img alt="Thimphu" class="rounded-2xl shadow-xl" src="img/Thimphu.jpg"/>
+</div>
+<div class="w-full md:w-1/2">
+<span class="text-primary font-bold uppercase tracking-widest text-sm">Quiet Capital Without Lights
+</span>
+<h3 class="text-Sr-Brown text-3xl mt-2 mb-4">Thimphu</h3>
+<p class="text-Af-navy dark:text-orange-100 text-lg mb-6 leading-relaxed font-serif">A rare capital without traffic lights, where tradition and modern life coexist in quiet harmony. The Buddha Dordenma in this photo is a विशाल golden statue of Shakyamuni Buddha standing on a hill overlooking Thimphu, the capital of Bhutan.</p>
+</div>
+</div>
+<!--Paro-->
+<div class="flex flex-col md:flex-row-reverse items-center gap-10">
+<div class="w-full md:w-1/2">
+<img alt="Paro" class="rounded-2xl shadow-xl" src="img/Paro.jpg"/>
+</div>
+<div class="w-full md:w-1/2">
+<span class="text-primary font-bold uppercase tracking-widest text-sm">Gateway to Sacred Valleys
+</span>
+<h3 class="text-Sr-Brown text-3xl mt-2 mb-4">Paro</h3>
+<p class="text-Af-navy dark:text-orange-100 text-lg mb-6 leading-relaxed font-serif">A serene gateway town with the country’s only international airport, set in a breathtaking valley and home to the iconic Tiger’s Nest Monastery. This photo shows the Paro Tshechu Festival in Bhutan.
+</p>
+</div>
+</div>
+<!-- Punakha -->
+<div class="flex flex-col md:flex-row items-center gap-10">
+<div class="w-full md:w-1/2">
+<img alt="Punakha" class="rounded-2xl shadow-xl" src="img/Punakha.jpg"/>
+</div>
+<div class="w-full md:w-1/2">
+<span class="text-primary font-bold uppercase tracking-widest text-sm">Tranquil Valley of Dzongs</span>
+<h3 class="text-Sr-Brown text-3xl mt-2 mb-4">Punakha</h3>
+<p class="text-Af-navy dark:text-orange-100 text-lg mb-6 leading-relaxed font-serif">A warm and tranquil former capital, known for its stunning dzong and picturesque riverside scenery. </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Cities Section -->
+
+</div>
+</div>
+</section>
+<!-- END: CitiesSection -->
+<!--BEGIN: Cuisine -->
+<section class="px-4 py-16 md:px-10" id="cuisine">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-12">
+<h2 class="text-oman-blue text-3xl md:text-4xl font-serif">Chili Heat & Mountain Traditions
+</h2>
+<p class="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">From fiery chili and cheese dishes to simple, hearty meals, Bhutan’s cuisine reflects a life shaped by mountains, seasons, and quiet traditions.
+</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Package 1 -->
+<div class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:shadow-xl transition-shadow">
+<div class="h-56 w-full overflow-hidden">
+<img alt="HEma Datshi" class="w-full h-full object-cover transition-transform group-hover:scale-105" data-alt="Ema Datshi" src="img/Ema_Datshi.jpg"/>
+</div>
+<div class="p-4">
+<div class="flex justify-between items-start mb-1">
+<h3 class="text-xl font-bold">Ema Datshi</h3>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-400 mb-6 line-clamp-2">A national dish of chili peppers simmered in cheese.</p>
+<div class="flex items-center justify-between">
+</div>
+</div>
+</div>
+<!-- Package 2 -->
+<div class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:shadow-xl transition-shadow">
+<div class="h-56 w-full overflow-hidden">
+<img alt="Phaksha Paa" class="w-full h-full object-cover transition-transform group-hover:scale-105" data-alt="Phaksha Paa" src="img/Phaksha_Paa.jpg"/>
+</div>
+<div class="p-4">
+<div class="flex justify-between items-start mb-1">
+<h3 class="text-xl font-bold">Phaksha Paa</h3>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-400 mb-6 line-clamp-2">A stir-fried dish of pork and radish with chili peppers.</p>
+<div class="flex items-center justify-between">
+</div>
+</div>
+</div>
+<!-- Package 3 -->
+<div class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:shadow-xl transition-shadow">
+<div class="h-56 w-full overflow-hidden">
+<img alt="Khapse" class="w-full h-full object-cover transition-transform group-hover:scale-105" data-alt="Khapse" src="img/Khapse.jpg"/>
+</div>
+<div class="p-4">
+<div class="flex justify-between items-start mb-1">
+<h3 class="text-xl font-bold">Khapse</h3>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-400 mb-6 line-clamp-2">A traditional deep-fried snack made from kneaded wheat flour, similar to a biscuit.</p>
+<div class="flex items-center justify-between">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- BEGIN: HistorySection -->
+<section class="bg-[#ffcc33]/20 section-spacing px-6 relative overflow-hidden" id="history">
+<div class="max-w-5xl mx-auto"><div class="text-center mb-12">
+<h2 class="text-k-red font-serif text-sm mb-2 uppercase tracking-[0.3em]">ブータン王国の歴史</h2>
+<h3 class="text-yemen-red text-3xl md:text-4xl font-serif">Kingdom of Faith & Enduring Harmony</h3>
+<p class="text-xs text-Af-navy leading-relaxed">From early Buddhist traditions to the unification under the Zhabdrung, and the rise of a peaceful monarchy, <br>Bhutan’s history is a quiet story of faith, resilience, and cultural continuity shaped by its mountain world.
+ </p>
+</div>
+<div class="max-w-3xl mx-auto space-y-8 relative border-l border-slate-300 pl-8">
+<!-- History: Ancient -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-yemen-red"></div>
+<h4 class="text-yemen-red font-sans text-xl font-semibold mb-6">古代</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">初期定住時代<span class="text-xs text-slate-500 block md:inline md:ml-2">（紀元前2000年頃～） </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">考古学的な証拠から、ブータンにはこの時期から人々が定住していたとされています。</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">チベット仏教の到来<span class="text-xs text-slate-500 block md:inline md:ml-2">（7世紀～）</span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">チベット王ソンツェン・ガンポの布教活動により、仏教がブータンに伝わる。
+</p>
+</div>
+
+
+</div>
+</div>
+<!-- History: Medieval -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-yemen-red"></div>
+<h4 class="text-yemen-red font-sans text-xl font-semibold mb-6">中世</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">ドゥク派の台頭 <span class="text-xs text-slate-500 block md:inline md:ml-2">（13世紀～16世紀） </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">チベット仏教のカギュ派の一派であるドゥク派がブータンで支持を集める。</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">シャブドゥン・ガワン・ナムゲルによる統一<span class="text-xs text-slate-500 block md:inline md:ml-2">（1616年～）  </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">高僧ガワン・ナムゲルがブータンを統一し、現在の国家の基礎を築く。
+
+</p>
+</div>
+
+</div>
+</div>
+<!-- History: Early Modern -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-yemen-red"></div>
+<h4 class="text-yemen-red font-sans text-xl font-semibold mb-6">近世</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">ワンチュク王朝の成立<span class="text-xs text-slate-500 block md:inline md:ml-2">（1907年） </span></h5>
+<p class="text-xs text-slate-600 mt-0 mb-2">ウゲン・ワンチュクが初代国王に選出され、現王国の基礎を確立。。
+
+</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">イギリスとの条約<span class="text-xs text-slate-500 block md:inline md:ml-2">（1910年）  </span></h5>
+<p class="text-xs text-slate-600 mt-0 mb-2">プナカ条約により、イギリスの保護下に入る。
+</p>
+</div>
+
+</div>
+</div>
+<!-- History: Modern -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-yemen-red"></div>
+<h4 class="text-yemen-red font-sans text-xl font-semibold mb-6">近現代・現代</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">インドとの関係強化 <span class="text-xs text-slate-500 block md:inline md:ml-2">（1949年） </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">インド・ブータン条約を締結し、独立を維持しつつインドとの結びつきを強化。
+</p>
+</div>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">1964年に何が起きたのか</h5>
+<p class="text-xs text-slate-600 leading-relaxed mb-0">ジグミ・パルデン・ドルジ首相の暗殺: 近代化を主導していた当時の首相が暗殺されました。</p>
+<p class="text-xs text-slate-600 leading-relaxed mb-0">宮廷革命の企てと首相職の廃止: その後の混乱の中で「宮廷革命」の企てが発覚したことを受け、第3代国王ジグミ・ドルジ・ワンチュクは首相職を廃止し、国王が直接統治を行う「親政」を開始しました。</p>
+<p class="text-xs text-slate-600 leading-relaxed mb-0">首相職が廃止（1964年〜1998年まで不在）</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">国際連合加盟<span class="text-xs text-slate-500 block md:inline md:ml-2">（1971年） </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed mb-0">国際社会への参加を果たす。</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">国王から政府への権限委譲<span class="text-xs text-slate-500 block md:inline md:ml-2">（1998年）  </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed mb-0">1972年に16歳で即位した第4代国王ジグミ・シンゲ・ワンチュクが、自らの強い意志で統治権限を国民が選ぶ閣僚へと移し始めました。</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">議会制民主主義への移行<span class="text-xs text-slate-500 block md:inline md:ml-2">（2008年～）  </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed mb-0">2006年に王位を継承した第5代国王のジグミ・ケサル・ナムゲル・ワンチュク（2008年に戴冠式）が王制を維持しつつ、民主主義体制を導入。
+</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">現代ブータン<span class="text-xs text-slate-500 block md:inline md:ml-2">（2008年～現在）  </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed mb-0">国民総幸福量（GNH）を重視した政策を推進。</p>
+<p class="text-xs text-slate-600 leading-relaxed mb-0">2013年に、第2回総選挙、2018年に第3回総選挙が実施。2024年1月に第4回総選挙が実施</p>
+<p class="text-xs text-slate-600 leading-relaxed mb-0">ブータンの歴史は、仏教文化と王制を中心に発展してきました。
+</p>
+</div>
+
+<div>
+<div class="space-y-6 border-t border-slate-100 pt-6">
+   
+</div>
+</div>
+
+</div>
+</div>
+</div>
+<div>
+<p class="text-left text-slate-600 text-sm mt-6 font-bold max-w-2xl mx-auto">ドゥク・ユル（雷龍の国）」の誇り</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto">&nbsp;&nbsp;「ドゥク・ユル（Druk Yul）」という国名は、単なる呼び名ではなく、「外敵（特にチベット）に屈せず、独自の信仰と独立を守り抜いた」というブータン人のアイデンティティそのものを象徴しています。
+ブータンの国旗に描かれている白い龍は、この「ドゥク・ユル」を象徴しています。</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto">&nbsp;&nbsp;17世紀、建国の父シャブドゥンがチベットから亡命してきた際、当時のチベット政府（ゲルク派）は彼を追って何度もブータンへ侵攻してきました。</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto">&nbsp;&nbsp;ブータン人は自分たちをチベット系であると認識しつつも、「チベットとは違う」ことを強調します。ブータン人は自らを「ドゥクパ（龍の人）」と呼び、チベットの文化圏に属しながらも、独自の国家を維持していることに高い誇りを持っています。</p>
+
+
+
+
+
+</div>
+</section>
+<!-- END: HistorySection -->
+<!-- BEGIN: Footer -->
+<footer class="bg-B-orange text-white py-20 px-6 border-t border-white/5 relative z-10">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="col-span-1 md:col-span-2">
+<div class="flex items-center gap-3 mb-6">
+<div class="text-emerald-500">
+<svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景（濃紺：ヒマラヤの静けさ） -->
+  <rect width="24" height="24" rx="4" fill="#1A237E"/>
+
+  <!-- 斜め分割（本来の旗構図を抽象化・オレンジ回避でゴールド寄り） -->
+  <path d="M0 0L24 24H0Z" fill="#FBC02D"/>
+
+  <!-- 龍（ドゥルク：簡略シンボル） -->
+  <path d="M7 14
+           C8 12, 10 12, 11 13
+           C12 11, 14 11, 15 13
+           C16 12, 18 13, 17 15
+           C16 17, 14 17, 13 16
+           C12 18, 10 18, 9 16
+           C8 17, 6 16, 7 14Z"
+        fill="#FFFFFF"/>
+
+  <!-- 宝珠（龍が持つ宝） -->
+  <circle cx="12" cy="14" r="0.8" fill="#FFFFFF"/>
+
+  <!-- 山のシルエット -->
+  <path d="M3 18L7 15L10 18Z" fill="#90CAF9" opacity="0.7"/>
+  <path d="M10 18L14 14L18 18Z" fill="#64B5F6" opacity="0.7"/>
+</svg>
+</div>
+<span class="text-white font-serif text-lg tracking-wider font-semibold">Bhutan Discovery</span>
+</div>
+<p class="text-white text-sm max-w-sm mb-8">
+            Far beyond the pages of history, there’s a bond that words can’t capture. Grateful for this quiet warmth. </p>
+</div>
+<div>
+<h6 class="text-k-yellow font-serif text-sm mb-6 uppercase tracking-widest">Navigation</h6>
+<ul class="space-y-4 text-sm text-white/60">
+<li><a class="hover:text-white transition-colors" href="#Landmarks">Landmarks</a></li>
+<li><a class="hover:text-white transition-colors" href="#cities">Cities</a></li>
+<li><a class="hover:text-white transition-colors" href="#cuisine">Cuisine</a></li>
+<li><a class="hover:text-white transition-colors" href="#history">History</a></li>
+</ul>
+</div>
+<div>
+<h6 class="text-k-yellow font-serif text-sm mb-6 uppercase tracking-widest">Connect</h6>
+<ul class="space-y-4 text-sm text-white/60">
+<li><a class="hover:text-white transition-colors" href="#">Instagram</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Twitter</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Contact Us</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 mt-10 mb-4"><p class="text-xs text-white">© 2026 Bhutan Discovery. All rights reserved.</p>
+<div class="flex gap-8 text-xs text-white/80">
+<a href="#">Privacy Policy</a>
+<a href="#">Terms of Service</a>
+</div></div>
+<button onclick="window.close(); setTimeout(() => { window.location.href = 'https://google.com'; }, 100);" 
+          class="flex items-center gap-1 px-3 py-0.5 ml-auto md:ml-auto bg-brand-emerald hover:opacity-80 text-white font-medium rounded-full transition-all shadow-sm">
+    <span class="material-symbols-outlined text-white/80 text-xs">logout</span>
+    <span class="tracking-wider text-white/80 text-xs">QUIT</span>
+  </button>
+</footer>
+<!-- END: Footer -->
+</main>
+<style data-purpose="animations">
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+<script>
+    document.getElementById('searchInput').addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+            const searchTerm = this.value.trim();
+            if (searchTerm) {
+                const wikipediaUrl = `https://ja.wikipedia.org/wiki/特別:検索?search=${encodeURIComponent(searchTerm)}`;
+                window.open(wikipediaUrl, '_blank');
+            }
+        }
+    });
+</script>
+</body></html>

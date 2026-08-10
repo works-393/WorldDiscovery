@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Nepal Discovery | Luxury Travel Experience</title>
+<meta content="Explore the ancient landmarks, vibrant cities, and rich history of Nepal." name="description"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="../menu.js"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'lebanon-dark': '#102219',
+            'lebanon-gold': '#C5A059',
+            'lebanon-green': '#2D5A27',
+            "primary": "#144bb8",
+            "background-light": "#f6f6f8",
+            "background-dark": "#111621",
+            // 追加
+            "al-adaam": "#8D1B3D",
+            "qatar-gold": "#C5A059",  
+            "e-green": "#50C878",
+            "B-purple-dark": "#006400",
+            "qatar-gold": "#C5A059",
+            "qatar-blue": "#1e3a8a",
+            "oman-blue": "#003153",
+            "yemen-red": "#CE1126",
+            "Bahrain-red": "#DA291C",
+            "B-purple-dark": "#632276",
+            "B-purple": "#D1A7E2",
+            "B-yellow": "#ffff66",
+            "Kaza-blue": "#00A3DD",
+            "Kaza-blue-dark": "#003366",
+            "U-blue": "#99ffcc", //ターコイズブルー//
+            "U-blue-bg": "#006699",
+            "k-yellow": "#ffcc00",
+            "k-red": "#cc3333",
+            "k-yellow-c": "#ccff33",
+            "silk-road-white": "#fdfdfd",
+            "t-green": "#006600",
+            "t-green-light": "#99cc99",
+            "Af-red": "#ff0099",
+            "Af-navy": "#0B1F3A",
+            "Sr-Brown": "#993300",
+            "Sr-yellow": "#cc9933",
+             },
+          fontFamily: {
+            serif: ['Newsreader', 'serif'],
+            sans: ['Inter', 'sans-serif'],
+          },
+          backgroundImage: {
+            'Kazakhstan-hero': "url('img/Sri Lanka_bg.jpg')",
+          }
+        }
+      }
+    }
+  </script>
+<style data-purpose="custom-styling">body {
+    background-color: #f0f9ff;
+    color: #1e293b
+    }
+.glass-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 1rem
+    }
+.text-balance {
+    text-wrap: balance
+    }
+.section-spacing {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem
+    }
+/* Pattern Overlay */
+.bg-pattern {
+    background-image: url(img/Nepal_bg.jpg);
+    opacity: 0.85
+    }</style>
+</head>
+<body class="font-sans antialiased overflow-x-hidden">
+<!-- BEGIN: Background Texture -->
+<div class="fixed inset-0 bg-pattern pointer-events-none z-0"></div>
+<!-- END: Background Texture -->
+<!-- BEGIN: MainHeader -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-Bahrain-red backdrop-blur-md border-b border-white/5">
+<nav class=" max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<!-- Logo -->
+<a class="flex items-center gap-3 group" href="#">
+<div class="text-white-500 transform group-hover:scale-110 transition-transform">
+<svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景（ヒマラヤの澄んだ空：ブルー） -->
+  <rect width="24" height="24" rx="4" fill="#0057B7""")/>>
+  
+  <!-- エベレスト・ヒマラヤ山脈（鋭い雪山：ホワイト） -->
+  <path d="M2 18L9 7L15 18Z" fill="white" opacity="0.9""")/>>
+  <path d="M11 18L16.5 9L22 18Z" fill="white" opacity="0.7""")/>>
+  
+  <!-- ネパールのストゥーパ（仏塔）のシルエット -->
+  <!-- 形状を少し角ばらせて、パゴダやストゥーパ風に -->
+  <path d="M10 16C10 14.5 11 13.5 12 13.5C13 13.5 14 14.5 14 16Z" fill="#F0F0F0""")/>>
+  <rect x="10" y="16" width="4" height="2" fill="#F0F0F0""")/>>
+  
+  <!-- 仏塔の頂点（スポイア） -->
+  <rect x="11.7" y="11.5" width="0.6" height="2" fill="#F0F0F0""")/>>
+  <circle cx="12" cy="11" r="0.5" fill="#F0F0F0""")/>>
+
+  <!-- タルチョ（五色旗）をイメージしたアクセントを山の麓に -->
+  <rect x="5" y="17" width="1.5" height="1" fill="white" opacity="0.5""")/>>
+  <rect x="7" y="17" width="1.5" height="1" fill="white" opacity="0.5""")/>>
+</svg>
+</div>
+<span class="text-white font-serif text-xl font-semibold">Nepal Discovery</span>
+</a>
+<!-- Desktop Navigation -->
+<div id="navMenu" class="hidden md:flex items-center gap-9 
+    absolute top-full left-0 w-full bg-Bahrain-red backdrop-blur-md flex-col p-6 shadow-lg z-50
+    md:absolute md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 md:w-auto md:flex-row md:p-0 md:shadow-none">
+<a class="text-white text-sm font-medium hover:text-k-red transition-colors tracking-widest uppercase" href="#Landmarks">Landmarks</a>
+<a class="text-white text-sm font-medium hover:text-k-red transition-colors tracking-widest uppercase" href="#cities">Cities</a>
+<a class="text-white text-sm font-medium hover:text-k-red transition-colors tracking-widest uppercase" href="#cuisine">Cuisine</a>
+<a class="text-white text-sm font-medium hover:text-k-red transition-colors tracking-widest uppercase" href="#history">History</a>
+</div>
+<!-- Search Bar -->
+<div class="relative hidden lg:block" data-purpose="search-container">
+<span class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+<svg class="w-4 h-4 text-B-purple-dark/50" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</span>
+<input id="searchInput" class="bg-white/5 border-white/10 text-white pl-10 pr-4 py-2 rounded-lg focus:ring-B-purple-dark focus:border-B-purple-dark w-64 text-sm" placeholder="Wikipedia検索" type="text"/>
+</div>
+
+<!-- Mobile Menu Button (Icon only) -->
+<div class="md:hidden">
+<button
+    id="menuButton"
+    class="md:hidden flex items-center justify-center text-white hover:text-white/80 transition-colors">
+    <span class="material-symbols-outlined text-3xl">
+        menu
+    </span>
+</button>
+</nav>
+</header>
+<!-- END: MainHeader -->
+<!-- BEGIN: HeroSection -->
+<main class="relative">
+<section class="relative flex items-center justify-center overflow-hidden h-[90vh]">
+<!-- Hero Background Image -->
+<div class="absolute inset-0 z-0">
+<img alt="Sri Lanka" class="w-full h-full object-cover brightness-50" src="img/Nepal.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-b from-[#003153]/60 via-transparent to-[#f0f9ff]"></div>
+</div>
+<div class="relative z-10 text-center px-6 max-w-4xl">
+<h2 class="text-Kaza-blue font-serif italic text-xl md:text-2xl mb-4 opacity-0 animate-[fadeIn_1s_ease-out_forwards]">Himalayan soul, endless sky.</h2>
+<h1 class="text-white text-4xl md:text-7xl lg:text-4xl font-serif mb-8 leading-tight opacity-0 animate-[fadeIn_1s_ease-out_0.3s_forwards]">
+         Lost among prayer flags and snowlight—Nepal feels like a memory I’ve never lived before.
+</h1>
+<p class="text-lg md:text-xl text-white/80 font-light max-w-2xl mx-auto mb-10 text-balance opacity-0 animate-[fadeIn_1s_ease-out_0.6s_forwards]">
+        In Nepal, time doesn’t pass—it settles gently on rooftops, rivers, and ruined stone.</p>
+<!-- <a class="inline-block bg-B-purple-dark text-lebanon-dark px-10 py-4 font-semibold tracking-widest uppercase text-sm hover:scale-105 transition-transform opacity-0 animate-[fadeIn_1s_ease-out_0.9s_forwards]" href="#landmarks">
+          Explore Destinations
+        </a>-->
+</div>
+<!-- Scroll Indicator -->
+<!--<div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce opacity-60">
+<svg class="h-6 w-6" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M19 14l-7 7m0 0l-7-7m7 7V3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>-->
+</section>
+<!-- END: HeroSection -->
+
+
+<!-- BEGIN: LandmarksSection -->
+<section class="section-spacing px-6 relative" id="Landmarks">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
+<div class="max-w-2xl">
+<h2 class="text-k-yellow font-serif text-sm mb-2 uppercase tracking-[0.3em]">Sacred Peaks & Eternal Valleys</h2>
+<h3 class="text-3xl md:text-4xl font-serif">Iconic Landmarks</h3>
+</div>
+<p class="text-orange/90 max-w-md text-sm">From the soaring Himalayas of Nepal to its ancient temples and timeless cities, Nepal unfolds as a land where mountains, faith, and myth exist as one living landscape—silent, powerful, and endlessly sacred.
+</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+<!-- Item 1: Mount Everest -->
+<div class="flex flex-col">
+<div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+<img alt="Mount Everest" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="img/Mount_Everest.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+<div class="absolute bottom-0 left-0 p-4">
+<span class="text-[10px] text-lebanon-gold uppercase tracking-widest block mb-1">Landmark</span>
+<h4 class="text-lg font-serif text-white">Mount Everest</h4>
+</div>
+</div>
+<!-- キャプション部分：写真の直下に配置 -->
+     <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4">The roof of the world, where silence touches the sky.   </p>
+  </div>
+<!-- Item 2: Swayambhunath Stupa (Monkey Temple) -->
+ <div class="flex flex-col">
+<div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+<img alt="Swayambhunath Stupa (Monkey Temple)" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="img/Swayambhunath_Stupa.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+<div class="absolute bottom-0 left-0 p-4">
+<span class="text-[10px] text-lebanon-gold uppercase tracking-widest block mb-1">Landmark</span>
+<h4 class="text-lg font-serif text-white">Temple of the Sacred Tooth Relic </h4>
+</div>
+</div>
+<!-- キャプション部分：写真の直下に配置 -->
+     <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4">Eyes of Buddha watching over an ancient valley.</p>
+  </div>
+<!-- Item 3: Pashupatinath Temple-->
+ <div class="flex flex-col">
+<div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+<img alt="Pashupatinath Temple" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="img/Pashupatinath_Temple.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+<div class="absolute bottom-0 left-0 p-4">
+<span class="text-[10px] text-lebanon-gold uppercase tracking-widest block mb-1">Landmark</span>
+<h4 class="text-lg font-serif text-white">Pashupatinath Temple</h4>
+</div>
+</div>
+<!-- キャプション部分：写真の直下に配置 -->
+     <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4">Sacred smoke rising where life meets eternity.
+</p>
+  </div>
+</div>
+</div>
+</section>
+<!-- END: LandmarksSection -->
+<!-- BEGIN: CitiesSection -->
+<section class="section-spacing px-6 relative" id="cities">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
+<div class="max-w-2xl">
+<h2 class="text-k-yellow font-serif text-sm mb-2 uppercase tracking-[0.3em]">Valleys of Memory & Mountain Cities</h2>
+<h3 class="text-3xl md:text-4xl font-serif">Cities of Distinction</h3>
+</div>
+<p class="text-orange/90 max-w-md text-sm">From the sacred sprawl of Kathmandu to the serene lakeside calm of Pokhara and the artistic heritage of Lalitpur (Patan), Nepal’s cities unfold as living mosaics where ancient kingdoms, spiritual traditions, and everyday life continue to breathe as one.
+</p>
+</div>
+<div class="space-y-20">
+<!-- Kathmandu -->
+<div class="flex flex-col md:flex-row items-center gap-10">
+<div class="w-full md:w-1/2">
+<img alt="Kathmandu" class="rounded-2xl shadow-xl" src="img/Kathmandu.jpg"/>
+</div>
+<div class="w-full md:w-1/2">
+<span class="text-primary font-bold uppercase tracking-widest text-sm">Where ancient temples breathe inside a living, chaotic rhythm of time.
+</span>
+<h3 class="text-yemen-red text-3xl mt-2 mb-4">Kathmandu</h3>
+<p class="text-Af-navy dark:text-orange-100 text-lg mb-6 leading-relaxed font-serif">Kathmandu is a city located in central Nepal, at an elevation of approximately 1,337 meters on the southern slopes of the Himalayas, and serves as the capital of the country. The city was established in 723 AD and flourished as the capital of the Newar people. In 1769, the Gorkha king Prithvi Narayan Shah unified Nepal by establishing the Shah dynasty. In 1814, Nepal was defeated in a war against Britain and was forced to cede part of its territory.
+</p>
+</div>
+</div>
+<!-- Pokhara-->
+<div class="flex flex-col md:flex-row-reverse items-center gap-10">
+<div class="w-full md:w-1/2">
+<img alt="Pokhara" class="rounded-2xl shadow-xl" src="img/Pokhara.jpg"/>
+</div>
+<div class="w-full md:w-1/2">
+<span class="text-primary font-bold uppercase tracking-widest text-sm">A mirror of mountains resting quietly on a lake of dreams.</span>
+<h3 class="text-yemen-red text-3xl mt-2 mb-4">Pokhara</h3>
+<p class="text-Af-navy dark:text-orange-100 text-lg mb-6 leading-relaxed font-serif">Pokhara is Nepal’s second-largest city and a beautiful lakeside resort located at the foot of the Annapurna mountain range. Situated about 200 km from Kathmandu, it is known for its mild climate, stunning views of the Himalayas, boating on Phewa Lake, and adventure activities such as paragliding.</p>
+</div>
+</div>
+<!-- Lalitpur (Patan) -->
+<div class="flex flex-col md:flex-row items-center gap-10">
+<div class="w-full md:w-1/2">
+<img alt="Lalitpur (Patan)" class="rounded-2xl shadow-xl" src="img/Lalitpur.jpg"/>
+</div>
+<div class="w-full md:w-1/2">
+<span class="text-primary font-bold uppercase tracking-widest text-sm">A city carved in devotion, where every alley remembers its past.</span>
+<h3 class="text-yemen-red text-3xl mt-2 mb-4">Lalitpur (Patan)</h3>
+<p class="text-Af-navy dark:text-orange-100 text-lg mb-6 leading-relaxed font-serif">Patan is an ancient city of Nepal, officially known as Lalitpur. As of 2021, it has a population of 299,843, making it the fourth-largest city in the country. Located in the southwestern part of the Kathmandu Valley, it is a metropolitan municipality renowned for its rich cultural heritage.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Cities Section -->
+
+</div>
+</div>
+</section>
+<!-- END: CitiesSection -->
+<!--BEGIN: Cuisine -->
+<section class="px-4 py-16 md:px-10" id="cuisine">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-12">
+<h2 class="text-primary text-3xl md:text-4xl font-serif">Himalayan Flavors & Timeless Comfort</h2>
+<p class="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">From hearty plates of dal bhat to steaming momos and sweet festival treats, Nepal’s cuisine reflects a rich harmony of mountain life, cultural tradition, and simple, soulful nourishment.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Package 1 -->
+<div class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:shadow-xl transition-shadow">
+<div class="h-56 w-full overflow-hidden">
+<img alt="Dal Bhat" class="w-full h-full object-cover transition-transform group-hover:scale-105" data-alt="Dal Bhat" src="img/Dal_Bhat.jpg"/>
+</div>
+<div class="p-4">
+<div class="flex justify-between items-start mb-1">
+<h3 class="text-xl font-bold">Dal Bhat</h3>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-400 mb-6 line-clamp-2">A set meal of lentil soup and rice, widely regarded as Nepal’s national dish.</p>
+<div class="flex items-center justify-between">
+</div>
+</div>
+</div>
+<!-- Package 2 -->
+<div class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:shadow-xl transition-shadow">
+<div class="h-56 w-full overflow-hidden">
+<img alt="Momo" class=w-full h-full object-cover transition-transform group-hover:scale-105" data-alt="Momo" src="img/Momo.jpg"/>
+</div>
+<div class="p-4">
+<div class="flex justify-between items-start mb-1">
+<h3 class="text-xl font-bold">Momo</h3>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-400 mb-6 line-clamp-2">Steamed dumplings filled with meat or vegetables, a beloved street food across Nepal.
+</p>
+<div class="flex items-center justify-between">
+</div>
+</div>
+</div>
+<!-- Package 3 -->
+<div class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:shadow-xl transition-shadow">
+<div class="h-56 w-full overflow-hidden">
+<img alt="Yomari" class="w-full h-full object-cover transition-transform group-hover:scale-105" data-alt="Yomari" src="img/Yomari.jpg"/>
+</div>
+<div class="p-4">
+<div class="flex justify-between items-start mb-1">
+<h3 class="text-xl font-bold">Yomari</h3>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-400 mb-6 line-clamp-2">A traditional steamed rice-flour dumpling filled with sweet molasses or sesame. </p>
+<div class="flex items-center justify-between">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- BEGIN: HistorySection -->
+<section class="bg-[#144bb8]/20 section-spacing px-6 relative overflow-hidden" id="history">
+<div class="max-w-5xl mx-auto"><div class="text-center mb-12">
+<h2 class="text-Bahrain-red font-serif text-sm mb-2 uppercase tracking-[0.3em]">ネパールの歴史</h2>
+<h3 class="text-Sr-yellow text-3xl md:text-4xl font-serif">Land of Kingdoms & Sacred Traditions</h3>
+<p class="text-xs text-Af-navy leading-relaxed">From ancient valley kingdoms to unification under the Shah dynasty, Nepal’s history reflects a quiet strength shaped by faith and the Himalayas.</p>
+</div>
+<div class="max-w-3xl mx-auto space-y-8 relative border-l border-slate-300 pl-8">
+<!-- History: Ancient -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-Sr-yellow"></div>
+<h4 class="text-Sr-yellow font-sans text-xl font-semibold mb-6">古代</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">キラート王国<span class="text-xs text-slate-500 block md:inline md:ml-2">（紀元前7世紀頃～4世紀頃） </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">カトマンズ盆地に最初の国家が誕生。
+</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">リッチャヴィ朝<span class="text-xs text-slate-500 block md:inline md:ml-2">（4世紀～9世紀）</span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">仏教とヒンドゥー教が共存し、文化が発展。
+</p>
+</div>
+
+</div>
+</div>
+<!-- History: Medieval -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-Sr-yellow"></div>
+<h4 class="text-Sr-yellow font-sans text-xl font-semibold mb-6">中世</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">マッラ朝 <span class="text-xs text-slate-500 block md:inline md:ml-2">（12世紀～18世紀） </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">カトマンズ、パタン、バクタプルの三都に分裂し、芸術と建築が黄金期を迎える。</p>
+</div>
+
+</div>
+</div>
+<!-- History: Early Modern -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-Sr-yellow"></div>
+<h4 class="text-Sr-yellow font-sans text-xl font-semibold mb-6">近世</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">ゴルカ王国 <span class="text-xs text-slate-500 block md:inline md:ml-2">（18世紀） </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">プリトビ・ナラヤン・シャハ王によるネパール統一。</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">ラナ家政権 <span class="text-xs text-slate-500 block md:inline md:ml-2">（19世紀中頃～1951年） </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">宰相が実権を握り、鎖国政策を実施。</p>
+</div>
+</div>
+</div>
+
+<!-- History: Modern -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-Sr-yellow"></div>
+<h4 class="text-Sr-yellow font-sans text-xl font-semibold mb-6">近現代</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">王国（王政復古・絶対王政） <span class="text-xs text-slate-500 block md:inline md:ml-2">（1951年〜1990年） </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">1951年:第8代・トリブバン国王（ビレンドラ国王の祖父）が、独裁に不満を持つ民衆やインド政府と協力して、ラナ家を打倒しました。</p>
+<p class="text-xs text-slate-600 leading-relaxed">1960年:マヘンドラ国王（ビレンドラの父）が政党を禁止し、国王がすべてを決める「パンチャーヤト制」を開始。</p>
+<p class="text-xs text-slate-600 leading-relaxed">1972年:ビレンドラ国王が即位。 最初は父の「絶対王政」を継承しました。</p>
+</div>
+<div>
+ <div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">立憲君主制  <span class="text-xs text-slate-500 block md:inline md:ml-2">（1990年） </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">1990年:大規模な民主化運動（ジャナ・アンドラン）が起き、ビレンドラ国王が屈服。新憲法を制定し、国王の権限を制限。 ここで初めて本格的な「立憲君主制」になりました。</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">内戦と王族殺害事件  <span class="text-xs text-slate-500 block md:inline md:ml-2">（1990年〜2008年） </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed"></p>
+<p class="text-xs text-slate-600 leading-relaxed">2001年: 王族殺害事件が発生。ビレンドラ国王が亡くなり、弟のギャネンドラが即位。</p>
+<p class="text-xs text-slate-600 leading-relaxed">2005年: ギャネンドラ国王が内閣を解散し、全権を掌握（絶対君主制への逆行）。再び独裁（親政）を強行したため、国民の怒りを買いました。</p>
+<p class="text-xs text-slate-600 leading-relaxed">2006年: 国民による大規模な民主化運動（ロクタントラ・アンドラン）が勃発。</p>
+</div>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">王政廃止 <span class="text-xs text-slate-500 block md:inline md:ml-2">（2008年） </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">共産党毛派の闘争を経て、連邦民主共和制へ移行。</p>
+
+<p class="text-xs text-slate-600 leading-relaxed">2008年: 制憲議会で王制廃止が決定。ネパールは「王国」から「連邦民主共和国」へ。</p>
+</div>
+</div>
+</div>
+</div>
+<!-- History: Modern -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-Sr-yellow"></div>
+<h4 class="text-Sr-yellow font-sans text-xl font-semibold mb-6">現代</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">ネパール連邦民主共和国 <span class="text-xs text-slate-500 block md:inline md:ml-2">（2008年～） </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">連邦民主共和制のもと、観光業や経済の発展を目指す。ネパールは「王国」から「共和国」へ。</p>
+<p class="text-xs text-slate-600 leading-relaxed">2008年5月28日：制憲議会の初会合で、240年続いた王制の廃止と連邦民主共和制への移行が宣言されました。</p>
+<p class="text-xs text-slate-600 leading-relaxed">2008年6月：ギャネンドラ国王が退位し、王宮を去りました。</p>
+
+
+</div>
+</div>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">ネパール <span class="text-xs text-slate-500 block md:inline md:ml-2">（2020年～） </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">2020年の正式国名変更
+K.P.シャルマ・オリ内閣は正式国名を「ネパール連邦民主共和国」から政体名を含まない「ネパール」とすることを閣議決定</p>
+<p class="text-xs text-slate-600 leading-relaxed">ネパールの歴史は、地理的な要因や宗教的な影響を受けながら、多様な文化と政治体制が展開してきました。</p>
+
+</div>
+
+</div>
+</div>
+</div>
+
+</div>
+</div>
+<p class="text-left text-slate-600 text-sm mt-6 font-bold max-w-2xl mx-auto">王族殺害事件（2001年）</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto">&nbsp;&nbsp; 「内戦と王政廃止」のプロセスの中で、当時のビレンドラ国王一家が殺害された事件は、王制崩壊を決定づけた現代史の大きな転換点です。
+  2001年6月1日にネパール王国の首都カトマンズ、ナラヤンヒティ王宮で発生した事件。公式発表によれば、ディペンドラ王太子が夕食会中に銃を乱射して家族を殺害し、その直後に自らも銃で自殺を図ったとされています。現場名称を取ったナラヤンヒティ王宮事件とも呼ばれ、
+この事件には現在も多くの謎が残されており、国民の間では陰謀論が根強く存在します。</p>
+<p class="text-left text-slate-600 text-xs mt-1  max-w-2xl mx-auto">王室への敬愛の喪失: 「神の化身」とまで慕われたビレンドラ国王一家が亡くなり、唯一生き残って即位した弟のギャネンドラ国王に対して、国民の不信感や陰謀論が渦巻くきっかけとなりました。</p>
+<p class="text-left text-slate-600 text-xs mt-1  max-w-2xl mx-auto">王政崩壊の加速: ギャネンドラ国王が強権政治（親政）を敷いたことで国民の反発を招き、それまで対立していた政党と毛沢東派（マオイスト）が手を組む流れを作り、最終的な王制廃止へとつながりました。</p>
+
+</p>
+<p class="text-left text-slate-600 text-sm mt-6 font-bold max-w-2xl mx-auto">事件の背景</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto">1. 「神の化身」としての王室</p>
+<p class="text-left text-slate-600 text-xs mt-1  max-w-2xl mx-auto">当時のネパールにおいて、国王はヒンドゥー教の主神ヴィシュヌ神の化身と信じられていました。そのため、王族の結婚は単なる個人の自由ではなく、国家の安定や神聖さを保つための「儀式」のような側面が強かったのです。</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto">2. 凄まじい階級（カースト）意識</p>
+<p class="text-left text-slate-600 text-xs mt-1  max-w-2xl mx-auto">王太子が結婚を望んだ女性（デブヤニ・ラナ）も名家の出身でしたが、王妃アイシュワリヤ（王太子の母）は彼女の家系を格下と見なし、激しく反対しました。「血統」を何よりも重んじる古い価値観が、個人の愛よりも優先されてしまった悲劇と言えます。</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto">3. 「絶対君主」の名残</p>
+<p class="text-left text-slate-600 text-xs mt-1  max-w-2xl mx-auto">当時、ネパールはすでに立憲君主制に移行しつつありましたが、実際には国王が強い権限を持っていました。王宮内はまさに「治外法権」のような場所で、民主的な対話よりも、王の家長としての決定が絶対視される閉鎖的な空間だったのです。</p>
+<p class="text-left text-slate-600 text-xs mt-1  max-w-2xl mx-auto">結局、この「民主主義とは程遠い」王室のドロドロした内情が白日の下にさらされたことで、国民の心は一気に王室から離れてしまいました。皮肉なことに、この非民主的な事件が引き金となって、ネパールは王制廃止（共和制への移行）という究極の民主化へ突き進むことになったわけです。</p>
+
+<p class="text-left text-slate-600 text-sm mt-6 font-bold max-w-2xl mx-auto">「ジャナ・アンドラン（民衆運動）」と「共産党毛沢東主義派（マオイスト）の武装闘争」</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto">「ジャナ・アンドラン（民衆運動）」と「共産党毛沢東主義派（マオイスト）の武装闘争」は、もともとは別の動きでしたが、最終的に合流して王制を倒しました。
+</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto">1. ジャナ・アンドラン（1990年）</p>
+<p class="text-left text-slate-600 text-xs mt-1  max-w-2xl mx-auto">&nbsp;&nbsp;主体: ネパール会議派や左派政党連合による市民デモ。</p>
+<p class="text-left text-slate-600 text-xs mt-1  max-w-2xl mx-auto">&nbsp;&nbsp;目的: 絶対王政を終わらせ、複数政党制を導入すること。</p>
+<p class="text-left text-slate-600 text-xs mt-1  max-w-2xl mx-auto">&nbsp;&nbsp;結果: ビレンドラ国王が妥協し、立憲君主制が始まりました。</p>
+<p class="text-left text-slate-600 text-xs mt-1  max-w-2xl mx-auto">&nbsp;&nbsp;※この時、毛派はまだ「武装闘争」を始めていません。 </p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto">2. マオイストの武装闘争（1996年〜2006年）</p>
+<p class="text-left text-slate-600 text-xs mt-1  max-w-2xl mx-auto">&nbsp;&nbsp;主体: ネパール共産党毛沢東主義派（マオイスト）。</p>
+<p class="text-left text-slate-600 text-xs mt-1  max-w-2xl mx-auto">&nbsp;&nbsp;目的: 王制そのものの廃止と、共産共和国の樹立。</p>
+<p class="text-left text-slate-600 text-xs mt-1  max-w-2xl mx-auto">&nbsp;&nbsp;内容: 農村部を中心に「人民戦争」と呼ばれるゲリラ戦を展開。政府軍と激しく衝突し、多くの犠牲者が出ました。</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto">3.ロクタントラ・アンドラン(2006年）) </p>
+<p class="text-left text-slate-600 text-xs mt-1  max-w-2xl mx-auto">&nbsp;&nbsp;主体: 議会派の政党と、マオイストが手を組んだ大規模なデモ。</p>
+<p class="text-left text-slate-600 text-xs mt-1  max-w-2xl mx-auto">&nbsp;&nbsp;背景: 2001年の事件後に即位したギャネンドラ国王が独裁を強めたため、それまで敵対していた「議会派政党」と「マオイスト」が、「王制を倒す」という一点で協力（12カ条の合意）しました。
+</p>
+<p class="text-left text-slate-600 text-xs mt-1  max-w-2xl mx-auto">&nbsp;&nbsp;結果: 国王が屈服。同年、内戦が終結し、2008年の王制廃止（共和制移行）へとつながりました。</p>
+<p class="text-left text-slate-600 text-xs mt-1  max-w-2xl mx-auto">&nbsp;&nbsp;</p>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</section>
+<!-- END: HistorySection -->
+<!-- BEGIN: Footer -->
+<footer class="bg-Bahrain-red text-white py-20 px-6 border-t border-white/5 relative z-10">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="col-span-1 md:col-span-2">
+<div class="flex items-center gap-3 mb-6">
+<div class="text-emerald-500">
+<svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景（ヒマラヤの澄んだ空：ブルー） -->
+  <rect width="24" height="24" rx="4" fill="#0057B7""")/>>
+  
+  <!-- エベレスト・ヒマラヤ山脈（鋭い雪山：ホワイト） -->
+  <path d="M2 18L9 7L15 18Z" fill="white" opacity="0.9""")/>>
+  <path d="M11 18L16.5 9L22 18Z" fill="white" opacity="0.7""")/>>
+  
+  <!-- ネパールのストゥーパ（仏塔）のシルエット -->
+  <!-- 形状を少し角ばらせて、パゴダやストゥーパ風に -->
+  <path d="M10 16C10 14.5 11 13.5 12 13.5C13 13.5 14 14.5 14 16Z" fill="#F0F0F0""")/>>
+  <rect x="10" y="16" width="4" height="2" fill="#F0F0F0""")/>>
+  
+  <!-- 仏塔の頂点（スポイア） -->
+  <rect x="11.7" y="11.5" width="0.6" height="2" fill="#F0F0F0""")/>>
+  <circle cx="12" cy="11" r="0.5" fill="#F0F0F0""")/>>
+
+  <!-- タルチョ（五色旗）をイメージしたアクセントを山の麓に -->
+  <rect x="5" y="17" width="1.5" height="1" fill="white" opacity="0.5""")/>>
+  <rect x="7" y="17" width="1.5" height="1" fill="white" opacity="0.5""")/>>
+</svg>
+</div>
+<span class="text-white font-serif text-lg tracking-wider font-semibold">Nepal Discovery</span>
+</div>
+<p class="text-white text-sm max-w-sm mb-8">
+            Curating bespoke luxury travel experiences for discerning explorers seeking the sacred peaks and mystical soul of the Himalayas.
+          </p>
+</div>
+<div>
+<h6 class="text-k-yellow font-serif text-sm mb-6 uppercase tracking-widest">Navigation</h6>
+<ul class="space-y-4 text-sm text-white/60">
+<li><a class="hover:text-white transition-colors" href="#Landmarks">Landmarks</a></li>
+<li><a class="hover:text-white transition-colors" href="#cities">Cities</a></li>
+<li><a class="hover:text-white transition-colors" href="#cuisine">Cuisine</a></li>
+<li><a class="hover:text-white transition-colors" href="#history">History</a></li>
+</ul>
+</div>
+<div>
+<h6 class="text-k-yellow font-serif text-sm mb-6 uppercase tracking-widest">Connect</h6>
+<ul class="space-y-4 text-sm text-white/60">
+<li><a class="hover:text-white transition-colors" href="#">Instagram</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Twitter</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Contact Us</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 mt-10 mb-4"><p class="text-xs text-white">© 2026 Nepal Discovery. All rights reserved.</p>
+<div class="flex gap-8 text-xs text-white/80">
+<a href="#">Privacy Policy</a>
+<a href="#">Terms of Service</a>
+</div></div>
+<button onclick="window.close(); setTimeout(() => { window.location.href = 'https://google.com'; }, 100);" 
+          class="flex items-center gap-1 px-3 py-0.5 ml-auto md:ml-auto bg-brand-emerald hover:opacity-80 text-white font-medium rounded-full transition-all shadow-sm">
+    <span class="material-symbols-outlined text-white/80 text-xs">logout</span>
+    <span class="tracking-wider text-white/80 text-xs">QUIT</span>
+  </button>
+
+</footer>
+<!-- END: Footer -->
+</main>
+<style data-purpose="animations">
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+<script>
+    document.getElementById('searchInput').addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+            const searchTerm = this.value.trim();
+            if (searchTerm) {
+                const wikipediaUrl = `https://ja.wikipedia.org/wiki/特別:検索?search=${encodeURIComponent(searchTerm)}`;
+                window.open(wikipediaUrl, '_blank');
+            }
+        }
+    });
+</script>
+</body></html>

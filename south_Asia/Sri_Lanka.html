@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sri Lanka Discovery | Luxury Travel Experience</title>
+<meta content="Explore the ancient landmarks, vibrant cities, and rich history of Sri Lanka." name="description"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="../menu.js"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'lebanon-dark': '#102219',
+            'lebanon-gold': '#C5A059',
+            'lebanon-green': '#2D5A27',
+            "primary": "#144bb8",
+            "background-light": "#f6f6f8",
+            "background-dark": "#111621",
+            // 追加
+            "al-adaam": "#8D1B3D",
+            "qatar-gold": "#C5A059",  
+            "e-green": "#50C878",
+            "B-purple-dark": "#006400",
+            "qatar-gold": "#C5A059",
+            "qatar-blue": "#1e3a8a",
+            "oman-blue": "#003153",
+            "yemen-red": "#CE1126",
+            "Bahrain-red": "#DA291C",
+            "B-purple-dark": "#632276",
+            "B-purple": "#D1A7E2",
+            "B-yellow": "#ffff66",
+            "Kaza-blue": "#00A3DD",
+            "Kaza-blue-dark": "#003366",
+            "U-blue": "#99ffcc", //ターコイズブルー//
+            "U-blue-bg": "#006699",
+            "k-yellow": "#ffcc00",
+            "k-red": "#cc3333",
+            "k-yellow-c": "#ccff33",
+            "silk-road-white": "#fdfdfd",
+            "t-green": "#006600",
+            "t-green-light": "#99cc99",
+            "Af-red": "#ff0099",
+            "Af-navy": "#0B1F3A",
+            "Sr-Brown": "#993300",
+            "Sr-yellow": "#cc9933",
+             },
+          fontFamily: {
+            serif: ['Newsreader', 'serif'],
+            sans: ['Inter', 'sans-serif'],
+          },
+          backgroundImage: {
+            'Kazakhstan-hero': "url('img/Sri Lanka_bg.jpg')",
+          }
+        }
+      }
+    }
+  </script>
+<style data-purpose="custom-styling">body {
+    background-color: #f0f9ff;
+    color: #1e293b
+    }
+.glass-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 1rem
+    }
+.text-balance {
+    text-wrap: balance
+    }
+.section-spacing {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem
+    }
+/* Pattern Overlay */
+.bg-pattern {
+    background-image: url(img/Sri_Lanka_bg.jpg);
+    opacity: 0.15
+    }</style>
+</head>
+<body class="font-sans antialiased overflow-x-hidden">
+<!-- BEGIN: Background Texture -->
+<div class="fixed inset-0 bg-pattern pointer-events-none z-0"></div>
+<!-- END: Background Texture -->
+<!-- BEGIN: MainHeader -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-Sr-Brown backdrop-blur-md border-b border-white/5">
+<nav class=" max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<!-- Logo -->
+<a class="flex items-center gap-3 group" href="#">
+<div class="text-white-500 transform group-hover:scale-110 transition-transform">
+<svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景（深緑：スリランカの森林・茶畑） -->
+  <rect width="24" height="24" rx="4" fill="#1B4D3E""")/>>
+  
+  <!-- 山（霧がかった丘陵地帯） -->
+  <path d="M3 17L8 10L13 17Z" fill="#A7D08C" opacity="0.9""")/>>
+  <path d="M10 17L14.5 11.5L21 17Z" fill="#78B86F" opacity="0.7""")/>>
+  
+  <!-- 聖地・寺院（仏教・イスラム双方の親和性を意識したシルエット） -->
+  <!-- ドーム（ストゥーパ/モスクの共通項） -->
+  <path d="M9 14C9 12.5 10.5 11.5 12 11.5C13.5 11.5 15 12.5 15 14Z" fill="#F0F7DA""")/>>
+  
+  <!-- 建物本体 -->
+  <rect x="9" y="14" width="6" height="2" fill="#F0F7DA""")/>>
+  
+  <!-- 塔（ミナレット/ダゴバの尖塔） -->
+  <rect x="16.5" y="12" width="1" height="5" fill="#F0F7DA""")/>>
+  <circle cx="17" cy="11.5" r="0.6" fill="#F0F7DA""")/>>
+  
+  <!-- 蓮の花のアクセント（足元に小さく） -->
+  <circle cx="5" cy="18" r="0.8" fill="#FFB7C5" opacity="0.8""")/>>
+  <circle cx="19" cy="18" r="0.8" fill="#FFB7C5" opacity="0.8""")/>>
+</svg>
+</div>
+<span class="text-white font-serif text-xl font-semibold">Sri Lanka Discovery</span>
+</a>
+<!-- Desktop Navigation -->
+<div id="navMenu" class="hidden md:flex items-center gap-9 
+    absolute top-full left-0 w-full bg-Sr-Brown backdrop-blur-md flex-col p-6 shadow-lg z-50
+    md:absolute md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 md:w-auto md:flex-row md:p-0 md:shadow-none">
+<a class="text-white text-sm font-medium hover:text-k-red transition-colors tracking-widest uppercase" href="#Landmarks">Landmarks</a>
+<a class="text-white text-sm font-medium hover:text-k-red transition-colors tracking-widest uppercase" href="#cities">Cities</a>
+<a class="text-white text-sm font-medium hover:text-k-red transition-colors tracking-widest uppercase" href="#cuisine">Cuisine</a>
+<a class="text-white text-sm font-medium hover:text-k-red transition-colors tracking-widest uppercase" href="#history">History</a>
+</div>
+<!-- Search Bar -->
+<div class="relative hidden lg:block" data-purpose="search-container">
+<span class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+<svg class="w-4 h-4 text-B-purple-dark/50" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</span>
+<input id="searchInput" class="bg-white/5 border-white/10 text-white pl-10 pr-4 py-2 rounded-lg focus:ring-B-purple-dark focus:border-B-purple-dark w-64 text-sm" placeholder="Wikipedia検索" type="text"/>
+</div>
+
+<!-- Mobile Menu Button (Icon only) -->
+<div class="md:hidden">
+<button
+    id="menuButton"
+    class="md:hidden flex items-center justify-center text-white hover:text-white/80 transition-colors">
+    <span class="material-symbols-outlined text-3xl">
+        menu
+    </span>
+</button>
+</nav>
+</header>
+<!-- END: MainHeader -->
+<!-- BEGIN: HeroSection -->
+<main class="relative">
+<section class="relative flex items-center justify-center overflow-hidden h-[90vh]">
+<!-- Hero Background Image -->
+<div class="absolute inset-0 z-0">
+<img alt="Sri Lanka" class="w-full h-full object-cover brightness-50" src="img/Sri_Lanka.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-b from-[#003153]/60 via-transparent to-[#f0f9ff]"></div>
+</div>
+<div class="relative z-10 text-center px-6 max-w-4xl">
+<h2 class="text-k-yellow font-serif italic text-xl md:text-2xl mb-4 opacity-0 animate-[fadeIn_1s_ease-out_forwards]">Island soul, tropical heart.</h2>
+<h1 class="text-white text-4xl md:text-7xl lg:text-4xl font-serif mb-8 leading-tight opacity-0 animate-[fadeIn_1s_ease-out_0.3s_forwards]">
+         Sri Lanka: Lost in the timeless whispers of ancient ruins and golden sunsets.</h1>
+<p class="text-lg md:text-xl text-white/80 font-light max-w-2xl mx-auto mb-10 text-balance opacity-0 animate-[fadeIn_1s_ease-out_0.6s_forwards]">
+        Grateful for mornings that taste like Ceylon and sound like the wild. Amma’s cooking and the island’s spirit—Sri Lanka, you have my heart.</p>
+<!-- <a class="inline-block bg-B-purple-dark text-lebanon-dark px-10 py-4 font-semibold tracking-widest uppercase text-sm hover:scale-105 transition-transform opacity-0 animate-[fadeIn_1s_ease-out_0.9s_forwards]" href="#landmarks">
+          Explore Destinations
+        </a>-->
+</div>
+<!-- Scroll Indicator -->
+<!--<div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce opacity-60">
+<svg class="h-6 w-6" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M19 14l-7 7m0 0l-7-7m7 7V3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>-->
+</section>
+<!-- END: HeroSection -->
+
+
+<!-- BEGIN: LandmarksSection -->
+<section class="section-spacing px-6 relative" id="Landmarks">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
+<div class="max-w-2xl">
+<h2 class="text-lebanon-green font-serif text-sm mb-2 uppercase tracking-[0.3em]">Island of Sacred Echoes & Timeless Beauty</h2>
+<h3 class="text-3xl md:text-4xl font-serif">Iconic Landmarks</h3>
+</div>
+<p class="text-orange/90 max-w-md text-sm">From ancient rock fortresses to misty tea hills and golden temples, journey through Sri Lanka’s living heritage where history, faith, and nature intertwine.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+<!-- Item 1: Sigiriya Rock -->
+<div class="flex flex-col">
+<div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+<img alt="Sigiriya Rock" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="img/Sigiriya_Rock.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+<div class="absolute bottom-0 left-0 p-4">
+<span class="text-[10px] text-lebanon-gold uppercase tracking-widest block mb-1">Landmark</span>
+<h4 class="text-lg font-serif text-white">Sigiriya Rock</h4>
+</div>
+</div>
+<!-- キャプション部分：写真の直下に配置 -->
+     <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4">It is the ruins of a 5th-century fortress built atop a विशाल rock formation, often referred to as the "Palace in the Sky.   </p>
+  </div>
+<!-- Item 2: Temple of the Sacred Tooth Relic -->
+ <div class="flex flex-col">
+<div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+<img alt="Temple of the Sacred Tooth Relic" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="img/Temple
+.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+<div class="absolute bottom-0 left-0 p-4">
+<span class="text-[10px] text-lebanon-gold uppercase tracking-widest block mb-1">Landmark</span>
+<h4 class="text-lg font-serif text-white">Temple of the Sacred Tooth Relic </h4>
+</div>
+</div>
+<!-- キャプション部分：写真の直下に配置 -->
+     <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4">Located in the ancient city of Kandy, this is a sacred site where a tooth relic of the Buddha is enshrined.</p>
+  </div>
+<!-- Item 3: Nine Arch Bridge-->
+ <div class="flex flex-col">
+<div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+<img alt="Nine Arch Bridge" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="img/Nine_Arch_Bridge.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+<div class="absolute bottom-0 left-0 p-4">
+<span class="text-[10px] text-lebanon-gold uppercase tracking-widest block mb-1">Landmark</span>
+<h4 class="text-lg font-serif text-white">Mausoleum of Imam Ali (Blue Mosque)</h4>
+</div>
+</div>
+<!-- キャプション部分：写真の直下に配置 -->
+     <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4">A beautiful stone railway bridge located in Ella, spanning between rolling tea-covered hills.</p>
+  </div>
+</div>
+</div>
+</section>
+<!-- END: LandmarksSection -->
+<!-- BEGIN: CitiesSection -->
+<section class="section-spacing px-6 relative" id="cities">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
+<div class="max-w-2xl">
+<h2 class="text-lebanon-green font-serif text-sm mb-2 uppercase tracking-[0.3em]">Ancient Crossroads & Living Cities</h2>
+<h3 class="text-3xl md:text-4xl font-serif">Cities of Distinction</h3>
+</div>
+<p class="text-orange/90 max-w-md text-sm">From the salt-sprayed ramparts of Galle to the restless energy of Colombo and the misty highlands of Nuwara Eliya, discover cities where colonial echoes meet the vibrant pulse of modern Sri Lankan life.
+</p>
+</div>
+<div class="space-y-20">
+<!-- Colombo -->
+<div class="flex flex-col md:flex-row items-center gap-10">
+<div class="w-full md:w-1/2">
+<img alt="Colombo" class="rounded-2xl shadow-xl" src="img/Colombo.jpg"/>
+</div>
+<div class="w-full md:w-1/2">
+<span class="text-primary font-bold uppercase tracking-widest text-sm">A Metropolis Where Past and Future Converge</span>
+<h3 class="text-Sr-Brown text-3xl mt-2 mb-4">Colombo</h3>
+<p class="text-Af-navy dark:text-orange-100 text-lg mb-6 leading-relaxed font-serif">An energetic port city at the heart of the economy, where historic colonial architecture stands alongside ultra-modern skyscrapers.</p>
+</div>
+</div>
+<!-- Galle Fort-->
+<div class="flex flex-col md:flex-row-reverse items-center gap-10">
+<div class="w-full md:w-1/2">
+<img alt="Galle Fort" class="rounded-2xl shadow-xl" src="img/Galle_Fort.jpg"/>
+</div>
+<div class="w-full md:w-1/2">
+<span class="text-primary font-bold uppercase tracking-widest text-sm">A 16th-century fortified city (old town) built on a promontory jutting into the Indian Ocean.</span>
+<h3 class="text-Sr-Brown text-3xl mt-2 mb-4">Galle Fort</h3>
+<p class="text-Af-navy dark:text-orange-100 text-lg mb-6 leading-relaxed font-serif">Perched on a promontory extending into the Indian Ocean, this 16th-century fortified city is a beautifully preserved old town where colonial architecture, ocean views, and centuries of history come together in a unique coastal setting.
+</p>
+</div>
+</div>
+<!-- Nuwara Eliya -->
+<div class="flex flex-col md:flex-row items-center gap-10">
+<div class="w-full md:w-1/2">
+<img alt="Nuwara Eliya" class="rounded-2xl shadow-xl" src="img/Nuwara_Eliya.jpg"/>
+</div>
+<div class="w-full md:w-1/2">
+<span class="text-primary font-bold uppercase tracking-widest text-sm">A Tea Capital Above the Clouds</span>
+<h3 class="text-Sr-Brown text-3xl mt-2 mb-4">Nuwara Eliya</h3>
+<p class="text-Af-navy dark:text-orange-100 text-lg mb-6 leading-relaxed font-serif">Situated at an elevation of 1,800 meters, this is one of the coolest and most beautiful highland cities in Sri Lanka, renowned for its lush tea plantations and serene mountain scenery.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Cities Section -->
+
+</div>
+</div>
+</section>
+<!-- END: CitiesSection -->
+<!--BEGIN: Cuisine -->
+<section class="px-4 py-16 md:px-10" id="cuisine">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-12">
+<h2 class="text-primary text-3xl md:text-4xl font-serif">Spice Island Flavors & Tropical Harmony</h2>
+<p class="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">From fragrant curries to sizzling street food and sweet coconut desserts, Sri Lanka’s cuisine is a vibrant blend of spice, heritage, and island warmth.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Package 1 -->
+<div class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:shadow-xl transition-shadow">
+<div class="h-56 w-full overflow-hidden">
+<img alt="Rice and Curry" class="w-full h-full object-cover transition-transform group-hover:scale-105" data-alt="Rice and Curry" src="img/Rice_and_Curry.jpg"/>
+</div>
+<div class="p-4">
+<div class="flex justify-between items-start mb-1">
+<h3 class="text-xl font-bold">Rice and Curry</h3>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-400 mb-6 line-clamp-2">The quintessential Sri Lankan dish—featuring a variety of spice-rich curries and side dishes, all served together on a single plate with rice.</p>
+<div class="flex items-center justify-between">
+</div>
+</div>
+</div>
+<!-- Package 2 -->
+<div class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:shadow-xl transition-shadow">
+<div class="h-56 w-full overflow-hidden">
+<img alt="Kottu Roti" class="w-full h-full object-cover transition-transform group-hover:scale-105" data-alt="Kottu Roti" src="img/Kottu_Roti.jpg"/>
+</div>
+<div class="p-4">
+<div class="flex justify-between items-start mb-1">
+<h3 class="text-xl font-bold">Kottu Roti</h3>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-400 mb-6 line-clamp-2">A popular street food made by stir-frying chopped roti (flatbread) with vegetables, meat, and eggs on a hot griddle. The rhythmic sound of its preparation is part of its charm.</p>
+<div class="flex items-center justify-between">
+</div>
+</div>
+</div>
+<!-- Package 3 -->
+<div class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:shadow-xl transition-shadow">
+<div class="h-56 w-full overflow-hidden">
+<img alt="Watalappam" class="w-full h-full object-cover transition-transform group-hover:scale-105" data-alt="Watalappam" src="img/Watalappam.jpg"/>
+</div>
+<div class="p-4">
+<div class="flex justify-between items-start mb-1">
+<h3 class="text-xl font-bold">Watalappam</h3>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-400 mb-6 line-clamp-2">A rich steamed pudding made with coconut milk, jaggery (palm sugar), and spices— a traditional dessert perfect after a meal.</p>
+<div class="flex items-center justify-between">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- BEGIN: HistorySection -->
+<section class="bg-[#ffcc33]/20 section-spacing px-6 relative overflow-hidden" id="history">
+<div class="max-w-5xl mx-auto"><div class="text-center mb-12">
+<h2 class="text-k-red font-serif text-sm mb-2 uppercase tracking-[0.3em]">スリランカ民主社会主義共和国の歴史</h2>
+<h3 class="text-Sr-yellow text-3xl md:text-4xl font-serif">Island of Ancient Kingdoms</h3>
+<p class="text-xs text-Af-navy leading-relaxed">From early Buddhist kingdoms to colonial encounters and independence, Sri Lanka’s history is a rich tapestry of <br>faith, resilience, and cultural fusion shaped by centuries of global exchange.</p>
+</div>
+<div class="max-w-3xl mx-auto space-y-8 relative border-l border-slate-300 pl-8">
+<!-- History: Ancient -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-Sr-yellow"></div>
+<h4 class="text-Sr-yellow font-sans text-xl font-semibold mb-6">古代</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">シンハラ王朝&nbsp;&nbsp;タンバパニ王国<span class="text-xs text-slate-500 block md:inline md:ml-2">（紀元前543年～紀元前437年） </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">ヴィジャヤ王子による建国。紀元前543年、インドから渡来したヴィジャヤ王子によって建国されたという伝説が残っており、これがスリランカにおけるシンハラ王朝の歴史の始まりと位置づけられています。
+</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">シンハラ王朝&nbsp;&nbsp;アヌラーダプラ王国<span class="text-xs text-slate-500 block md:inline md:ml-2">（紀元前437年～993年） </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">仏教が伝来し、文化が発展。タンバパンニ王国のあとに続く時代として、スリランカ史上、最も長く続いたシンハラ人の王国（紀元前4世紀頃〜紀元後11世紀初頭）とされています。
+</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">シンハラ王朝&nbsp;&nbsp;ポロンナルワ王国 <span class="text-xs text-slate-500 block md:inline md:ml-2">（993年～1250年） </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">チョーラ朝の影響を受けつつ、統一を達成。アヌラーダプラに次ぐスリランカ第2の古都であり、11世紀から13世紀にかけて繁栄しました。南インドのチョーラ朝を撃退したウィジャヤバーフ1世によって、シンハラ王朝の首都として確立されました。
+
+</p>
+</div>
+
+
+</div>
+</div>
+<!-- History: Medieval -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-Sr-yellow"></div>
+<h4 class="text-Sr-yellow font-sans text-xl font-semibold mb-6">中世</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">ジャフナ王国 <span class="text-xs text-slate-500 block md:inline md:ml-2">（1215年～1619年） </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">北部を中心にタミル文化が栄える。スリランカ北部に存在したタミル人による独立国家（タミル王朝）
+</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">キャンディ王国<span class="text-xs text-slate-500 block md:inline md:ml-2">（1469年～1815年）  </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">山岳地帯で独自の文化を発展。</p>
+<h6 class="text-yemen-red text-sm font-serif font-bold mt-2 mb-0">シンハラ朝（1469年〜1739年）</h6>
+<p class="text-xs text-slate-600 leading-relaxed">&nbsp;&nbsp;宗教：仏教</p>
+<p class="text-xs text-slate-600 leading-relaxed">&nbsp;&nbsp;シンハラ人の王たちは伝統的な仏教徒であり、王権の正統性を示すために「仏歯（ブッダの歯）」を大切に守護しました。</p>
+<h6 class="text-yemen-red text-sm font-serif font-bold mt-2 mb-0">ナヤッカール朝（1739年〜1815年）</h6>
+<p class="text-xs text-slate-600 leading-relaxed">&nbsp;&nbsp;宗教：元々はヒンドゥー教 → 形式的に仏教へ改宗</p>
+<p class="text-xs text-slate-600 leading-relaxed">&nbsp;&nbsp;彼らは南インド（タミル・ナードゥ地方）出身のヒンドゥー教徒でしたが、仏教国であるキャンディ王国の王になる条件として、仏教に改宗し、仏教寺院を厚く保護しました。</p>
+<p class="text-xs text-slate-600 leading-relaxed">&nbsp;&nbsp;しかし、王宮内では密かにヒンドゥー教の儀礼も続けられていたと言われており、文化的には仏教とヒンドゥー教が融合した独特な形態をとっていました。</p>
+</div>
+
+</div>
+</div>
+<!-- History: Early Modern -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-Sr-yellow"></div>
+<h4 class="text-Sr-yellow font-sans text-xl font-semibold mb-6">近世</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">ポルトガル、オランダ、イギリスの支配<span class="text-xs text-slate-500 block md:inline md:ml-2">（16世紀～1948年）  </span></h5>
+<h6 class="text-yemen-red text-sm font-serif font-bold mt-2 mb-0">ポルトガル（1505年〜1658年）</h6>
+<p class="text-xs text-slate-600 mt-0 mb-2">海岸地帯を支配し、カトリックの布教やシナモン貿易を独占しました。</p>
+<h6 class="text-yemen-red text-sm font-serif font-bold  mt-2 mb-0">オランダ（1658年〜1796年）</h6>
+<p class="text-xs text-slate-600 mt-0 mb-2">キャンディ王国と協力してポルトガルを追い出しましたが、そのまま海岸地帯を乗っ取り、より組織的な商業支配を行いました。</p>
+<h6 class="text-yemen-red text-sm font-serif font-bold  mt-2 mb-0">イギリス（1796年〜1948年）</h6>
+<p class="text-xs text-slate-600 mt-0 mb-2">アミアン条約によりスリランカは英国植民地となる（1802年）ナポレオン戦争の影響でオランダから支配権を奪い、最終的に1815年、難攻不落だったキャンディ王国を滅ぼして島全体を統一しました。</p>
+
+<p class="text-xs text-slate-600 leading-relaxed">植民地時代を経て、イギリス領セイロンとして統治。
+</p>
+</div>
+
+</div>
+</div>
+<!-- History: Modern -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-Sr-yellow"></div>
+<h4 class="text-Sr-yellow font-sans text-xl font-semibold mb-6">近現代・現代</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">スリランカ独立 <span class="text-xs text-slate-500 block md:inline md:ml-2">（1948年） </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">イギリスから独立し、自治領としての地位を確立。</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">スリランカ共和国<span class="text-xs text-slate-500 block md:inline md:ml-2">（1972年～現在）  </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed mb-6">共和制への移行。</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">スリランカ民主社会主義共和国<span class="text-xs text-slate-500 block md:inline md:ml-2">（1978年～現在）</span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">政府軍、北部LTTE支配地域を全て奪取。内戦終結。</p>
+<p class="text-xs text-slate-600 leading-relaxed">内戦終結後、経済と社会の再建を進める。スリランカの歴史は、仏教文化や植民地支配、内戦など多様な要素が絡み合っています。
+</p>
+</div>
+
+<div>
+<div class="space-y-6 border-t border-slate-100 pt-6">
+   
+</div>
+</div>
+
+</div>
+</div>
+</div>
+<p class="text-left text-slate-600 text-sm mt-6 font-bold max-w-2xl mx-auto">スリランカ内戦</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto">&nbsp;&nbsp;1983年から2009年にかけて展開されたスリランカ政府と<span class="text-left text-slate-600 text-sm mt-6 font-bold max-w-2xl mx-auto">タミル・イーラム解放のトラ </span>(LTTE) による内戦。スリランカ政府軍がLTTE支配地域を制圧して26年にわたる内戦は終結した。
+</p>
+<p class="text-left text-slate-600 text-sm mt-6 font-bold max-w-2xl mx-auto">タミル・イーラム解放のトラ(LTTE)</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto">&nbsp;&nbsp;かつてスリランカで武装闘争を行っていたタミル人のテロ組織である。スリランカ北部と東部にタミル人の独立国家タミル・イーラムを建国し、スリランカからの分離独立の獲得を主張して設立された。
+2009年に壊滅するまで、タミル人の分離独立(タミル・イーラム建国)に必要な土地の一部を管理下においていた。</p>
+
+</div>
+</section>
+<!-- END: HistorySection -->
+<!-- BEGIN: Footer -->
+<footer class="bg-Sr-Brown text-white py-20 px-6 border-t border-white/5 relative z-10">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="col-span-1 md:col-span-2">
+<div class="flex items-center gap-3 mb-6">
+<div class="text-emerald-500">
+<svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景（深緑：スリランカの森林・茶畑） -->
+  <rect width="24" height="24" rx="4" fill="#1B4D3E""")/>>
+  
+  <!-- 山（霧がかった丘陵地帯） -->
+  <path d="M3 17L8 10L13 17Z" fill="#A7D08C" opacity="0.9""")/>>
+  <path d="M10 17L14.5 11.5L21 17Z" fill="#78B86F" opacity="0.7""")/>>
+  
+  <!-- 聖地・寺院（仏教・イスラム双方の親和性を意識したシルエット） -->
+  <!-- ドーム（ストゥーパ/モスクの共通項） -->
+  <path d="M9 14C9 12.5 10.5 11.5 12 11.5C13.5 11.5 15 12.5 15 14Z" fill="#F0F7DA""")/>>
+  
+  <!-- 建物本体 -->
+  <rect x="9" y="14" width="6" height="2" fill="#F0F7DA""")/>>
+  
+  <!-- 塔（ミナレット/ダゴバの尖塔） -->
+  <rect x="16.5" y="12" width="1" height="5" fill="#F0F7DA""")/>>
+  <circle cx="17" cy="11.5" r="0.6" fill="#F0F7DA""")/>>
+  
+  <!-- 蓮の花のアクセント（足元に小さく） -->
+  <circle cx="5" cy="18" r="0.8" fill="#FFB7C5" opacity="0.8""")/>>
+  <circle cx="19" cy="18" r="0.8" fill="#FFB7C5" opacity="0.8""")/>>
+</svg>
+</div>
+<span class="text-white font-serif text-lg tracking-wider font-semibold">Sri Lanka Discovery</span>
+</div>
+<p class="text-white text-sm max-w-sm mb-8">
+            Curating bespoke luxury travel experiences for discerning explorers seeking the emerald hills and sapphire shores of the Indian Ocean.
+          </p>
+</div>
+<div>
+<h6 class="text-k-yellow font-serif text-sm mb-6 uppercase tracking-widest">Navigation</h6>
+<ul class="space-y-4 text-sm text-white/60">
+<li><a class="hover:text-white transition-colors" href="#Landmarks">Landmarks</a></li>
+<li><a class="hover:text-white transition-colors" href="#cities">Cities</a></li>
+<li><a class="hover:text-white transition-colors" href="#cuisine">Cuisine</a></li>
+<li><a class="hover:text-white transition-colors" href="#history">History</a></li>
+</ul>
+</div>
+<div>
+<h6 class="text-k-yellow font-serif text-sm mb-6 uppercase tracking-widest">Connect</h6>
+<ul class="space-y-4 text-sm text-white/60">
+<li><a class="hover:text-white transition-colors" href="#">Instagram</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Twitter</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Contact Us</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 mt-10 mb-4"><p class="text-xs text-white">© 2026 Sri Lanka Discovery. All rights reserved.</p>
+<div class="flex gap-8 text-xs text-white/80">
+<a href="#">Privacy Policy</a>
+<a href="#">Terms of Service</a>
+</div></div>
+<button onclick="window.close(); setTimeout(() => { window.location.href = 'https://google.com'; }, 100);" 
+          class="flex items-center gap-1 px-3 py-0.5 ml-auto md:ml-auto bg-brand-emerald hover:opacity-80 text-white font-medium rounded-full transition-all shadow-sm">
+    <span class="material-symbols-outlined text-white/80 text-xs">logout</span>
+    <span class="tracking-wider text-white/80 text-xs">QUIT</span>
+  </button>
+
+
+</footer>
+<!-- END: Footer -->
+</main>
+<style data-purpose="animations">
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+<script>
+    document.getElementById('searchInput').addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+            const searchTerm = this.value.trim();
+            if (searchTerm) {
+                const wikipediaUrl = `https://ja.wikipedia.org/wiki/特別:検索?search=${encodeURIComponent(searchTerm)}`;
+                window.open(wikipediaUrl, '_blank');
+            }
+        }
+    });
+</script>
+</body></html>

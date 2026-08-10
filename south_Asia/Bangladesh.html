@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Bangladesh Discovery | Luxury Travel Experience</title>
+<meta content="Explore the ancient landmarks, vibrant cities, and rich history of Bangladesh." name="description"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="../menu.js"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'lebanon-dark': '#102219',
+            'lebanon-gold': '#C5A059',
+            'lebanon-green': '#2D5A27',
+            "primary": "#144bb8",
+            "background-light": "#f6f6f8",
+            "background-dark": "#111621",
+            // 追加
+            "al-adaam": "#8D1B3D",
+            "qatar-gold": "#C5A059",  
+            "e-green": "#50C878",
+            "B-purple-dark": "#006400",
+            "qatar-gold": "#C5A059",
+            "qatar-blue": "#1e3a8a",
+            "oman-blue": "#003153",
+            "yemen-red": "#CE1126",
+            "Bahrain-red": "#DA291C",
+            "B-purple-dark": "#632276",
+            "B-purple": "#D1A7E2",
+            "B-yellow": "#ffff66",
+            "Kaza-blue": "#00A3DD",
+            "Kaza-blue-dark": "#003366",
+            "U-blue": "#99ffcc", //ターコイズブルー//
+            "U-blue-bg": "#006699",
+            "k-yellow": "#ffcc00",
+            "k-red": "#cc3333",
+            "k-yellow-c": "#ccff33",
+            "silk-road-white": "#fdfdfd",
+            "t-green": "#006600",
+            "t-green-light": "#99cc99",
+            "Af-red": "#ff0099",
+            "Af-navy": "#0B1F3A",
+            "Sr-Brown": "#993300",
+            "Sr-yellow": "#cc9933",
+            "B-green": "#33cc00",
+            "e-green-dark": "#006400",
+             },
+          fontFamily: {
+            serif: ['Newsreader', 'serif'],
+            sans: ['Inter', 'sans-serif'],
+          },
+          backgroundImage: {
+            'Kazakhstan-hero': "url('img/Sri Lanka_bg.jpg')",
+          }
+        }
+      }
+    }
+  </script>
+<style data-purpose="custom-styling">body {
+    background-color: #f0f9ff;
+    color: #1e293b
+    }
+.glass-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 1rem
+    }
+.text-balance {
+    text-wrap: balance
+    }
+.section-spacing {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem
+    }
+/* Pattern Overlay */
+.bg-pattern {
+    background-image: url(img/Bangladesh_bg.jpg);
+    opacity: 0.25
+    }</style>
+</head>
+<body class="font-sans antialiased overflow-x-hidden">
+<!-- BEGIN: Background Texture -->
+<div class="fixed inset-0 bg-pattern pointer-events-none z-0"></div>
+<!-- END: Background Texture -->
+<!-- BEGIN: MainHeader -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-e-green-dark backdrop-blur-md border-b border-white/5">
+<nav class=" max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<!-- Logo -->
+<a class="flex items-center gap-3 group" href="#">
+<div class="text-white-500 transform group-hover:scale-110 transition-transform">
+<svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景（深緑：豊かなデルタ地帯） -->
+  <rect width="24" height="24" rx="4" fill="#0B3D2E"/>
+
+  <!-- 川（ガンジス・ブラマプトラの流れ） -->
+  <path d="M2 14C6 12 10 16 14 14C18 12 20 15 22 14V20H2Z" fill="#4DB6AC" opacity="0.9"/>
+
+  <!-- 小舟（生活の象徴） -->
+  <path d="M9 13H15L14 14H10Z" fill="#F5F5F5"/>
+  <line x1="12" y1="10" x2="12" y2="13" stroke="#F5F5F5" stroke-width="0.8"/>
+  <path d="M12 10L14 12H12Z" fill="#F5F5F5"/>
+
+  <!-- モスク（バングラ特有の丸みある建築） -->
+  <!-- ドーム -->
+  <path d="M8 11C8 9.8 9.8 9 12 9C14.2 9 16 9.8 16 11Z" fill="#E8F5E9"/>
+
+  <!-- 建物 -->
+  <rect x="8" y="11" width="8" height="2" fill="#E8F5E9"/>
+
+  <!-- ミナレット -->
+  <rect x="6.5" y="10" width="1" height="4" fill="#E8F5E9"/>
+  <circle cx="7" cy="9.5" r="0.5" fill="#E8F5E9"/>
+
+  <!-- 水辺の草 -->
+  <path d="M4 18L5 16L6 18" stroke="#A5D6A7" stroke-width="0.6"/>
+  <path d="M18 18L19 16L20 18" stroke="#A5D6A7" stroke-width="0.6"/>
+</svg>
+</div>
+<span class="text-white font-serif text-xl font-semibold">Bangladesh Discovery</span>
+</a>
+<!-- Desktop Navigation -->
+<div id="navMenu" class="hidden md:flex items-center gap-9 
+    absolute top-full left-0 w-full bg-e-green-dark backdrop-blur-md flex-col p-6 shadow-lg z-50
+    md:absolute md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 md:w-auto md:flex-row md:p-0 md:shadow-none">
+<a class="text-white text-sm font-medium hover:text-k-red transition-colors tracking-widest uppercase" href="#Landmarks">Landmarks</a>
+<a class="text-white text-sm font-medium hover:text-k-red transition-colors tracking-widest uppercase" href="#cities">Cities</a>
+<a class="text-white text-sm font-medium hover:text-k-red transition-colors tracking-widest uppercase" href="#cuisine">Cuisine</a>
+<a class="text-white text-sm font-medium hover:text-k-red transition-colors tracking-widest uppercase" href="#history">History</a>
+</div>
+<!-- Search Bar -->
+<div class="relative hidden lg:block" data-purpose="search-container">
+<span class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+<svg class="w-4 h-4 text-B-purple-dark/50" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</span>
+<input id="searchInput" class="bg-white/5 border-white/10 text-white pl-10 pr-4 py-2 rounded-lg focus:ring-B-purple-dark focus:border-B-purple-dark w-64 text-sm" placeholder="Wikipedia検索" type="text"/>
+</div>
+
+<!-- Mobile Menu Button (Icon only) -->
+<div class="md:hidden">
+<button
+    id="menuButton"
+    class="md:hidden flex items-center justify-center text-white hover:text-white/80 transition-colors">
+    <span class="material-symbols-outlined text-3xl">
+        menu
+    </span>
+</button>
+</nav>
+</header>
+<!-- END: MainHeader -->
+<!-- BEGIN: HeroSection -->
+<main class="relative">
+<section class="relative flex items-center justify-center overflow-hidden h-[90vh]">
+<!-- Hero Background Image -->
+<div class="absolute inset-0 z-0">
+<img alt="Bangladesh" class="w-full h-full object-cover brightness-50" src="img/Bangladesh.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-b from-[#003153]/60 via-transparent to-[#f0f9ff]"></div>
+</div>
+<div class="relative z-10 text-center px-6 max-w-4xl">
+<h2 class="text-k-yellow font-serif italic text-xl md:text-2xl mb-4 opacity-0 animate-[fadeIn_1s_ease-out_forwards]">Delta of Passion and Chaos</h2>
+<h1 class="text-white text-4xl md:text-7xl lg:text-4xl font-serif mb-8 leading-tight opacity-0 animate-[fadeIn_1s_ease-out_0.3s_forwards]">
+         Bangladesh: A journey through the echoes of ancient terracotta and the rhythm of the tides.</h1>
+<p class="text-lg md:text-xl text-white/80 font-light max-w-2xl mx-auto mb-10 text-balance opacity-0 animate-[fadeIn_1s_ease-out_0.6s_forwards]">
+        From the sway of a rickshaw to the river's edge. </p>
+<!-- <a class="inline-block bg-B-purple-dark text-lebanon-dark px-10 py-4 font-semibold tracking-widest uppercase text-sm hover:scale-105 transition-transform opacity-0 animate-[fadeIn_1s_ease-out_0.9s_forwards]" href="#landmarks">
+          Explore Destinations
+        </a>-->
+</div>
+<!-- Scroll Indicator -->
+<!--<div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce opacity-60">
+<svg class="h-6 w-6" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M19 14l-7 7m0 0l-7-7m7 7V3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>-->
+</section>
+<!-- END: HeroSection -->
+
+
+<!-- BEGIN: LandmarksSection -->
+<section class="section-spacing px-6 relative" id="Landmarks">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
+<div class="max-w-2xl">
+<h2 class="text-lebanon-green font-serif text-sm mb-2 uppercase tracking-[0.3em]">Delta of Faith & Layers of Time</h2>
+<h3 class="text-e-green-dark text-3xl md:text-4xl font-serif">Iconic Landmarks</h3>
+</div>
+<p class="text-orange/90 max-w-md text-sm">From ancient Buddhist monasteries to Mughal forts and timeless mosques, journey through Bangladesh’s historic landscapes where shifting rivers and enduring cultures quietly shape a layered past.
+</p>
+</div>
+<!--<div class="grid grid-cols-2 lg:grid-cols-3 gap-4">-->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+<!-- Item 1: Lalbagh Fort -->
+<div class="flex flex-col">
+<div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+<img alt="Lalbagh Fort" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="img/Lalbagh_Fort.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+<div class="absolute bottom-0 left-0 p-4">
+<span class="text-[10px] text-lebanon-gold uppercase tracking-widest block mb-1">Landmark</span>
+<h4 class="text-lg font-serif text-white">Lalbagh Fort</h4>
+</div>
+</div>
+<!-- キャプション部分：写真の直下に配置 -->
+     <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4">An unfinished fortress from the Mughal era. It is the clearest embodiment of the "remnants of the empire" in Bangladesh.   </p>
+  </div>
+<!-- Item 2: Somapura Mahavihara -->
+ <div class="flex flex-col">
+<div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+<img alt="Somapura Mahavihara" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="img/Somapura_Mahavihara.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+<div class="absolute bottom-0 left-0 p-4">
+<span class="text-[10px] text-lebanon-gold uppercase tracking-widest block mb-1">Landmark</span>
+<h4 class="text-lg font-serif text-white">Somapura Mahavihara </h4>
+</div>
+</div>
+<!-- キャプション部分：写真の直下に配置 -->
+     <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4">One of the largest Buddhist monastic ruins in South Asia. Although it is now a Muslim nation, you can see the depth of its history as a former Buddhist cultural sphere.</p>
+  </div>
+<!-- Item 3: Sixty Dome Mosque-->
+ <div class="flex flex-col">
+<div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+<img alt="Sixty Dome Mosque" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="img/Sixty_Dome_Mosque.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+<div class="absolute bottom-0 left-0 p-4">
+<span class="text-[10px] text-lebanon-gold uppercase tracking-widest block mb-1">Landmark</span>
+<h4 class="text-lg font-serif text-white">Sixty Dome Mosque</h4>
+</div>
+</div>
+<!-- キャプション部分：写真の直下に配置 -->
+     <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4">A mosque that actually has many domes rather than just "sixty." The level of architectural perfection of this Islamic structure in a rural area is remarkable.</p>
+  </div>
+</div>
+</div>
+</section>
+<!-- END: LandmarksSection -->
+<!-- BEGIN: CitiesSection -->
+<section class="section-spacing px-6 relative" id="cities">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
+<div class="max-w-2xl">
+<h2 class="text-lebanon-green font-serif text-sm mb-2 uppercase tracking-[0.3em]">Crowded Capitals & Quiet Green Escapes</h2>
+<h3 class="text-e-green-dark text-3xl md:text-4xl font-serif">Cities of Distinction</h3>
+</div>
+<p class="text-orange/90 max-w-md text-sm">From the relentless energy of Dhaka to the industrial pulse of Chittagong and the lush calm of Sylhet, discover cities where density, trade, and nature shape the many faces of Bangladesh.
+</p>
+</div>
+<div class="space-y-20">
+<!-- Dhaka-->
+<div class="flex flex-col md:flex-row items-center gap-10">
+<div class="w-full md:w-1/2">
+<img alt="Dhaka" class="rounded-2xl shadow-xl" src="img/Dhaka.jpg"/>
+</div>
+<div class="w-full md:w-1/2">
+<span class="text-primary font-bold uppercase tracking-widest text-sm">Dense, chaotic, and relentlessly alive.
+</span>
+<h3 class="text-Sr-Brown text-3xl mt-2 mb-4">Dhaka</h3>
+<p class="text-Af-navy dark:text-orange-100 text-lg mb-6 leading-relaxed font-serif">The capital—ranked among the world’s highest in population density and sheer chaos. An unavoidable reality when speaking of Bangladesh.The photograph shows the National Parliament Building of Bangladesh, designed by American architect Louis Kahn, often regarded as the last great master of modern architecture.</p>
+</div>
+</div>
+<!-- Chittagong-->
+<div class="flex flex-col md:flex-row-reverse items-center gap-10">
+<div class="w-full md:w-1/2">
+<img alt="Chittagong" class="rounded-2xl shadow-xl" src="img/Chittagong.jpg"/>
+</div>
+<div class="w-full md:w-1/2">
+<span class="text-primary font-bold uppercase tracking-widest text-sm">Industrial gateway shaped by port and trade.
+</span>
+<h3 class="text-Sr-Brown text-3xl mt-2 mb-4">Chittagong</h3>
+<p class="text-Af-navy dark:text-orange-100 text-lg mb-6 leading-relaxed font-serif">The largest port city, serving as the nation’s hub of logistics and industry—another face of Bangladesh, second only to Dhaka in economic importance.
+</p>
+</div>
+</div>
+<!-- Sylhet -->
+<div class="flex flex-col md:flex-row items-center gap-10">
+<div class="w-full md:w-1/2">
+<img alt="Sylhet" class="rounded-2xl shadow-xl" src="img/Sylhet.jpg"/>
+</div>
+<div class="w-full md:w-1/2">
+<span class="text-primary font-bold uppercase tracking-widest text-sm">Lush tea country with a quieter rhythm.</span>
+<h3 class="text-Sr-Brown text-3xl mt-2 mb-4">Sylhet</h3>
+<p class="text-Af-navy dark:text-orange-100 text-lg mb-6 leading-relaxed font-serif">A region of tea estates and lush greenery, offering a comparatively calm and tranquil image within Bangladesh.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Cities Section -->
+
+</div>
+</div>
+</section>
+<!-- END: CitiesSection -->
+<!--BEGIN: Cuisine -->
+<section class="px-4 py-16 md:px-10" id="cuisine">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-12">
+<h2 class="text-Af-red text-3xl md:text-4xl font-serif">River Flavors & Delta Traditions
+</h2>
+<p class="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">From mustard-laced fish curries to hearty rice and lentil dishes and delicate rice sweets, Bangladesh’s cuisine reflects a land shaped by rivers, seasons, and enduring culinary traditions.
+</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Package 1 -->
+<div class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:shadow-xl transition-shadow">
+<div class="h-56 w-full overflow-hidden">
+<img alt="Hilsa curry" class="w-full h-full object-cover transition-transform group-hover:scale-105" data-alt="Hilsa curry" src="img/Hilsa_curry.jpg"/>
+</div>
+<div class="p-4">
+<div class="flex justify-between items-start mb-1">
+<h3 class="text-xl font-bold">Hilsa curry</h3>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-400 mb-6 line-clamp-2">A classic Bengali home dish made with hilsa (ilish), Bangladesh’s national fish.</p>
+<div class="flex items-center justify-between">
+</div>
+</div>
+</div>
+<!-- Package 2 -->
+<div class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:shadow-xl transition-shadow">
+<div class="h-56 w-full overflow-hidden">
+<img alt="Bhuna Khichuri" class="w-full h-full object-cover transition-transform group-hover:scale-105" data-alt="Bhuna Khichuri" src="img/Bhuna_Khichuri.jpg"/>
+</div>
+<div class="p-4">
+<div class="flex justify-between items-start mb-1">
+<h3 class="text-xl font-bold">Bhuna Khichuri</h3>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-400 mb-6 line-clamp-2">A rich Bengali khichuri of spiced rice and lentils, cooked into a dry, curry-like dish.</p>
+<div class="flex items-center justify-between">
+</div>
+</div>
+</div>
+<!-- Package 3 -->
+<div class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:shadow-xl transition-shadow">
+<div class="h-56 w-full overflow-hidden">
+<img alt="Pitha" class="w-full h-full object-cover transition-transform group-hover:scale-105" data-alt="Pitha" src="img/Pitha.jpg"/>
+</div>
+<div class="p-4">
+<div class="flex justify-between items-start mb-1">
+<h3 class="text-xl font-bold">Pitha</h3>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-400 mb-6 line-clamp-2">A traditional sweet made from rice flour.</p>
+<div class="flex items-center justify-between">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- BEGIN: HistorySection -->
+<section class="bg-[#ffcc33]/20 section-spacing px-6 relative overflow-hidden" id="history">
+<div class="max-w-5xl mx-auto"><div class="text-center mb-12">
+<h2 class="text-k-red font-serif text-sm mb-2 uppercase tracking-[0.3em]">バングラデシュ人民共和国の歴史</h2>
+<h3 class="text-yemen-red text-3xl md:text-4xl font-serif">Delta of Ancient Kingdoms</h3>
+<p class="text-xs text-Af-navy leading-relaxed">From early Buddhist heritage to Mughal rule, colonial encounters, and independence, <br>Bangladesh’s history is a layered story of faith, resilience, and cultural fusion shaped by its riverine world. </p>
+</div>
+<div class="max-w-3xl mx-auto space-y-8 relative border-l border-slate-300 pl-8">
+<!-- History: Ancient -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-yemen-red"></div>
+<h4 class="text-yemen-red font-sans text-xl font-semibold mb-6">古代</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">インダス文明<span class="text-xs text-slate-500 block md:inline md:ml-2">（紀元前3300年頃～紀元前1300年頃） </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">モヘンジョダロやハラッパーなどの都市が栄えた青銅器時代の文明。</p>
+
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">アケメネス朝ペルシア<span class="text-xs text-slate-500 block md:inline md:ml-2">（紀元前6世紀～紀元前330年） </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">ダリウス1世の時代にインダス川流域を支配。</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">マウリヤ朝 <span class="text-xs text-slate-500 block md:inline md:ml-2">（紀元前321年～紀元前185年） </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">アショーカ王の時代に仏教が広まり、インド亜大陸全体を統一。
+</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">グプタ朝 <span class="text-xs text-slate-500 block md:inline md:ml-2">（4世紀～6世紀） </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">ヒンドゥー教文化が発展し、経済と学問が繁栄。
+</p>
+</div>
+
+
+</div>
+</div>
+<!-- History: Medieval -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-yemen-red"></div>
+<h4 class="text-yemen-red font-sans text-xl font-semibold mb-6">中世</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">パーラ朝 <span class="text-xs text-slate-500 block md:inline md:ml-2">（8世紀～12世紀） </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">仏教文化が栄え、パハルプールの仏教寺院遺跡群が建設される。
+</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">セーナ朝<span class="text-xs text-slate-500 block md:inline md:ml-2">（12世紀）  </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">ヒンドゥー教の王朝が支配。カースト制の導入やヒンドゥー文化が花開く。
+</p>
+</div>
+<div class="flex gap-1">
+  <!-- flex-1 を追加 -->
+  <div class="flex-1">
+    <h5 class="text-lg font-serif text-slate-800 font-bold mb-1">デリー・スルターン朝 <span class="text-xs text-slate-500 block md:inline md:ml-2">（1206年 - 1526年） </span></h5>
+    <p class="text-xs text-slate-600 leading-relaxed">イスラム教の影響が強まり、北インドを支配。</p>
+    <h6 class="text-lebanon-green text-xs font-serif font-bold mt-2 mb-0">奴隷王朝（1206年〜90年）</h6>
+    <p class="text-xs text-slate-600 leading-relaxed"></p>
+    <h6 class="text-lebanon-green text-xs font-serif font-bold mt-2 mb-0">ハルジー朝（1209年〜1320年）</h6>
+    <p class="text-xs text-slate-600 leading-relaxed"></p>
+    <h6 class="text-lebanon-green text-xs font-serif font-bold mt-2 mb-0">トゥグルク朝（1320年〜1414年）</h6>
+    <p class="text-xs text-slate-600 leading-relaxed"></p>
+    <h6 class="text-lebanon-green text-xs font-serif font-bold mt-2 mb-0">サイイド朝（1414年〜51年）</h6>
+    <p class="text-xs text-slate-600 leading-relaxed"></p>
+    <h6 class="text-lebanon-green text-xs font-serif font-bold mt-2 mb-0">ロディー朝1451～1526（1451年〜1526年）</h6>
+    <p class="text-xs text-slate-600 leading-relaxed"></p>
+  </div>
+
+  <!-- flex-1 を追加 -->
+  <div class="flex-1">
+    <h5 class="text-lg font-serif text-slate-800 font-bold mb-1">ベンガル・スルターン朝<span class="text-xs text-slate-500 block md:inline md:ml-2">（1342年～1576年）  </span></h5>
+    <p class="text-xs text-slate-600 leading-relaxed">デリーの「トゥグルク朝」が弱体化した隙を突き、シャムスッディーン・イリヤース・シャーがベンガルを統一して独立を宣言。ベンガル王国とも呼ばれる。ムガル帝国のアクバルに滅ぼされる。
+
+</p>
+  </div>
+</div>
+
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">ムガル帝国<span class="text-xs text-slate-500 block md:inline md:ml-2">（16世紀～18世紀）  </span></h5>
+<p class="text-xs text-slate-600 mt-0 mb-2">アクバル大帝やシャー・ジャハーンの時代に文化と建築が発展。</p>
+</div>
+
+</div>
+</div>
+<!-- History: Early Modern -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-yemen-red"></div>
+<h4 class="text-yemen-red font-sans text-xl font-semibold mb-6">近世</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">イギリス東インド会社の支配<span class="text-xs text-slate-500 block md:inline md:ml-2">（18世紀後半～19世紀）  </span></h5>
+<p class="text-xs text-slate-600 mt-0 mb-2">プラッシーの戦いを経て植民地化。
+</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">イギリス領インド帝国<span class="text-xs text-slate-500 block md:inline md:ml-2">（19世紀～1947年）  </span></h5>
+<p class="text-xs text-slate-600 mt-0 mb-2">ベンガル地方とインダス川流域がイギリスの統治下に。
+</p>
+</div>
+
+</div>
+</div>
+<!-- History: Modern -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-yemen-red"></div>
+<h4 class="text-yemen-red font-sans text-xl font-semibold mb-6">近現代・現代</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">東西パキスタン時代 <span class="text-xs text-slate-500 block md:inline md:ml-2">（1947年～1971年） </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">インド独立後、宗教的背景に基づき分割され、東パキスタン（現在のバングラデシュ）と西パキスタン（現在のパキスタン）として統一国家を形成。
+</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">バングラデシュ独立<span class="text-xs text-slate-500 block md:inline md:ml-2">（1971年）  </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed mb-0">東パキスタンが独立戦争を経てバングラデシュ人民共和国として誕生。</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">バングラデシュ人民共和国<span class="text-xs text-slate-500 block md:inline md:ml-2">（1971年～現在）  </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed mb-0">1975年8月15日バングラデシュ・クーデター：中級将校たちが起こした軍事クーデター</p>
+<p class="text-xs text-slate-600 leading-relaxed mb-0">1990年末、大規模な民主化運動によって軍事政権（エルシャド政権）が崩壊し、バングラデシュは民主化へと舵を切りました。</p>
+<p class="text-xs text-slate-600 leading-relaxed mb-0">ダッカ・レストラン襲撃人質テロ事件（2016年）</p>
+<p class="text-xs text-slate-600 leading-relaxed mb-0">ムハンマド・ユヌス氏率いる暫定政権（2024年～2026年2月）</p>
+<p class="text-xs text-slate-600 leading-relaxed mb-4">タリク・ラフマン（カレダ・ジア氏の息子）新首相率いる民選政権へ（2026年2月～）</p>
+<p class="text-xs text-slate-600 leading-relaxed mb-1">「過酷な環境」の代名詞</p>
+<p class="text-xs text-slate-600 leading-relaxed mb-0">世界一の人口密度と渋滞: 首都ダッカの渋滞は世界最悪レベルで、数キロ進むのに数時間かかることも。移動だけで体力を削られます。</p>
+<p class="text-xs text-slate-600 leading-relaxed mb-0">大気汚染と衛生面: 乾季の粉塵や、水・食品の衛生管理など、生活環境としてはかなりハードです。</p>
+<p class="text-xs text-slate-600 leading-relaxed mb-0">テロの記憶: 2016年のダッカ襲撃テロ事件以降、警備が非常に厳しくなり、かつてのように自由に出歩くのが難しくなった時期があることも、心理的なハードルになっています。</p>
+
+</div>
+
+<div>
+<div class="space-y-6 border-t border-slate-100 pt-6">
+   
+</div>
+</div>
+
+</div>
+</div>
+</div>
+<div>
+<p class="text-left text-slate-600 text-sm mt-6 font-bold max-w-2xl mx-auto">ダッカ・レストラン襲撃人質テロ事件(2016年)</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto">&nbsp;&nbsp;2016年のダッカ襲撃テロ事件（ダッカ・レストラン襲撃人質テロ事件）は、
+  バングラデシュの首都ダッカで発生した、日本人7人を含む20人以上の民間人が犠牲となった大規模なテロ事件。2016年のダッカ襲撃テロ事件の犯人は、バングラデシュの
+  過激派組織「<span class="text-left text-slate-600 text-sm mt-6 font-bold max-w-2xl mx-auto">ジャマトゥル・ムジャヒディン・バングラデシュ（JMB）」、特に過激派組織ISに忠誠を誓う分派（通称：新JMB）</span>のメンバーの犯行とされている。
+<p class="text-left text-slate-600 text-sm mt-6 font-bold max-w-2xl mx-auto">2024年の学生主導による大規模デモ</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto">&nbsp;&nbsp;シェイク・ハシナ前政権下で、反体制派やジャーナリストを不当に拘束・拷問するために利用されていた、通称「アイナ・グール（Ayna Ghar / 鏡の家）」と呼ばれる秘密の収容施設が存在しました。ハシナ氏の父はバングラデシュで「建国の父」と仰がれるムジブル・ラーマン初代大統領でした。
+  しかし、1975年、軍事クーデターにより、暗殺され、当時ドイツにいた長女のハシナ氏と妹だけが生き残りました。
+</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto">&nbsp;&nbsp;2024年にバングラデシュで発生した学生主導のデモは、当初の目的であった公務員採用制度の改革から、15年続いたシェイク・ハシナ政権を崩壊させる歴史的な民衆蜂起（<span class="text-left text-slate-600 text-sm mt-6 font-bold max-w-2xl mx-auto">「7月蜂起」や「Z世代革命」</span>とも呼ばれる）へと発展しました。</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto">発端（2024年6月〜7月上旬）: 公務員採用枠の約3割を独立戦争の英雄の遺族に割り当てる「クオータ制」の復活に学生が反発。若者の失業率が高い中で「不公平な特権」への怒りが爆発しました。</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto">激化（7月中旬）: 政府側が警察や与党支持の学生組織を動員して暴力的に弾圧したことで、事態は悪化。インターネット遮断や外出禁止令が出される中、死傷者が続出しました。</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto">政権崩壊（2024年8月5日）: 首都ダッカに向けた大規模な抗議行進「ダッカ大行進」に対し、軍が民衆への発砲を拒否。追い込まれたハシナ首相は辞任し、ヘリコプターでインドへ逃亡しました。</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto">その後: ノーベル平和賞受賞者のムハマド・ユヌス氏を首席顧問とする暫定政府が発足し、国家の立て直しが進められました。</p>
+
+
+
+<p class="text-left text-slate-600 text-sm mt-6 font-bold max-w-2xl mx-auto">圧倒的な親日:</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto">どこへ行っても歓迎され、日本への期待がダイレクトに伝わる現場は、外交官としてのやりがいが非常に大きいそうです。
+</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto">巨額の円借款: 日本にとってバングラデシュは世界最大級の援助（ODA）対象国。地下鉄建設や空港整備など、動くお金とプロジェクトの規模が巨大すぎて、担当者は常に多忙です。
+</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto">不安定な政局: 2024年の政変のように、急激な情勢変化が起きやすいため、常に緊張感を持って情報を追い続けなければなりません。
+</p>
+<p class="text-left text-slate-600 text-sm mt-6 font-bold max-w-2xl mx-auto">2026年現在の傾向</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto">今のバングラデシュは、かつての「食糧援助をもらう国」から、「ビジネスパートナーとして投資を受ける国」へと移行しつつあります。日本がこれほど多額の支援を続けているのは、こうした他国との競争の中で、戦略的なパートナーシップを維持したいという狙いもあります
+</p>
+<p class="text-left text-slate-600 text-sm mt-6 font-bold max-w-2xl mx-auto">2026年：一つの大きな節目（LDC卒業）</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto">2026年、バングラデシュは国連が定める「後発開発途上国（LDC）」を卒業する予定でしたが、2026年2月に政府は国連に対し、準備期間を3年延長して2029年11月まで先送りするよう正式に要請しました。</p>
+<p class="text-left text-slate-600 text-sm mt-6 font-bold max-w-2xl mx-auto">2030年代：インフラの完成と産業の多角化</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto">現在、日本が猛スピードで建設を支援している「深海港（マタバリ港）」や「経済特区」が本格稼働するのがこの時期です。今は衣類（ユニクロなどの製造）に頼り切りですが、ここでITや製造業を自国で回せるようになれば、日本にとって「安価な労働力」ではなく「強力なビジネスパートナー」になる日がやってくるでしょう。
+順調にいけば、2041年までに「先進国」の仲間入りをするという国家目標を掲げています。</p>
+
+<p class="text-left text-slate-600 text-sm mt-6 font-bold max-w-2xl mx-auto">「学生運動」が国家を変える伝統 </p>
+<p class="text-left text-slate-600 text-sm mt-1  max-w-2xl mx-auto">バングラデシュでは、1952年の言語運動（ベンガル語を守る運動）や1971年の独立戦争において、学生が常に変革の先頭に立ってきました。</p>
+<p class="text-left text-slate-600 text-sm mt-1  max-w-2xl mx-auto">1990年に民主化されたものの、ハシナ政権が長期化するにつれ、実態は独裁（権威主義）へと変質していきました。</p>
+<p class="text-left text-slate-600 text-sm mt-1  max-w-2xl mx-auto">クオータ制（優遇枠）の再導入は彼らにとって「特権階級による機会の独占」と映りました。</p>
+<p class="text-left text-slate-600 text-sm mt-1  max-w-2xl mx-auto">2024年のデモがこれほどまでに激化したのは、単なる政治理念の問題ではなく、学生たちの「将来の就職」に直結する問題だったからです。</p>
+<p class="text-left text-slate-600 text-sm mt-1  max-w-2xl mx-auto">ハシナ氏の発言: 抗議する学生たちを、独立戦争時の裏切り者を指す蔑称「ラザカル」と呼んだことが、学生たちの誇りを傷つけ、怒りに火をつけました。</p>
+<p class="text-left text-slate-600 text-sm mt-1  max-w-2xl mx-auto">「1990年の民主化を取り戻す」という皮肉な目的が、2024年「Z世代の革命」の原動力となったのです。</p>
+
+
+</div>
+</section>
+<!-- END: HistorySection -->
+<!-- BEGIN: Footer -->
+<footer class="bg-e-green-dark text-white py-20 px-6 border-t border-white/5 relative z-10">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="col-span-1 md:col-span-2">
+<div class="flex items-center gap-3 mb-6">
+<div class="text-emerald-500">
+<svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景（深緑：豊かなデルタ地帯） -->
+  <rect width="24" height="24" rx="4" fill="#0B3D2E"/>
+
+  <!-- 川（ガンジス・ブラマプトラの流れ） -->
+  <path d="M2 14C6 12 10 16 14 14C18 12 20 15 22 14V20H2Z" fill="#4DB6AC" opacity="0.9"/>
+
+  <!-- 小舟（生活の象徴） -->
+  <path d="M9 13H15L14 14H10Z" fill="#F5F5F5"/>
+  <line x1="12" y1="10" x2="12" y2="13" stroke="#F5F5F5" stroke-width="0.8"/>
+  <path d="M12 10L14 12H12Z" fill="#F5F5F5"/>
+
+  <!-- モスク（バングラ特有の丸みある建築） -->
+  <!-- ドーム -->
+  <path d="M8 11C8 9.8 9.8 9 12 9C14.2 9 16 9.8 16 11Z" fill="#E8F5E9"/>
+
+  <!-- 建物 -->
+  <rect x="8" y="11" width="8" height="2" fill="#E8F5E9"/>
+
+  <!-- ミナレット -->
+  <rect x="6.5" y="10" width="1" height="4" fill="#E8F5E9"/>
+  <circle cx="7" cy="9.5" r="0.5" fill="#E8F5E9"/>
+
+  <!-- 水辺の草 -->
+  <path d="M4 18L5 16L6 18" stroke="#A5D6A7" stroke-width="0.6"/>
+  <path d="M18 18L19 16L20 18" stroke="#A5D6A7" stroke-width="0.6"/>
+</svg>
+</div>
+<span class="text-white font-serif text-lg tracking-wider font-semibold">Bangladesh Discovery</span>
+</div>
+<p class="text-white text-sm max-w-sm mb-8">
+            Far beyond the history books, there’s a bond that words can’t capture. Grateful for the warmth of this pro-Japan soul.
+          </p>
+</div>
+<div>
+<h6 class="text-k-yellow font-serif text-sm mb-6 uppercase tracking-widest">Navigation</h6>
+<ul class="space-y-4 text-sm text-white/60">
+<li><a class="hover:text-white transition-colors" href="#Landmarks">Landmarks</a></li>
+<li><a class="hover:text-white transition-colors" href="#cities">Cities</a></li>
+<li><a class="hover:text-white transition-colors" href="#cuisine">Cuisine</a></li>
+<li><a class="hover:text-white transition-colors" href="#history">History</a></li>
+</ul>
+</div>
+<div>
+<h6 class="text-k-yellow font-serif text-sm mb-6 uppercase tracking-widest">Connect</h6>
+<ul class="space-y-4 text-sm text-white/60">
+<li><a class="hover:text-white transition-colors" href="#">Instagram</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Twitter</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Contact Us</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 mt-10 mb-4"><p class="text-xs text-white">© 2026 Bangladesh Discovery. All rights reserved.</p>
+<div class="flex gap-8 text-xs text-white/20">
+<a href="#">Privacy Policy</a>
+<a href="#">Terms of Service</a>
+</div></div>
+<button onclick="window.close(); setTimeout(() => { window.location.href = 'https://google.com'; }, 100);" 
+          class="flex items-center gap-1 px-3 py-0.5 ml-auto md:ml-auto bg-brand-emerald hover:opacity-80 text-white font-medium rounded-full transition-all shadow-sm">
+    <span class="material-symbols-outlined text-white/80 text-xs">logout</span>
+    <span class="tracking-wider text-white/80 text-xs">QUIT</span>
+  </button>
+
+</footer>
+<!-- END: Footer -->
+</main>
+<style data-purpose="animations">
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+<script>
+    document.getElementById('searchInput').addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+            const searchTerm = this.value.trim();
+            if (searchTerm) {
+                const wikipediaUrl = `https://ja.wikipedia.org/wiki/特別:検索?search=${encodeURIComponent(searchTerm)}`;
+                window.open(wikipediaUrl, '_blank');
+            }
+        }
+    });
+</script>
+</body></html>

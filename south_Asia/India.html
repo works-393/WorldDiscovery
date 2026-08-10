@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>India Discovery | Luxury Travel Experience</title>
+<meta content="Explore the ancient landmarks, vibrant cities, and rich history of India." name="description"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="../menu.js"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'lebanon-dark': '#102219',
+            'lebanon-gold': '#C5A059',
+            'lebanon-green': '#2D5A27',
+            "primary": "#144bb8",
+            "background-light": "#f6f6f8",
+            "background-dark": "#111621",
+            // 追加
+            "al-adaam": "#8D1B3D",
+            "qatar-gold": "#C5A059",  
+            "e-green": "#50C878",
+            "B-purple-dark": "#006400",
+            "qatar-gold": "#C5A059",
+            "qatar-blue": "#1e3a8a",
+            "oman-blue": "#003153",
+            "yemen-red": "#CE1126",
+            "Bahrain-red": "#DA291C",
+            "B-purple-dark": "#632276",
+            "B-purple": "#D1A7E2",
+            "B-yellow": "#ffff66",
+            "Kaza-blue": "#00A3DD",
+            "Kaza-blue-dark": "#003366",
+            "U-blue": "#99ffcc", //ターコイズブルー//
+            "U-blue-bg": "#006699",
+            "k-yellow": "#ffcc00",
+            "k-red": "#cc3333",
+            "k-yellow-c": "#ccff33",
+            "silk-road-white": "#fdfdfd",
+            "t-green": "#006600",
+            "t-green-light": "#99cc99",
+            "Af-red": "#ff0099",
+            "Af-navy": "#0B1F3A",
+            "I-orange": "#ff9900",
+            "silk-white": "#fdfdfd",
+
+                       },
+          fontFamily: {
+            serif: ['Newsreader', 'serif'],
+            sans: ['Inter', 'sans-serif'],
+          },
+          backgroundImage: {
+            'Kazakhstan-hero': "url('img/India_bg.jpg')",
+          }
+        }
+      }
+    }
+  </script>
+<style data-purpose="custom-styling">body {
+    background-color: #f0f9ff;
+    color: #1e293b;
+    }
+.glass-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 1rem
+    }
+.text-balance {
+    text-wrap: balance
+    }
+.section-spacing {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem
+    }
+/* Pattern Overlay */
+.bg-pattern {
+    background-color: #615f44;
+    background-image: url(img/India_bg.jpg);
+    opacity: 0.55
+    }</style>
+</head>
+<body class="font-sans antialiased overflow-x-hidden">
+<!-- BEGIN: Background Texture -->
+<div class="fixed inset-0 bg-pattern pointer-events-none z-0"></div>
+<!-- END: Background Texture -->
+<!-- BEGIN: MainHeader -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-I-orange backdrop-blur-md border-b border-white/5">
+<nav class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<!-- Logo -->
+<a class="flex items-center gap-3 group" href="#">
+<div class="text-white-500 transform group-hover:scale-110 transition-transform">
+<svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景（インドの深いサフラン色） -->
+  <rect width="24" height="24" rx="4" fill="#FF9933"/>
+
+  <!-- 1. ムガル帝国のドーム（中央） -->
+  <path d="M7 16C7 13 9.5 11 12 11C14.5 11 17 13 17 16H7Z" fill="white"/>
+  <rect x="11.5" y="10" width="1" height="1.5" fill="white"/>
+
+  <!-- 2. 仏教のストゥーパ（背景に重なる半円） -->
+  <path d="M4 17C4 16 6 15 12 15C18 15 20 16 20 17V18H4V17Z" fill="white" opacity="0.6"/>
+
+  <!-- 3. ヒンドゥーの象徴：蓮の花びら（下部） -->
+  <path d="M12 19L14 17H10L12 19Z" fill="#138808"/>
+  <path d="M15 18.5L16.5 17H14.5L15 18.5Z" fill="#138808" opacity="0.8"/>
+  <path d="M9 18.5L7.5 17H9.5L9 18.5Z" fill="#138808" opacity="0.8"/>
+
+  <!-- 4. チャクラ（法輪）のイメージ：中央の点 -->
+  <circle cx="12" cy="13.5" r="0.8" fill="#000080"/>
+</svg>
+</div>
+<span class="text-Af-navy font-serif text-xl font-semibold">India Discovery</span>
+</a>
+<!-- Desktop Navigation -->
+<div id="navMenu" class="hidden md:flex items-center gap-9 
+    absolute top-full left-0 w-full bg-I-orange backdrop-blur-md flex-col p-6 shadow-lg z-50
+    md:absolute md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 md:w-auto md:flex-row md:p-0 md:shadow-none">
+<a class="text-Af-navy text-sm font-medium hover:text-k-red transition-colors tracking-widest uppercase" href="#Buddhist">Buddhist</a>
+<a class="text-Af-navy text-sm font-medium hover:text-k-red transition-colors tracking-widest uppercase" href="#Hindu">Hindu</a>
+<a class="text-Af-navy text-sm font-medium hover:text-k-red transition-colors tracking-widest uppercase" href="#Mughal">Mughal</a>
+<a class="text-Af-navy text-sm font-medium hover:text-k-red transition-colors tracking-widest uppercase" href="#cuisine">Cuisine</a>
+<a class="text-Af-navy text-sm font-medium hover:text-k-red transition-colors tracking-widest uppercase" href="#history">History</a>
+</div>
+<!-- Search Bar -->
+<div class="relative hidden lg:block" data-purpose="search-container">
+<span class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+<svg class="w-4 h-4 text-B-purple-dark/50" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</span>
+<input id="searchInput" class="bg-white/5 border-white/10 text-white pl-10 pr-4 py-2 rounded-lg focus:ring-B-purple-dark focus:border-B-purple-dark w-64 text-sm" placeholder="Wikipedia検索" type="text"/>
+</div>
+
+<!-- Mobile Menu Button (Icon only) -->
+<div class="md:hidden">
+<button
+    id="menuButton"
+    class="md:hidden flex items-center justify-center">
+    <span class="material-symbols-outlined text-3xl">
+        menu
+    </span>
+</button>
+</nav>
+</header>
+<!-- END: MainHeader -->
+<!-- BEGIN: HeroSection -->
+<main class="relative">
+<section class="relative flex items-center justify-center overflow-hidden h-[90vh]">
+<!-- Hero Background Image -->
+<div class="absolute inset-0 z-0">
+<img alt="India" class="w-full h-full object-cover brightness-50" src="img/India.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-b from-[#003153]/60 via-transparent to-[#f0f9ff]"></div>
+</div>
+<div class="relative z-10 text-center px-6 max-w-4xl">
+<h2 class="text-k-yellow-c font-serif italic text-xl md:text-2xl mb-4 opacity-0 animate-[fadeIn_1s_ease-out_forwards]">The Living Canvas of Civilizations</h2>
+<h1 class="text-white text-4xl md:text-7xl lg:text-4xl font-serif mb-8 leading-tight opacity-0 animate-[fadeIn_1s_ease-out_0.3s_forwards]">
+         India: Where Ancient Faith Meets Imperial Grandeur</h1>
+<p class="text-lg md:text-xl text-white/80 font-light max-w-2xl mx-auto mb-10 text-balance opacity-0 animate-[fadeIn_1s_ease-out_0.6s_forwards]">
+        A land where the echoes of the Buddha, the devotion of Hindu stone-cutters, and the opulence of the Mughal emperors converge. From sacred caves to marble dreams, explore the timeless landmarks that define the spirit of the subcontinent.
+</p>
+<!-- <a class="inline-block bg-B-purple-dark text-lebanon-dark px-10 py-4 font-semibold tracking-widest uppercase text-sm hover:scale-105 transition-transform opacity-0 animate-[fadeIn_1s_ease-out_0.9s_forwards]" href="#landmarks">
+          Explore Destinations
+        </a>-->
+</div>
+<!-- Scroll Indicator -->
+<!--<div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce opacity-60">
+<svg class="h-6 w-6" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M19 14l-7 7m0 0l-7-7m7 7V3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>-->
+</section>
+<!-- END: HeroSection -->
+
+
+<!-- 1. 仏教 (Buddhist Heritage) -->
+<section class="section-spacing px-6 relative" id="Buddhist">
+    <div class="max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
+            <div class="max-w-2xl">
+                <h2 class="text-k-yellow font-serif text-sm mb-2 uppercase tracking-[0.3em]">Ancient Serenity</h2>
+                <h3 class="text-3xl md:text-2xl font-bold font-serif">Buddhist Heritage</h3>
+            </div>
+            <p class="text-orange/90 max-w-md text-sm">Originating in India, it is characterized by serene spirituality and ancient rock-cut art.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="flex flex-col">
+                <div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+                    <img alt="Ajanta Caves" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="img/Ajanta_Caves.jpg"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 p-4"><h4 class="text-lg font-serif text-white">Ajanta Caves</h4></div>
+                </div>
+                <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4">Thirty rock-cut caves carved into a sheer cliff. A sacred center of art, home to vividly colored murals, including the world-famous image of the Bodhisattva Padmapani.</p>
+            </div>
+            <div class="flex flex-col">
+                <div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+                    <img alt="Sarnath" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="img/Sarnath.jpg"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 p-4"><h4 class="text-lg font-serif text-white">Sarnath (near Varanasi)	</h4></div>
+                </div>
+                <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4">the place where the Buddha delivered his first sermon. Highlights include the massive cylindrical Dhamek Stupa and the Lion Capital of Ashoka, which became the model for India’s national emblem.
+</p>
+            </div>
+            <div class="flex flex-col">
+                <div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+                    <img alt="Bodh Gaya" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="img/Bodh_Gaya.jpg"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 p-4"><h4 class="text-lg font-serif text-white">Bodh Gaya</h4></div>
+                </div>
+                <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4">the holiest site where the Buddha attained enlightenment. It is symbolized by the towering Mahabodhi Temple, rising over 50 meters, and the Vajrasana (Bodhi Tree) behind it.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 2. ヒンドゥー教 (Hindu Heritage) -->
+<section class="section-spacing px-6 relative" id="Hindu">
+    <div class="max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
+            <div class="max-w-2xl">
+                <h2 class="text-k-yellow font-serif text-sm mb-2 uppercase tracking-[0.3em]">Divine Power</h2>
+                <h3 class="text-3xl md:text-2xl font-bold font-serif">Hindu Heritage</h3>
+            </div>
+            <p class="text-orange/90 max-w-md text-sm">Dynamic sculptures of the gods and monumental stone architecture create an overwhelming sense of power and grandeur.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="flex flex-col">
+                <div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+                    <img alt="Ellora Kailasa Temple" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="img/Ellora_Kailasa.jpg"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 p-4"><h4 class="text-lg font-serif text-white">Ellora Kailasa Temple</h4></div>
+                </div>
+                <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4">Carved top-down from a single massive rock, it is the world’s largest monolithic rock-cut structure.</p>
+            </div>
+            <div class="flex flex-col">
+                <div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+                    <img alt="Khajuraho" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="img/Khajuraho.jpg"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 p-4"><h4 class="text-lg font-serif text-white">Khajuraho Group of Temples</h4></div>
+                </div>
+                <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4">Its walls are covered with sensual and intricately carved mithuna (amorous couple) sculptures, regarded as a masterpiece of medieval Indian sculpture.
+</p>
+            </div>
+            <div class="flex flex-col">
+                <div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+                    <img alt="Hampi" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="img/Hampi.jpg"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 p-4"><h4 class="text-lg font-serif text-white">Group of Monuments at Hampi</h4></div>
+                </div>
+                <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4">The ruined capital of the Vijayanagara Empire spreads across a stark landscape strewn with massive boulders. The stone chariot of the Vittala Temple and its exquisitely carved pillars are especially renowned.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 3. ムガル帝国 (Mughal Heritage) -->
+<section class="section-spacing px-6 relative" id="Mughal">
+    <div class="max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
+            <div class="max-w-2xl">
+                <h2 class="text-k-yellow font-serif text-sm mb-2 uppercase tracking-[0.3em]">Imperial Splendor</h2>
+                <h3 class="text-3xl md:text-2xl font-bold font-serif">Mughal Heritage</h3>
+            </div>
+            <p class="text-orange/90 max-w-md text-sm">A fusion of Persian and Indian styles, characterized by symmetrical beauty and the use of white marble and red sandstone decoration.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="flex flex-col">
+                <div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+                    <img alt="Taj Mahal" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="img/Taj_Mahal.jpg"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 p-4"><h4 class="text-lg font-serif text-white">Taj Mahal</h4></div>
+                </div>
+                <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4">The pinnacle of Mughal architecture. Its white marble inlay work (pietra dura), depicting delicate floral motifs, represents the ultimate achievement in artistic craftsmanship.</p>
+            </div>
+            <div class="flex flex-col">
+                <div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+                    <img alt="Humayun's Tomb" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="img/Humayun_Tomb.jpg"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 p-4"><h4 class="text-lg font-serif text-white">Humayun’s Tomb</h4></div>
+                </div>
+                <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4">India’s first garden tomb. The contrast of red sandstone and white marble is striking, and it served as a design model for the Taj Mahal.</p>
+            </div>
+            <div class="flex flex-col">
+                <div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+                    <img alt="Agra Fort" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="img/Agra_Fort.jpg"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 p-4"><h4 class="text-lg font-serif text-white">Agra Fort</h4></div>
+                </div>
+                <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4">A विशाल fortress that served as the residence of successive emperors. From the Musamman Burj (the “Tower of Captivity”), one can gaze upon the Taj Mahal—the very view once seen by the ill-fated emperor.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--BEGIN: Cuisine -->
+<section class="px-4 py-16 md:px-10" id="cuisine">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-12">
+<h2 class="U-blue text-3xl md:text-4xl font-serif">Spice Routes on a Plate</h2>
+<p class="Bahrain-red max-w-2xl mx-auto font-serif">A vibrant tapestry of flavors—from fragrant curries and tandoor-fired breads to rich Mughal delicacies—rooted in centuries of culture and tradition.
+</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Package 1 -->
+<div class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:shadow-xl transition-shadow">
+<div class="h-56 w-full overflow-hidden">
+<img alt="Murgh Makhani" class="w-full h-full object-cover transition-transform group-hover:scale-105" data-alt="Murgh Makhani" src="img/Murgh_Makhani.jpg"/>
+</div>
+<div class="p-4">
+<div class="flex justify-between items-start mb-1">
+<h3 class="text-xl font-bold">Murgh Makhani</h3>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-400 mb-6 line-clamp-2">A rich and mild North Indian classic made with generous amounts of tomatoes, butter, and cream.
+</p>
+<div class="flex items-center justify-between">
+</div>
+</div>
+</div>
+<!-- Package 2 -->
+<div class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:shadow-xl transition-shadow">
+<div class="h-56 w-full overflow-hidden">
+<img alt="Tandoori Chicken" class="w-full h-full object-cover transition-transform group-hover:scale-105" data-alt="Tandoori Chicken" src="img/Tandoori_Chicken.jpg"/>
+</div>
+<div class="p-4">
+<div class="flex justify-between items-start mb-1">
+<h3 class="text-xl font-bold">Tandoori Chicken</h3>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-400 mb-6 line-clamp-2">A classic staple marinated in yogurt and spices, then roasted at high heat in a traditional tandoor.</p>
+<div class="flex items-center justify-between">
+</div>
+</div>
+</div>
+<!-- Package 3 -->
+<div class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:shadow-xl transition-shadow">
+<div class="h-56 w-full overflow-hidden">
+<img alt="Kheer" class="w-full h-full object-cover transition-transform group-hover:scale-105" data-alt="Kheer" src="img/Kheer.jpg"/>
+</div>
+<div class="p-4">
+<div class="flex justify-between items-start mb-1">
+<h3 class="text-xl font-bold">Kheer</h3>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-400 mb-6 line-clamp-2">A gently sweet rice pudding made by simmering rice with milk and sugar.
+</p>
+<div class="flex items-center justify-between">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- BEGIN: HistorySection -->
+<section class="bg-[#339900]/30 section-spacing px-6 relative overflow-hidden" id="history">
+<div class="max-w-5xl mx-auto"><div class="text-center mb-12">
+<h2 class="text-silk-white font-serif text-sm mb-2 uppercase tracking-[0.3em]">インド共和国の歴史</h2>
+<h3 class="text-k-yellow text-3xl md:text-4xl font-serif">Ancient Roots, Timeless Legacy</h3>
+<p class="text-xs text-slate-800 max-w-3xl mx-auto">LFrom Indus Valley origins to the grandeur of Mughal and British rule, discover a land shaped by deep spirituality, Silk Road wealth, and an enduring quest for independence.</p>
+</div>
+<div class="max-w-3xl mx-auto space-y-8 relative border-l border-slate-300 pl-8">
+<!-- History: Ancient -->
+<div class="max-w-5xl mx-auto space-y-12 relative pl-0">
+
+  <!-- 古代 -->
+  <div class="relative">
+    <div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-k-yellow"></div>
+    <h4 class="text-k-yellow font-sans text-xl font-semibold mb-6">古代</h4>
+    
+    <div class="grid md:grid-cols-2 gap-12">
+      <!-- 北寄り -->
+      <div class="space-y-6">
+        <div class="border-b border-slate-100 pb-2 mb-4"><span class="text-xs font-bold text-slate-800 tracking-widest uppercase">北インド・中央・広域</span></div>
+        <div>
+          <h5 class="text-lg font-serif text-slate-800 font-bold mb-1">インダス文明<span class="text-white/50 text-xs text-slate-500 block md:inline md:ml-2">（紀元前2600年頃～紀元前1900年頃） </span></h5>
+          <p class="text-xs text-slate-500 leading-relaxed">モヘンジョダロやハラッパーなどの都市が栄えた。</p>
+        </div>
+        <div>
+          <h5 class="text-lg font-serif text-slate-800 font-bold mb-1">ヴェーダ時代<span class="text-white/50 text-xs text-slate-500 block md:inline md:ml-2">（紀元前1500年頃～紀元前500年頃） </span></h5>
+          <p class="text-xs text-slate-500 leading-relaxed">アーリア人の移住とヴェーダ文化の発展。</p>
+        </div>
+         <div>
+          <h5 class="text-lg font-serif text-slate-800 font-bold mb-1">十六大国<span class="text-white/50 text-xs text-slate-500 block md:inline md:ml-2">（紀元前6世紀頃～紀元前5世紀頃） </span></h5>
+          <p class="text-xs text-slate-500 leading-relaxed">ソーラサ・マハージャナパダとは紀元前6世紀頃から紀元前5世紀頃にかけて古代インドに形成され相互に争っていた諸国の総称。</p>
+          <p class="text-xs text-slate-500 leading-relaxed">コーサラ国(B.C.6c)＠ガンジス川中流域。B.C.5cマガダ国に併合</p>
+          <p class="text-xs text-slate-500 leading-relaxed">マガダ国(B.C.6c)＠ガンジス川中流域。</p>
+        </div>
+        <div>
+          <h5 class="text-lg font-serif text-slate-800 font-bold mb-1">マウリヤ朝<span class="text-white/50 text-xs text-slate-500 block md:inline md:ml-2">（紀元前321年～紀元前185年） </span></h5>
+          <p class="text-xs text-slate-500 leading-relaxed">アショーカ王の時代に最盛期を迎え、仏教が広まる。また、アショーカ王の時代に最大版図となり、南端を除くインド亜大陸のほぼ全土を支配しました。</p>
+        </div>
+        <div>
+          <h5 class="text-lg font-serif text-slate-800 font-bold mb-1">クシャーナ朝<span class="text-white/50 text-xs text-slate-500 block md:inline md:ml-2">（紀元前1世紀 - 3世紀） </span></h5>
+          <p class="text-xs text-slate-500 leading-relaxed">仏教が広まり、ガンダーラ美術が栄える。</p>
+          <p class="text-xs text-slate-500 leading-relaxed">中央アジアから北インドにかけて、1世紀から3世紀頃まで栄えたイラン系の王朝</p>
+        </div>
+       
+        <div>
+          <h5 class="text-lg font-serif text-slate-800 font-bold mb-1">グプタ朝<span class="text-white/50 text-xs text-slate-500 block md:inline md:ml-2">（320年～550年頃） </span></h5>
+          <p class="text-xs text-slate-500 leading-relaxed">ヒンドゥー教文化の発展と「黄金時代」と呼ばれる繁栄。北インドを中心に、東はベンガル湾から西はアラビア海まで広がりました。</p>
+        </div>
+        
+        
+        <div>
+          <h5 class="text-lg font-serif text-slate-800 font-bold mb-1">ヴァルダナ朝<span class="text-white/50 text-xs text-slate-500 block md:inline md:ml-2">（606年〜647年） </span></h5>
+          <p class="text-xs text-slate-500 leading-relaxed">ハルシャ王による北インドの一時的統一。ハルシャ・ヴァルダナ王の一代で北インドの大部分を統一しましたが、グプタ朝に比べるとやや限定的な範囲でした。</p>
+        </div>
+      </div>
+      <!-- 広域・南 -->
+      <div class="space-y-6">
+        <div class="border-b border-slate-100 pb-2 mb-4"><span class="text-xs font-bold text-slate-800 tracking-widest uppercase">南インド</span></div>
+        <div>
+          <h5 class="text-lg font-serif text-slate-800 font-bold mb-1">サータヴァーハナ朝(アーンドラ朝)<span class="text-white/50 text-xs text-slate-500 block md:inline md:ml-2">（紀元前1世紀～3世紀頃） </span></h5>
+          <p class="text-xs text-slate-500 leading-relaxed"> (都) プラティシュタナ(パイタン)説？＠南インド&nbsp;&nbsp;ドラヴィダ系。</p>
+        <p class="text-xs text-slate-500 leading-relaxed">アショーカ王時代のマウリヤ朝に朝貢したが、マウリヤ朝が崩壊するとデカン高原一帯を支配し、B.C.１世紀頃から急速に勢力を伸ばし、B.C.75年にはデカン高原西部を支配し、B.C. 28年頃までには北インドの大半を支配するようになり、A.D.１世紀はじめのガウタミープトラ・シャータカルニ王（在位106～130頃）の時に最盛期となり、北西インドのクシャーナ朝とも対抗する勢力となった。 </p>
+        </div>
+      </div>
+    </div>
+    </div>
+ 
+
+  <!-- 中世 -->
+  <div class="relative">
+    <div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-k-yellow"></div>
+    <h4 class="text-k-yellow font-sans text-xl font-semibold mb-6">中世</h4>
+    
+    <div class="grid md:grid-cols-2 gap-12">
+      <!-- 北寄り -->
+      <div class="space-y-6">
+        <div class="border-b border-slate-100 pb-2 mb-4"><span class="text-xs font-bold text-slate-400 tracking-widest uppercase">北インド・中央・広域</span></div>
+        <div>
+          <h5 class="text-lg font-serif text-slate-800 font-bold mb-1">三つ巴の抗争時代<span class="text-white/50 text-xs text-slate-500 block md:inline md:ml-2">（8世紀〜10世紀頃） </span></h5>
+          <p class="text-xs text-slate-500 leading-relaxed">プラティハーラ朝（北インド）：ラージプートの先駆け。</p>
+          <p class="text-xs text-slate-500 leading-relaxed">パーラ朝（東インド）：仏教を保護（ナーランダー僧院など）。</p>
+          <p class="text-xs text-slate-500 leading-relaxed">ラシュトラクータ朝（デカン高原）：エローラ石窟寺院などを造営。</p>
+        </div>
+        <div>
+          <h5 class="text-lg font-serif text-slate-800 font-bold mb-1">ラージプート時代<span class="text-white/50 text-xs text-slate-500 block md:inline md:ml-2">（7世紀後半から13世紀初頭）</span></h5>
+          <p class="text-xs text-slate-500 leading-relaxed">北インドに小国家が乱立。ガズナ朝・ゴール朝の侵攻に抵抗。</p>
+        <p class="text-xs text-slate-500 leading-relaxed">いずれもガズナ朝のマフムード、ゴール朝のムハンマドとの戦いに敗れ、ついにアイバクがトルコ系イスラーム教国の奴隷王朝をデリーに建設して以来、デリー＝スルタン朝というイスラーム政権の支配を受けることとなった。</p>
+        </div>
+        <div>
+          <h5 class="text-lg font-serif text-slate-800 font-bold mb-1">デリー・スルターン朝<span class="text-white/50 text-xs text-slate-500 block md:inline md:ml-2">（1206年～1526年） </span></h5>
+          <p class="text-xs text-slate-500 leading-relaxed">イスラム教の影響が強まり、北インドを支配。</p>
+        </div>
+        <div>
+          <h5 class="text-lg font-serif text-slate-800 font-bold mb-1">ムガル帝国<span class="text-white/50 text-xs text-slate-500 block md:inline md:ml-2">（1526年～1857年） </span></h5>
+          <p class="text-xs text-slate-500 leading-relaxed">アクバル大帝やシャー・ジャハーンの時代に文化と建築が発展。</p>
+        </div>
+      </div>
+
+      <!-- 南寄り -->
+      <div class="space-y-6">
+        <div class="border-b border-slate-100 pb-2 mb-4"><span class="text-xs font-bold text-slate-400 tracking-widest uppercase">南インド</span></div>
+        <div>
+          <h5 class="text-lg font-serif text-slate-800 font-bold mb-1">チョーラ朝<span class="text-white/50 text-xs text-slate-500 block md:inline md:ml-2">（9世紀〜13世紀） </span></h5>
+          <p class="text-xs text-slate-500 leading-relaxed">南インド。海上貿易で繁栄し、東南アジアへも進出。</p>
+        </div>
+        <div>
+          <h5 class="text-lg font-serif text-slate-800 font-bold mb-1">ヴィジャヤナガル王国<span class="text-white/50 text-xs text-slate-500 block md:inline md:ml-2">（1336年～1646年） </span></h5>
+          <p class="text-xs text-slate-500 leading-relaxed">南インドでヒンドゥー教文化が栄える。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 近世・現代 -->
+  <div class="relative">
+    <div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-k-yellow"></div>
+    <h4 class="text-k-yellow font-sans text-xl font-semibold mb-6">近世（全土）</h4>
+    <div class="max-w-2xl space-y-8">
+      <div>
+        <h5 class="text-lg font-serif text-slate-800 font-bold mb-1">イギリス東インド会社の支配<span class="text-white/50 text-xs text-slate-500 block md:inline md:ml-2">（1757年～1858年） </span></h5>
+        <p class="text-xs text-slate-500 leading-relaxed">プラッシーの戦い以降、イギリスの影響が拡大。</p>
+      <p class="text-xs text-slate-500 leading-relaxed">藩王国の形成: マラーター同盟やマイソール王国などの有力勢力を軍事的に破り、順次「軍事保護条約（従属同盟）」を結ばせ、内政自治のみを認める藩王国として傘下に収めた。
+</p>
+      </div>
+      <div>
+        <h5 class="text-lg font-serif text-slate-800 font-bold mb-1">イギリス領インド帝国<span class="text-white/50 text-xs text-slate-500 block md:inline md:ml-2">（1858年～1947年） </span></h5>
+        <p class="text-xs text-slate-500 leading-relaxed">「二つのインド」による統治。反乱の抑止: 1857年のインド大反乱の際、多くの藩王がイギリス側に味方したため、反乱鎮圧後、イギリスは藩王国の存続を保障し、自らの統治を支える「防波堤」として利用した。</p>
+        <p class="text-xs text-slate-500 leading-relaxed">直轄領（イギリス領インド）: イギリスが直接統治する地域（面積の約6割）。</p>
+        <p class="text-xs text-slate-500 leading-relaxed">藩王国（約560カ国）: イギリス皇帝（国王）への忠誠を条件に、現地の王が統治を継続した地域（面積の約4割）。</p>
+      </div>
+      </div>
+    </div>
+  </div>
+<div class="relative">
+    <div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-k-yellow"></div>
+    <h4 class="text-k-yellow font-sans text-xl font-semibold mb-6">近現代・現代（全土）</h4>
+    <div class="max-w-2xl space-y-8">
+      <div>
+        <h5 class="text-lg font-serif text-slate-800 font-bold mb-1">インド独立運動<span class="text-white/50 text-xs text-slate-500 block md:inline md:ml-2">（19世紀後半～1947年） </span></h5>
+        <p class="text-xs text-slate-500 leading-relaxed">ガンディーやネルーらの指導のもと、独立を達成。</p>
+      </div>
+      <div>
+        <h5 class="text-lg font-serif text-slate-800 font-bold mb-1">インド共和国<span class="text-white/50 text-xs text-slate-500 block md:inline md:ml-2">（1947年～現在） </span></h5>
+        <p class="text-xs text-slate-500 leading-relaxed">独立後、民主主義国家として発展。</p>
+      </div>
+      <div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">インド・パキスタン分離独立<span class="text-white/50 text-xs text-slate-500 block md:inline md:ml-2">（1947年）</span>
+</h5>
+<p class="text-xs text-slate-500 leading-relaxed">
+イギリスからの独立と同時に、ヒンドゥー教徒主体のインドと、
+イスラム教徒主体のパキスタンに分裂。大規模な人口移動と衝突が発生。</p>
+</div>
+<div class="md:ml-32">
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">
+カシミール紛争<span class="text-white/50 text-xs text-slate-500 block md:inline md:ml-2">（1947年〜現在）</span>
+</h5>
+<p class="text-xs text-slate-500 leading-relaxed">
+インドとパキスタンが領有権を争う地域。戦争や軍事的緊張が続く。
+</p>
+</div>
+      <div>
+        <h5 class="text-lg font-serif text-slate-800 font-bold mb-1">現代インド<span class="text-white/50 text-xs text-slate-500 block md:inline md:ml-2">（1947年～現在） </span></h5>
+        <p class="text-xs text-slate-500 leading-relaxed">多様な文化と経済成長を背景に、世界的な影響力を持つ国へ。このように、インドの歴史は多様な文化と宗教、政治体制の変遷が特徴的です。</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</div>
+</div>
+<p class="text-left text-slate-600 text-sm mt-6 font-bold max-w-2xl mx-auto"></p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto">&nbsp;&nbsp;</p>
+
+</div>
+</section>
+<!-- END: HistorySection -->
+<!-- BEGIN: Footer -->
+<footer class="bg-I-orange py-20 px-6 border-t border-white/5 relative z-10">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="col-span-1 md:col-span-2">
+<div class="flex items-center gap-3 mb-6">
+<div class="text-emerald-500">
+<svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景（インドの深いサフラン色） -->
+  <rect width="24" height="24" rx="4" fill="#FF9933"/>
+
+  <!-- 1. ムガル帝国のドーム（中央） -->
+  <path d="M7 16C7 13 9.5 11 12 11C14.5 11 17 13 17 16H7Z" fill="white"/>
+  <rect x="11.5" y="10" width="1" height="1.5" fill="white"/>
+
+  <!-- 2. 仏教のストゥーパ（背景に重なる半円） -->
+  <path d="M4 17C4 16 6 15 12 15C18 15 20 16 20 17V18H4V17Z" fill="white" opacity="0.6"/>
+
+  <!-- 3. ヒンドゥーの象徴：蓮の花びら（下部） -->
+  <path d="M12 19L14 17H10L12 19Z" fill="#138808"/>
+  <path d="M15 18.5L16.5 17H14.5L15 18.5Z" fill="#138808" opacity="0.8"/>
+  <path d="M9 18.5L7.5 17H9.5L9 18.5Z" fill="#138808" opacity="0.8"/>
+
+  <!-- 4. チャクラ（法輪）のイメージ：中央の点 -->
+  <circle cx="12" cy="13.5" r="0.8" fill="#000080"/>
+</svg>
+</div>
+<span class="text-Af-navy font-serif text-lg tracking-wider font-semibold">India Discovery</span>
+</div>
+<p class="text-white text-sm max-w-sm mb-8">
+            Curating bespoke luxury travel experiences for discerning explorers seeking the regal heritage and vibrant soul of the Incredible India.
+          </p>
+</div>
+<div>
+<h6 class="text-Af-navy font-serif text-sm mb-6 uppercase tracking-widest">Navigation</h6>
+<ul class="space-y-4 text-sm text-white/60">
+<li><a class="hover:text-white transition-colors" href="#Buddhist">Buddhist</a></li>
+<li><a class="hover:text-white transition-colors" href="#Hindu">Hindu</a></li>
+<li><a class="hover:text-white transition-colors" href="#Mughal">Mughal</a></li>
+<li><a class="hover:text-white transition-colors" href="#cuisine">Cuisine</a></li>
+<li><a class="hover:text-white transition-colors" href="#history">History</a></li>
+</ul>
+</div>
+<div>
+<h6 class="text-Af-navy font-serif text-sm mb-6 uppercase tracking-widest">Connect</h6>
+<ul class="space-y-4 text-sm text-white/60">
+<li><a class="hover:text-white transition-colors" href="#">Instagram</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Twitter</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Contact Us</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 mt-10 mb-4"><p class="text-xs text-Af-navy">© 2026 India Discovery. All rights reserved.</p>
+<div class="flex gap-8 text-xs text-white/80">
+<a href="#">Privacy Policy</a>
+<a href="#">Terms of Service</a>
+</div></div>
+<button onclick="window.close(); setTimeout(() => { window.location.href = 'https://google.com'; }, 100);" 
+          class="flex items-center gap-1 px-3 py-0.5 ml-auto md:ml-auto bg-brand-emerald hover:opacity-80 text-white font-medium rounded-full transition-all shadow-sm">
+    <span class="material-symbols-outlined text-white/80 text-xs">logout</span>
+    <span class="tracking-wider text-white/80 text-xs">QUIT</span>
+  </button>
+
+</footer>
+<!-- END: Footer -->
+</main>
+<style data-purpose="animations">
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+<script>
+    document.getElementById('searchInput').addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+            const searchTerm = this.value.trim();
+            if (searchTerm) {
+                const wikipediaUrl = `https://ja.wikipedia.org/wiki/特別:検索?search=${encodeURIComponent(searchTerm)}`;
+                window.open(wikipediaUrl, '_blank');
+            }
+        }
+    });
+</script>
+</body></html>
