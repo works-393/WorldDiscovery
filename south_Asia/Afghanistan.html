@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Afghanistan Discovery | Luxury Travel Experience</title>
+<meta content="Explore the ancient landmarks, vibrant cities, and rich history of Afghanistan." name="description"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="../menu.js"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'lebanon-dark': '#102219',
+            'lebanon-gold': '#C5A059',
+            'lebanon-green': '#2D5A27',
+            "primary": "#144bb8",
+            "background-light": "#f6f6f8",
+            "background-dark": "#111621",
+            // 追加
+            "al-adaam": "#8D1B3D",
+            "qatar-gold": "#C5A059",  
+            "e-green": "#50C878",
+            "B-purple-dark": "#006400",
+            "qatar-gold": "#C5A059",
+            "qatar-blue": "#1e3a8a",
+            "oman-blue": "#003153",
+            "yemen-red": "#CE1126",
+            "Bahrain-red": "#DA291C",
+            "B-purple-dark": "#632276",
+            "B-purple": "#D1A7E2",
+            "B-yellow": "#ffff66",
+            "Kaza-blue": "#00A3DD",
+            "Kaza-blue-dark": "#003366",
+            "U-blue": "#99ffcc", //ターコイズブルー//
+            "U-blue-bg": "#006699",
+            "k-yellow": "#ffcc00",
+            "k-red": "#cc3333",
+            "k-yellow-c": "#ccff33",
+            "silk-road-white": "#fdfdfd",
+            "t-green": "#006600",
+            "t-green-light": "#99cc99",
+            "Af-red": "#ff0099",
+            "Af-navy": "#0B1F3A",
+            "golden-red": "#DAA520",
+                       },
+          fontFamily: {
+            serif: ['Newsreader', 'serif'],
+            sans: ['Inter', 'sans-serif'],
+          },
+          backgroundImage: {
+            'Kazakhstan-hero': "url('img/Afghanistan_bg.jpg')",
+          }
+        }
+      }
+    }
+  </script>
+<style data-purpose="custom-styling">body {
+    background-color: #f0f9ff;
+    color: #1e293b
+    }
+.glass-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 1rem
+    }
+.text-balance {
+    text-wrap: balance
+    }
+.section-spacing {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem
+    }
+/* Pattern Overlay */
+.bg-pattern {
+    background-image: url(img/Afghanistan_bg.jpg);
+    opacity: 0.15
+    }</style>
+</head>
+<body class="font-sans antialiased overflow-x-hidden">
+<!-- BEGIN: Background Texture -->
+<div class="fixed inset-0 bg-pattern pointer-events-none z-0"></div>
+<!-- END: Background Texture -->
+<!-- BEGIN: MainHeader -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-Af-red backdrop-blur-md border-b border-white/5">
+<nav class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<!-- Logo -->
+<a class="flex items-center gap-3 group" href="#">
+<div class="text-white-500 transform group-hover:scale-110 transition-transform">
+<svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景（紺） -->
+  <rect width="24" height="24" rx="4" fill="#0B1F3A"/>
+
+  <!-- 山（シンプル） -->
+  <path d="M3 17L8 10L13 17Z" fill="white" opacity="0.85"/>
+  <path d="M10 17L14.5 11.5L21 17Z" fill="white" opacity="0.5"/>
+
+  <!-- モスク（シルエット） -->
+  <!-- ドーム -->
+  <path d="M9 14C9 12.5 10.5 11.5 12 11.5C13.5 11.5 15 12.5 15 14Z" fill="white"/>
+
+  <!-- 建物本体 -->
+  <rect x="9" y="14" width="6" height="2" fill="white"/>
+
+  <!-- ミナレット（塔） -->
+  <rect x="16.5" y="12" width="1" height="5" fill="white"/>
+  <circle cx="17" cy="11.5" r="0.6" fill="white"/>
+</svg>
+</div>
+<span class="text-Af-navy font-serif text-xl font-semibold">Afghanistan Discovery</span>
+</a>
+<!-- Desktop Navigation -->
+<div id="navMenu" class="hidden md:flex items-center gap-9 
+    absolute top-full left-0 w-full bg-Af-red backdrop-blur-md flex-col p-6 shadow-lg z-50
+    md:absolute md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 md:w-auto md:flex-row md:p-0 md:shadow-none">
+<a class="text-Af-navy text-sm font-medium hover:text-k-red transition-colors tracking-widest uppercase" href="#Landmarks">Landmarks</a>
+<a class="text-Af-navy text-sm font-medium hover:text-k-red transition-colors tracking-widest uppercase" href="#cities">Cities</a>
+<a class="text-Af-navy text-sm font-medium hover:text-k-red transition-colors tracking-widest uppercase" href="#cuisine">Cuisine</a>
+<a class="text-Af-navy text-sm font-medium hover:text-k-red transition-colors tracking-widest uppercase" href="#history">History</a>
+</div>
+<!-- Search Bar -->
+<div class="relative hidden lg:block" data-purpose="search-container">
+<span class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+<svg class="w-4 h-4 text-B-purple-dark/50" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</span>
+<input id="searchInput" class="bg-white/5 border-white/10 text-white pl-10 pr-4 py-2 rounded-lg focus:ring-B-purple-dark focus:border-B-purple-dark w-64 text-sm" placeholder="Wikipedia検索" type="text"/>
+</div>
+
+<!-- Mobile Menu Button (Icon only) -->
+<div class="md:hidden">
+<button
+    id="menuButton"
+    class="md:hidden flex items-center justify-center text-Af-navy hover:text-Af-navy/80 transition-colors">
+    <span class="material-symbols-outlined text-3xl">
+        menu
+    </span>
+</button>
+</nav>
+</header>
+<!-- END: MainHeader -->
+<!-- BEGIN: HeroSection -->
+<main class="relative">
+<section class="relative flex items-center justify-center overflow-hidden h-[90vh]">
+<!-- Hero Background Image -->
+<div class="absolute inset-0 z-0">
+<img alt="Afghanistan" class="w-full h-full object-cover brightness-50" src="img/Afghanistan.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-b from-[#003153]/60 via-transparent to-[#f0f9ff]"></div>
+</div>
+<div class="relative z-10 text-center px-6 max-w-4xl">
+<h2 class="text-k-yellow-c font-serif italic text-xl md:text-2xl mb-4 opacity-0 animate-[fadeIn_1s_ease-out_forwards]">Beneath the Roof of the World</h2>
+<h1 class="text-white text-4xl md:text-7xl lg:text-4xl font-serif mb-8 leading-tight opacity-0 animate-[fadeIn_1s_ease-out_0.3s_forwards]">
+         Afghanistan: Where Mountains Touch the Silk Road </h1>
+<p class="text-lg md:text-xl text-white/80 font-light max-w-2xl mx-auto mb-10 text-balance opacity-0 animate-[fadeIn_1s_ease-out_0.6s_forwards]">
+        Home to the Pamir Plateau, often called the “Roof of the World,” Afghanistan is a land where breathtaking natural grandeur meets the enduring legacy of the Silk Road. From towering peaks to ancient trade routes, explore its most iconic destinations region by region.</p>
+<!-- <a class="inline-block bg-B-purple-dark text-lebanon-dark px-10 py-4 font-semibold tracking-widest uppercase text-sm hover:scale-105 transition-transform opacity-0 animate-[fadeIn_1s_ease-out_0.9s_forwards]" href="#landmarks">
+          Explore Destinations
+        </a>-->
+</div>
+<!-- Scroll Indicator -->
+<!--<div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce opacity-60">
+<svg class="h-6 w-6" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M19 14l-7 7m0 0l-7-7m7 7V3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>-->
+</section>
+<!-- END: HeroSection -->
+
+
+<!-- BEGIN: LandmarksSection -->
+<section class="section-spacing px-6 relative" id="Landmarks">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
+<div class="max-w-2xl">
+<h2 class="text-lebanon-green font-serif text-sm mb-2 uppercase tracking-[0.3em]">Ancient Stone & Eternal Silence</h2>
+<h3 class="text-3xl md:text-4xl font-serif">Iconic Landmarks</h3>
+</div>
+<p class="text-orange/90 max-w-md text-sm">Sacred Roots & Modern Wonders: A journey through Afghanistan’s timeless spiritual soul, where ancient stone meets celestial blue</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+<!-- Item 1: Topdara Stupa -->
+<div class="flex flex-col">
+<div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+<img alt="Topdara Stupa" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="img/Topdara_Stupa.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+<div class="absolute bottom-0 left-0 p-4">
+<span class="text-[10px] text-lebanon-gold uppercase tracking-widest block mb-1">Landmark</span>
+<h4 class="text-lg font-serif text-white">Topdara Stupa</h4>
+</div>
+</div>
+<!-- キャプション部分：写真の直下に配置 -->
+     <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4">Standing as one of the largest and best-preserved Buddhist monuments in Afghanistan, this stupa is a majestic remnant of the Kushan Empire. Its massive stone structure, set against the rugged hills of Parwan, reflects the spiritual grandeur and architectural precision of ancient Gandhara.    </p>
+  </div>
+<!-- Item 2: Bimaran Stupas -->
+ <div class="flex flex-col">
+<div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+<img alt="Bimaran Stupas" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="img/Bimaran_casket.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+<div class="absolute bottom-0 left-0 p-4">
+<span class="text-[10px] text-lebanon-gold uppercase tracking-widest block mb-1">Landmark</span>
+<h4 class="text-lg font-serif text-white">Bimaran Stupas </h4>
+</div>
+</div>
+<!-- キャプション部分：写真の直下に配置 -->
+     <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4">Famous for the discovery of the exquisite gold Bimaran Casket, these stupas represent a pivotal era where Hellenistic art met Buddhist devotion. Though now in ruins near Jalalabad, they remain a site of immense historical significance, marking the very beginning of depicting the Buddha in human form.
+</p>
+  </div>
+<!-- Item 3: Mausoleum of Imam Ali (Blue Mosque) -->
+ <div class="flex flex-col">
+<div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+<img alt="Mausoleum of Imam Ali (Blue Mosque)" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="img/Imam_Ali.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+<div class="absolute bottom-0 left-0 p-4">
+<span class="text-[10px] text-lebanon-gold uppercase tracking-widest block mb-1">Landmark</span>
+<h4 class="text-lg font-serif text-white">Mausoleum of Imam Ali (Blue Mosque)</h4>
+</div>
+</div>
+<!-- キャプション部分：写真の直下に配置 -->
+     <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4">Known as the "Blue Mosque" of Mazar-i-Sharif, this shrine is a masterpiece of Islamic architecture adorned with thousands of shimmering turquoise tiles. It is a vibrant spiritual heart where the intricate mosaic patterns and peaceful courtyards create an atmosphere of divine beauty and profound serenity.</p>
+  </div>
+</div>
+</div>
+</section>
+<!-- END: LandmarksSection -->
+<!-- BEGIN: CitiesSection -->
+<section class="section-spacing px-6 relative" id="cities">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
+<div class="max-w-2xl">
+<h2 class="text-lebanon-green font-serif text-sm mb-2 uppercase tracking-[0.3em]">Ancient Crossroads & Living Cities</h2>
+<h3 class="text-3xl md:text-4xl font-serif">Cities of Distinction</h3>
+</div>
+<p class="text-orange/90 max-w-md text-sm">From the bustling bazaars of Kabul to the serene courtyards of Herat and the spiritual heart of Mazar-i-Sharif, discover cities where centuries of history meet everyday life.
+</p>
+</div>
+<div class="space-y-20">
+<!-- Kabul -->
+<div class="flex flex-col md:flex-row items-center gap-10">
+<div class="w-full md:w-1/2">
+<img alt="Kabul" class="rounded-2xl shadow-xl" src="img/Kabul.jpg"/>
+</div>
+<div class="w-full md:w-1/2">
+<span class="text-primary font-bold uppercase tracking-widest text-sm">Mountain Gates & Resilient Echoes</span>
+<h3 class="text-Af-red text-3xl mt-2 mb-4">Kabul</h3>
+<p class="text-Af-navy dark:text-orange-100 text-lg mb-6 leading-relaxed font-serif">Where the rugged peaks of the Hindu Kush guard the beating heart of a modern nation.
+</p>
+</div>
+</div>
+<!-- Herat -->
+<div class="flex flex-col md:flex-row-reverse items-center gap-10">
+<div class="w-full md:w-1/2">
+<img alt="Herat" class="rounded-2xl shadow-xl" src="img/Herat.jpg"/>
+</div>
+<div class="w-full md:w-1/2">
+<span class="text-primary font-bold uppercase tracking-widest text-sm">Ancient Citadel & Artistic Legacy</span>
+<h3 class="text-Af-red text-3xl mt-2 mb-4">Herat</h3>
+<p class="text-Af-navy dark:text-orange-100 text-lg mb-6 leading-relaxed font-serif">A timeless mosaic of Silk Road history, blooming with the elegance of blue-tiled minarets.</p>
+</div>
+</div>
+<!-- Mazar-e-Sharif -->
+<div class="flex flex-col md:flex-row items-center gap-10">
+<div class="w-full md:w-1/2">
+<img alt="Mazar-e-Sharif" class="rounded-2xl shadow-xl" src="img/Mazar-e-Sharif.jpg"/>
+</div>
+<div class="w-full md:w-1/2">
+<span class="text-primary font-bold uppercase tracking-widest text-sm">Turquoise Domes & Celestial Peace</span>
+<h3 class="text-Af-red text-3xl mt-2 mb-4">Mazar-e-Sharif</h3>
+<p class="text-Af-navy dark:text-orange-100 text-lg mb-6 leading-relaxed font-serif">A shimmering oasis of devotion, where white doves fly under the glow of the Blue Mosque.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Cities Section -->
+
+</div>
+</div>
+</section>
+<!-- END: CitiesSection -->
+<!--BEGIN: Cuisine -->
+<section class="px-4 py-16 md:px-10" id="cuisine">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-12">
+<h2 class="text-primary text-3xl md:text-4xl font-serif">Culinary Echoes of the Silk Road</h2>
+<p class="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">A vibrant fusion of Persian spice and Central Asian soul. From the smoky aroma of charcoal-grilled Kebabs to the comforting pull of hand-stretched Laghman, these dishes are a testament to a resilient heritage, perfectly balanced by the cooling mist of mint-infused Doogh.
+</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Package 1 -->
+<div class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:shadow-xl transition-shadow">
+<div class="h-56 w-full overflow-hidden">
+<img alt="Kebab" class="w-full h-full object-cover transition-transform group-hover:scale-105" data-alt="Kebab" src="img/Kebab.jpg"/>
+</div>
+<div class="p-4">
+<div class="flex justify-between items-start mb-1">
+<h3 class="text-xl font-bold">Kebab</h3>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-400 mb-6 line-clamp-2">Savor juicy lamb infused with cumin and rock salt—charcoal-grilled to embody the very passion of Afghanistan.
+</p>
+<div class="flex items-center justify-between">
+</div>
+</div>
+</div>
+<!-- Package 2 -->
+<div class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:shadow-xl transition-shadow">
+<div class="h-56 w-full overflow-hidden">
+<img alt="Laghman" class="w-full h-full object-cover transition-transform group-hover:scale-105" data-alt="Laghman" src="img/Laghman.jpg"/>
+</div>
+<div class="p-4">
+<div class="flex justify-between items-start mb-1">
+<h3 class="text-xl font-bold">Laghman</h3>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-400 mb-6 line-clamp-2">A noodle tradition carried along the Silk Road—where a rich sauce of vegetables and lamb entwines with firm, hand-pulled noodles
+</p>
+<div class="flex items-center justify-between">
+</div>
+</div>
+</div>
+<!-- Package 3 -->
+<div class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:shadow-xl transition-shadow">
+<div class="h-56 w-full overflow-hidden">
+<img alt="Doogh" class="w-full h-full object-cover transition-transform group-hover:scale-105" data-alt="Doogh" src="img/Doogh.jpg"/>
+</div>
+<div class="p-4">
+<div class="flex justify-between items-start mb-1">
+<h3 class="text-xl font-bold">Doogh</h3>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-400 mb-6 line-clamp-2">A refreshing touch of mint with a hint of salt—a palate-cleansing magic. An essential desert wisdom after rich, hearty meat dishes.
+</p>
+<div class="flex items-center justify-between">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- BEGIN: HistorySection -->
+<section class="bg-[#006699]/30 section-spacing px-6 relative overflow-hidden" id="history">
+<div class="max-w-5xl mx-auto"><div class="text-center mb-12">
+<h2 class="text-Af-red font-serif text-sm mb-2 uppercase tracking-[0.3em]">アフガニスタン・イスラム共和国の歴史</h2>
+<h3 class="text-k-yellow-c text-3xl md:text-4xl font-serif">Islamic Republic of Afghanistan</h3>
+<p class="text-xs text-slate-600 dark:text-slate-400 max-w-3xl mx-auto">From the gold of the ancient Silk Road to the haunting echoes of Soviet steel, Afghanistan stands as a monumental crossroads of human history. For millennia, this resilient land of rugged mountain kingdoms has witnessed the rise and fall of empires—where Alexander the Great, Persian kings, and nomadic conquerors once met. Though carved by the turbulent currents of conflict, its timeless landscapes endure, guarded by a proud people whose fierce independence and unbreakable spirit survive through the ages.</p>
+</div>
+<div class="max-w-3xl mx-auto space-y-8 relative border-l border-slate-300 pl-8">
+<!-- History: Ancient -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-k-yellow-c"></div>
+<h4 class="text-k-yellow-c font-sans text-xl font-semibold mb-6">古代</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">アケメネス朝ペルシア<span class="text-xs text-slate-500 block md:inline md:ml-2">（紀元前6世紀 - 紀元前330年） </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">キュロス大王が東方に領土を拡大し、アフガニスタン地域を支配。</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">マケドニア王国<span class="text-xs text-slate-500 block md:inline md:ml-2">（紀元前330年 - 紀元前323年） </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">アレクサンドロス大王がアフガニスタンを征服し、ヘレニズム文化を導入。</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">セレウコス朝 <span class="text-xs text-slate-500 block md:inline md:ml-2">（紀元前312年 - 紀元前250年頃） </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">アレクサンドロスの後継者による支配。バクトリア地方を含む。
+</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">グレコ・バクトリア王国<span class="text-xs text-slate-500 block md:inline md:ml-2">（紀元前250年頃 - 紀元前130年頃）  </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">ギリシア系王国が成立し、東西文化が融合。
+</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">クシャーナ朝<span class="text-xs text-slate-500 block md:inline md:ml-2">（紀元前1世紀 - 3世紀） </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">仏教が広まり、ガンダーラ美術が栄える。
+
+</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">サーサーン朝ペルシア<span class="text-xs text-slate-500 block md:inline md:ml-2">（224年 - 651年）  </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">アフガニスタン西部を支配。ゾロアスター教が広まる。
+</p>
+</div>
+
+</div>
+</div>
+<!-- History: Medieval -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-k-yellow-c"></div>
+<h4 class="text-k-yellow-c font-sans text-xl font-semibold mb-6">中世</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">イスラム帝国 <span class="text-xs text-slate-500 block md:inline md:ml-2">（ウマイヤ朝・アッバース朝）（651年 - 9世紀頃） </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">アラブ人による征服でイスラム教が定着。
+</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">サーマーン朝<span class="text-xs text-slate-500 block md:inline md:ml-2">（819年 - 999年）  </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">中央アジアを中心にペルシア文化が復興。</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">ガズナ朝<span class="text-xs text-slate-500 block md:inline md:ml-2">（977年 - 1186年）   </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">アフガニスタンを拠点にインド北部まで勢力を拡大。
+</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">ゴール朝<span class="text-xs text-slate-500 block md:inline md:ml-2">（1148年 - 1215年）  </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">ガズナ朝を滅ぼし、広範囲を支配。
+</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">モンゴル帝国<span class="text-xs text-slate-500 block md:inline md:ml-2">（13世紀）    </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">チンギス・ハーンの侵攻により、アフガニスタンは征服される。</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">ティムール朝<span class="text-xs text-slate-500 block md:inline md:ml-2">（1370年 - 1507年）   </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">文化が栄え、ヘラートが学問と芸術の中心地となる。</p>
+</div>
+
+</div>
+</div>
+<!-- History: Early Modern -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-k-yellow-c"></div>
+<h4 class="text-k-yellow-c font-sans text-xl font-semibold mb-6">近世</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">ムガル帝国<span class="text-xs text-slate-500 block md:inline md:ml-2">（1526年 - 1857年）   </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">アフガニスタンを拠点にバーブルがインドで建国。
+</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">ドゥッラーニー朝<span class="text-xs text-slate-500 block md:inline md:ml-2">（1747年 - 1823年）   </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">アフガニスタンの統一を達成し、現在の国土の基盤を築く。
+</p>
+</div>
+
+</div>
+</div>
+<!-- History: Modern -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-k-yellow-c"></div>
+<h4 class="text-k-yellow-c font-sans text-xl font-semibold mb-6">近現代・現代</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">アフガニスタン王国 <span class="text-xs text-slate-500 block md:inline md:ml-2">（1823年 - 1973年）  </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">イギリスとロシアの緩衝地帯として独立を維持。</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">アフガニスタン共和国<span class="text-xs text-slate-500 block md:inline md:ml-2">（1973年 -1978年 ） 1973年のクーデターにより王政が廃止   </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed mb-6">&nbsp;&nbsp;1973年、アフガニスタンでは国王ザーヒル・シャーの従兄弟であるムハンマド・ダーウード（ダウト）が主導するクーデターが発生しました。当時、国王が病気療養のためイタリアに滞在していた隙を突いたダーウードは、軍を動かして実権を掌握し、王制の廃止を宣言しました。この歴史的転換により、200年以上続いた「アフガニスタン王国」は終焉を迎え、ダーウードを初代大統領とする「アフガニスタン共和国」が誕生することとなりました。以降、アフガニスタンは激動の時代を迎えます。</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">アフガニスタン民主共和国<span class="text-xs text-slate-500 block md:inline md:ml-2">（1978年 -1992年 ）1978年共産主義の始まり</span></h5>
+ <p class="text-xs text-slate-600 leading-relaxed">1978年：共産主義クーデター（四月革命）</p>
+<p class="text-xs text-slate-600 leading-relaxed">1989-1992: 共産政権（ナジブラ） vs ムジャヒディン諸派の戦い</p>
+<p class="text-xs text-slate-600 leading-relaxed">1992年まで: 国名は「アフガニスタン民主共和国（または共和国）」。中身はソ連が作った共産政権。</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">アフガニスタン・イスラム国<span class="text-xs text-slate-500 block md:inline md:ml-2">（1992年 -1996年 ）</span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">&nbsp;&nbsp;ソ連からの莫大な資金援助が続いていたことと、敵であるムジャヒディン側がバラバラでまとまりがなかったため、ソ連が去った(1989年)後もナジブラ政権は3年間も持ちこたえました。1991年にソ連自体が崩壊し、援助が完全にストップ。ナジブラ政権はついに終焉を迎えました。1992年に「アフガニスタン・イスラム国」が誕生しました。
+</p>
+<p class="text-xs text-slate-600 leading-relaxed">1992-1996: ムジャヒディン諸派同士の凄まじい内戦</p>
+<p class="text-xs text-slate-600 leading-relaxed">1992年から: 国名は「アフガニスタン・イスラム国」。中身はアメリカやサウジが支援したムジャヒディンの連立政権。</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">アフガニスタン・イスラム首長国<span class="text-xs text-slate-500 block md:inline md:ml-2">（1996年 -2001年 ）</span></h5>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1"><span class="text-xs text-slate-500 block md:inline md:ml-2">（2001年から2004年までは暫定政権）。</span></h5>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">アフガニスタン・イスラム共和国<span class="text-xs text-slate-500 block md:inline md:ml-2">（2004年 -21年 ）</span></h5>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">アフガニスタン・イスラム首長国（現タリバン政権）<span class="text-xs text-slate-500 block md:inline md:ml-2">（2021年 -現在 ）</span></h5>
+</div>
+<div>
+<div class="space-y-6 border-t border-slate-100 pt-6">
+    <!-- 1. 1978年 -->
+    <div>
+        <h6 class="text-sm font-bold text-slate-800 mb-1">1. 1978年：共産主義クーデター（四月革命）</h6>
+        <p class="text-xs text-slate-600 leading-relaxed">ソ連の影響を受けた共産主義政党が、ダウト大統領を殺害して政権を奪取。</p>
+        <p class="text-xs text-slate-600 leading-relaxed"><strong>内容:</strong> 急進的な近代化（宗教の否定、土地改革）を強行。<strong>結果:</strong> 伝統を重んじる地方の民衆が猛反発し、国内で内戦が勃発。</p>
+    </div>
+
+    <!-- 2. 1979年〜1989年 -->
+    <div>
+        <h6 class="text-sm font-bold text-slate-800 mb-1">2. 1979年〜1989年：ソ連軍の侵攻</h6>
+        <p class="text-xs text-slate-600 leading-relaxed">混乱する共産政権を助ける名目で、ソ連軍が直接軍事介入。イスラムの戦士たち<strong>「ムジャヒディン」</strong>が各地でゲリラ戦を展開。</p>
+        <p class="text-xs text-slate-600 leading-relaxed"><strong>介入:</strong> ソ連を弱体化させるため、アメリカ（CIA）やサウジアラビアがムジャヒディンに巨額の援助を行いました。</p>
+    </div>
+
+    <!-- 3. 1989年〜1996年 -->
+    <div>
+        <h6 class="text-sm font-bold text-slate-800 mb-1">3. 1989年〜1996年：泥沼の内戦</h6>
+        <p class="text-xs text-slate-600 leading-relaxed">ソ連軍撤退後、共通の敵を失った派閥同士がカブールを舞台に権力争いを開始。</p>
+        <p class="text-xs text-slate-600 leading-relaxed"><strong>惨状:</strong> かつて「中央アジアのパリ」と呼ばれた美しい街並みが、身内同士の砲撃でガレキの山と化しました。</p>
+    </div>
+
+    <!-- 4. 1996年〜2001年 -->
+    <div>
+        <h6 class="text-sm font-bold text-slate-800 mb-1">4. 1996年〜2001年：旧タリバン政権の誕生</h6>
+        <p class="text-xs text-slate-600 leading-relaxed">軍閥の略奪に絶望した民衆の前に、「秩序とイスラムの正義」を掲げる学生集団タリバンが登場。</p>
+        <p class="text-xs text-slate-600 leading-relaxed"><strong>統治:</strong> 治安は回復したものの、女性の教育禁止や公開処刑など、厳格なイスラム法による極端な恐怖政治が始まりました。</p>
+    </div>
+
+    <!-- 5. 2001年〜2021年 -->
+    <div>
+        <h6 class="text-sm font-bold text-slate-800 mb-1">5. 2001年〜2021年：アメリカとの戦争</h6>
+        <p class="text-xs text-slate-600 leading-relaxed">9.11テロの黒幕を匿ったとしてアメリカが攻撃を開始。タリバンを追放し、民主的な「アフガニスタン・イスラム共和国」が誕生しました。</p>
+        <p class="text-xs text-slate-600 leading-relaxed"><strong>試み:</strong> 女性の権利も回復しましたが、汚職や地方の不安定さは解消されないままでした。</p>
+    </div>
+
+    <!-- 6. 2021年〜現在 -->
+    <div>
+        <h6 class="text-sm font-bold text-slate-800 mb-1">6. 2021年〜現在：タリバンの再掌握</h6>
+        <p class="text-xs text-slate-600 leading-relaxed">アメリカ軍の撤退に伴い、タリバンが電撃的にカブールを制圧し、再び統治を開始しました。</p>
+        <p class="text-xs text-slate-600 leading-relaxed"><strong>現在:</strong> 女性の権利は再び剥奪され、国際的な孤立と深刻な経済危機に直面しています。</p>
+    </div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+<p class="text-left text-slate-600 text-sm mt-6 font-bold max-w-2xl mx-auto">アフガニスタン考～ミニスカートがロングスカートだったら～</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto">&nbsp;&nbsp;実は、まさにその「見た目のギャップ」が、後の悲劇を加速させた側面があると言われています。</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto">&nbsp;&nbsp;1970年代にソ連が介入する前のアフガニスタン（特にムハンマド・ザヒル・シャー国王の時代）は、今とは全く違う姿でした。</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto">「中央アジアのパリ」: 当時のカブールは、女性がミニスカートを履いて大学に通い、西洋の音楽やファッションが日常にある、非常にリベラルで平和な都市でした。</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto">「ヒッピー・トレイル」: 欧米の若者たちがバックパッカーとして訪れるほど治安が良く、観光資源（バーミヤンの大仏やヘラートの遺跡）も大切にされていました。</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto">&nbsp;&nbsp;カブールの「ミニスカート」は、当時のアフガニスタンが近代化している象徴でしたが、同時に「都市と地方の断絶」の象徴でもありました。</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto">&nbsp;&nbsp;もし「ロングスカート」のままだったら…
+もし、当時の知識層や王室が、もっと伝統的な価値観（ロングスカートやスカーフなど）を尊重しながら、「イスラムの教えを守りつつ、教育や医療を充実させる」という、中庸な近代化を進めていたら、歴史は変わっていたかもしれません。
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto">地方の反感を買わなかった: 地方の保守的な農村部の人々にとって、カブールの自由なスタイルは「西洋に魂を売った不謹慎なもの」に見えてしまいました。それが、後の過激な宗教勢力の「共感」を集める理由になってしまったのです。</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto">「急進すぎた」反動: ソ連もアメリカも、その国の土壌（伝統）を無視して、自分たちのイデオロギーを急激に植え付けようとしました。その反動として、タリバンのような極端な「揺り戻し」が起きてしまいました。</p>
+<p class="text-left text-slate-600 text-sm mt-6 font-bold max-w-2xl mx-auto">近代化の「作法」</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto">&nbsp;&nbsp;イランもそうですが、急激に「西洋化」を進めようとすると、伝統を重んじる人々との間に深い溝ができてしまいます。その溝を、外部の勢力（ソ連やCIA）が利用してしまったのがアフガニスタンの悲劇の正体かもしれません。
+  「ロングスカート」のように、伝統を否定しない緩やかな変化であれば、大国につけ込まれる「心の隙」を作らずに済んだのかもしれない……。そう考えると、文化のバランスを取ることの難しさを痛感します。</p>
+</div>
+</section>
+<!-- END: HistorySection -->
+<!-- BEGIN: Footer -->
+<footer class="bg-Af-red py-20 px-6 border-t border-white/5 relative z-10">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="col-span-1 md:col-span-2">
+<div class="flex items-center gap-3 mb-6">
+<div class="text-emerald-500">
+<svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景（紺） -->
+  <rect width="24" height="24" rx="4" fill="#0B1F3A"/>
+
+  <!-- 山（シンプル） -->
+  <path d="M3 17L8 10L13 17Z" fill="white" opacity="0.85"/>
+  <path d="M10 17L14.5 11.5L21 17Z" fill="white" opacity="0.5"/>
+
+  <!-- モスク（シルエット） -->
+  <!-- ドーム -->
+  <path d="M9 14C9 12.5 10.5 11.5 12 11.5C13.5 11.5 15 12.5 15 14Z" fill="white"/>
+
+  <!-- 建物本体 -->
+  <rect x="9" y="14" width="6" height="2" fill="white"/>
+
+  <!-- ミナレット（塔） -->
+  <rect x="16.5" y="12" width="1" height="5" fill="white"/>
+  <circle cx="17" cy="11.5" r="0.6" fill="white"/>
+</svg>
+</div>
+<span class="text-Af-navy font-serif text-lg tracking-wider font-semibold">Afghanistan Discovery</span>
+</div>
+<p class="text-white text-sm max-w-sm mb-8">
+            Curating bespoke luxury travel experiences for discerning explorers seeking the ancient Silk Road heritage and resilient soul of the Hindu Kush.
+          </p>
+</div>
+<div>
+<h6 class="text-Af-navy font-serif text-sm mb-6 uppercase tracking-widest">Navigation</h6>
+<ul class="space-y-4 text-sm text-white/60">
+<li><a class="hover:text-white transition-colors" href="#Landmarks">Landmarks</a></li>
+<li><a class="hover:text-white transition-colors" href="#cities">Cities</a></li>
+<li><a class="hover:text-white transition-colors" href="#cuisine">Cuisine</a></li>
+<li><a class="hover:text-white transition-colors" href="#history">History</a></li>
+</ul>
+</div>
+<div>
+<h6 class="text-Af-navy font-serif text-sm mb-6 uppercase tracking-widest">Connect</h6>
+<ul class="space-y-4 text-sm text-white/60">
+<li><a class="hover:text-white transition-colors" href="#">Instagram</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Twitter</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Contact Us</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 mt-10 mb-4"><p class="text-xs text-Af-navy">© 2026 Afghanistan Discovery. All rights reserved.</p>
+<div class="flex gap-8 text-xs text-white/80">
+<a href="#">Privacy Policy</a>
+<a href="#">Terms of Service</a>
+</div></div>
+<button onclick="window.close(); setTimeout(() => { window.location.href = 'https://google.com'; }, 100);" 
+          class="flex items-center gap-1 px-3 py-0.5 ml-auto md:ml-auto bg-brand-emerald hover:opacity-80 text-white font-medium rounded-full transition-all shadow-sm">
+    <span class="material-symbols-outlined text-white/80 text-xs">logout</span>
+    <span class="tracking-wider text-white/80 text-xs">QUIT</span>
+  </button>
+</footer>
+<!-- END: Footer -->
+</main>
+<style data-purpose="animations">
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+<script>
+    document.getElementById('searchInput').addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+            const searchTerm = this.value.trim();
+            if (searchTerm) {
+                const wikipediaUrl = `https://ja.wikipedia.org/wiki/特別:検索?search=${encodeURIComponent(searchTerm)}`;
+                window.open(wikipediaUrl, '_blank');
+            }
+        }
+    });
+</script>
+</body></html>
