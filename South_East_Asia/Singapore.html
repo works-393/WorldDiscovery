@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Singapore Discovery | Luxury Travel Experience</title>
+<meta content="Explore Districts, Attractions, Cuisine, and History of Singapore." name="description"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="../menu.js"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'lebanon-dark': '#102219',
+            'lebanon-gold': '#C5A059',
+            'lebanon-green': '#2D5A27',
+            "primary": "#144bb8",
+            "B-purple-dark": "#632276",
+            "qatar-blue": "#1e3a8a",
+            "oman-blue": "#003153",
+            "yemen-red": "#CE1126",
+            "k-yellow": "#ffcc00",
+            "k-red": "#cc3333",
+            "Af-red": "#ff0099",
+            "Af-navy": "#0B1F3A",
+            "e-green-dark": "#006400",
+            "s-pink": "#cc3399",
+             },
+          fontFamily: {
+            serif: ['Newsreader', 'serif'],
+            sans: ['Inter', 'sans-serif'],
+          },
+          backgroundImage: {
+            'Kazakhstan-hero': "url('img/Singapore_bg.jpg')",
+          }
+        }
+      }
+    }
+  </script>
+<style data-purpose="custom-styling">body {
+    background-color: #f0f9ff;
+    color: #1e293b
+    }
+.glass-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 1rem
+    }
+.text-balance {
+    text-wrap: balance
+    }
+.section-spacing {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem
+    }
+/* Pattern Overlay */
+.bg-pattern {
+    background-image: url(img/Singapore_bg.jpg);
+    opacity: 0.35
+    }</style>
+</head>
+<body class="font-sans antialiased overflow-x-hidden">
+<!-- BEGIN: Background Texture -->
+<div class="fixed inset-0 bg-pattern pointer-events-none z-0"></div>
+<!-- END: Background Texture -->
+<!-- BEGIN: MainHeader -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-s-pink backdrop-blur-md border-b border-white/5">
+<nav class=" max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<!-- Logo -->
+<a class="flex items-center gap-3 group" href="#">
+<div class="text-white-500 transform group-hover:scale-110 transition-transform">
+<svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景：シンガポール・レッド -->
+  <rect width="24" height="24" rx="4" fill="#EE2A35"/>
+  <path d="M0 12H24V20C24 22.2091 22.2091 24 20 24H4C1.79086 24 0 22.2091 0 20V12Z" fill="#FFFFFF"/>
+  <!-- 三日月と星 -->
+  <path d="M4 6C4 8 5.5 9.5 7.5 9.5C8 9.5 8.5 9.4 9 9.2C8.5 9.8 7.5 10 6.5 10C4.5 10 3 8.5 3 6.5C3 5.5 3.4 4.6 4 4C3.7 4.5 3.5 5.2 3.5 6C3.5 7.5 4 8 4 6Z" fill="#FFFFFF"/>
+  <circle cx="8" cy="5" r="0.4" fill="white"/><circle cx="9.2" cy="6" r="0.4" fill="white"/><circle cx="8.8" cy="7.5" r="0.4" fill="white"/><circle cx="7.2" cy="7.5" r="0.4" fill="white"/><circle cx="6.8" cy="6" r="0.4" fill="white"/>
+  
+  <!-- 白地のアクセント：ライオンヘッドの抽象的なライン -->
+  <path d="M15 15C15 14 16 13 18 13C20 13 21 14.5 21 16.5C21 19 19 21 16 21H14V19" stroke="#EE2A35" stroke-width="1.2" stroke-linecap="round"/>
+  <circle cx="17.5" cy="16" r="0.8" fill="#EE2A35"/>
+</svg>
+</div>
+<span class="text-white font-serif text-xl  font-semibold">Singapore Discovery</span>
+</a>
+<!-- Desktop Navigation -->
+<div id="navMenu" class="hidden md:flex items-center gap-9 
+    absolute top-full left-0 w-full bg-s-pink backdrop-blur-md flex-col p-6 shadow-lg z-50
+    md:absolute md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 md:w-auto md:flex-row md:p-0 md:shadow-none">
+<a class="text-white text-sm font-medium hover:text-k-red transition-colors tracking-widest uppercase" href="#Landmarks">Landmarks</a>
+<a class="text-white text-sm font-medium hover:text-k-red transition-colors tracking-widest uppercase" href="#cuisine">Cuisine</a>
+<a class="text-white text-sm font-medium hover:text-k-red transition-colors tracking-widest uppercase" href="#history">History</a>
+</div>
+<!-- Search Bar -->
+<div class="relative hidden lg:block" data-purpose="search-container">
+<span class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+<svg class="w-4 h-4 text-B-purple-dark/50" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</span>
+<input id="searchInput" class="bg-white/5 border-white/10 text-white pl-10 pr-4 py-2 rounded-lg focus:ring-B-purple-dark focus:border-B-purple-dark w-64 text-sm" placeholder="Wikipedia検索" type="text"/>
+</div>
+
+<!-- Mobile Menu Button (Icon only) -->
+<div class="md:hidden">
+<button
+    id="menuButton"
+    class="md:hidden flex items-center justify-center text-white hover:text-white/80 transition-colors">
+    <span class="material-symbols-outlined text-3xl">
+        menu
+    </span>
+</button></div>
+
+</nav>
+</header>
+<!-- END: MainHeader -->
+<!-- BEGIN: HeroSection -->
+<main class="relative">
+<section class="relative flex items-center justify-center overflow-hidden h-[90vh]">
+<!-- Hero Background Image -->
+<div class="absolute inset-0 z-0">
+<img alt="Singapore" class="w-full h-full object-cover brightness-50" src="img/Singapore.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-b from-[#003153]/60 via-transparent to-[#f0f9ff]"></div>
+</div>
+<div class="relative z-10 text-center px-6 max-w-4xl">
+<h2 class="text-white/90 font-serif italic text-xl md:text-2xl mb-4 opacity-0 animate-[fadeIn_1s_ease-out_forwards]">Timeless Symbols of Innovation</h2>
+<h1 class="text-k-yellow/60 text-4xl md:text-7xl lg:text-4xl font-serif mb-8 leading-tight opacity-0 animate-[fadeIn_1s_ease-out_0.3s_forwards]">
+         Singapore: A Journey through the architectural marvels and heritage sites that form the soul of Singapore's cosmopolitan identity.
+</h1>
+<p class="text-lg md:text-xl text-white/80 font-light max-w-2xl mx-auto mb-10 text-balance opacity-0 animate-[fadeIn_1s_ease-out_0.6s_forwards]">
+        A global hub for innovation, culture, and sustainable urban living. Discover the heart of Southeast Asia.</p>
+<!-- <a class="inline-block bg-B-purple-dark text-lebanon-dark px-10 py-4 font-semibold tracking-widest uppercase text-sm hover:scale-105 transition-transform opacity-0 animate-[fadeIn_1s_ease-out_0.9s_forwards]" href="#landmarks">
+          Explore Destinations
+        </a>-->
+</div>
+
+</section>
+<!-- END: HeroSection -->
+<!-- BEGIN: Landmarks Section -->
+<section class="section-spacing px-4 md:px-20 relative" id="Landmarks">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
+<div class="max-w-2xl">
+<h2 class="text-yemen-red font-serif text-sm mb-2 uppercase tracking-[0.3em]">Where Dreams Take Flight</h2>
+<h3 class="text-lebanon-green text-3xl md:text-4xl font-serif">Iconic Landmarks</h3>
+</div>
+<p class="text-orange/90 max-w-md text-sm">Explore the endless possibilities of our vibrant city-state where dreams are reimagined every day. </p>
+</div>
+<!-- BEGIN: Landmark's contents -->
+<div class="space-y-20">
+<!--Merlion Park-->
+<div class="flex flex-col md:flex-row items-center gap-10 px-4 md:px-20">
+<div class="w-full md:w-1/2">
+<img alt="Merlion Park" class="rounded-2xl shadow-xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3P82ECiT4tHnUnFYwmA6St0YdiS_CDS-UzfqZu7C4BneEveIpiYqcWN4H5fXLIzRvNjO95n47EL0fR1QlIvwbYkKhJZo3Kkcg3SjLZjtSqRubiTdhLJQhnl9LpphmbnZy5MYZmiE81O8oQw1IrJnp7nGsyFImftG3KErZJUvFIdCzDlTagzBQjqNnVQ9tAbVgH5U8BLngoSnLV-IcHRiBypGyvNcBziFIU_9uRjTwOFqmBmrprFDH9nZJsm-a5vFuOAI_u_my4L4"/>
+</div>
+<div class="w-full md:w-1/2">
+<span class="text-primary font-bold uppercase tracking-widest text-sm">National Icons</span>
+<h3 class="text-Af-red font-serif font-bold text-3xl mt-2 mb-4">Merlion Park</h3>
+<p class="text-Af-navy dark:text-orange-100 text-lg mb-6 leading-relaxed font-serif">The Merlion, with a lion's head and a fish's body, stands as a symbol of Singapore's humble beginnings as a fishing village and its original name, Singapura. This waterfront park offers unparalleled views across the bay, especially during the nightly light shows.</p>
+</div>
+</div>
+<!--Marina Bay Sands-->
+<div class="flex flex-col md:flex-row-reverse items-center gap-10 px-4 md:px-20">
+<div class="w-full md:w-1/2">
+<img alt="Marina Bay Sands" class="rounded-2xl shadow-xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAavm2_mH6c19SRvZqjDtXhvNBvQqrZqHC1-0fH0TaY5LlREyI6ZWuJOT6AFiMcQFWFgkE3nWXsw55Ym0xWjUEzgDLd52-JU555ZtK1-DD1wZcwRfXNjMzak_UaYEHdH9GxzLlGBZJJzQACaYtwdX5WDhzEBOFi3qciKDnrdxm0E1pllTD0gYaHaXbmQB-t007M-l2nqtvXa6lrZKFfSFdrE3ZuUcILLtnPj2EFggFaUb6u4_pu7CGi9_D8YGvbtmrh3IJZNGSjbYg"/>
+</div>
+<div class="w-full md:w-1/2">
+<span class="text-primary font-bold uppercase tracking-widest text-sm">Architectural Marvels</span>
+<h3 class="text-Af-red font-serif font-bold text-3xl mt-2 mb-4">Marina Bay Sands</h3>
+<p class="text-Af-navy dark:text-orange-100 text-lg mb-6 leading-relaxed font-serif">An futuristic horticultural park home to the Supertrees. An integrated resort fronting Marina Bay, iconic for its cantilevered rooftop SkyPark and infinity pool that defines the city's skyline.</p>
+</div>
+</div>
+
+</div>
+<!-- END: Land Section -->
+<div class="grid grid-cols-2 lg:grid-cols-3 gap-4 mt-20">
+<!-- Item 1: Gardens by the Bay-->
+<div class="flex flex-col">
+<div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+<img alt="Gardens by the Bay" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAA6LtVWdMUhdCcBraAdhrRYDM8n7NtuJ66uuPnAt-cr5EaX7Pa3N2eBCXRtridyCOUdklxpJs31I6Zu3GWmU7QY2xAi6DbwJl0Hg5yxAYc4Ja_ikHULY0La7bFI3PX58jqDawSNufkYANYb4rCMO3XZOMokuphgLGHrNq2Idl0c9whQ8ainufy1H8BzvGTNgaQCLaoEVfdBO5DpE8qmEJczL8ALzP04siCzHlW-K3IiJ4mo1kQhWkPf-AQ8lsydesvyl7lCVvF8cg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+<div class="absolute bottom-0 left-0 p-4">
+<span class="text-[10px] text-lebanon-gold uppercase tracking-widest block mb-1">Urban Greenery</span>
+<h4 class="text-lg font-serif text-white">Gardens by the Bay</h4>
+</div>
+</div>
+<!-- キャプション部分：写真の直下に配置 -->
+     <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4">A futuristic horticultural sanctuary where giant Supertrees and high-tech conservatories blend nature with innovation. 
+This award-winning park offers a breathtaking escape from the urban heat, showcasing thousands of plant species. 
+As night falls, the gardens transform into a luminous wonderland, defining Singapore’s modern garden city vision.  </p>
+  </div>
+<!-- Item 2: Cloud Forest -->
+ <div class="flex flex-col">
+<div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+<img alt="Cloud Forest" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8_sIyDWHwEihKBIGRoqrkexFahogjFRW8ZVbyXoCVBPGBS2yWzeBmQChXeQaDH969feS8VYbUMQzdM_P5OSt0CwRzvuNqGFitT-4fyg_Nh_wPK2TXulC41YoeYJZpkkEPkNvRYov90CI7i0Bs5UmkqgrYnsNjIxp1c3XhIhys4olaZj_1SE5EwkzEZcJXMJpx0PyNWOByJoeuOnrcc52jyum5FMMNSj2WYvxGva2iqPgHWsFONXMSkv42Odv9gT0hIzktoDwJqn8"/>
+<div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+<div class="absolute bottom-0 left-0 p-4">
+<span class="text-[10px] text-lebanon-gold uppercase tracking-widest block mb-1">Highlights of the Gardens</span>
+<h4 class="text-lg font-serif text-white">Cloud Forest </h4>
+</div>
+</div>
+<!-- キャプション部分：写真の直下に配置 -->
+     <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4">Walk through the clouds in the world's tallest indoor waterfall. </p>
+  </div>
+<!-- Item 3: Botanic Gardens -->
+ <div class="flex flex-col">
+<div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+<img alt="Botanic Gardens" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtfKXOsEWy7o2dA3zHywbhCyHRK8Cd5X5Qx_HjEcgV9HIcCmPBdlDvuZH0X8w96CkAKffLRk80tJ5i9zkBfAa9FWXnuJGuyWsGz__ADIp0N6QxjUjLyW2yrO76ywuWef4tMpqiiq0N_xggXl4ZR_zHPIZrgu_luuOy4ITAQw9jQ0VmKqe1ZQUoM6dfgDLde61PFPyCzVH_x3BB7fpq5JfkzSqk_NsSn2_WzbaA8T7qxaxxLST_MPSXMNdTa_bteQFZ_HZlRQ97T7U"/>
+<div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+<div class="absolute bottom-0 left-0 p-4">
+
+<span class="text-[10px] text-lebanon-gold uppercase tracking-widest block mb-1">Heritage & Nature</span>
+<h4 class="text-lg font-serif text-white">Botanic Gardens </h4>
+</div>
+
+</div>
+<!-- キャプション部分：写真の直下に配置 -->
+     <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4">A 160-year-old tropical garden in the heart of the city.  
+  <span class="bg-amber-50 text-e-green-dark text-xs px-2.5 py-0.5 rounded-full mb-2 tracking-wider">
+  UNESCO SITE</span></p>
+    </div>
+</div>
+<!-- Sentosa-->
+<div class="flex flex-col md:flex-row items-center gap-10 mt-20 px-4 md:px-20">
+<div class="w-full md:w-1/2">
+<img alt="Sentosa" class="rounded-2xl shadow-xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGy35zoEI_8dGw_JbSg9Ml8vh_FoLWOi8DePPuKyVqYJe3KN26cBP2wBsnvRU-RNqBgxwOP71izJnXjlAn6pLfi78UnuIZ4rFBMnttcgj7s2S9vzjy5Y8qxh1g7pI__bx_9qQc_Ka__cDNvpf6DBB4lxc59bXNyX5qCkPDP8M8ePxwVcrHRIrTgarMKqDhVOsVXzKxd4urno-ozTaPQ_vqCmNn9I5JzP9c23KC5kZgMa-sFcAcNrty8f5nggL4Px0er7AyyB0RvJY"/>
+</div>
+<div class="w-full md:w-1/2">
+<span class="text-primary font-bold uppercase tracking-widest text-sm">Island Resort</span>
+<h3 class="text-Af-red font-serif font-bold text-3xl mt-2 mb-4">Sentosa</h3>
+<p class="text-Af-navy dark:text-orange-100 text-lg mb-6 leading-relaxed font-serif">Singapore's premier island resort getaway, home to pristine beaches, world-class theme parks, and award-winning dining experiences.</p>
+</div>
+</div>
+</section>
+<!-- END: LandmarksSection -->
+<!--BEGIN: Cuisine -->
+<section class="px-4 py-16 md:px-10" id="cuisine">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-12">
+<h2 class="text-oman-blue text-3xl md:text-4xl font-serif">Crossroads of Spice & Street Flavors</h2>
+<p class="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">From fragrant noodle soups and chili-crab feasts to kaya toast and hawker classics, Singapore’s cuisine reflects a vibrant fusion of Chinese, Malay, Indian, and global culinary traditions.
+</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Package 1 -->
+<div class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:shadow-xl transition-shadow">
+<div class="h-56 w-full overflow-hidden">
+<img alt="Singapore Laksa" class="w-full h-full object-cover transition-transform group-hover:scale-105" data-alt="Singapore Laksa" src="img/Singapore_Laksa.jpg"/>
+</div>
+<div class="p-4">
+<div class="flex justify-between items-start mb-1">
+<h3 class="text-xl font-bold">Singapore Laksa</h3>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-400 mb-6 line-clamp-2">A rich coconut curry noodle soup layered with seafood, spices, and Southeast Asian flavors.</p>
+<div class="flex items-center justify-between">
+</div>
+</div>
+</div>
+<!-- Package 2 -->
+<div class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:shadow-xl transition-shadow">
+<div class="h-56 w-full overflow-hidden">
+<img alt="Hainanese Chicken Ricea(海南鶏飯)" class="w-full h-full object-cover transition-transform group-hover:scale-105" data-alt="Hainanese Chicken Ricea(海南鶏飯)" src="img/Hainanese.jpg"/>
+</div>
+<div class="p-4">
+<div class="flex justify-between items-start mb-1">
+<h3 class="text-xl font-bold">Hainanese Chicken Ricea(海南鶏飯)</h3>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-400 mb-6 line-clamp-2">Tender poached chicken served with fragrant rice, chili sauce, and clear soup — Singapore’s iconic comfort food. </p>
+<div class="flex items-center justify-between">
+</div>
+</div>
+</div>
+<!-- Package 3 -->
+<div class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:shadow-xl transition-shadow">
+<div class="h-56 w-full overflow-hidden">
+<img alt="Kaya Toast" class="w-full h-full object-cover transition-transform group-hover:scale-105" data-alt="Kaya Toast" src="img/Kaya_Toast.jpg"/>
+</div>
+<div class="p-4">
+<div class="flex justify-between items-start mb-1">
+<h3 class="text-xl font-bold">Kaya Toast</h3>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-400 mb-6 line-clamp-2">Crispy toasted bread filled with sweet coconut kaya jam and butter, a beloved Singaporean café classic. </p>
+<div class="flex items-center justify-between">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- BEGIN: HistorySection -->
+<section class="bg-[#ffcc33]/20 section-spacing px-6 relative overflow-hidden" id="history">
+<div class="max-w-5xl mx-auto"><div class="text-center mb-12">
+<h2 class="text-k-red font-serif text-sm mb-2 uppercase tracking-[0.3em]">シンガポール共和国の歴史</h2>
+<h3 class="text-yemen-red text-3xl md:text-4xl font-serif">Harbor of Empires & Global Exchange</h3>
+<p class="text-xs text-slate-600 max-w-2xl mx-auto">From a modest trading port to a British colonial hub and modern global city-state, Singapore’s history is shaped by migration, commerce, resilience, and cultural fusion across centuries. </p>
+</div>
+<div class="max-w-3xl mx-auto space-y-8 relative border-l border-slate-300 pl-8">
+<!-- History: Ancient -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-yemen-red"></div>
+<h4 class="text-yemen-red font-sans text-xl font-semibold mb-6">古代</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-qatar-blue text-4xl font-bold mb-1">テマセク（Temasek）<span class="text-xs text-slate-500 block md:inline md:ml-2">（3世紀～14世紀）</span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">中国の文献に「Pu-luo-chung（半島の先端にある島）」として記録され、交易拠点として知られていました。
+シュリーヴィジャヤ王国（7世紀～13世紀）の影響下にあり、漁村や交易地として発展。
+</p>
+</div>
+
+
+</div>
+</div>
+<!-- History: Medieval -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-yemen-red"></div>
+<h4 class="text-yemen-red font-sans text-xl font-semibold mb-6">中世</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-qatar-blue text-4xl font-bold mb-1">シンガプーラ（Singapura）<span class="text-xs text-slate-500 block md:inline md:ml-2">（14世紀）</span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">サンスクリット語で「ライオンの町」を意味し、スマトラ島の王子サン・ニラ・ウタマによって名付けられたとされています。
+マジャパヒト王国やアユタヤ王朝との争いの中で、重要な港として機能。
+
+</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-qatar-blue text-4xl font-bold mb-1">マラッカ王国<span class="text-xs text-slate-500 block md:inline md:ml-2">（1402年～1511年）</span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">シンガプーラはマラッカ王国の支配下に入り、交易拠点としての役割を果たしました。</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-qatar-blue text-4xl font-bold mb-1">ジョホール王国<span class="text-xs text-slate-500 block md:inline md:ml-2">（1511年～1613年）  </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">マラッカ王国滅亡後、ジョホール王国の一部となり、交易活動が続きました。
+</p>
+</div>
+
+</div>
+</div>
+<!-- History: Early Modern -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-yemen-red"></div>
+<h4 class="text-yemen-red font-sans text-xl font-semibold mb-6">近世</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-qatar-blue text-4xl font-bold mb-1">ポルトガルの影響<span class="text-xs text-slate-500 block md:inline md:ml-2">（16世紀） </span></h5>
+<p class="text-xs text-slate-600 mt-0 mb-2">ポルトガルがマラッカを支配し、シンガポール周辺にも影響を及ぼしました。
+</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-qatar-blue text-4xl font-bold mb-1">イギリス東インド会社<span class="text-xs text-slate-500 block md:inline md:ml-2">（1819年～1824年） </span></h5>
+<p class="text-xs text-slate-600 mt-0 mb-2">トーマス・ラッフルズがシンガポールを自由港として開発し、イギリスの影響が強まりました。
+</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-qatar-blue text-4xl font-bold mb-1">海峡植民地<span class="text-xs text-slate-500 block md:inline md:ml-2">（1826年～1942年）  </span></h5>
+<p class="text-xs text-slate-600 mt-0 mb-2">シンガポールはペナン、マラッカとともにイギリスの海峡植民地の一部となり、貿易港として急速に発展。</p>
+<p class="text-xs text-slate-600 mt-0 mb-2">シンガポールが「海峡植民地の首都」と認められていたのは、1832年から1946年の解体時まで（占領による中断を含む）となります。
+</p>
+</div>
+
+</div>
+</div>
+<!-- History: Modern -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-yemen-red"></div>
+<h4 class="text-yemen-red font-sans text-xl font-semibold mb-6">近現代・現代</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-qatar-blue text-4xl font-bold mb-1">日本占領期 <span class="text-xs text-slate-500 block md:inline md:ml-2">（1942年～1945年） </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">第二次世界大戦中、日本がシンガポールを占領し、「昭南島（しょうなんとう）」と改名しました。
+</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-qatar-blue text-4xl font-bold mb-1">イギリス直轄植民地 <span class="text-xs text-slate-500 block md:inline md:ml-2">（1945年～1963年） </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">戦後、イギリスが再び統治を開始し、自治権を徐々に拡大。
+</p>
+</div>
+
+<div>
+<h5 class="text-lg font-serif text-qatar-blue text-4xl font-bold mb-1">マレーシア連邦<span class="text-xs text-slate-500 block md:inline md:ml-2">（1963年～1965年） </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed mb-0">シンガポールはマレーシア連邦に加盟しましたが、政治的・経済的な対立により分離。
+</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-qatar-blue text-4xl font-bold mb-1">シンガポール共和国<span class="text-xs text-slate-500 block md:inline md:ml-2">（1965年～現在）</span></h5>
+<p class="text-xs text-slate-600 leading-relaxed mb-0">マレーシアより分離、シンガポール共和国として1965年に独立を果たし、現在は世界有数の経済国家として発展を続けています。
+</p>
+   
+
+</div>
+
+<div>
+<div class="space-y-6 border-t border-slate-100 pt-6">
+   
+</div>
+</div>
+
+</div>
+</div>
+</div>
+<div>
+<p class="text-left text-slate-600 text-sm mt-6 font-bold max-w-2xl mx-auto">1945年〜1963年のシンガポールの歩み </p>
+<p class="text-left text-s-pink text-sm mt-2 font-bold max-w-2xl mx-auto">1946年：直轄植民地としての独立</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">海峡植民地が解体され、シンガポールは単独の直轄植民地（Crown Colony）となりました。</p>
+<p class="text-left text-s-pink text-sm mt-2 font-bold max-w-2xl mx-auto">1955年：一部自治の開始</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">「レンデル憲法」に基づき、初の民選政府が発足。完全ではありませんが、内政の一部で自治が始まりました。</p>
+<p class="text-left text-s-pink text-sm mt-2 font-bold max-w-2xl mx-auto">1959年：自治領（State of Singapore）の発足</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;1959年6月、イギリスから外交と国防を除く完全な内部自治権を獲得し、「シンガポール自治州（自治領）」となりました。この際、リー・クアンユー（Lee Kuan Yew）が初代首相に就任しました。</p>
+<p class="text-left text-s-pink text-sm mt-2 font-bold max-w-2xl mx-auto">1963年：マレーシア連邦への参加（イギリスからの離脱・植民地支配の終わり）</p>
+<p class="text-left text-s-pink text-sm mt-0 max-w-2xl mx-auto">1963年9月16日、マラヤ連邦、サバ、サラワクと共に「マレーシア連邦」を形成</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;この時点で「イギリス領」ではなくなりましたが、あくまで「マレーシアという国の一部」になったため、シンガポール単独での外交権や国防権はありませんでした。</p>
+<p class="text-left text-s-pink text-sm mt-2 font-bold max-w-2xl mx-auto">1965年：「国家としての完全独立（主権国家化）」（マレーシアからの分離独立）</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;1965年8月9日、マレーシア連邦政府との政治的・人種的な対立（「マレー人優先政策」をめぐる争いなど）により、シンガポールはマレーシアから追放される形で分離独立しました。
+現在、シンガポールが「ナショナルデー（独立記念日）」として祝っているのは、1965年8月9日です。</p>
+<p class="text-left text-slate-600 text-sm mt-6 font-bold max-w-2xl mx-auto">アメリカ南北戦争という分裂の危機に立ち向かったエイブラハム・リンカーンとの共通点 </p>
+<p class="text-left text-s-pink text-sm mt-2 font-bold max-w-2xl mx-auto">国家の統一と平等への信念</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;リンカーンは、奴隷制という人種問題で引き裂かれたアメリカを、「人民の、人民による、人民のための政治」という民主主義と平等の理念で一つにまとめようとしました。</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;リー・クアンユーもまた、多民族が共生するために、マレー人特権ではなく「すべての市民の平等」を掲げて「マレーシア人のためのマレーシア」を実現しようと闘いました。</p>
+<p class="text-left text-s-pink text-sm mt-2 font-bold max-w-2xl mx-auto">決断に伴う「悲劇」</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;リンカーンは、統一を維持するために凄惨な南北戦争を戦い抜かなければなりませんでした。</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;リー・クアンユーは、統一（マレーシア連邦への残留）を望みながらも、さらなる流血（人種暴動）を避けるために、あえて「国家の分離」という正反対の道を選ばざるを得ませんでした。結果として、シンガポールは「人口の約75%が華人」という極めて特殊な都市国家として独立することになりました。</p>
+<p class="text-left text-s-pink text-sm mt-2 font-bold max-w-2xl mx-auto">法曹界出身の指導者</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;二人とも弁護士出身であり、論理的な思考と強いリーダーシップで未曾有の危機を乗り越えたという点も似ています。</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;リンカーンは「バラバラになりそうな国をつなぎ止めた」英雄ですが、リー・クアンユーは「つなぎ止めたかった国から放り出され、そこから世界一の都市国家を作り上げた」という、ある種「逆向きのリンカーン」のような劇的なドラマを持っています。</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;リー・クアンユーが独立時に流した涙は、「理想（統合）が潰えた悔しさ」と「これから資源もない小国を率いる責任感」が混ざり合ったものでした。</p>
+<p class="text-left text-s-pink text-sm mt-2 font-bold max-w-2xl mx-auto">リー・クアンユーの哲学</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;彼は「シンガポールは、他国よりも優れていなければ生き残れない」という危機感を常に持っていました。その結果、わずか30年ほどで「第三世界から第一世界へ」と驚異的な飛躍を遂げたのです。</p>
+</div>
+</section>
+<!-- END: HistorySection -->
+<!-- BEGIN: Footer -->
+<footer class="bg-s-pink text-white py-20 px-6 border-t border-white/5 relative z-10">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="col-span-1 md:col-span-2">
+<div class="flex items-center gap-3 mb-6">
+<div class="text-emerald-500">
+<svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景：シンガポール・レッド -->
+  <rect width="24" height="24" rx="4" fill="#EE2A35"/>
+  <path d="M0 12H24V20C24 22.2091 22.2091 24 20 24H4C1.79086 24 0 22.2091 0 20V12Z" fill="#FFFFFF"/>
+  <!-- 三日月と星 -->
+  <path d="M4 6C4 8 5.5 9.5 7.5 9.5C8 9.5 8.5 9.4 9 9.2C8.5 9.8 7.5 10 6.5 10C4.5 10 3 8.5 3 6.5C3 5.5 3.4 4.6 4 4C3.7 4.5 3.5 5.2 3.5 6C3.5 7.5 4 8 4 6Z" fill="#FFFFFF"/>
+  <circle cx="8" cy="5" r="0.4" fill="white"/><circle cx="9.2" cy="6" r="0.4" fill="white"/><circle cx="8.8" cy="7.5" r="0.4" fill="white"/><circle cx="7.2" cy="7.5" r="0.4" fill="white"/><circle cx="6.8" cy="6" r="0.4" fill="white"/>
+  
+  <!-- 白地のアクセント：ライオンヘッドの抽象的なライン -->
+  <path d="M15 15C15 14 16 13 18 13C20 13 21 14.5 21 16.5C21 19 19 21 16 21H14V19" stroke="#EE2A35" stroke-width="1.2" stroke-linecap="round"/>
+  <circle cx="17.5" cy="16" r="0.8" fill="#EE2A35"/>
+</svg>
+</div>
+<span class="text-white font-serif text-lg tracking-wider font-semibold">Singapore Discovery</span>
+</div>
+<p class="text-white text-sm max-w-sm mb-8">A global hub for innovation, culture, and sustainable urban living. Discover the heart of Southeast Asia.</p>
+</div>
+<div>
+<h6 class="text-k-yellow font-serif text-sm mb-6 uppercase tracking-widest">Navigation</h6>
+<ul class="space-y-4 text-sm text-white/60">
+
+<li><a class="hover:text-white transition-colors" href="#Landmarks">Landmarks</a></li>
+<li><a class="hover:text-white transition-colors" href="#cuisine">Cuisine</a></li>
+<li><a class="hover:text-white transition-colors" href="#history">History</a></li>
+</ul>
+</div>
+<div>
+<h6 class="text-k-yellow font-serif text-sm mb-6 uppercase tracking-widest">Connect</h6>
+<ul class="space-y-4 text-sm text-white/60">
+<li><a class="hover:text-white transition-colors" href="#">Instagram</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Twitter</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Contact Us</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 mt-10 mb-4"><p class="text-xs text-white">© 2026 Singapore Discovery. All rights reserved.</p>
+<div class="flex gap-8 text-xs text-white/80">
+<a href="#">Privacy Policy</a>
+<a href="#">Terms of Service</a>
+</div></div>
+<button onclick="window.close(); setTimeout(() => { window.location.href = 'https://google.com'; }, 100);" 
+          class="flex items-center gap-1 px-3 py-0.5 ml-auto md:ml-auto bg-brand-emerald hover:opacity-80 text-white font-medium rounded-full transition-all shadow-sm">
+    <span class="material-symbols-outlined text-xs text-white/80">logout</span>
+    <span class="tracking-wider text-xs text-white/80">QUIT</span>
+</footer>
+<!-- END: Footer -->
+</main>
+<style data-purpose="animations">
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+<script>
+    document.getElementById('searchInput').addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+            const searchTerm = this.value.trim();
+            if (searchTerm) {
+                const wikipediaUrl = `https://ja.wikipedia.org/wiki/特別:検索?search=${encodeURIComponent(searchTerm)}`;
+                window.open(wikipediaUrl, '_blank');
+            }
+        }
+    });
+</script>
+</body></html>

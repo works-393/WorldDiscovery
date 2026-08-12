@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Southeast Asian Regional Hub</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Be_Vietnam_Pro:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "tertiary-fixed-dim": "#90e28a",
+                      "on-secondary-container": "#6e4b00",
+                      "on-surface": "#2f3332",
+                      "secondary-dim": "#704c00",
+                      "tertiary-dim": "#096119",
+                      "background": "#f9f9f8",
+                      "on-secondary-fixed": "#563a00",
+                      "outline": "#777c7a",
+                      "on-secondary": "#fff8f2",
+                      "on-tertiary-fixed": "#00460e",
+                      "tertiary-fixed": "#9df197",
+                      "secondary-fixed": "#ffdeac",
+                      "on-error-container": "#65000b",
+                      "on-surface-variant": "#5c605e",
+                      "primary": "#ad350a",
+                      "on-primary-fixed": "#4f1100",
+                      "primary-container": "#ffad94",
+                      "secondary-fixed-dim": "#ffcc7a",
+                      "primary-dim": "#9b2a00",
+                      "surface-container-high": "#e6e9e7",
+                      "error-dim": "#70030f",
+                      "tertiary": "#1c6d25",
+                      "on-primary": "#fff7f5",
+                      "error": "#ac3434",
+                      "inverse-primary": "#fe6f42",
+                      "secondary": "#7f5700",
+                      "on-primary-fixed-variant": "#832200",
+                      "on-tertiary": "#eaffe2",
+                      "on-tertiary-container": "#005c15",
+                      "surface-variant": "#e0e3e1",
+                      "surface-container": "#eceeec",
+                      "tertiary-container": "#9df197",
+                      "surface-container-lowest": "#ffffff",
+                      "on-background": "#2f3332",
+                      "surface-dim": "#d7dbd8",
+                      "surface-bright": "#f9f9f8",
+                      "surface": "#f9f9f8",
+                      "surface-tint": "#ad350a",
+                      "outline-variant": "#afb3b1",
+                      "secondary-container": "#ffdeac",
+                      "on-primary-container": "#731d00",
+                      "primary-fixed": "#ffad94",
+                      "primary-fixed-dim": "#ff9879",
+                      "on-tertiary-fixed-variant": "#12661e",
+                      "on-error": "#fff7f6",
+                      "inverse-on-surface": "#9c9d9c",
+                      "surface-container-low": "#f3f4f2"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "fontFamily": {
+                      "headline": ["Plus Jakarta Sans"],
+                      "body": ["Be Vietnam Pro"],
+                      "label": ["Plus Jakarta Sans"]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .textile-motif {
+            background-color: transparent;
+            background-image:  radial-gradient(#ad350a 0.5px, transparent 0.5px), radial-gradient(#ad350a 0.5px, #f9f9f8 0.5px);
+            background-size: 20px 20px;
+            background-position: 0 0,10px 10px;
+            opacity: 0.05;
+        }
+        .glass-card-dark {
+            background: rgba(20, 18, 16, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 112, 67, 0.2);
+        }
+        .nusantara-gradient {
+            background: linear-gradient(135deg, #1c1917 0%, #292524 100%);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-stone-50/80 dark:bg-stone-900/80 backdrop-blur-xl bg-gradient-to-b from-stone-200/20 to-transparent">
+<div class="relative flex justify-between items-center w-full px-8 py-2 max-w-screen-2xl mx-auto">
+<div class="text-xl font-serif font-bold text-black/80 tracking-tight">
+            Southeast Asia Discovery
+        </div>
+<div class="hidden md:flex items-center space-x-8 font-headline font-bold tracking-tight absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+<a class="text-orange-700 dark:text-orange-400 font-serif dark:border-orange-400 pb-1" href="../index.html">Home</a>
+<a class="text-orange-700 dark:text-orange-400 font-serif border-orange-700 dark:border-orange-400 pb-1" href="#">History</a>
+<a class="text-orange-700 dark:text-orange-400 font-serif border-orange-700 dark:border-orange-400 pb-1" href="#">Regions</a>
+<a class="text-orange-700 dark:text-orange-400 font-serif border-orange-700 dark:border-orange-400 pb-1" href="#">Architecture</a>
+</div>
+<div class="flex flex-1 justify-end gap-6 items-center">
+<label class="hidden md:flex flex-col min-w-40 !h-10 max-w-64">
+<div class="flex items-center gap-4">
+<div class="search-container">
+            <label class="search-box flex items-center p-2 rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors cursor-text w-64">
+                <span class="material-symbols-outlined search-icon text-slate-500 dark:text-slate-400">search</span>
+                <input id="searchInput" class="search-input bg-transparent border-none focus:ring-0 text-sm text-slate-900 dark:text-slate-100 placeholder-slate-500 dark:placeholder-slate-400 w-full" placeholder="Wikipedia検索" value=""/>
+            </label>
+</div>
+</div>
+</nav>
+<!-- Main Content Canvas (No Sidebar) -->
+<main class="w-full pt-16">
+<!-- Hero Section -->
+<section class="relative h-[500px] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Borobudur at Sunset" class="w-full h-full object-cover" data-alt="Stunning sunset view of Borobudur temple in Indonesia with misty volcanoes in the distant background and golden warm light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBu_o-UmhaPsQs7ini_WRqwlqSdu-YZaTWEzFjkhI40xkolXAxWXRKN4KF0JADKoMbf8FnpHUqd1jC7wB824lBAWvSEGM7EYOm5gxn9G9-LRlqaiNDa6Q9FUjcW6885JR_N4rP1CN6qnajrrPa-xQZ1hDiREMmHsrc3_qLmNJWYuS4mxkCuM-w3GkHJKboK7OtRQIJKoiu0wJp78G6i0O38MG5-5XRpdNsVf7XsWDTHqfEIOh-7fodTI41aC9aIPg4Atjmz9SLacDs"/>
+<div class="absolute inset-0 bg-gradient-to-r from-stone-900/80 via-stone-900/40 to-transparent"></div>
+</div>
+<div class="relative z-10 px-8 md:px-16 lg:px-32 max-w-6xl">
+<span class="inline-block px-4 py-1 rounded-full bg-primary-container/20 backdrop-blur-md text-primary-fixed-dim text-sm font-headline font-bold mb-6 border border-primary-container/30">
+                Sustaining Regional Harmony
+            </span>
+<h1 class="text-2xl md:text-4xl font-headline font-extrabold text-white leading-tight tracking-tighter mb-8">
+                Unity in Diversity: <br/>
+<span class="text-primary-container">Exploring the Heart</span> <br/>
+                of Southeast Asia
+            </h1>
+<p class="text-sm text-stone-200 font-body max-w-2xl mb-10 leading-relaxed">
+                A digital gateway to the vibrant cultures, emerging economies, and breathtaking landscapes of the ASEAN region. Weaving shared history into a prosperous future.
+            </p>
+<div class="flex flex-wrap gap-4">
+<button class="px-10 py-4 bg-gradient-to-r from-primary to-primary-container text-on-primary font-headline font-bold rounded-xl shadow-lg shadow-primary/20 hover:scale-105 transition-transform">
+                    Explore the Loom
+                </button>
+<button class="px-10 py-4 bg-white/10 backdrop-blur-md text-white border border-white/20 font-headline font-bold rounded-xl hover:scale-105 bg-white/20 transition-all">
+                    Regional Data Hub
+                </button>
+</div>
+</div>
+</section>
+<!-- Member Nations Grid -->
+<section class="px-8 md:px-16 lg:px-32 py-32 bg-[#121110]">
+<div class="mb-20 text-center max-w-3xl mx-auto">
+<h2 class="text-2xl font-serif font-headline font-bold text-white tracking-tight mb-6">Dynamic Southeast Asia: 11 Hearts, One Rhythm</h2>
+<p class="text-stone-400 text-xl leading-relaxed">A harmonious collective of eleven nations, each a unique thread in our regional tapestry, weaving together a shared vision of prosperity.</p>
+</div>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4">
+<!-- Indonesia -->
+            <a href="Indonesia.html" target="_blank" rel="noopener noreferrer" class="group block relative aspect-square rounded-2xl overflow-hidden shadow-xl transition-all duration-500 hover:-translate-y-2 nusantara-gradient">
+                <div class="absolute bottom-0 left-0 right-0 p-3">
+                    <div class="glass-card-dark p-3 rounded-xl border-stone-800/50">
+                        <h3 class="font-headline font-extrabold text-lg text-white mb-0.5">Indonesia</h3>
+<p class="text-[#FF7043] text-xs font-bold uppercase tracking-widest mb-4">Nusantara Archipelago</p>
+                        <div class="text-stone-200 font-bold text-sm group-hover:text-[#FF7043] transition-colors">
+                            Enter Portal 
+                        </div>
+</div>
+</div>
+            </a>
+<!-- Malaysia -->
+            <a href="Malaysia.html" target="_blank" rel="noopener noreferrer" class="group block relative aspect-square rounded-2xl overflow-hidden shadow-xl transition-all duration-500 hover:-translate-y-2 nusantara-gradient">
+<div class="absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-950/40 to-transparent"></div>
+                <div class="absolute bottom-0 left-0 right-0 p-3">
+                    <div class="glass-card-dark p-3 rounded-xl border-stone-800/50">
+                        <h3 class="font-headline font-extrabold text-lg text-white mb-0.5">Malaysia</h3>
+<p class="text-[#FF7043] text-xs font-bold uppercase tracking-widest mb-4">Peninsular &amp; Borneo</p>
+                        <div class="text-stone-200 font-bold text-sm group-hover:text-[#FF7043] transition-colors">
+                            Enter Portal 
+                        </div>
+</div>
+</div>
+            </a>
+<!-- Thailand -->
+            <a href="Thailand.html" target="_blank" rel="noopener noreferrer" class="group block relative aspect-square rounded-2xl overflow-hidden shadow-xl transition-all duration-500 hover:-translate-y-2 nusantara-gradient">
+<div class="absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-950/40 to-transparent"></div>
+                <div class="absolute bottom-0 left-0 right-0 p-3">
+                    <div class="glass-card-dark p-3 rounded-xl border-stone-800/50">
+                        <h3 class="font-headline font-extrabold text-lg text-white mb-0.5">Thailand</h3>
+<p class="text-[#FF7043] text-xs font-bold uppercase tracking-widest mb-4">The Land of Smiles</p>
+                        <div class="text-stone-200 font-bold text-sm group-hover:text-[#FF7043] transition-colors">
+                            Enter Portal 
+                        </div>
+</div>
+</div>
+            </a>
+<!-- Singapore -->
+            <a href="Singapore.html" target="_blank" rel="noopener noreferrer" class="group block relative aspect-square rounded-2xl overflow-hidden shadow-xl transition-all duration-500 hover:-translate-y-2 nusantara-gradient">
+<div class="absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-950/40 to-transparent"></div>
+                <div class="absolute bottom-0 left-0 right-0 p-3">
+                    <div class="glass-card-dark p-3 rounded-xl border-stone-800/50">
+                        <h3 class="font-headline font-extrabold text-lg text-white mb-0.5">Singapore</h3>
+<p class="text-[#FF7043] text-xs font-bold uppercase tracking-widest mb-4">The Garden City State</p>
+                        <div class="text-stone-200 font-bold text-sm group-hover:text-[#FF7043] transition-colors">
+                            Enter Portal 
+                        </div>
+</div>
+</div>
+            </a>
+<!-- Vietnam -->
+            <a href="Vietnam.html" target="_blank" rel="noopener noreferrer" class="group block relative aspect-square rounded-2xl overflow-hidden shadow-xl transition-all duration-500 hover:-translate-y-2 nusantara-gradient">
+<div class="absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-950/40 to-transparent"></div>
+                <div class="absolute bottom-0 left-0 right-0 p-3">
+                    <div class="glass-card-dark p-3 rounded-xl border-stone-800/50">
+                        <h3 class="font-headline font-extrabold text-lg text-white mb-0.5">Vietnam</h3>
+<p class="text-[#FF7043] text-xs font-bold uppercase tracking-widest mb-4">Ascending Dragon</p>
+                        <div class="text-stone-200 font-bold text-sm group-hover:text-[#FF7043] transition-colors">
+                            Enter Portal 
+                        </div>
+</div>
+</div>
+            </a>
+<!-- Philippines -->
+            <a href="Philippines.html" target="_blank" rel="noopener noreferrer" class="group block relative aspect-square rounded-2xl overflow-hidden shadow-xl transition-all duration-500 hover:-translate-y-2 nusantara-gradient">
+<div class="absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-950/40 to-transparent"></div>
+                <div class="absolute bottom-0 left-0 right-0 p-3">
+                    <div class="glass-card-dark p-3 rounded-xl border-stone-800/50">
+                        <h3 class="font-headline font-extrabold text-lg text-white mb-0.5">Philippines</h3>
+<p class="text-[#FF7043] text-xs font-bold uppercase tracking-widest mb-4">Pearl of the Orient</p>
+                        <div class="text-stone-200 font-bold text-sm group-hover:text-[#FF7043] transition-colors">
+                            Enter Portal 
+                        </div>
+</div>
+</div>
+            </a>
+<!-- Myanmar -->
+            <a href="Myanmar.html" target="_blank" rel="noopener noreferrer" class="group block relative aspect-square rounded-2xl overflow-hidden shadow-xl transition-all duration-500 hover:-translate-y-2 nusantara-gradient">
+<div class="absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-950/40 to-transparent"></div>
+                <div class="absolute bottom-0 left-0 right-0 p-3">
+                    <div class="glass-card-dark p-3 rounded-xl border-stone-800/50">
+                        <h3 class="font-headline font-extrabold text-lg text-white mb-0.5">Myanmar</h3>
+<p class="text-[#FF7043] text-xs font-bold uppercase tracking-widest mb-4">The Golden Land</p>
+                        <div class="text-stone-200 font-bold text-sm group-hover:text-[#FF7043] transition-colors">
+                            Enter Portal 
+                        </div>
+</div>
+</div>
+            </a>
+<!-- Cambodia -->
+            <a href="Cambodia.html" target="_blank" rel="noopener noreferrer" class="group block relative aspect-square rounded-2xl overflow-hidden shadow-xl transition-all duration-500 hover:-translate-y-2 nusantara-gradient">
+<div class="absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-950/40 to-transparent"></div>
+                <div class="absolute bottom-0 left-0 right-0 p-3">
+                    <div class="glass-card-dark p-3 rounded-xl border-stone-800/50">
+                        <h3 class="font-headline font-extrabold text-lg text-white mb-0.5">Cambodia</h3>
+<p class="text-[#FF7043] text-xs font-bold uppercase tracking-widest mb-4">Kingdom of Wonder</p>
+                        <div class="text-stone-200 font-bold text-sm group-hover:text-[#FF7043] transition-colors">
+                            Enter Portal 
+                        </div>
+</div>
+</div>
+            </a>
+<!-- Laos -->
+            <a href="Laos.html" target="_blank" rel="noopener noreferrer" class="group block relative aspect-square rounded-2xl overflow-hidden shadow-xl transition-all duration-500 hover:-translate-y-2 nusantara-gradient">
+<div class="absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-950/40 to-transparent"></div>
+                <div class="absolute bottom-0 left-0 right-0 p-3">
+                    <div class="glass-card-dark p-3 rounded-xl border-stone-800/50">
+                        <h3 class="font-headline font-extrabold text-lg text-white mb-0.5">Laos</h3>
+<p class="text-[#FF7043] text-xs font-bold uppercase tracking-widest mb-4">A Million Elephants</p>
+                        <div class="text-stone-200 font-bold text-sm group-hover:text-[#FF7043] transition-colors">
+                            Enter Portal 
+                        </div>
+</div>
+</div>
+            </a>
+<!-- Brunei -->
+            <a href="Brunei.html" target="_blank" rel="noopener noreferrer" class="group block relative aspect-square rounded-2xl overflow-hidden shadow-xl transition-all duration-500 hover:-translate-y-2 nusantara-gradient">
+                <div class="absolute bottom-0 left-0 right-0 p-3">
+                    <div class="glass-card-dark p-3 rounded-xl border-stone-800/50">
+                        <h3 class="font-headline font-extrabold text-lg text-white mb-0.5">Brunei</h3>
+<p class="text-[#FF7043] text-xs font-bold uppercase tracking-widest mb-4">Abode of Peace</p>
+                        <div class="text-stone-200 font-bold text-sm group-hover:text-[#FF7043] transition-colors">
+                            Enter Portal 
+                        </div>
+</div>
+</div>
+            </a>
+<!-- East Timor -->
+            <a href="East_Timor.html" target="_blank" rel="noopener noreferrer" class="group block relative aspect-square rounded-2xl overflow-hidden shadow-xl transition-all duration-500 hover:-translate-y-2 nusantara-gradient">
+<div class="absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-950/40 to-transparent"></div>
+                <div class="absolute bottom-0 left-0 right-0 p-3">
+                    <div class="glass-card-dark p-3 rounded-xl border-stone-800/50">
+                        <h3 class="font-headline font-extrabold text-lg text-white mb-0.5">East Timor</h3>
+<p class="text-[#FF7043] text-xs font-bold uppercase tracking-widest mb-4">Timor-Leste Rising</p>
+                        <div class="text-stone-200 font-bold text-sm group-hover:text-[#FF7043] transition-colors">
+                            Enter Portal 
+                        </div>
+</div>
+</div>
+            </a>
+
+</section>
+
+    <!-- Footer -->
+    <footer class="w-full mt-12 py-10 md:py-20 px-8 bg-stone-200 dark:bg-stone-950 border-t border-stone-200 dark:border-stone-800 text-stone-900 dark:text-stone-100">
+        <div class="max-w-screen-2xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12">
+            <div class="col-span-1 md:col-span-2">
+                <div class="flex items-center gap-3 mb-6">
+                    <span class="material-symbols-outlined text-primary text-4xl">menu_book</span>
+                    <h2 class="text-xl font-bold text-stone-900 dark:text-stone-100 italic tracking-tight font-headline">Southeast Asia Discovery</h2>
+                </div>
+                <p class="text-xs max-w-sm mb-8 leading-relaxed italic text-stone-500 dark:text-stone-400 font-body">
+                    A centralized platform dedicated to the unification and digital advancement of Southeast Asian member states.
+                </p>
+                <div class="flex gap-4">
+                    <a class="w-10 h-10 rounded-full bg-stone-300 dark:bg-stone-800 flex items-center justify-center hover:bg-primary hover:text-white transition-colors text-stone-600 dark:text-stone-400" href="#"><span class="material-symbols-outlined text-lg">language</span></a>
+                    <a class="w-10 h-10 rounded-full bg-stone-300 dark:bg-stone-800 flex items-center justify-center hover:bg-primary hover:text-white transition-colors text-stone-600 dark:text-stone-400" href="#"><span class="material-symbols-outlined text-lg">mail</span></a>
+                    <a class="w-10 h-10 rounded-full bg-stone-300 dark:bg-stone-800 flex items-center justify-center hover:bg-primary hover:text-white transition-colors text-stone-600 dark:text-stone-400" href="#"><span class="material-symbols-outlined text-lg">share</span></a>
+                </div>
+            </div>
+            <div>
+                <h4 class="text-stone-900 dark:text-stone-100 font-bold mb-6 uppercase tracking-widest text-sm font-headline">Quick Links</h4>
+                <ul class="space-y-4 text-sm font-medium text-stone-500 dark:text-stone-400 font-body">
+                    <li><a class="hover:text-primary transition-colors" href="#">Cultural Heritage</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="#">Historical Sites</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="#">Modern Wonders</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="#">Travel Safety</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-stone-900 dark:text-stone-100 font-bold mb-6 uppercase tracking-widest text-sm font-headline">Newsletter</h4>
+                <p class="text-sm text-stone-500 dark:text-stone-400 mb-4 font-body">Receive monthly insights into the region's hidden gems.</p>
+                <div class="flex h-12">
+                    <input class="bg-white dark:bg-stone-900 border border-stone-300 dark:border-stone-800 rounded-l-lg px-4 text-sm focus:ring-1 focus:ring-primary flex-grow text-stone-900 dark:text-stone-100" placeholder="Email address" type="email"/>
+                    <button class="bg-primary text-white font-bold px-4 rounded-r-lg text-sm hover:bg-primary-dim transition-colors">Join</button>
+                </div>
+            </div>
+        </div>
+        <div class="font-serif max-w-screen-2xl mx-auto border-t border-stone-300 dark:border-stone-800 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-bold uppercase tracking-widest text-stone-500 dark:text-stone-400 font-headline">
+            <p>© 2026 Southeast Asian Regional Hub. All rights reserved.</p>
+            <div class="flex gap-8">
+                <a href="#" class="hover:text-stone-900 dark:hover:text-stone-100 transition-colors">Privacy Policy</a>
+                <a href="#" class="hover:text-stone-900 dark:hover:text-stone-100 transition-colors">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+</main>
+<!-- Contextual FAB for Search/Connect -->
+<button class="fixed bottom-8 right-8 w-16 h-16 bg-gradient-to-br from-primary to-primary-container text-white rounded-full shadow-2xl flex items-center justify-center hover:scale-110 transition-transform z-50">
+<span class="material-symbols-outlined text-2xl" data-icon="forum" data-weight="fill">forum</span>
+</button>
+<script>
+    document.getElementById('searchInput').addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+            const searchTerm = this.value.trim();
+            if (searchTerm) {
+                const wikipediaUrl = `https://ja.wikipedia.org/wiki/特別:検索?search=${encodeURIComponent(searchTerm)}`;
+                window.open(wikipediaUrl, '_blank');
+            }
+        }
+    });
+</script>
+</body></html>

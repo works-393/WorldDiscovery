@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Indonesia Discovery | Luxury Travel Experience</title>
+<meta content="Explore the ancient landmarks, vibrant cities, and rich history of Indonesia." name="description"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="../menu.js"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'lebanon-dark': '#102219',
+            'lebanon-gold': '#C5A059',
+            'lebanon-green': '#2D5A27',
+            "primary": "#144bb8",
+            "background-light": "#f6f6f8",
+            "background-dark": "#111621",
+            // 追加
+            "al-adaam": "#8D1B3D",
+            "qatar-gold": "#C5A059",  
+            "e-green": "#50C878",
+            "e-green-dark": "#006400",
+            "qatar-gold": "#C5A059",
+            "qatar-blue": "#1e3a8a",
+            "oman-blue": "#003153",
+            "yemen-red": "#CE1126",
+            "Bahrain-red": "#DA291C",
+            "B-purple-dark": "#632276",
+            "B-purple": "#D1A7E2",
+            "B-yellow": "#ffff66",
+            "B-green": "#33cc00",
+            "Kaza-blue": "#00A3DD",
+            "Kaza-blue-dark": "#003366",
+            "U-blue": "#99ffcc", //ターコイズブルー//
+            "U-blue-bg": "#006699",
+            "k-yellow": "#ffcc00",
+            "k-red": "#cc3333",
+            "k-yellow-c": "#ccff33",
+            "silk-road-white": "#fdfdfd",
+            "t-green": "#006600",
+            "t-green-light": "#99cc99",
+            "Af-red": "#ff0099",
+            "Af-navy": "#0B1F3A",
+            "Sr-Brown": "#993300",
+            "Sr-yellow": "#cc9933",
+             },
+          fontFamily: {
+            serif: ['Newsreader', 'serif'],
+            sans: ['Inter', 'sans-serif'],
+          },
+          backgroundImage: {
+            'Kazakhstan-hero': "url('img/Indonesia_bg.jpg')",
+          }
+        }
+      }
+    }
+  </script>
+<style data-purpose="custom-styling">body {
+    background-color: #f0f9ff;
+    color: #1e293b
+    }
+.glass-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 1rem
+    }
+.text-balance {
+    text-wrap: balance
+    }
+.section-spacing {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem
+    }
+/* Pattern Overlay */
+.bg-pattern {
+    background-image: url(img/Indonesia_bg.jpg);
+    opacity: 0.15
+    }</style>
+</head>
+<body class="font-sans antialiased overflow-x-hidden">
+<!-- BEGIN: Background Texture -->
+<div class="fixed inset-0 bg-pattern pointer-events-none z-0"></div>
+<!-- END: Background Texture -->
+<!-- BEGIN: MainHeader -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-k-red backdrop-blur-md border-b border-white/5">
+<nav class=" max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<!-- Logo -->
+<a class="flex items-center gap-3 group" href="#">
+<div class="text-white-500 transform group-hover:scale-110 transition-transform">
+<svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景：インドネシア国旗の赤（勇気） -->
+  <rect width="24" height="24" rx="4" fill="#FF0000"/>
+  
+  <!-- 下半分：インドネシア国旗の白（純潔） -->
+  <rect y="12" width="24" height="12" rx="0" fill="#FFFFFF"/>
+
+  <!-- 中央：ガルーダ（国章）のシルエットイメージ -->
+  <path d="M12 6L14 9H18L15 12L16 16L12 14L8 16L9 12L6 9H10L12 6Z" fill="#FFD700" stroke="#B8860B" stroke-width="0.5"/>
+
+  <!-- 下部：多島海（エメラルドの首飾り）をイメージした波 -->
+  <path d="M4 19C6 18 8 20 10 19C12 18 14 20 16 19C18 18 20 20 22 19" stroke="#0077BE" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- 右上：南国の太陽 -->
+  <circle cx="19" cy="5" r="2" fill="#FFFFFF" opacity="0.8"/>
+</svg>
+</div>
+<span class="text-white font-serif text-xl font-semibold">Indonesia Discovery</span>
+</a>
+<!-- Desktop Navigation -->
+<div id="navMenu" class="hidden md:flex items-center gap-9 
+    absolute top-full left-0 w-full bg-k-red backdrop-blur-md flex-col p-6 shadow-lg z-50
+    md:absolute md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 md:w-auto md:flex-row md:p-0 md:shadow-none">
+<a class="text-white text-sm font-medium hover:text-k-red transition-colors tracking-widest uppercase" href="#Landmarks">Landmarks</a>
+<a class="text-white text-sm font-medium hover:text-k-red transition-colors tracking-widest uppercase" href="#cuisine">Cuisine</a>
+<a class="text-white text-sm font-medium hover:text-k-red transition-colors tracking-widest uppercase" href="#history">History</a>
+</div>
+<!-- Search Bar -->
+<div class="relative hidden lg:block" data-purpose="search-container">
+<span class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+<svg class="w-4 h-4 text-B-purple-dark/50" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</span>
+<input id="searchInput" class="bg-white/5 border-white/10 text-white pl-10 pr-4 py-2 rounded-lg focus:ring-B-purple-dark focus:border-B-purple-dark w-64 text-sm" placeholder="Wikipedia検索" type="text"/>
+</div>
+
+<!-- Mobile Menu Button (Icon only) -->
+<div class="md:hidden">
+<button
+    id="menuButton"
+    class="md:hidden flex items-center justify-center justify-center text-white hover:text-white/80 transition-colors">
+    <span class="material-symbols-outlined text-3xl">
+        menu
+    </span>
+</button>
+</nav>
+</header>
+<!-- END: MainHeader -->
+<!-- BEGIN: HeroSection -->
+<main class="relative">
+<section class="relative flex items-center justify-center overflow-hidden h-[90vh]">
+<!-- Hero Background Image -->
+<div class="absolute inset-0 z-0">
+<img alt="Indonesia" class="w-full h-full object-cover brightness-50" src="img/Indonesia.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-b from-[#003153]/60 via-transparent to-[#f0f9ff]"></div>
+</div>
+<div class="relative z-10 text-center px-6 max-w-4xl">
+<h2 class="text-k-yellow font-serif italic text-xl md:text-2xl mb-4 opacity-0 animate-[fadeIn_1s_ease-out_forwards]">A tapestry of islands, each with its own soul. </h2>
+<h1 class="text-white text-4xl md:text-7xl lg:text-4xl font-serif mb-8 leading-tight opacity-0 animate-[fadeIn_1s_ease-out_0.3s_forwards]">
+Indonesia: Where nature shapes life, and history lingers across every shore.
+</h1>
+<p class="text-lg md:text-xl text-white/80 font-light max-w-2xl mx-auto mb-10 text-balance opacity-0 animate-[fadeIn_1s_ease-out_0.6s_forwards]">
+        Beyond the horizon, each island tells a story waiting to be discovered.
+</p>
+<!-- <a class="inline-block bg-B-purple-dark text-lebanon-dark px-10 py-4 font-semibold tracking-widest uppercase text-sm hover:scale-105 transition-transform opacity-0 animate-[fadeIn_1s_ease-out_0.9s_forwards]" href="#landmarks">
+          Explore Destinations
+        </a>-->
+</div>
+<!-- Scroll Indicator -->
+<!--<div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce opacity-60">
+<svg class="h-6 w-6" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M19 14l-7 7m0 0l-7-7m7 7V3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>-->
+</section>
+<!-- END: HeroSection -->
+ <section class="pt-16 pb-6 px-6 relative" id="Landmarks">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
+<div class="max-w-2xl">
+<h2 class="text-k-red font-serif text-sm mb-2 uppercase tracking-[0.3em]">Where Nature Meets Legacy</h2>
+<h3 class="text-B-green text-3xl md:text-4xl font-serif">Iconic Landmarks</h3>
+</div>
+<p class="text-orange/90 max-w-md text-sm">Timeless monuments and natural wonders that capture the spirit, history, and diverse beauty of each island across Indonesia. </p>
+</div>
+
+        <!-- Island Navigation Grid -->
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+            <a href="#Java" class="group flex items-center justify-center p-6 border border-k-red/20 rounded-xl bg-white/40 backdrop-blur-sm hover:bg-k-red hover:border-k-red transition-all duration-300 shadow-sm">
+                <span class="font-serif font-bold text-k-red group-hover:text-white tracking-widest">JAVA</span>
+            </a>
+            <a href="#Sumatra" class="group flex items-center justify-center p-6 border border-k-red/20 rounded-xl bg-white/40 backdrop-blur-sm hover:bg-k-red hover:border-k-red transition-all duration-300 shadow-sm">
+                <span class="font-serif font-bold text-k-red group-hover:text-white tracking-widest">SUMATRA</span>
+            </a>
+            <a href="#Kalimantan" class="group flex items-center justify-center p-6 border border-k-red/20 rounded-xl bg-white/40 backdrop-blur-sm hover:bg-k-red hover:border-k-red transition-all duration-300 shadow-sm">
+                <span class="font-serif font-bold text-k-red group-hover:text-white tracking-widest">KALIMANTAN</span>
+            </a>
+            <a href="#Sulawesi" class="group flex items-center justify-center p-6 border border-k-red/20 rounded-xl bg-white/40 backdrop-blur-sm hover:bg-k-red hover:border-k-red transition-all duration-300 shadow-sm">
+                <span class="font-serif font-bold text-k-red group-hover:text-white tracking-widest">SULAWESI</span>
+            </a>
+            <a href="#Papua" class="group flex items-center justify-center p-6 border border-k-red/20 rounded-xl bg-white/40 backdrop-blur-sm hover:bg-k-red hover:border-k-red transition-all duration-300 shadow-sm">
+                <span class="font-serif font-bold text-k-red group-hover:text-white tracking-widest">PAPUA</span>
+            </a>
+            <a href="#Bali" class="group flex items-center justify-center p-6 border border-k-red/20 rounded-xl bg-white/40 backdrop-blur-sm hover:bg-k-red hover:border-k-red transition-all duration-300 shadow-sm">
+                <span class="font-serif font-bold text-k-red group-hover:text-white tracking-widest">BALI</span>
+            </a>
+        </div>
+</div>
+</section>
+
+<!-- 1.ジャワ島 (Java)-->
+<section class="scroll-mt-20 pt-8 pb-16 px-6 relative" id="Java">
+    <div class="max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
+            <div class="max-w-2xl">
+                <h2 class="text-Kaza-blue-dark font-serif text-sm mb-2 uppercase tracking-[0.3em]">Cultural & Political Heart</h2>
+                <h3 class="text-k-red text-3xl md:text-2xl font-bold font-serif">Java</h3>
+            </div>
+            <p class="text-orange/90 max-w-md text-sm">The core of Indonesia’s history, where ancient temples and modern cities coexist.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="flex flex-col">
+                <div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+                    <img alt="Borobudur Temple" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="img/Borobudur_Temple.jpg"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 p-4"><h4 class="text-lg font-serif text-white">Borobudur Temple</h4></div>
+                </div>
+                <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4"><strong class="block mb-1">Monument of Enlightenment</strong>Monument of Enlightenment A vast Buddhist sanctuary where stone reliefs and stupas guide visitors on a symbolic journey toward awakening.</p>
+            </div>
+            <div class="flex flex-col">
+                <div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+                    <img alt="Prambanan Temple Complex" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="img/Prambanan_Temple_Complex.jpg"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 p-4"><h4 class="text-lg font-serif text-white">Prambanan Temple Complex	</h4></div>
+                </div>
+                <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4"><strong class="block mb-1">Symphony of Hindu Legends</strong>Towering temples dedicated to Hindu gods, adorned with intricate carvings that bring ancient epics to life.
+</p>
+            </div>
+            <div class="flex flex-col">
+                <div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+                    <img alt="Jakarta" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="img/Jakarta.jpg"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 p-4"><h4 class="text-lg font-serif text-white">Jakarta</h4></div>
+                </div>
+                <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4"><strong class="block mb-1">Pulse of a Modern Metropolis</strong>A dynamic capital where colonial echoes and rapid urban growth shape Indonesia’s vibrant present.
+</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 2. スマトラ島 (Sumatra) -->
+<section class="scroll-mt-20 pt-8 pb-16 px-6 relative" id="Sumatra">
+    <div class="max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
+            <div class="max-w-2xl">
+                <h2 class="text-Kaza-blue-dark font-serif text-sm mb-2 uppercase tracking-[0.3em]">Wild Nature & Ancient Kingdoms</h2>
+                <h3 class="text-k-red text-3xl md:text-2xl font-bold font-serif">Sumatra</h3>
+            </div>
+            <p class="text-orange/90 max-w-md text-sm">Dense rainforests, volcanic landscapes, and the legacy of powerful maritime empires.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="flex flex-col">
+                <div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+                    <img alt="Lake Toba" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="img/Lake_Toba.jpg"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 p-4"><h4 class="text-lg font-serif text-white">Lake Toba</h4></div>
+                </div>
+                <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4"><strong class="block mb-1">Vast Crater of Serenity</strong>A विशाल volcanic lake formed by an ancient eruption, where calm waters and island life create a tranquil escape.</p>
+            </div>
+            <div class="flex flex-col">
+                <div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+                    <img alt="Medan" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="img/Medan.jpg"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 p-4"><h4 class="text-lg font-serif text-white">Medan</h4></div>
+                </div>
+                <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4"><strong class="block mb-1">Crossroads of Cultures</strong>A lively city where Malay, Chinese, and Indian influences blend into a rich urban tapestry.</p>
+            </div>
+            <div class="flex flex-col">
+                <div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+                    <img alt="Jam Gadang" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="img/Jam_Gadang.jpg"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 p-4"><h4 class="text-lg font-serif text-white">Jam Gadang</h4></div>
+                </div>
+                <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4"><strong class="block mb-1">Icon of Bukittinggi</strong>A distinctive clock tower symbolizing local pride, standing at the heart of this highland town.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 3. カリマンタン (Kalimantan)（ボルネオ島）-->
+<section class="scroll-mt-20 pt-8 pb-16 px-6 relative" id="Kalimantan">
+    <div class="max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
+            <div class="max-w-2xl">
+                <h2 class="text-Kaza-blue-dark font-serif text-sm mb-2 uppercase tracking-[0.3em]">Island of Rainforests</h2>
+                <h3 class="text-k-red text-3xl md:text-2xl font-bold font-serif">Kalimantan</h3>
+            </div>
+            <p class="text-orange/90 max-w-md text-sm">Vast jungles and rivers define this part of Borneo, home to rich biodiversity and indigenous cultures.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="flex flex-col">
+                <div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+                    <img alt="Bako National Park" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="img/Bako_National_Park.jpg"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 p-4"><h4 class="text-lg font-serif text-white">Bako National Park</h4></div>
+                </div>
+                <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4"><strong class="block mb-1">Realm of Wild Nature</strong>A coastal rainforest where cliffs, mangroves, and unique wildlife reveal Borneo’s untamed beauty.
+</p>
+            </div>
+            <div class="flex flex-col">
+                <div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+                    <img alt="Banjarmasin" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="img/Banjarmasin.jpg"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 p-4"><h4 class="text-lg font-serif text-white">Banjarmasin</h4></div>
+                </div>
+                <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4"><strong class="block mb-1">City of Waterways</strong>A vibrant river city where daily life unfolds along canals and floating markets.</p>
+            </div>
+            <div class="flex flex-col">
+                <div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+                    <img alt="Martapura" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="img/Martapura.jpg"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 p-4"><h4 class="text-lg font-serif text-white">Martapura</h4></div>
+                </div>
+                <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4"><strong class="block mb-1">Land of Hidden Gems</strong>Renowned for its diamond trade, where tradition and craftsmanship uncover treasures from the earth.
+</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- 4. スラウェシ島 (Sulawesi)-->
+<section class="scroll-mt-20 pt-8 pb-16 px-6 relative" id="Sulawesi">
+    <div class="max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
+            <div class="max-w-2xl">
+                <h2 class="text-Kaza-blue-dark font-serif text-sm mb-2 uppercase tracking-[0.3em]">Island of Unique Traditions</h2>
+                <h3 class="text-k-red text-3xl md:text-2xl font-bold font-serif">Sulawesi</h3>
+            </div>
+            <p class="text-orange/90 max-w-md text-sm">A land of dramatic coastlines and distinctive cultures shaped by isolation and trade.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="flex flex-col">
+                <div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+                    <img alt="Tangkoko Nature Reserve" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="img/Tangkoko_Nature_Reserve.jpg"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 p-4"><h4 class="text-lg font-serif text-white">Tangkoko Nature Reserve</h4></div>
+                </div>
+                <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4"><strong class="block mb-1">Haven of Rare Wildlife</strong>A protected rainforest where tarsiers and black macaques thrive in one of Sulawesi’s most unique ecosystems.</p>
+            </div>
+            <div class="flex flex-col">
+                <div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+                    <img alt="Rammang-Rammang" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="img/Rammang-Rammang.jpg"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 p-4"><h4 class="text-lg font-serif text-white">Rammang-Rammang</h4></div>
+                </div>
+                <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4"><strong class="block mb-1">Kingdom of Stone and Water</strong>Towering limestone formations and quiet waterways create one of the world’s most striking karst landscapes.
+</p>
+            </div>
+            <div class="flex flex-col">
+                <div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+                    <img alt="Makassar" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="img/Makassar.jpg"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 p-4"><h4 class="text-lg font-serif text-white">Makassar</h4></div>
+                </div>
+                <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4"><strong class="block mb-1">Gateway to Eastern Indonesia</strong>A historic port city where seafaring traditions meet the energy of a modern coastal hub.
+</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 5. ニューギニア島 / パプア (Papua)-->
+<section class="scroll-mt-20 pt-8 pb-16 px-6 relative" id="Papua">
+     <div class="max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
+            <div class="max-w-2xl">
+                <h2 class="text-Kaza-blue-dark font-serif text-sm mb-2 uppercase tracking-[0.3em]">Frontier of Diversity</h2>
+                <h3 class="text-k-red text-3xl md:text-2xl font-bold font-serif">Papua</h3>
+            </div>
+            <p class="text-orange/90 max-w-md text-sm">Remote highlands and diverse tribes preserve ways of life little changed for centuries.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="flex flex-col">
+                <div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+                    <img alt="Mount Wilhelm" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="img/Mount_Wilhelm.jpg"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 p-4"><h4 class="text-lg font-serif text-white">Mount Wilhelm</h4></div>
+                </div>
+                <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4"><strong class="block mb-1">Roof of New Guinea</strong>The highest peak on the island, rising above rugged highlands and misty valleys.
+</p>
+            </div>
+            <div class="flex flex-col">
+                <div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+                    <img alt="Raja Ampat" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="img/Raja_Ampat.jpg"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 p-4"><h4 class="text-lg font-serif text-white">Raja Ampat</h4></div>
+                </div>
+                <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4"><strong class="block mb-1">Realm of Pristine Seas</strong>A breathtaking archipelago of turquoise waters and countless islets, home to one of the richest marine ecosystems on Earth.
+</p>
+            </div>
+            <div class="flex flex-col">
+                <div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+                    <img alt="Port Moresby" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="img/Port_Moresby.jpg"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 p-4"><h4 class="text-lg font-serif text-white">Port Moresby</h4></div>
+                </div>
+                <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4"><strong class="block mb-1">Edge of the Pacific Frontier</strong>A coastal capital where modern life meets the cultural diversity of one of the world’s most remote regions.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- 6. バリ島（Bali）-->
+<section class="scroll-mt-20 pt-8 pb-16 px-6 relative" id="Bali">
+    <div class="max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
+            <div class="max-w-2xl">
+                <h2 class="text-Kaza-blue-dark font-serif text-sm mb-2 uppercase tracking-[0.3em]">Island of Gods</h2>
+                <h3 class="text-k-red text-3xl md:text-2xl font-bold font-serif">Bali</h3>
+            </div>
+            <p class="text-orange/90 max-w-md text-sm">A spiritual and artistic hub known for temples, dance, and a deeply rooted Hindu culture.
+</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="flex flex-col">
+                <div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+                    <img alt="Pura Besakih" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="img/Pura_Besakih.jpg"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 p-4"><h4 class="text-lg font-serif text-white">Pura Besakih</h4></div>
+                </div>
+                <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4"><strong class="block mb-1">Mother Temple of Bali</strong>The island’s largest and holiest temple, set on the slopes of Mount Agung, embodying Bali’s spiritual heart.
+</p>
+            </div>
+            <div class="flex flex-col">
+                <div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+                    <img alt="Kuta Beach" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="img/Kuta_Beach.jpg"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 p-4"><h4 class="text-lg font-serif text-white">Kuta Beach</h4></div>
+                </div>
+                <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4"><strong class="block mb-1">Sunset and Surf</strong>A vibrant ساح ساح shoreline famous for golden sunsets, waves, and a dynamic beach culture.</p>
+            </div>
+            <div class="flex flex-col">
+                <div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+                    <img alt="Denpasar" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="img/Denpasar.jpg"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 p-4"><h4 class="text-lg font-serif text-white">Denpasar</h4></div>
+                </div>
+                <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4"><strong class="block mb-1">Urban Pulse of Bali</strong>A lively capital where local markets and daily life reveal the island beyond its resorts.
+</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--BEGIN: Cuisine -->
+<section class="px-4 py-16 md:px-10" id="cuisine">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-12">
+<h2 class="text-k-red text-3xl md:text-4xl font-serif">Diverse Flavors & Island Traditions</h2>
+<p class="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">From fragrant Nasi Goreng to rich Rendang and ceremonial feasts, Indonesia’s cuisine is a vibrant journey shaped by islands, cultures, and centuries of exchange.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Package 1 -->
+<div class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:shadow-xl transition-shadow">
+<div class="h-56 w-full overflow-hidden">
+<img alt="Nasi Goreng" class="w-full h-full object-cover transition-transform group-hover:scale-105" data-alt="Nasi Goreng" src="img/Nasi_Goreng.jpg"/>
+</div>
+<div class="p-4">
+<div class="flex justify-between items-start mb-1">
+<h3 class="text-xl font-bold">Nasi Goreng（Java）</h3>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-400 mb-6 line-clamp-2">Indonesia’s iconic fried rice, blending spices and tradition into a dish found from street stalls to homes.
+
+</p>
+<div class="flex items-center justify-between">
+</div>
+</div>
+</div>
+<!-- Package 2 -->
+<div class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:shadow-xl transition-shadow">
+<div class="h-56 w-full overflow-hidden">
+<img alt="Rendang" class="w-full h-full object-cover transition-transform group-hover:scale-105" data-alt="Rendang" src="img/Rendang.jpg"/>
+</div>
+<div class="p-4">
+<div class="flex justify-between items-start mb-1">
+<h3 class="text-xl font-bold">Rendang（Sumatra）</h3>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-400 mb-6 line-clamp-2">A slow-cooked beef dish infused with spices and coconut, reflecting the depth of Minangkabau culinary heritage.
+</p>
+<div class="flex items-center justify-between">
+</div>
+</div>
+</div>
+<!-- Package 3 -->
+<div class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:shadow-xl transition-shadow">
+<div class="h-56 w-full overflow-hidden">
+<img alt="Sayur Asem" class="w-full h-full object-cover transition-transform group-hover:scale-105" data-alt="Sayur Asem" src="img/Sayur_Asem.jpg"/>
+</div>
+<div class="p-4">
+<div class="flex justify-between items-start mb-1">
+<h3 class="text-xl font-bold">Sayur Asem（Kalimantan）</h3>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-400 mb-6 line-clamp-2">A refreshing sour vegetable soup that captures the simplicity and freshness of island life.</p>
+<div class="flex items-center justify-between">
+</div>
+</div>
+</div>
+
+<!-- Package 4 -->
+<div class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:shadow-xl transition-shadow">
+<div class="h-56 w-full overflow-hidden">
+<img alt="Coto Makassar" class="w-full h-full object-cover transition-transform group-hover:scale-105" data-alt="Coto Makassar" src="img/Coto_Makassar.jpg"/>
+</div>
+<div class="p-4">
+<div class="flex justify-between items-start mb-1">
+<h3 class="text-xl font-bold">Coto Makassar（Sulawesi）</h3>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-400 mb-6 line-clamp-2">A rich and savory beef soup, deeply rooted in the culinary traditions of this historic port city.
+</p>
+<div class="flex items-center justify-between">
+</div>
+</div>
+</div>
+<!-- Package 5 -->
+<div class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:shadow-xl transition-shadow">
+<div class="h-56 w-full overflow-hidden">
+<img alt="Mumu" class="w-full h-full object-cover transition-transform group-hover:scale-105" data-alt="Mumu" src="img/Mumu.jpg"/>
+</div>
+<div class="p-4">
+<div class="flex justify-between items-start mb-1">
+<h3 class="text-xl font-bold">Mumu（Papua）</h3>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-400 mb-6 line-clamp-2">A traditional earth-cooked meal where meat and vegetables are slow-cooked together in communal celebration.
+</p>
+<div class="flex items-center justify-between">
+</div>
+</div>
+</div>
+<!-- Package 6 -->
+<div class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:shadow-xl transition-shadow">
+<div class="h-56 w-full overflow-hidden">
+<img alt="Babi Guling" class="w-full h-full object-cover transition-transform group-hover:scale-105" data-alt="Babi Guling" src="img/Babi_Guling.jpg"/>
+</div>
+<div class="p-4">
+<div class="flex justify-between items-start mb-1">
+<h3 class="text-xl font-bold">Babi Guling（Bali）</h3>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-400 mb-6 line-clamp-2">A ceremonial roast pork dish, embodying Bali’s unique blend of cuisine and Hindu tradition.
+</p>
+<div class="flex items-center justify-between">
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</section>
+
+<!-- BEGIN: HistorySection -->
+<section class="bg-t-green-light/40 section-spacing px-6 relative overflow-hidden" id="history">
+<div class="max-w-5xl mx-auto"><div class="text-center mb-12">
+<h2 class="text-e-green-dark font-serif text-sm mb-2 uppercase tracking-[0.3em]">インドネシア共和国の歴史</h2>
+<h3 class="text-k-red text-3xl md:text-4xl font-serif">Legacy of Many Islands</h3>
+<p class="text-xs text-Af-navy leading-relaxed">Indonesia is made up of over 17,000 islands! Out of this vast number, only about 6,000 are inhabited.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Java -->
+<div class="bg-white/50 backdrop-blur-sm p-8 rounded-2xl border border-k-red/10 shadow-sm">
+<h4 class="text-k-red font-serif text-xl font-bold mb-4 flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-k-red"></span>ジャワ島</h4>
+<ul class="space-y-4 text-xs text-Af-navy leading-relaxed">
+<li>人口が最も多く、イスラム教徒の割合が極めて高い。ただし、ジャワ独特の伝統信仰（ケジャウェン）を融合させた形も見られる。</li>
+<li><strong class="text-slate-800">古マタラム王国（717年～929年）</strong><br>ジャワ中部に存在し、ヒンドゥー教と仏教文化が発展。</li>
+<li><strong class="text-slate-800">シャイレーンドラ朝（8世紀～9世紀）</strong><br>ジャワ中部に存在し、仏教寺院ボロブドゥールが建設された。</li>
+<li><strong class="text-slate-800">クディリ王国（1045年～1221年）</strong><br>ジャワ東部のヒンドゥー教王国。</li>
+<li><strong class="text-slate-800">シンガサリ王国（1222年～1292年）</strong><br>クディリ王国を滅ぼした後に成立。</li>
+<li><strong class="text-slate-800">マジャパヒト王国（1293年～1500年頃）</strong><br>東南アジア全域に影響を与えた強大なヒンドゥー教王国。</li>
+<li><strong class="text-slate-800">バンテン王国（1527年～1813年）</strong><br>ジャワ西部に栄えたイスラム教王国。</li>
+<li><strong class="text-slate-800">マタラム王国（16世紀～18世紀）</strong><br>ジャワ中部のイスラム教王国。</li>
+<li><strong class="text-slate-800">オランダ東インド会社（VOC）（1602年～1800年）</strong><br>ジャワ島を含むインドネシア全体に影響を与えた貿易会社。</li>
+<li><strong class="text-slate-800">オランダ領東インド（1800年～1942年）</strong><br>VOC崩壊後、オランダ政府による直接統治。</li>
+<li><strong class="text-slate-800">日本占領期（1942年～1945年）</strong><br>第二次世界大戦中に日本が統治。</li>
+<li><strong class="text-slate-800">インドネシア共和国（1950年～現在）</strong><br>独立を達成した現在の統一国家。</li>
+
+</ul>
+</div>
+<!-- Sumatra -->
+<div class="bg-white/50 backdrop-blur-sm p-8 rounded-2xl border border-k-red/10 shadow-sm">
+<h4 class="text-k-red font-serif text-xl font-bold mb-4 flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-k-red"></span>スマトラ島</h4>
+<ul class="space-y-4 text-xs text-Af-navy leading-relaxed">
+    <li>全体的にはイスラム教が主流だが、北スマトラ州（バタク人）にはプロテスタントが多い地域もある。</li>
+<li><strong class="text-slate-800">クタイ王国（4世紀末～5世紀）</strong><br>ボルネオ島の影響も受けた初期の王国。</li>
+
+<li><strong class="text-slate-800">シュリーヴィジャヤ王国（7世紀～14世紀）</strong><br>海上貿易で栄えた仏教王国。マラッカ海峡を支配し、中印貿易の拠点となった。</li>
+<li><strong class="text-slate-800">ミナンカバウ文化（黎明期・シュリーヴィジャヤ時代（7世紀頃 〜 14世紀））</strong><br>パダンの高地で独自の母系社会とイスラム教が融合した文化が発展。</li>
+<li><strong class="text-slate-800">三仏斉（10世紀～15世紀）</strong><br>スマトラ島を中心とした港市国家連合。</li>
+
+<li><strong class="text-slate-800">アチェ・スルタン国（15世紀～20世紀初頭）</strong><br>イスラム教の拠点となった強力な王国。香辛料貿易で繁栄し、オランダに激しく抵抗した。</li>
+<li><strong class="text-slate-800">ミナンカバウ文化（パガルユン王国時代（1347年 〜 19世紀初頭）</strong><br>1347年： ジャワのマジャパヒト王国の影響を受けた王子アディティヤワルマンが、西スマトラの高地にパガルユン王国を建国。<br>
+16世紀： 交易を通じてイスラム教が伝来し、王がイスラムに改宗。ここで独自の「母系制とイスラム教の融合」が始まります。 </li>
+<li><strong class="text-slate-800">オランダ東インド会社（VOC）（1602年～1800年）</strong><br>スマトラにも影響を及ぼす。</li>
+<li><strong class="text-slate-800">オランダ領東インド（1800年～1942年）</strong><br>スマトラを含む全体を統治。</li>
+<li><strong class="text-slate-800">ミナンカバウ文化（パドリ戦争とオランダ統治期（1803年 〜 1945年）</strong><br>1803年 〜 1838年： パドリ戦争が発生。イスラム改革派（パドリ）と伝統派（アダット）が激突し、介入したオランダによって王権が終焉<br>1837年： 最後の拠点イマム・ボンジョルが陥落し、オランダの直接統治下に入りました。</li>
+<li><strong class="text-slate-800">日本占領期（1942年～1945年）</strong><br>日本による支配。</li>
+<li><strong class="text-slate-800">インドネシア共和国（1950年～現在）</strong><br>現代のインドネシア国家。</li>
+<li><strong class="text-slate-800">ミナンカバウ文化（1945年～現在）</strong><br>インドネシア独立に伴い、インドネシア共和国の重要な構成民族として、独自の文化を維持し続けています。</li>
+</ul>
+</div>
+<!-- Kalimantan -->
+<div class="bg-white/50 backdrop-blur-sm p-8 rounded-2xl border border-k-red/10 shadow-sm">
+<h4 class="text-k-red font-serif text-xl font-bold mb-4 flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-k-red"></span>カリマンタン<span class="text-xs rounded-full">（ボルネオ島のインドネシア部分）</span></h4>
+<ul class="space-y-4 text-xs text-Af-navy leading-relaxed">
+<li>沿岸部はイスラム教が主流だが、内陸部の先住民族（ダヤク人）にはキリスト教や伝統信仰が深く根付いている。</li>
+    <li><strong class="text-slate-800">クタイ王国（4世紀末頃）</strong><br>インドネシア最古の碑文が残るヒンドゥー教王国。東カリマンタンに存在し、石柱（ユパ）が発見されている。</li>
+<li><strong class="text-slate-800">ブルネイ帝国（14世紀〜16世紀）</strong><br>島の北部を中心に支配した強力なイスラム海上帝国。かつては島全体に影響力を持った。</li>
+<li><strong class="text-slate-800">タンジュンプラ王国（14世紀〜）</strong><br>西カリマンタンに位置し、ジャワ島のマジャパヒト王国の影響下にあった。</li>
+<li><strong class="text-slate-800">バンジャル・スルタン国（16世紀～19世紀）</strong><br>南部で栄えたイスラム教王国。ダイヤモンドや香辛料の貿易で繁栄したが、オランダとの戦争（バンジャル戦争）で崩壊。
+</li>
+<li><strong class="text-slate-800">オランダ領東インド / 英領ボルネオ（19世紀〜）</strong><br>島がオランダ（南部・東部）とイギリス（北部：サラワク、サバ、ブルネイ）に分割統治される。</li>
+<li><strong class="text-slate-800">インドネシア共和国（1950年〜現在）</strong><br>オランダ領だった地域がインドネシアの「カリマンタン」として独立。</li>
+
+</ul>
+</div>
+<!-- Sulawesi -->
+<div class="bg-white/50 backdrop-blur-sm p-8 rounded-2xl border border-k-red/10 shadow-sm">
+<h4 class="text-k-red font-serif text-xl font-bold mb-4 flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-k-red"></span>スラウェシ島</h4>
+<ul class="space-y-4 text-xs text-Af-navy leading-relaxed">
+<li>南部はイスラム教が強いが、北スラウェシ州（ミナハサ人）やトラジャ地方はキリスト教（プロテスタント）が多数派。</li>
+<li><strong class="text-slate-800">ゴワ・タッロ王国（マカッサル王国）</strong><br>16世紀～17世紀に南スラウェシのマカッサルを中心に栄えた強力なイスラム海洋国家。スパイス貿易の中継地。
+</li>
+<li><strong class="text-slate-800">ボネ王国</strong><br>（17世紀〜19世紀）ブギス族による王国。優れた造船技術（ピニシ船）を持ち、東南アジア全域で交易に従事した。オランダと結んでゴワ王国と対立し、島内の覇権を争った。
+</li>
+<li><strong class="text-slate-800">テルナテ・ティドレ王国の影響（15世紀〜）</strong><br>北スラウェシや東部は、モルッカ諸島の有力なイスラム王国の影響を強く受けた。
+</li>
+<li><strong class="text-slate-800">オランダの支配とマカッサル戦争（1666年〜1669年）</strong><br>オランダがゴワ王国を破り、東インド会社がマカッサルを占領。貿易の独占権を握る。<br>
+ミナハサ連盟（北スラウェシ）
+キリスト教布教が進み、オランダとの同盟関係が強く「オランダの第12の州」と呼ばれるほど親密だった。</li>
+<li><strong class="text-slate-800">インドネシア共和国（1950年〜現在）</strong><br>独立後、スラウェシ州として編入。後に複数の州に分割された。
+</li>
+<li><strong class="text-slate-800">トラジャの伝統</strong><br>山岳地帯では独自の宇宙観を持つ独自の文化が長らく維持された。</li>
+</ul>
+</div>
+<!-- Papua -->
+<div class="bg-white/50 backdrop-blur-sm p-8 rounded-2xl border border-k-red/10 shadow-sm">
+<h4 class="text-k-red font-serif text-xl font-bold mb-4 flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-k-red"></span>パプア<span class="text-xs rounded-full">（ニューギニア島西部）</span></h4>
+<ul class="space-y-4 text-xs text-Af-navy leading-relaxed">
+<li>インドネシアでは珍しくキリスト教が圧倒的多数を占める地域。プロテスタントとカトリックが混在している。</li>
+
+<li><strong class="text-slate-800">多様な部族社会</strong><br>数千年にわたり、数多くの部族が独自の言語と文化を山岳や沿岸で育んできた。</li>
+<li><strong class="text-slate-800">テルナテ・ティドレ王国の支配（16世紀〜）</strong><br>モルッカ諸島のイスラム王国の宗主権下にあり、鳥の羽や奴隷の交易が行われた。</li>
+
+
+
+<li><strong class="text-slate-800">オランダ領ニューギニア（1898年〜1962年）</strong><br>オランダが正式に領有を宣言。インドネシア独立後も、オランダはパプアの保持を主張し対立が続いた。</li>
+<li><strong class="text-slate-800">日本占領期（1942年〜1944年）</strong><br>第二次世界大戦中、ビアク島やホランディア（現ジャヤプラ）が激戦地となる。<br>この約2年間、オランダの行政機構は機能しなくなり、日本軍が軍政を敷いていました。つまり、「書類上の領主はオランダだが、実際に鉄砲を持って支配していたのは日本」という状態です。</li>
+<li><strong class="text-slate-800">ニューヨーク合意とUNTEA統治（1962年）</strong><br>国際連合（UNTEA）の暫定統治を経て、インドネシアへの管理権移管が決定。</li>
+<li><strong class="text-slate-800">「自由選択行為（Act of Free Choice）」（1969年）</strong><br>住民代表による投票により、正式にインドネシアへの帰属が決定（※現在も独立運動との摩擦が続く）。</li>
+<li><strong class="text-slate-800">パプア州・特別自治（2001年〜現在）</strong><br>現在は複数の州に再編され、高度な自治権が与えられている。</li>
+<li></li>
+
+
+
+
+
+
+
+</ul>
+</div>
+<!-- Bali -->
+<div class="bg-white/50 backdrop-blur-sm p-8 rounded-2xl border border-k-red/10 shadow-sm">
+<h4 class="text-k-red font-serif text-xl font-bold mb-4 flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-k-red"></span>バリ島</h4>
+<ul class="space-y-4 text-xs text-Af-navy leading-relaxed">
+<li> 唯一、ヒンドゥー教が人口の大部分を占める。独自の文化・宗教行事（ニュピなど）が生活の中心となっている。</li>
+<li><strong class="text-slate-800">タルマヌガラ王国（4世紀〜7世紀）</strong><br>ジャワ島西部から影響を受け、ヒンドゥー教が伝来し始めた時期。
+</li>
+<li><strong class="text-slate-800">ワルマデワ王朝（10世紀〜14世紀）</strong><br>バリ島独自の王朝。ジャワ島のクディリ王国などと密接な関係を持ち、ヒンドゥー教文化が定着した。<br>ウダヤナ王の代: 東ジャワの王女マヘンドラダッタと結婚したことで、ジャワ文化やヒンドゥー教（シヴァ派）の流入が加速しました。彼の息子であるエルランガ（アイルランガ）は、後にジャワ島でカフルパン王国を築いた英雄として知られています。</li>
+<li><strong class="text-slate-800">マジャパヒト王国の統治（1343年〜15世紀末）</strong><br>ジャワ島のマジャパヒト王国によって征服される（マジャパヒト王国の名宰相ガジャ・マダが率いる軍隊がバリ島に侵攻。当時のバリの王（ベドゥル王）を倒し、マジャパヒトの属領として武力で制圧）</li>
+<li><strong class="text-slate-800">ゲルゲル王国（15世紀末〜1651年）</strong><br>ジャワ島のイスラム化から逃れた王族や僧侶、芸術家がバリ島へ移住。ヒンドゥー文化が黄金期を迎えた。</li>
+<li><strong class="text-slate-800">クルンクン王国（1686年〜1908年）</strong><br>ゲルゲル王国の後継としてバリ島諸王国の頂点に立ち、儀礼的な中心地として存続した。</li>
+<li><strong class="text-slate-800">オランダ東インド会社（VOC）（17世紀〜1800年）</strong><br>バリ島周辺の貿易を独占しようとしたが、内陸部への影響力は限定的だった。</li>
+<li><strong class="text-slate-800">オランダ領東インド（1846年〜1942年）</strong><br>数次にわたる軍事進攻を経て、1908年の「ププタン（自決）」により全島がオランダの直接統治下に入った。</li>
+<li><strong class="text-slate-800">日本占領期（1942年〜1945年）</strong><br>第二次世界大戦中、オランダ軍を追い出した日本軍が統治。</li>
+<li><strong class="text-slate-800">バリ州（インドネシア共和国）（1950年〜現在）</strong><br></li>
+</ul>
+</div>
+</div>
+</div>
+<div><p class="text-left text-slate-600 text-sm mt-6 font-bold max-w-2xl mx-auto">1945年から1950年までのインドネシアは、「インドネシア独立戦争（国民革命期）」と呼ばれる、激動の時代にあたります。</p>
+<p class="text-left text-slate-600 text-sm mt-1  max-w-2xl mx-auto">1945年8月17日、スカルノ及びハッタがインドネシアの独立を宣言。スカルノが初代大統領に選出。</p>
+<p class="text-k-red text-left text-sm mt-1  max-w-2xl mx-auto">1945年 - 1949年：独立戦争</p>
+<p class="text-left text-slate-600 text-sm mt-1  max-w-2xl mx-auto">再植民地化を狙うオランダとの間で激しい武力衝突が続きました。</p>
+<p class="text-left text-slate-600 text-sm mt-1  max-w-2xl mx-auto">この間、1948年には共産主義者による反乱（マディウン事件）なども発生し、内政も混乱を極めました。</p>
+<p class="text-k-red text-left text-sm mt-1  max-w-2xl mx-auto">1949年：連邦制での主権移譲</p>
+<p class="text-left text-slate-600 text-sm mt-1  max-w-2xl mx-auto">ハーグ協定により、オランダから「インドネシア連邦共和国」としての主権移譲が認められました。</p>
+<p class="text-k-red text-left text-sm mt-1  max-w-2xl mx-auto">1950年：単一共和国への統合</p>
+<p class="text-left text-slate-600 text-sm mt-1  max-w-2xl mx-auto">連邦制を解消し、現在と同じ「インドネシア共和国」という単一制国家に再編されました。</p>
+<p class="text-k-red text-left text-sm mt-1  max-w-2xl mx-auto">1955年バンドンで「アジア・アフリカ会議」開催。</p>
+<p class="text-k-red text-left text-sm mt-1  max-w-2xl mx-auto">1965年軍部と共産党との緊張の高まりを背景に「9月30日事件」が発生。</p>
+<p class="text-left text-slate-600 text-sm mt-1  max-w-2xl mx-auto">この事件を契機として、東南アジア最大の共産党であったインドネシア共産党は壊滅し、スカルノは失脚</p>
+<p class="text-left text-slate-600 text-sm mt-1  max-w-2xl mx-auto">翌1966年3月11日、スカルノ大統領は権限をスハルトに一部委譲。</p>
+<p class="text-left text-slate-600 text-sm mt-1  max-w-2xl mx-auto">1968年スハルト大統領就任（第2代大統領）。</p>
+<p class="text-left text-slate-600 text-sm mt-1  max-w-2xl mx-auto">1998年アジア通貨危機をきっかけに、ジャカルタを中心に全国で暴動が発生。民主化運動も拡大し、スハルト大統領は辞任。ハビビ大統領就任（第3代大統領）。</p>
+<p class="text-left text-slate-600 text-sm mt-1  max-w-2xl mx-auto">1999年住民投票により東ティモールの独立が決定。ワヒッド大統領就任（第4代大統領）。</p>
+<p class="text-left text-slate-600 text-sm mt-1  max-w-2xl mx-auto">2001年メガワティ大統領就任（第5代大統領）。</p>
+<p class="text-left text-slate-600 text-sm mt-1  max-w-2xl mx-auto">2004年国民による初の直接投票によりユドヨノが大統領に選出。ユドヨノ大統領就任（第6代大統領）。</p>
+<p class="text-left text-slate-600 text-sm mt-1  max-w-2xl mx-auto">2005年ヘルシンキ和平合意（独立アチェ運動（GAM）との和平成立）。</p>
+<p class="text-left text-slate-600 text-sm mt-1  max-w-2xl mx-auto">2009年ユドヨノ大統領再任。</p>
+<p class="text-left text-slate-600 text-sm mt-1  max-w-2xl mx-auto">2014年ジョコ・ウィドド大統領就任（第7代大統領）</p>
+<p class="text-left text-slate-600 text-sm mt-1  max-w-2xl mx-auto">2019年ジョコ・ウィドド大統領再任</p>
+<p class="text-left text-slate-600 text-sm mt-1  max-w-2xl mx-auto">2024年プラボウォ・スビアント大統領就任（第8代大統領）</p>
+
+<p class="text-left text-slate-600 text-sm mt-6 font-bold max-w-2xl mx-auto">スマトラ島のミナンカバウ社会</p>
+<p class="text-left text-slate-600 text-sm mt-1  max-w-2xl mx-auto">インドネシアの西スマトラ州に住むミナンカバウ人は、世界最大規模の母系制社会を維持しており、そのアイデンティティは「アダット（伝統慣習）」と「イスラーム」の融合によって形成されています。19世紀初頭のパドリ戦争（Padri War）は、この母系制とイスラームの教理が衝突し、最終的に共存の道を探る転換点となりました。</p>
+<p class="text-left text-slate-600 text-sm mt-1  max-w-2xl mx-auto">近現代史のリーダーを輩出： インドネシア独立運動の父ムハンマド・ハッタなど、多くの知識人や指導者がこの文化圏から生まれており、国家建設の文脈でも重要です。</p>
+
+<p class="text-left text-slate-600 text-sm mt-6 font-bold max-w-2xl mx-auto">スラウェシ島の山岳地帯に住むトラジャ族～独特な死生観：死者との暮らし～</p>
+<p class="text-k-red text-left text-sm mt-1  max-w-2xl mx-auto">先史時代の移動（紀元前2500年〜3000年頃）</p>
+<p class="text-left text-slate-600 text-sm mt-1  max-w-2xl mx-auto">人類学的な研究によると、トラジャ族の祖先は約4,000〜5,000年前（紀元前2500年〜3000年頃）に、中国南部やインドシナ半島から海を渡ってきたオーストロネシア語族の移民であると考えられています。</p>
+<p class="text-k-red text-left text-sm mt-1  max-w-2xl mx-auto">独自の文化形成（10世紀〜19世紀末）</p>
+<p class="text-left text-slate-600 text-sm mt-1  max-w-2xl mx-auto">10世紀頃: 巨石記念物（メンヒル）など、現在の葬儀儀礼につながるメガリス（巨石）文化の痕跡はこの頃から見られます。</p>
+<p class="text-k-red text-left text-sm mt-1  max-w-2xl mx-auto">「トラジャ」としてのアイデンティティ（20世紀初頭〜）</p>
+<p class="text-left text-slate-600 text-sm mt-1  max-w-2xl mx-auto">1909年: オランダ植民地政府が、高地に住む人々をまとめて「トラジャ（ブギス語で『高地の人々』の意）」と名付けたことで、一つの民族としての認識が定着しました。 <br>キリスト教の伝播（1913年〜）: オランダ人宣教師によりキリスト教が広まりましたが、彼らは伝統的な葬儀儀礼を捨てるのではなく、キリスト教と独自の風習を融合させる道を選び、現在の形になりました。</p>
+
+<p class="text-left text-slate-600 text-sm mt-6 font-bold max-w-2xl mx-auto">インドネシア領としてのパプア（西パプア）</p>
+<p class="text-left text-slate-600 text-sm mt-1  max-w-2xl mx-auto">ニューギニア島の西半分はインドネシアの領土であり、複数の州（パプア州、西パプア州など）に分かれています。<br>ニューギニア島の東半分は独立国家のパプアニューギニア（Papua New Guinea）です。パプアニューギニアの人々とインドネシア側のパプア住民は、文化や民族（メラネシア系）としては共通点が多いですが、統治の歴史（西はオランダ、東は英独）が異なります。</p>
+
+<p class="text-left text-slate-600 text-sm mt-6 font-bold max-w-2xl mx-auto">バリ島：マジャパヒトによる征服（1343年）</p>
+<p class="text-left text-slate-600 text-sm mt-1  max-w-2xl mx-auto">ジャワ島を本拠地とするマジャパヒト王国の名宰相ガジャ・マダが、バリ島を武力で征服しました。これにより、それまでバリ島を治めていた古代の王朝（ワルマデワ朝の流れを汲む勢力など）による統治が終わり、マジャパヒトの属領となりました。</p>
+<p class="text-k-red text-left text-sm mt-1  max-w-2xl mx-auto">統治拠点の確立と「ゲルゲル王国」</p>
+<p class="text-left text-slate-600 text-sm mt-1  max-w-2xl mx-auto">征服後、マジャパヒトから派遣された貴族スリ・アジ・クレスナ・カパキサンがバリ島南部のゲルゲルに拠点を置き、マジャパヒト流の政治体制を導入しました。これがゲルゲル王国の始まりであり、バリ島の貴族制度の基礎となりました。</p>
+<p class="text-k-red text-left text-sm mt-1  max-w-2xl mx-auto">ジャワ貴族の「大移住」と文化の完成（15世紀〜16世紀）</p>
+<p class="text-left text-slate-600 text-sm mt-1  max-w-2xl mx-auto">ジャワ島でイスラム勢力が台頭し、マジャパヒト王国が崩壊すると、イスラム化を嫌ったジャワの王族、貴族、僧侶、芸術家たちが、ヒンドゥー教の伝統を守るために一斉にバリ島へ逃げ込みました。</p>
+<p class="text-left text-slate-600 text-sm mt-1  max-w-2xl mx-auto">文化の継承:この移住により、ジャワ島で失われつつあった高度なヒンドゥー・仏教文化、文学、儀式、カースト制度がバリ島に持ち込まれ、現在の「バリ・ヒンドゥー文化」が完成しました。</p>
+<p class="text-left text-slate-600 text-sm mt-1  max-w-2xl mx-auto">マジャパヒトの末裔: 現代のバリ人の多く（特に貴族階級）が「自分たちはマジャパヒトの末裔である」という強い誇りを持っているのは、この大移住がルーツだからです。</p>
+
+    </p>
+
+
+</div>
+</section>
+<!-- END: HistorySection -->
+<!-- BEGIN: Footer -->
+<footer class="bg-k-red text-white py-20 px-6 border-t border-white/5 relative z-10">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="col-span-1 md:col-span-2">
+<div class="flex items-center gap-3 mb-6">
+<div class="text-emerald-500">
+<svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景：インドネシア国旗の赤（勇気） -->
+  <rect width="24" height="24" rx="4" fill="#FF0000"/>
+  
+  <!-- 下半分：インドネシア国旗の白（純潔） -->
+  <rect y="12" width="24" height="12" rx="0" fill="#FFFFFF"/>
+
+  <!-- 中央：ガルーダ（国章）のシルエットイメージ -->
+  <path d="M12 6L14 9H18L15 12L16 16L12 14L8 16L9 12L6 9H10L12 6Z" fill="#FFD700" stroke="#B8860B" stroke-width="0.5"/>
+
+  <!-- 下部：多島海（エメラルドの首飾り）をイメージした波 -->
+  <path d="M4 19C6 18 8 20 10 19C12 18 14 20 16 19C18 18 20 20 22 19" stroke="#0077BE" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- 右上：南国の太陽 -->
+  <circle cx="19" cy="5" r="2" fill="#FFFFFF" opacity="0.8"/>
+</svg>
+</div>
+<span class="text-white font-serif text-lg tracking-wider font-semibold">Indonesia Discovery</span>
+</div>
+<p class="text-white text-sm max-w-sm mb-8">
+            Curating journeys across Indonesia’s many islands, where nature, culture, and history quietly unfold.      </p>
+</div>
+<div>
+<h6 class="text-k-yellow font-serif text-sm mb-6 uppercase tracking-widest">Navigation</h6>
+<ul class="space-y-4 text-sm text-white/60">
+<li><a class="hover:text-white transition-colors" href="#Landmarks">Landmarks</a></li>
+<li><a class="hover:text-white transition-colors" href="#cuisine">Cuisine</a></li>
+<li><a class="hover:text-white transition-colors" href="#history">History</a></li>
+</ul>
+</div>
+<div>
+<h6 class="text-k-yellow font-serif text-sm mb-6 uppercase tracking-widest">Connect</h6>
+<ul class="space-y-4 text-sm text-white/60">
+<li><a class="hover:text-white transition-colors" href="#">Instagram</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Twitter</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Contact Us</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 mt-10 mb-4"><p class="text-xs text-white">© 2026 Indonesia Discovery. All rights reserved.</p>
+<div class="flex gap-8 text-xs text-white/80">
+<a href="#">Privacy Policy</a>
+<a href="#">Terms of Service</a>
+</div></div>
+<button onclick="window.close(); setTimeout(() => { window.location.href = 'https://google.com'; }, 100);" 
+          class="flex items-center gap-1 px-3 py-0.5 ml-auto md:ml-auto bg-brand-emerald hover:opacity-80 text-white font-medium rounded-full transition-all shadow-sm">
+    <span class="material-symbols-outlined text-white/80 text-xs">logout</span>
+    <span class="tracking-wider text-white/80 text-xs">QUIT</span>
+  </button>
+</footer>
+<!-- END: Footer -->
+</main>
+<style data-purpose="animations">
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+<script>
+    document.getElementById('searchInput').addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+            const searchTerm = this.value.trim();
+            if (searchTerm) {
+                const wikipediaUrl = `https://ja.wikipedia.org/wiki/特別:検索?search=${encodeURIComponent(searchTerm)}`;
+                window.open(wikipediaUrl, '_blank');
+            }
+        }
+    });
+</script>
+</body></html>

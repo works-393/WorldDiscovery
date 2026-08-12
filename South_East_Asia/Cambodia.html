@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<!-- Fonts -->
+<title>Cambodia Discovery</title>
+<meta content="Explore Districts, Attractions, Cuisine, and History of Cambodia" name="description"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="../menu.js"></script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-container": "#4a2f27",
+                        "secondary-container": "#fc7127",
+                        "surface-container-high": "#e7e8e9",
+                        "error": "#ba1a1a",
+                        "secondary": "#a23f00",
+                        "inverse-on-surface": "#f0f1f2",
+                        "on-primary-container": "#7ba894",
+                        "on-secondary-fixed": "#351000",
+                        "tertiary": "#321a13",
+                        "primary-fixed-dim": "#a2d1bb",
+                        "on-surface": "#191c1d",
+                        "on-primary-fixed": "#002116",
+                        "on-surface-variant": "#414944",
+                        "surface-dim": "#d9dadb",
+                        "surface-container": "#edeeef",
+                        "background": "#f8f9fa",
+                        "inverse-surface": "#2e3132",
+                        "on-secondary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "outline": "#717974",
+                        "error-container": "#ffdad6",
+                        "surface-tint": "#3b6756",
+                        "on-secondary-container": "#5c2000",
+                        "on-error": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "secondary-fixed-dim": "#ffb595",
+                        "tertiary-fixed": "#ffdbd0",
+                        "on-tertiary-container": "#bc968b",
+                        "surface": "#f8f9fa",
+                        "on-background": "#191c1d",
+                        "surface-container-lowest": "#ffffff",
+                        "primary": "#00261a",
+                        "outline-variant": "#c0c8c3",
+                        "on-tertiary": "#ffffff",
+                        "surface-variant": "#e1e3e4",
+                        "primary-fixed": "#beedd7",
+                        "surface-bright": "#f8f9fa",
+                        "inverse-primary": "#a2d1bb",
+                        "surface-container-low": "#f3f4f5",
+                        "on-tertiary-fixed": "#2c160e",
+                        "primary-container": "#0f3d2e",
+                        "tertiary-fixed-dim": "#e7bdb1",
+                        "on-primary-fixed-variant": "#234f3f",
+                        "secondary-fixed": "#ffdbcd",
+                        "on-secondary-fixed-variant": "#7c2e00",
+                        "on-tertiary-fixed-variant": "#5d4037",
+                        "surface-container-highest": "#e1e3e4",
+                         "lebanon-dark": "#102219",
+                         "lebanon-green": "#2D5A27",
+            "lebanon-gold": "#C5A059",
+            "primary": "#144bb8",
+            "e-green-dark": "#006400",
+            "oman-blue": "#003153",
+            "B-purple-dark": "#632276",
+            "k-yellow": "#ffcc00",
+            "k-red": "#cc3333",
+            "t-green-light": "#99cc99",
+            "Af-navy": "#0B1F3A",
+            "qatar-blue": "#1e3a8a",
+            "yemen-red": "#CE1126",
+               },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                       "unit": "8px",
+                        "section-gap": "60px",
+                        "gutter": "24px",
+                        "container-max": "1280px",
+                        "margin-mobile": "16px"
+                    },
+                    "fontFamily": {
+                        "h2": ["Newsreader"],
+                    "h3": ["Newsreader"],
+                    "h1": ["Newsreader"],
+                        "body-md": ["Be Vietnam Pro"],
+                        "headline-xl": ["Noto Serif"],
+                        "button": ["Be Vietnam Pro"],
+                        "label-md": ["Be Vietnam Pro"],
+                        "body-lg": ["Be Vietnam Pro"],
+                        "headline-md": ["Noto Serif"],
+                        "headline-lg": ["Noto Serif"],
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-xl": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "button": ["16px", {"lineHeight": "1", "letterSpacing": "0.02em", "fontWeight": "600"}],
+                        "label-md": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "headline-lg": ["48px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                        "h2": ["2rem", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "h3": ["2rem", {"lineHeight": "1.3", "fontWeight": "500"}],
+                    "h1": ["2.5rem", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                    "body-md": ["1rem", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-caps": ["0.75rem", {"lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                    "body-lg": ["1.125rem", {"lineHeight": "1.7", "fontWeight": "400"}]
+                    }
+                
+                },
+            },
+        }
+    </script>
+<style data-purpose="custom-styling">
+    .bg-pattern {
+    background-image: url(img/Cambodia_bg.jpg);
+    opacity: 0.1
+    }
+</style>
+</head>
+<body class="bg-emerald-50 font-body-md text-on-surface">
+<div class="fixed inset-0 bg-pattern pointer-events-none z-0"></div>
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-qatar-blue backdrop-blur-md shadow-sm border-b border-emerald-900/10 dark:border-emerald-100/10">
+<div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center font-serif antialiased">
+<a class="flex items-center gap-3 text-2xl font-bold tracking-tight text-emerald-900 dark:text-emerald-100" href="#">
+<svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 外枠・背景（角丸ベース） -->
+  <rect width="24" height="24" rx="4" fill="#032A95"/>
+
+  <!-- 中央の赤帯（国旗の比率 1:2:1 をイメージ） -->
+  <rect y="6" width="24" height="12" fill="#E01424"/>
+
+  <!-- アンコール・ワット（簡易シルエット） -->
+  <!-- 土台 -->
+  <rect x="5" y="14" width="14" height="2" fill="#FFFFFF"/>
+  <rect x="6" y="13" width="12" height="1" fill="#FFFFFF"/>
+  
+  <!-- 中央の塔 -->
+  <path d="M11 13H13V9L12 7L11 9V13Z" fill="#FFFFFF"/>
+  <path d="M12 6.5V7.5" stroke="#FFFFFF" stroke-width="0.5"/>
+  
+  <!-- 左の塔 -->
+  <path d="M7.5 13H9.5V10L8.5 8.5L7.5 10V13Z" fill="#FFFFFF"/>
+  
+  <!-- 右の塔 -->
+  <path d="M14.5 13H16.5V10L15.5 8.5L14.5 10V13Z" fill="#FFFFFF"/>
+  
+  <!-- 建物をつなぐ回廊の屋根ライン -->
+  <path d="M6 13L7.5 12H16.5L18 13" stroke="#FFFFFF" stroke-width="0.5" fill="none"/>
+</svg><span class="text-white font-serif text-xl font-semibold">Cambodia Discovery</span>
+</a>
+<nav id="navMenu" class="hidden md:flex items-center gap-9 
+    absolute top-full left-0 w-full bg-qatar-blue backdrop-blur-md flex-col p-6 shadow-lg z-50
+    md:absolute md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 md:w-auto md:flex-row md:p-0 md:shadow-none">
+<a class="text-white dark:text-emerald-200/70 hover:text-white/50 dark:hover:text-emerald-50 transition-colors" href="#Northern">Northern</a>
+<a class="text-white dark:text-emerald-200/70 hover:text-white/50 dark:hover:text-emerald-50 transition-colors" href="#Southern">Southern</a>
+<a class="text-white dark:text-emerald-200/70 hover:text-white/50 dark:hover:text-emerald-50 transition-colors" href="#cuisine">Cuisine</a>
+<a class="text-white dark:text-emerald-200/70 hover:text-white/50 dark:hover:text-emerald-50 transition-colors" href="#history">History</a>
+</nav>
+<!-- Search Bar -->
+<div class="relative hidden lg:block" data-purpose="search-container">
+<span class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+<svg class="w-4 h-4 text-B-purple-dark/50" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</span>
+<input id="searchInput" class="bg-white/80 border-white/10 text-gray pl-10 pr-4 py-2 rounded-lg focus:ring-B-purple-dark focus:border-B-purple-dark w-64 text-sm" placeholder="Wikipedia検索" type="text"/>
+</div>
+<!-- Mobile Menu Button (Icon only) -->
+<div class="md:hidden">
+<button id="menuButton"
+    class="md:hidden flex items-center justify-center text-white hover:text-white/80 transition-colors">
+    <span class="material-symbols-outlined text-3xl">
+        menu
+    </span>
+</button></div>
+</div>
+</header>
+<main>
+<!-- Split-Screen Hero Section -->
+<section class="flex flex-col md:flex-row h-screen pt-16 overflow-hidden">
+<!-- Northern Cambodia Side -->
+<div class="group relative flex-1 overflow-hidden">
+<div class="absolute inset-0 bg-primary-container/40 z-10"></div>
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Mystic North" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkiulPaqbYuHqI-gQveVhTKtq0Vx8YNADJgu8_FqY7j3HqvO2_jGGypd7CUE7qlqjckcTdjXCc6Ay_DmAinSHTFcWt93Q-ezSLZDlzduHJAr56cgN7hvckNguDztMBQiJ_s3t2UuyLiR46ybUw4tVfK-0j6BaxcP5gooT-qQGtxQilszDCaRP_AHkGvt3Fv0BblFDAAu4tn9-IrN7M7h0TxQhoWyL5ExNgytuWEKuDxrYPh9nL2neMJc9J9tMkkqUC2Z3kq8MKdfo"/>
+<div class="absolute inset-0 z-20 flex flex-col justify-end p-margin-desktop md:p-16 bg-gradient-to-t from-primary-container/90 to-transparent">
+<span class="font-label-md text-k-yellow mb-2 uppercase tracking-[0.2em]">Ancient Wisdom</span>
+<h2 class="font-headline-xl text-white mb-4">Ancient North: Echoes of Angkor</h2>
+<p class="font-body-lg text-on-primary-container max-w-md mb-8">The northern lands of Cambodia, a legendary sanctuary where gods and men intersect. Explore moss-covered stone temples, deep jungles, and the timeless water city of Siem Reap.</p>
+<div class="flex">
+<a href="#Peninsular" class="inline-block">
+    <button class="bg-qatar-blue text-on-secondary px-8 py-4 rounded-lg font-button flex items-center gap-3 hover:shadow-xl transition-all">
+        Ancient North
+        <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+    </button>
+</a>
+</div>
+</div>
+</div>
+<!-- Southern Cambodia Side -->
+<div class="group relative flex-1 overflow-hidden">
+<div class="absolute inset-0 bg-primary-container/40 z-10"></div>
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="SOUTHERN" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9VNwIfLPNA7ETUUkBYPPjSTn83s4tl_wSeUlEAxTMqFvab5VCmgnMP6-FW47hOSCs6najQ2E2v3L1rCYW3yw2o2yyHoZolUJjqAboxKEBnKlbLiLhsjoe0-hvH35mfVw0nEQgSf63ymqrS94horuMMv5FgLd52Fyqc2qVJiQN7HWFwNdyXRx1KC71zThUm9HQ9W48CyTXZ5UR2_CrOHoxYVs4vsGVpoTVH2tbiLSvuLqpLt7sOTmubfI7fqfk5MNHUEfPjIX2fd0"/>
+<div class="absolute inset-0 z-20 flex flex-col justify-end p-margin-desktop md:p-16 bg-gradient-to-t from-primary-container/90 to-transparent">
+<span class="font-label-md text-k-yellow mb-2 uppercase tracking-[0.2em]">Vibrant Modernity</span>
+<h2 class="font-headline-xl text-white mb-4">SOUTHERN COAST & CAPITAL</h2>
+<p class="font-body-lg text-on-primary-container max-w-md mb-8">From the urban energy of Phnom Penh to the serene coastline of Sihanoukville. Southern Cambodia is a treasure trove of discovery where tradition and modernity intersect.</p>
+<div class="flex">
+<a href="#Borneo" class="inline-block">
+<button class="bg-qatar-blue text-on-secondary px-8 py-4 rounded-lg font-button flex items-center gap-3 hover:shadow-xl transition-all">
+                            The Modern South
+                            <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Northern Section -->
+<section class="py-section-gap bg-emerald-50" id="Northern">
+<div class="max-w-7xl mx-auto px-6">
+  <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-8 mb-16">
+    <div class="max-w-2xl">
+      <h3 class="font-headline-lg text-primary mb-4">Mystical Heritage</h3>
+      <p class="font-body-lg text-on-surface-variant">Giant stone temples sleep within the jungles of Siem Reap. Layers of history spanning centuries glow golden with the sunrise. The compassionate smiles of Bayon Temple and the raw life force of Ta Prohm. Here, time flows slowly, and myths carved in stone speak to the modern world.</p>
+    </div>
+    <div class="relative z-10 w-max max-w-full bg-surface-container-highest p-1.5 rounded-full flex items-center shadow-inner">
+      <button class="text-sm md:font-button px-3 md:px-8 py-2.5 md:py-3 rounded-full bg-qatar-blue text-on-secondary shadow-md shrink-0">Northern</button>
+      <a href="#Southern" class="block shrink-0">
+        <button class="w-full text-sm md:font-button px-3 md:px-8 py-2.5 md:py-3 rounded-full text-on-surface-variant hover:bg-surface-variant transition-colors">
+          Southern
+        </button>
+      </a>
+    </div>
+  </div>
+</div>
+</a>
+</div>
+</div>
+<!--Northern Landmarks -->
+<section class="scroll-mt-20 pt-8 pb-16 px-6 relative">
+    <div class="max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
+            <div class="max-w-2xl">
+                <h2 class="text-k-red font-serif text-sm mb-2 uppercase tracking-[0.3em]">Echoes of Angkor</h2>
+                <h3 class="text-t-green text-3xl md:text-2xl font-bold font-serif">Iconic Landmarks</h3>
+            </div>
+            <p class="text-orange/90 max-w-md text-sm">Stone walls etched with thousands of years of history. The jewels of Northern Cambodia, reflecting the glory of the Khmer Empire.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="flex flex-col">
+                <div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+                    <img alt="Angkor Wat" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="img/Angkor_Wat.jpg"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 p-4"><h4 class="text-lg font-serif text-white">Angkor Wat</h4></div>
+                </div>
+                <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4"><strong class="block mb-1">The iconic temple of the Khmer Empire</strong>Constructed over approximately 30 years in the early 12th century under King Suryavarman II of the Khmer Empire, Angkor Wat stands as the supreme masterpiece of Khmer architecture and one of the greatest sacred monuments ever built.</p>
+            </div>
+            <div class="flex flex-col">
+                <div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+                    <img alt="Angkor Thom" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAF30yTLhoKd4CchUx9_RckaXIqBMme4YK7BvLY2BzrKIsw_n7bceyPRHF7ntMmUalc2OLJtxOc379y0TdyaxWA0INClBu7Uc4gIrLdJjBGcftTGO0fMgIi36O4ugLMMt3889LA4oJ0ZHfMPYT3uxYg0RJ6zoduLgARueL5K-VSeMtyAR3buLcKJ0kb2WzwSmoorSiOnLzxIk5QmYLvbGjqliSQ83IzGh3dV2xOHi_gycZw0nEG9uQzwq7GTM8r8K-8q2ksu7BrcmU"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 p-4"><h4 class="text-lg font-serif text-white">Angkor Thom/Bayon Temple: Smile of the Avalokiteshvara	</h4></div>
+                </div>
+                <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4"><strong class="block mb-1">The last great capital of the Khmer Empire</strong>Built in the late 12th century under King Jayavarman VII, Angkor Thom became the final great walled city of the Khmer Kingdom and the political and spiritual center of its golden age.</p>
+            </div>
+            <div class="flex flex-col">
+                <div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+                    <img alt="Ta Prohm" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5CfGfcKUHInyjpOapFseMqfBnJMp0Fk08CINKot0eEm8ZAqhixcdDsxrXpgWmA0hyRSVPe-vWiek7pozAIMfZhFo0JZS4QDSpju2V-eWu3gtCvmtfI_BWgRu9WT2_W1NFBS2gtAtvcUcOFyJj_UnvCxTp_-0vaVIgLt7fDv4iMWs7AayspE01WuFHP8_DY9stYI5Qv9TyRIHe9rtEP4I-pCRXBKp4lI_kQCxK3HF7b8wQwtz2Cr17INqIexRYTTc4MoqmQNRxSe8"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 p-4"><h4 class="text-lg font-serif text-white">Ta Prohm</h4></div>
+                </div>
+                <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4"><strong class="block mb-1">The jungle temple reclaimed by nature</strong>Where ancient ruins and towering jungle roots intertwine, creating one of Southeast Asia’s most atmospheric and hauntingly beautiful temples.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- North City Focus: Siem Reap -->
+<section class="py-32 bg-surface-container-low/0 overflow-hidden">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="flex flex-col md:flex-row gap-20 items-center">
+<div class="flex-1 space-y-8">
+<h2 class="font-headline-lg text-headline-md text-primary">Siem Reap: <br/>Hub of Tradition &amp; Innovation</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                    As the gateway to the Angkor temples, Siem Reap is a place where vibrant modern charm and centuries-old traditional crafts coexist.
+                </p>
+<div class="grid grid-cols-2 gap-8">
+<div class="<!--border-l-2--> border-primary pl-6">
+<h4 class="font-label-md text-label-md text-primary mb-2"></h4>
+<p class="font-body-md text-body-md"></p>
+</div>
+<div class="<!--border-l-2--> border-primary pl-6">
+<h4 class="font-label-md text-label-md text-primary mb-2"></h4>
+<p class="font-body-md text-body-md"></p>
+</div>
+</div>
+<button class="border border-primary text-primary font-label-md text-label-md px-8 py-3 rounded-lg hover:bg-primary hover:text-on-primary transition-all duration-300">
+                    View Guidebook
+                </button>
+</div>
+<div class="flex-1 relative">
+<div class="absolute -top-10 -right-10 w-64 h-64 bg-primary-fixed-dim/20 rounded-full blur-3xl"></div>
+<img alt="Siem Reap Night Market" class="rounded-2xl shadow-2xl relative z-10 w-full" data-alt="A vibrant night market in Siem Reap, Cambodia, illuminated by colorful traditional lanterns." src="img/Siem_Reap_Airport.jpg"/>
+</div>
+</div>
+</div>
+</section>
+
+
+
+<!-- Region Switcher / Context Section -->
+<section class="pt-10 bg-emerald-50" id="Southern">
+<div class="max-w-7xl mx-auto px-6">
+  <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-8 mb-16">
+    <div class="max-w-2xl">
+<h3 class="font-headline-lg text-primary mb-4">Vibrant South: Tropical Rhythm</h3>
+<p class="font-body-lg text-on-surface-variant">On the street corners of Phnom Penh, French colonial architecture coexists with cutting-edge skylines. Youth gather along the Mekong river promenade, while transparent waters welcome modern travelers on the beaches of Sihanoukville. Experience the powerful energy of a Cambodia that respects tradition while charging toward tomorrow.</p>
+</div>
+<!-- Region Switcher -->
+    <!-- w-max max-w-full を追加して画面幅を超えないように制御 -->
+    <div class="relative z-10 w-max max-w-full bg-surface-container-highest p-1.5 rounded-full flex items-center shadow-inner">
+      <!-- text-sm でスマホ版の文字を小さくし、md:font-button でPC版のサイズに戻します -->
+      <a href="#Northern" class="block shrink-0">
+        <button class="w-full text-sm md:font-button px-3 md:px-8 py-2.5 md:py-3 rounded-full text-on-surface-variant hover:bg-surface-variant transition-colors">
+          Northern
+        </button>
+</a>
+<button class="px-6 py-2 rounded-full bg-qatar-blue text-white shadow-lg font-button">Southern</button>
+</div>
+</div>
+<!--Southern Landmarks -->
+<section class="scroll-mt-20 pt-8 pb-16 px-6 relative">
+    <div class="max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
+            <div class="max-w-2xl">
+                <h2 class="text-k-red font-serif text-sm mb-2 uppercase tracking-[0.3em]">The noble splendor of the Cambodian Royalty</h2>
+                <h3 class="text-t-green text-3xl md:text-2xl font-bold font-serif">Iconic Landmarks</h3>
+            </div>
+            <p class="text-orange/90 max-w-md text-sm">From the Royal Palace, steeped in history, to monuments symbolizing independence. Journey through the places that embody the soul of the South.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="flex flex-col">
+                <div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+                    <img alt="Royal Palace" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZTKvUamBHIU-JPN-8v6_gS-s0hU_rVCBPqUk6IXYR2bMCtOdgv-c8a_Hqs2PoRbEMHqfY1Nitak1PrZAAXXdKUjRZaQE5KzQijbuOwJX7WYWX1czaNBEeq5sRfC_J-oTHji7y8Bj-9IHTK1iCg2RnmStl9wKYrmScVD5tj3Dd3f1OTkubIswn-AKw6EkOL1_YdsyMJZBOeDRbTpnQrIf5-gUdZD1sg6sIN8XyIYIpPntsTwS8TVd-0eFKnq0QU8fHHvoq4_4Bmjo"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 p-4"><h4 class="text-lg font-serif text-white">Royal Palace</h4></div>
+                </div>
+                <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4"><strong class="block mb-1">The ceremonial heart of Cambodia’s monarchy</strong>Founded in 1866, the Royal Palace serves as the official residence of Cambodia’s monarchy, where gilded Khmer architecture, ceremonial halls, and elegant gardens reflect the enduring legacy of the royal kingdom.</p>
+            </div>
+            <div class="flex flex-col">
+                <div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+                    <img alt="Silver Pagoda" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuADLObsrABdgRxixzhey9lA1jGUMEMjl6t1nxct43jHCMlQEJImEIu194jcFihB1EKJ5SIpLAnS3kqJt_2mRUBwdvdCfFU-B5sIIcGABRadyu9QWkx9u42kd8dzB59OZ5lcIimFFs8kLEKYhl9Hqq8M_af6SeLMZXo0Wma-qhGLIhsaMoZnKeCMGN0CAJemX4TrIpUTJWQ8bH4MvMa81hlNxz2DvCxWZwIf1sj4ZVwv2ciOOEMi9U3005sgGI7g-DX3PGiiw4pmMC4"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 p-4"><h4 class="text-lg font-serif text-white">Silver Pagoda	</h4></div>
+                </div>
+                <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4"><strong class="block mb-1">A sacred temple famed for its silver floor</strong>Named for its floor lined with thousands of silver tiles, this sacred temple houses treasured Buddhist relics and some of Cambodia’s most revered national artifacts.</p>
+            </div>
+            <div class="flex flex-col">
+                <div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+                    <img alt="Independence Monument" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSyov3aN1i8rq9aXG77UmftbhalDXQ65bWMHbz7s04X0hSVdEYlSq3GUBcQOssm-eBeFUCwSw8SAQar3SpDRC_yAdqBGOyfcqRQtM_VNp5wOdXYowFFqk28uWcok_d3hqZk_9N267XSMuOjJrvA54ERmtQRoP5yKjeMbZWNe9O-nCDVR3NfLMVbkgxlBjXlTNYX0Tj5t7hX0SgLMhcFq2ucqhhQS8HmWRXMjMNTah8Dhnmjwi7S1mWwPF2CQ7bEiKqw-I_ueTUyxE"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 p-4"><h4 class="text-lg font-serif text-white">Independence Monument</h4></div>
+                </div>
+                <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4"><strong class="block mb-1">A monument celebrating Cambodia’s independence</strong>Built in 1958 to commemorate Cambodia’s independence from France, this lotus-shaped monument stands as a powerful national symbol of sovereignty and remembrance.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Cities Interactive Grid -->
+<section class="bg-surface-container py-24">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<h2 class="font-headline-lg text-headline-md text-primary text-center mb-16 <!--underline underline-offset-8--> decoration-tertiary">Exploring Major Cities</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<!-- City Card 1 -->
+<div class="flex flex-col gap-6">
+<div class="aspect-[4/5] overflow-hidden">
+<img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" data-alt="A vibrant street scene in Phnom Penh, Cambodia, featuring a mix of modern skyscrapers and traditional French colonial architecture. People on scooters zip through the streets under a bright, sunny sky. The atmosphere is energetic and bustling, with a palette of warm sun-drenched tones and urban grays, reflecting a city in rapid transition." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1ufCwAmNXNMSvySYu5s5S6hkNMr8f4CmoxzgFZqRQEFaI95Y2O1cVSwrtmv4pnouiB4bki8KHbk3F3W3b6ZKKWjK810HGcpwxCdUEoxlmIb_4t0kz4s8HhOF7yW6PnVOIfynckuCFAfcdlWyBvuiIO5TCFxjKNIX5DNbdNEb7fw4adRgt5puMIP9gevU-_GSOg7MOhHAMrdQEaGbdU-ZVabLDkvRBwzmXJ1rWD0X1vHUa7ytRO00afimA65h_agkkZ8er_rBF9Kk"/>
+</div>
+<div>
+<h4 class="font-headline-md text-headline-md mb-2">Phnom Penh</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">A vibrant capital where traditional markets and sophisticated rooftop bars coexist in dynamic harmony.</p>
+<a class="font-label-md text-label-md text-primary flex items-center gap-2 group" href="#">View Details <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span></a>
+</div>
+</div>
+<!-- City Card 2 -->
+<div class="flex flex-col gap-6 md:mt-12">
+<div class="aspect-[4/5] overflow-hidden">
+<img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" data-alt="The tranquil riverside of Kampot, Cambodia, at early morning. The Preaek Tuek Chhu river is calm, reflecting the historic French colonial buildings along the bank. Mist rolls over the distant Elephant Mountains, creating a serene and mystical atmosphere. The color palette is dominated by soft greens, earthy browns, and pastel sky blues." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDI1PoEuw98rnPwV5Rg6iAihMBuUN-wYIvVwkm7neY1gv_KJWTiLQlF4bXIIhahIDrQoKbsjwFTDCwZYshhNjhYRfKUc5GsEZF7goFyDLcucugxcCrAaYvNAtKfmUXZdDdvR97WIQsG7sTL3zahfhipXunp1v9__4roitAz-VSUoHUYfVM3EgKXmTN0qjNjKE0Nqc9ejaxZVjVuWZLhYK7jIabEMoMLvvbRMCnEIpzOQGhusce3qRjdiZfG-t_ZUMSH7f7Kv-QgAgg"/>
+</div>
+<div>
+<h4 class="font-headline-md text-headline-md mb-2">Kampot</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">A town wrapped in riverside tranquility and the lush green of pepper plantations, where nostalgic time flows by.</p>
+<a class="font-label-md text-label-md text-primary flex items-center gap-2 group" href="#">View Details <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span></a>
+</div>
+</div>
+<!-- City Card 3 -->
+<div class="flex flex-col gap-6 md:mt-24">
+<div class="aspect-[4/5] overflow-hidden">
+<img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" data-alt="A stunning aerial view of a pristine beach in Sihanoukville, Cambodia. Crystal clear turquoise water meets fine white sand, lined with lush green palm trees. The bright daylight creates a high-contrast, energetic coastal aesthetic. The mood is one of pure tropical luxury and modern holiday vibes, using a palette of vibrant blues and crisp whites." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcx71z38euXxLYqAYT5Qg2hdg0lyWOWgBSL5qCdkUpgH00Piqg3OZfS8YIKrhjUlzck2zOsRDdBvrTDhuW9dORLHi2Y56eehYszSkHaRrRH_hAcvmM0rSASzh-aMvXcTK5vmiQbkuO3vkVl5xDpGOmTEZJNw0tRrtffah64EXFez4nmCAa7aq7NnsgJj11bVpQfFW-clA4roQZUrlDrI0_jo-MRhVIJ2lUeZHiTaLAZdIOGMhDB0oAhw-CJVIe3cWzXxQpUmcMqlU"/>
+</div>
+<div>
+<h4 class="font-headline-md text-headline-md mb-2">Sihanoukville</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">White sandy beaches and emerald waters. Cambodia's premier beach destination with modern resorts.</p>
+<a class="font-label-md text-label-md text-primary flex items-center gap-2 group" href="#">View Details <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span></a>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!--BEGIN: Cuisine -->
+<header class="px-4 pt-20 pb-8 md:px-10" id="cuisine">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-12">
+<h2 class="text-lebanon-green text-4xl md:text-4xl font-serif">Cuisine of Cambodia</h2>
+<p class="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">A cuisine shaped by ancient kingdoms, river life, and generations of shared tradition. From fragrant street-side noodles and smoky grilled delicacies to coconut-rich curries and fresh island seafood, Cambodia’s culinary heritage offers a warm and soulful journey through the heart of Southeast Asia.</p>
+</div>
+</header>
+<!-- Section main dish -->
+<section class="mb-20">
+<div class="flex items-center justify-between mb-8 border-b border-outline-variant pb-4">
+<h2 class="text-lebanon-green text-2xl md:text-2xl font-serif">Flavors of Cambodia</h2>
+<span class="hidden md:block font-label-caps text-label-caps text-secondary uppercase tracking-widest">A journey through rich spices, river traditions, and timeless Khmer cuisine.</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Fish Amok -->
+<div class="group relative z-10 bg-orange-50 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-500">
+<div class="h-64 relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Fish Amok" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuHsXXmDC9lPi6U8XJThEaRPqoqiUeWixM59hpmWWaGw9S7iu2EJu7L0Jvc-ncPLmHEpdjuDUhJSTZ8WvabM80RXmXvLIklG346spN5BeuHQOVLsZPVSvB0Dy0jg0_7XGNP_H8HUNy6ixRcDH6FNdSOcL3nTIeFfgfZPkBoRhVfiXKNTBZEhHwYdjTV9BRW7pcRHgShvVw-SuWO-AXlvcVdAff_MqekdoNv3hvMhXhPx7K3fyZ-PcbxpPAb_1XrRWvBf70UpZnnxE"/>
+</div>
+<div class="p-6">
+<h3 class="font-h3 text-2xl md:text-2xl font-serif">Fish Amok</h3>
+<p class="font-body-md text-on-surface-variant mb-">One of Cambodia's finest royal dishes, steamed in banana leaves with aromatic coconut curry.</p>
+</div>
+</div>
+<!-- Kampot Pepper -->
+<div class="group relative z-10 bg-orange-50 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-500">
+<div class="h-64 relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwbt2nv59GXxWCLhNrliCOduFpE-mHxrwbd69H6PtPHohuDn9BICBOxTaMG8IpJvNRVUN0X8cW3NUp7kQATML8w_6SLCuKdyy7UFMdJBjjSZ4a28kyf6_0Dk4NtzQGFUrsseDByM-I9nafNHkFZ7iTvTXHB82YOIikQRmOI7Rtr9JabH9KB0q3-lN6UtfDiZnixme0BVZkstGMltESlCl-qINBgOl0RTyn1eSNK0KdiStgbjDtUxopSYFzhLGGGgsksrLJWfhOsRQ"/>
+</div>
+<div class="p-6">
+<h3 class="font-h3 text-2xl md:text-2xl font-serif">Kampot Pepper</h3>
+<p class="font-body-md text-on-surface-variant mb-4">Praised as the world's best pepper, its rich aroma elevates simple ingredients to the peak of flavor.</p>
+</div>
+</div>
+<!-- Hokkien Mee -->
+<div class="group relative z-10 bg-orange-50 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-500">
+<div class="h-64 relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="" src="img/Samlor_Korko.jpg"/>
+</div>
+<div class="p-6">
+<h3 class="font-h3 text-2xl md:text-2xl font-serif">Samlor Korko</h3>
+<p class="font-body-md text-on-surface-variant mb-4">A hearty traditional soup rich with herbs, vegetables, and the soul of Khmer home cooking.</p>
+</div>
+</div>
+</section>
+<!-- Section Desserts-->
+<section class="mb-20">
+<div class="flex items-center justify-between mb-8 border-b border-outline-variant pb-4">
+<h2 class="text-lebanon-green text-2xl md:text-2xl font-serif">Cambodian Desserts</h2>
+<span class="hidden md:block font-label-caps text-label-caps text-secondary uppercase tracking-widest">Sweet coconut delights inspired by tradition and tropical flavors.</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Sarawak Laksa -->
+<div class="group relative z-10 bg-orange-50 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-500">
+<div class="h-64 relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiiUVmMS6tE41v-qBczZ7RFKO170TX9ViQIw1NGwAGQDImNOFeI6LITNoceXtk8Zka4dRdn7CeXku0ZBeic5tS_jNL74CKXxkrIAM4qu0mw1rgtDH9STrOZ_xcto-Kykel4k4kCtTqSQfmN4YOXE170TIoXI8pR4tcTUiKoK7kdAO0RS1DJIMIQYP-WS313n_hUOtzLOZ4aThK7Vkaxf5KUszq_JinW6FZYyaNBgylT_vdrgxEJqkZOQlm2Orhm7c5p92GF99O-5c"/>
+</div>
+<div class="p-6">
+<h3 class="font-h3 text-2xl md:text-2xl font-serif">Num Ansom</h3>
+<p class="font-body-md text-on-surface-variant mb-4">A complex, spicy broth infused with coconut milk and over 20 aromatic herbs and spices.</p>
+</div>
+</div>
+<!-- Manuk Pansuh -->
+<div class="group relative z-10 bg-orange-50 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-500">
+<div class="h-64 relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="" src="img/Cha_Houy_Teuk.jpg"/>
+</div>
+<div class="p-6">
+<h3 class="font-h3 text-2xl md:text-2xl font-serif">Cha Houy Teuk</h3>
+<p class="font-body-md text-on-surface-variant mb-4">A complex, spicy broth infused with coconut milk and over 20 aromatic herbs and spices.</p>
+</div>
+</div>
+<!-- Hinava -->
+<div class="group relative z-10 bg-orange-50 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-500">
+<div class="h-64 relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="" src="img/Nom_Plae_Ai.jpg"/>
+</div>
+<div class="p-6">
+<h3 class="font-h3 text-2xl md:text-2xl font-serif">Nom Plae Ai</h3>
+<p class="font-body-md text-on-surface-variant mb-4">A complex, spiand spices.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- BEGIN: HistorySection -->
+<section class="py-section-gap py-[0px] bg-transparent" id="history">
+  <div class="max-w-5xl mx-auto">
+    <div class="text-center mb-6"> 
+      <h2 class="text-k-red font-serif text-sm mb-2 uppercase tracking-[0.3em]">カンボジアの歴史</h2>
+<h3 class="text-qatar-blue text-3xl md:text-4xl font-serif">Kingdom of Cambodia </h3>
+<p class="text-xs text-Af-navy leading-relaxed">From the grandeur of the Khmer Empire to centuries of resilience and renewal, <br>Cambodia’s history is shaped by sacred traditions, powerful kingdoms, and enduring cultural heritage.</p>
+</div>
+<div class="max-w-3xl mx-auto space-y-8 relative border-l border-slate-300 pl-8">
+<!-- History: Ancient -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-qatar-blue"></div>
+<h4 class="text-qatar-blue font-sans text-xl font-semibold mb-6">古代</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">扶南王国 <span class="text-xs text-slate-500 block md:inline md:ml-2">（紀元前1世紀～6世紀） </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">東南アジア初期の交易国家で、インド文化の影響を受けて繁栄。東南アジア最古の王朝</p>
+<p class="text-xs text-slate-600 leading-relaxed">6世紀頃から真臘の圧迫を受けて衰退し、7世紀中頃滅亡</p>
+</div>
+
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">真臘王国  <span class="text-xs text-slate-500 block md:inline md:ml-2">（6世紀～802年） </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">扶南王国を吸収し、カンボジアの主要な王国として発展。</p>
+<p class="text-xs text-slate-600 leading-relaxed">クメール人によって建国、　ヒンドゥー教を国教化</p>
+<p class="text-xs text-slate-600 leading-relaxed">扶南を滅ぼし、都をアンコールに定める</p>
+<p class="text-xs text-slate-600 leading-relaxed">8世紀初めから9世紀の初めに、北の陸真臘と南の水真臘に分裂</p>
+</div>
+
+</div>
+</div>
+<!-- History: Medieval -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-qatar-blue"></div>
+<h4 class="text-qatar-blue font-sans text-xl font-semibold mb-6">中世</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">クメール王朝（アンコール王朝）  <span class="text-xs text-slate-500 block md:inline md:ml-2">（802年～1431年）</span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">ジャヤーヴァルマン2世による統一後、アンコール・ワットなどの壮大な寺院を建設し、文化の黄金時代を築く。</p>
+<p class="text-xs text-slate-600 leading-relaxed">9世紀～13世紀にかけてのアンコール朝の時代に全盛期</p>
+<p class="text-xs text-slate-600 leading-relaxed">9世紀末～12世紀アンコール遺跡を建設。9世紀から14世紀にかけてのクメール美術のすべてを伝えている</p>
+<p class="text-xs text-slate-600 leading-relaxed">&nbsp;&nbsp;アンコール・ワット（寺院）（スーリヤヴァルマン2世）</p>
+<p class="text-xs text-slate-600 leading-relaxed">&nbsp;&nbsp;アンコール・トム（王城）（12世紀後半、ジャヤーヴァルマン7世）</p>
+
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">暗黒時代<span class="text-xs text-slate-500 block md:inline md:ml-2">（1431年～1863年） </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">シャム（タイ）やベトナムの侵攻を受け、王国が衰退。
+</p>
+</div>
+
+
+</div>
+</div>
+<!-- History: Early Modern -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-qatar-blue"></div>
+<h4 class="text-qatar-blue font-sans text-xl font-semibold mb-6">近世</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">フランス保護領時代<span class="text-xs text-slate-500 block md:inline md:ml-2">（1863年～1953年）  </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">フランスの植民地支配下に置かれる。</p>
+<p class="text-xs text-slate-600 leading-relaxed">&nbsp;&nbsp;1863年 Norodom 王がフランスと保護条約を結ぶ</p>
+<p class="text-xs text-slate-600 leading-relaxed">&nbsp;&nbsp;1884年 フランスがさらに強い統治権を確立（実質植民地化が進行）</p>
+
+</div>
+</div>
+</div>
+<!-- History: Modern -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-qatar-blue"></div>
+<h4 class="text-qatar-blue font-sans text-xl font-semibold mb-6">近現代・現代</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">カンボジア王国（ノロドム・シハヌーク国王による独裁的な君主制国家） <span class="text-xs text-slate-500 block md:inline md:ml-2">（1953年～1970年） </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">フランスから独立し、立憲君主制を採用。</p>
+<p class="text-xs text-slate-600 leading-relaxed">ジュネーヴ休戦協定（1954年）で完全独立を達成</p>
+<p class="text-xs text-slate-600 leading-relaxed">国王シハヌーク首相（任1955-60）・元首（任1960-70）、中立政策</p>
+<p class="text-xs text-slate-600 leading-relaxed">&nbsp;&nbsp;1955年にシアヌークが王位を父に譲って自ら政治家となり、サンクムを結成してからは実質的な一党独裁体制へと移行</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">クメール共和国 （親米派の軍事政権）<span class="text-xs text-slate-500 block md:inline md:ml-2">（1970年～1975年） 内戦を経て共和制に移行。 </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">&nbsp;&nbsp;親米右派のロン・ノル国防相がクーデタ（1970年.3）</p>
+<p class="text-xs text-slate-600 leading-relaxed">&nbsp;&nbsp;シハヌークを国家元首から解任し、クメール共和国を成立</p>
+<p class="text-xs text-slate-600 leading-relaxed">&nbsp;&nbsp;シハヌークは亡命先の北京でカンボジア王国民族連合政府を樹立。カンプチア民族統一戦線を結成</p>
+<p class="text-xs text-slate-600 leading-relaxed">&nbsp;&nbsp;米軍カンボジアに侵攻(1970.4)「ホーチミン・ルート」(北ベトナムが解放戦線を援助するために武器・物資などを輸送したルート)を遮断目的。内戦激化(ロン・ノル政権とカンプチア民族統一戦線)</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">民主カンプチア （ポル・ポト政権）<span class="text-xs text-slate-500 block md:inline md:ml-2">（1975年～1979年） </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">クメール・ルージュ（KR）が内戦に勝利。ポル・ポト政権による極端な共産主義政策が実施される。</p>
+<p class="text-xs text-slate-600 leading-relaxed">・クメール・ルージュが首都プノンペンに入城→解放勢力が勝利（1975）</p>
+<p class="text-xs text-slate-600 leading-relaxed">・「カンボジア民主国憲法」を公布（1976.1）</p>
+<p class="text-xs text-slate-600 leading-relaxed">・ポル・ポト（※本名：サロット・サル）※指導の共産主義勢力「クメール・ルージュ」 シハヌークを擁立</p>
+<p class="text-xs text-slate-600 leading-relaxed">・国家元首にはシハヌークが就任→辞任（1976.4）※形式上は本人の申し出による辞任、ここから完全な軟禁生活へ</p>
+<p class="text-xs text-slate-600 leading-relaxed">・ポル・ポト政権成立（親中国派）。ポル・ポト首相（任1976～79）</p>
+<p class="text-xs text-slate-600 leading-relaxed">&nbsp;&nbsp;「原始共産制」：共産主義にもとづく強力な農業本位と民族主義強力な農業本位と民族主義。中産階級的な都市住民を強制的に農村に入植、強制労働。頭脳階級や留学生200万人を超えるともいわれる虐殺・粛清&nbsp;&nbsp;プノンペンはゴーストタウン化
+<p class="text-xs text-slate-600 leading-relaxed">・ベトナムと国境紛争（1978.1）→ベトナムと断交</p>
+
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">カンプチア人民共和国（親ベトナム政権）<span class="text-xs text-slate-500 block md:inline md:ml-2">（People's Republic of Kampuchea）（1979年～1993年）  </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">・ベトナムはカンボジアに侵攻（1979年1）。
+プノンペンを攻略、ポル・ポト政権追放。ベトナムに亡命していたヘン・サムリンを首相に擁立して侵攻。ポル・ポトは密林地帯に逃亡。</p>
+<p class="text-xs text-slate-600 leading-relaxed">・親ベトナムの「カンプチア人民共和国」（プノンペン（ヘン・サムリン）政権）（1979-91）樹立</p>
+<p class="text-xs text-slate-600 leading-relaxed">○内戦状態に</p>
+<p class="text-xs text-slate-600 leading-relaxed">・1979年-82年：ヘン・サムリン政権（親ソ連・ベトナム）とポル・ポト派（中国支援）の対立。中ソ対立 →中越戦争（1979年）に</p>
+<p class="text-xs text-slate-600 leading-relaxed">・1982年7月：民主カンボジア三派連合成立。反ベトナム三派の連合政府</p>
+<p class="text-xs text-slate-600 leading-relaxed">&nbsp;&nbsp;&nbsp;&nbsp;三派：ポル・ポト派、シハヌーク派、ソン・サン派（ロン・ノル政権の流れを受け継ぐ）</p>
+<p class="text-xs text-slate-600 leading-relaxed">・1982年-91年：ヘン・サムリン軍政権（親ソ連・ベトナム）と民主カンボジアの内戦</p>
+<p class="text-xs text-slate-600 leading-relaxed">・ベトナム軍撤退（1989年9月）←ベトナム首相ファン・フンが急死</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">カンボジア王国（再建） <span class="text-xs text-slate-500 block md:inline md:ml-2">ノロドム家による君主制（1993年～現在）  </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">1991年、「カンボジア和平会談」＠パリ</p>
+<p class="text-xs text-slate-600 leading-relaxed">・ヘン・サムリン政権と反対勢力が和解、調印、内戦終結</p>
+<p class="text-xs text-slate-600 leading-relaxed">1992年、国連カンボジア暫定機構（UNTAC）活動開始（1992～93年、日本初の国連PKO参加。）</p>
+<p class="text-xs text-slate-600 leading-relaxed">1993年、UNTAC監視下で民主的な選挙を実施（王党派フンシンペック党勝利。ラナリット第一首相（フンシンペック党）、フン・セン第二首相（人民党：旧プノンペン政権）の2人首相制連立政権。）新憲法で王制復活。</p>
+<p class="text-xs text-slate-600 leading-relaxed">・国王シハヌーク（位1993-2004）</p>
+<p class="text-xs text-slate-600 leading-relaxed">・ポル・ポト死去→ポル・ポト派壊滅（1998年）</p>
+<p class="text-xs text-slate-600 leading-relaxed">・フン・セン政権成立（1998年）←クーデタ（1997年）</p>
+<p class="text-xs text-slate-600 leading-relaxed">・シハヌーク国王引退、シハモニ新国王即位（2004年.10）</p>
+<p class="text-xs text-slate-600 leading-relaxed">2023年8月、フン・セン氏の長男であるフン・マネット氏が新しい首相に就任</p>
+<p class="text-xs text-slate-600 leading-relaxed">
+カンボジアの歴史は、文化的な繁栄と政治的な変遷が交錯しています。</p>
+</div>
+<div>
+<div class="space-y-6 border-t border-slate-100 pt-6">
+   
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<p class="text-left text-k-red text-sm mt-6 font-bold max-w-2xl mx-auto">ベトナムと比較すると、カンボジアが1953年にフランスから独立したプロセスは、驚くほど平和的で「ドロドロ」していませんでした。</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;ベトナムがフランスを相手に何万人もの血を流す大戦争（第一次インドシナ戦争）を戦っていたのに対し、カンボジアは若きシアヌーク国王による極めてスマートな外交戦術によって、血を流さずに独立を勝ち取りました。</p>
+
+
+<p class="text-left text-slate-600 text-sm mt-2 font-bold max-w-2xl mx-auto">1. ベトナムが盾となり、フランスを疲弊させていた</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;当時、ベトナムではホー・チ・ミン率いる共産派ゲリラ（ベトミン）が、フランス軍と泥沼の全面戦争を繰り広げていました。フランスはベトナム戦線に資金も兵力も注ぎ込み、完全にヘトヘトになっていました。そのため、隣国カンボジアにまで大規模な軍隊を割いて独立運動を力で抑え込む余裕が、フランスには残されていませんでした。</p>
+<p class="text-left text-slate-600 text-sm mt-2 font-bold max-w-2xl mx-auto">2. シアヌーク国王の「国際世論を味方につける」ゲリラ外交</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;シアヌーク国王は、武力ではなく「外交の力」でフランスを追い詰めました。</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto"><span class="text-left text-slate-600 text-sm mt-2 font-bold max-w-2xl mx-auto">王国の十字軍：</span>シアヌークは自ら「独立のための王国十字軍」と称して世界を飛び回りました。</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">フランスへの恥をかかせる戦術：アメリカやカナダのメディアに対し、「フランスはカンボジアに自由を与えない！」と大々的にアピールして国際世論を味方につけました。</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto"><span class="text-left text-slate-600 text-sm mt-2 font-bold max-w-2xl mx-auto"">隣国への一時亡命：</span>さらに「独立を認めないなら戻らない」とタイへ一時亡命するパフォーマンスを敢行し、国際社会の中でフランスの立場を徹底的に悪くさせました。</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto">&nbsp;&nbsp;結果、国際的な批判に耐えかね、ベトナムで手一杯だったフランスは、1953年11月にカンボジアの完全独立をあっさりと認めることになりました。</p>
+<p class="text-left text-slate-600 text-sm mt-2 font-bold max-w-2xl mx-auto">3. だからこそ「立憲君主制」からスタートできた</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;ベトナムはフランスを武力で追い出したため、そのまま共産主義（北）と親米資本主義（南）に国が真っ二つに引き裂かれ、さらなる泥沼の「ベトナム戦争」へ突入していきました。しかし、カンボジアは戦争をせずに国王が主導して独立を勝ち取ったため、国が引き裂かれることなく、「王政（立憲君主制）」という古い伝統の形をそのまま維持してスムーズに新国家をスタートさせることができました。</p>
+
+
+<p class="text-left text-k-red text-sm mt-6 font-bold max-w-2xl mx-auto">シアヌークが王位を捨てて政治家になった理由</p>
+<p class="text-left text-slate-600 text-sm mt-2 font-bold max-w-2xl mx-auto">憲法上の制限を回避するため：</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">当時の憲法では、国王は政治に直接介入できませんでした。シアヌークは自分の手で政治を主導したいと考えました。 </p>
+<p class="text-left text-slate-600 text-sm mt-2 font-bold max-w-2xl mx-auto">選挙で圧倒的な正統性を得るため：</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">1955年、王位を父（ノロドム・スラマリット）に譲り、自身は「殿下」の身分で政治運動組織「サンクム（社会主義人民共同体）」を結成しました。</p>
+<p class="text-left text-slate-600 text-sm mt-2 font-bold max-w-2xl mx-auto">国民的人気の利用：</p>
+<p class="text-left text-slate-600 text-sm mt-0 max-w-2xl mx-auto">元国王という絶対的なカリスマ性を武器に選挙に臨み、大勝して首相に就任しました。これにより、王政の権威と民主的な選挙の勝利という「二重の正統性」を手に入れました。</p>
+
+<p class="text-left text-k-red text-sm mt-6 font-bold max-w-2xl mx-auto">「中立外交の限界」がもたらした経済の破綻</p>
+<p class="text-left text-slate-600 text-sm mt-2 font-bold max-w-2xl mx-auto">シアヌークは冷戦下において、アメリカ・ソ連・中国のいずれの陣営にも属さない「中立」を掲げ、国の独立を守ろうとしました。</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;シアヌークがカンボジア東部領内に北ベトナム軍（共産勢力）が基地を作ることを黙認したため、軍部・エリート層の不満が爆発しました。北ベトナム軍が領内に居座ったため、アメリカ軍がカンボジア領内への秘密爆撃を開始しました。これにより国土が荒廃し、中立政策は完全に破綻しました。反共産主義だったカンボジア軍エリート（ロン・ノル将軍ら）によって病気療養と外交のために海外（フランス、ソ連、中国）を訪問している隙を突かれ、1970年3月、シアヌーク国家元首の地位を解任されました。</p>
+
+<p class="text-left text-k-red text-sm mt-6 font-bold max-w-2xl mx-auto">ロン・ノル政権誕生（1970年クーデター）</p>
+<p class="text-left text-slate-600 text-sm mt-2 font-bold max-w-2xl mx-auto">1970年3月、ロン・ノル将軍がアメリカの支援を受けて無血クーデターを起こし、シハヌーク政権を追放して誕生した親米右派政権。1970年10月に王制廃止。</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;シアヌークに王位を譲られた父のスラマリット国王は、1960年に崩壊の10年も前に死去していました。父親の死後、シアヌークは新しい国王を即位させず、自ら「国家元首（プレジダン）」という新しい役職に就きました。そのため、1960年から1970年までのカンボジア王国は「国王が不在のまま、元国王のシアヌークが国家元首として支配する国」という奇妙な体制でした。ロン・ノルは長年、警察トップや国防相、首相を歴任し、シアヌーク体制を影で支えた忠実な部下でした。シアヌークを追放した直後は、形式的に「カンボジア王国」のままでしたが、半年後の1970年10月に王制そのものを廃止し、「クメール共和国」へと国名を変えました。</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">内戦の激化: 政権の誕生と米軍の侵攻に対し、（北京に）亡命したシハヌークが共産勢力と手を結んだことでクメール・ルージュ（ポル・ポト派）が急拡大しました。</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">国土の荒廃：アメリカ軍は領内の北ベトナム軍を壊滅させるためカンボジアの農村部に大量の爆弾を投下しました。数万人から数十万人とも言われる罪のない農民が犠牲になりました。</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">敵への寝返り：家や家族を失った農民たちの激しい怒りは、アメリカと手を組んだロン・ノル政権に向かいました。これが「反米・反ロン・ノル」を掲げるポル・ポト派への強力な支持基盤となりました。</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">政権の終焉: アメリカ軍の撤退後は国内の統制を失い、1975年4月17日、ポル・ポト派（クメール・ルージュ）によって首都プノンペンが陥落。ロン・ノルは国外へ亡命し、政権は崩壊しました。</p>
+
+<p class="text-left text-k-red text-sm mt-6 font-bold max-w-2xl mx-auto">なぜポル・ポトはそこまで「知識人（医師や教師）」を敵視したのか</p>
+<p class="text-left text-slate-600 text-sm mt-2 font-bold max-w-2xl mx-auto">「知識人」というだけで処刑の対象に</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">ポル・ポト派は、西洋の医学や近代的な知識を「悪」とみなしました。 </p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">・医師であること（眼鏡をかけている、フランス語が話せるなど）がバレただけで、即座に処刑場（キリング・フィールド）へ送られました。</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">・生き残ったわずかな医師たちは、自分が医師であることを必死に隠し、文字の読めない農民のふりをして過酷な強制労働を耐え抜いた人たちだけでした。</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;ポル・ポトが医師や教師などの「知識人」を徹底的に敵視した理由は、彼が「資本主義や外国の汚れがない、純粋な原始共産主義社会」を本気で作ろうとしたからです。 彼にとって知識人は、理想の国作りを邪魔する「最も危険な敵」でした。</p>
+
+<p class="text-left text-k-red text-sm mt-6 font-bold max-w-2xl mx-auto">ポル・ポト政権崩壊</p>
+<p class="text-left text-slate-600 text-sm mt-2 font-bold max-w-2xl mx-auto">崩壊への直接の引き金：ベトナムとの国境紛争&nbsp;&nbsp;&nbsp;&nbsp;ポル・ポトは熱狂的な民族主義者であり、かつてカンボジアの領土だったメコンデルタ地方（現ベトナム南部）の奪還を本気で目指していました。</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">相次ぐ越境虐殺：ポル・ポト軍はベトナム領内の村をたびたび襲撃し、ベトナム人の虐殺を繰り返しました。</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">ベトナム側の逆鱗：アメリカとの戦争に勝ったばかりで強大な軍事力を持っていたベトナムは、ポル・ポト政権を「看過できない脅威」とみなしました。</p>
+<p class="text-left text-slate-600 text-sm mt-2 font-bold max-w-2xl mx-auto">電撃的な崩壊（1978年12月〜1979年1月）&nbsp;&nbsp;&nbsp;&nbsp;1978年12月25日、ベトナム軍は十数万人の大軍でカンボジアへ本格侵攻を開始しました。</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">わずか2週間で首都陥落：極端な強制労働や虐殺、飢餓で自国民を疲弊させていたポル・ポト軍には、ベトナムの正規軍と戦う力が残っていませんでした。国民も政権を誰も守ろうとはしませんでした。</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">1979年1月7日：ベトナム軍が首都プノンペンを占領し、ポル・ポト政権はあっけなく崩壊しました。</p>
+<p class="text-left text-slate-600 text-sm mt-2 font-bold max-w-2xl mx-auto">崩壊後のポル・ポト派の行方&nbsp;&nbsp;&nbsp;&nbsp;政権を追われたポル・ポトとクメール・ルージュの残党は、タイ国境付近のジャングルへと逃げ延びました。</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">ゲリラ組織として存続：冷戦の複雑な思惑（ベトナムの後ろ盾であるソ連を嫌った中国・アメリカ・タイが裏でポル・ポト派を支援したこと）により、彼らはその後も十数年にわたりゲリラ戦を続け、カンボジアを泥沼の内戦へと引きずり込みました。</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto"></p>
+<p class="text-left text-k-red text-sm mt-6 font-bold max-w-2xl mx-auto">ベトナムの傀儡&nbsp;&nbsp;ヘン・サムリン政権</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;&nbsp;&nbsp;ベトナム軍は、プノンペンに「ヘン・サムリン」をトップとする新しい親ベトナム政権を立てました。ベトナム（ヘン・サムリン政権）を追い出したいシアヌークは、ジャングルに逃げたポル・ポト派の残党、および他の反ベトナム右派勢力と手を組み、「民主カンプチア連合政府（三派連合）」を結成しました。かつて自分を軟禁し、親族を殺したポル・ポト派と、国を守るために再び同盟を組むという非情な選択をしたのです。</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto"><span class="text-left text-slate-600 text-sm mt-2 font-bold max-w-2xl mx-auto">1979年2月中越戦争：</span>ベトナムがポル・ポト政権を打倒したことに激怒した中国が、1979年2月にベトナムへ侵攻したことで勃発した戦争。この中越戦争が起きたことで、カンボジアの内戦は「中国・アメリカ」対「ソ連・ベトナム」という世界規模の代理戦争（冷戦の最前線）へと完全に組み込まれてしまいました。</p>
+<p class="text-left text-slate-600 text-sm mt-2 font-bold max-w-2xl mx-auto">政権崩壊の主因：後ろ盾であるソ連の経済破綻と、ベトナム軍の完全撤退
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;&nbsp;&nbsp;政権の末路完全に消滅したのではなく、「カンボジア国（フン・セン派）」へ改称・改組し、現在の与党へと血筋が続いている。</p>
+<p class="text-left text-slate-600 text-sm mt-2 font-bold max-w-2xl mx-auto">その後の歴史的ポイント：負けなかったヘン・サムリン派</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;&nbsp;&nbsp;ポル・ポト派やロン・ノル政権とは違い、ヘン・サムリン派は完全に打倒されたわけではありません。実務のトップだったフン・セン（首相）らは、1993年の選挙後も上手に立ち回り、シアヌーク派と連立政権を組んで権力を維持し続けました。結果として、このヘン・サムリン政権の系譜（現在のカンボジア人民党）が、2026年現代に至るまでカンボジアの絶対的な一党優位体制を築き上げています。</p>
+
+<p class="text-left text-k-red text-sm mt-6 font-bold max-w-2xl mx-auto">カンボジア内戦の最終的な終結は、1980年代末から1990年代初頭にかけての「冷戦の終結」と完全に直結しています。</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">冷戦が終わり、大国同士の対立が消滅したことで、カンボジアを舞台にした代理戦争を続ける理由がなくなりました。</p>
+<p class="text-left text-slate-600 text-sm mt-2 font-bold max-w-2xl mx-auto">1. ソ連の破産とベトナムへの援助停止（最大の転換点）</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;&nbsp;&nbsp;1980年代後半、ソ連の経済は完全に破綻しかけていました。新指導者となったゴルバチョフは、国内の立て直し（ペレストロイカ）に集中するため、海外への巨額の軍事援助を打ち切る決断をします。</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;&nbsp;&nbsp;毎日のようにソ連から莫大な資金と石油をもらっていたベトナムは、突然「命綱」を絶たれました。
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;&nbsp;&nbsp;経済が限界を迎えたベトナムは、カンボジアに十数万人の軍隊を駐留させ続けることが不可能になり、1989年にカンボジアからの完全撤退を余儀なくされました。</p>
+<p class="text-left text-slate-600 text-sm mt-2 font-bold max-w-2xl mx-auto">2. 中国とアメリカの「ポル・ポト支援」の大義名分が消滅</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;&nbsp;&nbsp;ベトナム軍が撤退したことで、中国やアメリカにとっても、ジャングルに潜むポル・ポト派（クメール・ルージュ）を裏から支援する大義名分（＝反ソ連・反ベトナム）がなくなりました。</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;&nbsp;&nbsp;1991年にソ連が崩壊すると冷戦は完全に終結し、米・中・ソ（ロシア）の3大国は「カンボジア問題の平和解決」で一致団結することになります。</p>
+<p class="text-left text-slate-600 text-sm mt-2 font-bold max-w-2xl mx-auto">3. 国連の歴史的介入と和平（1991〜1993年）大国たちの支援が止まり、武器も資金も失ったカンボジア国内の全4勢力（ヘン・サムリン派、シアヌーク派、ポル・ポト派、右派）は、これ以上戦争を続けられなくなりました。</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;&nbsp;&nbsp;1991年「パリ和平協定」：冷戦終結の直後、全勢力が集まって和平に調印。</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;&nbsp;&nbsp;国連カンボジア暫定統治機構（UNTAC）：国連が一時的にカンボジアの統治を引き受け、自衛隊の派遣も含めた国際社会が主導して1993年に民主選挙を実施しました。</p>
+
+<p class="text-left text-k-red text-sm mt-6 font-bold max-w-2xl mx-auto">新憲法で王制復活</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;&nbsp;&nbsp;ヘン・サムリン政権（カンボジア人民共和国）の崩壊は、内戦での敗北によるものではなく、「冷戦の終結」と「ベトナム軍の撤退」によって、自然に次の新しい合法国際体制へ移行（吸収・解消）したという形をとりました。</p>
+<p class="text-left text-slate-600 text-sm mt-2 font-bold max-w-2xl mx-auto">国名が正式に「カンボジア王国」へと改称され、シアヌークが再び「国王」に即位したことをもって、1993年〜の新しいカンボジア王国がスタートしました。</p>
+<p class="text-left text-slate-600 text-sm mt-2 font-bold max-w-2xl mx-auto">「かつての王国」との違い</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;&nbsp;&nbsp;名目上は1953年〜1970年の「カンボジア王国」の復活でしたが、中身（政治のルール）は全く異なっていました。</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">昔の王国（1953〜1970）：シアヌーク国王が自ら首相となり、すべての実権を握る「絶対的な独裁国家」。</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">新しい王国（1993〜）：新憲法で「国王は国を統治せず、君臨するのみ（象徴）」と定められた、日本やイギリスのような「象徴君主制」。</p>
+
+<p class="text-left text-k-red text-sm mt-6 font-bold max-w-2xl mx-auto">フン・セン（旧ヘン・サムリン派）が『実権（首相の座）』を奪いシアヌークが国王（象徴）になった</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;&nbsp;&nbsp;実態としては、1979年のヘン・サムリン政権誕生からずっと実権を握り続け、1993年の王国復活後も、1997年のクーデター前からも、実質的に国を動かしていたのはフン・セン氏ただ一人だったということになります。</p>
+<p class="text-left text-slate-600 text-sm mt-2 font-bold max-w-2xl mx-auto">1. 1993年〜：形は「共同首相」、中身は「フン・センの支配」1993年の選挙で負けたにもかかわらず、武力を背景に「第二首相」の座をもぎ取ったフン・セン氏は、政権内で着実に基盤を固めました。</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">第一首相の孤立：1位で第一首相になったラナリット王子（シアヌークの息子）は、形式的なトップにすぎませんでした。</p>
+<p class="text-left text-slate-600 text-sm mt-2 font-bold max-w-2xl mx-auto">2. 1997年：邪魔者を消すための武力衝突（クーデター）</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;&nbsp;&nbsp;実権のないラナリット王子が、ポル・ポト派の残党を取り込んでフン・セン氏に対抗しようと動き出しました。これを受け、フン・セン氏は先手を打って1997年7月に首都プノンペンで大規模な軍事衝突（事実上のクーデター）を起こします。自らの息がかかった軍を動かして、ラナリット王子を海外へ追い出し、政敵を完全に排除しました。</p>
+<p class="text-left text-slate-600 text-sm mt-2 font-bold max-w-2xl mx-auto">3. 1998年：形も中身も「完全なフン・セン独裁」へ</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;&nbsp;&nbsp;ライバルがいなくなった状態で1998年の総選挙を迎え、フン・セン派（カンボジア人民党）が大勝。ここで初めて、名実ともに「単独の首相（フン・セン政権）」が正式にスタートしました。</p>
+
+<p class="text-left text-k-red text-sm mt-6 font-bold max-w-2xl mx-auto">ポル・ポト派の自滅とポル・ポトの死（1997年〜1998年）</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">ポル・ポトの死（1998年4月）：1979年のヘン・サムリン政権誕生以来、フン・セン氏にとっての最大の課題は、ジャングルからゲリラ攻撃を仕掛けてくるポル・ポト派の存在でした。ポル・ポトが死に、組織が完全にバラバラになったことで、カンボジア国内の「戦争の火種」が根こそぎ消滅しました。残されたクメール・ルージュの兵士たちは、フン・セン氏が提示した「武器を捨てれば罪に問わない（投降・融和政策）」という条件に応じて、次々とフン・セン政権に降伏しました。</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">選挙で「平和をもたらした英雄」として大勝（1998年7月）：フン・セン氏は、前年（1997年）に武力でラナリット王子を追放していたため、国際社会から「独裁者」として激しい批判を浴びていました。しかし、ポル・ポトの死と組織の崩壊により、フン・セン氏は国民に対して「私が20年近く続いた内戦を完全に終わらせ、国に本当の平和をもたらした」と絶大なアピールをすることができました。結果、フン・セン氏のカンボジア人民党が選挙で大勝し、名実ともに単独の「フン・セン政権（完全な独裁体制）」が誕生しました。</p>
+
+<p class="text-left text-k-red text-sm mt-6 font-bold max-w-2xl mx-auto">現在のシハモニ国王（ノロドム・シハモニ）はラナリット王子ではなく、その異母弟（お母違いの弟）にあたる人物です。</p>
+<p class="text-left text-slate-600 text-sm mt-2 font-bold max-w-2xl mx-auto">なぜ長男であり、かつて第一首相も務めたラナリット王子ではなく、シハモニ氏が新国王になったのか、その理由は主に3つあります。</p>
+<p class="text-left text-slate-600 text-sm mt-2 font-bold max-w-2xl mx-auto">1. 政治に深く関わりすぎていたラナリット王子</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">カンボジアの憲法では「国王は政治を行わない（象徴）」と定められています。</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">ラナリット王子：シアヌーク派の政党トップとしてフン・セン氏と激しく権力争い（1997年の衝突など）をしてきた「どっぷり政治の世界にいた人物」でした。</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">懸念点：ラナリット氏が王位に就けば、再びフン・セン政権との間に激しい政治的対立が再燃し、国が不安定になるリスクがありました。実権を握るフン・セン首相側としても、かつての政敵であるラナリット氏の即位は絶対に受け入れられませんでした。</p>
+<p class="text-left text-slate-600 text-sm mt-2 font-bold max-w-2xl mx-auto">2. 政治に全く無色で、芸術の道を歩んでいたシハモニ氏</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">これに対し、シハモニ氏は少年時代から高貴な文化人として生きてきました。</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">経歴：チェコのプラハに留学してクラシックバレエやダンスを学び、フランスを拠点に高名な振付師・芸術家として活躍していました。その後、ユネスコのカンボジア大使なども務めました。</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">メリット：国内の政治闘争には一切関わっていなかったため、フン・セン政権にとっても、国民にとっても「完全に中立で、誰からも敵視されないクリーンな存在」として理想的でした。</p>
+<p class="text-left text-slate-600 text-sm mt-2 font-bold max-w-2xl mx-auto">3. 母（モノニエト王妃）の存在</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">シハモニ国王の母親であるモノニエト王妃（シアヌーク前国王の最後の妻）は、シアヌーク氏から最も深く愛され、政界や王室に強い影響力を持っていました。彼女が自分の実子であるシハモニ氏の即位を強く望み、裏でフン・セン首相側と合意を取り付けたことも決定打となりました。（※ラナリット王子の母親は別の女性です）</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto">シハモニ国王は即位後も政治には一切口を出さず、文化・芸術の振興や慈善活動に専念する「完璧な象徴国王」として、現在（2026年）に至るまでフン・セン体制（現在のフン・マネット政権）の下で国民から深く敬愛され続けています。一方のラナリット王子は、その後も政治活動を細々と続けましたが、2021年にフランスで亡くなりました。</p>
+
+<p class="text-left text-k-red text-sm mt-6 font-bold max-w-2xl mx-auto">世界でも最先端のキャッシュレス社会を一足飛びに実現した国</p>
+<p class="text-left text-slate-600 text-sm mt-2 font-bold max-w-2xl mx-auto">「アムリットのような金融機関の成長」と「バコンという最先端技術の導入」</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto"><span class="text-left text-slate-600 text-sm mt-2 font-bold max-w-2xl mx-auto">フン・セン政権が「治安の安定」と「外資への開放」を徹底</span>：カンボジアの経済成長と貧困削減の大きな推進力となった「アムリット（Amret）」などのマイクロファイナンス機関（小口金融機関）の創設や急成長には、フン・セン政権の安定政策を背景に、国際的なNGOや欧米の政府系開発金融機関、そして国際金融機関が深く関わってきました。 </p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto"><span class="text-left text-slate-600 text-sm mt-2 font-bold max-w-2xl mx-auto">フランスのNGO「GRET（技術研究・交流グループ）」</span>：アムリットの生みの親です。</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">世界的な政府系金融機関が株主として資金とノウハウを注入：IFC（国際金融公社）FMO（オランダ開発金融公庫）Advans Group</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto"><span class="text-left text-slate-600 text-sm mt-2 font-bold max-w-2xl mx-auto">台湾の永豊銀行（シハノパック銀行）</span>：2024年〜2025年にかけてアムリットの株式を段階的に100%取得（買収総額約670億円）し、さらなるデジタル化や拡大を進めています。</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto">&nbsp;&nbsp;&nbsp;&nbsp;元々は「銀行口座を持てない貧しい農民にお金を貸す」という慈善事業（NGO）から始まったアムリットですが、欧米の開発金融機関が育て、最終的にアジアの民間メガバンクが買い取るという形で、カンボジアの民間経済を爆発的に発展させるシステムへと成長しました。</p>
+<p class="text-left text-slate-600 text-sm mt-2 font-bold max-w-2xl mx-auto">カンボジアの中央銀行デジタル通貨（CBDC）である「バコン（Bakong）」の開発を手がけたのは、日本のブロックチェーン・スタートアップ企業「ソラミツ（SORAMITSU）」です。</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;&nbsp;&nbsp;この連携は、新興国が古いインフラを飛び越えて最新技術を導入する「リープフロッグ（カエル跳び）現象」の世界的モデルとして知られています。</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;&nbsp;&nbsp;2010年代後半、カンボジア国立銀行（中央銀行）は、国内の銀行口座保有率が20%未満と低い一方、スマホの普及率が100%を超えている状況に着目しました。自国の法定通貨「リエル」の流通を高め、誰もがスマホで決済できる仕組みを作るため、優れた技術を持つパートナーを探していたところ、ソラミツが開発を主導するブロックチェーン基盤「Hyperledger Iroha（ハイパーレジャー・イロハ）」の「高い安全性」と「処理速度の速さ」が評価され、共同開発がスタートしました。</p>
+<p class="text-left text-slate-600 text-sm mt-2 font-bold max-w-2xl mx-auto">2020年の誕生と、驚異的な普及</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;&nbsp;&nbsp;2020年10月に正式運用が始まった「バコン」は、世界初の中央銀行デジタル通貨システムの一つとなりました。</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">手数料ゼロ・瞬時決済：銀行口座を持たない農民や都市住民でも、電話番号さえあればスマホアプリで無料かつ安全に個人間送金やQRコード決済ができるようになりました。</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">爆発的なシェア：導入からわずか数年で、カンボジアの人口の大部分（1000万アカウント以上）に利用される、国に欠かせない巨大インフラへと急成長しました。</p>
+
+<p class="text-left text-k-red text-sm mt-6 font-bold max-w-2xl mx-auto">カンボジア（フン・セン・マネット親子体制）と北朝鮮（金一族体制）の違い</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto">&nbsp;&nbsp;&nbsp;&nbsp;どちらも長年にわたり特定の家族がトップに君臨する「世襲の独裁体制」ですが、「経済を世界に開いているか」と「国民の自由度」の2点において、中身は180度異なります。世界から孤立して経済が破綻している北朝鮮に対し、カンボジアは資本主義をフルに活用して驚異的な豊かさを手に入れた「開かれた独裁国家」です。</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto">&nbsp;&nbsp;&nbsp;&nbsp;「北朝鮮」は今もなお古い社会主義の思想としがみつき、国民を飢えさせています。しかし「カンボジア」は、過去の凄惨な思想の失敗から学び、政治体制は独裁でありながらも、経済の仕組みは世界で最も自由な資本主義を取り入れました。「何を正しいと信じるか」という指導者の思想一つで、何百万人もの命が奪われることもあれば、最貧国からデジタル先進国へ跳ね上がることもあります。歴史を振り返ると、「思想は、時に武器よりも強く恐ろしいものであり、だからこそ最も慎重に扱わなければならないものだ」と強く実感させられます。</p>
+
+
+
+</div>
+</section>
+</main>
+<!-- END: HistorySection -->
+<!-- BEGIN: Footer -->
+<footer class="bg-qatar-blue text-white py-20 px-6 border-t border-white/5 relative z-10">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="col-span-1 md:col-span-2">
+<div class="flex items-center gap-3 mb-6">
+<div class="text-emerald-500">
+<svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 外枠・背景（角丸ベース） -->
+  <rect width="24" height="24" rx="4" fill="#032A95"/>
+
+  <!-- 中央の赤帯（国旗の比率 1:2:1 をイメージ） -->
+  <rect y="6" width="24" height="12" fill="#E01424"/>
+
+  <!-- アンコール・ワット（簡易シルエット） -->
+  <!-- 土台 -->
+  <rect x="5" y="14" width="14" height="2" fill="#FFFFFF"/>
+  <rect x="6" y="13" width="12" height="1" fill="#FFFFFF"/>
+  
+  <!-- 中央の塔 -->
+  <path d="M11 13H13V9L12 7L11 9V13Z" fill="#FFFFFF"/>
+  <path d="M12 6.5V7.5" stroke="#FFFFFF" stroke-width="0.5"/>
+  
+  <!-- 左の塔 -->
+  <path d="M7.5 13H9.5V10L8.5 8.5L7.5 10V13Z" fill="#FFFFFF"/>
+  
+  <!-- 右の塔 -->
+  <path d="M14.5 13H16.5V10L15.5 8.5L14.5 10V13Z" fill="#FFFFFF"/>
+  
+  <!-- 建物をつなぐ回廊の屋根ライン -->
+  <path d="M6 13L7.5 12H16.5L18 13" stroke="#FFFFFF" stroke-width="0.5" fill="none"/>
+</svg>
+</div>
+<span class="text-white font-serif text-lg tracking-wider font-semibold">Cambodia Discovery</span>
+</div>
+<p class="text-white text-sm max-w-sm mb-8">
+            From bustling street stalls to time-honored recipes, Cambodia’s cuisine reveals a rich narrative shaped by sea routes, spices, and shared traditions.</p>
+</div>
+<div>
+<h6 class="text-k-yellow font-serif text-sm mb-6 uppercase tracking-widest">Navigation</h6>
+<ul class="space-y-4 text-sm text-white/60">
+<li><a class="hover:text-white transition-colors" href="#Northern">Northern</a></li>
+<li><a class="hover:text-white transition-colors" href="#Southern">Southern</a></li>
+<li><a class="hover:text-white transition-colors" href="#cuisine">Cuisine</a></li>
+<li><a class="hover:text-white transition-colors" href="#history">History</a></li>
+</ul>
+</div>
+<div>
+<h6 class="text-k-yellow font-serif text-sm mb-6 uppercase tracking-widest">Connect</h6>
+<ul class="space-y-4 text-sm text-white/60">
+<li><a class="hover:text-white transition-colors" href="#">Instagram</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Twitter</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Contact Us</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 mt-10"><p class="text-xs text-white">© 2026 Cambodia Discovery. All rights reserved.</p>
+<div class="flex gap-8 text-xs text-white/20">
+<a href="#">Privacy Policy</a>
+<a href="#">Terms of Service</a>
+</div></div>
+</footer>
+<!-- END: Footer -->
+<style data-purpose="animations">
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+<script>
+    document.getElementById('searchInput').addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+            const searchTerm = this.value.trim();
+            if (searchTerm) {
+                const wikipediaUrl = `https://ja.wikipedia.org/wiki/特別:検索?search=${encodeURIComponent(searchTerm)}`;
+                window.open(wikipediaUrl, '_blank');
+            }
+        }
+    });
+</script>
+</body></html>

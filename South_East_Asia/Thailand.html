@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SIAM HERITAGE Discovery | Luxury Travel Experience</title>
+<meta content="Explore the ancient landmarks, vibrant cities, and rich history of Thailand." name="description"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="../menu.js"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'lebanon-dark': '#102219',
+            'lebanon-gold': '#C5A059',
+            'lebanon-green': '#2D5A27',
+            "primary": "#144bb8",
+            "background-light": "#f6f6f8",
+            "background-dark": "#111621",
+            // 追加
+            "al-adaam": "#8D1B3D",
+            "e-green": "#50C878",
+            "qatar-gold-custom": "#C5A059",
+            "qatar-blue": "#1e3a8a",
+            "oman-blue": "#003153",
+            "yemen-red": "#CE1126",
+            "Bahrain-red": "#DA291C",
+            "B-purple-dark": "#632276",
+            "B-purple": "#D1A7E2",
+            "B-yellow": "#ffff66",
+            "Kaza-blue": "#00A3DD",
+            "Kaza-dark": "#003366",
+            "U-blue": "#99ffcc", //ターコイズブルー//
+            "U-blue-bg": "#006699",
+            "k-yellow": "#ffcc00",
+            "k-red": "#cc3333",
+            "k-yellow-c": "#ccff33",
+            "silk-road-white": "#fdfdfd",
+            "t-green": "#006600",
+            "t-green-light": "#99cc99",
+            "Af-red": "#ff0099",
+            "Af-navy": "#0B1F3A",
+            "Sr-Brown": "#993300",
+            "Sr-yellow": "#cc9933",
+            "B-green": "#33cc00",
+            "e-green-dark": "#006400",
+            "gold": "#FFD700",
+            "golden-red": "#DAA520",
+            "gold-dark": "#B8860B"
+             },
+          fontFamily: {
+            serif: ['Newsreader', 'serif'],
+            sans: ['Inter', 'sans-serif'],
+          },
+          backgroundImage: {
+            'Kazakhstan-hero': "url('img/Thailand_bg.jpg')",
+          }
+        }
+      }
+    }
+  </script>
+<style data-purpose="custom-styling">body {
+    background-color: #f0f9ff;
+    color: #1e293b
+    }
+.glass-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 1rem
+    }
+.text-balance {
+    text-wrap: balance
+    }
+.section-spacing {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem
+    }
+/* Pattern Overlay */
+.bg-pattern {
+    background-image: url(img/Thailand_bg.jpg);
+    opacity: 0.25
+    }</style>
+</head>
+<body class="font-sans antialiased overflow-x-hidden">
+<!-- BEGIN: Background Texture -->
+<div class="fixed inset-0 bg-pattern pointer-events-none z-0"></div>
+<!-- END: Background Texture -->
+<!-- BEGIN: MainHeader -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-gold-dark backdrop-blur-md border-b border-white/5">
+<nav class=" max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<!-- Logo -->
+<a class="flex items-center gap-3 group" href="#">
+<div class="text-white-500 transform group-hover:scale-110 transition-transform">
+<svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景（夕暮れのタイ・スカイ） -->
+  <rect width="24" height="24" rx="4" fill="#E65100"/>
+  
+  <!-- チャオプラヤー川の波 -->
+  <path d="M0 16C4 14 8 18 12 16C16 14 20 18 24 16V24H0V16Z" fill="#006064" opacity="0.8"/>
+
+  <!-- 伝統的な寺院（ワット）のシルエット -->
+  <!-- 屋根（特徴的な急勾配と多層屋根） -->
+  <path d="M12 4L6 10H18L12 4Z" fill="#FFD700"/>
+  <path d="M12 6L4 12H20L12 6Z" fill="#FBC02D"/>
+  
+  <!-- 建物本体 -->
+  <rect x="7" y="12" width="10" height="4" fill="#FAFAFA"/>
+  
+  <!-- 尖塔（チェディ） -->
+  <path d="M12 2L13 4H11L12 2Z" fill="#FFD700"/>
+
+  <!-- スパンナホン（鳳凰の形をした王室御座船）のイメージ -->
+  <path d="M4 18C8 17 12 19 20 17L19 19H5L4 18Z" fill="#FFD700"/>
+  <!-- 船首の飾り -->
+  <circle cx="20" cy="16.5" r="1" fill="#FFD700"/>
+
+  <!-- 蓮の花（水辺の象徴） -->
+  <circle cx="4" cy="20" r="0.8" fill="#F06292"/>
+  <circle cx="20" cy="21" r="0.8" fill="#F06292"/>
+</svg>
+</div>
+<span class="text-white font-serif text-xl font-semibold">SIAM HERITAGE Discovery</span>
+</a>
+<!-- Desktop Navigation -->
+<div id="navMenu" class="hidden md:flex items-center gap-9 
+    absolute top-full left-0 w-full bg-gold-dark backdrop-blur-md flex-col p-6 shadow-lg z-50
+    md:absolute md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 md:w-auto md:flex-row md:p-0 md:shadow-none">
+<a class="text-white text-sm font-medium hover:text-k-red transition-colors tracking-widest uppercase" href="#Historical_Axis">Historical Axis</a>
+<a class="text-white text-sm font-medium hover:text-k-red transition-colors tracking-widest uppercase" href="#Regional_Axis">Regional Axis</a>
+<a class="text-white text-sm font-medium hover:text-k-red transition-colors tracking-widest uppercase" href="#cuisine">Cuisine</a>
+<a class="text-white text-sm font-medium hover:text-k-red transition-colors tracking-widest uppercase" href="#history">History</a> 
+</div>
+<!-- Search Bar -->
+<div class="relative hidden lg:block" data-purpose="search-container">
+<span class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+<svg class="w-4 h-4 text-B-purple-dark/50" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</span>
+<input id="searchInput" class="bg-white/5 border-white/10 text-white pl-10 pr-4 py-2 rounded-lg focus:ring-B-purple-dark focus:border-B-purple-dark w-64 text-sm" placeholder="Wikipedia検索" type="text"/>
+</div>
+
+<!-- Mobile Menu Button (Icon only) -->
+<div class="md:hidden">
+<button id="menuButton"
+    class="md:hidden flex items-center justify-center text-white hover:text-white/80 transition-colors">
+    <span class="material-symbols-outlined text-3xl">
+        menu
+    </span>
+</button></div>
+</nav>
+</header>
+<!-- END: MainHeader -->
+<!-- BEGIN: HeroSection -->
+<main class="relative">
+<section class="relative flex items-center justify-center overflow-hidden h-[90vh]">
+<!-- Hero Background Image -->
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" alt="" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_ob6Gyuq94nR_juQOM0sf6j2K7Ix5GQZRIP4x6KKUxeMjhJI_C3vIIoBIzn3v0Vo6ih1aCJh7LEyBefxW4rkIAr8IHcPcaj_Akt4pCPfFSWzK1s6jEo72ujwRyyO_FMLZ67njHfyMSoy-EEbqopY6zi_maLlcbBK53wTKpp2p-lfzfNrwBbjskHv75y7ENlJV1QxggAXcU22u7YcsPr70sD8fBqp5rF1jhla_LU5evgThg6IpL1fkDE1UP5FfIkbU3bB81Z6Q7rk"/>
+<div class="absolute inset-0 bg-gradient-to-b from-[#003153]/60 via-transparent to-[#f0f9ff]"></div>
+</div>
+<div class="relative z-10 text-center px-6 max-w-4xl">
+<h2 class="text-k-yellow font-serif italic text-xl md:text-2xl mb-4 opacity-0 animate-[fadeIn_1s_ease-out_forwards]">Unveiling the Past</h2>
+<h1 class="text-white text-4xl md:text-7xl lg:text-4xl font-serif mb-8 leading-tight opacity-0 animate-[fadeIn_1s_ease-out_0.3s_forwards]">
+         Chronicles of Ancient Siam</h1>
+<p class="text-lg md:text-xl text-white/80 font-light max-w-2xl mx-auto mb-10 text-balance opacity-0 animate-[fadeIn_1s_ease-out_0.6s_forwards]">
+        Journey through the silent echoes of fallen kingdoms, where weathered brick and golden spires tell stories of a glorious civilization. </p>
+<!-- <a class="inline-block bg-B-purple-dark text-lebanon-dark px-10 py-4 font-semibold tracking-widest uppercase text-sm hover:scale-105 transition-transform opacity-0 animate-[fadeIn_1s_ease-out_0.9s_forwards]" href="#landmarks">
+          Explore Destinations
+        </a>-->
+</div>
+<!-- Scroll Indicator -->
+</section>
+<!-- END: HeroSection -->
+
+
+<!-- BEGIN: Historical_Axis 縦軸 -->
+<!-- <section class="section-spacing px-6 relative" id="Landmarks">-->
+<!-- Intro Text -->
+<section class="container mx-auto px-4 md:px-8 py-10 text-left" id="Historical_Axis">
+ <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
+<div class="max-w-2xl">
+<h2 class="text-lebanon-green font-serif text-sm pt-[20px] mb-2 uppercase tracking-[0.3em]">A Lineage of Dynasties: The Shaping of Thailand</h2>
+<h3 class="text-e-green-dark text-3xl md:text-4xl font-serif">Historical Axis</h3>
+</div>
+<p class="text-orange-600/90 max-w-md text-sm">
+  <span class="block font-bold mb-2">Dynasties that Shaped a Nation</span> From the rise of the Ayutthaya Kingdom to the legacy of the Thonburi Kingdom and the enduring reign of the Chakri Dynasty, Thailand’s story unfolds through cycles of conquest, resilience, and renewal.</p>
+</div>
+</section>
+<!-- Chiang Mai Section -->
+<section class="bg-surface-container-lowest py-[80px]">
+<div class="container mx-auto px-4 md:px-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-12">
+<div class="aspect-[4/3] md:h-[450px] h-auto rounded-2xl overflow-hidden micro-shadow md:order-1 order-2">
+  <img class="w-full h-full object-cover warm-filter hover:scale-105 transition-transform duration-700" alt="" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATQavFD2LwqnTCbYjjiHlpNfccpg0RiRe5WK5Ec_aSn-vevd5-wN3miXWUO_ch9m9SWYssFCCN1OSYRqQIblRsO9Jtb7GZCvlwCkD63OhPR3wztA-8TlHaFqfQPlNEpqxOvFBylyTgIgLXZmHZqI9S001w27od1YgGy7oNFXDGQH7HaiDpKQfFuQwS5b2wjjyR2jOvHEGcZbA6ez-l5MdIptVpVs0AyHyVbVrtAaDSI4IHPbrNbslPYsOYxGG38iEgPj-F4jfaiII"/>
+</div>
+<div class="md:pl-12 md:order-2 order-1">
+<h3 class="text-4xl font-serif text-primary mb-4">Chiang Mai</h3>
+<p class="font-body-lg text-outline mb-6">The Rose of the North. Here, the air is cooler and the pace is slower. Ancient Lanna temples stand guard over a city known for its artisan craft and spiritual tranquility.</p>
+<div class="flex gap-4 mb-8">
+<span class="bg-[#e5e7eb] text-[#dc2626] text-[10px] px-4 py-1 text-label-caps uppercase">Mountain Views</span>
+<span class="bg-[#e5e7eb] text-[#dc2626] text-[10px] px-4 py-1 text-label-caps uppercase">Night Markets</span>
+</div>
+<div class="space-y-4">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-[#D4AF37]">filter_hdr</span>
+<div>
+<h5 class="font-label-caps text-xs uppercase">Doi Inthanon</h5>
+<p class="text-sm text-outline">Experience the highest peak in Thailand with private sunrise treks.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-[#D4AF37]">shopping_basket</span>
+<div>
+<h5 class="font-label-caps text-xs uppercase">Sunday Walking Street</h5>
+<p class="text-sm text-outline">Exclusive access to heritage silk weavers and local silver artisans.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Immersive Content Section: The Ayutthaya Experience -->
+<section class="bg-surface-container-low py-section-gap w-full overflow-hidden">
+  <div class="max-w-[1280px] mx-auto px-8 grid grid-cols-1 md:grid-cols-2 gap-16 items-center w-full">
+    <div class="order-2 md:order-1">
+      <h3 class="text-4xl font-serif text-primary mb-4">Ayutthaya: The Cosmopolitan Capital</h3>
+      <div class="space-y-6 text-on-surface-variant font-body-lg">
+        <p>Founded in 1350, Ayutthaya became the second capital of the Siamese Kingdom. Strategically located on an island surrounded by three rivers, it grew into a global center for trade and diplomacy.</p>
+        <div class="flex items-start space-x-4">
+          <span class="material-symbols-outlined text-secondary mt-1">location_on</span>
+          <div>
+            <h5 class="font-bold text-on-surface">Wat Chaiwatthanaram</h5>
+            <p class="text-sm">A stunning Khmer-style temple reflecting the kingdom's cosmology and spiritual depth.</p>
+          </div>
+        </div>
+        <div class="flex items-start space-x-4">
+          <span class="material-symbols-outlined text-secondary mt-1">location_on</span>
+          <div>
+            <h5 class="font-bold text-on-surface">Wat Phra Si Sanphet</h5>
+            <p class="text-sm">The holiest temple on the site of the old Royal Palace, characterized by its three iconic chedis.</p>
+          </div>
+        </div>
+      </div>
+      <button class="mt-10 border border-primary text-primary px-8 py-3 font-label-caps hover:bg-primary hover:text-white transition-all duration-300">
+        View Interactive Map
+      </button>
+    </div>
+    <div class="order-1 md:order-2 relative mb-4 w-full">
+      <div class="aspect-[4/5] rounded-2xl overflow-hidden">
+        <img class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" alt="Wat Chaiwatthanaram at dusk" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeH45pLTXKxfghGIfBRK-Y8kcUiPbX1aNQsdsUkdeKvLQVEl_hEmp3jPJXGcmOhqDQwgFnhP7Y4obkxoSEdPSvG7UMffk0F6rUFkaTTCLNy6DIvHlMHWFUFnKjUZNzzp-ugV9-eRASvghYbDz-gALkQamFETJbnkaz53fmqUr5jIzD-BwZF8cwInmCo6fCicEE10hThEUcJAn5zxU30Dglijxb2kYmPc-UjqUxby9EJT7hi5A5Du7_FE7YLfkELCtkwklsaI5_Y64"/>
+      </div>
+      <div class="absolute bottom-4 left-4 bg-white/70 p-6 shadow-xl max-w-xs hidden lg:block">
+        <p class="font-serif italic text-primary-container">"The city of gold, where the rivers met the world's ambitions."</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- アユタヤの4枚画像：max-w を指定して綺麗に中央に収めます -->
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-4 w-full px-8 max-w-[1280px] mx-auto mt-16 mb-16">
+    <div class="h-64 rounded-2xl overflow-hidden micro-shadow">
+      <img class="w-full h-full object-cover warm-filter" alt="Northern Thai night market" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgLHDfQNcgnCDttYYUSXtUd41KHm8Jqlx5vcDK7zAeCL8EplIZpV6xV3mAjRudgCQskDPeTnj5iFGCiHXN38NpoAXRB7aUbzCd7XNu4RMhg6k_CHAOcx6oAmUFL9YW-lRKqgJv0VyEsUEKUa_zhVqtjbFjlIspKZg1o5J3O3fYQqLg9E_vJAchkGg9aFQabiAWGp1GdoUEIiDbpoCX43H4dKdcceaBZAR0ETPySmQx9sP_v2h0yfsesFEKrXdPsF-lHu0V3Paigu8"/>
+    </div>
+    <div class="h-64 rounded-2xl overflow-hidden micro-shadow">
+      <img class="w-full h-full object-cover warm-filter" alt="Chiang Mai temple candles" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDd77OcAP5-IAnoxr420umYzhGVs0hnMxMjzcX6HZ-_iqLFkc9iHnb57y67vZDht-WmMyauEgL9x205cth_YeEA1put3ZhX0nuSGMGY6MTEHiEU4hqa6Jk92EeLHhsPpnhSEmsYfztwu4REKfUNwdErFl6avRc38nb8UlNwQQOI8AQurPa7Agq2BkADCbvUbDda3zNH_HYeL4TqZC1Ro0-PS_BYZHSiKnciRKlz0EkRi19jyS3jYw4sUFNbQEK0q48W1TF07wvz9l0"/>
+    </div>
+    <div class="h-64 rounded-2xl overflow-hidden micro-shadow">
+      <img class="w-full h-full object-cover warm-filter" alt="Chiang Mai rice terraces" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHnvB5B8eYxRVGjUFkrUH_YHWesJ9aFaT0dRqQD_zjF1JadDLm06LDWL3NwcQd44um3o3sFViXdrRHhrmdjvRM2K7w022JtjlkO7qTq0GUv0Ac1TPlFR3dqmeFtRBqCudS014HnE48a7KY9DSW-NcC7xvMvHYgLq3SiEVr4xwxMGHBRrADFkr-xaGghwVti6dukf9GFXNyHZ_4sQn9VN-b0DBtjH6hp84X-R0Csfs773Cnv-k2kUA7Efr-nPszAQLUhawMa4aB0DQ"/>
+    </div>
+    <div class="h-64 rounded-2xl overflow-hidden micro-shadow">
+      <img class="w-full h-full object-cover warm-filter" alt="Traditional Thai teak house" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvBmKGULedtXJN2k4f8nHNi5jT3jyRW0SwsedV6JoFDax_LMWenOB2f9SBs2VSAlWGFfR1zosvc-e1aBWKHDNOcZQDF5PrA6KUOrZsaucX3Gc-DqxwI3KKa0iOsWLPFuMbv7AP9tSJN8SVoG5UJ5QQjiUWcI715ntTMYuXBa6Wv0Ms9yZLv0G2GcIbwud2CyEzJvMLIE2SS-HDdRxXKqidAl9jMQsh5fybpbdrATNR-MI0aKbcumvO-7YJJZXN-d0XXV-c5Ail8X0"/>
+    </div>
+  </div>
+</section>
+<!-- Bangkok Section -->
+<section class="container mx-auto px-4 md:px-8 mb-[80px] w-full overflow-hidden">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-12 w-full">
+    <div class="md:pr-12">
+      <h3 class="text-4xl font-serif text-primary mb-4">Bangkok</h3>
+      <p class="text-Sr-Brown text-outline mb-6">Golden temples, riverfront traditions, and a skyline that never stands still—Bangkok moves effortlessly between past and future.</p>
+      <div class="flex gap-4">
+        <span class="bg-[#e5e7eb] text-[#dc2626] text-[10px] px-4 py-1 text-label-caps uppercase">Street Food</span>
+        <span class="bg-[#e5e7eb] text-[#dc2626] text-[10px] px-4 py-1 text-label-caps uppercase">Nightlife</span>
+      </div>
+    </div>
+    <div class="aspect-[4/3] md:h-[450px] h-auto rounded-2xl overflow-hidden micro-shadow w-full">
+      <img class="w-full h-full object-cover warm-filter hover:scale-105 transition-transform duration-700" alt="Wat Phra Kaew" src="img/Wat_Phra_Kaew.jpg"/>
+    </div>
+  </div>
+  
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8 w-full">
+    <div class="aspect-square bg-surface-container-low p-8 flex flex-col justify-end group cursor-pointer rounded-2xl overflow-hidden relative w-full">
+      <img class="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:scale-110 transition-transform duration-500 warm-filter" alt="Bangkok rooftop bar" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-LJT4O5zUL4l3aVNOsr69OaJIQxCgFWUzVySNf89lhq8wYg79cUN-ayDFe1ONqjKC7FR7gOmKgoKMCqn_--Ceha3hLqGrF-eeO8xW6opjduEsqgIMiMdHPXMLRBxrsRnbLpVW70BdYn-MJRgViCC827e76zeknk8QHMA7pmcETjAvQKHHlnvtjRKsNxzgIvhUL_nviMYB8Xa7u_GH1wPgn2PxCcvYR70EF9rz9tutv_8bnYo_FANhlkUUkztPV1iFtTsbxFf2VRI"/>
+      <div class="relative z-10 text-white">
+        <h4 class="font-headline-md mb-2">Elevated Evenings</h4>
+        <p class="text-xs font-label-caps uppercase tracking-widest opacity-80">Rooftop Lounge Access</p>
+      </div>
+    </div>
+    
+    <!-- 修正h-[400px] を md:h-[400px] にして、スマホ時は h-64（または aspect-video）で柔軟に縮むようにしました -->
+    <div class="md:col-span-2 rounded-2xl overflow-hidden micro-shadow relative h-64 md:h-[400px] group w-full">
+      <img class="w-full h-full object-cover warm-filter" alt="Yaowarat Road private night market tour" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCienOp64nlTPtMpluw6nm3cLjS4tJSIX7E7MU5-qdqevEBeHjEgV4YtyLiMTGJ2ilnQ-YMHbGWw7EvEVP5yPuVaI4-xLnT6MwOzSEYJ8afVgIaT1ZU3Uky6esmMJDVmGFL0uTKdTbZ2wyHgLLEV5fMto9gjp0OAJVBT7fLxtn6W7Q6ucE6OxftoLhWcHSCAkbFLSecGXaRdhhNle67dder9DolevNFIu_DJOInI0A0iOLPiAhkHJQzxoBYymhSaspad7qwdrL1zi8"/>
+      <div class="absolute bottom-8 left-8 bg-white/70 p-6 max-w-sm backdrop-blur-sm">
+        <p class="text-primary font-serif italic mb-2">Curated Experience</p>
+        <p class="text-sm text-outline">Private night market tours with expert gastronomes through Yaowarat Road.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BEGIN:Regional Axis 横軸-->
+<section class="section-spacing px-6 relative w-full overflow-hidden" id="Regional_Axis">
+  <div class="max-w-7xl mx-auto">
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
+      <div class="max-w-2xl">
+        <h2 class="text-lebanon-green font-serif text-sm mb-2 uppercase tracking-[0.3em]">The breadth that embodies Thailand’s diversity and natural richness.</h2>
+        <h3 class="text-e-green-dark text-3xl md:text-4xl font-serif">Regional Axis</h3>
+      </div>
+      <p class="text-orange/90 max-w-md text-sm">From the vibrant shores of Phuket to the misty mountains of Chiang Mai and the fertile plains of the Chao Phraya basin, discover a land where culture, landscape, and tradition intertwine to reveal the many faces of Thailand’s diversity and natural abundance.</p>
+    </div>
+    
+    <div class="space-y-20">
+      <!-- Phuket-->
+      <div class="flex flex-col md:flex-row items-center gap-10 mb-16">
+        <div class="w-full md:w-1/2">
+          <img alt="Phuket" class="rounded-2xl shadow-xl w-full h-auto object-cover" src="img/Phuket.jpg"/>
+        </div>
+        <div class="w-full md:w-1/2">
+          <span class="text-primary font-bold uppercase tracking-widest text-sm">Island Escapes & Endless Horizons</span>
+          <h3 class="text-Sr-Brown text-4xl font-serif mt-2 mb-4">Phuket</h3>
+          <!-- 修正 -->
+          <p class="text-Af-navy dark:text-orange-100 text-lg mb-6 leading-relaxed font-serif">
+            From the lively shores of Patong Beach to the quiet elegance of hidden coves, Phuket unfolds as a tapestry of sun, sea, and sensation. By day, turquoise waters and limestone silhouettes invite exploration.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Siam District-->
+<div class="flex flex-col md:flex-row-reverse items-center gap-10  mb-16">
+  <div class="w-full md:w-1/2">
+    <!-- w-full h-auto を追加して画像のはみ出しを防止 -->
+    <img alt="Siam District" class="rounded-2xl shadow-xl w-full h-auto object-cover" src="img/Siam_District.jpg"/>
+  </div>
+  <div class="w-full md:w-1/2">
+    <span class="text-primary font-bold uppercase tracking-widest text-sm">Mega-Malls & Youth Culture Nexus</span>
+    <h3 class="text-Sr-Brown text-4xl font-serif mt-2 mb-4">Siam District</h3>
+    <p class="text-Af-navy dark:text-orange-100 text-lg mb-6 leading-relaxed font-serif">The epicenter of mega-malls and vibrant youth culture in Bangkok.Standing at the absolute forefront of global retail and style.Where high-end consumption meets the pulse of the city's future.</p>
+  </div>
+</div>
+
+<!-- Nimmanhemin -->
+<div class="flex flex-col md:flex-row items-center gap-10 w-full">
+  <div class="w-full md:w-1/2">
+    <!-- w-full h-auto を追加して画像のはみ出しを防止 -->
+    <img alt="Nimmanhemin" class="rounded-2xl shadow-xl w-full h-auto object-cover" src="img/Nimmanhemin.jpg"/>
+  </div>
+  <div class="w-full md:w-1/2">
+    <span class="text-primary font-bold uppercase tracking-widest text-sm">Chic Cafés & Modern Crafts</span>
+    <h3 class="text-Sr-Brown text-4xl font-serif mt-2 mb-4">Nimmanhemin</h3>
+    <p class="text-Af-navy dark:text-orange-100 text-lg mb-6 leading-relaxed font-serif">The creative epicenter where Chiang Mai’s heritage meets modern lifestyle.A boutique labyrinth of artisanal coffee roasters and avant-garde art galleries.The ultimate sanctuary for digital nomads and trendsetting local creators.</p>
+  </div>
+</div>
+</div> 
+</div>
+</section>
+<!-- END: Cities Section -->
+
+
+<!--BEGIN: Cuisine -->
+<section class="px-4 py-16 md:px-10" id="cuisine">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-12">
+<h2 class="text-Bahrain-red text-3xl md:text-4xl font-serif">Harmony of Spice & Elegance
+</h2>
+<p class="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">From fragrant soups and wok-fired classics to refined tropical desserts, Thailand’s cuisine is a delicate balance of heat, sweetness, and aroma—rooted in tradition, yet alive in every street corner.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Package 1 -->
+<div class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:shadow-xl transition-shadow">
+<div class="h-56 w-full overflow-hidden">
+<img alt="Pad Thai" class="w-full h-full object-cover transition-transform group-hover:scale-105" alt="" src="img/Pad_Thai.jpg"/>
+</div>
+<div class="p-4">
+<div class="flex justify-between items-start mb-1">
+<h3 class="text-xl font-bold">Pad Thai</h3>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-400 mb-6 line-clamp-2">A culinary icon featuring the perfect harmony of sweet, sour, and spicy flavors.</p>
+<div class="flex items-center justify-between">
+</div>
+</div>
+</div>
+<!-- Package 2 -->
+<div class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:shadow-xl transition-shadow">
+<div class="h-56 w-full overflow-hidden">
+<img alt="Tom Yum Goong" class="w-full h-full object-cover transition-transform group-hover:scale-105" alt="" src="img/Tom_Yum_Goong.jpg"/>
+</div>
+<div class="p-4">
+<div class="flex justify-between items-start mb-1">
+<h3 class="text-xl font-bold">Tom Yum Goong</h3>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-400 mb-6 line-clamp-2">One of the world’s three great soups, celebrated for its bold aroma and zesty citrus notes.</p>
+<div class="flex items-center justify-between">
+</div>
+</div>
+</div>
+<!-- Package 3 -->
+<div class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:shadow-xl transition-shadow">
+<div class="h-56 w-full overflow-hidden">
+<img alt="Mango Sticky Rice" class="w-full h-full object-cover transition-transform group-hover:scale-105" alt="" src="img/Mango_Sticky_Rice.jpg"/>
+</div>
+<div class="p-4">
+<div class="flex justify-between items-start mb-1">
+<h3 class="text-xl font-bold">Mango Sticky Rice<span class="text-sm font-normal ml-2">(Khao Niao Mamuang)</span></h3>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-400 mb-6 line-clamp-2">A beloved dessert where the creamy sweetness of coconut meets perfectly ripened mango.</p>
+<div class="flex items-center justify-between">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- BEGIN: HistorySection -->
+<section class="bg-[#ffcc33]/20 section-spacing px-6 relative overflow-hidden" id="history">
+<div class="max-w-5xl mx-auto"><div class="text-center mb-12">
+<h2 class="text-k-red font-serif text-sm mb-2 uppercase tracking-[0.3em]">タイ王国の歴史</h2>
+<h3 class="text-yemen-red text-3xl md:text-4xl font-serif">Kingdom of Thailand</h3>
+<p class="text-xs text-slate-500 max-w-2xl mx-auto">From ancient capitals to the modern nation, Thailand’s history unfolds through dynasties, resilience, and an enduring cultural identity rooted in both tradition and chang</p>
+</div>
+<div class="max-w-3xl mx-auto space-y-8 relative border-l border-slate-300 pl-8">
+<!-- History: Ancient -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-yemen-red"></div>
+<h4 class="text-yemen-red font-sans text-xl font-semibold mb-6">古代</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">ドヴァーラヴァティー王国<span class="text-xs text-slate-500 block md:inline md:ml-2">（6世紀～11世紀） </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">モン族による国家で、仏教文化が栄えた。
+</p>
+
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">シュリーヴィジャヤ王国の影響<span class="text-xs text-slate-500 block md:inline md:ml-2">（7世紀～13世紀） </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">タイ南部が海上交易を通じて影響を受ける。
+</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">ハリプンチャイ王国 <span class="text-xs text-slate-500 block md:inline md:ml-2">（7世紀～13世紀） </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">北部でモン族が築いた王国。
+</p>
+</div>
+
+</div>
+</div>
+<!-- History: Medieval -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-yemen-red"></div>
+<h4 class="text-yemen-red font-sans text-xl font-semibold mb-6">中世</h4>
+<div class="space-y-4">
+<div class="flex flex-col md:flex-row gap-6">
+  <!-- flex-1 を追加 -->
+  <div class="flex-1">
+    <h5 class="text-lg font-serif text-slate-800 font-bold mb-1">スコータイ王朝 <span class="text-xs text-slate-500 block md:inline md:ml-2">（1238年～1438年） </span></h5>
+  <p class="text-xs text-slate-600 leading-relaxed">タイ族による最初の王朝で、上座部仏教が国教として確立。</p>
+ <p class="text-xs text-slate-600 leading-relaxed">14世紀に南のアユタヤ王朝に飲み込まれ、早くに消滅しました。</p>
+    
+  </div>
+
+  <!-- flex-1 を追加 -->
+  <div class="flex-1">
+    <h5 class="text-lg font-serif text-slate-800 font-bold mb-1">ラーンナー王朝<span class="text-xs text-slate-500 block md:inline md:ml-2">（1292年～1775年）  </span></h5>
+    <p class="text-xs text-slate-600 leading-relaxed">北部チェンマイを中心に繁栄。</p>
+<p class="text-xs text-slate-600 leading-relaxed">
+16世紀半ば、ラーンナーは隣国のビルマ（現在のミャンマー）に征服され、そこから約200年間、チェンマイを中心とする北部はビルマの属国となる。</p>
+  </div>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">アユタヤ王朝<span class="text-xs text-slate-500 block md:inline md:ml-2">（1351年～1767年）  </span></h5>
+<p class="text-xs text-slate-600 mt-0 mb-2">タイ中部を中心に栄え、国際貿易が盛んだった。</p>
+<p class="text-xs text-slate-600 mt-0 mb-2">17世紀山田長政が活躍</p>
+<p class="text-xs text-slate-600 mt-0 mb-2">1767年ミャンマーのコンバウン朝の侵入を受け、滅亡</p>
+
+</div>
+
+</div>
+</div>
+<!-- History: Early Modern -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-yemen-red"></div>
+<h4 class="text-yemen-red font-sans text-xl font-semibold mb-6">近世</h4>
+<div class="space-y-4">
+<div class="flex flex-col md:flex-row gap-6">
+  <!-- flex-1 を追加 -->
+  <div class="flex-1 space-y-4">
+    <div>
+      <h5 class="text-lg font-serif text-slate-800 font-bold mb-1">トンブリー王朝 <span class="text-xs text-slate-500 block md:inline md:ml-2">（1767年～1782年） </span></h5>
+      <p class="text-xs text-slate-600 leading-relaxed">アユタヤ滅亡後、タークシン王が建国。</p>
+    </div>
+    <div>
+      <h5 class="text-lg font-serif text-slate-800 font-bold mb-1">ラタナコーシン（チャクリー）王朝 <span class="text-xs text-slate-500 block md:inline md:ml-2">（1782年～現在） </span></h5>
+      <p class="text-xs text-slate-600 mt-0 mb-2">現在の王朝で、バンコクを首都とする。</p>
+    </div>
+  </div>
+
+  <!-- flex-1 を追加 -->
+  <div class="flex-1">
+    <h5 class="text-lg font-serif text-slate-800 font-bold mb-1">ラーンナー王朝<span class="text-xs text-slate-500 block md:inline md:ml-2">（1292年～1775年）  </span></h5>
+    <p class="text-xs text-slate-600 leading-relaxed">トンブリー〜チャクリー時代：タイへの合流</p>
+    <h6 class="text-lebanon-green text-xs font-serif font-bold mt-2 mb-0">ビルマ（ミャンマー）支配からの離脱（1774年）</h6>
+<p class="text-xs text-slate-600 leading-relaxed">1774年に当時の指導者カワィラらが南方シャムのトンブリー王朝（タクシン王）の支援を受けて反乱を起こし、ビルマ軍を撃退</p>
+<h6 class="text-lebanon-green text-xs font-serif font-bold mt-2 mb-0">シャム（タイ）の保護国化</h6>
+<p class="text-xs text-slate-600 leading-relaxed">ビルマ追放後、ラーンナーはトンブリー王朝、およびそれに続く現在のチャクリー王朝（ラッタナーコーシン王朝）の朝貢国（保護国）となる。</p>
+<p class="text-xs text-slate-600 leading-relaxed">半独立状態の維持: カワィラによって興された「チェットトン王家」がチェンマイ、ランプーン、ランパーンなどを統治し、独自の文化や制度を保つ半独立的な状態が続きました。</p>
+<p class="text-xs text-slate-600 leading-relaxed">完全な統合: 19世紀末、ラーマ5世（チュラーロンコーン大王）による「チャクリー改革」が進められる中で中央集権化が図られ、20世紀初頭までにタイ王国の一部として完全に組み込まれました。</p>
+</div>
+</div>
+
+</div>
+</div>
+<!-- History: Modern -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-yemen-red"></div>
+<h4 class="text-yemen-red font-sans text-xl font-semibold mb-6">近現代・現代</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">シャム王国 <span class="text-xs text-slate-500 block md:inline md:ml-2">（19世紀～1939年）</span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">欧米列強の植民地化を免れつつ、近代化を進める。</p>
+<p class="text-xs text-slate-600 leading-relaxed">1932年立憲革命:人民党（軍人と文官のグループ）が、絶対王政を廃止し、絶対君主制から立憲君主制へと移行させたクーデターあるいは革命である。</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">タイ王国<span class="text-xs text-slate-500 block md:inline md:ml-2">（1939年6月 〜 1945年9月）</span></h5>
+<p class="text-xs text-slate-600 leading-relaxed mb-0">ピブーン政権によるナショナリズムの高揚。「シャム」から「タイ」へ。立憲君主制を採用。</p>
+<p class="text-xs text-slate-600 leading-relaxed mb-0"></p>
+</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">シャム王国<span class="text-xs text-slate-500 block md:inline md:ml-2">1945年9月 〜 1949年5月</span></h5>
+<p class="text-xs text-slate-600 leading-relaxed mb-0">終戦後、軍国主義的なイメージを払拭し、連合国との関係を修復するために旧国号へ戻した期間。</p>
+
+</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">タイ王国<span class="text-xs text-slate-500 block md:inline md:ml-2">1949年5月 〜 現在  </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed mb-0">ピブーンの権力復帰に伴い、再び「タイ」に改称。以降、現在まで定着。</p>
+<p class="text-xs text-slate-600 leading-relaxed mb-0">ラーマ9世（プミポン国王）やラーマ10世（ワチラーロンコーン国王）のもとで発展を続ける。</p>
+<p class="text-xs text-slate-600 leading-relaxed mb-0">タイの歴史は、仏教文化や国際貿易、そして独立を維持した外交政策が特徴的です。</p>
+<p class="text-xs text-slate-600 leading-relaxed mb-0"></p>
+</div>
+
+<div>
+<div class="space-y-6 border-t border-slate-100 pt-6">
+   
+</div>
+</div>
+
+</div>
+</div>
+</div>
+<div>
+<p class="text-left text-slate-600 text-sm mt-6 font-bold max-w-2xl mx-auto">なぜ「一つのタイ」になったのか？</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto">&nbsp;&nbsp;現在の「タイ王国」として完全に一つにまとまったのは、実はわずか120〜130年ほど前（19世紀末〜20世紀初頭）のことです。</p>
+<p class="text-left text-slate-600 text-sm mt-0 max-w-2xl mx-auto">それまでの関係：ラーマ1世の時代から、ラーンナーはバンコクの王朝を「親分」と仰ぐ保護国（属国）のような立ち位置でしたが、内政はラーンナーの王様が独自に行っていました。</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">統合のきっかけ：イギリスやフランスといった西洋列強が植民地を広げてきたため、「バラバラでは国を守れない」と危機感を持ったラーマ5世が、地方の王様たちの権限を中央に集め、現代的な「タイ王国」という一つの国に作り変えました。</p>
+<p class="text-left text-slate-600 text-sm mt-6 font-bold max-w-2xl mx-auto">現代への影響</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto">&nbsp;&nbsp;そのため、歴史的に見ると「バンコクの王朝がラーンナーを仲間に加え、一つの近代国家を作り上げた」という形になります。今でもチェンマイなど北部の人々が「自分たちはラーンナーの末裔である」という強い誇りと独自の文化（言葉や食）を持っているのは、この「別の国だった期間」が非常に長かったからです。
+</p>
+<p class="text-left text-slate-600 text-sm mt-6 font-bold max-w-2xl mx-auto">一度も西洋列強の植民地にならなかった国</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto">&nbsp;&nbsp;タイは東南アジアで唯一、一度も西洋列強の植民地にならなかった国として知られており、その点は日本と非常によく似ています。ただ、その「守り方」にはタイ独自の非常に巧みな戦略がありました。</p>
+<h6 class="text-lebanon-green text-sm font-bold mt-2 max-w-2xl mx-auto">「外交」で生き残った</h6>
+<p class="text-left text-slate-600 text-sm mt-0 max-w-2xl mx-auto">&nbsp;&nbsp;日本が武力（明治維新後の軍事力）で対抗したのに対し、タイは「領土を差し出してでも、国本体を守る」という柔軟な外交を選びました。当時のラーマ5世（チュラロンコン大王）は、フランスやイギリスに対し、現在のラオスやカンボジア、マレー半島の一部といった周辺の領土を割譲することで、国の心臓部であるタイ本土の独立を維持しました。</p>
+<h6 class="text-lebanon-green text-sm font-bold mt-2 max-w-2xl mx-auto">「緩衝地帯」としての役割</h6>
+<p class="text-left text-slate-600 text-sm mt-0 max-w-2xl mx-auto">&nbsp;&nbsp;当時、東のカンボジア・ベトナムはフランス、西のビルマ・南のマレーシアはイギリスが植民地にしていました。両大国の間でタイが独立を保っていたのは、イギリスとフランスが「直接ぶつかるのを避けるためのクッション（緩衝地帯）」としてタイを残しておくことに合意したという側面もあります。</p>
+<h6 class="text-lebanon-green text-sm font-bold mt-2 max-w-2xl mx-auto">近代化の断行（チャクリー改革）</h6>
+<p class="text-left text-slate-600 text-sm mt-0 max-w-2xl mx-auto">&nbsp;&nbsp;日本が明治維新で近代化したように、タイもラーマ5世のもとで鉄道、郵便、教育、法律などを急速に西洋化しました。「自分たちは文明国である」と示すことで、西洋諸国に侵略の口実を与えないようにしたのです。タイがこの危機を乗り越えるために戦ったラーマ5世は、今でも「最高の名君」としてタイの至る所に写真が飾られています。</p>
+<h6 class="text-lebanon-green text-sm font-bold mt-2 max-w-2xl mx-auto">日本との共通点</h6>
+<p class="text-left text-slate-600 text-sm mt-0 max-w-2xl mx-auto">王室・皇室の存在: どちらも伝統的な君主制を守りながら近代化に成功しました。</p>
+<p class="text-left text-slate-600 text-sm mt-0 max-w-2xl mx-auto">誇り: 植民地にならなかったことは、現代のタイの人々の大きな誇り（「タイ」という言葉自体に「自由」という意味があります）になっています。</p>
+<div></div>
+<div class="space-y-6 border-t border-slate-100 pt-6 max-w-2xl mx-auto">
+   
+</div>
+<p class="text-left text-slate-600 text-sm mt-6 font-bold max-w-2xl mx-auto">タイでは、1932年の立憲革命以来、軍事クーデターが政治状況を打開する「タイ式民主主義」の一環として繰り返されてきました。</p>
+<p class="text-left text-k-red text-sm mt-2  max-w-2xl mx-auto">1932年：立憲革命（すべての始まり）</p>
+<p class="text-left text-slate-600 text-sm mt-0 max-w-2xl mx-auto">内容: 人民党（軍人と文官のグループ）が、絶対王政を廃止し立憲君主制へ移行させたクーデター。</p>
+<p class="text-left text-slate-600 text-sm mt-0 max-w-2xl mx-auto">意義: タイ近代史の転換点であり、以降、実権が王室から軍部や官僚へと移る流れが定着</p>
+<p class="text-left text-k-red text-sm mt-0  max-w-2xl mx-auto">1930年代〜1970年代：軍部主導の時代この期間は軍内部の派閥争いや、社会主義への警戒を背景としたクーデターが頻発しました</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">1933年: 王党派による反乱（ボウォラデートの反乱）や、人民党内の対立によるクーデターが続発。</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">1947年: 文民政権を倒し、ピブン元首相らが復権。以降、長期間の軍事独裁体制の基礎となります。</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">1957年・1958年: サリット将軍によるクーデター。「開発独裁」が敷かれ、国王の権威が再び高められる時期となりました。</p>
+<p class="text-left text-k-red text-sm mt-0  max-w-2xl mx-auto">1973年〜1992年：民主化運動と反動1973年（血の土曜日）: 学生主導の大規模デモにより軍事政権が崩壊。一時的に民主的な政治が行われました。</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">1976年: タマサート大学での虐殺事件を経て、軍が再び実権を掌握。</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">1991年: チャチャイ政権を軍が打倒。しかし翌1992年の大規模デモ（「暗黒の5月」）と国王の調停により、軍が一度政治から身を引く形となりました。</p>
+<p class="text-left text-k-red text-sm mt-0  max-w-2xl mx-auto">2000年代以降：混迷の再燃タクシン元首相派と、それに対抗する保守派（軍・王室派）の対立が深まりました。</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">2006年: 外国訪問中だったタクシン首相を軍が解任。以降、親タクシン派と反タクシン派（赤シャツ・黄シャツ）の激しい対立が続きます。</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">2014年: インラック政権（タクシン氏の妹）末期の混乱を受け、プラユット陸軍司令官がクーデターを宣言。これが直近の軍事クーデターであり、現在の政権構造にも大きな影響を与えています。</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto"></p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto"></p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto"></p>
+
+<div></div>
+<div class="space-y-6 border-t border-slate-100 pt-6 max-w-2xl mx-auto">
+   
+</div>
+<p class="text-left text-slate-600 text-sm mt-6 font-bold max-w-2xl mx-auto">「ハイブリッドの達人」としてのタイ</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto">&nbsp;&nbsp;タイの人は、異なるものを無理に一つにまとめようとするのではなく、「混ざった状態のまま、いいとこ取りで共存させる」のが本当に上手です。まさに「ハイブリッドの達人」と言えるかもしれません。</p>
+<p class="text-left text-k-red text-sm mt-2  max-w-2xl mx-auto">タイ流ハイブリッドのいろいろ</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto">政治: 「選挙（民主主義）」と「クーデター・王権（伝統権威）」が入り混じり、時に衝突しながらも、どこかでバランスを取り続けている。</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto">・「立憲革命（1932 Revolution）」と書かれることが多いですが、実際には「軍人によるクーデターの形をとった、制度上の革命」という、極めてタイらしいハイブリッドな出来事でした。タイは「王様は残す（敬う）、でも実権はもらう」という、究極の折衷案（立憲君主制）を選びました。この「伝統と近代の同居」こそがタイ・スタイルの原点です。
+「軍事力」を使った「制度改革」普通、軍事力での政権奪取は「野蛮なクーデター」とされますが、1932年はそれを使って「憲法を作る（文明化する）」という高度にインテリな目的を果たしました。「力（軍）」と「論理（法）」のハイブリッドです。</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto">・名前が変わっても「本質」は残す：1939年に国名を「タイ」に変え、モダンでナショナリズムの強い国を演出しましたが、中身は以前からの「官僚社会」や「王室への敬愛」をしっかり残しました。「外見は新しく、中身は古き良きものを守る」というハイブリッド戦略です。</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto">宗教: 仏教を信じながら、ヒンドゥー教の神様に祈り、精霊（ピー）の存在も本気で信じている。</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto">歴史: かつての敵国（ラーンナーやアユタヤ）のアイデンティティを保ったまま、一つの「タイ」という国に収まっている。</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto">食文化: 中華（麺や炒め物）とインド（カレー）と地元のハーブを混ぜて「タイ料理」に昇華させている。</p>
+
+<p class="text-left text-slate-600 text-sm mt-6 font-bold max-w-2xl mx-auto">「なぜそんなに「ハイブリッド」なの？</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto">&nbsp;&nbsp;タイには「マイペンライ（気にしない、大丈夫）」という有名な言葉がありますが、この大らかさが「自分たちと違うもの」を排除せず、「とりあえず混ぜてみよう」という柔軟性を生んでいる気がします。西洋のように「白か黒か」をはっきりさせるのではなく、「グレーだけど、これが一番しっくりくるよね」という絶妙な着地点を見つけるのがタイ人の知恵なのかもしれません。政治不安が続いても国が壊れないのも、ある意味この「ハイブリッドな柔軟性（しなやかさ）」があるからこそ、と言えそうです。</p>
+
+</div>
+</div>
+<div><p class="text-on-surface-variant mb-6"></p></div>
+<div>
+<a href="Thailand_h.html" target="_blank" rel="noopener noreferrer" class="text-primary font-button flex items-center gap-2 group mx-auto w-fit">
+    Learn History 
+    <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</section>
+<!-- END: HistorySection -->
+<!-- BEGIN: Footer -->
+<footer class="bg-gold-dark text-white py-20 px-6 border-t border-white/5 relative z-10">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="col-span-1 md:col-span-2">
+<div class="flex items-center gap-3 mb-6">
+<div class="text-emerald-500">
+<svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景（夕暮れのタイ・スカイ） -->
+  <rect width="24" height="24" rx="4" fill="#E65100"/>
+  
+  <!-- チャオプラヤー川の波 -->
+  <path d="M0 16C4 14 8 18 12 16C16 14 20 18 24 16V24H0V16Z" fill="#006064" opacity="0.8"/>
+
+  <!-- 伝統的な寺院（ワット）のシルエット -->
+  <!-- 屋根（特徴的な急勾配と多層屋根） -->
+  <path d="M12 4L6 10H18L12 4Z" fill="#FFD700"/>
+  <path d="M12 6L4 12H20L12 6Z" fill="#FBC02D"/>
+  
+  <!-- 建物本体 -->
+  <rect x="7" y="12" width="10" height="4" fill="#FAFAFA"/>
+  
+  <!-- 尖塔（チェディ） -->
+  <path d="M12 2L13 4H11L12 2Z" fill="#FFD700"/>
+
+  <!-- スパンナホン（鳳凰の形をした王室御座船）のイメージ -->
+  <path d="M4 18C8 17 12 19 20 17L19 19H5L4 18Z" fill="#FFD700"/>
+  <!-- 船首の飾り -->
+  <circle cx="20" cy="16.5" r="1" fill="#FFD700"/>
+
+  <!-- 蓮の花（水辺の象徴） -->
+  <circle cx="4" cy="20" r="0.8" fill="#F06292"/>
+  <circle cx="20" cy="21" r="0.8" fill="#F06292"/>
+</svg>
+</div>
+<span class="text-white font-serif text-lg tracking-wider font-semibold">SIAM HERITAGE Discovery</span>
+</div>
+<p class="text-white text-sm max-w-sm mb-8">
+            Exploring the timeless beauty and rich cultural legacy of the Kingdom of Thailand.
+          </p>
+</div>
+<div>
+<h6 class="text-k-yellow font-serif text-sm mb-6 uppercase tracking-widest">Navigation</h6>
+<ul class="space-y-4 text-sm text-white/60">
+<li><a class="hover:text-white transition-colors" href="#Historical_Axis">Historical Axis</a></li>
+<li><a class="hover:text-white transition-colors" href="#Regional_Axis">Regional Axis</a></li>
+<li><a class="hover:text-white transition-colors" href="#cuisine">Cuisine</a></li>
+<li><a class="hover:text-white transition-colors" href="#history">History</a></li>
+</ul>
+</div>
+<div>
+<h6 class="text-k-yellow font-serif text-sm mb-6 uppercase tracking-widest">Connect</h6>
+<ul class="space-y-4 text-sm text-white/60">
+<li><a class="hover:text-white transition-colors" href="#">Instagram</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Twitter</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Contact Us</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 mt-10 mb-4"><p class="text-xs text-white">© 2026 SIAM HERITAGE Discovery. All rights reserved.</p>
+<div class="flex gap-8 text-xs text-white/80">
+<a href="#">Privacy Policy</a>
+<a href="#">Terms of Service</a>
+</div></div>
+<button onclick="window.close(); setTimeout(() => { window.location.href = 'https://google.com'; }, 100);" 
+          class="flex items-center gap-1 px-3 py-0.5 ml-auto md:ml-auto bg-brand-emerald hover:opacity-80 text-white font-medium rounded-full transition-all shadow-sm">
+    <span class="material-symbols-outlined text-xs text-white/80">logout</span>
+    <span class="tracking-wider text-xs text-white/80">QUIT</span>
+  </button>
+</footer>
+<!-- END: Footer -->
+</main>
+<style data-purpose="animations">
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+<script>
+    document.getElementById('searchInput').addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+            const searchTerm = this.value.trim();
+            if (searchTerm) {
+                const wikipediaUrl = `https://ja.wikipedia.org/wiki/特別:検索?search=${encodeURIComponent(searchTerm)}`;
+                window.open(wikipediaUrl, '_blank');
+            }
+        }
+    });
+</script>
+</body></html>

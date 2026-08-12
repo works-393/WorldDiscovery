@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Myanmar Discovery | Luxury Travel Experience</title>
+<meta content="Explore Districts, Attractions, Cuisine, and History of Myanmar" name="description"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="../menu.js"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'lebanon-dark': '#102219',
+            'lebanon-gold': '#C5A059',
+            'lebanon-green': '#2D5A27',
+            "primary": "#144bb8",
+            "background-light": "#f6f6f8",
+            "background-dark": "#111621",
+            // 追加
+            "al-adaam": "#8D1B3D",
+            "qatar-gold": "#C5A059",  
+            "e-green": "#50C878",
+            "qatar-gold": "#C5A059",
+            "qatar-blue": "#1e3a8a",
+            "oman-blue": "#003153",
+            "yemen-red": "#CE1126",
+            "Bahrain-red": "#DA291C",
+            "B-purple-dark": "#632276",
+            "B-purple": "#D1A7E2",
+            "B-yellow": "#ffff66",
+            "B-green": "#33cc00",
+            "Kaza-blue": "#00A3DD",
+            "Kaza-blue-dark": "#003366",
+            "U-blue": "#99ffcc", //ターコイズブルー//
+            "U-blue-bg": "#006699",
+            "k-yellow": "#ffcc00",
+            "k-red": "#cc3333",
+            "k-yellow-c": "#ccff33",
+            "silk-road-white": "#fdfdfd",
+            "t-green": "#006600",
+            "t-green-light": "#99cc99",
+            "Af-red": "#ff0099",
+            "Af-navy": "#0B1F3A",
+            "Sr-Brown": "#993300",
+            "Sr-yellow": "#cc9933",
+            "surface-container-highest": "#e1e3e4",
+            "Reddish-brown": "#996666",
+             "e-green-dark": "#006400",
+            "golden-orange": "#ff9900",
+            "dark-charcoal": "#1A1A1A",
+             },
+          fontFamily: {
+            serif: ['Newsreader', 'serif'],
+            sans: ['Inter', 'sans-serif'],
+          },
+          fontSize: {
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "headline-lg-mobile": ["28px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "display-lg": ["56px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                        "display-lg-mobile": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+                    },
+          backgroundImage: {
+            'Kazakhstan-hero': "url('img/Myanmar_bg.jpg')",
+          }
+        }
+      }
+    }
+  </script>
+<style data-purpose="custom-styling">body {
+    background-color: #f0f9ff;
+    color: #1e293b
+    }
+.glass-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 1rem
+    }
+.text-balance {
+    text-wrap: balance
+    }
+.section-spacing {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem
+    }
+/* Pattern Overlay */
+.bg-pattern {
+    background-image: url(img/Myanmar_bg.jpg);
+    opacity: 0.15
+    }</style>
+</head>
+<body class="font-sans antialiased overflow-x-hidden">
+<!-- BEGIN: Background Texture -->
+<div class="fixed inset-0 bg-pattern pointer-events-none z-0"></div>
+<!-- END: Background Texture -->
+<!-- BEGIN: MainHeader -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-dark-charcoal backdrop-blur-md border-b border-white/5">
+<nav class=" max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<!-- Logo -->
+<a class="flex items-center gap-3 group" href="#">
+<div class="text-white-500 transform group-hover:scale-110 transition-transform">
+<svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://w3.org">
+  <!-- 1. ベース背景：ミャンマー国旗の3色横縞（黄・緑・赤） -->
+  <rect width="24" height="8" fill="#FECB00"/>
+  <rect y="8" width="24" height="8" fill="#1027EC"/> <!-- 実際は緑：#009F4D -->
+  <rect y="8" width="24" height="8" fill="#009F4D"/>
+  <rect y="16" width="24" height="8" fill="#E41B13"/>
+  
+  <!-- 全体の角丸クリッピング（枠線を美しく維持） -->
+  <rect width="24" height="24" rx="4" fill="none" stroke="none"/>
+
+  <!-- 2. 中央：ミャンマー国旗の象徴である「大きな白い星」 -->
+  <!-- 24x24の中心（12, 12）に綺麗に配置した5点星 -->
+  <path d="M12 4.5L13.8 10H19.5L14.9 13.4L16.7 19L12 15.6L7.3 19L9.1 13.4L4.5 10H10.2L12 4.5Z" fill="#FFFFFF"/>
+
+  <!-- 3. 追加アレンジ：3大エリア（マンダレー、バガン、ヤンゴン）を象徴する3つの金の輝き -->
+  <!-- タイの3分割に対応するモダンな幾何学アクセント -->
+  <!-- 北（マンダレー：古都の輝き） -->
+  <circle cx="12" cy="2.5" r="0.75" fill="#FECB00"/>
+  <!-- 西（バガン：遺跡の輝き） -->
+  <circle cx="2.5" cy="12" r="0.75" fill="#FECB00"/>
+  <!-- 南（ヤンゴン：大都市の輝き） -->
+  <circle cx="12" cy="21.5" r="0.75" fill="#FECB00"/>
+
+  <!-- 4. 右側：伝統織物（ルンギー）の格子模様をイメージした繊細なライン -->
+  <path d="M18 4L22 8M19 14L23 18" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="round" opacity="0.3"/>
+</svg>
+</div>
+<span class="text-white font-serif text-base tracking-tighter font-semibold">Myanmar (formerly Burma)  Discovery</span>
+</a>
+<!-- Desktop Navigation -->
+<div id="navMenu" class="hidden md:flex items-center gap-9 
+    absolute top-full left-0 w-full bg-dark-charcoal backdrop-blur-md flex-col p-6 shadow-lg z-50
+    md:absolute md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 md:w-auto md:flex-row md:p-0 md:shadow-none">
+<a class="text-white text-sm font-medium hover:text-k-yellow font-serif transition-colors tracking-widest uppercase" href="#Landmarks">Landmarks</a>
+<a class="text-white text-sm font-medium hover:text-k-yellow font-serif transition-colors tracking-widest uppercase" href="#cuisine">Cuisine</a>
+<a class="text-white text-sm font-medium hover:text-k-yellow font-serif transition-colors tracking-widest uppercase" href="#history">History</a>
+</div>
+<!-- Search Bar -->
+<div class="relative hidden lg:block" data-purpose="search-container">
+<span class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+<svg class="w-4 h-4 text-B-purple-dark/50" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</span>
+<input id="searchInput" class="bg-white/5 border-white/10 text-white pl-10 pr-4 py-2 rounded-lg focus:ring-B-purple-dark focus:border-B-purple-dark w-64 text-sm" placeholder="Wikipedia検索" type="text"/>
+</div>
+
+<!-- Mobile Menu Button (Icon only) -->
+<div class="md:hidden">
+<button
+    id="menuButton"
+    class="md:hidden flex items-center justify-center text-white hover:text-white/80 transition-colors">
+    <span class="material-symbols-outlined text-3xl">
+        menu
+    </span>
+</button></div>
+</nav>
+</header>
+<!-- END: MainHeader -->
+<!-- BEGIN: HeroSection -->
+<main class="relative">
+<section class="relative flex items-center justify-center overflow-hidden h-[90vh]">
+<!-- Hero Background Image -->
+<div class="absolute inset-0 z-0">
+<img alt="Myanmar" class="w-full h-full object-cover brightness-50" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQQGGkQ-guXiYxBR8w9lE88IEjl1GhphaSdmQjr2fhAvxux8_NY5GffEak1-paZWi8c_8fmbWkolp1yd-fvsYOy2WkzRy-hyADw0V3U4DYbVR3oRs2q8269hDYm5qQl-kGhn9KHmV53hjTy0qqN20ZkDt5IEKVGzzKNRNYZDSq7RFky2kbRqH7nllaE5FdLEM6poVXl9SCH81F4gNh-6T8q57zrz88K3Rsd8GdhXO-XpEsYZtneaUs47I2SkUXY0QKlV7JOpm3QGU"/>
+<div class="absolute inset-0 bg-gradient-to-b from-[#003153]/60 via-transparent to-[#f0f9ff]"></div>
+</div>
+<div class="relative z-10 text-center px-6 max-w-4xl">
+<h2 class="text-k-yellow font-serif italic text-xl md:text-2xl mb-4 opacity-0 animate-[fadeIn_1s_ease-out_forwards]">WELCOME TO THE GOLDEN LAND </h2>
+<h1 class="text-white text-4xl md:text-7xl lg:text-4xl font-serif mb-8 leading-tight opacity-0 animate-[fadeIn_1s_ease-out_0.3s_forwards]">
+Serenity Found in the Ancient Valleys</h1>
+<p class="text-lg md:text-xl text-white/80 font-light max-w-2xl mx-auto mb-10 text-balance opacity-0 animate-[fadeIn_1s_ease-out_0.6s_forwards]">
+        Experience a journey through time where thousands of pagodas meet the golden glow of the Irrawaddy.</p>
+<!-- <a class="inline-block bg-B-purple-dark text-lebanon-dark px-10 py-4 font-semibold tracking-widest uppercase text-sm hover:scale-105 transition-transform opacity-0 animate-[fadeIn_1s_ease-out_0.9s_forwards]" href="#landmarks">
+          Explore Destinations
+        </a>-->
+</div>
+<!-- Scroll Indicator -->
+<!--<div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce opacity-60">
+<svg class="h-6 w-6" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M19 14l-7 7m0 0l-7-7m7 7V3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>-->
+</section>
+<!-- END: HeroSection -->
+ <section class="pt-16 pb-6 px-6 relative" id="Landmarks">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
+<div class="max-w-2xl">
+<h2 class="text-qatar-blue font-serif text-sm mb-2 uppercase tracking-[0.3em]">The Heart of Southeast Asia</h2>
+<h3 class="text-e-green-dark text-3xl md:text-4xl font-serif">Iconic Landmarks</h3>
+</div>
+<p class="text-orange/90 max-w-md text-sm">Myanmar is a tapestry of ancient traditions and breathtaking landscapes. Known as the "Golden Land," it offers travelers an authentic glimpse into a culture preserved through centuries. From the mist-covered mountains of Shan State to the bustling markets of Yangon, every corner tells a story of resilience, grace, and profound spirituality. </p>
+</div>
+
+        <!-- Island Navigation Grid -->
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8 md:gap-16 lg:gap-24 max-w-5xl mx-auto px-4">
+            <a href="#Mandalay" class="group flex items-center justify-center p-6 border border-t-red/20 rounded-xl bg-white/40 backdrop-blur-sm hover:bg-yemen-red hover:border-qatar-blue transition-all duration-300 shadow-sm">
+                <span class="font-serif font-bold text-yemen-red group-hover:text-white tracking-widest">Mandalay</span>
+            </a>
+            <a href="#Bagan" class="group flex items-center justify-center p-6 border border-t-red/20 rounded-xl bg-white/40 backdrop-blur-sm hover:bg-yemen-red hover:border-qatar-blue transition-all duration-300 shadow-sm">
+                <span class="font-serif font-bold text-yemen-red group-hover:text-white tracking-widest">Bagan</span>
+            </a>
+            <a href="#Yangon" class="group flex items-center justify-center p-6 border border-t-red/20 rounded-xl bg-white/40 backdrop-blur-sm hover:bg-yemen-red hover:border-qatar-blue transition-all duration-300 shadow-sm">
+                <span class="font-serif font-bold text-yemen-red group-hover:text-white tracking-widest">Yangon</span>
+            </a>
+            
+            </div>
+</div>
+</section>
+
+<!-- 1.Northern Myanmar — Mandalay-->
+<section class="scroll-mt-20 pt-8 pb-16 px-6 relative" id="Mandalay">
+    <div class="max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
+            <div class="max-w-2xl">
+                <h2 class="text-Kaza-dark font-serif text-sm mb-2 uppercase tracking-[0.3em]">The Cultural Heart of Myanmar</h2>
+                <h3 class="text-yemen-red text-3xl md:text-2xl font-bold font-serif">Mandalay</h3>
+            </div>
+            <p class="text-orange/90 max-w-md text-sm">Mandalay is more than a city; it is the spiritual soul of the nation. Founded in 1857, it served as the final royal capital of the Burmese Kingdom, leaving a legacy of artistic refinement and deep Buddhist devotion.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="flex flex-col">
+                <div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+                    <img alt="U Bein Bridge" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpHX3RnkqlpQ_D0QcqQBVGvJ0vxJ59RGLxzxFsZtuZ57H4vkIFicJNwZaJPwAhM4SNkaWcDA6JjReEgJEzZppcGeabVCaSeEjGE1BAjpkEW6lwf7b-gr0pkqsMNe8SZDmm5TmbbauDPABKQ89abIOM4ejxlqo7WGieEZEuXsn2thGN-6WmBaQe5JcbATqrhoCPsSuYZ9VufzX5T33WiszzcBYB3-kmA5q5EBTTvJ5p1DgeiqBKdkOKtpUznNZ67m0Zw9tibqTjCEk"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 p-4"><h4 class="text-lg font-serif text-white">U Bein Bridge</h4></div>
+                </div>
+                <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4"><strong class="block mb-1">Built from centuries-old teakwood</strong>Stretching gracefully across Taungthaman Lake, U Bein Bridge reflects the timeless rhythms of monastic life and the quiet beauty of Myanmar’s spiritual heart.</p>
+            </div>
+            <div class="flex flex-col">
+                <div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+                    <img alt="Mandalay Palace" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLqmalvVGegmLZEOCeuxsWa_OAJ7lKv29f1vjAb0Zt-7k8PB_dAZFuULyzZB9sHvCL6RYWjLmS9vAZ-9cZZ4aMDD3jYCpNjq1adpf1EuPDWaRXfXItQC3n52ZOSWMJwP9CKswBJlqq3w8P3WKisa8bose_57MrbavHFGNVQsMQiTLurz3rrRA2PR9ixRph0elqWtj6sBnNyyKbAZlRlK2r95H31-aFLj5eGk5EBjGhlUJ00vfngZwvOTQhA9o8JZoddyEjTpGwj14"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 p-4"><h4 class="text-lg font-serif text-white">Mandalay Palace</h4></div>
+                </div>
+                <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4"><strong class="block mb-1">The last palace of the Burmese monarchy, a sprawling citadel.</strong>Once the royal heart of the last Burmese kingdom, Mandalay Palace stands as a symbol of Myanmar’s monarchy, resilience, and cultural heritage.</p>
+            </div>
+            <div class="flex flex-col">
+                <div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+                    <img alt="Mahamuni Buddha" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAl9AX0brK7gGf4EMI4zCNorUiWgRVCjVfSGuzT9x5SjwZpM4OjcGK1EedYFsyHKh4e61IPHL405Jj__rBJ_ogv6Q5v3qYBQaSujUBtyhDlpnaNYXzIuTes9Qr1C9M9AsmSPoPljw0I0HZi5EV0JcHisWZRK0_z6GCcwUIDcfAhfWR9CB-8rm2mRIitIUzNUMXpZCvI7R8bXSqK1YsJNtMf1fRxBC1RnqPXi7Mpwn0-vC8S_7aV3vNmFeIEZJTpLUj93JjUSTOOEs"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 p-4"><h4 class="text-lg font-serif text-white">Mahamuni Buddha</h4></div>
+                </div>
+                <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4"><strong class="block mb-1">Mandalay’s largest pagoda</strong>The revered Mahamuni Buddha, covered in layers of gold leaf applied by generations of devoted pilgrims, stands as one of Myanmar’s most sacred symbols of faith and devotion.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="relative rounded-[32px] overflow-hidden group cursor-pointer shadow-sm hover:shadow-xl transition-all duration-500">
+<img alt="Intramuros Manila" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="The weathered stone walls and historic Fort Santiago gate within the Walled City of Intramuros in Manila. Sunlight filters through the leaves of ancient trees, casting dappled patterns on the mossy brickwork. The scene blends historical gravity with serene tropical greenery, showcasing the Spanish heritage of the Myanmar in a bright, modern photographic style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIUJqVN63BMP3TeR7z4rUKPVZq89uBveB3jMTDzQe1Eb4X2TPMZyeaB6Wo6yBG7HoAGCPXILE1lcBUW9qW2GotglB8EEBu6f5wl7fLwf7tvjydnlb5VV_DsSltGctBtJs-gyEgOg2TnoyGmQwgACVkfv5BifngO8ywXxW4ZPmcJ8FWdlgoa87NCo9EOjexHLL98hliUC89-hE2tQuWtCTaARKBB0_SWVmz-6EfdrkMxtrGcXj9f4_eMaaWfE96J9ISDrUwhwRmB_Xt"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8 text-white">
+<h3 class="font-label-md text-headline-md mb-1">Intramuros</h3>
+<p class="text-white/80 text-sm">The historic Walled City at the core of the capital.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- 2.Central Myanmar — Bagan-->
+<section class="scroll-mt-20 pt-8 pb-16 px-6 relative" id="Bagan">
+    <div class="max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
+            <div class="max-w-2xl">
+                <h2 class="text-Kaza-dark font-serif text-sm mb-2 uppercase tracking-[0.3em]">Chasing the Golden Hour</h2>
+                <h3 class="text-yemen-red text-3xl md:text-2xl font-bold font-serif">Bagan</h3>
+            </div>
+            <p class="text-orange/90 max-w-md text-sm">Bagan's sunsets are world-famous. While climbing temples is restricted, these viewing mounds and riverside spots offer the most evocative views of the plain.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="flex flex-col">
+                <div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+                    <img alt="Ananda Temple" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwky5s76MLGB0yboQ6XECQpwcSnjoSdQ66GgI7Q6C_L5OkBsiBEYEbr0m0PpXVFhcBqCIgxsiTuchzvSR5FdtTlyYWdFI4UKtVUtWlUkc2Nbw9USb6kraMZgsGa3cUnbaSdWp50Hp1GztBDa_yciJCFJzlU0vFpxpH9ps-dY9nLJLLuZ-HpdzGj0Qlufz-ypp-Z9XXqu66qnepbdemih_w9aVOrDVakxy9zyWlQyJfSWOmeo9eAHSU6-CRQE__z6s_-oU5txcUpzs"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 p-4"><h4 class="text-lg font-serif text-white">Ananda Temple</h4></div>
+                </div>
+                <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4"><strong class="block mb-1">The Masterpiece</strong>Known as the "Westminster Abbey of Burma," this perfectly symmetrical structure is famous for its four standing golden Buddhas and intricate stone carvings.</p>
+            </div>
+            <div class="flex flex-col">
+                <div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+                    <img alt="Shwezigon Pagoda" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6q2XW_egD1J1tEDmpkICfVoNTz1u6eWD_CvrJIgIhU48iHIMmjIWaIUTigB9l8yBL3QQPF2URNM5gny4AI3Ctkl5RwqfJrkdqvsVNzoE0-MkoC_KxTQWgDksk2chFzHiwlLFKP8hjDSTRhDAuPEPtLPKRbMBqsRVzJ-T9yJTIzXMah83MX1ML9wBUFTvQMW7pul_tzoQlozjpJcBAgo64IRqw0HOhM8C0ZcKjHPiqY7_zuMpl0Uw7eVZG8DdBvXBfsOA8aWcXEvQ"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+                <div class="absolute bottom-0 left-0 p-4"><h4 class="text-lg font-serif text-white">Shwezigon Pagoda</h4></div>
+                </div>
+                <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4"><strong class="block mb-1">The Golden Stupa</strong>One of Bagan’s most revered golden pagodas, Shwezigon stands as a lasting symbol of early Burmese Buddhism and royal devotion.</p>
+            </div>
+            <div class="flex flex-col">
+                <div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+                    <img alt="Buphaya Pagoda" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="img/Ayeyarwady_River_Bank.jpg"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 p-4"><h4 class="text-lg font-serif text-white">Buphaya Pagoda</h4></div>
+                </div>
+                <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4"><strong class="block mb-1">Golden Stupa by the Ayeyarwady</strong>Rising gracefully along the Ayeyarwady River Bank, Buphaya Pagoda reflects the spiritual beauty and timeless landscape of ancient Bagan.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 3. Southern Myanmar — Yangon-->
+<section class="scroll-mt-20 pt-8 pb-16 px-6 relative" id="Yangon">
+    <div class="max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
+            <div class="max-w-2xl">
+                <h2 class="text-Kaza-dark font-serif text-sm mb-2 uppercase tracking-[0.3em]">Modern Pulse, Ancient Heart</h2>
+                <h3 class="text-yemen-red text-3xl md:text-2xl font-bold font-serif">Yangon (formerly Rangoon) </h3>
+            </div>
+            <p class="text-orange/90 max-w-md text-sm">Yangon, formerly Rangoon, serves as the vibrant gateway to Myanmar. It is a city of layers—where glass skyscrapers rise beside century-old teak mansions and bustling street markets hum beneath the gaze of towering stupas.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="flex flex-col">
+                <div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+                    <img alt="Shwedagon Pagoda" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBs_5JSXS5MozvzjMrU-F47wvhiB4fXiEXP4nsdan8i7b7PiTkqUe6UuOWB79qH70uP1q16kbAYlbKdRZEbFcmZVzrxN2PA_kI3w9jHtkvpsMFjo_G-v2m_PO9k9hw7DT-k_GXgPiNUr7_NQ0WwZisf9scu62omjOpTpZlvPjxynJF2uW8CXO3tyVW2UJPgGD5jnw--FdgjgHAIn6zMQ6v5Q0QlItVgrYeZrbn3lfKLyKPKvbQh_5oZ61cVNDtevBLUfmlCxSWcXzE"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 p-4"><h4 class="text-lg font-serif text-white">Shwedagon Pagoda</h4></div>
+                </div>
+                <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4"><strong class="block mb-1">Myanmar’s Golden Sacred Landmark</strong>Myanmar’s most sacred Buddhist site, Shwedagon Pagoda rises above Yangon with shimmering golden stupas and centuries of spiritual devotion.</p>
+            </div>
+            <div class="flex flex-col">
+                <div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+                    <img alt="Sule Pagoda" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPfREcRoY-T2VclpKM3i3Wq57KvPsoTlLdY0vR3-Aoh1B6Pm0NKHPRtuO4_R8SJEIphJkPdxUAkJnYmesJXXOvPDJpd_jb-IttCXlRZU5qeOzpI9K1RoNpVM_Z1a6kGtEYlkV7rvEZdioS7oZZEUV4VCzLQeDWMmG7PE4EMAvJRdb2_u7HSsVLyevm-W0o3Liqmwfmm-fNvLDRMsEVj5c9t5klSswdPtdsVKQtEC31eYDCnlkBauBVtyQyHygYdixu1lCxJVh927g"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 p-4"><h4 class="text-lg font-serif text-white">Sule Pagoda</h4></div>
+                </div>
+                <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4"><strong class="block mb-1">The Spiritual Heart of Yangon</strong>Standing at the heart of Yangon, Sule Pagoda blends ancient spirituality with the rhythm of a modern colonial-era city.</p>
+            </div>
+            <div class="flex flex-col">
+                <div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+                    <img alt="Colonial Downtown" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8ngd2tQ7qBlPQdnSr_nBM_7fQnB3zZLehqPgzjWgb-C7qA3UggqjsEDCfTYTPP5zmBq_klS075hOeygriFlqoTsNsaOk3gr4GlXMSeP72j6mOqCdCJZhSJ-avtq8ZPnytaLHaolyOKZREx_noWnwS-Y0HBC3Y6sRssF3pu6_SB_yo6-XtflSvxBrDXjgo-qvMPC24Nxfdu8m0FMG-nAC-ZNAEdEiaXEULKs3baoY5Sz-PU_LQJw-cJ4in59KqtYDQF2Of7FKOpOk"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 p-4"><h4 class="text-lg font-serif text-white">Colonial Downtown</h4></div>
+                </div>
+                <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4"><strong class="block mb-1">Yangon’s Colonial Heritage Streets</strong>Colonial Downtown preserves Yangon’s historic streetscape, where grand British-era architecture meets vibrant local life.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--BEGIN: Cuisine -->
+<section class="px-4 py-16 md:px-10" id="cuisine">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-12">
+<h2 class="text-Bahrain-red text-3xl md:text-4xl font-serif">A Taste of Myanmar’s Living Traditions</h2>
+<p class="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">From comforting noodle soups and savory rice dishes to traditional street snacks, Myanmar’s cuisine reflects centuries of trade, regional diversity, and rich culinary traditions shaped by rivers and kingdoms.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Package 1 -->
+<div class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:shadow-xl transition-shadow">
+<div class="h-56 w-full overflow-hidden">
+<img alt="Mandalay Mee Shay" class="w-full h-full object-cover transition-transform group-hover:scale-105" data-alt="Mandalay Mee Shay" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwhOmx8f3ed7QPSsbertDIM3q-PhMkmhq9QnUSF2RbAQnoEbxsVoe0RHds-WPlVuTYxXJdJLPjiFvVdSxgQSBJ1m05d5Fwfa2Xqoz1Pce9CmO0m6xcor6acfJJkpP2bR0uSCw5s4AugFP9VM98tnStkoyJa6rzDk7bjBVckKosD3W_1QwmqkkEcBSmPhOsUEne0UPf-Qt0s3R2JYWOUUHsYXVZ1yzJIKejSGJ2JFMIXP64-4CNdAaMvWm8MssZDT4Z57qajnasM90"/>
+</div>
+<div class="p-4">
+<div class="flex justify-between items-start mb-1">
+<h3 class="text-xl font-bold">Mandalay Mee Shay<span class="text-sm font-normal ml-2">Noodle Dish</span></h3>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-400 mb-6 line-clamp-2">Originating from Myanmar’s cultural capital, Mandalay Mee Shay combines rice noodles, savory meat sauce, and fragrant spices into one of the country’s most beloved noodle dishes.</p>
+<div class="flex items-center justify-between">
+</div>
+</div>
+</div>
+<!-- Package 2 -->
+<div class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:shadow-xl transition-shadow">
+<div class="h-56 w-full overflow-hidden">
+<img alt="Mohinga" class="w-full h-full object-cover transition-transform group-hover:scale-105" data-alt="Mohinga" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfS-c99H7qZ2JIuFC7Mf_Qe-SkDLRNAvFqcuAzYdSZQhu6Mjo1jaQGT0z4BLO4tM9KWZM2p4-EdTDnzy5_yC886JtaESioKTg2MgtB_9n40I30_sZYvR1L62OT7tF0ahepOZ2jDs_pzsow0DR5EjyTkx0w-lfcKo-qc-FkRTPkVtAV0cTcANTXgPjSIbfSyaQu8q-tTd0SBvBUgevkNCwaONpaP9PXyx_7whHR6KhfgTCQtewlPT7MccEwMHc_Bg_3JhS_HUNkesM"/>
+</div>
+<div class="p-4">
+<div class="flex justify-between items-start mb-1">
+<h3 class="text-xl font-bold">Mohinga<span class="text-sm font-normal ml-2">Breakfast Soup</span></h3>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-400 mb-6 line-clamp-2">Start your day like a local with this savory fish broth noodle soup, often called Myanmar's national dish.</p>
+<div class="flex items-center justify-between">
+</div>
+</div>
+</div>
+<!-- Package 3 -->
+<div class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:shadow-xl transition-shadow">
+<div class="h-56 w-full overflow-hidden">
+<img alt="Mont" class="w-full h-full object-cover transition-transform group-hover:scale-105" data-alt="Mont" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBs6qUyAhgqR__t2AdADRboR5bEIoC7NI8W4P7UMCBn34FBXxsP4JTjOznDJoFZyp3pHfTtlp58WWh2TiHotVIFUhz4hHCv9BJr38M2cmgi58GdZODJzG39ZPbrkdAdiK0nYK3mNWLXzaPti_649SQBGoD9mO4V9op-pbLrsUUi-Re2T8B6uHfsElj-ahr31fjyEEMQvINl_ppM7e9G8j2UkeafxIlbxKBnBGdgqkm4UkXgt7oU7tVpQOyxgtgKjmaChL__b2uuJlg"/>
+</div>
+<div class="p-4">
+<div class="flex justify-between items-start mb-1">
+<h3 class="text-xl font-bold">Mont</h3>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-400 mb-6 line-clamp-2">Known as 'Mont', these treats use local ingredients like palm sugar, coconut, and glutinous rice. Don't miss the Htoe Mont, a sticky, buttery cake that is a local favorite.</p>
+<div class="flex items-center justify-between">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- BEGIN: HistorySection -->
+<section class="mt-12 py-section-gap py-[0px] mb-20 bg-transparent" id="history">
+  <div class="max-w-5xl mx-auto">
+    <div class="text-center mb-6"> 
+      <h2 class="text-k-red font-serif text-sm mb-2 uppercase tracking-[0.3em]">ミャンマー連邦共和国の歴史</h2>
+<h3 class="text-e-green-dark text-3xl md:text-4xl font-serif">Republic of the Union of Myanmar</h3>
+<p class="text-xs text-Af-navy leading-relaxed">From the ancient kingdoms of Bagan and Ava to the colonial era and modern nationhood, <br>Myanmar’s history is shaped by powerful dynasties, Buddhist traditions, and centuries of <br>cultural exchange across Southeast Asia.</p>
+</div>
+<div class="max-w-3xl mx-auto space-y-8 relative border-l border-slate-300 pl-8">
+<!-- History: Ancient -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-t-green"></div>
+<h4 class="text-t-green font-sans text-xl font-semibold mb-6">古代</h4>
+<div class="flex flex-col md:flex-row gap-6">
+  <div class="flex-1 space-y-4">
+    <div>
+      <h5 class="text-lg font-serif text-slate-800 font-bold mb-1">ピュー族の都市国家 <span class="text-xs text-slate-500 block md:inline md:ml-2">（紀元前2世紀～9世紀）</span></h5>
+      <p class="text-xs text-slate-600 leading-relaxed">中央乾燥地帯に栄え、仏教文化が発展。
+
+</p>
+    </div>
+    <div>
+      <h5 class="text-lg font-serif text-slate-800 font-bold mb-1">モン族の王国 <span class="text-xs text-slate-500 block md:inline md:ml-2">（紀元前3世紀～11世紀） </span></h5>
+      <p class="text-xs text-slate-600 leading-relaxed">南部で仏教文化が栄えた。</p>
+    </div>
+     </div>
+ 
+</div>
+</div>
+<!-- History: Medieval -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-t-green"></div>
+<h4 class="text-t-green font-sans text-xl font-semibold mb-6">中世</h4>
+<div class="flex flex-col md:flex-row gap-6">
+  <div class="flex-1 space-y-4">
+     <div>
+      <h5 class="text-lg font-serif text-slate-800 font-bold mb-1">パガン王朝 <span class="text-xs text-slate-500 block md:inline md:ml-2">（849年～1287年） </span></h5>
+      <p class="text-xs text-slate-600 leading-relaxed">ビルマ族による最初の統一王朝。上座部仏教が広まり、多くの仏塔が建設される。</p>
+<p class="text-xs text-slate-600 leading-relaxed">首都：パガン</p>
+<p class="text-xs text-slate-600 leading-relaxed">スリランカとの交流→上座部仏教</p>
+<p class="text-xs text-slate-600 leading-relaxed">1287年元の侵入で滅亡</p>
+    </div>
+    <div>
+      <h5 class="text-lg font-serif text-slate-800 font-bold mb-1">タウングー王朝 <span class="text-xs text-slate-500 block md:inline md:ml-2">（14世紀頃から～1752年）  </span></h5>
+      <p class="text-xs text-slate-600 leading-relaxed">ビルマ族が再統一を果たし、勢力を拡大。</p>
+<p class="text-xs text-slate-600 leading-relaxed">首都：ペグー</p>
+<p class="text-xs text-slate-600 leading-relaxed">上座部仏教国として発展</p>
+<p class="text-xs text-slate-600 leading-relaxed">1558年、ミャンマー（タウングー王朝）のバインナウン王が、ラーンナー王朝の首都チエンマイ（＠タイ北部）を征服した。</p>
+    <p class="text-xs text-slate-600 leading-relaxed">16世紀：貿易の利益で繁栄</p>
+        <p class="text-xs text-slate-600 leading-relaxed">17世紀末に混乱、モン族の反乱により滅亡</p>
+    </div>
+    <div>
+      <h5 class="text-lg font-serif text-slate-800 font-bold mb-1">コンバウン王朝 <span class="text-xs text-slate-500 block md:inline md:ml-2">（1752年～1885年）  </span></h5>
+      <p class="text-xs text-slate-600 leading-relaxed">ビルマ族最後の王朝で、タイのアユタヤ王朝を滅ぼすなどの軍事的成功を収める。</p>
+    <p class="text-xs text-slate-600 leading-relaxed">1767年タイのアユタヤ朝を滅ぼす</p>
+<p class="text-xs text-slate-600 leading-relaxed">1790年清の属国に</p>
+<p class="text-xs text-slate-600 leading-relaxed">第１次ミャンマー(ビルマ)戦争(1824年～26年)：英がアラカン、アッサムを獲得</p>
+<p class="text-xs text-slate-600 leading-relaxed">第２次ミャンマー(ビルマ)戦争(1852年～53年)：英がビルマ南部を併合(ラングーン中心)</p>
+<p class="text-xs text-slate-600 leading-relaxed">第３次ミャンマー(ビルマ)戦争(1885年～86年)：英がビルマ北部を併合</p>
+<p class="text-xs text-slate-600 leading-relaxed">1885年イギリスにより滅亡</p>
+ 
+    </div>
+    
+</div>
+</div>
+</div>
+<!-- History: Early Modern -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-t-green"></div>
+<h4 class="text-t-green font-sans text-xl font-semibold mb-6">近世</h4>
+<div class="flex flex-col md:flex-row gap-6">
+  <div class="flex-1 space-y-4">
+     <div>
+      <h5 class="text-lg font-serif text-slate-800 font-bold mb-1">イギリス植民地時代 <span class="text-xs text-slate-500 block md:inline md:ml-2">（1886年～1948年）  </span></h5>
+      <p class="text-xs text-slate-600 leading-relaxed">3度の英緬戦争を経て、イギリス領インド帝国の一部となる。
+</p>
+    </div>
+
+</div>  
+</div>
+</div>
+<!-- History: Modern -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-t-green"></div>
+<h4 class="text-t-green font-sans text-xl font-semibold mb-6">近現代・現代</h4>
+<div class="flex flex-col md:flex-row gap-6">
+  <div class="flex-1 space-y-4">
+     <div>
+      <h5 class="text-lg font-serif text-slate-800 font-bold mb-1">ビルマ連邦 <span class="text-xs text-slate-500 block md:inline md:ml-2">（1948年～1962年）</span></h5>
+      <p class="text-xs text-slate-600 leading-relaxed">イギリスから独立し、民主主義国家としてスタート。
+</p>
+    </div>
+    
+<div>
+      <h5 class="text-lg font-serif text-slate-800 font-bold mb-1">ビルマ社会主義共和国 <span class="text-xs text-slate-500 block md:inline md:ml-2">（1962年～1988年）</span></h5>
+      <p class="text-xs text-slate-600 leading-relaxed">軍事クーデター（ネ・ウィン将軍）により社会主義体制が導入されるがこの時の正式な国名はまだ「ビルマ連邦」のまま。</p>
+</p><p class="text-xs text-slate-600 leading-relaxed">ビルマ連邦社会主義共和国（1974年1月4日～1988年9月18日）</p>
+    </div>
+<div>
+      <h5 class="text-lg font-serif text-slate-800 font-bold mb-1">ミャンマー連邦共和国 <span class="text-xs text-slate-500 block md:inline md:ml-2">（1989年～現在）</span></h5>
+      <p class="text-xs text-slate-600 leading-relaxed">軍事政権や民主化運動を経て、現在に至る。
+ミャンマーの歴史は、仏教文化や民族間の交流、植民地支配、そして現代の政治的変遷が特徴的です。</p>
+<p class="text-xs text-slate-600 leading-relaxed">現在の首都：Naypyidaw（ネピドー）※2006年にヤンゴンから遷都した、新しくてガランとした人工都市。</p>
+<p class="text-xs text-slate-600 leading-relaxed">2021年ミャンマークーデター</p>
+<p class="text-xs text-slate-600 leading-relaxed">&nbsp;&nbsp;クーデターの首謀者: 2021年2月に政権を覆した最高責任者は、国軍トップのミン・アウン・フライン氏です。</p>
+<p class="text-xs text-slate-600 leading-relaxed">軍政は2023年に、新しい「政党登録法」を制定し、NLDなど40以上の主要な民主派政党を合法的に解党（資格抹消）、国民や民主派の抵抗を、軍の暴力で力ずくで抑え込みました。</p>
+<p class="text-xs text-slate-600 leading-relaxed">2026年4月に大統領就任: クーデター直後は「国軍総司令官」や「暫定首相」として実権を握っていましたが、2026年4月3日の議会投票を経て、正式に大統領へ就任しました。</p>
+    </div>
+
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+<p class="text-left text-Bahrain-red text-sm mt-6 font-bold max-w-2xl mx-auto">バインナウン王（在位：1551年〜1581年）</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;バインナウン王は、16世紀のミャンマー（ビルマ）に存在したタウングー王朝の第2代国王であり、東南アジア史上最大の帝国を築き上げたビルマ史屈指の偉大な英雄です。分裂していたビルマを第二次統一し、現在のタイやラオスにまで及ぶ広大な版図（領土）を支配しました。</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto"></p>
+
+<p class="text-left text-Bahrain-red text-sm mt-6 font-bold max-w-2xl mx-auto">第二次世界大戦期（1941〜1945年）の日本軍の関わり</p>
+<p class="text-left text-slate-600 text-sm mt-2 font-bold max-w-2xl mx-auto">1. ミャンマー（ビルマ）：植民地支配からの「解放」と「失望」</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;ミャンマーの独立運動家たちにとって、日本軍は最初は「解放者」でした。</p>
+<p class="text-left text-Kaza-blue text-bold text-sm mt-0  max-w-2xl mx-auto">三十人の志士とアウンサン：</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;のちに独立の父となるアウンサン将軍（アウンサンスーチー氏の父）らは、日本軍（南機関）から軍事訓練を受け、「ビルマ独立義勇軍（BIA）」を結成。日本軍と共にイギリス軍を追い出しました。</p>
+<p class="text-left text-Kaza-blue text-bold text-sm mt-0  max-w-2xl mx-auto">ビルマ国の独立（1943年）：</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;日本軍の後押しで「ビルマ国」が独立を宣言しました。しかし、これは日本軍の強い影響下にある「傀儡（かいらい）国家」であり、実質的な支配者は日本軍でした。アウンサンらは当初、イギリスを追い出すために日本を利用しましたが、誕生した「ビルマ国」が日本の言いなりであり、泰緬鉄道の建設をはじめとする日本軍の横暴（現地人の強制徴用や物資の略奪）を目の当たりにして、「これではイギリスの植民地時代と変わらない、あるいはそれ以上にひどい」と確信し、1945年の抗日蜂起へと繋がっていきました。さらに日本軍は、ミャンマーを基地としてインドへ進攻する無理な計画「インパール作戦（1944年）」を強行。これが大失敗に終わり、ミャンマーの国土は激しい戦火に巻き込まれ、多くの現地住民も犠牲となりました。</p>
+<p class="text-left text-Kaza-blue text-bold text-sm mt-0  max-w-2xl mx-auto">反日への転換：</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;実質的な日本軍の厳しい軍政や、インパール作戦による戦禍に失望したアウンサンらは、1945年に日本軍に対して反乱（クーデター）を起こし、イギリス側に寝返りました。</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;1945年3月27日、アウンサン率いるビルマ国防軍は日本軍に対して一斉に反日蜂起（クーデター）を敢行。イギリス軍（連合国軍）側に寝返りました。これにより日本軍はミャンマーから撤退へと追い込まれ、同年8月に敗戦を迎えました。この時に結成された「反ファシスト人民自由連盟（AFPFL）」が、戦後の1948年の完全独立を勝ち取る母体となりました。</p>
+<p class="text-left text-slate-600 text-sm mt-2 font-bold max-w-2xl mx-auto">2.アウンサン将軍の暗殺（1947年）：</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;アウンサン将軍はイギリスとのタフな独立交渉を成功させ、独立の約束を取り付けました。しかし、完全独立を目前にした1947年7月、政敵の手によって暗殺されるという悲劇に見舞われます。</p>
+<p class="text-left text-slate-600 text-sm mt-2 font-bold max-w-2xl mx-auto">3.「ビルマ連邦」の完全独立（1948年）：</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;建国の父を失う巨万の悲しみを乗り越え、アウンサン将軍の遺志を継いだAFPFLの仲間たち（ウー・ヌら）が手続きを進め、1948年1月4日に「ビルマ連邦」として悲願の完全独立を達成しました。</p>
+<div><p class="text-on-surface-variant mb-6"></p></div>
+<div>
+<a href="Myanmar_h.html" target="_blank" rel="noopener noreferrer" class="text-primary font-button flex items-center gap-2 group mx-auto w-fit">
+    Learn History 
+    <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</section>
+</main>
+<!-- END: HistorySection -->
+<!-- BEGIN: Footer -->
+<footer class="bg-dark-charcoal text-white py-20 px-6 border-t border-white/5 relative z-10">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="col-span-1 md:col-span-2">
+<div class="flex items-center gap-3 mb-6">
+<div class="text-emerald-500">
+<svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://w3.org">
+  <!-- 1. ベース背景：ミャンマー国旗の3色横縞（黄・緑・赤） -->
+  <rect width="24" height="8" fill="#FECB00"/>
+  <rect y="8" width="24" height="8" fill="#1027EC"/> <!-- 実際は緑：#009F4D -->
+  <rect y="8" width="24" height="8" fill="#009F4D"/>
+  <rect y="16" width="24" height="8" fill="#E41B13"/>
+  
+  <!-- 全体の角丸クリッピング（枠線を美しく維持） -->
+  <rect width="24" height="24" rx="4" fill="none" stroke="none"/>
+
+  <!-- 2. 中央：ミャンマー国旗の象徴である「大きな白い星」 -->
+  <!-- 24x24の中心（12, 12）に綺麗に配置した5点星 -->
+  <path d="M12 4.5L13.8 10H19.5L14.9 13.4L16.7 19L12 15.6L7.3 19L9.1 13.4L4.5 10H10.2L12 4.5Z" fill="#FFFFFF"/>
+
+  <!-- 3. 追加アレンジ：3大エリア（マンダレー、バガン、ヤンゴン）を象徴する3つの金の輝き -->
+  <!-- タイの3分割に対応するモダンな幾何学アクセント -->
+  <!-- 北（マンダレー：古都の輝き） -->
+  <circle cx="12" cy="2.5" r="0.75" fill="#FECB00"/>
+  <!-- 西（バガン：遺跡の輝き） -->
+  <circle cx="2.5" cy="12" r="0.75" fill="#FECB00"/>
+  <!-- 南（ヤンゴン：大都市の輝き） -->
+  <circle cx="12" cy="21.5" r="0.75" fill="#FECB00"/>
+
+  <!-- 4. 右側：伝統織物（ルンギー）の格子模様をイメージした繊細なライン -->
+  <path d="M18 4L22 8M19 14L23 18" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="round" opacity="0.3"/>
+</svg>
+</div>
+<span class="text-white font-serif text-lg tracking-wider font-semibold">Myanmar (formerly Burma) Discovery</span>
+</div>
+<p class="text-white text-sm max-w-sm mb-8">
+            Journey through golden pagodas, ancient kingdoms, and timeless riverscapes — where every path across Myanmar reveals a story shaped by history, faith, and enduring tradition.</p>
+</div>
+<div>
+<h6 class="text-k-yellow font-serif text-sm mb-6 uppercase tracking-widest">Navigation</h6>
+<ul class="space-y-4 text-sm text-white/60">
+<li><a class="hover:text-white transition-colors" href="#Landmarks">Landmarks</a></li>
+<li><a class="hover:text-white transition-colors" href="#cuisine">Cuisine</a></li>
+<li><a class="hover:text-white transition-colors" href="#history">History</a></li>
+</ul>
+</div>
+<div>
+<h6 class="text-k-yellow font-serif text-sm mb-6 uppercase tracking-widest">Connect</h6>
+<ul class="space-y-4 text-sm text-white/60">
+<li><a class="hover:text-white transition-colors" href="#">Instagram</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Twitter</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Contact Us</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 mt-10 mb-4"><p class="text-xs text-white">© 2026 Myanmar Discovery. All rights reserved.</p>
+<div class="flex gap-8 text-xs text-white/80">
+<a href="#">Privacy Policy</a>
+<a href="#">Terms of Service</a>
+</div></div>
+<button onclick="window.close(); setTimeout(() => { window.location.href = 'https://google.com'; }, 100);" 
+          class="flex items-center gap-1 px-3 py-0.5 ml-auto md:ml-auto bg-brand-emerald hover:opacity-80 text-white font-medium rounded-full transition-all shadow-sm">
+    <span class="material-symbols-outlined text-xs text-white/80">logout</span>
+    <span class="tracking-wider text-xs text-white/80">QUIT</span>
+  </button>
+
+</footer>
+<!-- END: Footer -->
+
+<style data-purpose="animations">
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+<script>
+    document.getElementById('searchInput').addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+            const searchTerm = this.value.trim();
+            if (searchTerm) {
+                const wikipediaUrl = `https://ja.wikipedia.org/wiki/特別:検索?search=${encodeURIComponent(searchTerm)}`;
+                window.open(wikipediaUrl, '_blank');
+            }
+        }
+    });
+</script>
+</body></html>

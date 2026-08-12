@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Vietnam Discovery | Luxury Travel Experience</title>
+<meta content="Explore Districts, Attractions, Cuisine, and History of Vietnam." name="description"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="../menu.js"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'lebanon-dark': '#102219',
+            'lebanon-gold': '#C5A059',
+            'lebanon-green': '#2D5A27',
+            "primary": "#144bb8",
+            "background-light": "#f6f6f8",
+            "background-dark": "#111621",
+            // 追加
+            "al-adaam": "#8D1B3D",
+            "qatar-gold": "#C5A059",  
+            "e-green": "#50C878",
+            "qatar-gold": "#C5A059",
+            "qatar-blue": "#1e3a8a",
+            "oman-blue": "#003153",
+            "yemen-red": "#CE1126",
+            "Bahrain-red": "#DA291C",
+            "B-purple-dark": "#632276",
+            "B-purple": "#D1A7E2",
+            "B-yellow": "#ffff66",
+            "B-green": "#33cc00",
+            "Kaza-blue": "#00A3DD",
+            "Kaza-blue-dark": "#003366",
+            "U-blue": "#99ffcc", //ターコイズブルー//
+            "U-blue-bg": "#006699",
+            "k-yellow": "#ffcc00",
+            "k-red": "#cc3333",
+            "k-yellow-c": "#ccff33",
+            "silk-road-white": "#fdfdfd",
+            "t-green": "#006600",
+            "t-green-light": "#99cc99",
+            "Af-red": "#ff0099",
+            "Af-navy": "#0B1F3A",
+            "Sr-Brown": "#993300",
+            "Sr-yellow": "#cc9933",
+            "surface-container-highest": "#e1e3e4",
+            "Reddish-brown": "#996666",
+             "e-green-dark": "#006400",
+             },
+          fontFamily: {
+            serif: ['Newsreader', 'serif'],
+            sans: ['Inter', 'sans-serif'],
+          },
+          backgroundImage: {
+            'Kazakhstan-hero': "url('img/Vietnam_bg.jpg')",
+          }
+        }
+      }
+    }
+  </script>
+<style data-purpose="custom-styling">body {
+    background-color: #f0f9ff;
+    color: #1e293b
+    }
+.glass-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 1rem
+    }
+.text-balance {
+    text-wrap: balance
+    }
+.section-spacing {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem
+    }
+/* Pattern Overlay */
+.bg-pattern {
+    background-image: url(img/Vietnam_bg.jpg);
+    opacity: 0.15
+    }</style>
+</head>
+<body class="font-sans antialiased overflow-x-hidden">
+<!-- BEGIN: Background Texture -->
+<div class="fixed inset-0 bg-pattern pointer-events-none z-0"></div>
+<!-- END: Background Texture -->
+<!-- BEGIN: MainHeader -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-Reddish-brown backdrop-blur-md border-b border-white/5">
+<nav class=" max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<!-- Logo -->
+<a class="flex items-center gap-3 group" href="#">
+<div class="text-white-500 transform group-hover:scale-110 transition-transform">
+<svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="w3.org">
+  <!-- 背景：洗練された深いベトナム・レッド -->
+  <rect width="24" height="24" rx="4" fill="#B31F17"/>
+
+  <!-- 左から右へ：世界遺産「ハロン湾」の奇岩をイメージしたモダンなシルエット -->
+  <path d="M2 20L4 13L7 16L11 11L14 15L17 9L20 14L22 20H2Z" fill="#7A120D" opacity="0.6"/>
+
+  <!-- 中央上部：夜空や未来を照らす、シャープで現代的なベトナムの金星 -->
+  <path d="M12 3L13.2 6.8H17.2L14 9.2L15.2 13L12 10.6L8.8 13L10 9.2L6.8 6.8H10.8L12 3Z" fill="#FFD700"/>
+
+  <!-- 中央右：伝統衣装「アオザイ」のしなやかな風に揺れる裾のライン -->
+  <path d="M15 8C17 11 19 13 21 19" stroke="#FFFF00" stroke-width="1.5" stroke-linecap="round" opacity="0.8"/>
+
+  <!-- 下部：ベトナムコーヒーの濃厚なドリップや、メコン川のゆったりした流れを表現したレイヤー -->
+  <path d="M2 20C6 18 10 22 14 19C18 16 20 21 22 20" stroke="#FFD700" stroke-width="1" opacity="0.4"/>
+</svg>
+</div>
+<span class="text-white font-serif text-xl font-semibold">Vietnam Discovery</span>
+</a>
+<!-- Desktop Navigation -->
+<div id="navMenu" class="hidden md:flex items-center gap-9 
+    absolute top-full left-0 w-full bg-Reddish-brown backdrop-blur-md flex-col p-6 shadow-lg z-50
+    md:absolute md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 md:w-auto md:flex-row md:p-0 md:shadow-none">
+<a class="text-white text-sm font-medium hover:text-B-yellow font-serif transition-colors tracking-widest uppercase" href="#Landmarks">Landmarks</a>
+<a class="text-white text-sm font-medium hover:text-B-yellow font-serif transition-colors tracking-widest uppercase" href="#cuisine">Cuisine</a>
+<a class="text-white text-sm font-medium hover:text-B-yellow font-serif transition-colors tracking-widest uppercase" href="#history">History</a>
+</div>
+<!-- Search Bar -->
+<div class="relative hidden lg:block" data-purpose="search-container">
+<span class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+<svg class="w-4 h-4 text-B-purple-dark/50" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</span>
+<input id="searchInput" class="bg-white/5 border-white/10 text-white pl-10 pr-4 py-2 rounded-lg focus:ring-B-purple-dark focus:border-B-purple-dark w-64 text-sm" placeholder="Wikipedia検索" type="text"/>
+</div>
+
+<!-- Mobile Menu Button (Icon only) -->
+<div class="md:hidden">
+<button
+    id="menuButton"
+    class="md:hidden flex items-center justify-center text-white hover:text-white/80 transition-colors">
+    <span class="material-symbols-outlined text-3xl">
+        menu
+    </span>
+</button></div>
+</nav>
+</header>
+<!-- END: MainHeader -->
+<!-- BEGIN: HeroSection -->
+<main class="relative">
+<section class="relative flex items-center justify-center overflow-hidden h-[90vh]">
+<!-- Hero Background Image -->
+<div class="absolute inset-0 z-0">
+<img alt="Vietnam" class="w-full h-full object-cover brightness-50" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXydSxTaOapOliHsuMYq5yzhRRXH0NcTrgl7zVDd89m7gpp5v2vqQUs3lT_UH9jvek9tAUh6ucLbShJoE8wVZQAx2exYUgtIAQ7jDlK4p4NBF2qAZHiyw_k7OXnepS_QFnDBdr-PdX0qvdJcWDY5RqYfu7A0SO9a2ZcqiEAlIT4E_ZA66nTbvKMwOiv_fKAI0rwQbs_Y3xPMD_ipdoowdNfgH8jxYfRo9pMuy059W9c4YoHYY-Xv2o-Nf_wbOt0RqN3UZu8ycPPoRE"/>
+<div class="absolute inset-0 bg-gradient-to-b from-[#003153]/60 via-transparent to-[#f0f9ff]"></div>
+</div>
+<div class="relative z-10 text-center px-6 max-w-4xl">
+<h2 class="text-k-yellow font-serif italic text-xl md:text-2xl mb-4 opacity-0 animate-[fadeIn_1s_ease-out_forwards]">Timeless Charm </h2>
+<h1 class="text-white text-4xl md:text-7xl lg:text-4xl font-serif mb-8 leading-tight opacity-0 animate-[fadeIn_1s_ease-out_0.3s_forwards]">
+Discover the Soul of Vietnam
+</h1>
+<p class="text-lg md:text-xl text-white/80 font-light max-w-2xl mx-auto mb-10 text-balance opacity-0 animate-[fadeIn_1s_ease-out_0.6s_forwards]">
+        From the mystical waters of Ha Long Bay to the vibrant pulse of ancient cities, embark on a curated journey through a land of profound heritage and modern grace.
+
+</p>
+<!-- <a class="inline-block bg-B-purple-dark text-lebanon-dark px-10 py-4 font-semibold tracking-widest uppercase text-sm hover:scale-105 transition-transform opacity-0 animate-[fadeIn_1s_ease-out_0.9s_forwards]" href="#landmarks">
+          Explore Destinations
+        </a>-->
+</div>
+<!-- Scroll Indicator -->
+<!--<div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce opacity-60">
+<svg class="h-6 w-6" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M19 14l-7 7m0 0l-7-7m7 7V3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>-->
+</section>
+<!-- END: HeroSection -->
+ <section class="pt-16 pb-6 px-6 relative" id="Landmarks">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
+<div class="max-w-2xl">
+<h2 class="text-t-green font-serif text-sm mb-2 uppercase tracking-[0.3em]">Through the Ages</h2>
+<h3 class="text-Reddish-brown text-3xl md:text-4xl font-serif">Iconic Landmarks</h3>
+</div>
+<p class="text-orange/90 max-w-md text-sm">The story of Vietnam is not a linear path, but a tapestry of overlapping influences, resistance, and breathtaking cultural synthesis. </p>
+</div>
+
+        <!-- Island Navigation Grid -->
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12">
+            <a href="#Hanoi" class="group flex items-center justify-center p-6 border border-t-green/20 rounded-xl bg-white/40 backdrop-blur-sm hover:bg-t-green hover:border-t-green transition-all duration-300 shadow-sm">
+                <span class="font-serif font-bold text-t-green group-hover:text-white tracking-widest">Hanoi</span>
+            </a>
+            <a href="#Hue" class="group flex items-center justify-center p-6 border border-t-green/20 rounded-xl bg-white/40 backdrop-blur-sm hover:bg-t-green hover:border-t-green transition-all duration-300 shadow-sm">
+                <span class="font-serif font-bold text-t-green group-hover:text-white tracking-widest">Hue</span>
+            </a>
+            <a href="#Da_Nang" class="group flex items-center justify-center p-6 border border-t-green/20 rounded-xl bg-white/40 backdrop-blur-sm hover:bg-t-green hover:border-t-green transition-all duration-300 shadow-sm">
+                <span class="font-serif font-bold text-t-green group-hover:text-white tracking-widest">Da Nang</span>
+            </a>
+            <a href="#Saigon" class="group flex items-center justify-center p-6 border border-t-green/20 rounded-xl bg-white/40 backdrop-blur-sm hover:bg-t-green hover:border-t-green transition-all duration-300 shadow-sm">
+                <span class="font-serif font-bold text-t-green group-hover:text-white tracking-widest">Saigon（HCMC）</span>
+            </a>
+            </div>
+</div>
+</section>
+
+<!-- 1.北部Hanoi-->
+<section class="scroll-mt-20 pt-8 pb-16 px-6 relative" id="Hanoi">
+    <div class="max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
+            <div class="max-w-2xl">
+                <h2 class="text-k-red font-serif text-sm mb-2 uppercase tracking-[0.3em]">A thousand-year-old capital and the center of northern legitimacy</h2>
+                <h3 class="text-t-green text-3xl md:text-2xl font-bold font-serif">Hanoi</h3>
+            </div>
+            <p class="text-orange/90 max-w-md text-sm">Experience the timeless soul of Vietnam where century-old colonial architecture meets the rhythmic pulse of modern street life.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="flex flex-col">
+                <div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+                    <img alt="The Old Quarter" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAX4zf69usq6uaiJ00peNKRbmx5dZ-xwi4yQGApHaE9N29LDa_FCytD7fcbz4DSlebyy2IZjeJD8y2s9g5QFKMPO8QhKsbLSQr42xBeQzMtcpRc6OzZboc_qg2fxUtDuDlbOfB-M72GnEhMfOV-0rHCKOY5NCLdCxJm4QAyRxJTsqj68gq1pOdqZdHdYzqd4BoyQgc-VuvP6mYgb_jd_7UV5yxfIXyNplndxmPEnQ9NdxqI7FK9SxVNYDUA_B2MEQxd_x7w1D5eAQ0a"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 p-4"><h4 class="text-lg font-serif text-white">The 36 Streets</h4></div>
+                </div>
+                <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4"><strong class="block mb-1">The Old Quarter</strong>Monument of Enlightenmentney toward awakening.</p>
+            </div>
+            <div class="flex flex-col">
+                <div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+                    <img alt="Văn Miếu" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAH39OPDyVa0YPPeZ2jAhbEFV96oMyq1j6p054lgKw3LtAu6aCY6KUwavvdLSL3Yfv6x14SwyHkaW2MAo1Wyq4feMFRgOrKB4hQY1TLPbDw5CSs5eWsp5CYgMXDtnwIMU9BDvBjCiYTqYssbcmBe_pwZyVjzwB4BmB1mPpXdnldFyzOvJTo9dI0y12OeaYgQ-ckT7LgGkc4frKqBL6sAX9zAs1v9n459ocE_7hMLDrSaBJooSPFUqFjD05qsAKZEAahfQl8_XQ11sEq"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 p-4"><h4 class="text-lg font-serif text-white">Văn Miếu	</h4></div>
+                </div>
+                <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4"><strong class="block mb-1">Temple of Literature</strong>A sanctuary of wisdom and the site of Vietnam's first national university.</p>
+            </div>
+            <div class="flex flex-col">
+                <div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+                    <img alt="Water Puppet Theater" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHBJG0mYTpa78h3Vro9138oh2Iqv86Tp2bwUDiZ3PAFRLQMzrDXWqYFXa3qTaaolYG3Lou7TrboRdmGJEnRJoDiTZpDhiLtTYyWX1QgBmajlCeOohladHIt8cmBbgQlb5w6z2Pta6ahv9ZaqTn6LkmFBvA568klxL7pRaPPUAYQNpKPowptpiBJET62GkUfONR4bOnVKUYuqozTv6TS9XR48qlYbUQlWHfxuvtpk58pYF3926XFO3BWxB8sOX9cTh-SDSICfkj-POT"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 p-4"><h4 class="text-lg font-serif text-white">Water Puppet Theater</h4></div>
+                </div>
+                <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4"><strong class="block mb-1">Performance</strong>Witness the magical 11th-century art form that brings rural Vietnamese folklore to life on water.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 2. 中部フエ(Hue) -->
+<section class="scroll-mt-20 pt-8 pb-16 px-6 relative" id="Hue">
+    <div class="max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
+            <div class="max-w-2xl">
+                <h2 class="text-k-red font-serif text-sm mb-2 uppercase tracking-[0.3em]">The final imperial capital</h2>
+                <h3 class="text-t-green text-3xl md:text-2xl font-bold font-serif">Hue</h3>
+            </div>
+            <p class="text-orange/90 max-w-md text-sm">Step into a living masterpiece where the echoes of the Nguyen Dynasty resonate through crimson pavilions, sacred pagodas, and the gentle flow of the Perfume River.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="flex flex-col">
+                <div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+                    <img alt="Hue Imperial City" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPzWvX8QTnXq1dHOVI2DmmlF2sjU5f6kOGj6z_hjZ2E2xlM-5UNJ3Fyc2oic-lblLPrs8_Ksq0EhN3rhB9XJU_WOg5ZwB8d5YGSXC3Z3HiTKD_Bf1u5I9O__8ktoRx3jQgpfWyIP63DTdVWONsapi222LprWF3U13Ye3YNQplBxFDvgNdzi1uGPI6bpRIMJrL1vPco6hUwHBBpVXdMrnd_mszQY9MIZzyv1yz93FTpgKOv47CKquc5L4oODuDjG7UqE2YW5R1tuyJw"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 p-4"><h4 class="text-lg font-serif text-white">Hue Imperial City</h4></div>
+                </div>
+                <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4"><strong class="block mb-1">The Imperial Citadel</strong>A sprawling fortress of forbidden cities and majestic gates, echoing 143 years of imperial rule.</p>
+            </div>
+            <div class="flex flex-col">
+                <div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+                    <img alt="City of Ghosts" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDijfanY24RAbSwpUWp31VXkYp2YorgC8-eWO8sqQSNq14gGhUPbG1MlIMq1ne0ZmjSvBvzhXgWA-IhZ-6c01BgrIHpeghrlFrwdbtL9Wx32RyrlGHJTNuiPQjeIQd24WrvUDPttwML32-HSUuidcd_PipPYrdgF7LrUuY75auYyMHB6mvS1s6lLnyB7SakhwR9ZbI8klJ6y3pAC8mC55747fJTtlFqUfW3-svl1VMz0cpV3DLO80CvIcUrvK1IdQa15HkZ6hpo6PUv"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+                <div class="absolute bottom-0 left-0 p-4"><h4 class="text-lg font-serif text-white">City of Ghosts</h4></div>
+                </div>
+                <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4"><strong class="block mb-1">Ancestral Tombs</strong>Architectural homages to the emperors, nested in nature.</p>
+            </div>
+            <div class="flex flex-col">
+                <div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+                    <img alt="Jam Gadang" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPeh9pL68Yip2M5Xy-8zCvo3QBN2G1S6X6yCCuuHIbzK_lzXtI3EdjR3nNDz9HSk2Mf1hqQYaJikkA77445m_0zw1veRNiAYVXRiIDpL1vpImks_d0FJG5EjBmPzdXGhXmfmZS_222YLIHdcgqmcPXGR9d6BqXRsnhnH4-nsUkLpP017GOof3-XSdI2j3fAiF_r3GXFw3GfWpbJ3eqKtxk3zT3JZ7-1nqD7CHZGZ2R6Yv2tFxUvCZWM2a7qmi6cJIJMLL21KTe8v8c"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 p-4"><h4 class="text-lg font-serif text-white">Nha Nhac Performance</h4></div>
+                </div>
+                <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4"><strong class="block mb-1">UNESCO Heritage</strong>Immerse yourself in the celestial sounds of the Royal Court Music, a bridge to the past.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 3. 中部ダナン (Da Nang)-->
+<section class="scroll-mt-20 pt-8 pb-16 px-6 relative" id="Da_Nang">
+    <div class="max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
+            <div class="max-w-2xl">
+                <h2 class="text-k-red font-serif text-sm mb-2 uppercase tracking-[0.3em]">A strategic maritime port (non-capital)</h2>
+                <h3 class="text-t-green text-3xl md:text-2xl font-bold font-serif">Da Nang</h3>
+            </div>
+            <p class="text-orange/90 max-w-md text-sm">Experience the dynamic soul of Central Vietnam. From the pristine sands of My Khe to the spiritual heights of the Marble Mountains, Da Nang offers a sophisticated blend of modern luxury and heritage charm.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="flex flex-col">
+                <div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+                    <img alt="Ngũ Hành Sơn" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBY9vdSaWFLLbR5Jsr-XgaONyNJzo9HKoBBJryLRzxneIvkfhpQsbdp18-FkqNXtsFXTPSlfiEIPeLwMyFoCNTp30aZbA38aXCjEcefchxnCJjRvm4ll5GKYs0hUtotwLp1EBKjHc9rTtCH7KIibVGT1T338n1qH5_wmo0GJxPkkF0ZhqtuKHUMGBNyCZSq7jOENF_wAVQjUxNLECGiKqNFRJHlEtcLybUNeL49ecvwamkNdRnB5hi1bz21tpM85x4eotab1s4Q2CFr"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 p-4"><h4 class="text-lg font-serif text-white">Ngũ Hành Sơn</h4></div>
+                </div>
+                <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4"><strong class="block mb-1">The Marble Mountains</strong>A cluster of five limestone and marble hills representing the five elements. Ascend the stone steps to discover hidden grottoes, ancient Buddhist sanctuaries, and panoramic vistas of the coastline.</p>
+            </div>
+            <div class="flex flex-col">
+                <div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+                    <img alt="The Dragon Bridge" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_KHVEOb3h7qApN6eRf1gSa-X-N6Xo4McYROrNnk8vkxgMkYrAPyhbQ8uNbaJ0Njg5zIKZlxJmelDHu4Vd237yio45KAyoSJcKSET7xveYclAWdm0xCqJb0olZRegSiSvOg0ycGkvSbl24_ZtjtjC-UmtfW8tpvKjPoEMrODpRNhuxpkaQCTMGhbM4oEESXIVLRvPdBv70oC64-MGEb3o2TcDhUh6Pua9eYZ5v_BBoDKXbTZUv67kG0Bj7PzeprQGiZaj8X7BkYcYc"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 p-4"><h4 class="text-lg font-serif text-white">The Dragon Bridge</h4></div>
+                </div>
+                <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4"><strong class="block mb-1">City Landmark</strong>A symbol of power and nobility, this 666-meter bridge comes alive every weekend with a spectacle of fire and water.</p>
+            </div>
+            <div class="flex flex-col">
+                <div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+                    <img alt="My Khe Beach" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsTizuxZZ3_yN4pL7Spbhx8WIa7WKOchg2aK8orS8emgcSfVaUuimrXHfqE3S2RWxeXKAPlymRi57VwsrQD6GztKDL782JhwEz8aE_Kc_wkzH9yyKkg1B2T-ue1mpqCaAyWvpSJnuoGGfvMWOYzBlK8PniSWw1O_633LZFlZ0tPw7Wp7Ts62G7aW1f9RW0M_tRmohjaYwx28bzoIp1oYxmj-76bbhTH0VVtil7iaVztQG0kZg7bDzirZVJm2WQrWHpPMcmOufnKWGA"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 p-4"><h4 class="text-lg font-serif text-white">My Khe Beach</h4></div>
+                </div>
+                <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4"><strong class="block mb-1">Natural Wonder</strong>Ranked as one of the world's most beautiful beaches, offering fine white sand and a host of luxury resorts.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- 4. 南部サイゴン（ホーチミン） (Saigon)(HCMC)-->
+<section class="scroll-mt-20 pt-8 pb-16 px-6 relative" id="Saigon">
+    <div class="max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
+            <div class="max-w-2xl">
+                <h2 class="text-k-red font-serif text-sm mb-2 uppercase tracking-[0.3em]">An economic hub born from southward expansion</h2>
+                <h3 class="text-t-green text-3xl md:text-2xl font-bold font-serif">Saigon（HCMC）</h3>
+            </div>
+            <p class="text-orange/90 max-w-md text-sm">Experience the rhythmic pulse of Ho Chi Minh City, a sprawling metropolis where soaring skyscrapers frame centuries-old French colonial spires and the scent of street coffee fills the tropical air.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="flex flex-col">
+                <div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+                    <img alt="Bitexco Financial Tower" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATauoZvcBhQFNiainH_VaNfNRGfPyPD9Lm2D0FejkMI-rK7ZZuv17lmA1cit-dKSGtwYXjXvma9l8Tsl7lqgPpnmPJKhVNbrTogxdyZKgopTWUMIxP4o0YW_Ls5f7FgRcpMwDn1p4IfWC5Lc86fh6CrHAxtGgd7qYJ04XAHYPrPRdl6EZJTFRI8Zm4YoE5cvLUOUGzGMlGFq6cKZYztB_P8CFvU72UXgZalGlJsf9Tu9cyWhB7hH0avhSHs56YQuHftowvj5RmvY6T"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 p-4"><h4 class="text-lg font-serif text-white">Bitexco Financial Tower</h4></div>
+                </div>
+                <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4"><strong class="block mb-1">Iconic landmarks, stunning views </strong>Inspired by the lotus bud, this architectural marvel symbolizes the city's rapid ascent as a global economic hub.</p>
+            </div>
+            <div class="flex flex-col">
+                <div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+                    <img alt="Notre-Dame Basilica" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdKzdTVfTqFM_oWhpKxY75f0F8VnUheGqRE8fwtVZGecN4wEDW-OopYd8-R_renwtWkjrmADE4UwhwfIbKH_OLO2-jQrfEqZGXxReE3fuhp73qDraDXWsnQDnth87Y_EFZBahAn2mOkhCt8vDnehfRixsj-hgM5-Q_pSZiGkZJDDUW8UDEEHIyKO309xuhXwjO06ZKrmWKgSBGtdvB1hCLHbEyyYqIjLESmc07FwwbwExN8Kx172hFBtnETH_kFGC1ZtdH5GeoNrYk"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 p-4"><h4 class="text-lg font-serif text-white">Notre-Dame Basilica</h4></div>
+                     <!--【追加】右下の詳細ボタン（ホバー時に少し上に浮き上がります）
+    <div class="absolute bottom-0 right-0 p-4 opacity-0 transform translate-y-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0">
+        <a href="detail.html" class="inline-block bg-white/20 backdrop-blur-sm text-white text-xs font-semibold px-3 py-1.5 rounded-full border border-white/40 hover:bg-white hover:text-black transition-colors">
+            詳細を見る →
+        </a> 
+    </div>   -->
+
+                </div>
+                <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4"><strong class="block mb-1">Chasing history in Saigon 🏛️</strong>Stunning European architecture mixed with vibrant Vietnamese energy.Caught a glimpse of this iconic red cathedral during my morning walk. 🚶‍♂️Every corner of this city has a story to tell.</p>
+            </div>
+            <div class="flex flex-col">
+                <div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+                    <img alt="Vesak Lantern Float" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="img/Vesak_Lantern_Float.jpg"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 p-4"><h4 class="text-lg font-serif text-white">Vesak Lantern Float</h4></div>
+                </div>
+                <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4"><strong class="block mb-1">Illuminating the night for Vesak Day</strong>Witnessed thousands of lotus lanterns floating down the canal in Saigon.The entire river turned into a sea of glowing lights, creating a magical atmosphere.A truly breathtaking and peaceful moment to remember. </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+</section>
+
+<!--BEGIN: Cuisine -->
+<section class="px-4 py-16 md:px-10" id="cuisine">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-12">
+<h2 class="text-k-red text-3xl md:text-4xl font-serif">Fragrant Broths & Street Food Traditions</h2>
+<p class="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">From delicate Pho broth to smoky Bun Cha and crisp Banh Mi, Vietnam’s cuisine is a vibrant blend of fresh herbs, regional flavors, and centuries of cultural exchange shaped by trade, migration, and local tradition.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Package 1 -->
+<div class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:shadow-xl transition-shadow">
+<div class="h-56 w-full overflow-hidden">
+<img alt="Pho" class="w-full h-full object-cover transition-transform group-hover:scale-105" data-alt="Pho" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYqscWn7v64M35VUxlqTtSJzhp68IvuDorx2tkP2x6UPHklCSHjhDP-as_rw6r14XLxVrNUb_Pz8gqUtgKuUKF6vTKTy6P6SUi12qeI-dngaJiLcSGaibPsqCuyIwFtdhQap64QhTOSt16uWJQey49_9e2UO_rRKOyNI5m38YlEjcB2YI4zUohbp4JUKjEIVtf3MdT56g9VudGjO0yOPY0V5OIQ4WgJi2nAgsW9UGf5QqpPh2Q1dezELTXsVTdxDiyrLoylAMcqXmO"/>
+</div>
+<div class="p-4">
+<div class="flex justify-between items-start mb-1">
+<h3 class="text-xl font-bold">Pho</h3>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-400 mb-6 line-clamp-2">The national dish. A symphony of star anise, cinnamon, and charred ginger in a slow-simmered bone broth.</p>
+<div class="flex items-center justify-between">
+</div>
+</div>
+</div>
+<!-- Package 2 -->
+<div class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:shadow-xl transition-shadow">
+<div class="h-56 w-full overflow-hidden">
+<img alt="Banh Mi" class="w-full h-full object-cover transition-transform group-hover:scale-105" data-alt="Rendang" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmQAVjD7V2EJt0HWxCdtoR_WSKuYnQ77M_d8GtQ0mSgYTI7g7oOY-yfG2rxkEbwqPZgcQ87VcX0Q3EhURlneCjDsKhlrA0jIdSKQnyF0ZSUWsIj-eJMt8UhgA-KKM0M3vVLBF9TUG1zz0iKMoVPLTEycGbdWFKrdnGx1MqzhYD-AgoYdR4J9zdHWjVHtargZ1yH3ficUsusGaZ5nP_3_DWzKFgEgpFNdUNMxZBfoppvFG7jODsyl3w61s_ENLXAhvOn7j8yuDqzZwq"/>
+</div>
+<div class="p-4">
+<div class="flex justify-between items-start mb-1">
+<h3 class="text-xl font-bold">Banh Mi</h3>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-400 mb-6 line-clamp-2">A perfect fusion of French and Vietnamese flavors, layered with crisp vegetables, savory meats, fresh herbs, and chili inside a light baguette.</p>
+<div class="flex items-center justify-between">
+</div>
+</div>
+</div>
+<!-- Package 3 -->
+<div class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:shadow-xl transition-shadow">
+<div class="h-56 w-full overflow-hidden">
+<img alt="Bun Cha" class="w-full h-full object-cover transition-transform group-hover:scale-105" data-alt="Sayur Asem" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrBqAXY_XHepFr6N1dJ-MhZt_U0e0KG8-ILcVsrHCtFLDAlyzDCLOvbma5tdg9VjeHAMZTXqrdc7KSoKcNllJqhQcrlQ_sOLZvE0GRCh_XEpgp8uUzlYNUiZ3kxcPewZXtbCPCilOtQ-J0vPuIEZ0lZ4lyYirc-UZaCkVaxeGi62PMQkucchJysxOi6ryVvV3TwB3gQti_hTWQ2-bgOFvcuxdSuXycc8LFm7Ivx_Abg4sTSykKmxymCpr6UldrncqmNlCii4j-2YpY"/>
+</div>
+<div class="p-4">
+<div class="flex justify-between items-start mb-1">
+<h3 class="text-xl font-bold">Bun Cha</h3>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-400 mb-6 line-clamp-2">Smoky grilled pork served with rice noodles, fresh herbs, and a delicate sweet-sour dipping sauce that captures the spirit of Hanoi street dining.</p>
+<div class="flex items-center justify-between">
+</div>
+</div>
+</div>
+
+
+
+</div>
+</div>
+</div>
+</section>
+
+<!-- BEGIN: HistorySection -->
+<section class="py-section-gap py-[0px] mb-20 bg-transparent" id="history">
+  <div class="max-w-5xl mx-auto">
+    <div class="text-center mb-6"> 
+      <h2 class="text-k-red font-serif text-sm mb-2 uppercase tracking-[0.3em]">ベトナム社会主義共和国の歴史</h2>
+<h3 class="text-e-green-dark text-3xl md:text-4xl font-serif">Land of Dynasties & Resilience</h3>
+<p class="text-xs text-slate-600 max-w-2xl mx-auto">From ancient Vietnamese kingdoms and Chinese rule to colonial struggles, war, and reunification,
+the history of the Socialist Republic of Vietnam is a story of endurance, national identity, and remarkable resilience.</p>
+</div>
+<div class="max-w-3xl mx-auto space-y-8 relative border-l border-slate-300 pl-8">
+<!-- History: Ancient -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-t-green"></div>
+<h4 class="text-t-green font-sans text-xl font-semibold mb-6">古代</h4>
+<div class="flex flex-col md:flex-row gap-6">
+  <div class="flex-1 space-y-4">
+    <div>
+      <h5 class="text-lg font-serif text-slate-800 font-bold mb-1">ドンソン文化（東山文化） <span class="text-xs text-slate-500 block md:inline md:ml-2"></span></h5>
+      <p class="text-xs text-slate-600 leading-relaxed">紀元前4～5世紀頃から紀元1～2世紀頃にかけてベトナム北部の紅河（ホン川）流域を中心に栄えた、東南アジアを代表する初期の金属器文化。農耕技術がこの時代に大きく定着。ベトナム最初の古代国家とされる文郎国や甌雒国の基盤となった。</p>
+    </div>
+    <div>
+      <h5 class="text-lg font-serif text-slate-800 font-bold mb-1">文郎国（ヴァンラン国） <span class="text-xs text-slate-500 block md:inline md:ml-2">（紀元前8～7世紀頃） </span></h5>
+      <p class="text-xs text-slate-600 leading-relaxed">ベトナム最初の伝説的な国家。</p>
+    </div>
+    <div>
+      <h5 class="text-lg font-serif text-slate-800 font-bold mb-1">甌雒（アウラク） <span class="text-xs text-slate-500 block md:inline md:ml-2">（紀元前257年～紀元前179年）</span></h5>
+      <p class="text-xs text-slate-600 leading-relaxed">文郎国を統一した国家。</p>
+    </div>
+    <div>
+      <h5 class="text-lg font-serif text-slate-800 font-bold mb-1">南越国 <span class="text-xs text-slate-500 block md:inline md:ml-2">（紀元前207年～紀元前111年） </span></h5>
+      <p class="text-xs text-slate-600 leading-relaxed">中国南部～ベトナム北部。秦の滅亡後に成立し、漢に併合されるまで存続。</p>
+    </div>
+  </div>
+  <div class="flex-1">
+    <h5 class="text-lg font-serif text-slate-800 font-bold mb-1">チャンパ王国 林邑国期<span class="text-xs text-slate-500 block md:inline md:ml-2">(192年-757年) </span></h5>
+    <p class="text-xs text-slate-600 leading-relaxed">ベトナム中部に成立したオーストロネシア系の海洋国家。</p>
+    <p class="text-xs text-slate-600 leading-relaxed">中国（後漢）の支配をはねのけて独立した最初の黎明期です。現在のフエやダナン周辺（ベトナム中部の北側）を拠点にしていました。最初は中国文化の影響もありましたが、5世紀頃からインド文化（ヒンドゥー教）を本格的に取り入れ、独自の文字や神殿（世界遺産のミーソン聖域）を作り始めた「国づくりの時代」です。</p>
+
+  </div>
+</div>
+</div>
+<!-- History: Medieval -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-t-green"></div>
+<h4 class="text-t-green font-sans text-xl font-semibold mb-6">中世</h4>
+<div class="flex flex-col md:flex-row gap-6">
+  <div class="flex-1 space-y-4">
+    <div>
+      <h5 class="text-lg font-serif text-slate-800 font-bold mb-1">北属期 <span class="text-xs text-slate-500 block md:inline md:ml-2">（紀元前111年～938年）</span></h5>
+      <p class="text-xs text-slate-600 leading-relaxed">中国王朝の支配期。南海郡等が設置され、唐代には安南都護府が置かれた。</p>
+      <p class="text-xs text-slate-600 leading-relaxed">第1次白藤江の戦い（938年）：呉権は、南漢（中国五代十国）の水軍を撃破</p>
+    </div>
+    <div>
+      <h5 class="text-lg font-serif text-slate-800 font-bold mb-1">呉朝<span class="text-xs text-slate-500 block md:inline md:ml-2">（939年～967年）   </span></h5>
+      <p class="text-xs text-slate-600 leading-relaxed">中国からの独立を果たした最初の王朝。</p>
+    </div>
+    <div>
+      <h5 class="text-lg font-serif text-slate-800 font-bold mb-1">丁朝 <span class="text-xs text-slate-500 block md:inline md:ml-2">（968年～980年）  </span></h5>
+      <p class="text-xs text-slate-600 leading-relaxed">ベトナム北部を統一し、皇帝を称する。</p>
+    </div>
+     <div>
+      <h5 class="text-lg font-serif text-slate-800 font-bold mb-1">前黎朝 <span class="text-xs text-slate-500 block md:inline md:ml-2">（980年〜1009年）  </span></h5>
+      <p class="text-xs text-slate-600 leading-relaxed">宋の侵略を完全撃破（第2次白藤江の戦い（981年））：初代皇帝の黎桓</p>
+    </div>
+    <div>
+      <h5 class="text-lg font-serif text-slate-800 font-bold mb-1">李朝(大越国) <span class="text-xs text-slate-500 block md:inline md:ml-2">（1009年～1225年）  </span></h5>
+      <p class="text-xs text-slate-600 leading-relaxed">李公蘊　ハノイへの遷都（昇竜/タンロンの伝説、1010年）</p>
+      <p class="text-xs text-slate-600 leading-relaxed">仏教文化が栄え、国名を「大越」とする。</p>
+    </div>
+    <div>
+      <h5 class="text-lg font-serif text-slate-800 font-bold mb-1">陳朝(大越国) <span class="text-xs text-slate-500 block md:inline md:ml-2">（1225年～1400年）  </span></h5>
+      <p class="text-xs text-slate-600 leading-relaxed">第3次白藤江の戦い（1288年）モンゴルの侵攻を撃退。陳興道が総司令官として活躍</p>
+      <p class="text-xs text-slate-600 leading-relaxed">独自の文化とベトナム文字（チュノム）の誕生</p>
+      <p class="text-xs text-slate-600 leading-relaxed">南進（サイゴン・ダナンへの道）の始まり</p>
+    </div>
+    <div>
+      <h5 class="text-lg font-serif text-slate-800 font-bold mb-1">胡朝 <span class="text-xs text-slate-500 block md:inline md:ml-2">(1400年～1407年)  </span></h5>
+      <p class="text-xs text-slate-600 leading-relaxed">胡朝の開祖である胡季犛：首都をハノイから清化（タインホア）へ</p>
+      <p class="text-xs text-slate-600 leading-relaxed">中国（明）の侵略を招き、ベトナムを滅亡寸前にした（明の属領）</p>
+      <p class="text-xs text-slate-600 leading-relaxed">永楽帝はベトナムの内政に干渉→明の支配下に(1407～1427)</p>
+    </div>
+  </div>
+  <div class="flex-1">
+    <h5 class="text-lg font-serif text-slate-800 font-bold mb-1">チャンパ王国 環王国期<span class="text-xs text-slate-500 block md:inline md:ml-2">(757年-859年) </span></h5>
+    <p class="text-xs text-slate-600 leading-relaxed">南部のパンドゥランガを中心に勢力を維持した時期。</p>
+    <p class="text-xs text-slate-600 leading-relaxed">「首都が南へ大移動したこと」が、時期が分かれる最大の理由です。北のベトナム（当時は中国の支配下）からのプレッシャーを避けるため、現在のニャチャンやファンラン周辺（中部の南側）へ拠点を移しました。南部の豪族が主導権を握ったため、それまでの林邑期とは政治の中心メンバーがガラリと変わった激変期です。</p>
+
+  </div>
+</div>
+</div>
+<!-- History: Early Modern -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-t-green"></div>
+<h4 class="text-t-green font-sans text-xl font-semibold mb-6">近世</h4>
+<div class="flex flex-col md:flex-row gap-6">
+  <div class="flex-1 space-y-4">
+  <div>
+    <h5 class="text-lg font-serif text-slate-800 font-bold mb-1">黎朝 <span class="text-xs text-slate-500 block md:inline md:ml-2">（1428年～1789年）  </span></h5>
+    <p class="text-xs text-slate-600 leading-relaxed">明の支配を排除し、独立を回復。</p>
+    <p class="text-xs text-slate-600 leading-relaxed">再び昇龍（ハノイ）を首都に定める</p>
+    <p class="text-xs text-slate-600 leading-relaxed">16世紀、南北に分裂　<北部>鄭氏　<南部>阮氏</p>
+  </div>
+  <div>
+    <h5 class="text-lg font-serif text-slate-800 font-bold mb-1">西山朝<span class="text-xs text-slate-500 block md:inline md:ml-2">(1778年～1802年)  </span></h5>
+    <p class="text-xs text-slate-600 leading-relaxed">・阮氏(1777)・鄭氏(1786)を滅ぼして西山朝を開く</p>
+    <p class="text-xs text-slate-600 leading-relaxed">西山出身の３兄弟(阮文岳・阮文侶・阮文恵)</p>
+  </div>
+  <div>
+  <h5 class="text-lg font-serif text-slate-800 font-bold mb-1">阮朝 <span class="text-xs text-slate-500 block md:inline md:ml-2">（1802年～1945年） </span></h5>
+  <p class="text-xs text-slate-600 leading-relaxed">ベトナム全土を統一した最後の王朝。</p>
+</div>
+</div>
+<div class="flex-1">
+    <h5 class="text-lg font-serif text-slate-800 font-bold mb-1">チャンパ王国 占城国期 <span class="text-xs text-slate-500 block md:inline md:ml-2">(860年-1693年) </span></h5>
+    <p class="text-xs text-slate-600 leading-relaxed">黎朝第５代黎聖宗により滅亡(1471)≪第1段階:事実上の壊滅≫</p>
+    <p class="text-xs text-slate-600 leading-relaxed">ベトナム（大越国）の南進により圧迫されるが、17世紀末まで存続した。≪第2段階:直轄領（ベトナム領）～完全な消滅≫</p>
+<p class="text-xs text-slate-600 leading-relaxed">&nbsp;&nbsp;再び首都が少し北のクイニョン周辺（中部の真ん中）に戻り、チャンパとしてのアイデンティティが最も成熟した最強の黄金期（かつ最後の衰退期）です。海上貿易で大儲けし、日本の朱印船とも貿易を行っていたのはこの時代です。しかし、この時代の後半（1471年）にハノイの黎朝に大敗し、最終的に1693年に阮氏のご先祖様に飲み込まれて国が消滅することになります。</p>
+ 
+
+</div>
+</div>
+</div>
+<!-- History: Modern -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-t-green"></div>
+<h4 class="text-t-green font-sans text-xl font-semibold mb-6">近現代・現代</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">フランス植民地時代 <span class="text-xs text-slate-500 block md:inline md:ml-2">（1887年～1945年）</span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">フランス領インドシナの一部として統治される。</p>
+<p class="text-xs text-slate-600 leading-relaxed">フランスはベトナムを「北部のトンキン」「中部のアンナン」「南部のコーチシナ」の3つに分断して支配。これらをカンボジアなどと合体させ、1887年に「フランス領インドシナ連邦」として地政学的に1つへと統合</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">ベトナム帝国 <span class="text-xs text-slate-500 block md:inline md:ml-2">（1945年3月〜8月）</span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">1940年（第二次世界大戦中）から、日本軍がこの地域に進出（仏印進駐）</p>
+<p class="text-xs text-slate-600 leading-relaxed"></p>
+</div>
+
+<div class="flex flex-col md:flex-row gap-6">
+  <div class="flex-1">
+    <h5 class="text-lg font-serif text-slate-800 font-bold mb-1">ベトナム民主共和国<span class="text-xs font-serif text-slate-800 font-bold mb-1">（北ベトナム)</span><span class="text-xs text-slate-500 block md:inline md:ml-2">(1945年～1976年) </span></h5>
+    <p class="text-xs text-slate-600 leading-relaxed">ホー・チ・ミンによる独立宣言後の国家。
+
+</p>
+  </div>
+  <div class="flex-1">
+    <h5 class="text-lg font-serif text-slate-800 font-bold mb-1">ベトナム共和国<span class="text-xs font-serif text-slate-800 font-bold mb-1">（南ベトナム)</span><span class="text-xs text-slate-500 block md:inline md:ml-2">（1955年～1975年）   </span></h5>
+    <p class="text-xs text-slate-600 leading-relaxed">アメリカの支援を受けた南部の国家。</p>
+  </div>
+</div>
+
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">ベトナム社会主義共和国 <span class="text-xs text-slate-500 block md:inline md:ml-2">（1976年～現在）  </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">南北統一後の現在の国家。ベトナムの歴史は、中国の影響を受けつつも独自の文化とアイデンティティを築いてきました。
+<p class="text-xs text-slate-600 leading-relaxed">1978年12月：国境を侵されたベトナム軍がカンボジアへ進攻。</p>
+<p class="text-xs text-slate-600 leading-relaxed">1979年1月：ベトナム軍が首都を制圧し、ポル・ポト政権を打倒。新しい親ベトナム政権（プノンペン政権）を作る。</p>
+<p class="text-xs text-slate-600 leading-relaxed">1979年2月：中越戦争</p>
+<p class="text-xs text-slate-600 leading-relaxed">1989年：ベトナム経済が限界を迎え、ベトナム軍がカンボジアから完全撤退。</p>
+<p class="text-xs text-slate-600 leading-relaxed">1991年：カンボジア和平パリ協定</p>
+    <p class="text-xs text-slate-600 leading-relaxed">1986年：第6回党大会においてドイモイ（刷新）政策が打ち出される</p>
+</p>
+</div>
+
+<div>
+<div class="space-y-6 border-t border-slate-100 pt-6">
+   
+</div>
+</div>
+
+</div>
+</div>
+</div>
+<p class="text-left text-Bahrain-red text-sm mt-6 font-bold max-w-2xl mx-auto">ベトナム戦争史まとめ</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto"><span class="text-left text-slate-600 text-sm mt-6 font-bold max-w-2xl mx-auto">呉朝：</span>第1次白藤江の戦い（938年）：対 南漢（中国五代十国時代に広東省・広西チワン族自治区・ベトナム北部を支配した地方政権。）　呉権（ゴ・クエン）が川底に鉄の杭を仕掛け、引き潮を利用して中国（南漢）の水軍を壊滅させた。これにより1000年に及ぶ中国支配から独立を果たす。</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto"><span class="text-left text-slate-600 text-sm mt-6 font-bold max-w-2xl mx-auto">前黎朝：</span>第2次白藤江の戦い（981年）：対 北宋　黎桓（レ・ホアン）率いる軍が、再び白藤江で中国（北宋）の侵略軍を撃退した。</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto"><span class="text-left text-slate-600 text-sm mt-6 font-bold max-w-2xl mx-auto">陳朝：</span>第3次白藤江の戦い（1288年）：対 元　名将・陳興道（チャン・フン・ダオ）が過去の杭打ち戦術を応用し、最強のモンゴル帝国（元）の大軍に大勝利を収めた。</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto"><span class="text-left text-slate-600 text-sm mt-6 font-bold max-w-2xl mx-auto">西山朝（タイソン）：</span>ドンダーの戦い（ハノイ（昇龍）の戦い）（1789年）：対 清・後黎朝連合軍西山朝の初代皇帝・光中帝（阮恵）が、中国（清）と旧勢力の連合軍を激しい奇襲で破った。</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto"><span class="text-left text-slate-600 text-sm mt-6 font-bold max-w-2xl mx-auto">近現代（フランス・アメリカ・中国との戦い）</span></p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto"><span class="text-left text-slate-600 text-sm mt-6 font-bold max-w-2xl mx-auto"></span>1946年：インドシナ戦争（フランスからの独立戦争が勃発）</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto"><span class="text-left text-slate-600 text-sm mt-6 font-bold max-w-2xl mx-auto"></span>1954年：ディエンビエンフーの戦い（フランス軍に大勝し撤退させる）</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto"><span class="text-left text-slate-600 text-sm mt-6 font-bold max-w-2xl mx-auto"></span></p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">1954年：ジュネーブ休戦協定（17度線を境界線として南北に分離）</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">1965年：アメリカ軍による北爆開始（ベトナム戦争が本格化）</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">1973年：パリ和平協定（アメリカ軍が全面撤退）</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">1976年：南北統一（国名を「ベトナム社会主義共和国」に改称）</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">1979年：中越戦争（カンボジア問題を巡り、侵攻してきた中国軍を撃退）</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">1991年：カンボジア和平パリ協定</p>
+<!--<div class="max-w-2xl mx-auto text-right">
+    <a class="text-primary font-bold hover:underline inline-flex items-center gap-1" href="Vietnam_h_2.html" target="_blank" rel="noopener noreferrer">More History <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span></a>-->
+</div>
+<p class="text-left text-Bahrain-red text-sm mt-6 font-bold max-w-2xl mx-auto">南進の歴史</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto"><span class="text-left text-slate-600 text-sm mt-6 font-bold max-w-2xl mx-auto">1. 「大越」という名前の歴史</span></p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;実は、李朝や陳朝だけでなく、その後の王朝もずっと同じ場所を首都にして「大越」を名乗り続けました。</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">・李朝（ハノイが首都）：途中で国号を「大越」に変える</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">・陳朝（ハノイが首都）：国号は「大越」のまま</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">・（胡朝：一時的にタインホアへ遷都し「大虞」に変えるが、すぐに滅亡）</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">・黎朝（ハノイが首都）：中国から独立を奪還し、再び「大越」に戻す</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">このように、「ハノイを首都とする、北の正統なベトナム国家」の標準的な名前が「大越」だったのです。</p>
+
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto"><span class="text-left text-slate-600 text-sm mt-6 font-bold max-w-2xl mx-auto">2. 「ベトナム（越南）」という名前はいつできた？</span></p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;私たちがよく知る「ベトナム（越南）」という国号は、ずっと後になって、首都がHue（フエ）に移ってから誕生しました。</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;1802年にフエで阮朝（グエン朝）を開いた嘉隆（ザロン）帝が、それまでの「大越」ではなく、南部も北部もすべて統一した新しい国にふさわしい名前として、中国（清）の皇帝に「越南（ベトナム）」という国号を認めさせました。</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto"><span class="text-left text-slate-600 text-sm mt-6 font-bold max-w-2xl mx-auto">3. 当時の「南側」には別の国があった</span></p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;李朝や陳朝が「大越国」としてハノイ周辺を治めていた時代、現在のベトナムの中部や南部（ダナン、フエ、サイゴンなど）は、大越国ではありませんでした。</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">・中部（フエ・ダナン周辺）：インド文化の影響を受けた「チャンパ王国（占城）」という全く別の国があり、大越国（ハノイ）とは何度も激しい戦争をしていました。</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">・南部（サイゴン周辺）：さらに南は、クメール人（カンボジア）の土地でした。</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto"><span class="text-left text-slate-600 text-sm mt-6 font-bold max-w-2xl mx-auto">ハノイを首都にした時代（李朝・陳朝・黎朝）</span>➔ 場所がベトナム「北部」だけだったので、国名は「大越国」。</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto"><span class="text-left text-slate-600 text-sm mt-6 font-bold max-w-2xl mx-auto">フエを首都にした時代（阮朝）</span>➔ 「南進」が完了し、現在の南北に長い国土になったので、国名が「ベトナム（越南）」になった。</p>
+
+
+
+<p class="text-left text-Bahrain-red text-sm mt-6 font-bold max-w-2xl mx-auto">ベトナム史最大の罠は、「みんな阮（グエン）さん問題」</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;<span class="text-left text-slate-600 text-sm mt-6 font-bold max-w-2xl mx-auto"></span>ベトナム人の約4割が「阮（グエン）」姓なので、歴史上にも違うグループのグエンさんが大量に登場し、頭をごちゃごちゃにさせます。</p>
+<div class="max-w-2xl mx-auto space-y-4 mt-4 text-slate-700">
+    <div class="p-4 border-2 border-dotted border-lebanon-gold bg-lebanon-gold/30 rounded-lg text-sm">
+        <span class="font-bold">①【南の王様】広南阮氏（こうなんグエンし）</span><br>
+        正体：16世紀〜18世紀に、ベトナムの南半分（フエ周辺）を支配していた大名・王族グループ。彼らはまだ国家の「中心」ではなく、あくまで「地方の一大勢力（地方政権）」に過ぎませんでした。<br>
+        特徴：後にできる「阮朝」の直接のご先祖様です。「北の正統」であるハノイ（黎朝）に対抗し、フエを拠点にどんどん南へ領土を広げ（南進）、サイゴンを開拓しました。
+    </div>
+
+    <div class="p-4 border-2 border-dotted border-lebanon-gold bg-lebanon-gold/30 rounded-lg text-sm">
+        <span class="font-bold">②【農民の味方】西山阮氏（タイソングエンし）</span><br>
+        正体：西山朝（タイソン朝）を起こした3兄弟（阮岳・阮侶・阮恵）。<br>
+        特徴：実はこの3兄弟、もともとの名字は「胡（ホー）」でした。しかし、当時人気があった①の「広南阮氏」のふりをして民衆の支持を集めるために、わざと「阮（グエン）」に名字を変えて反乱を起こした偽物のグエンさんです。①の広南阮氏を一度全滅寸前まで追い詰めました。<br>
+    <span class="font-bold text-t-green">ハノイを攻めた英雄グエン・フエ(光中帝) ➔ 西山朝のグエン</span>
+    </div>
+
+    <div class="p-4 border-2 border-dotted border-lebanon-gold bg-lebanon-gold/30 rounded-lg text-sm">
+        <span class="font-bold">③【最後の皇帝】阮朝（グエンちょう）</span><br>
+        正体：1802年にベトナムを統一した、初代の嘉隆（ザロン）帝から始まる天皇家。<br>
+        特徴：②の西山兄弟に一族を殺され、サイゴンへ逃げていた①の生き残り（阮福映 / グエン・フック・アイン）が、執念の大逆転で②を滅ぼして建てた王朝です。<br>
+   <span class="font-bold text-t-green">フエに首都を置いたザロン(嘉隆)帝 ➔ 阮朝のグエン</span>
+    </div>
+</div>
+<p class="text-left text-Bahrain-red text-sm mt-6 font-bold max-w-2xl mx-auto">ベトナム史におけるチャンパの重要性</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto"><span class="text-left text-slate-600 text-sm mt-6 font-bold max-w-2xl mx-auto">1. 【言語も宗教も違う】全く別の民族の国だった</span></p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;ベトナム人（京族）は中国の影響を強く受け、漢字や仏教、儒教を信仰していました。しかし、チャンパ王国の国民（チャム族）はインドやイスラム文化の影響を強く受けていました。言葉も全く違い、宗教もヒンドゥー教やイスラム教を信仰していました。つまり、歴史の大部分において「お隣にある別の外国」だったのです。</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto"><span class="text-left text-slate-600 text-sm mt-6 font-bold max-w-2xl mx-auto">2. 【1000年の宿敵】ハノイ vs 中部の戦い</span></p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;李朝や陳朝、黎朝がハノイ（大越国）を首都にしていた時代、チャンパはHue（フエ）やDa Nang（ダナン）からさらに南の中部沿岸を拠点にしていました。両国は1000年以上にわたり、領土をめぐって激しい戦争を繰り返しました。</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">・チャンパの軍がハノイ（昇龍）まで攻め込んできて、王宮を焼き払ったこともあります。</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">・逆に、陳朝の時代には政略結婚の結納品として、チャンパからフエやダナンの土地を譲り受けた（これがベトナムの領土になった）こともありました。</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto"><span class="text-left text-slate-600 text-sm mt-6 font-bold max-w-2xl mx-auto">3. 【南進の犠牲】阮氏のご先祖によって滅亡へ</span></p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;15世紀の黎朝の時代にチャンパは決定的な大打撃を受け、領土の大部分を失います。そして、さきほど登場した「フエを拠点にした阮氏のご先祖様（広南阮氏）」が南進を強烈に推し進めたことで、チャンパはどんどん南の隅へと追い詰められ、<span class="text-left text-Bahrain-red text-sm mt-6 max-w-2xl mx-auto">19世紀の阮朝（ザロン帝の時代）に完全にベトナムへと併合され、国として消滅</span>しました。</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;チャンパを追い詰め「サイゴン」の基礎を作ったのは、西山朝に殺される前の「本家グエン氏」です。そして、奇跡的に1人だけ生き残った王族が、後に西山朝へ復讐を果たして「サイゴン」を大都市へ発展させました。</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto"><span class="text-left text-slate-600 text-sm mt-6 font-bold max-w-2xl mx-auto">4. チャンパには「2段階の滅亡」があった？</span></p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;「1471年に黎聖宗（レ・タイン・トン）がチャンパを滅ぼした」と書かれることが多いため、疑問に思われるのは当然です。1471年に滅びたのはチャンパの「北半分の最大勢力（首都ヴィジャヤ）」であり、国自体は南部に逃れて「2回目の復活（パーンドゥランガ王朝）」を果たし、細々と存続していました。</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">【第1段階】1471年：黎聖宗による「事実上の壊滅」</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">【第2段階】17〜19世紀：本家グエン氏による「完全な消滅」</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">1693年：本家グエン氏の軍勢が南部チャンパを攻め、王族を捕らえて直轄領（ベトナム領）にします。ここで「国家としての独立」は完全に失われました。</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">順城鎮（自治領）の時代：しかしグエン氏は、反発を抑えるためにチャンパの王族に「順城鎮（トゥアンタインチャン）」という名の自治領を与え、形だけの「チャム人の王」を残しました。</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">1832年：西山朝への復讐を果たしてベトナムを再統一したグエン朝の第2代皇帝（明命帝）が、この自治領も完全に廃止して、チャム族の国は名実ともに完全滅亡しました。</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">本家グエン氏がその南のチャンパを飲み込み、そのままの勢いでさらに南のカンボジア領（のちのサイゴン）まで領土を広げた。</p>
+
+<p class="text-left text-Bahrain-red text-sm mt-6 font-bold max-w-2xl mx-auto">フランスから独立するためには、共産主義の力を借りるしかなかった</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;建国の父であるホー・チ・ミンにとって、一番の目的は「共産主義の理想社会を作ること」ではなく、あくまで「フランスの植民地支配からベトナムを独立させること」でした。</p>
+<p class="text-left text-slate-600 text-sm mt-6 font-bold max-w-2xl mx-auto">1. 欧米の「ウソ」に絶望したホー・チ・ミン</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;若い頃のホー・チ・ミンは、フランスなどの欧米諸国に対して「フランスは『自由・平等・友愛』を掲げているのだから、直談判すればベトナムの独立を認めてくれるかもしれない」と期待していました。1919年の第一次世界大戦の終わり際、彼はフランスのパリで「ベトナムを独立させてほしい」という要望書を提出します。しかし、アメリカやフランスなどの大国は、アジアの小さな植民地のことなど完全に無視しました。これで彼は「欧米の資本主義国（帝国主義国）は、口では綺麗事を言っても、自分たちの植民地を手放す気は一切ないんだ」と深く絶望します。</p>
+<p class="text-left text-slate-600 text-sm mt-6 font-bold max-w-2xl mx-auto">2. レーニン（ソ連）の言葉に救われる</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;そんな時、ホー・チ・ミンはロシア革命を成功させたレーニンの論文を読みます。そこにはこう書かれていました。「世界中の植民地で苦しんでいる民族は、みんな立ち上がって独立すべきだ。ソ連はそれを全面的にバックアップする」
+当時、世界中の大国がベトナムを無視する中で、「植民地の味方をしてくれる」とハッキリ言ってくれたのは、共産主義（ソ連）だけでした。これに感動したホー・チ・ミンは、「ベトナムを救ってくれるのはこれだ！」と確信し、共産主義を学び、仲間を集めていくことになります。</p>
+<p class="text-left text-slate-600 text-sm mt-6 font-bold max-w-2xl mx-auto">3. 農民の圧倒的な支持を集めた「平等」の思想</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;ベトナムの人口のほとんどは、フランスや地主に土地を奪われ、貧しい生活を強いられていた農民でした。共産主義の「地主から土地を没収して、みんなで平等に分け合おう」という教えは、地獄のような植民地支配に苦しんでいた農民たちにめちゃくちゃ刺さりました。</p>
+<p class="text-left text-slate-600 text-sm mt-6 font-bold max-w-2xl mx-auto">4.「共産主義の理論（格差のない社会）」と「フランスを追い出す（民族の独立）」</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;フランスは、ベトナムを支配している「資本主義・帝国主義」の国です。ソ連（共産主義）は、「資本主義や帝国主義の国々をぶっつぶせ！」と言って生まれた国です。つまり、北ベトナムにとってソ連は「自分たちを苦しめているフランスの共通の敵」でした。「敵の敵は味方」という、とてもシンプルな利害関係で結びついたのです。</p>
+
+<p class="text-left text-Bahrain-red text-sm mt-6 font-bold max-w-2xl mx-auto">現在のベトナムではフランス語はほとんど通じません（むしろ若者は英語を話します）。</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto">&nbsp;&nbsp;マレーシア（元イギリス領）やフィリピン（元アメリカ領）では宗主国の言葉が今も深く根付いているのに対して、なぜベトナムは「フランス語が通じる国」にならなかったのか？
+そこには、フランスの過酷な支配と、ベトナム人の強烈なプライドがぶつかり合ったドロドロの結末がありました。</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto"><span class="text-left text-slate-600 text-sm mt-6 font-bold max-w-2xl mx-auto">1. フランスは「一部のエリート」しか教育しなかった</span></p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;マレーシアなどのイギリス植民地では、行政をスムーズにするために現地の人々へ広く英語を教育しました。しかし、フランスのやり方は違いました。ベトナム人を「文字が読めない従順な労働者」のままにしておくため、一般のベトナム人には教育をほぼ与えず、ごく一部の親仏派エリート（阮朝の貴族など）にしかフランス語を教えなかったのです。そのため、植民地時代であっても、フランス語を話せたベトナム人は全体の数パーセントに過ぎませんでした。</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto"><span class="text-left text-slate-600 text-sm mt-6 font-bold max-w-2xl mx-auto">2. ベトナム人の大逆転</span></p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;フランス語ではなく「クオック・グー（国語）」を武器にしたフランスは、ベトナム人が漢字や独自の文字「チュノム」を使うのをやめさせ、ベトナム語をアルファベットで表記する「クオック・グー（国語）」という文字を広めました（ベトナム人の団結を防ぐためです）。しかし、ベトナムの独立運動家たち（ホー・チ・ミンなど）はこれを逆手に取りました。「このアルファベット表記の文字、覚えるのがめちゃくちゃ簡単じゃないか！」と気づき、農民たちに爆速でこの文字を教え込み、フランスに抵抗するための新聞やビラを配って民族の団結力を一気に高めたのです。自分たちの言葉（ベトナム語）が文字として完成してしまったため、フランス語が割り込む隙がなくなりました。</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto"><span class="text-left text-slate-600 text-sm mt-6 font-bold max-w-2xl mx-auto">3. フランスを「戦争でブチのめして」追い出した</span></p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;これが最大の理由です。マレーシアなどは、戦後に話し合い（平和的）に独立を勝ち取ったため、イギリスとの関係が良く、英語もそのまま残りました。しかし、ベトナムは違いました。フランスが戦後も「まだ植民地として支配させろ」としがみついてきたため、激しい戦争（インドシナ戦争）になりました。そして1954年、「ディエンビエンフーの戦い」という伝説的な大決戦で、ベトナム軍はフランス軍を完膚なきまでに叩きのめして力づくで追い出したのです。</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;大嫌いな侵略者を血みどろの戦争で叩き出したベトナム人にとって、フランス語は「屈辱の象徴」でしかありませんでした。そのため、独立後は学校教育からフランス語を完全に排除しました。</p>
+</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto"><span class="text-left text-slate-600 text-sm mt-6 font-bold max-w-2xl mx-auto">4. 現代に残るフランスの爪痕</span></p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;フランス語は残らなかったベトナムですが、文化の裏側には今もフランスがベトナムを侵略した跡が残っています。</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto"><span class="text-Af-red font-bold">バインミー（ベトナム風サンドイッチ）：</span>フランス人が持ち込んだ「バゲット（フランスパン）」に、レバーペースト、パテ、そしてベトナム独特のなます（大根とニンジンの酢漬け）やパクチーを挟んだ、仏越合体の傑作グルメです。</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto"><span class="text-Af-red font-bold">ベトナムコーヒー：</span>フランス人がコーヒー文化を持ち込みましたが、牛乳が手に入りにくかったため、代わりに日持ちする「練乳（コンデンスミルク）」をドバドバ入れて飲む独自のスタイルが生まれました。</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto"><span class="text-Af-red font-bold">街並み：</span>ハノイの総督府、フエの教会、サイゴン（ホーチミン）の壮麗な中央郵便局など、フランス風の美しい洋館が今も観光名所になっています。フランスはベトナムを言葉で染めることはできませんでしたが、ベトナム人はフランスの文化を「美味しいところだけ奪い取って自分たちのものにした」と言えます。</p>
+
+<p class="text-left text-Bahrain-red text-sm mt-6 font-bold max-w-2xl mx-auto">「ハノイ」と「ホーチミン市」</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto"><span class="text-left text-slate-600 text-sm mt-6 font-bold max-w-2xl mx-auto">ホー・チ・ミン: </span>ベトナムの建国の父である「ホー・チ・ミン（胡志明）主席」という偉大なリーダーの名前そのものです。</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto"><span class="text-left text-slate-600 text-sm mt-6 font-bold max-w-2xl mx-auto"> 区別の必要性: </span>単に「ホーチミン」とだけ言うと、歴史上の「人（ホーチミン氏）」を指しているのか、「場所（街）」を指しているのかが分かりにくくなります。そのため、都市を指すときは明確に「ホーチミン市」と言い分ける習慣があります。</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto">&nbsp;&nbsp;ベトナム戦争に勝利した北ベトナム軍が、南の首都だったサイゴンを占領した際、戦勝記念とホーチミン主席への敬意を込めて「サイゴン市」から「ホーチミン市」へと改名しました。新しく付けられた人工的な都市名であるため、定着させる意味でも「市」までセットで公式に記述されることが多くなりました。</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto">&nbsp;&nbsp;HCMCとは、「ホーチミン市（Ho Chi Minh City）」の頭文字をとった略称です。</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto">&nbsp;&nbsp;ハノイは純粋な「地名」ですが、ホーチミン市は「人の名前」をそのまま都市名にしたため、表記の仕方に違いが生まれています。</p>
+
+
+</div>
+<div><p class="text-on-surface-variant mb-6"></p></div>
+<div>
+<a href="Vietnam_h.html" target="_blank" rel="noopener noreferrer" class="text-primary font-button flex items-center gap-2 group mx-auto w-fit">
+    Learn History 
+    <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</section>
+</main>
+<!-- END: HistorySection -->
+<!-- BEGIN: Footer -->
+<footer class="bg-Reddish-brown text-white py-20 px-6 border-t border-white/5 relative z-10">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="col-span-1 md:col-span-2">
+<div class="flex items-center gap-3 mb-6">
+<div class="text-emerald-500">
+<svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="w3.org">
+  <!-- 背景：洗練された深いベトナム・レッド -->
+  <rect width="24" height="24" rx="4" fill="#B31F17"/>
+
+  <!-- 左から右へ：世界遺産「ハロン湾」の奇岩をイメージしたモダンなシルエット -->
+  <path d="M2 20L4 13L7 16L11 11L14 15L17 9L20 14L22 20H2Z" fill="#7A120D" opacity="0.6"/>
+
+  <!-- 中央上部：夜空や未来を照らす、シャープで現代的なベトナムの金星 -->
+  <path d="M12 3L13.2 6.8H17.2L14 9.2L15.2 13L12 10.6L8.8 13L10 9.2L6.8 6.8H10.8L12 3Z" fill="#FFD700"/>
+
+  <!-- 中央右：伝統衣装「アオザイ」のしなやかな風に揺れる裾のライン -->
+  <path d="M15 8C17 11 19 13 21 19" stroke="#FFFF00" stroke-width="1.5" stroke-linecap="round" opacity="0.8"/>
+
+  <!-- 下部：ベトナムコーヒーの濃厚なドリップや、メコン川のゆったりした流れを表現したレイヤー -->
+  <path d="M2 20C6 18 10 22 14 19C18 16 20 21 22 20" stroke="#FFD700" stroke-width="1" opacity="0.4"/>
+</svg>
+</div>
+<span class="text-white font-serif text-lg tracking-wider font-semibold">Vietnam Discovery</span>
+</div>
+<p class="text-white text-sm max-w-sm mb-8">
+            Curating journeys across Vietnam’s vibrant cities, ancient towns, and timeless landscapes, where culture, history, and daily life quietly unfold.</p>
+</div>
+<div>
+<h6 class="text-k-yellow font-serif text-sm mb-6 uppercase tracking-widest">Navigation</h6>
+<ul class="space-y-4 text-sm text-white/60">
+<li><a class="hover:text-white transition-colors" href="#Landmarks">Landmarks</a></li>
+<li><a class="hover:text-white transition-colors" href="#cuisine">Cuisine</a></li>
+<li><a class="hover:text-white transition-colors" href="#history">History</a></li>
+</ul>
+</div>
+<div>
+<h6 class="text-k-yellow font-serif text-sm mb-6 uppercase tracking-widest">Connect</h6>
+<ul class="space-y-4 text-sm text-white/60">
+<li><a class="hover:text-white transition-colors" href="#">Instagram</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Twitter</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Contact Us</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 mt-10 mb-4"><p class="text-xs text-white">© 2026 Vietnam Discovery. All rights reserved.</p>
+<div class="flex gap-8 text-xs text-white/80">
+<a href="#">Privacy Policy</a>
+<a href="#">Terms of Service</a>
+</div></div>
+<button onclick="window.close(); setTimeout(() => { window.location.href = 'https://google.com'; }, 100);" 
+          class="flex items-center gap-1 px-3 py-0.5 ml-auto md:ml-auto bg-brand-emerald hover:opacity-80 text-white font-medium rounded-full transition-all shadow-sm">
+    <span class="material-symbols-outlined text-xs text-white/80">logout</span>
+    <span class="tracking-wider text-xs text-white/80">QUIT</span>
+  </button>
+</footer>
+<!-- END: Footer -->
+
+<style data-purpose="animations">
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+<script>
+    document.getElementById('searchInput').addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+            const searchTerm = this.value.trim();
+            if (searchTerm) {
+                const wikipediaUrl = `https://ja.wikipedia.org/wiki/特別:検索?search=${encodeURIComponent(searchTerm)}`;
+                window.open(wikipediaUrl, '_blank');
+            }
+        }
+    });
+</script>
+</body></html>

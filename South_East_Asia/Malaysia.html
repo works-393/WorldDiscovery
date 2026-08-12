@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Explore the ancient landmarks, vibrant cities, and rich history of Indonesia." name="description"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-container": "#4a2f27",
+                        "secondary-container": "#fc7127",
+                        "surface-container-high": "#e7e8e9",
+                        "error": "#ba1a1a",
+                        "secondary": "#a23f00",
+                        "inverse-on-surface": "#f0f1f2",
+                        "on-primary-container": "#7ba894",
+                        "on-secondary-fixed": "#351000",
+                        "tertiary": "#321a13",
+                        "primary-fixed-dim": "#a2d1bb",
+                        "on-surface": "#191c1d",
+                        "on-primary-fixed": "#002116",
+                        "on-surface-variant": "#414944",
+                        "surface-dim": "#d9dadb",
+                        "surface-container": "#edeeef",
+                        "background": "#f8f9fa",
+                        "inverse-surface": "#2e3132",
+                        "on-secondary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "outline": "#717974",
+                        "error-container": "#ffdad6",
+                        "surface-tint": "#3b6756",
+                        "on-secondary-container": "#5c2000",
+                        "on-error": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "secondary-fixed-dim": "#ffb595",
+                        "tertiary-fixed": "#ffdbd0",
+                        "on-tertiary-container": "#bc968b",
+                        "surface": "#f8f9fa",
+                        "on-background": "#191c1d",
+                        "surface-container-lowest": "#ffffff",
+                        "primary": "#00261a",
+                        "outline-variant": "#c0c8c3",
+                        "on-tertiary": "#ffffff",
+                        "surface-variant": "#e1e3e4",
+                        "primary-fixed": "#beedd7",
+                        "surface-bright": "#f8f9fa",
+                        "inverse-primary": "#a2d1bb",
+                        "surface-container-low": "#f3f4f5",
+                        "on-tertiary-fixed": "#2c160e",
+                        "primary-container": "#0f3d2e",
+                        "tertiary-fixed-dim": "#e7bdb1",
+                        "on-primary-fixed-variant": "#234f3f",
+                        "secondary-fixed": "#ffdbcd",
+                        "on-secondary-fixed-variant": "#7c2e00",
+                        "on-tertiary-fixed-variant": "#5d4037",
+                        "surface-container-highest": "#e1e3e4",
+                         "lebanon-dark": "#102219",
+                         "lebanon-green": "#2D5A27",
+            "lebanon-gold": "#C5A059",
+            "primary": "#144bb8",
+            "e-green-dark": "#006400",
+            "oman-blue": "#003153",
+            "B-purple-dark": "#632276",
+            "k-yellow": "#ffcc00",
+            "k-red": "#cc3333",
+            "t-green-light": "#99cc99",
+            "Af-navy": "#0B1F3A"
+               },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                       "unit": "8px",
+                        "section-gap": "60px",
+                        "gutter": "24px",
+                        "container-max": "1280px",
+                        "margin-mobile": "16px"
+                    },
+                    "fontFamily": {
+                        "h2": ["Newsreader"],
+                    "h3": ["Newsreader"],
+                    "h1": ["Newsreader"],
+                        "body-md": ["Be Vietnam Pro"],
+                        "headline-xl": ["Noto Serif"],
+                        "button": ["Be Vietnam Pro"],
+                        "label-md": ["Be Vietnam Pro"],
+                        "body-lg": ["Be Vietnam Pro"],
+                        "headline-md": ["Noto Serif"],
+                        "headline-lg": ["Noto Serif"],
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-xl": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "button": ["16px", {"lineHeight": "1", "letterSpacing": "0.02em", "fontWeight": "600"}],
+                        "label-md": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "headline-lg": ["48px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                        "h2": ["2rem", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "h3": ["2rem", {"lineHeight": "1.3", "fontWeight": "500"}],
+                    "h1": ["2.5rem", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                    "body-md": ["1rem", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-caps": ["0.75rem", {"lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                    "body-lg": ["1.125rem", {"lineHeight": "1.7", "fontWeight": "400"}]
+                    }
+                
+                },
+            },
+        }
+    </script>
+<style data-purpose="custom-styling">
+    .bg-pattern {
+    background-image: url(img/Malaysia_bg.jpg);
+    opacity: 0.15
+    }
+</style>
+</head>
+<body class="bg-emerald-50 font-body-md text-on-surface">
+<div class="fixed inset-0 bg-pattern pointer-events-none z-0"></div>
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-white/90 dark:bg-emerald-950/90 backdrop-blur-md shadow-sm border-b border-emerald-900/10 dark:border-emerald-100/10">
+<div class="relative max-w-7xl mx-auto px-6 py-4 flex justify-between items-center font-serif antialiased">
+<a class="flex items-center gap-3 text-2xl font-bold tracking-tight text-emerald-900 dark:text-emerald-100" href="#">
+<svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <!-- 背景（ロイヤルブルー：マレーシア国民の結束） -->
+      <rect width="24" height="24" rx="4" fill="#003366"/>
+      
+      <!-- 赤白のストライプ（14の州と連邦直轄領） -->
+      <rect x="0" y="16" width="24" height="2" fill="#FFFFFF" opacity="0.9"/>
+      <rect x="0" y="18" width="24" height="2" fill="#CC0000" opacity="0.9"/>
+      <rect x="0" y="20" width="24" height="2" fill="#FFFFFF" opacity="0.9"/>
+      <rect x="0" y="22" width="24" height="2" fill="#CC0000" opacity="0.9"/>
+
+      <!-- 熱帯の山々・ジャングル（キナバル山などのイメージ） -->
+      <path d="M2 18L7 10L12 18Z" fill="#006400" opacity="0.7"/>
+      <path d="M8 18L14 8L20 18Z" fill="#228B22" opacity="0.6"/>
+
+      <!-- 三日月と14角の星（イスラム教と14の州の象徴：イエロー） -->
+      <path d="M9 5.5C9 7.15685 7.65685 8.5 6 8.5C5 8.5 4.1 8.0 3.5 7.3C4.3 7.8 5.3 8.0 6.3 7.8C7.5 7.5 8.3 6.5 8.5 5.3C8.6 4.8 8.5 4.4 8.4 4.0C8.8 4.4 9 4.9 9 5.5Z" fill="#FFCC00"/>
+      <!-- 簡易化した星 -->
+      <path d="M12 5.5L13.2 6.2L13.5 7.5L14.3 6.5L15.5 6.5L14.7 5.5L15.5 4.5L14.3 4.5L13.5 3.5L13.2 4.8L12 5.5Z" fill="#FFCC00"/>
+
+      <!-- ツインタワーのシルエット（近代化の象徴） -->
+      <rect x="16" y="10" width="1.5" height="8" fill="#E5E4E2" opacity="0.9"/>
+      <rect x="19" y="10" width="1.5" height="8" fill="#E5E4E2" opacity="0.9"/>
+      <rect x="16.5" y="13" width="3.5" height="1" fill="#E5E4E2" opacity="0.9"/>
+</svg>
+<span>Malaysia Discovery</span>
+</a>
+ <!--<div id="navMenu" class="hidden md:flex items-center gap-6 md:gap-9 
+    absolute top-full left-0 w-full bg-white/90 dark:bg-emerald-950/90 backdrop-blur-md flex-col p-6 shadow-lg z-50
+    md:absolute md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 md:w-auto md:flex-row md:p-0 md:shadow-none">-->
+ <div id="navMenu" class="hidden md:flex absolute top-full left-0 w-full bg-white/90 dark:bg-emerald-950/90 backdrop-blur-md shadow-lg z-50
+    flex flex-col items-center justify-center p-6 gap-6
+    md:flex-row md:absolute md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 md:w-auto md:p-0 md:shadow-none md:gap-9 md:bg-transparent">
+ 
+ 
+    <a class="text-emerald-700/70 dark:text-emerald-200/70 hover:text-emerald-900 dark:hover:text-emerald-50 transition-colors" href="#Peninsular">Peninsular</a>
+      <a class="text-emerald-700/70 dark:text-emerald-200/70 hover:text-emerald-900 dark:hover:text-emerald-50 transition-colors" href="#Borneo">Borneo Island</a>
+      <a class="text-emerald-700/70 dark:text-emerald-200/70 hover:text-emerald-900 dark:hover:text-emerald-50 transition-colors" href="#cuisine">Cuisine</a>
+      <a class="text-emerald-700/70 dark:text-emerald-200/70 hover:text-emerald-900 dark:hover:text-emerald-50 transition-colors" href="#history">History</a>
+</div>
+<!-- Search Bar -->
+<div class="relative hidden lg:block" data-purpose="search-container">
+<span class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+<svg class="w-4 h-4 text-B-purple-dark/50" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</span>
+<input id="searchInput" class="bg-white/5 border-white/10 text-gray pl-10 pr-4 py-2 rounded-lg focus:ring-B-purple-dark focus:border-B-purple-dark w-64 text-sm" placeholder="Wikipedia検索" type="text"/>
+</div>
+
+<!-- Mobile Menu Button (Icon only) -->
+<!-- （スマホ時のみ表示、PC時は自動で消えます） -->
+    <button id="menuButton" class="md:hidden flex items-center justify-center text-black hover:text-white/80 transition-colors">
+    <!-- 通常時の三本線 -->
+    <span id="menuIconOpen" class="material-symbols-outlined text-3xl block">menu</span>
+    <!-- 開いたときの✕印（最初は hidden で隠す） -->
+    <span id="menuIconClose" class="material-symbols-outlined text-3xl hidden">close</span>
+</button>
+</div>
+</header>
+<main class="relative">
+<!-- Split-Screen Hero Section -->
+<section class="flex flex-col md:flex-row h-screen pt-16 overflow-hidden">
+<!-- Peninsular Malaysia Side -->
+<div class="group relative flex-1 overflow-hidden">
+<div class="absolute inset-0 bg-primary-container/40 z-10"></div>
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A cinematic wide-angle shot of the Petronas Twin Towers in Kuala Lumpur during golden hour. The steel and glass towers reflect the warm orange glow of the sunset against a clear blue sky. The surrounding urban landscape is crisp and precise, showcasing modern Malaysian architecture with a sophisticated, professional travel aesthetic. High-contrast lighting highlights the intricate metallic textures of the structure." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCedK4-kR89vXsaPdbs8NXeQXr3x06mgcIochFHyIgCjhJLtXQhwIurnlfPp3AsZDzK5pgkJ8bbSn5QzuwtczF6l0JJJhqOxbh510tsYTQpVCRmM0P56Ez-0xwOKc1Cvxd7oCTD_WEmcPVv4pfJKh516lD3XUgNxKBH2hfCKdjkm9-yPEVT_AVlvqZaWH0KNvCc9ouiNiyfVhDIDR2umBPb3jsX4rG28My0JTeaEv9WFEypd172wIw6cdsJ0ak0aElYrNns7Hm4f4E"/>
+<div class="absolute inset-0 z-20 flex flex-col justify-end p-margin-desktop md:p-16 bg-gradient-to-t from-primary-container/90 to-transparent">
+<span class="font-label-md text-secondary-container mb-2 uppercase tracking-[0.2em]">West Malaysia</span>
+<h2 class="font-headline-xl text-white mb-4">Peninsular Malaysia</h2>
+<p class="font-body-lg text-on-primary-container max-w-md mb-8">Ancient Traditions &amp; Urban Brilliance. Journey from the neon-lit skyscrapers of Kuala Lumpur to the heritage streets of Penang.</p>
+<div class="flex">
+<a href="#Peninsular" class="inline-block">
+    <button class="bg-secondary text-on-secondary px-8 py-4 rounded-lg font-button flex items-center gap-3 hover:shadow-xl transition-all">
+        Explore Peninsular
+        <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+    </button>
+</a>
+</div>
+</div>
+</div>
+<!-- Borneo Island Side -->
+<div class="group relative flex-1 overflow-hidden">
+<div class="absolute inset-0 bg-primary-container/40 z-10"></div>
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A breathtaking view of Mount Kinabalu rising through a blanket of soft morning clouds in Borneo. The lush tropical rainforest in the foreground is rendered in deep shades of emerald and forest green, catching the first rays of sunlight. The mood is ethereal and wild, capturing the raw natural beauty of East Malaysia with a high-fidelity, immersive photographic style that emphasizes organic textures and scale." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOzLu9P_ebtAcfaokmRH2dOWdVn5o9ccMos-8kz87_EVgdhQoMp78DgB_hDf7-Uu25CmPdfBwXYx3VGJ3d8RYhrjmbLDKNL1WhIKejDbZdWhYmB_J-wNQkG9AJp541PPzesp0zKxjrdUm0g7F3CmuXKbPBERBHGlBtvzcpKEMcagRnst1zGBUXcd6OHm_3GajS7nkJ2bplGsxTqj05I95F-9zsBI5rU3yMhzqgNSslUTD2JKhjtS6QcRjeOrc3XgvJ8NPQG0QEtc4"/>
+<div class="absolute inset-0 z-20 flex flex-col justify-end p-margin-desktop md:p-16 bg-gradient-to-t from-primary-container/90 to-transparent">
+<span class="font-label-md text-secondary-container mb-2 uppercase tracking-[0.2em]">East Malaysia</span>
+<h2 class="font-headline-xl text-white mb-4">Borneo Island</h2>
+<p class="font-body-lg text-on-primary-container max-w-md mb-8">Untamed Wilderness &amp; Coastal Charm. Discover the world's oldest rainforests, diverse wildlife, and crystal-clear reef waters.</p>
+<div class="flex">
+<a href="#Borneo" class="inline-block">
+<button class="bg-secondary text-on-secondary px-8 py-4 rounded-lg font-button flex items-center gap-3 hover:shadow-xl transition-all">
+                            Explore Borneo
+                            <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Region Switcher / Context Section -->
+<section class="py-section-gap bg-emerald-50" id="Peninsular">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex flex-col md:flex-row justify-between items-end gap-8 mb-16">
+<div class="max-w-2xl">
+<h3 class="font-headline-lg text-primary mb-4">A Duality of Wonder</h3>
+<p class="font-body-lg text-on-surface-variant">Occupying the Malay Peninsula, Peninsular Malaysia is home to the nation's capital, historic trading ports, diverse cultural heritage, and vibrant cities that reflect centuries of interaction between Asia's great civilizations.</p>
+</div>
+<!-- Segmented Control Switcher -->
+<div class="relative z-10 bg-surface-container-highest p-1.5 rounded-full flex items-center shadow-inner">
+<button class="px-8 py-3 rounded-full bg-secondary-container text-on-secondary font-button shadow-md">Peninsular</button>
+<a href="#Borneo">
+    <button class="px-8 py-3 rounded-full text-on-surface-variant font-button hover:bg-surface-variant transition-colors">
+        Borneo
+    </button>
+</a>
+</div>
+</div>
+<!-- Peninsular-->
+<section class="scroll-mt-20 pt-4 pb-8 px-6 relative">
+    <div class="max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
+           
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="flex flex-col">
+                <div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+                    <img alt="Taman Negara" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmlLmlIYTSpaF9yTJYPoPAaTchThfi1wcvzy5Xy3DSZ3UOvMOADWHn0WdX33HXqAwOwXk3Fd6sndovVo4D27tP789kXWMn6naVnbsyFjEGLKbeLJ2aKm2166lqMfgkswmTQ4Gf7vk2z9ECBEvFlg2gsR0DODueIVrEV_ef0hc_vlsUZ0gmYcDNPyHRZPLY4CnvwilDn_ZPS1qJDFdH6ZDPVwCygx4t4RuUv0uA5XwHIIYCuzcpqscq2wdenwd_YwpIn9a_trDoAAY"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 p-4"><h4 class="text-lg font-serif text-white">Taman Negara</h4></div>
+                </div>
+                <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4"><strong class="block mb-1">Natural Heritage</strong>Venture into one of the world's oldest tropical rainforests, estimated to be over 130 million years old. This emerald sanctuary hosts a vast ecosystem where giant dipterocarps tower over winding river systems and hidden wildlife.</p>
+            </div>
+            <div class="flex flex-col">
+                <div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+                    <img alt="Batu Caves" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHzRR06N9CjhXXRdCdt_uSxerBS-SK8du0sppH0NBjgS9e2BKyQB8PYgk1SgPCs1IYudwnfL649fzb85umej4bv53WFMps_0ZXV138PU2qYnY-Rq0YqwSXvpEMkszcBJqcgkgCWw45TFGe1_cE5lfr5tISCqvSjfUP9sdB0_f9X6s6A1TRIFgv_kqSvx-2CrHO6v-NoAquyFajN7g80T4CinqP-GiW6JmUoU8k_k4t5YmwMmP5YEDVgsX7kl_nkL9N1XBY2G92y_8"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 p-4"><h4 class="text-lg font-serif text-white">Batu Caves</h4></div>
+                </div>
+                <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4"><strong class="block mb-1">Sacred Traditions</strong>Rising 100 meters above the ground, the Batu Caves complex is a series of caves and cave temples in Gombak. The site is characterized by the monumental golden statue of Lord Murugan and the vibrant ascent of 272 rainbow-colored steps that challenge and inspire visitors from around the globe.</p>
+            </div>
+            <div class="flex flex-col">
+                <div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+                    <img alt="Kek Lok Si Temple" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="img/Kek_Lok_Si_Temple.jpg"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 p-4"><h4 class="text-lg font-serif text-white">Kek Lok Si Temple</h4></div>
+                </div>
+                <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4"><strong class="block mb-1">Buddhist Heritage</strong>One of Southeast Asia’s largest Buddhist temples, Kek Lok Si is renowned for its majestic pagoda, towering statue of Guan Yin, and panoramic views over Penang.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- City: Kuala Lumpur (Dynamic Cards) -->
+<section class="max-w-7xl mx-auto px-6 py-16">
+<div class="text-center mb-16">
+<span class="text-secondary font-label-md uppercase mb-4 tracking-widest">Urban Precision</span>
+<h2 class="font-headline-lg text-primary">Kuala Lumpur: The Evolving Skyline</h2>
+<p class="text-body-lg text-on-surface-variant max-w-2xl mx-auto mt-4">A multicultural capital where sleek skyscrapers look down upon historic colonial architecture and bustling street markets.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300">
+<div class="h-64 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A vibrant street-level view of Kuala Lumpur's Bukit Bintang district at night. The scene is filled with neon signs, moving city traffic with light trails, and a diverse crowd of people exploring the urban landscape. Modern shopping complexes with glass facades reflect the colorful lights, creating a high-energy, futuristic city vibe. The lighting is crisp and urban, with deep shadows and brilliant highlights that showcase the capital's multicultural energy." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvd5uUjP27Ru8k8_CWQMTD_4lOvaT-LYABxzpzOGqMhkjZStzco9pHF7JEp5In6664fm24llbqSuiA-Gv4nMsp6lTYZ3K0zPdJOUAQNG0kPAAfPYclZ9j-9eRVH7_GGXnAL2UxiYcJkQQEdQsJKeAtVns_LPhfued1A5PUeDisU76eULaVhZck_OZFOssxZ3M1IRkM3m26ndW6wSHnBWSMeOhPSaPI7BfPpvTsWn-SS8sgytXUzZ5ODk0W7axM4eUfZHo-FPeQU64"/>
+</div>
+<div class="p-8">
+<div class="flex items-center gap-2 mb-4">
+<span class="px-3 py-1 bg-primary-fixed text-on-primary-fixed text-xs font-bold rounded-full">Culture</span>
+<span class="px-3 py-1 bg-secondary-fixed text-on-secondary-fixed text-xs font-bold rounded-full">Dining</span>
+</div>
+<h3 class="font-headline-md text-primary mb-3">Bukit Bintang</h3>
+<p class="text-on-surface-variant mb-6">The entertainment and shopping heart of the city, alive with energy 24/7.</p>
+<!--<button class="text-primary font-button flex items-center gap-2 group">
+                            Explore District <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>-->
+</div>
+</div>
+<!-- Card 2 (Hero Spotlight) -->
+<div class="group bg-primary-container text-white rounded-2xl overflow-hidden shadow-lg md:scale-105 z-10">
+<div class="h-64 overflow-hidden relative">
+<img class="w-full h-full object-cover opacity-80 group-hover:scale-110 transition-transform duration-500" data-alt="The majestic Petronas Twin Towers photographed from a low angle, emphasizing their colossal scale against a clear, deep blue twilight sky. The stainless steel and glass exterior is brilliantly illuminated, showcasing the Islamic-inspired geometric patterns. The towers are connected by the iconic skybridge, standing as a testament to Malaysia's technological ambition. The atmosphere is prestigious and awe-inspiring, with a pristine, high-end architectural photography style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsf-12B313m3acG5IS2xi3gBFULHvXyJ2V8AA3qvChI-ZGyWfNoZZWbe4c0dq3oaNb_R39qoETM0Saj9qgxbglzYEW22XJ_kQfOqE1gR2eYJAnveNui7c5uoKwLyGSVvS4vba0H1gVIfHB_Zrhfz8imYQ1P5uqKpYO2Jlhknq16JkzsQ2N4M1akKtnxVYoU3i-kPXzxNBSfrxxxsU3qW3nejg9Dw1I4NcY3Q9BotgNmVu7u1Drr9ynS1dst9qermDzWogy0L77yRM"/>
+<div class="absolute top-4 right-4 bg-orange-500 text-white px-4 py-1 rounded-full text-xs font-bold uppercase">Iconic</div>
+</div>
+<div class="p-8">
+<h3 class="font-headline-md mb-3">Petronas Twin Towers</h3>
+<p class="text-white/80 mb-6">The soaring 88-story steel structures that redefined Malaysia's place on the global map.</p>
+<!--<button class="w-full bg-orange-500 text-white py-3 rounded-lg font-button hover:bg-orange-600 transition-colors">BOOK</button>-->
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300">
+<div class="h-64 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A serene view of the Merdeka Square (Dataran Merdeka) showing the historic Sultan Abdul Samad Building with its iconic clock tower and copper domes. The architecture is a beautiful blend of Moorish and Victorian styles, set against a perfectly manicured green lawn. The sky is bright with soft white clouds, reflecting a clean, light-mode corporate aesthetic. This image bridges the gap between Malaysia's colonial heritage and its clean, modern maintenance." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJqORwvU2oAkzMugrp_l7O696ZOUoy5l4gMlIv-pq2kp4C6XNywckOO7ZezPpIoJDKz059awbo7mfA4xkY2tHEz1Fto-jLGLQ-tOdQI_MKB6VBhpQGI4E7ifIDx9mZSzOVcckTGFMdcB7eaAVBykWDoKP3W4Tyii1cNyBjUJdbopPCBBlb2hpcE7NmlsY8h_O6-vCOgJKsomjG0GjLOoUtAV7_Ozk10iW66HrERycyAu6qbDUj5H3XTrbUTOy9N5Guq9stQRmTf7g"/>
+</div>
+<div class="p-8">
+<div class="flex items-center gap-2 mb-4">
+<span class="px-3 py-1 bg-tertiary-fixed text-on-tertiary-fixed text-xs font-bold rounded-full">History</span>
+</div>
+<h3 class="font-headline-md text-primary mb-3">Merdeka Square</h3>
+<p class="text-on-surface-variant mb-6">Where heritage architecture meets the vast, open grounds of national independence.</p>
+<!--<button class="text-primary font-button flex items-center gap-2 group">
+Learn History <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>-->
+</div>
+</div>
+</div>
+</section>
+<!-- Region Switcher / Context Section -->
+<section class="pt-10 bg-emerald-50" id="Borneo">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex flex-col md:flex-row justify-between items-end gap-8 mb-16">
+<div class="max-w-2xl">
+<h3 class="font-headline-lg text-primary mb-4">The Heart of Wild Adventure</h3>
+<p class="font-body-lg text-on-surface-variant">Malaysia's Borneo region consists of the states of Sabah and Sarawak, offering breathtaking rainforests, diverse wildlife, and rich indigenous cultures.</p>
+</div>
+<!-- Region Switcher -->
+<div class="relative z-10 bg-surface-container-highest p-1.5 rounded-full flex items-center shadow-inner">
+
+<a href="#Peninsular">
+    <button class="px-8 py-3 rounded-full text-on-surface-variant font-button hover:bg-surface-variant transition-colors">
+        Peninsular
+    </button>
+</a>
+<button class="px-6 py-2 rounded-full bg-secondary-container text-white shadow-lg font-button">Borneo Island</button>
+</div>
+</div>
+</section>
+
+
+<!-- Borneo Island Sabah Side -->
+ <section class="scroll-mt-20 pt-4 pb-2 px-6 relative" id="Sabah">
+    <div class="max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
+            <div class="max-w-2xl">
+                <h2 class="text-e-green-dark font-serif text-sm mb-2 uppercase tracking-[0.3em]">Nature and Adventure in Sabah</h2>
+                <div class="flex flex-wrap items-center gap-4">
+                    <!--<h3 class="text-yemen-red text-3xl md:text-2xl font-bold font-serif">Sabah</h3>-->
+              <div class="relative z-10 bg-surface-container-highest p-1.5 rounded-full flex flex-wrap items-center shadow-inner gap-2 max-w-full">
+
+    <p class="px-6 py-2 rounded-full bg-e-green-dark border border-e-green-dark/30 text-white text-base tracking-widest">
+        Sabah
+    </p>
+   <a href="#Sarawak">
+        <button class="px-6 py-2 rounded-full border border-e-green-dark/30 text-e-green-dark text-base tracking-widest hover:bg-e-green-dark/10 hover:text-e-green-dark transition-all duration-300">
+            Sarawak
+        </button>
+    </a>
+
+</div>
+                </div>
+            </div>
+            <p class="text-on-surface-variant max-w-md text-sm">From the towering peak of Mount Kinabalu to the rich marine life of Sipadan and the ancient rainforests of Borneo, Sabah offers some of Southeast Asia’s most remarkable natural wonders and cultural diversity.</p>
+        </div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="flex flex-col">
+                <div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+                    <img alt="Mount Kinabalu" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="img/Mount_Kinabalu.jpg"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 p-4"><h4 class="text-lg font-serif text-white">Mount Kinabalu</h4></div>
+                </div>
+                <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4"><strong class="block mb-1">The spiritual peak visible from the city</strong>Reaching 4,095 meters, Mount Kinabalu is more than just a mountain; it is the spiritual anchor of the Kadazan-Dusun people. Its jagged granite towers provide a constant, awe-inspiring backdrop to modern life in Sabah, serving as a reminder of the raw power that still thrives on this island.</p>
+            </div>
+            <div class="flex flex-col">
+                <div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+                    <img alt="Kinabalu National Park" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="img/Kinabalu_National_Park.jpg"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 p-4"><h4 class="text-lg font-serif text-white">Kinabalu National Park</div>
+                </div>
+                <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4"><strong class="block mb-1">UNESCO HERITAGE</strong>World Heritage site, managed nature with thousands of endemic  species.UNESCO HERITAGE</p>
+            </div>
+            <div class="flex flex-col">
+                <div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+                    <img alt="Sepilok Centre" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEbGPiFHUfnpWTpBh6ZttrwKTsxfQDqm5Eki8K8_lQNNHkMPfh8HTIqJS9QcmtLYi67PbbKtRARNdm56F0DU2diNVhXXXrTnxeeofYfet2_16sMX6dQtjtkE1wOZTRrMNCGY9u86i2xK6FMBj6saN7zcMcbcIrfEg_itRT4VXgsCmQpn2EmISegS8Kk1vY0wO0usDb6-4SWq9ROGX7TP2uNk6WYPLlglNzah89c-QMhaCi9_LEPhvv_Suo9_HT8N3U6rYBV8qvkrs"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 p-4"><h4 class="text-lg font-serif text-white">Sepilok Centre</h4></div>
+                </div>
+                <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4"><strong class="block mb-1">Orangutan Rehabilitation Centre</strong>Established in 1964, the Sepilok Orangutan Rehabilitation Centre rescues and rehabilitates orphaned and injured orangutans, helping them return to the wild while promoting the conservation of Borneo’s endangered wildlife.</p>
+            </div>
+        </div>
+    </div>
+
+    </section>
+
+
+
+<!-- Borneo Island Sabah City -->
+<section class="py-section-gap bg-surface-container-low"> 
+    <div class="max-w-container-max mx-auto px-margin-desktop"> 
+        <!-- ここから mb-16 の div -->
+        <div class="mb-16 text-center max-w-2xl mx-auto"> 
+            <h2 class="font-headline-lg text-primary mb-4">Kota Kinabalu</h2> 
+            <p class="text-body-md text-on-surface-variant">As the capital of Sabah, Kota Kinabalu combines modern city life with stunning coastal scenery, serving as the main gateway to Mount Kinabalu, tropical islands, and the natural wonders of Malaysian Borneo.</p> 
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mt-8"> 
+                <div class="aspect-square overflow-hidden rounded-xl shadow-sm"> <img alt="Kota Kinabalu 1" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500" src="img/Kota_Kinabalu_1.jpg"/> </div> 
+                <div class="aspect-square overflow-hidden rounded-xl shadow-sm"> <img alt="Kota Kinabalu 2" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500" src="img/Kota_Kinabalu_2.jpg"/> </div> 
+                <div class="aspect-square overflow-hidden rounded-xl shadow-sm"> <img alt="Kota Kinabalu 3" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500" src="img/Kota_Kinabalu_3.jpg"/> </div> 
+                <div class="aspect-square overflow-hidden rounded-xl shadow-sm"> <img alt="Kota Kinabalu 4" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500" src="img/Kota_Kinabalu_4.jpg"/> </div> 
+            </div> 
+        </div>
+    </div>  
+</section>
+
+<!-- Borneo Island Sarawak Side -->
+ <section class="scroll-mt-20 pt-4 pb-2 px-6 relative" id="Sarawak">
+    <div class="max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
+            <div class="max-w-2xl">
+                <h2 class="text-e-green-dark font-serif text-sm mb-2 uppercase tracking-[0.3em]">The Cultural Heart of Borneo</h2>
+<div class="flex flex-wrap items-center gap-4">
+<!-- max-w-full を追加 -->
+<div class="relative z-10 bg-surface-container-highest p-1.5 rounded-full flex flex-wrap items-center shadow-inner gap-2 max-w-full">
+   
+    <a href="#Sabah">
+        <!-- px-4 py-2 text-sm md:px-6 md:text-base に変更 -->
+        <button class="px-4 py-2 md:px-6 rounded-full border border-e-green-dark/30 text-e-green-dark text-sm md:text-base tracking-widest hover:bg-e-green-dark/10 hover:text-e-green-dark transition-all duration-300">
+          Sabah  
+        </button>
+    </a>
+    <!--px-4 py-2 text-sm md:px-6 md:text-base に変更 -->
+    <p class="px-4 py-2 md:px-6 rounded-full bg-e-green-dark border border-e-green-dark/30 text-white text-sm md:text-base tracking-widest">
+        Sarawak
+    </p>
+
+</div>
+                </div>
+            </div>
+            <p class="text-on-surface-variant max-w-md text-sm">Home to diverse indigenous communities, vast rainforests, and winding rivers, Sarawak blends rich cultural heritage with breathtaking natural landscapes, offering a unique glimpse into the spirit of Borneo.</p>
+        </div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="flex flex-col">
+                <div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+                    <img alt="Gunung Mulu National Park" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="img/Gunung_Mulu_National_Park.jpg"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 p-4"><h4 class="text-lg font-serif text-white">Gunung Mulu National Park</h4></div>
+                </div>
+                <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4"><strong class="block mb-1">A World Beneath the Rainforest</strong>A UNESCO World Heritage Site, Gunung Mulu National Park is renowned for its vast limestone cave systems, dramatic karst formations, and rich rainforest biodiversity, making it one of Southeast Asia's most extraordinary natural wonders.</p>
+            </div>
+            <div class="flex flex-col">
+                <div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+                    <img alt="Niah National Park" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="img/Niah_National_Park.jpg"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 p-4"><h4 class="text-lg font-serif text-white">Niah National Park</div>
+                </div>
+                <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4"><strong class="block mb-1">New UNESCO World Heritage Site</strong>Home to the newly designated UNESCO World Heritage Site of Niah Caves, the park offers a fascinating journey into humanity's distant past. Discoveries of a 40,000-year-old human skull and prehistoric cave paintings have made this vast cave complex one of Southeast Asia's most significant archaeological treasures.</p>
+            </div>
+            <div class="flex flex-col">
+                <div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+                    <img alt="Kampung Budaya Sarawak" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="img/Kampung_Budaya_Sarawak.jpg"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 p-4"><h4 class="text-lg font-serif text-white">Kampung Budaya Sarawak</h4></div>
+                </div>
+                <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4"><strong class="block mb-1">Living Traditions of Sarawak</strong>Kampung Budaya Sarawak showcases the diverse heritage of Sarawak's indigenous communities through traditional longhouses, cultural performances, and hands-on experiences that bring centuries-old traditions to life.</p>
+            </div>
+        </div>
+    </div>
+
+    </section>    
+<!-- Borneo Island Sarawak City -->
+<section class="py-section-gap bg-surface-container-low">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="mb-16 text-center max-w-2xl mx-auto">
+<h2 class="font-headline-lg text-primary mb-4">Kuching</h2>
+<p class="text-body-md text-on-surface-variant">Nestled along the Sarawak River, Kuching blends colonial-era charm, vibrant waterfronts, and rich cultural heritage, making it the perfect gateway to the natural and cultural wonders of Borneo.</p>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8 mt-8">
+<div class="aspect-square overflow-hidden rounded-xl shadow-sm">
+<img alt="Kota Kinabalu 1" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500" src="img/Kuching_1.jpg"/>
+</div>
+<div class="aspect-square overflow-hidden rounded-xl shadow-sm">
+<img alt="Kota Kinabalu 2" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500" src="img/Kuching_2.jpg"/>
+</div>
+<div class="aspect-square overflow-hidden rounded-xl shadow-sm">
+<img alt="Kota Kinabalu 3" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500" src="img/Kuching_3.jpg"/>
+</div>
+<div class="aspect-square overflow-hidden rounded-xl shadow-sm">
+<img alt="Kota Kinabalu 4" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500" src="img/Kuching_4.jpg"/>
+</div>
+</div>
+</div>
+
+</section>  
+
+<!--BEGIN: Cuisine -->
+<header class="px-4 pt-20 pb-8 md:px-10" id="cuisine">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-12">
+<h2 class="text-lebanon-green text-4xl md:text-4xl font-serif">Cuisine of Malaysia</h2>
+<p class="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">A vibrant tapestry of flavors where centuries of trade and tradition converge on a single plate. From bustling night markets to serene island kitchens.</p>
+</div>
+</header>
+<!-- Peninsular Malaysia Section -->
+<section class="mb-20">
+<div class="flex items-center justify-between mb-8 border-b border-outline-variant pb-4">
+<h2 class="text-lebanon-green text-2xl md:text-2xl font-serif">Flavors of the Peninsula</h2>
+<span class="hidden md:block font-label-caps text-label-caps text-secondary uppercase tracking-widest">Tradition &amp; Spice</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Nasi Lemak -->
+<div class="group relative z-10 bg-[#FFFDD0] rounded-xl overflow-hidden hover:shadow-lg transition-all duration-500">
+<div class="h-64 relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="A macro photograph of Nasi Lemak, featuring fragrant coconut rice served on a vibrant green banana leaf. Surrounding the rice are crunchy fried anchovies, roasted peanuts, hard-boiled eggs, and a deep crimson-red sambal sauce. The lighting is warm and natural, evoking a sunny morning in a Malaysian village. The overall aesthetic is artisanal and authentic, highlighting the rich textures of the ingredients against the dark primary color tones of the chili paste." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHEdk5_cQBenL76dcI9FduSK3gCyoyocKxOV7qM6vvnzbUm4MaVZ1qickJcawiHu12yl2q8YQAeNRXciIzCYPPCXsV7_wnZbVhmuutHsP2dEq-PUpR-FZOGOlEJtEMZtusqrexJp1EevCbAUYUcmXfQy9Pdpc0HJXIuORVMOMbpx5DBlIWQdJ2FZph3U0L1Y9OIa7TGeLLho-8E0H5wTNneXnPZUdj1HxFs9C9qrzEAtwnE3z2FZ5aJdCL05W3MWBzH01PVJHnbpXR"/>
+<div class="absolute top-4 left-4">
+<span class="bg-primary/90 text-on-primary px-3 py-1 rounded-full text-xs font-label-caps">Signature</span>
+</div>
+</div>
+<div class="p-6">
+<h3 class="font-h3 text-2xl md:text-2xl font-serif">Nasi Lemak</h3>
+<p class="font-body-md text-on-surface-variant mb-4">Fragrant coconut rice steamed with pandan leaves, served with fiery sambal and crunchy garnishes.</p>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-lg font-label-caps text-sm hover:translate-y-[-2px] transition-transform">Explore Recipe</button>
+</div>
+</div>
+<!-- Satay -->
+<div class="group relative z-10 bg-[#FFFDD0] rounded-xl overflow-hidden hover:shadow-lg transition-all duration-500">
+<div class="h-64 relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Golden-brown charcoal-grilled meat skewers arranged elegantly on a ceramic platter. Plumes of wispy smoke rise from the charred edges of the chicken and beef satay. A small bowl of thick, chunky peanut sauce with a drizzle of spicy oil sits in the foreground. The scene is illuminated by ambient, warm street-market lighting with soft cinnamon brown highlights. The visual style is high-fidelity and tactile, showcasing the glistening fats and artisanal preparation of this classic Malaysian street food." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzUwI-47xznfVD2fhngmcGIsyeT8d9HpgSR3frEgH4SOqyEVonlXu7GJ1nk3_Jn7VvRp7gEHdVYaEnmHG7O5d0PbvtoHuaMkx1D-PKlqbwkA-6UPHeZOxewoQebs8Fav9NUT1haTl3eg8EZdcMCA74natkckLXcjM48qDdEKuWsH46wu9i5GJwWVtrq2VXVKhTPLIlMLGn7lQPBtP8NccISlfbh1nOS3wsfnO1YC9i_eoRCt3sO-ukuOo5p8i7utQlGTdhYm-ye_iV"/>
+</div>
+<div class="p-6">
+<h3 class="font-h3 text-2xl md:text-2xl font-serif">Satay</h3>
+<p class="font-body-md text-on-surface-variant mb-4">Succulent grilled meat skewers marinated in turmeric and lemongrass, served with thick peanut sauce.</p>
+<button class="border border-outline text-on-surface px-6 py-2 rounded-lg font-label-caps text-sm hover:bg-surface-container-high transition-colors">Find Local Spots</button>
+</div>
+</div>
+<!-- Hokkien Mee -->
+<div class="group relative z-10 bg-[#FFFDD0] rounded-xl overflow-hidden hover:shadow-lg transition-all duration-500">
+<div class="h-64 relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="A steaming plate of dark, glossy Hokkien Mee noodles, coated in a rich and smoky soy sauce. Thick yellow noodles are stir-fried with juicy prawns, slices of pork, and crispy lard croutons. The lighting is high-key and modern, emphasizing the reflective sheen of the dark sauce. The background is a clean, minimalist kitchen setting with warm turmeric-tinted surfaces. The image captures the vibrant energy and appetizing richness of Kuala Lumpur's legendary noodle stalls." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgCTuwu8VcttM8vB6tkVL5k2ApFsMyLwBHjKwH_wmpRysTECwIj-qGySckw5c-a1l8o2oxQw1IAaZYi4v9Kex0gqkwHI77vDTv6AE0uAjqN0BOOf5JlVYMmy-XlNDqY5rq8-AWXnwQ1mgZ7hr4V1yZBegzy1iSmxuEK6VbFDaKmbt3B7o66sA59jCe26PoCvVl89frTKo5--cU_s67IM6-8347dI8C8N8TwxTNGqh7qwJon-CWj2_HYP-BD1-5KHersN164GfK18oZ"/>
+</div>
+<div class="p-6">
+<h3 class="font-h3 text-2xl md:text-2xl font-serif">Hokkien Mee</h3>
+<p class="font-body-md text-on-surface-variant mb-4">Dark, smoky stir-fried noodles braised in rich soy sauce with crispy lardons and succulent seafood.</p>
+<button class="border border-outline text-on-surface px-6 py-2 rounded-lg font-label-caps text-sm hover:bg-surface-container-high transition-colors">View Details</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Borneo Island Section -->
+<section class="mb-20">
+<div class="flex items-center justify-between mb-8 border-b border-outline-variant pb-4">
+<h2 class="text-lebanon-green text-2xl md:text-2xl font-serif">Tastes of Borneo</h2>
+<span class="hidden md:block font-label-caps text-label-caps text-tertiary uppercase tracking-widest">Tropical Wilds</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Sarawak Laksa -->
+<div class="group relative z-10 bg-orange-50 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-500">
+<div class="h-64 relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="A bowl of complex Sarawak Laksa featuring a spicy, creamy broth topped with shredded chicken, omelet strips, and fresh prawns. A side of sambal belacan and a lime wedge are visible. The mood is welcoming and artisanal, with the bowl resting on a rustic wooden table under soft, diffused tropical sunlight. The color palette emphasizes the warm terracotta and golden turmeric tones of the broth, creating a sophisticated travel-editorial aesthetic that invites curiosity and appetite." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBP90N_PEx5MFbdRNqJ2xENm4CGOUOKqIxSOF5-5vshQqRBX4eCesb_4uyqQkp3iFHpxs23aCIw3Nrj7iSaQ-UwIgOgBvERKdy7hkM9RIEJBngjgK8WW6uoHmka_142WylrXMc27M3vSvycDxab2T7c_XSLdu8U0Athfj_w4-PmYrQL1qB4Zqz9kaXFTWBWKNEJ4sFoUByk6-45P6Q6_gW5F_c0ug0BPlHO3IRORVtym3fslLqPAZ_Pn1oLlQCVhF9-zKYWKAsY1pm9"/>
+</div>
+<div class="p-6">
+<h3 class="font-h3 text-2xl md:text-2xl font-serif">Sarawak Laksa</h3>
+<p class="font-body-md text-on-surface-variant mb-4">A complex, spicy broth infused with coconut milk and over 20 aromatic herbs and spices.</p>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-lg font-label-caps text-sm hover:translate-y-[-2px] transition-transform">Get the Secret</button>
+</div>
+</div>
+<!-- Manuk Pansuh -->
+<div class="group relative z-10 bg-orange-50 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-500">
+<div class="h-64 relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Traditional Manuk Pansuh being served from a charred bamboo stalk. Tender pieces of chicken are visible through the steam, garnished with torch ginger flower and cassava leaves. The background shows a lush Bornean jungle setting with soft, ambient green and brown tones. The lighting is low and atmospheric, emphasizing the primitive yet sophisticated cooking technique. The overall style is raw and energetic, capturing the cultural heritage of the Dayak people with high-end photographic clarity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA83TZrR7e5lsm9jtpmbsVovuMruLmC6-s1N5zyD4dLZz8m2mn1njbBtyvw_BwQfJTL6jZuvsblfIQbzwMpEZREGsSEbyKBJlWtbE8nforzAXe7DtKibmVRQ27REW9O14eqg8AHkOakgr96PkZTurdJlOG-ROikfmzdJn4lNiOAJUqhUeY5M7DEJ0LuBuZlSP1OCBjkAUf3z3aLJ_ESekCj_bAQJs309PxP10YFklMLq4-sK3vFbWn1wu0R1VuFPEmwpnnPXh-jIrEB"/>
+</div>
+<div class="p-6">
+<h3 class="font-h3 text-2xl md:text-2xl font-serif">Manuk Pansuh</h3>
+<p class="font-body-md text-on-surface-variant mb-4">Chicken cooked in a hollow bamboo stalk with aromatics, a traditional Dayak delicacy.</p>
+<button class="border border-outline text-on-surface px-6 py-2 rounded-lg font-label-caps text-sm hover:bg-surface-container-high transition-colors">Traditions</button>
+</div>
+</div>
+<!-- Hinava -->
+<div class="group relative z-10 bg-orange-50 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-500">
+<div class="h-64 relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="A delicate serving of Hinava, a raw fish salad marinated in lime juice, ginger, and shallots. The white fish cubes are translucent and fresh, accented by bright red chili slices and green calamansi. The presentation is modern and clean, set on a light ceramic plate with a turmeric-tinted backdrop. The lighting is bright and high-key, highlighting the refreshing nature of this coastal Kadazan-Dusun dish. The visual style is crisp and sophisticated, prioritizing freshness and artisanal quality." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTDoI6GS9HATAipSWh-EAtKGCixv3i5F1y-U0E25tj1grTG37xrJ0H0pHAETRTMOWBRR6SfwCOTP_X62VTKi2c-rANmnrCnBiAYHosMxeHJQxtzfXuuAcfVLSVJ4xHDvJibT5IhPGlnO97yPK3PwlyUoXvXoJkvXp_SJfTuihYsaNEkzqEdroG35N0MklrWMW4NgW8Nod-7uy6783NxhiVicfzv_Gvg999araBy9SJlf03v6pqManJF5srBHelSg_NS11CNkUXwTdV"/>
+</div>
+<div class="p-6">
+<h3 class="font-h3 text-2xl md:text-2xl font-serif">Hinava</h3>
+<p class="font-body-md text-on-surface-variant mb-4">Fresh raw fish cured in citrus juice, tossed with ginger, shallots, and bird's eye chilies.</p>
+<button class="border border-outline text-on-surface px-6 py-2 rounded-lg font-label-caps text-sm hover:bg-surface-container-high transition-colors">The Coast</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Desserts Section -->
+<section class="mb-section-gap">
+<div class="flex items-center justify-between mb-8 border-b border-outline-variant pb-4">
+<h2 class="text-lebanon-green text-2xl md:text-2xl font-serif">Sweet Delights</h2>
+<span class="hidden md:block font-label-caps text-label-caps text-secondary-container uppercase tracking-widest">Cool &amp; Refreshing</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Cendol -->
+<div class="group relative z-10 bg-[#FFFDD0] rounded-xl overflow-hidden hover:shadow-lg transition-all duration-500">
+<div class="h-64 relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="A refreshing glass of Cendol with mounds of finely shaved ice, bright green pandan jelly droplets, and dark, thick palm sugar syrup swirling through coconut milk. The lighting is soft and ambient, emphasizing the contrast between the vibrant green and the rich cinnamon brown of the Gula Melaka. The setting is a clean, modern cafe with a warm turmeric tint. The aesthetic is appetizing and artisanal, showcasing the textural complexity of this iconic Malaysian dessert." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1I1fQZR-Lu6eywQ3HhrFqt3tMjzp9k0lsUNaqbszjPx_UVn9ysw_2ePZgEB57NzkeTajhD4n3YoMU4Q_2BhrLhajkI8fSd8YogICgpcl8Y8Qsp3dNPttAK92BK1-JCARQBumdc3LEFdHz-1mGbiCCjKIZI6HAzhWP41Pu4jW28jtMWT7A4TiMAy4fioa1IvvwplA3awxSOQIrwFDvMe1ABAC9jlG-J0JlKVdf7n_plpeV9QUWMCawMlAZEbEmtGJvfFIL6ro7ByJ2"/>
+</div>
+<div class="p-6">
+<h3 class="font-h3 text-2xl md:text-2xl font-serif">Cendol</h3>
+<p class="font-body-md text-on-surface-variant mb-4">Shaved ice with green pandan jelly, swimming in coconut milk and rich Gula Melaka syrup.</p>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-lg font-label-caps text-sm hover:translate-y-[-2px] transition-transform">Cool Down</button>
+</div>
+</div>
+<!-- Ais Kacang -->
+<div class="group relative z-10 bg-[#FFFDD0] rounded-xl overflow-hidden hover:shadow-lg transition-all duration-500">
+<div class="h-64 relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="A colorful Ais Kacang dessert mountain of shaved ice, drizzled with vibrant pink rose syrup and golden evaporated milk. Visible toppings include sweet corn, red beans, and grass jelly. The lighting is bright and celebratory, capturing the raw energy of a summer day in Malaysia. The color palette is vibrant and welcoming, with the dessert presented in a classic glass bowl against a light, neutral background. The visual style is high-fidelity and focused on the sensory richness of the toppings." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdT2957s_yp9c694bCmMixNE75kfjaoRP7yQNnRhDEd9cDDZUGvyGYnC6gVufIPVwDNDGfwJZV7CfLO5FBMLqh0mNVo38q1GZtHF8vRnHWAwDbOiUQlx0DDxOd4hyfFkHs4RAnVBK-UjjZW_Q-ebxjcgfuf2MqTVyh076LlMBTa8lG98vH2641O147iDjrXnT0AzS1hY0iHiHPcGU_5pw9riwGYlwtmOT5w9aqszlenY867muQ4OMp8Yn4wiAwshB8opB2WucSnKR8"/>
+</div>
+<div class="p-6">
+<h3 class="font-h3 text-2xl md:text-2xl font-serif">Ais Kacang</h3>
+<p class="font-body-md text-on-surface-variant mb-4">A colorful ice mountain topped with sweet corn, red beans, grass jelly, and various syrups.</p>
+<button class="border border-outline text-on-surface px-6 py-2 rounded-lg font-label-caps text-sm hover:bg-surface-container-high transition-colors">Sweet Story</button>
+</div>
+</div>
+<!-- Kuih Muih -->
+<div class="group relative z-10 bg-[#FFFDD0] rounded-xl overflow-hidden hover:shadow-lg transition-all duration-500">
+<div class="h-64 relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="An assortment of traditional Kuih Muih arranged on a geometric bamboo platter. The collection includes vibrant green Seri Muka, bright blue-and-white Pulut Tai Tai, and multi-layered rainbow Kuih Lapis. The lighting is high-end travel editorial style, soft and even, highlighting the artisanal precision and vivid natural colors of the cakes. The background is a clean Turmeric-tinted surface, creating a sophisticated and welcoming mood that celebrates the heritage of Malaysian confectionery." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwv_z3gQLE5xgWo9y7Y6rU112yQOWW_DDB6_uCS4YFoqYoJzGaC8x7UmagwikME6mzo5IU_CrL2n6XMMGEhNML-fRcoxkFtC2VhwwRdPNXvYEHFE2r3WCezSPi8bDkjdT1dKId2OlcvilTL6kG7C7G7wxxWBBjClpkWt9yX55NJ51p0F0-fyOkPllB3v3w3U_VepumIt0v4959VvxJxnMdEaUhmW8DdJuJrxwW_a-7oHwPEmyOr4n20huac2etROPtgZZ6FzbTY9Og"/>
+</div>
+<div class="p-6">
+<h3 class="font-h3 text-2xl md:text-2xl font-serif">Kuih Muih</h3>
+<p class="font-body-md text-on-surface-variant mb-4">Traditional bite-sized cakes in vibrant colors, made from glutinous rice, coconut, and pandan.</p>
+<button class="border border-outline text-on-surface px-6 py-2 rounded-lg font-label-caps text-sm hover:bg-surface-container-high transition-colors">The Collection</button>
+</div>
+</div>
+</div>
+</section>
+<!-- BEGIN: HistorySection -->
+
+<section class="py-section-gap py-[0px] bg-transparent" id="history">
+  <div class="max-w-5xl mx-auto">
+    <div class="text-center mb-6"> 
+      <h2 class="text-k-red font-serif text-sm mb-2 uppercase tracking-[0.3em]">マレーシアの歴史</h2>
+<h3 class="text-e-green-dark text-3xl md:text-4xl font-serif">Where Trade Winds Shaped a Nation</h3>
+<p class="text-xs text-slate-500 max-w-3xl mx-auto">From the rise of Malacca Sultanate to waves of global exchange and colonial rule, Malaysia’s past reflects a dynamic blend of faith, commerce, and cultural fusion.
+</p>
+</div>
+<div class="max-w-3xl mx-auto space-y-8 relative border-l border-slate-300 pl-8">
+<!-- History: Ancient -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-e-green-dark"></div>
+<h4 class="text-e-green-dark font-sans text-xl font-semibold mb-6">古代</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">ランカスカ王国 <span class="text-xs text-slate-500 block md:inline md:ml-2">（2世紀～14世紀） </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">マレー半島北部に存在した初期の王国で、インド文化の影響を受けた。
+</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">盤盤（パンパン）王国<span class="text-xs text-slate-500 block md:inline md:ml-2">（3世紀～5世紀） </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">マレー半島に存在し、交易拠点として栄えた。
+</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">シュリーヴィジャヤ王国  <span class="text-xs text-slate-500 block md:inline md:ml-2">（7世紀～13世紀） </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">スマトラ島を中心に、マレー半島南部にも影響を及ぼした仏教国家。
+</p>
+</div>
+
+</div>
+</div>
+<!-- History: Medieval -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-e-green-dark"></div>
+<h4 class="text-e-green-dark font-sans text-xl font-semibold mb-6">中世</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">クダ王国  <span class="text-xs text-slate-500 block md:inline md:ml-2">（630年～現在） </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">マレー半島北部に位置し、イスラム教を受け入れた最古のスルタン国。
+
+</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">マラッカ王国<span class="text-xs text-slate-500 block md:inline md:ml-2">（1402年～1511年）   </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">マレー半島南部に成立し、イスラム教を国教とした港市国家。
+
+
+</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">スールー王国  <span class="text-xs text-slate-500 block md:inline md:ml-2">（1450年～1899年）  </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">ボルネオ島北部とフィリピン南部を支配したイスラム教国家。
+</p>
+</div>
+
+</div>
+</div>
+<!-- History: Early Modern -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-e-green-dark"></div>
+<h4 class="text-e-green-dark font-sans text-xl font-semibold mb-6">近世</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">ポルトガル領マラッカ<span class="text-xs text-slate-500 block md:inline md:ml-2">（1511年～1641年）  </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">マラッカ王国を滅ぼし、ポルトガルが支配。
+</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">オランダ領マラッカ<span class="text-xs text-slate-500 block md:inline md:ml-2">（1641年～1824年） </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">ポルトガルに代わり、オランダがマラッカを支配
+</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">イギリス領マラヤ<span class="text-xs text-slate-500 block md:inline md:ml-2">（1824年～1946年） </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">1824年英蘭協約によりマレー半島及びボルネオ島西北部が英国の勢力範囲下となる。</p>
+</div>
+
+</div>
+</div>
+<!-- History: Modern -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-e-green-dark"></div>
+<h4 class="text-e-green-dark font-sans text-xl font-semibold mb-6">近現代・現代</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">日本占領期 <span class="text-xs text-slate-500 block md:inline md:ml-2">（1941年～1945年） </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">第二次世界大戦中、日本がマレー半島を占領。</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">マラヤ連邦 <span class="text-xs text-slate-500 block md:inline md:ml-2">（1948年～1963年）  </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">イギリスからの独立を目指し、連邦制を採用。
+</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">マレーシア連邦 <span class="text-xs text-slate-500 block md:inline md:ml-2">（1963年～現在）   </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">シンガポール、サバ、サラワクを加えて成立。</p>
+<p class="text-xs text-slate-600 leading-relaxed">1965年にシンガポールが分離独立し、現在の形に。</p>
+<p class="text-xs text-slate-600 leading-relaxed">多民族国家として発展を続け、経済成長を遂げる。</p>
+
+</div>
+
+<div>
+<div class="space-y-6 border-t border-slate-100 pt-6">
+   
+</div>
+</div>
+
+</div>
+</div>
+</div>
+<p class="text-left text-slate-600 text-sm mt-6 font-bold max-w-2xl mx-auto">「マラッカ」から始まった西側（マレー半島）</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto">&nbsp;&nbsp;<span class="text-left text-slate-600 text-sm mt-6 font-bold max-w-2xl mx-auto"></span>ルーツ: 15世紀のマラッカ王国です。ここで「マレー人＝イスラム教」というアイデンティティが確立されました。
+その後: ポルトガル、オランダ、そしてイギリスに支配され、最終的に「マラヤ連邦」として独立。これが今のマレーシアの「西半分」です。
+</p>
+<p class="text-left text-slate-600 text-sm mt-6 font-bold max-w-2xl mx-auto">「スールー」と「ブルネイ」が関わる東側（ボルネオ島）</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto"><span class="text-left text-slate-600 text-sm mt-6 font-bold max-w-2xl mx-auto"> </span>マレーシアの「東半分」（サバ州・サラワク州）は、マラッカとは別の力が働いていました。</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto">サバ州: かつてスールー・スルタン国（現在のフィリピン南部が拠点）とブルネイが支配権を争っていた場所です。イギリスの北ボルネオ会社がスールーから「租借（借りる）」したことが、今のマレーシア領になるきっかけでした。</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto">サラワク州: ブルネイの領土でしたが、反乱鎮圧を助けたイギリス人のジェームズ・ブルックが、ブルネイから割譲を受けて「白人王」として統治しました。</p>
+
+<p class="text-left text-slate-600 text-sm mt-6 font-bold max-w-2xl mx-auto">1963年に「合体」した</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto">この「マラッカ系の半島」と「スールー・ブルネイ系のボルネオ」が、1963年に合体してできたのが「マレーシア」です。
+</p>
+
+
+</div>
+<div><p class="text-on-surface-variant mb-6"></p></div>
+<div>
+<a href="Malaysia_h.html" target="_blank" rel="noopener noreferrer" class="text-primary font-button flex items-center gap-2 group mx-auto w-fit">
+    Learn History 
+    <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</section>
+</main>
+<!-- END: HistorySection -->
+<!-- BEGIN: Footer -->
+<footer class="bg-lebanon-green text-white py-20 px-6 border-t border-white/5 relative z-10">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="col-span-1 md:col-span-2">
+<div class="flex items-center gap-3 mb-6">
+<div class="text-emerald-500">
+<svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <!-- 背景（ロイヤルブルー：マレーシア国民の結束） -->
+      <rect width="24" height="24" rx="4" fill="#003366"/>
+      
+      <!-- 赤白のストライプ（14の州と連邦直轄領） -->
+      <rect x="0" y="16" width="24" height="2" fill="#FFFFFF" opacity="0.9"/>
+      <rect x="0" y="18" width="24" height="2" fill="#CC0000" opacity="0.9"/>
+      <rect x="0" y="20" width="24" height="2" fill="#FFFFFF" opacity="0.9"/>
+      <rect x="0" y="22" width="24" height="2" fill="#CC0000" opacity="0.9"/>
+
+      <!-- 熱帯の山々・ジャングル（キナバル山などのイメージ） -->
+      <path d="M2 18L7 10L12 18Z" fill="#006400" opacity="0.7"/>
+      <path d="M8 18L14 8L20 18Z" fill="#228B22" opacity="0.6"/>
+
+      <!-- 三日月と14角の星（イスラム教と14の州の象徴：イエロー） -->
+      <path d="M9 5.5C9 7.15685 7.65685 8.5 6 8.5C5 8.5 4.1 8.0 3.5 7.3C4.3 7.8 5.3 8.0 6.3 7.8C7.5 7.5 8.3 6.5 8.5 5.3C8.6 4.8 8.5 4.4 8.4 4.0C8.8 4.4 9 4.9 9 5.5Z" fill="#FFCC00"/>
+      <!-- 簡易化した星 -->
+      <path d="M12 5.5L13.2 6.2L13.5 7.5L14.3 6.5L15.5 6.5L14.7 5.5L15.5 4.5L14.3 4.5L13.5 3.5L13.2 4.8L12 5.5Z" fill="#FFCC00"/>
+
+      <!-- ツインタワーのシルエット（近代化の象徴） -->
+      <rect x="16" y="10" width="1.5" height="8" fill="#E5E4E2" opacity="0.9"/>
+      <rect x="19" y="10" width="1.5" height="8" fill="#E5E4E2" opacity="0.9"/>
+      <rect x="16.5" y="13" width="3.5" height="1" fill="#E5E4E2" opacity="0.9"/>
+</svg>
+</div>
+<span class="text-white font-serif text-lg font-semibold">Malaysia Discovery</span>
+</div>
+<p class="text-white text-sm max-w-sm mb-8">
+            From bustling street stalls to time-honored recipes, Malaysia’s cuisine reveals a rich narrative shaped by sea routes, spices, and shared traditions.</p>
+</div>
+<div>
+<h6 class="text-k-yellow font-serif text-sm mb-6 uppercase tracking-widest">Navigation</h6>
+<ul class="space-y-4 text-sm text-white/60">
+<li><a class="hover:text-white transition-colors" href="#Peninsular">Peninsular</a></li>
+<li><a class="hover:text-white transition-colors" href="#Borneo">Borneo Island</a></li>
+<li><a class="hover:text-white transition-colors" href="#cuisine">Cuisine</a></li>
+<li><a class="hover:text-white transition-colors" href="#history">History</a></li>
+</ul>
+</div>
+<div>
+<h6 class="text-k-yellow font-serif text-sm mb-6 uppercase tracking-widest">Connect</h6>
+<ul class="space-y-4 text-sm text-white/60">
+<li><a class="hover:text-white transition-colors" href="#">Instagram</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Twitter</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Contact Us</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 mt-10 mb-4"><p class="text-xs text-white">© 2026 Malaysia Discovery. All rights reserved.</p>
+<div class="flex gap-8 text-xs text-white/80">
+<a href="#">Privacy Policy</a>
+<a href="#">Terms of Service</a>
+</div></div>
+<button onclick="window.close(); setTimeout(() => { window.location.href = 'https://google.com'; }, 100);" 
+          class="flex items-center gap-1 px-3 py-0.5 ml-auto md:ml-auto bg-brand-emerald hover:opacity-80 text-white font-medium rounded-full transition-all shadow-sm">
+    <span class="material-symbols-outlined text-white/80 text-xs">logout</span>
+    <span class="tracking-wider text-white/80 text-xs">QUIT</span>
+  </button>
+</footer>
+</main>
+
+
+<!-- END: Footer -->
+<style data-purpose="animations">
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+<script>
+    document.getElementById('searchInput').addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+            const searchTerm = this.value.trim();
+            if (searchTerm) {
+                const wikipediaUrl = `https://ja.wikipedia.org/wiki/特別:検索?search=${encodeURIComponent(searchTerm)}`;
+                window.open(wikipediaUrl, '_blank');
+            }
+        }
+    });
+
+    
+ const menuButton = document.getElementById('menuButton');
+  const navMenu = document.getElementById('navMenu');
+  const menuLinks = navMenu.querySelectorAll('a');
+
+  // 1. ボタンをクリックしたときの開閉（トグル）処理
+  if (menuButton && navMenu) {
+    menuButton.addEventListener('click', (e) => {
+      e.stopPropagation(); // クリックイベントが他に広がるのを防ぐ
+      navMenu.classList.toggle('hidden');
+    });
+  }
+
+  // 2. メニュー内のリンクをクリックしたときに、スマホ版だけメニューを閉じる
+  menuLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      // 画面幅がPCサイズ（768px未満＝スマホ）のときだけhiddenを足す
+      if (window.innerWidth < 768) {
+        navMenu.classList.add('hidden');
+      }
+    });
+  });
+
+  // 3. メニューの外側をクリックしたときにも自動で閉じる（おまけの親切機能）
+  document.addEventListener('click', (e) => {
+    if (window.innerWidth < 768 && navMenu && !navMenu.contains(e.target) && e.target !== menuButton) {
+      navMenu.classList.add('hidden');
+    }
+  });
+</script>
+</body></html>
