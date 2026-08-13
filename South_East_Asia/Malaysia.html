@@ -4,7 +4,7 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Malaysia_h Discovery | Luxury Travel Experience</title>
-<meta content="Explore the ancient landmarks, vibrant cities, and rich history of Malaysia_h." name="description"/>
+<meta content="Explore the ancient landmarks, vibrant cities, and rich history of Malaysia." name="description"/>
 <!-- Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap" rel="stylesheet"/>
 <!-- Tailwind CSS v3 -->
@@ -139,7 +139,7 @@
 <body class="bg-emerald-50 font-body-md text-on-surface">
 <div class="fixed inset-0 bg-pattern pointer-events-none z-0"></div>
 <!-- TopNavBar -->
-<header class="fixed top-0 w-full z-50 bg-white/90 dark:bg-emerald-950/90 backdrop-blur-md shadow-sm border-b border-emerald-900/10 dark:border-emerald-100/10">
+<header class="fixed top-0 w-full z-50 bg-white dark:bg-emerald-950/90 backdrop-blur-md shadow-sm border-b border-emerald-900/10 dark:border-emerald-100/10">
 <div class="relative max-w-7xl mx-auto px-6 py-4 flex justify-between items-center font-serif antialiased">
 <a class="flex items-center gap-3 text-2xl font-bold tracking-tight text-emerald-900 dark:text-emerald-100" href="#">
 <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -170,11 +170,14 @@
 </a>
  <!--<div id="navMenu" class="hidden md:flex items-center gap-6 md:gap-9 
     absolute top-full left-0 w-full bg-white/90 dark:bg-emerald-950/90 backdrop-blur-md flex-col p-6 shadow-lg z-50
-    md:absolute md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 md:w-auto md:flex-row md:p-0 md:shadow-none">-->
+    md:absolute md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 md:w-auto md:flex-row md:p-0 md:shadow-none">
  <div id="navMenu" class="hidden md:flex absolute top-full left-0 w-full bg-white/90 dark:bg-emerald-950/90 backdrop-blur-md shadow-lg z-50
     flex flex-col items-center justify-center p-6 gap-6
-    md:flex-row md:absolute md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 md:w-auto md:p-0 md:shadow-none md:gap-9 md:bg-transparent">
- 
+    md:flex-row md:absolute md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 md:w-auto md:p-0 md:shadow-none md:gap-9 md:bg-transparent">-->
+ <div id="navMenu" class="hidden md:flex items-center gap-9 
+    absolute top-full left-0 w-full bg-white backdrop-blur-md flex-col p-6 shadow-lg z-50
+    md:absolute md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 md:w-auto md:flex-row md:p-0 md:shadow-none">
+
  
     <a class="text-emerald-700/70 dark:text-emerald-200/70 hover:text-emerald-900 dark:hover:text-emerald-50 transition-colors" href="#Peninsular">Peninsular</a>
       <a class="text-emerald-700/70 dark:text-emerald-200/70 hover:text-emerald-900 dark:hover:text-emerald-50 transition-colors" href="#Borneo">Borneo Island</a>
@@ -192,12 +195,13 @@
 </div>
 
 <!-- Mobile Menu Button (Icon only) -->
-<!-- （スマホ時のみ表示、PC時は自動で消えます） -->
-    <button id="menuButton" class="md:hidden flex items-center justify-center text-black hover:text-white/80 transition-colors">
-    <!-- 通常時の三本線 -->
-    <span id="menuIconOpen" class="material-symbols-outlined text-3xl block">menu</span>
-    <!-- 開いたときの✕印（最初は hidden で隠す） -->
-    <span id="menuIconClose" class="material-symbols-outlined text-3xl hidden">close</span>
+<div class="md:hidden">
+<button
+    id="menuButton"
+    class="md:hidden flex items-center justify-center">
+    <span class="material-symbols-outlined text-3xl">
+        menu
+    </span>
 </button>
 </div>
 </header>
@@ -882,35 +886,5 @@ Learn History <span class="material-symbols-outlined group-hover:translate-x-1 t
             }
         }
     });
-
-    
- const menuButton = document.getElementById('menuButton');
-  const navMenu = document.getElementById('navMenu');
-  const menuLinks = navMenu.querySelectorAll('a');
-
-  // 1. ボタンをクリックしたときの開閉（トグル）処理
-  if (menuButton && navMenu) {
-    menuButton.addEventListener('click', (e) => {
-      e.stopPropagation(); // クリックイベントが他に広がるのを防ぐ
-      navMenu.classList.toggle('hidden');
-    });
-  }
-
-  // 2. メニュー内のリンクをクリックしたときに、スマホ版だけメニューを閉じる
-  menuLinks.forEach(link => {
-    link.addEventListener('click', () => {
-      // 画面幅がPCサイズ（768px未満＝スマホ）のときだけhiddenを足す
-      if (window.innerWidth < 768) {
-        navMenu.classList.add('hidden');
-      }
-    });
-  });
-
-  // 3. メニューの外側をクリックしたときにも自動で閉じる（おまけの親切機能）
-  document.addEventListener('click', (e) => {
-    if (window.innerWidth < 768 && navMenu && !navMenu.contains(e.target) && e.target !== menuButton) {
-      navMenu.classList.add('hidden');
-    }
-  });
 </script>
 </body></html>
