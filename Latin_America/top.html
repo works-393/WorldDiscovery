@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Latin America top</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-dim": "#dadadc",
+                    "surface-container-low": "#f3f3f6",
+                    "on-error-container": "#93000a",
+                    "primary-container": "#ffb800",
+                    "error-container": "#ffdad6",
+                    "tertiary": "#ab3600",
+                    "on-secondary": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "tertiary-fixed-dim": "#ffb59c",
+                    "on-tertiary-container": "#942e00",
+                    "on-primary-container": "#6b4c00",
+                    "secondary-fixed": "#57fae9",
+                    "on-surface": "#1a1c1e",
+                    "on-primary": "#ffffff",
+                    "outline": "#837560",
+                    "surface-container": "#eeeef0",
+                    "on-secondary-fixed-variant": "#005049",
+                    "on-secondary-container": "#007168",
+                    "surface-variant": "#e2e2e5",
+                    "secondary-container": "#57fae9",
+                    "on-error": "#ffffff",
+                    "on-primary-fixed-variant": "#5e4200",
+                    "inverse-on-surface": "#f0f0f3",
+                    "on-primary-fixed": "#271900",
+                    "on-background": "#1a1c1e",
+                    "inverse-surface": "#2f3133",
+                    "surface-container-lowest": "#ffffff",
+                    "secondary": "#006a62",
+                    "primary": "#7c5800",
+                    "surface-tint": "#7c5800",
+                    "surface-container-high": "#e8e8ea",
+                    "surface-container-highest": "#e2e2e5",
+                    "surface": "#f9f9fc",
+                    "surface-bright": "#f9f9fc",
+                    "outline-variant": "#d5c4ab",
+                    "on-surface-variant": "#514532",
+                    "tertiary-fixed": "#ffdbcf",
+                    "on-tertiary-fixed": "#390c00",
+                    "primary-fixed-dim": "#ffba20",
+                    "on-secondary-fixed": "#00201d",
+                    "tertiary-container": "#ffb298",
+                    "error": "#ba1a1a",
+                    "inverse-primary": "#ffba20",
+                    "background": "#f9f9fc",
+                    "secondary-fixed-dim": "#2addcd",
+                    "on-tertiary-fixed-variant": "#822700",
+                    "primary-fixed": "#ffdea8"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-mobile": "20px",
+                    "container-max": "1280px",
+                    "gutter": "24px",
+                    "margin-desktop": "64px"
+            },
+            "fontFamily": {
+                    "label-bold": ["Plus Jakarta Sans"],
+                    "headline-lg": ["Newsreader"],
+                    "body-md": ["Plus Jakarta Sans"],
+                    "body-lg": ["Plus Jakarta Sans"],
+                    "label-sm": ["Plus Jakarta Sans"],
+                    "headline-xl-mobile": ["Newsreader"],
+                    "headline-xl": ["Newsreader"],
+                    "headline-md": ["Newsreader"]
+            },
+            "fontSize": {
+                    "label-bold": ["14px", {"lineHeight": "20px", "fontWeight": "700"}],
+                    "headline-lg": ["40px", {"lineHeight": "48px", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                    "headline-xl-mobile": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "headline-xl": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #f9f9fc;
+        }
+        .serif-text {
+            font-family: 'Newsreader', serif;
+        }
+        .glass-effect {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .dense-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        }
+        @media (min-width: 1024px) {
+            .dense-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+    </style>
+</head>
+<body class="text-on-background bg-background overflow-x-hidden">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-white/70 dark:bg-black/70 backdrop-blur-xl flex items-center justify-between px-margin-mobile md:px-margin-desktop h-16 w-full">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary dark:text-primary-fixed" data-icon="public">public</span>
+<span class="font-headline-md text-headline-md font-extrabold text-primary dark:text-primary-fixed tracking-tighter">Latin America Discovery</span>
+</div>
+<nav class="hidden md:flex items-center gap-4">
+<a class="text-primary dark:text-primary-fixed font-bold text-label-bold transition-colors" href="#">Explore</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant text-label-bold hover:bg-primary-container dark:hover:bg-on-primary-fixed-variant transition-all px-3 py-1 rounded-full" href="#">Regions</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant text-label-bold hover:bg-primary-container dark:hover:bg-on-primary-fixed-variant transition-all px-3 py-1 rounded-full" href="#">Saved</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant text-label-bold hover:bg-primary-container dark:hover:bg-on-primary-fixed-variant transition-all px-3 py-1 rounded-full" href="#">Profile</a>
+</nav>
+<!-- Search Bar -->
+<div class="relative hidden lg:block" data-purpose="search-container">
+<span class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+<svg class="w-4 h-4 text-brown" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</span>
+<input id="searchInput" class="bg-white/5 border-white/10 text-text-gray-700 pl-10 pr-4 py-2 rounded-lg focus:ring-B-purple-dark focus:border-B-purple-dark w-64 text-sm" placeholder="Wikipedia検索" type="text"/>
+</div>
+</header>
+<main class="pt-16 pb-24 md:pb-12">
+<!-- Hero Section -->
+<section class="relative w-full h-[716px] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover grayscale-[0.2] brightness-[0.85]" data-alt="A breathtaking panoramic landscape of a winding river through a lush Andean valley at sunset. The lighting is golden and warm, casting long shadows across the terraced mountainsides. The aesthetic is high-end and cinematic, capturing the vastness and natural beauty of Latin America with a sophisticated, professional photographic style and deep, vibrant earth tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZiUAXEgCBbhTJGzXV_YDU7RqE98nbzavCbVI8hXYVaNcJLwfZHLIvON0KrqlvtoEXuP28Xop7K4apwElN7366FXIgCTIOwSCgtSJAGzgnBnp2udLjclZZU_49r72Ww2Nrf9m87OUuGbu3zhuWVsrdaGLgK2uee3t_TUl88og7wYMQaE4uBuP3SD9O_QcQLhi2RTtNvvU9__u0jZY7QT4O1CSGhsIzHiJY-WB7fWJQgc3EztLOdaCJs4qOVwHfruwlM1G6W3hGaC0"/>
+<div class="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent"></div>
+</div>
+<div class="relative z-10 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full">
+<div class="max-w-2xl">
+<span class="inline-block bg-primary-container text-on-primary-container px-4 py-1 rounded-full text-label-sm font-bold mb-6 tracking-widest uppercase">Global Discovery</span>
+<h1 class="font-headline-lg text-headline-lg text-white mb-6 leading-[1.1]">The Rhythmic Pulse of <span class="italic font-normal">Latin America</span></h1>
+<p class="text-white/90 text-body-lg font-body-lg mb-8 max-w-lg leading-relaxed">A curated portal into the diverse cultures, landscapes, and economies spanning from the peaks of Patagonia to the vibrant shores of Mexico.</p>
+<div class="flex flex-wrap gap-4">
+<a href="#region" class="bg-[#ffb800] text-[#1a1c1e] px-8 py-4 rounded-xl font-bold hover:shadow-[0_0_20px_rgba(255,184,0,0.4)] transition-all scale-100 active:scale-95">Begin Exploration</a>
+<a href="#region" class="inline-block border-2 border-secondary-fixed text-secondary-fixed px-8 py-4 rounded-xl font-bold backdrop-blur-md hover:bg-secondary-fixed/10 transition-all text-center">View Regions</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Chapter Destinations (Primary Countries) -->
+<section class="px-margin-mobile md:px-margin-desktop py-20 max-w-container-max mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+<div id="region">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-2">Regional Chapters</h2>
+<p class="text-on-surface-variant font-body-md max-w-md">Our primary focus areas featuring in-depth economic insights, cultural guides, and travel essentials.</p>
+</div>
+<div class="flex gap-2">
+<button class="p-3 border border-outline-variant rounded-full hover:bg-surface-container transition-colors material-symbols-outlined" data-icon="chevron_left">chevron_left</button>
+<button class="p-3 border border-outline-variant rounded-full hover:bg-surface-container transition-colors material-symbols-outlined" data-icon="chevron_right">chevron_right</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Argentina -->
+<a href="Argentina.html" target="_blank" class="block group cursor-pointer bg-white border border-black/5 rounded-2xl p-6 transition-all hover:bg-surface-container-low">
+  <div class="mb-6 overflow-hidden rounded-xl h-48">
+    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A close-up architectural detail of the colorful Casa Rosada in Buenos Aires, Argentina. The lighting is bright and clear, emphasizing the vibrant pink hues and intricate neoclassical ornamentation. The photo captures a sense of historic elegance and urban energy, reflecting a high-end, bright, and modern Latin American aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeb9HMS3ChLRtG92HjPG9oEKqOgjck6ZeDweTZJ5_ICwrIr9AQmdZa1IrlUdfZRUYG5QCkyvQXWMySbZNgnnip1eL5DX1gmJvUFWzwqMMyEETrm3ZAvSdL5V7GqwYVRwbZGkJAtvBubKXQogChB2lAqksnSyN89G6GqHnoQfZeIm9lQTjqcDKYPWuKM2sRb4OZRZizFooWeegpdhQJghIyBmvNi-FLpInc3_VYOyb3-TVsKI3pxYirCbN5guBbqeEP6VAUX3UIFbQ"/>
+  </div>
+  <span class="text-tertiary font-label-bold uppercase tracking-wider mb-2 block">Southern Cone</span>
+  <h3 class="font-headline-md text-headline-md mb-3">Argentina</h3>
+  <p class="text-on-surface-variant text-label-sm leading-relaxed mb-4">From the tango halls of Buenos Aires to the glaciers of El Calafate, a land of passion and scale.</p>
+  <div class="flex items-center gap-2 text-primary font-bold text-label-sm">
+    <span>Explore Dossier</span>
+    <span class="material-symbols-outlined text-[18px]" data-icon="arrow_forward">arrow_forward</span>
+  </div>
+</a>
+<!-- Brazil -->
+<a href="Brazil.html" target="_blank" class="block group cursor-pointer bg-white border border-black/5 rounded-2xl p-6 transition-all hover:bg-surface-container-low">
+<div class="mb-6 overflow-hidden rounded-xl h-48">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="An aerial view of the lush Tijuca Forest meeting the vibrant urban coastline of Rio de Janeiro, Brazil. The scene is bathed in brilliant midday sunlight, highlighting the emerald green of the jungle and the turquoise blue of the Atlantic Ocean. The atmosphere is energetic and tropical, embodying a luxury travel brand aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCWTgcG_se-UCKaLrr_i9PsJ_xhdmaDIGLBv_Rdj1qWxjwpNG3HHWKUAW6GqxpKBunQK-SxmkImLgk7C3Wkn9iozguJAjqzdgYEniNbeSXFwWu5VVUglUnubYHWL2c9Igev2wDYnkJ7ncRJiFl9ECHGSw2Q4aIIBmeBnqf-Dx-jFNqqo10xR2ZXXHstEfKZ6rvFvqpEdJaw-A968aCEjGB5kWP_hfTEhBXAuuRfcVlC05rO9Z9AypIlnmMan8VYXTXUzMY9YGLlDU"/>
+</div>
+<span class="text-tertiary font-label-bold uppercase tracking-wider mb-2 block">Atlantic Giant</span>
+<h3 class="font-headline-md text-headline-md mb-3">Brazil</h3>
+<p class="text-on-surface-variant text-label-sm leading-relaxed mb-4">The continent's powerhouse, blending Amazonian wilderness with futuristic urban centers.</p>
+<div class="flex items-center gap-2 text-primary font-bold text-label-sm">
+<span>Explore Dossier</span>
+<span class="material-symbols-outlined text-[18px]" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</a>
+<!-- Mexico -->
+<a href="Mexico.html" target="_blank" class="block group cursor-pointer bg-white border border-black/5 rounded-2xl p-6 transition-all hover:bg-surface-container-low">
+<div class="mb-6 overflow-hidden rounded-xl h-48">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A minimalist and high-contrast view of an ancient Mayan pyramid in Mexico against a deep blue sky. The lighting creates sharp, geometric shadows, highlighting the architectural precision of the stone structure. The mood is timeless and sophisticated, blending historical grandeur with a modern, clean photographic perspective." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_maT5CKMYD715Pdy_0Hq9Bc0ZmiRBFwATxyBRB_bRuB0PjyRquLfZT2ZYjZO5lPfspfQfR5u7WkxAYUTJ7mksiFDNNKDR6qW6hfaTBjXXCAxn3hRIif-6XMviveGGwkdeKz1k8ruBGB-8V5debDxnDU59EVR1Yssvk2Rid1CwgrflvI5Pbd1ZIhBeKESq_e6UDPrFtUnfB2UjJVERmLfTglolg-cONLw6julTKqWH3SJjMd94ayhmLRXV7OOpU9qiYpq0Axn6R1w"/>
+</div>
+<span class="text-tertiary font-label-bold uppercase tracking-wider mb-2 block">North America</span>
+<h3 class="font-headline-md text-headline-md mb-3">Mexico</h3>
+<p class="text-on-surface-variant text-label-sm leading-relaxed mb-4">A tapestry of ancient civilizations, colonial charm, and a world-leading culinary scene.</p>
+<div class="flex items-center gap-2 text-primary font-bold text-label-sm">
+<span>Explore Dossier</span>
+<span class="material-symbols-outlined text-[18px]" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</a>
+<!-- Colombia -->
+<a href="Colombia.html" target="_blank" class="block group cursor-pointer bg-white border border-black/5 rounded-2xl p-6 transition-all hover:bg-surface-container-low decoration-none text-inherit">
+  <div class="mb-6 overflow-hidden rounded-xl h-48">
+    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A vibrant street scene in Cartagena, Colombia, showing colorful colonial buildings with blooming bougainvillea hanging from balconies. The lighting is soft and golden, characteristic of a late afternoon. The aesthetic is warm and inviting, capturing the curated and elegant feel of a premier regional portal." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDx6hSiTVJMIUfUYn5VH68ZrjOiIwsp3c_r2Yrtd7YDyOHbTMEOoVqomXlOICHnrXmP3eFcRBhAZ1Uss-g4nqlRfZg-XQn29IkcD3GftD5HV-UEfFdtHVdGgVMKLrqXxVEI7XVd8yKg1BRd6OpwsH6gpKZ5GhfdKJk70gqs6FcR3Og7eVw3uhGj69UEAfgf6XDKsFbHCNUdTa7ydhMXVUi5-p1PJPADp1scLbHKRty--pemv2b1_cKUo2acOAAwaAIxbaHo2vfkbDo"/>
+  </div>
+  <span class="text-tertiary font-label-bold uppercase tracking-wider mb-2 block">Andean Hub</span>
+  <h3 class="font-headline-md text-headline-md mb-3">Colombia</h3>
+  <p class="text-on-surface-variant text-label-sm leading-relaxed mb-4">The gateway to South America, defined by coffee-clad hills and Caribbean sophistication.</p>
+  <div class="flex items-center gap-2 text-primary font-bold text-label-sm">
+    <span>Explore Dossier</span>
+    <span class="material-symbols-outlined text-[18px]" data-icon="arrow_forward">arrow_forward</span>
+  </div>
+</a>
+</div>
+</div>
+<!-- Second row of primary countries -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter mt-gutter">
+<!-- Chile -->
+<a href="Chile.html" target="_blank" class="flex gap-4 p-4 items-start border border-black/5 rounded-xl hover:bg-surface-container-low transition-colors group cursor-pointer block">
+  <div class="bg-primary-container/20 p-3 rounded-lg text-primary">
+    <span class="material-symbols-outlined" data-icon="mountains">landscape</span>
+  </div>
+  <div>
+    <h4 class="font-bold text-body-md">Chile</h4>
+    <p class="text-label-sm text-on-surface-variant">The edge of the world, from Atacama to Torres del Paine.</p>
+  </div>
+</a>
+<!-- Peru -->
+<a href="Peru.html" target="_blank" class="flex gap-4 p-4 items-start border border-black/5 rounded-xl hover:bg-surface-container-low transition-colors group cursor-pointer block">
+  <div class="bg-primary-container/20 p-3 rounded-lg text-primary">
+    <span class="material-symbols-outlined" data-icon="account_balance">account_balance</span>
+  </div>
+  <div>
+    <h4 class="font-bold text-body-md">Peru</h4>
+    <p class="text-label-sm text-on-surface-variant">Gastronomic capital meets Incan spiritual heritage.</p>
+  </div>
+</a>
+<!-- Costa Rica -->
+<div class="flex gap-4 p-4 items-start border border-black/5 rounded-xl hover:bg-surface-container-low transition-colors group cursor-pointer">
+<div class="bg-primary-container/20 p-3 rounded-lg text-primary">
+<span class="material-symbols-outlined" data-icon="eco">eco</span>
+</div>
+<div>
+<h4 class="font-bold text-body-md">Costa Rica</h4>
+<p class="text-label-sm text-on-surface-variant">Pura Vida: Leading the world in sustainable luxury.</p>
+</div>
+</div>
+<!-- Uruguay -->
+<div class="flex gap-4 p-4 items-start border border-black/5 rounded-xl hover:bg-surface-container-low transition-colors group cursor-pointer">
+<div class="bg-primary-container/20 p-3 rounded-lg text-primary">
+<span class="material-symbols-outlined" data-icon="waves">waves</span>
+</div>
+<div>
+<h4 class="font-bold text-body-md">Uruguay</h4>
+<p class="text-label-sm text-on-surface-variant">Progressive, peaceful, and beautifully coastal.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Secondary Directory (Dense Grid) -->
+<section class="bg-surface-container-low py-20 px-margin-mobile md:px-margin-desktop">
+<div class="max-w-container-max mx-auto">
+<div class="flex items-center gap-4 mb-10">
+<div class="h-[2px] flex-grow bg-outline-variant/30"></div>
+<h2 class="font-headline-md text-headline-md text-on-surface whitespace-nowrap">Extended Directory</h2>
+<div class="h-[2px] flex-grow bg-outline-variant/30"></div>
+</div>
+<div class="dense-grid gap-4">
+<a class="group flex items-center justify-between p-4 bg-white border border-black/5 rounded-lg hover:border-primary/30 hover:shadow-sm transition-all" href="#">
+<span class="text-label-bold text-on-surface">Antigua and Barbuda</span>
+<span class="material-symbols-outlined text-[18px] opacity-0 group-hover:opacity-100 transition-opacity text-primary" data-icon="chevron_right">chevron_right</span>
+</a>
+<a class="group flex items-center justify-between p-4 bg-white border border-black/5 rounded-lg hover:border-primary/30 hover:shadow-sm transition-all" href="#">
+<span class="text-label-bold text-on-surface">Ecuador</span>
+<span class="material-symbols-outlined text-[18px] opacity-0 group-hover:opacity-100 transition-opacity text-primary" data-icon="chevron_right">chevron_right</span>
+</a>
+<a class="group flex items-center justify-between p-4 bg-white border border-black/5 rounded-lg hover:border-primary/30 hover:shadow-sm transition-all" href="#">
+<span class="text-label-bold text-on-surface">El Salvador</span>
+<span class="material-symbols-outlined text-[18px] opacity-0 group-hover:opacity-100 transition-opacity text-primary" data-icon="chevron_right">chevron_right</span>
+</a>
+<a class="group flex items-center justify-between p-4 bg-white border border-black/5 rounded-lg hover:border-primary/30 hover:shadow-sm transition-all" href="#">
+<span class="text-label-bold text-on-surface">Guyana</span>
+<span class="material-symbols-outlined text-[18px] opacity-0 group-hover:opacity-100 transition-opacity text-primary" data-icon="chevron_right">chevron_right</span>
+</a>
+<a class="group flex items-center justify-between p-4 bg-white border border-black/5 rounded-lg hover:border-primary/30 hover:shadow-sm transition-all" href="#">
+<span class="text-label-bold text-on-surface">Cuba</span>
+<span class="material-symbols-outlined text-[18px] opacity-0 group-hover:opacity-100 transition-opacity text-primary" data-icon="chevron_right">chevron_right</span>
+</a>
+<a class="group flex items-center justify-between p-4 bg-white border border-black/5 rounded-lg hover:border-primary/30 hover:shadow-sm transition-all" href="#">
+<span class="text-label-bold text-on-surface">Guatemala</span>
+<span class="material-symbols-outlined text-[18px] opacity-0 group-hover:opacity-100 transition-opacity text-primary" data-icon="chevron_right">chevron_right</span>
+</a>
+<a class="group flex items-center justify-between p-4 bg-white border border-black/5 rounded-lg hover:border-primary/30 hover:shadow-sm transition-all" href="#">
+<span class="text-label-bold text-on-surface">Grenada</span>
+<span class="material-symbols-outlined text-[18px] opacity-0 group-hover:opacity-100 transition-opacity text-primary" data-icon="chevron_right">chevron_right</span>
+</a>
+<a class="group flex items-center justify-between p-4 bg-white border border-black/5 rounded-lg hover:border-primary/30 hover:shadow-sm transition-all" href="#">
+<span class="text-label-bold text-on-surface">Jamaica</span>
+<span class="material-symbols-outlined text-[18px] opacity-0 group-hover:opacity-100 transition-opacity text-primary" data-icon="chevron_right">chevron_right</span>
+</a>
+<a class="group flex items-center justify-between p-4 bg-white border border-black/5 rounded-lg hover:border-primary/30 hover:shadow-sm transition-all" href="#">
+<span class="text-label-bold text-on-surface">Suriname</span>
+<span class="material-symbols-outlined text-[18px] opacity-0 group-hover:opacity-100 transition-opacity text-primary" data-icon="chevron_right">chevron_right</span>
+</a>
+<a class="group flex items-center justify-between p-4 bg-white border border-black/5 rounded-lg hover:border-primary/30 hover:shadow-sm transition-all" href="#">
+<span class="text-label-bold text-on-surface">Saint Kitts &amp; Nevis</span>
+<span class="material-symbols-outlined text-[18px] opacity-0 group-hover:opacity-100 transition-opacity text-primary" data-icon="chevron_right">chevron_right</span>
+</a>
+<a class="group flex items-center justify-between p-4 bg-white border border-black/5 rounded-lg hover:border-primary/30 hover:shadow-sm transition-all" href="#">
+<span class="text-label-bold text-on-surface">Dominican Republic</span>
+<span class="material-symbols-outlined text-[18px] opacity-0 group-hover:opacity-100 transition-opacity text-primary" data-icon="chevron_right">chevron_right</span>
+</a>
+<a class="group flex items-center justify-between p-4 bg-white border border-black/5 rounded-lg hover:border-primary/30 hover:shadow-sm transition-all" href="#">
+<span class="text-label-bold text-on-surface">Trinidad and Tobago</span>
+<span class="material-symbols-outlined text-[18px] opacity-0 group-hover:opacity-100 transition-opacity text-primary" data-icon="chevron_right">chevron_right</span>
+</a>
+<a class="group flex items-center justify-between p-4 bg-white border border-black/5 rounded-lg hover:border-primary/30 hover:shadow-sm transition-all" href="#">
+<span class="text-label-bold text-on-surface">Panama</span>
+<span class="material-symbols-outlined text-[18px] opacity-0 group-hover:opacity-100 transition-opacity text-primary" data-icon="chevron_right">chevron_right</span>
+</a>
+<a class="group flex items-center justify-between p-4 bg-white border border-black/5 rounded-lg hover:border-primary/30 hover:shadow-sm transition-all" href="#">
+<span class="text-label-bold text-on-surface">Bahamas</span>
+<span class="material-symbols-outlined text-[18px] opacity-0 group-hover:opacity-100 transition-opacity text-primary" data-icon="chevron_right">chevron_right</span>
+</a>
+<a class="group flex items-center justify-between p-4 bg-white border border-black/5 rounded-lg hover:border-primary/30 hover:shadow-sm transition-all" href="#">
+<span class="text-label-bold text-on-surface">Venezuela</span>
+<span class="material-symbols-outlined text-[18px] opacity-0 group-hover:opacity-100 transition-opacity text-primary" data-icon="chevron_right">chevron_right</span>
+</a>
+<a class="group flex items-center justify-between p-4 bg-white border border-black/5 rounded-lg hover:border-primary/30 hover:shadow-sm transition-all" href="#">
+<span class="text-label-bold text-on-surface">Bolivia</span>
+<span class="material-symbols-outlined text-[18px] opacity-0 group-hover:opacity-100 transition-opacity text-primary" data-icon="chevron_right">chevron_right</span>
+</a>
+<a class="group flex items-center justify-between p-4 bg-white border border-black/5 rounded-lg hover:border-primary/30 hover:shadow-sm transition-all" href="#">
+<span class="text-label-bold text-on-surface">Honduras</span>
+<span class="material-symbols-outlined text-[18px] opacity-0 group-hover:opacity-100 transition-opacity text-primary" data-icon="chevron_right">chevron_right</span>
+</a>
+<a class="group flex items-center justify-between p-4 bg-white border border-black/5 rounded-lg hover:border-primary/30 hover:shadow-sm transition-all" href="#">
+<span class="text-label-bold text-on-surface">Paraguay</span>
+<span class="material-symbols-outlined text-[18px] opacity-0 group-hover:opacity-100 transition-opacity text-primary" data-icon="chevron_right">chevron_right</span>
+</a>
+<a class="group flex items-center justify-between p-4 bg-white border border-black/5 rounded-lg hover:border-primary/30 hover:shadow-sm transition-all" href="#">
+<span class="text-label-bold text-on-surface">Belize</span>
+<span class="material-symbols-outlined text-[18px] opacity-0 group-hover:opacity-100 transition-opacity text-primary" data-icon="chevron_right">chevron_right</span>
+</a>
+<a class="group flex items-center justify-between p-4 bg-white border border-black/5 rounded-lg hover:border-primary/30 hover:shadow-sm transition-all" href="#">
+<span class="text-label-bold text-on-surface">Saint Lucia</span>
+<span class="material-symbols-outlined text-[18px] opacity-0 group-hover:opacity-100 transition-opacity text-primary" data-icon="chevron_right">chevron_right</span>
+</a>
+</div>
+<div class="mt-12 flex justify-center">
+<div class="inline-flex gap-2 p-2 bg-white rounded-full shadow-sm border border-black/5">
+<span class="px-6 py-2 bg-secondary-fixed text-on-secondary-fixed rounded-full text-label-bold">View All 33 Entities</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter / CTA -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop bg-white">
+<div class="max-w-container-max mx-auto bg-primary-fixed p-10 md:p-20 rounded-[2rem] relative overflow-hidden flex flex-col md:flex-row items-center gap-12">
+<div class="absolute top-0 right-0 w-1/2 h-full opacity-10 pointer-events-none">
+<span class="material-symbols-outlined text-[500px] absolute -right-24 -top-24" data-icon="public">public</span>
+</div>
+<div class="relative z-10 flex-1">
+<h2 class="font-headline-lg text-headline-lg mb-6">Stay informed on the <span class="italic font-normal">region's evolution</span>.</h2>
+<p class="text-on-primary-fixed-variant text-body-lg mb-0 max-w-lg">Weekly briefings on economic shifts, cultural festivals, and travel policy updates across Latin America.</p>
+</div>
+<div class="relative z-10 w-full md:w-auto">
+<form class="flex flex-col sm:flex-row gap-4">
+<input class="bg-white border-none rounded-xl px-6 py-4 focus:ring-2 focus:ring-primary w-full md:w-80 shadow-lg" placeholder="Enter your email" type="email"/>
+<button class="bg-[#1a1c1e] text-white px-8 py-4 rounded-xl font-bold hover:scale-105 transition-transform">Subscribe</button>
+</form>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-2 pb-2 pt-2 bg-surface dark:bg-surface-dim shadow-[0_-1px_0_0_rgba(0,0,0,0.05)] rounded-t-xl">
+<button class="flex flex-col items-center justify-center bg-secondary-container dark:bg-secondary-fixed text-on-secondary-container dark:text-on-secondary-fixed rounded-full px-4 py-1 active:scale-95 transition-transform duration-150">
+<span class="material-symbols-outlined" data-icon="explore">explore</span>
+<span class="font-label-sm text-label-sm">Explore</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline active:scale-95 transition-transform duration-150 p-2">
+<span class="material-symbols-outlined" data-icon="map">map</span>
+<span class="font-label-sm text-label-sm">Regions</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline active:scale-95 transition-transform duration-150 p-2">
+<span class="material-symbols-outlined" data-icon="bookmark">bookmark</span>
+<span class="font-label-sm text-label-sm">Saved</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline active:scale-95 transition-transform duration-150 p-2">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-label-sm text-label-sm">Profile</span>
+</button>
+</nav>
+<!-- Footer -->
+<footer class="bg-surface-container-highest py-16 px-margin-mobile md:px-margin-desktop border-t border-outline-variant/20">
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="col-span-1 md:col-span-2">
+<span class="font-headline-md text-headline-md font-extrabold text-primary mb-6 block">REGIONAL PORTAL</span>
+<p class="text-on-surface-variant max-w-sm mb-8 leading-relaxed">The definitive digital resource for navigating and understanding the complex, beautiful, and rapidly evolving landscape of Latin America.</p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-white flex items-center justify-center hover:bg-primary-container transition-colors shadow-sm" href="#">
+<img class="w-5 h-5" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZD4XbHVK6I6WTJtVwLQxsYz7xIzY95UwtnAbMaNgoKCZQYf2vQWVg4SsxiYKkMNczMHDg1tP_55Lbnqmp1pMBURT9tpD1D1T_Y5Y-21GWwHogOkErJH0z7ZGSrMEeCJtDR5gAIKqnMFhasjikW2tLlfo_WhDkmbHCQKs8YAnCpfOEghraM5hH_Wo4Ov9Tfe0o7DPJwfpwxFjOofZCKoKDun0mu7AexYV2pauuwRiIQT9BQeqYvSu9p0Rb0M8ArvzqYmtlQ6DnZhc"/>
+</a>
+<a class="w-10 h-10 rounded-full bg-white flex items-center justify-center hover:bg-primary-container transition-colors shadow-sm" href="#">
+<img class="w-5 h-5" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgoMGR3ZCxf55ZhdFxyXuwObXWVa5ECCwUIOu6cbuaTVUiSyjcNXdnBBqzVXzytznSRg8s_9RJwGc365127xuvwMEJ9CEVVtYbut0bzfLt2T9MMdQ9ylyPxRaxrQUEY-MLrzlja5kBo4OOTTmjgMs1dXybc7Kq6i3gtL-Cte8Bu3DJdk-SOS6kfhathMyS3TCAsT4dhpg6sPFpuwLgYmEurzyYyjCibVdlvBXiD_WmrmhPPquDyqA8WNS28BdwE6yukPR_hH10g8Q"/>
+</a>
+<a class="w-10 h-10 rounded-full bg-white flex items-center justify-center hover:bg-primary-container transition-colors shadow-sm" href="#">
+<img class="w-5 h-5" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUB55vSLspp0TP6KLTlUvaCLt1WjK37xB_sQvaNhFDixOJneYrfYD5rf5Z4OX7kLRFvqhRGkO7rQ6RE_rRN_cqqnsTwA5vmgSVx4VVYspeBYb41TP7EFTH6CVRxsuJ7a6u6L22yKFR-soB3dXyRhrtbnUoXASSjHnvKqxip-H8IXm585pWmrQ36wksrE8astUsRHK1xHQFSS7ATsEu7ZgzZmqau_2DG_OGVWDRzRHa9zqgiKiF1tXiwBhsRswRIBQx_3vbwgwh0xw"/>
+</a>
+</div>
+</div>
+<div>
+<h5 class="font-label-bold uppercase text-tertiary mb-6">Directory</h5>
+<ul class="space-y-4">
+<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">North America</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Central America</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Caribbean</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">South America</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-label-bold uppercase text-tertiary mb-6">Legal</h5>
+<ul class="space-y-4">
+<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Terms of Service</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Cookie Policy</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Accessibility</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-container-max mx-auto mt-16 pt-8 border-t border-outline-variant/30 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-label-sm text-on-surface-variant">© 2024 Regional Portal. Curated by Discovery Latin America.</p>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px]" data-icon="language">language</span>
+<span class="text-label-sm">English (United Kingdom)</span>
+</div>
+</div>
+</footer>
+<script>
+        // Micro-interactions for hovering and scaling
+        document.querySelectorAll('.group').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                // Future expansion for dynamic effects
+            });
+        });
+
+    document.getElementById('searchInput').addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+            const searchTerm = this.value.trim();
+            if (searchTerm) {
+                const wikipediaUrl = `https://ja.wikipedia.org/wiki/特別:検索?search=${encodeURIComponent(searchTerm)}`;
+                window.open(wikipediaUrl, '_blank');
+            }
+        }
+    });
+</script>
+</body></html>

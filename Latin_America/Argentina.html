@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Argentina Discovery | Luxury Travel Experience</title>
+<meta content="Explore the ancient landmarks, vibrant cities, and rich history of Argentina." name="description"/>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="../menu.js"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'lebanon-dark': '#102219',
+            'lebanon-gold': '#C5A059',
+            'lebanon-green': '#2D5A27',
+            "primary": "#144bb8",
+            "background-light": "#f6f6f8",
+            "background-dark": "#111621",
+            // 追加
+            "al-adaam": "#8D1B3D",
+            "qatar-gold": "#C5A059",  
+            "e-green": "#50C878",
+            "B-purple-dark": "#006400",
+            "qatar-gold": "#C5A059",
+            "qatar-blue": "#1e3a8a",
+            "oman-blue": "#003153",
+            "yemen-red": "#CE1126",
+            "Bahrain-red": "#DA291C",
+            "B-purple-dark": "#632276",
+            "B-purple": "#D1A7E2",
+            "B-yellow": "#ffff66",
+            "B-orange": "#ff6600",
+            "Kaza-blue": "#00A3DD",
+            "Kaza-blue-dark": "#003366",
+            "U-blue": "#99ffcc", //ターコイズブルー//
+            "U-blue-bg": "#006699",
+            "k-yellow": "#ffcc00",
+            "k-red": "#cc3333",
+            "k-yellow-c": "#ccff33",
+            "silk-road-white": "#fdfdfd",
+            "t-green": "#006600",
+            "t-green-light": "#99cc99",
+            "Af-red": "#ff0099",
+            "Af-navy": "#0B1F3A",
+            "Sr-Brown": "#993300",
+            "Sr-yellow": "#cc9933",
+            "s-pink": "#CC3399",
+            
+          },
+          fontFamily: {
+            serif: ['Newsreader', 'serif'],
+            sans: ['Inter', 'sans-serif'],
+          },
+          backgroundImage: {
+            'Kazakhstan-hero': "url('img/Sri Lanka_bg.jpg')",
+          }
+        }
+      }
+    }
+  </script>
+<style data-purpose="custom-styling">body {
+    background-color: #f0f9ff;
+    color: #1e293b
+    }
+.glass-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 1rem
+    }
+.text-balance {
+    text-wrap: balance
+    }
+.section-spacing {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem
+    }
+/* Pattern Overlay */
+.bg-pattern {
+    background-image: url(img/Argentina_bg.jpg);
+    opacity: 0.15
+    }</style>
+</head>
+<body class="font-sans antialiased overflow-x-hidden">
+<!-- BEGIN: Background Texture -->
+<div class="fixed inset-0 bg-pattern pointer-events-none z-0"></div>
+<!-- END: Background Texture -->
+<!-- BEGIN: MainHeader -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-U-blue-bg backdrop-blur-md border-b border-white/5">
+<nav class=" max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<!-- Logo -->
+<a class="flex items-center gap-3 group" href="#">
+<div class="text-white-500 transform group-hover:scale-110 transition-transform">
+<svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景（アルゼンチン国旗の空色） -->
+  <rect width="24" height="24" rx="4" fill="#74ACDF"/>
+  
+  <!-- 中央の白い帯 -->
+  <rect y="8" width="24" height="8" fill="white"/>
+  
+  <!-- ５月の太陽（Sol de Mayo） -->
+  <!-- 太陽の土台（ゴールド） -->
+  <circle cx="12" cy="12" r="2.2" fill="#F6B426"/>
+  
+  <!-- 太陽の光線（12本の直線でシンプルに表現） -->
+  <path d="M12 8.5V15.5M8.5 12H15.5" stroke="#F6B426" stroke-width="0.8" stroke-linecap="round"/>
+  <path d="M9.5 9.5L14.5 14.5M9.5 14.5L14.5 9.5" stroke="#F6B426" stroke-width="0.8" stroke-linecap="round"/>
+  <path d="M10.8 8.8L13.2 15.2M8.8 10.8L15.2 13.2" stroke="#F6B426" stroke-width="0.6" stroke-linecap="round"/>
+  <path d="M13.2 8.8L10.8 15.2M15.2 10.8L8.8 13.2" stroke="#F6B426" stroke-width="0.6" stroke-linecap="round"/>
+  
+  <!-- 太陽の中心（立体感を出すためのアクセント） -->
+  <circle cx="12" cy="12" r="1.2" fill="#E49A14"/>
+</svg>
+</div>
+<span class="text-white font-serif text-xl tracking-wider font-semibold">Argentina Discovery</span>
+</a>
+<!-- Desktop Navigation -->
+<div id="navMenu" class="hidden md:flex items-center gap-9 
+    absolute top-full left-0 w-full bg-U-blue-bg backdrop-blur-md flex-col p-6 shadow-lg z-50
+    md:absolute md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 md:w-auto md:flex-row md:p-0 md:shadow-none">
+<a class="text-white text-sm font-medium hover:text-k-red transition-colors tracking-widest uppercase" href="#Landmarks">Landmarks</a>
+<a class="text-white text-sm font-medium hover:text-k-red transition-colors tracking-widest uppercase" href="#cities">Cities</a>
+<a class="text-white text-sm font-medium hover:text-k-red transition-colors tracking-widest uppercase" href="#cuisine">Cuisine</a>
+<a class="text-white text-sm font-medium hover:text-k-red transition-colors tracking-widest uppercase" href="#history">History</a>
+</div>
+<!-- Search Bar -->
+<div class="relative hidden lg:block" data-purpose="search-container">
+<span class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+<svg class="w-4 h-4 text-B-purple-dark/50" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</span>
+<input id="searchInput" class="bg-white/5 border-white/10 text-white pl-10 pr-4 py-2 rounded-lg focus:ring-B-purple-dark focus:border-B-purple-dark w-64 text-sm" placeholder="Wikipedia検索" type="text"/>
+</div>
+
+<!-- Mobile Menu Button (Icon only) -->
+<div class="md:hidden">
+<button
+    id="menuButton"
+    class="md:hidden flex items-center justify-center text-white hover:text-white/80 transition-colors">
+    <span class="material-symbols-outlined text-3xl">
+        menu
+    </span>
+</button></div>
+</nav>
+</header>
+<!-- END: MainHeader -->
+<!-- BEGIN: HeroSection -->
+<main class="relative">
+<section class="relative flex items-center justify-center overflow-hidden h-[90vh]">
+<!-- Hero Background Image -->
+<div class="absolute inset-0 z-0">
+<img alt="Sri Lanka" class="w-full h-full object-cover brightness-50" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1GWAv5hk2Ec7vLCu0ih4ztO0kfg7z4dNX8x4CursNb0RGZlP5W3xNxtQhT-cvmYQlYhCqgS9N3vx0VtzAXkXazVsFCgVGedJKitWc9qJCTnrXDUU2AE68gJGUzt6S-7_v4w98jcHthiaMmRGVMdxkvm3ryRANlo7wo_5sCAB4_b6VLgV4dBQ1cLLSEqVvl1u6m4EbRJy1wMPJlUO1o2edORTawmZppP3jkZdts0_UJ-kiQS0xb-uswdE_v_b5f6jTdccRKIDi-h_X"/>
+<div class="absolute inset-0 bg-gradient-to-b from-[#003153]/60 via-transparent to-[#f0f9ff]"></div>
+</div>
+<div class="relative z-10 text-center px-6 max-w-4xl">
+<h2 class="text-Kaza-blue font-serif italic text-xl md:text-2xl mb-4 opacity-0 animate-[fadeIn_1s_ease-out_forwards]">Explore the Endless Horizons</h2>
+<h1 class="text-white text-4xl md:text-7xl lg:text-4xl font-serif mb-8 leading-tight opacity-0 animate-[fadeIn_1s_ease-out_0.3s_forwards]">
+         Argentina: From City Streets to Glacial Peaks
+</h1>
+<p class="text-lg md:text-xl text-white/80 font-light max-w-2xl mx-auto mb-10 text-balance opacity-0 animate-[fadeIn_1s_ease-out_0.6s_forwards]">
+        A land woven with passion, culture, and untamed beauty. Discover historic elegance and wilderness combined.</p>
+<!-- <a class="inline-block bg-B-purple-dark text-lebanon-dark px-10 py-4 font-semibold tracking-widest uppercase text-sm hover:scale-105 transition-transform opacity-0 animate-[fadeIn_1s_ease-out_0.9s_forwards]" href="#landmarks">
+          Explore Destinations
+        </a>-->
+</div>
+<!-- Scroll Indicator -->
+<!--<div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce opacity-60">
+<svg class="h-6 w-6" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M19 14l-7 7m0 0l-7-7m7 7V3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>-->
+</section>
+<!-- END: HeroSection -->
+
+
+<!-- BEGIN: LandmarksSection -->
+<section class="section-spacing px-6 relative" id="Landmarks">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
+<div class="max-w-2xl">
+<h2 class="text-s-pink font-serif text-sm mb-2 uppercase tracking-[0.3em]">Thundering Waters & Timeless Spires</h2>
+<h3 class="text-3xl md:text-4xl font-serif">Iconic Landmarks</h3>
+</div>
+<p class="text-orange/90 max-w-md text-sm">From the soaring urban silhouette of The Obelisco to the roaring, mist-shrouded chasms of Iguazu Falls and the colossal shifting ice of Perito Moreno, Argentina unfolds as a land where architectural elegance, untamed waters, and monumental glaciers exist as one living landscape—vibrant, raw, and endlessly majestic.</p>
+</div>
+<div class="grid grid-cols-2 lg:grid-cols-3 gap-4">
+<!-- Item 1: Iguazu Falls -->
+<div class="flex flex-col">
+<div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+<img alt="Iguazu Falls" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFVclrXHchPv8qzcP7cD2Z1eq4NfReD1ZMI_GxzMNcCR16FLclTxnP_MHpcmVELMp0dYqTFe6ogsvczLgP62FKbTuJm1ADnX97QcfoxUjJAnIZSdNF0Jyv9zmPa5rb8wU2XE7M4TI_o6RowzuQ3OxLCbYWxLx2diaC0MfVGUzLZJ-PkFdlnQO17gBRN_dY5_MWnNxmsbcruL-t836sge3fQg0L3Hd6Aj3FGsI5Qiifv1WMJ29hbv5m8Ki78ipYlCWe0vNJ4FBD_YNE"/>
+<div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+<div class="absolute bottom-0 left-0 p-4">
+<span class="text-[10px] text-lebanon-gold uppercase tracking-widest block mb-1">Landmark</span>
+<h4 class="text-lg font-serif text-white">Iguazu Falls</h4>
+</div>
+</div>
+<!-- キャプション部分：写真の直下に配置 -->
+     <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4">One of the New Seven Wonders of Nature, these thundering waterfalls span the border with Brazil, nestled in a vibrant subtropical rainforest teeming with life.  </p>
+  </div>
+<!-- Item 2: Perito Moreno -->
+ <div class="flex flex-col">
+<div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+<img alt="Perito Moreno" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDK0i1WRRz7a3PAEAnjPxjsxhLQ0xX4NAOiPd-fAEBXpwaJlVS8arINF153n_GgreU0WAI0FQsgEMcJr7zaum7h9CVKOXc3da6hcPZqaOV2tdF7E95deHdhvBB_354MmFSgVL-Jpifr01Xqq_smR3icnYGeL_Em-ZDG8xsVnlQtDub_Md6cauAMRhEg6mqThiKegpbvyH2xD_Cnk020C35yH7Nwu2stggbySy56ewhfoEJ6_d-OYdlHBlmpV5j6QBG7MhD1TDAPk63C"/>
+<div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+<div class="absolute bottom-0 left-0 p-4">
+<span class="text-[10px] text-lebanon-gold uppercase tracking-widest block mb-1">Landmark</span>
+<h4 class="text-lg font-serif text-white">Perito Moreno </h4>
+</div>
+</div>
+<!-- キャプション部分：写真の直下に配置 -->
+     <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4">A breathtaking wall of ice in Los Glaciares National Park, one of the few glaciers in the world that is still advancing.</p>
+  </div>
+<!-- Item 3: The Obelisco-->
+ <div class="flex flex-col">
+<div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+<img alt="The Obelisco" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2Lgt6tFN_lIuH6cLHIvl78KfStskaCiYytN8tOjdFT7pMEBMo96t3RyyEyXT-ib9F9slNP3SaVZ-IsTeRBd7Dp5QmYVx12JhZiw-vib_jnzWGGvuGD2jB4EieSIl8B7NHRs9Z-YJRWS1XPQp_JxE9H-iD3tRe7hFlS8Ct_9QOGvofHJgnrk4IAs-uv1H0iJmI9313fsIblC6TYQardRWIztNJNszDMiI2hB2TJ3GVItTh9l_FIIStyYRYAyHdCaccQXD01UMpbbuS"/>
+<div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+<div class="absolute bottom-0 left-0 p-4">
+<span class="text-[10px] text-lebanon-gold uppercase tracking-widest block mb-1">Landmark</span>
+<h4 class="text-lg font-serif text-white">The Obelisco</h4>
+</div>
+</div>
+<!-- キャプション部分：写真の直下に配置 -->
+     <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4">The soul of Buenos Aires. Standing tall at the heart of the widest avenue in the world, it commemorates the founding of this vibrant, European-influenced metropolis.</p>
+  </div>
+</div>
+</div>
+</section>
+<!-- END: LandmarksSection -->
+<!-- BEGIN: CitiesSection -->
+<section class="section-spacing px-6 relative" id="cities">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
+<div class="max-w-2xl">
+<h2 class="text-s-pink font-serif text-sm mb-2 uppercase tracking-[0.3em]">Boulevard of Tango & Glacial Frontiers</h2>
+<h3 class="text-3xl md:text-4xl font-serif">Cities of Distinction</h3>
+</div>
+<p class="text-orange/90 max-w-md text-sm">From the historic, Paris-inspired grand avenues of Buenos Aires to the serene Alpine charm of Bariloche, the sun-kissed vineyards of Mendoza, and the windswept silence of Ushuaia at the edge of the world, Argentina’s cities unfold as living mosaics where European elegance, untamed frontiers, and passionate daily life continue to breathe as one.</p>
+</div>
+<div class="space-y-20">
+<!-- Buenos Aires -->
+<div class="flex flex-col md:flex-row items-center gap-10">
+<div class="w-full md:w-1/2">
+<img alt="Buenos Aires" class="rounded-2xl shadow-xl" src="img/Buenos_Aires.jpg"/>
+</div>
+<div class="w-full md:w-1/2">
+<span class="text-primary font-bold uppercase tracking-widest text-sm">Paris of South America</span>
+<h3 class="text-yemen-red text-3xl mt-2 mb-4">Buenos Aires</h3>
+<p class="text-Af-navy dark:text-orange-100 text-lg mb-6 leading-relaxed font-serif">A vibrant metropolis where European grand architecture meets the fiery rhythm of tango, colored by historic barrios and intellectual elegance.</p>
+</div>
+</div>
+<!-- San Carlos de Bariloche-->
+<div class="flex flex-col md:flex-row-reverse items-center gap-10">
+<div class="w-full md:w-1/2">
+<img alt="San Carlos de Bariloche" class="rounded-2xl shadow-xl" src="img/San_Carlos_de_Bariloche.jpg"/>
+</div>
+<div class="w-full md:w-1/2">
+<span class="text-primary font-bold uppercase tracking-widest text-sm">The Alpine Sanctuary</span>
+<h3 class="text-yemen-red text-3xl mt-2 mb-4">San Carlos de Bariloche</h3>
+<p class="text-Af-navy dark:text-orange-100 text-lg mb-6 leading-relaxed font-serif">An enchanting lakeside town reminiscent of Switzerland, framed by snow-capped Andean peaks and world-class artisan chocolate shops.</p>
+</div>
+</div>
+<!-- Mendoza -->
+<div class="flex flex-col md:flex-row items-center gap-10">
+<div class="w-full md:w-1/2">
+<img alt="Mendoza" class="rounded-2xl shadow-xl" src="img/Mendoza.jpg"/>
+</div>
+<div class="w-full md:w-1/2">
+<span class="text-primary font-bold uppercase tracking-widest text-sm">The Oasis of Wine</span>
+<h3 class="text-yemen-red text-3xl mt-2 mb-4">Mendoza</h3>
+<p class="text-Af-navy dark:text-orange-100 text-lg mb-6 leading-relaxed font-serif">Sun-drenched vineyards resting under the shadow of the mighty Andes, producing some of the world’s finest Malbec wines.</p>
+</div>
+</div>
+<!-- Pokhara-->
+<div class="flex flex-col md:flex-row-reverse items-center gap-10">
+<div class="w-full md:w-1/2">
+<img alt="Ushuaia" class="rounded-2xl shadow-xl" src="img/Ushuaia.jpg"/>
+</div>
+<div class="w-full md:w-1/2">
+<span class="text-primary font-bold uppercase tracking-widest text-sm">The Edge of the World</span>
+<h3 class="text-yemen-red text-3xl mt-2 mb-4">Ushuaia</h3>
+<p class="text-Af-navy dark:text-orange-100 text-lg mb-6 leading-relaxed font-serif">The southernmost city on Earth, acting as the dramatic gateway to pristine Antarctic waters and untamed glacial fjords.</p>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+<!-- END: Cities Section -->
+
+</div>
+</div>
+</section>
+<!-- END: CitiesSection -->
+<!--BEGIN: Cuisine -->
+<section class="px-4 py-16 md:px-10" id="cuisine">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-12">
+<h2 class="text-primary text-3xl md:text-4xl font-serif">Smoke, Spice & Velvet Sweetness</h2>
+<p class="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">The primal crackle of wood fires searing rich meats, the golden crunch of a pocket filled with spiced warmth, and the melt-away embrace of dulce de leche. Argentina’s table is an unwritten poem of fire, dust, and deep, lingering comfort.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Package 1 -->
+<div class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:shadow-xl transition-shadow">
+<div class="h-56 w-full overflow-hidden">
+<img alt="Asado" class="w-full h-full object-cover transition-transform group-hover:scale-105" data-alt="Asado" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuYMyuCoX2hCxIzKImb52cSLLogsfGsFFcpgQD7mDHEYys1K8MJnyouxJcUGCzsdQHWIT4uyzYddy4-rP2tG0gT2pZVP2OTIZBCulG_l4vJgUjOT_-Gc1jdISu7mUZHJ6BnQ7UWD5aDlXiBz1eu6Lvb5mm5rz43I-j2yIQnnCGiY2XqUJtWtvoXD2N1BLbNv4bVuEo0yFRgLGxthw0iCzlCBal8BvO61UZotVwS9OZkebMMKFWG1CwQ3zupSubj4uM0o5_2oYdvInn"/>
+</div>
+<div class="p-4">
+<div class="flex justify-between items-start mb-1">
+<h3 class="text-xl font-bold">Asado</h3>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-400 mb-6 line-clamp-2">More than just a barbecue, the Asado is a sacred social gathering centered around high-quality grass-fed beef slow-cooked over wood embers.</p>
+<div class="flex items-center justify-between">
+</div>
+</div>
+</div>
+<!-- Package 2 -->
+<div class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:shadow-xl transition-shadow">
+<div class="h-56 w-full overflow-hidden">
+<img alt="Empanadas" class=w-full h-full object-cover transition-transform group-hover:scale-105" data-alt="Empanadas" src="img/Empanadas.jpg"/>
+</div>
+<div class="p-4">
+<div class="flex justify-between items-start mb-1">
+<h3 class="text-xl font-bold">Empanadas</h3>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-400 mb-6 line-clamp-2">Savory hand-held pockets of joy, filled with spiced meat, olives, or cheese. Each province boasts its own unique "repulge" or folding style.</p>
+<div class="flex items-center justify-between">
+</div>
+</div>
+</div>
+<!-- Package 3 -->
+<div class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:shadow-xl transition-shadow">
+<div class="h-56 w-full overflow-hidden">
+<img alt="Alfajores" class="w-full h-full object-cover transition-transform group-hover:scale-105" data-alt="Alfajores" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSer3gUl8hv5HR7A650FOVSpmuP872kBE704ntzGyj505qwq0R6IAABGPe2euzpbXaZFBualnb0-5cEVGF2T4ehUiioNVZlw-fEpcin8wGjhRFYI-bcZaZxMmEinCzZQ5b4nk81Ou47sqaidGrobEC5QPCao4pXLnQmsWw_TGYNSk8aeW9Pg9qcSVZWVzC4lcRDfTXaW3SzfVio-vKo1qfDrOi8aZ62d5cdbFIK_42ItcaBCz1BNXwBWLURXcztoTEkNEEJMjEiPwX"/>
+</div>
+<div class="p-4">
+<div class="flex justify-between items-start mb-1">
+<h3 class="text-xl font-bold">Alfajores</h3>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-400 mb-6 line-clamp-2">A traditional steamed rice-flour dumpling filled with sweet molasses or sesame. </p>
+<div class="flex items-center justify-between">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- BEGIN: HistorySection -->
+<section class="bg-[#ebe8e3]/80 section-spacing px-6 relative overflow-hidden" id="history">
+<div class="max-w-5xl mx-auto"><div class="text-center mb-12">
+<h2 class="text-U-blue-bg font-serif text-sm mb-2 uppercase tracking-[0.3em]">アルゼンチン共和国の歴史</h2>
+<h3 class="text-s-pink text-3xl md:text-4xl font-serif">Argentine Republic</h3>
+<p class="text-xs text-slate-600 dark:text-slate-400 max-w-3xl mx-auto">Shadows of Spanish steel fading into the fierce dawn of independence, where the hoofbeats of gauchos reshaped the infinite plains. Across grand European boulevards and the faded ports of Buenos Aires, a young nation’s golden age bled into the heartbreaking, beautiful ache of a tango—a legacy forever written in defiance, pride, and bittersweet memory.</p>
+</div>
+<div class="max-w-3xl mx-auto space-y-8 relative border-l border-slate-300 pl-8">
+<!-- History: Ancient -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-s-pink"></div>
+<h4 class="text-s-pink font-sans text-xl font-semibold mb-6">古代・先植民地期</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">先住民族の時代<span class="text-xs text-slate-500 block md:inline md:ml-2">（～16世紀初期） </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">マプチェ族やグアラニー族、インカ帝国の影響を受けた北西部の先住民族などが各地で生活。
+
+</p>
+</div>
+</div>
+</div>
+<!-- History: Medieval 
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-s-pink"></div>
+<h4 class="text-s-pink font-sans text-xl font-semibold mb-6">中世</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1"> <span class="text-xs text-slate-500 block md:inline md:ml-2">（世紀～世紀） </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed"></p>
+</div>
+
+</div>
+</div>-->
+<!-- History: Early Modern -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-s-pink"></div>
+<h4 class="text-s-pink font-sans text-xl font-semibold mb-6">近世（植民地時代）</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">スペインによる征服 <span class="text-xs text-slate-500 block md:inline md:ml-2">（1516年～） </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">フアン・ディアス・デ・ソリスがラプラタ川に到達。1580年にブエノスアイレスが再建され、定住が進む。
+</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">ラプラタ副王領の設置 <span class="text-xs text-slate-500 block md:inline md:ml-2">（1776年） </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">ペルー副王領から独立し、ブエノスアイレスを首都とする副王領が確立。貿易の拠点として発展。
+</p>
+</div>
+</div>
+</div>
+
+<!-- History: Modern -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-s-pink"></div>
+<h4 class="text-s-pink font-sans text-xl font-semibold mb-6">近代（独立と国家形成）</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">五月革命 <span class="text-xs text-slate-500 block md:inline md:ml-2">（1810年） </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">ナポレオンのスペイン侵攻を機に自治政府を樹立。
+</p>
+
+</div>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">独立宣言 <span class="text-xs text-slate-500 block md:inline md:ml-2">（1816年） </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">サン・マルティンらの活躍により、スペインからの独立を宣言。
+</p>
+
+</div>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">連邦派と集権派の対立 <span class="text-xs text-slate-500 block md:inline md:ml-2">（19世紀前半）</span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">国内の統治体制を巡り内戦が勃発。ロサスによる独裁政治が続く。
+</p>
+</div>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">憲法制定と近代化 <span class="text-xs text-slate-500 block md:inline md:ml-2">（1853年～） </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">統一憲法が制定され、近代国家の枠組みが完成。
+</p>
+</div>
+
+
+</div>
+</div>
+</div>
+<!-- History: Pre Modern -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-s-pink"></div>
+<h4 class="text-s-pink font-sans text-xl font-semibold mb-6">近現代（繁栄と動乱）</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">「世界の穀倉」時代 <span class="text-xs text-slate-500 block md:inline md:ml-2">（19世紀末～20世紀初頭） </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">農牧業の発展と欧州からの大量の移民により、世界有数の富裕国へ成長。
+</p>
+</div>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">ペロン政権とペロニズム <span class="text-xs text-slate-500 block md:inline md:ml-2">（1946年～） </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">フアン・ペロン大統領が労働者重視の政策（ペロニズム）を展開。
+</p>
+</div>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">軍事独裁政権 <span class="text-xs text-slate-500 block md:inline md:ml-2">（1976年～1983年） </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">軍部が実権を握り「汚い戦争」と呼ばれる左派弾圧を行う。1982年にはマルビナス（フォークランド）紛争でイギリスに敗北。
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<!-- History: Modern -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-s-pink"></div>
+<h4 class="text-s-pink font-sans text-xl font-semibold mb-6">現代</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">民政移管と現代 <span class="text-xs text-slate-500 block md:inline md:ml-2">（1983年～現在）</span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">民主主義へ復帰。度重なる経済危機や債務不履行（デフォルト）に直面しつつ、政権交代を繰り返す。
+</p>
+</div>
+</div>
+</div>
+
+
+</div>
+</div>
+</div>
+
+</div>
+</div>
+<p class="text-left text-Kaza-blue-dark text-sm mt-6 font-bold max-w-2xl mx-auto">アルゼンチンがなぜこれほど破産を繰り返すのか</p>
+<p class="text-left text-B-orange text-sm mt-2  max-w-2xl mx-auto">昔は世界トップクラスの金持ち国だった</p>
+<p class="text-left text-slate-600 text-xs mt-1  max-w-2xl mx-auto">&nbsp;&nbsp;&nbsp;&nbsp;20世紀初頭（1910年代頃）、アルゼンチンは広大な大平原（パンパ）から採れる牛肉や小麦の輸出で大儲けし、世界の富裕国トップ10に入っていました。「アルゼンチン人のように金持ち」という慣用句がヨーロッパで使われていたほどです。「パリのような大通り（Paris-inspired grand avenues）」はこの黄金期に作られました。</p>
+<p class="text-left text-B-orange text-sm mt-2  max-w-2xl mx-auto">「ウソのような大盤振る舞い」のツケ</p>
+<p class="text-left text-slate-600 text-xs mt-1  max-w-2xl mx-auto">&nbsp;&nbsp;&nbsp;&nbsp;黄金期のあと、政権を握ったペロン大統領（とその妻エビータ）は、労働者に手厚い給料や福祉を配る政策（ペロニズム）を始めました。国民には大人気でしたが、国にお金がない時も借金をして配り続けたため、国の財政が慢性的な赤字体質になってしまいました。</p>
+<p class="text-left text-B-orange text-sm mt-2  max-w-2xl mx-auto">止まらないハイパーインフレと借金</p>
+<p class="text-left text-slate-600 text-xs mt-1  max-w-2xl mx-auto">&nbsp;&nbsp;&nbsp;&nbsp; 国にお金がなくなると、政府は「お札を大量に印刷する」という禁じ手を何度も使いました。その結果、お金の価値が暴落する激しいインフレ（物価高騰）が日常化します。外国からドルを借りては返せなくなり、踏み倒す（デフォルト）というサイクルをこれまでに計9回も繰り返しています。</p>
+<p class="text-left text-B-orange text-sm mt-2  max-w-2xl mx-auto">現在（2026年）のリアルタイムな状況</p>
+<p class="text-left text-slate-600 text-xs mt-1  max-w-2xl mx-auto">&nbsp;&nbsp;&nbsp;&nbsp;直近のアルゼンチンは、2023年末に就任したハビエル・ミレイ大統領のもとで「自国通貨ペソを廃止して米ドルを導入する」「政府の役職を半分にする」といった、チェーンソーで予算を削るような過激な経済改革を進めています。インフレは一時的に落ち着きを見せ始めていますが、国民の生活は今もなお激しい変化の渦中にあります。</p>
+
+<p class="text-left text-Kaza-blue-dark text-sm mt-6 font-bold max-w-2xl mx-auto">ホセ・デ・サン・マルティン（José de San Martín）は、アルゼンチン、チリ、ペルーにおいて「国家の英雄（解放者）」として絶対的な尊敬を集める偉人です。特にアルゼンチンでは「祖国の父（Padre de la Patria）」と称されています。</p>
+<p class="text-left text-B-orange text-sm mt-2  max-w-2xl mx-auto">南米の南半分をスペインから独立させた天才</p>
+<p class="text-left text-slate-600 text-xs mt-1  max-w-2xl mx-auto">&nbsp;&nbsp;&nbsp;&nbsp;シモン・ボリバルが南米の「北半分（ベネズエラ、コロンビアなど）」を解放したのに対し、サン・マルティンは「南半分（アルゼンチン、チリ、ペルー）」の独立を達成した立役者です。元々はスペイン軍の優秀なエリート軍人でしたが、祖国（南米）の危機に際してすべての地位を捨てて帰国し、独立軍を率いました。</p>
+<p class="text-left text-B-orange text-sm mt-2  max-w-2xl mx-auto">世界最高峰「アンデス山脈越え」の伝説</p>
+<p class="text-left text-slate-600 text-xs mt-1  max-w-2xl mx-auto">&nbsp;&nbsp;&nbsp;&nbsp;彼の最大の功績は、独立を確実にするために、スペイン軍の拠点だったチリへ奇襲をかけたことです。ナポレオンのアルプス越えをも凌ぐと言われる「標高4,000メートルを超える極寒のアンデス山脈を、大軍を率いて超える」という不可能な作戦を成功させ、チリを、そして海を渡ってペルーをも解放しました。このドラマは、アルゼンチンの大自然の過酷さと、彼らの「反逆・誇り（Defiance & Pride）」を語る上で最高の素材です。</p>
+<p class="text-left text-B-orange text-sm mt-2  max-w-2xl mx-auto">「権力に執着しなかった」本物の英雄</p>
+<p class="text-left text-slate-600 text-xs mt-1  max-w-2xl mx-auto">&nbsp;&nbsp;&nbsp;&nbsp;南米の独立指導者の多くが、独立後に権力闘争に巻き込まれたり独裁者になったりしました。しかし、サン・マルティンはペルーを解放した後、北の英雄ボリバルと会談（グアヤキル会談）すると、「南米の未来にリーダーは2人もいらない」と、すべての軍権と地位をボリバルに譲り、自らはひっそりとヨーロッパへ引退しました。この「無欲で高潔な引き際」が、今でも彼が全南米から「聖人」のように慕われる最大の理由です。</p>
+
+
+<p class="text-left text-Kaza-blue-dark text-sm mt-6 font-bold max-w-2xl mx-auto">フォークランド紛争（アルゼンチン名：マルビナス紛争）は、1982年に起きた「泥沼の国内不満を、愛国心でそらすために仕掛けた戦争」です。</p>
+<p class="text-left text-B-orange text-sm mt-2  max-w-2xl mx-auto">軍事政権の「目くらまし（支持率稼ぎ）」</p>
+<p class="text-left text-slate-600 text-xs mt-1  max-w-2xl mx-auto">当時、アルゼンチンは度重なる経済崩壊とハイパーインフレ、さらに軍事独裁政権による国民への弾圧（「汚い戦争」と呼ばれる人権侵害）により、国民の怒りが爆発寸前でした。追い詰められたガルティエリ大統領（軍人）は、「国民の不満の矛先を外（イギリス）に向けさせ、愛国心で政権を維持しよう」という、歴史上よくある「目くらまし」の賭けに出たのです。</p>
+<p class="text-left text-B-orange text-sm mt-2  max-w-2xl mx-auto">国民にとっての「悲願の領土」</p>
+<p class="text-left text-slate-600 text-xs mt-1  max-w-2xl mx-auto">&nbsp;&nbsp;&nbsp;&nbsp; 標的となった島（フォークランド諸島）は、1833年から約150年間イギリスが実効支配していました。しかし、アルゼンチンは独立時にスペインから引き継いだ正当な領土だと主張しており、学校でも「あそこは我が国の領土だ」と教え込まれていました。国民全員が「いつか取り返すべき聖地」と信じていたため、ここを攻めれば必ず国民が熱狂すると政府は確信していたわけです。</p>
+<p class="text-left text-B-orange text-sm mt-2  max-w-2xl mx-auto">「イギリスは戦わない」という致命的な読み違い</p>
+<p class="text-left text-slate-600 text-xs mt-1  max-w-2xl mx-auto">&nbsp;&nbsp;&nbsp;&nbsp;当時、イギリスも不況の真っ只中で、軍事予算を削り、フォークランド周辺の警備艦も退役させる計画を進めていました。アルゼンチン側は「地球の裏側のこんな小さな島のために、わざわざイギリス軍がわざわざ大軍を派遣して反撃してくるわけがない」と完全に高を括って、1982年4月2日に奇襲上陸を仕掛けました。</p>
+<p class="text-left text-B-orange text-sm mt-2  max-w-2xl mx-auto">鉄の女サッチャーの猛反撃と政権崩壊</p>
+<p class="text-left text-slate-600 text-xs mt-1  max-w-2xl mx-auto">&nbsp;&nbsp;&nbsp;&nbsp;ところが、当時のイギリス首相は「鉄の女」と呼ばれたマーガレット・サッチャーでした。彼女もまた国内の不況で支持率が低迷しており、ここで弱腰を見せるわけにはいきませんでした。</p>
+<p class="text-left text-slate-600 text-xs mt-1  max-w-2xl mx-auto">&nbsp;&nbsp;&nbsp;&nbsp;イギリスは即座に空母や原子力潜水艦を含む大艦隊を南米へ派遣し、猛反撃を開始しました。わずか2ヶ月半の激しい戦闘の末、アルゼンチン軍は全面降伏することになります。</p>
+<p class="text-left text-slate-600 text-xs mt-1  max-w-2xl mx-auto">&nbsp;&nbsp;&nbsp;&nbsp;アルゼンチン: 負けるはずがないと信じ込まされていた国民は敗戦に激怒し、軍事政権は完全に崩壊、皮肉にも国に民主主義が戻るきっかけとなりました。</p>
+<p class="text-left text-B-orange text-sm mt-2  max-w-2xl mx-auto">現代（2026年）でも続く火種</p>
+<p class="text-left text-slate-600 text-xs mt-1  max-w-2xl mx-auto">&nbsp;&nbsp;&nbsp;&nbsp;この戦争は現在でもアルゼンチン人の心に深い傷（と強いプライド）を残しており、国憲法にも「マルビナス諸島の領有権回復」が明記されています。大統領が誰になろうと、この問題だけはイギリスに対して今も一歩も引いていません。</p>
+
+
+</div>
+</section>
+<!-- END: HistorySection -->
+<!-- BEGIN: Footer -->
+<footer class="bg-U-blue-bg text-white py-20 px-6 border-t border-white/5 relative z-10">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="col-span-1 md:col-span-2">
+<div class="flex items-center gap-3 mb-6">
+<div class="text-emerald-500">
+<svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景（アルゼンチン国旗の空色） -->
+  <rect width="24" height="24" rx="4" fill="#74ACDF"/>
+  
+  <!-- 中央の白い帯 -->
+  <rect y="8" width="24" height="8" fill="white"/>
+  
+  <!-- ５月の太陽（Sol de Mayo） -->
+  <!-- 太陽の土台（ゴールド） -->
+  <circle cx="12" cy="12" r="2.2" fill="#F6B426"/>
+  
+  <!-- 太陽の光線（12本の直線でシンプルに表現） -->
+  <path d="M12 8.5V15.5M8.5 12H15.5" stroke="#F6B426" stroke-width="0.8" stroke-linecap="round"/>
+  <path d="M9.5 9.5L14.5 14.5M9.5 14.5L14.5 9.5" stroke="#F6B426" stroke-width="0.8" stroke-linecap="round"/>
+  <path d="M10.8 8.8L13.2 15.2M8.8 10.8L15.2 13.2" stroke="#F6B426" stroke-width="0.6" stroke-linecap="round"/>
+  <path d="M13.2 8.8L10.8 15.2M15.2 10.8L8.8 13.2" stroke="#F6B426" stroke-width="0.6" stroke-linecap="round"/>
+  
+  <!-- 太陽の中心（立体感を出すためのアクセント） -->
+  <circle cx="12" cy="12" r="1.2" fill="#E49A14"/>
+</svg>
+</div>
+<span class="text-white font-serif text-lg tracking-wider font-semibold">Argentina Discovery</span>
+</div>
+<p class="text-white text-sm max-w-sm mb-8">
+           Experience the sublime beauty and vibrant spirit of the Land of Silver. From the glacial peaks to the lush wetlands, your adventure awaits.
+          </p>
+</div>
+<div>
+<h6 class="text-k-yellow font-serif text-sm mb-6 uppercase tracking-widest">Navigation</h6>
+<ul class="space-y-4 text-sm text-white/60">
+<li><a class="hover:text-white transition-colors" href="#Landmarks">Landmarks</a></li>
+<li><a class="hover:text-white transition-colors" href="#cities">Cities</a></li>
+<li><a class="hover:text-white transition-colors" href="#cuisine">Cuisine</a></li>
+<li><a class="hover:text-white transition-colors" href="#history">History</a></li>
+</ul>
+</div>
+<div>
+<h6 class="text-k-yellow font-serif text-sm mb-6 uppercase tracking-widest">Connect</h6>
+<ul class="space-y-4 text-sm text-white/60">
+<li><a class="hover:text-white transition-colors" href="#">Instagram</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Twitter</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Contact Us</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 mt-10 mb-4"><p class="text-xs text-white">© 2026 Argentina Discovery. All rights reserved.</p>
+<div class="flex gap-8 text-xs text-white/80">
+<a href="#">Privacy Policy</a>
+<a href="#">Terms of Service</a>
+</div></div>
+<button onclick="window.close(); setTimeout(() => { window.location.href = 'https://google.com'; }, 100);" 
+          class="flex items-center gap-1 px-3 py-0.5 ml-auto md:ml-auto bg-brand-emerald hover:opacity-80 text-white font-medium rounded-full transition-all shadow-sm">
+    <span class="material-symbols-outlined text-xs text-white/80">logout</span>
+    <span class="tracking-wider text-xs text-white/80">QUIT</span>
+  </button>
+</footer>
+<!-- END: Footer -->
+</main>
+<style data-purpose="animations">
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+<script>
+    document.getElementById('searchInput').addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+            const searchTerm = this.value.trim();
+            if (searchTerm) {
+                const wikipediaUrl = `https://ja.wikipedia.org/wiki/特別:検索?search=${encodeURIComponent(searchTerm)}`;
+                window.open(wikipediaUrl, '_blank');
+            }
+        }
+    });
+</script>
+</body></html>

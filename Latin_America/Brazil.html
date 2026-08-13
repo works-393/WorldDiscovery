@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Brazil Discovery | Luxury Travel Experience</title>
+<meta content="Explore the ancient landmarks, vibrant cities, and rich history of Brazil." name="description"/>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="../menu.js"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'lebanon-dark': '#102219',
+        'lebanon-gold': '#C5A059',
+        'lebanon-green': '#2D5A27',
+        "primary": "#144bb8",
+        "background-light": "#f6f6f8",
+        "background-dark": "#111621",
+        // 追加
+        "al-adaam": "#8D1B3D",
+        "qatar-gold": "#C5A059", 
+        "e-green": "#50C878",
+        "qatar-blue": "#1e3a8a",
+        "oman-blue": "#003153",
+        "yemen-red": "#CE1126",
+        "Bahrain-red": "#DA291C",
+        "B-purple-dark": "#632276", // 重複を削除し、紫系を残しました。もし1回目の「#006400（深緑）」が必要な場合は、別のキー名（"B-green-dark"など）にしてください。
+        "B-purple": "#D1A7E2",
+        "B-yellow": "#ffff66",
+        "B-orange": "#ff6600",
+        "Br-yellow": "#fedf00",
+        "Br-green": "#009b3a",
+        "Kaza-blue": "#00A3DD",
+        "Kaza-blue-dark": "#003366",
+        "U-blue": "#99ffcc", // ターコイズブルー
+        "U-blue-bg": "#006699",
+        "k-yellow": "#ffcc00",
+        "k-red": "#cc3333",
+        "k-yellow-c": "#ccff33",
+        "silk-road-white": "#fdfdfd",
+        "t-green": "#006600",
+        "t-green-light": "#99cc99",
+        "Af-red": "#ff0099",
+        "Af-navy": "#0B1F3A",
+        "Brl-green": "#20cb5d",
+        "gold": "#FFD700",
+        "gold-dark": "#B8860B",
+        "golden-orange": "#ff9900",
+        "Sr-Brown": "#993300",
+           },
+          fontFamily: {
+            serif: ['Newsreader', 'serif'],
+            sans: ['Inter', 'sans-serif'],
+          },
+          backgroundImage: {
+            'Kazakhstan-hero': "url('img/Brazil_bg.jpg')",
+          }
+        }
+      }
+    }
+  </script>
+<style data-purpose="custom-styling">body {
+    background-color: #f0f9ff;
+    color: #1e293b
+    }
+.glass-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 1rem
+    }
+.text-balance {
+    text-wrap: balance
+    }
+.section-spacing {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem
+    }
+/* Pattern Overlay */
+.bg-pattern {
+    background-image: url(img/Brazil_bg.jpg);
+    opacity: 0.15
+    }</style>
+</head>
+<body class="font-sans antialiased overflow-x-hidden">
+<!-- BEGIN: Background Texture -->
+<div class="fixed inset-0 bg-pattern pointer-events-none z-0"></div>
+<!-- END: Background Texture -->
+<!-- BEGIN: MainHeader -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-Brl-green backdrop-blur-md border-b border-white/5">
+<nav class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<!-- Logo -->
+<a class="flex items-center gap-3 group" href="#">
+<div class="text-white-500 transform group-hover:scale-110 transition-transform">
+<svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://w3.org">
+  <!-- 背景：ブラジルの緑色 -->
+  <rect width="24" height="24" rx="4" fill="#009b3a"/>
+
+  <!-- ブラジルの黄色のひし形 -->
+  <path d="M12 2L22 12L12 22L2 12Z" fill="#ffcc00"/>
+
+  <!-- 中央の円：ブラジルの青空 -->
+  <circle cx="12" cy="12" r="5.5" fill="#002277"/>
+
+  <!-- 山（シンプル） -->
+  <path d="M7 15L11 10L15 15Z" fill="white" opacity="0.85"/>
+  <path d="M12 15L15.5 11L20 15Z" fill="white" opacity="0.5"/>
+
+  <!-- モスク（シルエット） -->
+  <!-- ドーム -->
+  <path d="M10 13C10 11.8 11.0 11 12 11C13.0 11 14 11.8 14 13Z" fill="white"/>
+
+  <!-- 建物本体 -->
+  <rect x="10" y="13" width="4" height="2" fill="white"/>
+
+  <!-- ミナレット（塔） -->
+  <rect x="15" y="11.5" width="0.8" height="3.5" fill="white"/>
+  <circle cx="15.4" cy="11" r="0.5" fill="white"/>
+</svg></div>
+<span class="text-Af-navy font-serif text-xl font-semibold">Brazil Discovery</span>
+</a>
+<!-- Desktop Navigation -->
+<div id="navMenu" class="hidden md:flex items-center gap-9 
+    absolute top-full left-0 w-full bg-Brl-green backdrop-blur-md flex-col p-6 shadow-lg z-50
+    md:absolute md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 md:w-auto md:flex-row md:p-0 md:shadow-none">
+<a class="text-gold text-sm font-medium hover:text-Af-navy transition-colors tracking-widest uppercase" href="#Landmarks">Landmarks</a>
+<a class="text-gold text-sm font-medium hover:text-Af-navy transition-colors tracking-widest uppercase" href="#cities">Cities</a>
+<a class="text-gold text-sm font-medium hover:text-Af-navy transition-colors tracking-widest uppercase" href="#cuisine">Cuisine</a>
+<a class="text-gold text-sm font-medium hover:text-Af-navy transition-colors tracking-widest uppercase" href="#history">History</a>
+</div>
+<!-- Search Bar -->
+<div class="relative hidden lg:block" data-purpose="search-container">
+<span class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+<svg class="w-4 h-4 text-B-purple-dark/50" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</span>
+<input id="searchInput" class="bg-white/5 border-white/10 text-white pl-10 pr-4 py-2 rounded-lg focus:ring-B-purple-dark focus:border-B-purple-dark w-64 text-sm" placeholder="Wikipedia検索" type="text"/>
+</div>
+
+<!-- Mobile Menu Button (Icon only) -->
+<div class="md:hidden">
+<button
+    id="menuButton"
+    class="md:hidden flex items-center justify-center">
+    <span class="material-symbols-outlined text-3xl">
+        menu
+    </span>
+</button></div>
+</nav>
+</header>
+<!-- END: MainHeader -->
+<!-- BEGIN: HeroSection -->
+<main class="relative">
+<section class="relative flex items-center justify-center overflow-hidden h-[90vh]">
+<!-- Hero Background Image -->
+<div class="absolute inset-0 z-0">
+<img alt="Brazil" class="w-full h-full object-cover brightness-50" src="img/Brazil.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-b from-[#003153]/60 via-transparent to-[#f0f9ff]"></div>
+</div>
+<div class="relative z-10 text-center px-6 max-w-4xl">
+<h2 class="text-gold font-serif italic text-xl md:text-2xl mb-4 opacity-0 animate-[fadeIn_1s_ease-out_forwards]">Deep Within the Lungs of the Earth</h2>
+<h1 class="text-white text-4xl md:text-7xl lg:text-4xl font-serif mb-8 leading-tight opacity-0 animate-[fadeIn_1s_ease-out_0.3s_forwards]">
+         Brazil: Where the Rainforest Meets the Atlantic Wave </h1>
+<p class="text-lg md:text-xl text-white/80 font-light max-w-2xl mx-auto mb-10 text-balance opacity-0 animate-[fadeIn_1s_ease-out_0.6s_forwards]">
+        Home to the Amazon Rainforest, often called the “Lungs of the Earth,” Brazil is a land where breathtaking biodiversity meets the roaring grandeur of Iguazu Falls. From emerald canopies to golden coastlines, explore its most iconic destinations region by region.</p>
+<!-- <a class="inline-block bg-B-purple-dark text-lebanon-dark px-10 py-4 font-semibold tracking-widest uppercase text-sm hover:scale-105 transition-transform opacity-0 animate-[fadeIn_1s_ease-out_0.9s_forwards]" href="#landmarks">
+          Explore Destinations
+        </a>-->
+</div>
+<!-- Scroll Indicator -->
+<!--<div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce opacity-60">
+<svg class="h-6 w-6" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M19 14l-7 7m0 0l-7-7m7 7V3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>-->
+</section>
+<!-- END: HeroSection -->
+
+
+<!-- BEGIN: LandmarksSection -->
+<section class="section-spacing px-6 relative" id="Landmarks">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
+<div class="max-w-2xl">
+<h2 class="text-B-orange font-serif text-sm mb-2 uppercase tracking-[0.3em]">Eternal Embrace & Sacred Skies</h2>
+<h3 class="text-3xl text-Br-green md:text-4xl font-serif">Iconic Landmarks</h3>
+</div>
+<p class="text-orange/90 max-w-md text-sm">Sacred Roots & Ocean Wonders: A journey through Brazil’s timeless spiritual soul, where ancient stone meets celestial blue.</p>
+</div>
+<div class="grid grid-cols-2 lg:grid-cols-3 gap-4">
+<!-- Item 1: Christ the Redeemer -->
+<div class="flex flex-col">
+<div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+<img alt="Christ the Redeemer" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmLuG2-FiEEQWvftlCflK3c6VhfJAojpyTV2fxSOgOsaA7b6DqQ7uEu7BO3YWa6pxt74PkPLWEbImo9diLpdoj3Uo2clDV29CccDppmh0jM1OL41KPSjA5RDkTEkLyH3dOA5mX0MXaZ-ejT1Pg7R7dfbwyUYW0RQXqSgdLdpp8MxFXjvJz4-MTBY-IyaDc7lvUqf4opouCjDP4f7ByOdBenU0si17V_yuQbfP-mxAOjurSINeICDA-aDOtyXr1-L2onrHht_StDPIH"/>
+<div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+<div class="absolute bottom-0 left-0 p-4">
+<span class="text-[10px] text-lebanon-gold uppercase tracking-widest block mb-1">CULTURAL ICON</span>
+<h4 class="text-lg font-serif text-white">Christ the Redeemer</h4>
+</div>
+</div>
+<!-- キャプション部分：写真の直下に配置 -->
+     <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4">An Art Deco masterpiece keeping watch over the Marvelous City.    </p>
+  </div>
+<!-- Item 2: Brasília Cathedral -->
+ <div class="flex flex-col">
+<div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+<img alt="Brasília Cathedral" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3o0C_akuHxb9zyRwcMcOm_A2YWDowTt8xGIfcLBnqZLf37_8eq4KVBIgswdc2QU5zoXrCeAEfqdUBZnz-bxm-Wkf2PGVXzPH5Rc5YVpiD69f3822zJDxd1JoDSAv0GxVkFf0TgMgVuvySacOJB-m0RTNvVhkmRTuSR8cZelyaT8lIcgYWE_dAn82rW8RmsqxKNc-IoqFKgMsDKSjpBuNoNtX9IiFdEb-nvJ8MPktbWxzcKZwbl4v_W9NeWEDdTzNWdgTmj1-RYNxF"/>
+<div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+<div class="absolute bottom-0 left-0 p-4">
+<span class="text-[10px] text-lebanon-gold uppercase tracking-widest block mb-1">ARCHITECTURE</span>
+<h4 class="text-lg font-serif text-white">Brasília Cathedral </h4>
+</div>
+</div>
+<!-- キャプション部分：写真の直下に配置 -->
+     <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4">A modernist vision of concrete and glass in Brazil's futuristic capital.</p>
+  </div>
+<!-- Item 3: Sugarloaf Mountain-->
+ <div class="flex flex-col">
+<div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+<img alt="Sugarloaf Mountain" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvnol3oA2pNrBwMpp1FnRWmbNBiKkqYNZeXjBO2DeknhwehOr63WR3T96UuP8XgZ6LoW2QiA3j7VwVlnD_Uh_oq7rz_xrvIPv8HhvCuJVk7kOxkTDJZamIFwsD14EFMK66Tz4RW5hbynONC2W-0cONjYPbwWddYS7Mj4u-jjRX_2NMmXnDOltAOk2waqwrinSZ8dXt3iinED5UjKRc-iuXMZu_dAIFKnOZi_UkhpsfyEmFtwwZGhyGKmTfCURH9_8Qi4E0cPpLS4-b"/>
+<div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+<div class="absolute bottom-0 left-0 p-4">
+<span class="text-[10px] text-lebanon-gold uppercase tracking-widest block mb-1">Pão de Açúcar</span>
+<h4 class="text-lg font-serif text-white">Sugarloaf Mountain</h4>
+</div>
+</div>
+<!-- キャプション部分：写真の直下に配置 -->
+     <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4">Rising 396 meters above the harbor, this quartz and granite peak is accessible via a glass-walled cable car system. Its unique name reportedly dates back to the 16th century, referring to the traditional shape of concentrated refined sugar loaves.</p>
+  </div>
+</div>
+</div>
+</section>
+<!-- END: LandmarksSection -->
+<!-- BEGIN: CitiesSection -->
+<section class="section-spacing px-6 relative" id="cities">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
+<div class="max-w-2xl">
+<h2 class="text-B-orange font-serif text-sm mb-2 uppercase tracking-[0.3em]">Cobblestone Dreams & Endless Horizons</h2>
+<h3 class="text-3xl text-Br-green md:text-4xl font-serif">Cities of Distinction</h3>
+</div>
+<p class="text-orange/90 max-w-md text-sm">From the pastel-colored colonial squares of Olinda to the dramatic mountain-backed skyline of Rio, discover cities where timeless architecture meets the raw beauty of the Atlantic coast.</p>
+</div>
+<div class="space-y-20">
+<!-- Rio de Janeiro -->
+<div class="flex flex-col md:flex-row items-center gap-10">
+<div class="w-full md:w-1/2">
+<img alt="Rio de Janeiro" class="rounded-2xl shadow-xl w-full h-80 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8HaUTd9sr8s8Mc9IOnQ2RODbI1JBNGLL8FJxHjI1p4W38MDD0GaFUgPvn-ioK66DPaB--7s0sAe8Q3NmG1AYfyn8cx9nMdulYzqHAal0VXTK7TtvKzBhAv_u9zAiyr_o22HIxbYAAnDKVTbu0PZbuv3x4qsR6zCb5zIaI4ioXrhlQqcF1nF25sMrMbz1Kk-6PKvMTvadXbY30UGZL4gaKDVpYX_XhLMk0h9e5oSoqk2RywlrdluvV1UFCPAXJPxNE2PULQLAoKI9y"/>
+</div>
+<div class="w-full md:w-1/2">
+<span class="text-Sr-Brown font-bold uppercase tracking-widest text-sm">Samba, Sun, and the Ocean Breeze.</span>
+<h3 class="text-B-orange text-3xl mt-2 mb-4">Rio de Janeiro</h3>
+<p class="text-Af-navy dark:text-orange-100 text-lg mb-6 leading-relaxed font-serif">Where the emerald mountains kiss the sapphire sea. Experience the rhythm of the samba and the serenity of the Atlantic breeze.</p>
+</div>
+</div>
+<!-- São Paulo -->
+<div class="flex flex-col md:flex-row-reverse items-center gap-10">
+<div class="w-full md:w-1/2">
+<img alt="São Paulo" class="rounded-2xl shadow-xl w-full h-80 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD94n4pViAAe9J49698rogTQz1_92Y_hofexp3Jl7QcxopJXTii2Ol63rTX5NfCNLlHPTVGkBi0RlUpkq7xQroXTUVYJ9FlBkomzwOL2GoRmbYWWCi9H9uWPbZo6dtKaRK6eZf3ZTu4nVVfsSNnhHXC_oxMgaEqtb8pPBYLpUtUNokLN9nSlwL1orkxDoRPei6ofcGANQ3WqveiiaBdSAEh9aP2dPvqt8yV6f10ulVYLyJ6dUUg-TYAEt_F0bb1tQJynZsoqKRf6fAA"/>
+</div>
+<div class="w-full md:w-1/2">
+<span class="text-Sr-Brown font-bold uppercase tracking-widest text-sm">The Gastronomic & Financial Heart.</span>
+<h3 class="text-B-orange text-3xl mt-2 mb-4">São Paulo</h3>
+<p class="text-Af-navy dark:text-orange-100 text-lg mb-6 leading-relaxed font-serif">A concrete jungle with a beating heart of gold. The culinary capital of the South, home to world-class museums and nightlife that never sleeps.</p>
+</div>
+</div>
+<!-- Salvador -->
+<div class="flex flex-col md:flex-row items-center gap-10">
+<div class="w-full md:w-1/2">
+<img alt="Salvador" class="rounded-2xl shadow-xl w-full h-80 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4yh1gRfl-i-MS4YLl1PA2j63StL-qs6F1N8yTPMX_Z2ZQn5hney8AU3ABTeXQMg3Y4SlcEB7LofKJcZdmPlqjDGOYP42qMClwS5OrWU_mI2N-WYHjYS9NWpjKrjIvkvl_tguJnP9Dd83_tkTZTHAZA3rfQv69mvPPJhxqdu_52NmRkkLOQkBwEFZaB6KM7g9-pLEqNdWQtiO095OEdKHTJ9Pjaapf1w6Vgo16j015yLiNPdij0I49jpkGFHmPDPiIgBDcqCQRYMiI"/>
+</div>
+<div class="w-full md:w-1/2">
+<span class="text-Sr-Brown font-bold uppercase tracking-widest text-sm">Colonial Heritage & Rhythm</span>
+<h3 class="text-B-orange text-3xl mt-2 mb-4">Salvador</h3>
+<p class="text-Af-navy dark:text-orange-100 text-lg mb-6 leading-relaxed font-serif">Where pastel history dances to the beat of Afro-Brazilian drums. Experience the colorful soul of Bahia and the warm embrace of the Atlantic.</p>
+</div>
+</div>
+<!-- Manaus -->
+<div class="flex flex-col md:flex-row-reverse items-center gap-10">
+<div class="w-full md:w-1/2">
+<img alt="Manaus" class="rounded-2xl shadow-xl w-full h-80 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9a_zsTO64C71Imi5qfgUI0Ve2XXTMc-g_ATPa95dMZ85HLmempxSFuJkGdkvXDElOGHH0yc4PHvMAAp_rGNQMHJqbmF9TU0tlD_YUwaO-GKrAXPlaCfP9FO6NEFqa8qdrEvSvI-KQVDyrmpCiL1FGv8OjgUuI_UcXFWuD65hSQvFM2f-BLIa5Z3oiuFd4by8Z-cK-uqaoMvR3NYvSMZ2q5pv4Znd3upoI_eFIKB8pAUVekQfXhOOyej5sxolTJ1I9t3oRjx4Olqx6"/>
+</div>
+<div class="w-full md:w-1/2">
+<span class="text-Sr-Brown font-bold uppercase tracking-widest text-sm">Gateway to the Amazon.</span>
+<h3 class="text-B-orange text-3xl mt-2 mb-4">Manaus</h3>
+<p class="text-Af-navy dark:text-orange-100 text-lg mb-6 leading-relaxed font-serif">Where the black and golden rivers merge at the gateway to the Amazon. Experience the wild pulse of the rainforest and the historic grandeur of the jungle metropolis.</p>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+<!-- END: Cities Section -->
+
+</div>
+</div>
+</section>
+<!-- END: CitiesSection -->
+<!--BEGIN: Cuisine -->
+<section class="px-4 py-16 md:px-10" id="cuisine">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-12">
+<h2 class="text-Br-green text-3xl md:text-4xl font-serif">A Gastronomic Celebration</h2>
+<p class="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">Brazilian cuisine is a vibrant tapestry woven from indigenous ingredients, Portuguese heritage, and African soul. Every bite tells a story of the land.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Package 1 -->
+<div class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:shadow-xl transition-shadow">
+<div class="h-56 w-full overflow-hidden">
+<img alt="Churrasco" class="w-full h-full object-cover transition-transform group-hover:scale-105" data-alt="Churrasco" src="https://lh3.googleusercontent.com/aida-public/AB6AXuArT57iiLXOjiuEaMZCa6BF2q3hxPgaqpUGRKu_9Cu2d-TRQmYlB0yo-_8dk6iMztYdtew1aw-LtFOoDpomTTZ3Mt3MFMC8aq1Yyyk3haYUNDWH-0GUmNG3adAXNgA1auC78Vqne3SJlIjL1g8dSPNsfltIRuHa1q_fmdBsL_kkqM9zS9bEEye9BcqXcbtPenZSCv3AgNDpGMOuSs6M5zgLKTTiGEbtmfHa9cyBQ2p9QlqMukdgg84bNttagmqhGOq51T4irNOLrQQG"/>
+</div>
+<div class="p-4">
+<div class="flex justify-between items-start mb-1">
+<h3 class="text-xl text-B-orange font-bold">Churrasco</h3>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-400 mb-6 line-clamp-2">A rich kiss of rock salt and open flame—pure, smoky perfection on a skewered blade. A meat lover’s ultimate ritual.</p>
+<div class="flex items-center justify-between">
+</div>
+</div>
+</div>
+<!-- Package 2 -->
+<div class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:shadow-xl transition-shadow">
+<div class="h-56 w-full overflow-hidden">
+<img alt="Feijoada" class="w-full h-full object-cover transition-transform group-hover:scale-105" data-alt="Feijoada" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0MogzR1GTIzJpR52_mbTMhSj4xiezVEhOXIENUYTclL7Pyt3FVd60heePeLjpASmf7f-IXzqXhClJ9cAuhS3CDuhhZF0GtCwUsKrq3gvdXWKd4JgChlcqdEcPgIWlC86jDfH7eeGIS1nZ-09uxaxkBTUXpdTeypMX1D0Sra6jvTQUFy-M9Oj_pjNI7lNUDLlU-zgHvXqnu26uvflmSfWo1JzIkOms-dPRheKojqXMHQ7-V8MMFO9OiAwX2L4RgXaIh8db3GWIiuKm"/>
+</div>
+<div class="p-4">
+<div class="flex justify-between items-start mb-1">
+<h3 class="text-xl text-B-orange font-bold">Feijoada</h3>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-400 mb-6 line-clamp-2">A deeply comforting embrace of slow-simmered black beans and rich, savory meats—the literal heart and soul of Brazil.</p>
+<div class="flex items-center justify-between">
+</div>
+</div>
+</div>
+<!-- Package 3 -->
+<div class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:shadow-xl transition-shadow">
+<div class="h-56 w-full overflow-hidden">
+<img alt="Pão de Queijo" class="w-full h-full object-cover transition-transform group-hover:scale-105" data-alt="Pão de Queijo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAs1HCKZGWeSRyWTNqRz1s9l_s3CVfGSArkxbx5T3gaPcmkuj12dM1E3NlBDQSN68TTbJnVYBovhH1BKhw9y5Zwuavt4Fyhn0DyPWBdWi6_Mpb6EgR3bviR8dLEDHurTEm7NxG-O5aIMsYlbOaFflwRbxR3mQQv5uCmu6JqvlSqxq6aLSo6GTrP-iYuDtZkQ2OECmoNBwfHDbaZc-ZAzy0qW1AMPbGN6tJwgeefVznYD980b-ZhIvZHjaYzqJvRuijKPeIGRFfrvPlm"/>
+</div>
+<div class="p-4">
+<div class="flex justify-between items-start mb-1">
+<h3 class="text-xl text-B-orange font-bold">Pão de Queijo</h3>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-400 mb-6 line-clamp-2">A warm, crispy golden shell hiding a melt-in-your-mouth, cheesy chew. A bite-sized piece of pure comfort.</p>
+<div class="flex items-center justify-between">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- BEGIN: HistorySection -->
+<section class="bg-[#006699]/30 section-spacing px-6 relative overflow-hidden" id="history">
+<div class="max-w-5xl mx-auto"><div class="text-center mb-12">
+<h2 class="text-B-yellow font-serif text-sm mb-2 uppercase tracking-[0.3em]">ブラジル連邦共和国の歴史</h2>
+<h3 class="text-primary text-3xl md:text-4xl font-serif">Federative Republic of Brazil</h3>
+<p class="text-xs text-slate-600 dark:text-slate-400 max-w-3xl mx-auto">Brazil is defined by a tumultuous yet prosperous journey—evolving from diverse indigenous cultures, through Portuguese colonization and the Imperial era, to a republic that stands today as South America’s ultimate superpower.</p>
+</div>
+<div class="max-w-3xl mx-auto space-y-8 relative border-l border-slate-300 pl-8">
+<!-- History: Ancient -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-primary"></div>
+<h4 class="text-primary font-sans text-xl font-semibold mb-6">古代・先植民地期</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">多様な先住民族文化<span class="text-xs text-slate-500 block md:inline md:ml-2">（〜1500年） </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">アマゾン川流域や沿岸部において、トゥピ・グアラニー系など数百万人の先住民族が自然と共生した独自の社会を築く。
+</p>
+</div>
+
+</div>
+</div>
+<!-- History: Medieval 
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-primary"></div>
+<h4 class="text-primary font-sans text-xl font-semibold mb-6">中世</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">イスラム帝国 <span class="text-xs text-slate-500 block md:inline md:ml-2">（ウマイヤ朝・アッバース朝）（651年 - 9世紀頃） </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">アラブ人による征服でイスラム教が定着。
+</p>
+</div>
+-->
+<!-- History: Early Modern -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-primary"></div>
+<h4 class="text-primary font-sans text-xl font-semibold mb-6">近世（植民地時代）</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">ポルトガル人の到達<span class="text-xs text-slate-500 block md:inline md:ml-2">（1500年）   </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">ペドロ・アルヴァレス・カブラルが到達。染料となる木「パウ・ブラジル（ブラジルボク）」が大量に輸出されたことが国名の由来となる。
+</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">砂糖と金鉱、奴隷貿易<span class="text-xs text-slate-500 block md:inline md:ml-2">（16世紀〜18世紀）   </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">北東部でのサトウキビ栽培に続き、18世紀には内陸部ミナスジェライス州で大規模な金鉱（ゴールドラッシュ）が発見。労働力として西アフリカから、南米最多となる数百万人もの黒人奴隷が強制連行される。 
+</p>
+</div>
+
+</div>
+</div>
+<!-- History: Pre Modern -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-primary"></div>
+<h4 class="text-primary font-sans text-xl font-semibold mb-6">近代（ブラジル帝国と共和国の誕生）</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">ポルトガル宮廷の移転 <span class="text-xs text-slate-500 block md:inline md:ml-2">（1808年）  </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">ナポレオン戦争による本国危機から、ポルトガル王室が首都リスボンを脱出してリオデジャネイロへ遷都。
+</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">ブラジル帝国の独立 <span class="text-xs text-slate-500 block md:inline md:ml-2">（1822年）  </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">ポルトガル皇太子ペドロが「独立か死か」を叫び、1822年9月7日に初代皇帝ペドロ1世として独立を宣言。南米で唯一「帝政」による独立を維持。
+</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">奴隷制の廃止と共和制への移行 <span class="text-xs text-slate-500 block md:inline md:ml-2">（1888年〜1889年）  </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">1888年にペドロ2世の娘イザベル皇女により奴隷制が完全に廃止（西半球最後の廃止国）。これに伴い大農園主の支持を失った帝政が崩壊し、翌1889年に軍事クーデターにより「ブラジル共和国」が誕生。 
+</p>
+</div>
+
+</div>
+</div>
+
+<!-- History: Pre Modern & Modern -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-primary"></div>
+<h4 class="text-primary font-sans text-xl font-semibold mb-6">近現代（経済ブームと軍事独裁）</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">「コーヒー・コン・レッチ」と日系移民 <span class="text-xs text-slate-500 block md:inline md:ml-2">（20世紀初頭）  </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">コーヒー農家（サンパウロ）と酪農家（ミナスジェライス）の交代による政権独裁期。1908年には「笠戸丸」によって初の日本人移民が到着し、近代農業に大きく貢献。
+</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">ヴァルガス独裁と近代化 <span class="text-xs text-slate-500 block md:inline md:ml-2">（1930年〜1945年）  </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">ジェトゥリオ・ヴァルガスによるポピュリズム独裁政権が誕生。工業化と中央集権化が進む。
+</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">ブラジリア遷都<span class="text-xs text-slate-500 block md:inline md:ml-2">（1960年）  </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">クビチェック大統領のもと、内陸部開発を狙い、何もない荒野に未来都市「ブラジリア」を建設して首都を移転。</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">軍事独裁政権 <span class="text-xs text-slate-500 block md:inline md:ml-2">（1964年〜1985年） </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">1964年、カステロ・ブランコ軍事政権樹立。クーデターにより軍部が実権を掌握。「ブラジルの奇跡」と呼ばれる高度経済成長を達成する一方、激しい反体制派の弾圧と巨額の対外債務を抱える。 
+</p>
+</div>
+
+</div>
+</div>
+
+<!-- History: Modern -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-primary"></div>
+<h4 class="text-primary font-sans text-xl font-semibold mb-6">現代</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">民政移管（サルネイ政権）と国際社会での躍進 <span class="text-xs text-slate-500 block md:inline md:ml-2">（1985年〜現在） </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">民主化へ復帰。深刻なインフレを乗り越え、2000年代以降は豊富な資源、農業、工業を武器に新興経済大国（BRICS）の筆頭として世界をリード。
+</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">現代のブラジル <span class="text-xs text-slate-500 block md:inline md:ml-2">  </span></h5>
+<p class="text-xs text-slate-600 leading-relaxed">アマゾンの環境保護、根強い貧富の格差（ファヴェーラ問題）など国内の課題に向き合いながら、南米ナンバーワンの経済・政治・文化の超大国として独自の存在感を放ち続けている。 
+</p>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+<p class="text-left text-Bahrain-red text-sm mt-6 font-bold max-w-2xl mx-auto">19世紀初頭のナポレオン戦争は、ヨーロッパの勢力図を激変させただけでなく、大西洋を越えてブラジルの歴史、ひいては南米の国際政治を決定づけた一大転換点となりました。この危機の本質は、ナポレオンの侵攻によって「ヨーロッパの本国（ポルトガル）が崩壊し、植民地（ブラジル）が事実上の『本国』へと逆転した」という、世界史的にも極めて異例な国家主権の移転劇にあります。</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto">&nbsp;&nbsp;&nbsp;ブラジルに甚大な影響を与えたナポレオン戦争による本国危機の構図について、以下の3つの視点から論説します。</p>
+<p class="text-left text-t-green text-sm mt-2 font-bold max-w-2xl mx-auto">1.宮廷のリオデジャネイロ遷都：主従関係の逆転</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;&nbsp;1807年、ナポレオン率いるフランス軍は、イギリスとの貿易を続けるポルトガル王国への侵攻を開始しました。陥落寸前の中、ポルトガル摂政皇太子ドン・ジョアン（後のジョアン6世）は、イギリス海軍の護衛のもと、宮廷貴族や官僚ら約1万5,000人とともに国を捨ててブラジルへ逃亡するという前代未聞の決断を下しました（1808年リオデジャネイロ到着）。</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;&nbsp;この「宮廷のブラジル遷都」により、それまで富を吸い上げられるだけの「植民地」だったブラジルは、突如としてポルトガル帝国の「事実上の首都（本国）」へと昇格することになります。</p>
+<p class="text-left text-t-green text-sm mt-2 font-bold max-w-2xl mx-auto">2.植民地体制の崩壊と「経済的解放」</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;&nbsp;リオに到着したドン・ジョアンが最初に行った最重要政策が、1808年の「諸国との貿易港開放令」です。それまでブラジルは、本国ポルトガルとのみ交易が許される「植民地重商主義（宗主国独占）」に縛られていました。しかし、本国がフランスに占領されたため、ブラジルは自ら経済を回さざるを得なくなります。</p>
+<p class="text-left text-slate-600 text-sm mt-0 font-bold max-w-2xl mx-auto">イギリスへの市場開放: </p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">支援の見返りとして、イギリスを中心とした友好国への自由貿易が解禁されました。</p>
+<p class="text-left text-slate-600 text-sm mt-0 font-bold max-w-2xl mx-auto">近代化の推進: </p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">リオデジャネイロには中央銀行、印刷局、高等教育機関、植物園などが次々と設立され、一気に近代的国家のインフラが整いました。</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;&nbsp;このプロセスにより、ブラジルは経済的にも文化的にも「ポルトガル本国への依存」を完全に脱却しました。</p>
+<p class="text-left text-t-green text-sm mt-2 font-bold max-w-2xl mx-auto">3. 本国復帰の拒絶から「無血独立」へ</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;&nbsp;1814年にナポレオンが失脚し、ヨーロッパに平和が戻ると、ポルトガル本国（本土）の住民や政治家たちは「宮廷はリスボンに戻るべきだ」と強く要求しました。また、ブラジルを再び元の「格下の植民地」に格下げしようと画策します。しかし、すでに10年以上「帝国の中心」として繁栄し、自由貿易の恩恵を受けていたブラジルの地主やエリート層が、従属的な立場に戻ることを受け入れるはずがありませんでした。</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;&nbsp;1821年、国王ジョアン6世は圧力に抗えずポルトガルへ帰国しますが、息子のドン・ペドロを摂政としてブラジルに残します。そして翌1822年、本国からの執拗な服従要求に対し、ドン・ペドロはブラジルの独自性を守るため「独立か死か」を宣言（イピランガの叫び）。ブラジル帝国として独立を果たしました。</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto">&nbsp;&nbsp;&nbsp;ブラジルは「本国の危機によって、王室そのものが転がり込んできた」という特殊な経緯をたどりました。その結果、植民地時代から帝国への移行が比較的平和的かつ連続的に行われ、広大な領土を分裂させることなく一つの巨大な国家として独立を維持できたのです。ナポレオン戦争による本国の危機は、ブラジルにとっては「国家誕生」への最大の引き金であったと言えます。</p>
+
+<p class="text-left text-Bahrain-red text-sm mt-6 font-bold max-w-2xl mx-auto">ポピュリズム独裁政権と軍事政権の違いをブラジル歴史上の2人の大物、ヴァルガス（ポピュリズム）と、1964年のカステロ・ブランコ軍事政権を例に、4つのポイントで比較してみます。</p>
+<p class="text-left text-t-green text-sm mt-2 font-bold max-w-2xl mx-auto">1.権力の源（だれの支持で成り立っているか）</p>
+<p class="text-left text-slate-600 text-sm mt-0 font-bold max-w-2xl mx-auto">ポピュリズム独裁：大衆（労働者や貧困層）の熱狂</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;&nbsp;特定のカリスマ指導者が、エリートに虐げられてきた「一般大衆（庶民）」に直接語りかけ、絶大な人気を集めて権力を握ります。ブラジルの例：ヴァルガス大統領は「貧民の父」と呼ばれ、労働者の圧倒的スターでした。</p>
+<p class="text-left text-slate-600 text-sm mt-0 font-bold max-w-2xl mx-auto">軍事政権：軍事力（警察・軍隊）と特権階級</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;&nbsp;国民の人気ではなく、「武力（銃と戦車）」で無理やり政権を奪います。バックには大農場主や大企業などのエリート層、そして（冷戦期は）アメリカがついていました。</p>
+<p class="text-left text-t-green text-sm mt-2 font-bold max-w-2xl mx-auto">2.政治の手法（どうやって統治するか）</p>
+<p class="text-left text-slate-600 text-sm mt-0 font-bold max-w-2xl mx-auto">ポピュリズム独裁：「あめ」と「むち」の使い分け</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;&nbsp;労働法を整備したり、最低賃金を上げたりして、国民に大きな利益（あめ）を分け与えます。その代わり、自分に反対する一部の政敵は厳しく弾圧（むち）します。</p>
+<p class="text-left text-slate-600 text-sm mt-0 font-bold max-w-2xl mx-auto">軍事政権：圧倒的な「むち（恐怖）」と「秩序」</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;&nbsp;国民を喜ばせる政策よりも、「社会のルールを守らせること」を優先します。憲法を停止し、選挙を禁止し、反抗する者はゲリラでも一般人でも徹底的に拷問・拘束・追放します。</p>
+<p class="text-left text-t-green text-sm mt-2 font-bold max-w-2xl mx-auto">3.目指す社会（何のために独裁するか）</p>
+<p class="text-left text-slate-600 text-sm mt-0 font-bold max-w-2xl mx-auto">ポピュリズム独裁：社会の構造改革、国の近代化</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;&nbsp;古い特権階級（ブラジルでいうコーヒー大農場主）を打倒し、新しい近代国家を作ろうとします。国を豊かにして大衆に還元するのが名目です。</p>
+<p class="text-left text-slate-600 text-sm mt-0 font-bold max-w-2xl mx-auto">軍事政権：現状維持、反共産主義（右派・保守）</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;&nbsp;「左翼ゲリラや共産主義者が国をめちゃくちゃにしようとしている！秩序を取り戻さねば！」という大義名分で動きます。社会の仕組みをガラリと変えるより、資本主義やエリートの既得権益を「守る」ための独裁です。「左翼ゲリラや共産主義者が国をめちゃくちゃにしようとしている！秩序を取り戻さねば！」という大義名分で動きます。社会の仕組みをガラリと変えるより、資本主義やエリートの既得権益を「守る」ための独裁です。</p>
+<p class="text-left text-t-green text-sm mt-2 font-bold max-w-2xl mx-auto">4.リーダーの姿（顔が見えるか）</p>
+<p class="text-left text-slate-600 text-sm mt-0 font-bold max-w-2xl mx-auto">ポピュリズム独裁：圧倒的な個人のカリスマ</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;&nbsp;「この人についていけば間違いない」と思わせる個人のキャラクターがすべてです（ヴァルガス、あるいは隣国アルゼンチンのペロンなど）。「みんな（庶民）のために、俺が独裁をやる！」という熱狂の政治。</p>
+<p class="text-left text-slate-600 text-sm mt-0 font-bold max-w-2xl mx-auto">軍事政権：組織による無機質な統治</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;&nbsp;「個人」ではなく「軍（陸海空軍）」という組織そのものが支配します。そのため、大統領（将軍）が数年ごとに交代しても、軍の支配体制自体は何も変わらず淡々と続きます。「国が乱れているから、軍隊が力で黙らせる！」という冷徹な秩序の政治。</p>
+<p class="text-left text-slate-600 text-sm mt-2  max-w-2xl mx-auto">&nbsp;&nbsp;&nbsp;ブラジルは、1930〜40年代にヴァルガスの「ポピュリズム」で国を新しくし、1960〜80年代には冷戦の煽りを受けて「軍事政権」の暗黒期を経験しました。</p>
+
+<p class="text-left text-Bahrain-red text-sm mt-6 font-bold max-w-2xl mx-auto">ブラジルは、数多くの大規模な革命や血生臭い反乱を繰り返してきた、非常に激動の歴史を持つ国です。中南米の他の国々（旧スペイン領）が激しい独立戦争を戦ったのに対し、ブラジルはポルトガル王室の皇太子が自ら独立を宣言したため（1822年）、「比較的平和に独立した国」というイメージを持たれがちです。しかし、その後の国内は反乱の連続でした。</p>
+<p class="text-left text-t-green text-sm mt-2 font-bold max-w-2xl mx-auto">1.独立直後の相次ぐ地域反乱（19世紀前半）</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;&nbsp;皇帝の専制政治への反発や、奴隷制・貧困への不満から、各地で大規模な地方反乱や独立運動が多発しました。</p>
+<p class="text-left text-slate-600 text-sm mt-0 font-bold max-w-2xl mx-auto">赤道連邦の反乱（1824年）：</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;&nbsp;北東部の州が皇帝の独裁に反発し、ブラジルからの分離独立を目指した共和派の反乱。</p>
+<p class="text-left text-slate-600 text-sm mt-0 font-bold max-w-2xl mx-auto">マレーの反乱（1835年）：</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">北東部サルバドールで、アフリカ系のイスラム教徒の奴隷たちが自由を求めて起こした、ブラジル史上最大級の奴隷蜂起。</p>
+<p class="text-left text-slate-600 text-sm mt-0 font-bold max-w-2xl mx-auto">ファローピーリャ戦争（1835〜1845年）：</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">南部のガウショ（牧場主やカウボーイ）たちが中央政府に反旗を翻し、独自の共和国を宣言して10年間も戦い続けたブラジル最大の不服従運動。</p>
+<p class="text-left text-t-green text-sm mt-2 font-bold max-w-2xl mx-auto">2. 帝政の崩壊と共和政へのクーデター（1889年）</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;&nbsp;奴隷制の廃止（1888年）によって大農場主の支持を失ったブラジル帝国は、翌1889年に軍部による無血クーデター（共和政革命）によってあっけなく崩壊し、共和政へと移行しました。</p>
+<p class="text-left text-t-green text-sm mt-2 font-bold max-w-2xl mx-auto">3. 1930年革命とサンパウロ護憲革命（1930年代）</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;&nbsp;近代ブラジル最大の政治的激動期です。</p>
+<p class="text-left text-slate-600 text-sm mt-0 font-bold max-w-2xl mx-auto">1930年革命：</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">リオグランデ・ド・スル州の知事だったジェトゥリオ・ヴァルガスが、軍部と結託してクーデターを起こし実権を掌握（独自の独裁体制へ）。</p>
+<p class="text-left text-slate-600 text-sm mt-0 font-bold max-w-2xl mx-auto">サンパウロ護憲革命（1932年）：</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">ヴァルガスの独裁に怒った大都市サンパウロ州の市民や兵士約13万人（護憲軍）が立ち上がり、政府軍との間で近代的な内戦が勃発。戦車や航空機も投入され、数千人の犠牲者を出しました。</p>
+<p class="text-left text-t-green text-sm mt-2 font-bold max-w-2xl mx-auto">4. 軍事クーデターと軍政時代（1964〜1985年）</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;&nbsp;冷戦下、左傾化する大統領を警戒した軍部が1964年にクーデターを起こし、政権を奪取。以後21年間にわたり軍事独裁政権が続き、左派ゲリラによる武装闘争や、政府による激しい言論弾圧・反体制派への拷問が行われました。</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto"></p>
+
+<p class="text-left text-Bahrain-red text-sm mt-6 font-bold max-w-2xl mx-auto">インフレ（経済危機）はブラジルの民政移管（軍事政権の崩壊とサルネイ政権の誕生）をもたらした最大の原因の一つです。</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;&nbsp;当時の軍事政権は、自由や人権を弾圧する代わりに「高い経済成長（ブラジルの奇跡）」を約束することで独裁を正当化していました。しかし、その経済がハイパーインフレによって完全に破綻したため、軍部は国を統治する大義名分を失い、民政へ政権を返上せざるを得なくなったのです。軍部にとって、このまま政権に居座り続けて経済が完全に崩壊すれば、自分たちが「国を滅ぼした戦犯」として処刑されたり追放されたりするリスク（生存本能の危機）がありました。そのため軍部は、「これ以上この経済の泥船の舵は取れない。責任を文民（民間人）に押し付けて、自分たちは安全に退場しよう」という計算を働かせ、民政移管を受け入れたのです。</p>
+<p class="text-left text-slate-600 text-sm mt-0  max-w-2xl mx-auto">&nbsp;&nbsp;&nbsp;この「軍政崩壊とハイパーインフレの混沌」の時代を経て、ブラジルは1990年代後半にようやく通貨を安定させ、現在の経済大国へと這い上がっていくことになります。</p>
+
+
+<!--
+<div class="text-left text-Bahrain-red text-lg mt-6 font-bold max-w-2xl mx-auto">
+<a href="Laos_h.html" target="_blank" rel="noopener noreferrer" class="text-primary font-button flex items-center gap-2 group mx-auto w-fit">
+    Learn History 
+    <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>-->
+</section>
+<!-- END: HistorySection -->
+<!-- BEGIN: Footer -->
+<footer class="bg-Brl-green py-20 px-6 border-t border-white/5 relative z-10">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="col-span-1 md:col-span-2">
+<div class="flex items-center gap-3 mb-6">
+<div class="text-emerald-500">
+<svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://w3.org">
+  <!-- 背景：ブラジルの緑色 -->
+  <rect width="24" height="24" rx="4" fill="#009b3a"/>
+
+  <!-- ブラジルの黄色のひし形 -->
+  <path d="M12 2L22 12L12 22L2 12Z" fill="#ffcc00"/>
+
+  <!-- 中央の円：ブラジルの青空 -->
+  <circle cx="12" cy="12" r="5.5" fill="#002277"/>
+
+  <!-- 山（シンプル） -->
+  <path d="M7 15L11 10L15 15Z" fill="white" opacity="0.85"/>
+  <path d="M12 15L15.5 11L20 15Z" fill="white" opacity="0.5"/>
+
+  <!-- モスク（シルエット） -->
+  <!-- ドーム -->
+  <path d="M10 13C10 11.8 11.0 11 12 11C13.0 11 14 11.8 14 13Z" fill="white"/>
+
+  <!-- 建物本体 -->
+  <rect x="10" y="13" width="4" height="2" fill="white"/>
+
+  <!-- ミナレット（塔） -->
+  <rect x="15" y="11.5" width="0.8" height="3.5" fill="white"/>
+  <circle cx="15.4" cy="11" r="0.5" fill="white"/>
+</svg>
+</div>
+<span class="text-oman-blue font-serif text-lg tracking-wider font-semibold">Brazil Discovery</span>
+</div>
+<p class="text-white text-sm max-w-sm mb-8">
+            Curating bespoke luxury travel experiences for discerning explorers seeking the untouched wilderness of the Amazon and the roaring, majestic soul of Iguazu.
+          </p>
+</div>
+<div>
+<h6 class="text-oman-blue font-serif font-bold text-sm mb-6 uppercase tracking-widest">Navigation</h6>
+<ul class="space-y-4 text-sm text-white/60">
+<li><a class="text-Br-yellow hover:text-white transition-colors" href="#Landmarks">Landmarks</a></li>
+<li><a class="text-Br-yellow hover:text-white transition-colors" href="#cities">Cities</a></li>
+<li><a class="text-Br-yellow hover:text-white transition-colors" href="#cuisine">Cuisine</a></li>
+<li><a class="text-Br-yellow hover:text-white transition-colors" href="#history">History</a></li>
+</ul>
+</div>
+<div>
+<h6 class="text-oman-blue font-serif font-bold text-sm mb-6 uppercase tracking-widest">Connect</h6>
+<ul class="space-y-4 text-sm text-white/60">
+<li><a class="text-Br-yellow hover:text-white transition-colors" href="#">Instagram</a></li>
+<li><a class="text-Br-yellow hover:text-white transition-colors" href="#">Twitter</a></li>
+<li><a class="text-Br-yellow hover:text-white transition-colors" href="#">Contact Us</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 mt-10 mb-4"><p class="text-xs text-Af-navy">© 2026 Brazil Discovery. All rights reserved.</p>
+<div class="flex gap-8 text-xs text-white/80">
+<a href="#">Privacy Policy</a>
+<a href="#">Terms of Service</a>
+</div></div>
+<button onclick="window.close(); setTimeout(() => { window.location.href = 'https://google.com'; }, 100);" 
+          class="flex items-center gap-1 px-3 py-0.5 ml-auto md:ml-auto bg-brand-emerald hover:opacity-80 text-white font-medium rounded-full transition-all shadow-sm">
+    <span class="material-symbols-outlined text-xs text-white/80">logout</span>
+    <span class="tracking-wider text-xs text-white/80">QUIT</span>
+  </button>
+</footer>
+<!-- END: Footer -->
+</main>
+<style data-purpose="animations">
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+<script>
+    document.getElementById('searchInput').addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+            const searchTerm = this.value.trim();
+            if (searchTerm) {
+                const wikipediaUrl = `https://ja.wikipedia.org/wiki/特別:検索?search=${encodeURIComponent(searchTerm)}`;
+                window.open(wikipediaUrl, '_blank');
+            }
+        }
+    });
+</script>
+</body></html>
