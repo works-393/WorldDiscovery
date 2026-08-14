@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Costa Rica Discovery | Luxury Travel Experience</title>
+<meta content="Explore the ancient landmarks, vibrant cities, and rich history of Costa Rica." name="description"/>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="../menu.js"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'lebanon-dark': '#102219',
+        'lebanon-gold': '#C5A059',
+        'lebanon-green': '#2D5A27',
+        "primary": "#144bb8",
+        "background-light": "#f6f6f8",
+        "background-dark": "#111621",
+        // 追加
+        "al-adaam": "#8D1B3D",
+        "qatar-gold": "#C5A059", 
+        "e-green": "#50C878",
+        "qatar-blue": "#1e3a8a",
+        "oman-blue": "#003153",
+        "yemen-red": "#CE1126",
+        "Bahrain-red": "#DA291C",
+        "B-purple-dark": "#632276", 
+        "B-purple": "#D1A7E2",
+        "B-yellow": "#ffff66",
+        "B-orange": "#ff6600",
+        "Br-yellow": "#fedf00",
+        "Br-green": "#009b3a",
+        "Kaza-blue": "#00A3DD",
+        "Kaza-blue-dark": "#003366",
+        "U-blue": "#99ffcc", // ターコイズブルー
+        "U-blue-bg": "#006699",
+        "k-yellow": "#ffcc00",
+        "k-red": "#cc3333",
+        "k-yellow-c": "#ccff33",
+        "silk-road-white": "#fdfdfd",
+        "t-green": "#006600",
+        "t-green-light": "#99cc99",
+        "Af-red": "#ff0099",
+        "Af-navy": "#0B1F3A",
+        "Brl-green": "#20cb5d",
+        "gold": "#FFD700",
+        "gold-dark": "#B8860B",
+        "golden-orange": "#ff9900",
+        "Sr-Brown": "#993300",
+        "c-green": "#0B3B24",
+        "c-green-light": "#E8F5E9",
+           },
+          fontFamily: {
+            serif: ['Newsreader', 'serif'],
+            sans: ['Inter', 'sans-serif'],
+          },
+          backgroundImage: {
+            'Kazakhstan-hero': "url('img/Brazil_bg.jpg')",
+          }
+        }
+      }
+    }
+  </script>
+<style data-purpose="custom-styling">body {
+    background-color: #f0f9ff;
+    color: #1e293b
+    }
+.glass-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 1rem
+    }
+.text-balance {
+    text-wrap: balance
+    }
+.section-spacing {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem
+    }
+/* Pattern Overlay */
+.bg-pattern {
+    background-image: url(img/Costa_Rica_bg.jpg);
+    opacity: 0.30
+    }</style>
+</head>
+<body class="font-sans antialiased overflow-x-hidden">
+<!-- BEGIN: Background Texture -->
+<div class="fixed inset-0 bg-pattern pointer-events-none z-0"></div>
+<!-- END: Background Texture -->
+<!-- BEGIN: MainHeader -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-c-green backdrop-blur-md border-b border-white/5">
+<nav class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<!-- Logo -->
+<a class="flex items-center gap-3 group" href="#">
+<div class="text-white-500 transform group-hover:scale-110 transition-transform">
+<svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://w3.org">
+  <!-- 全体をくり抜くためのマスク定義（角丸 rx="4" を維持するため） -->
+  <defs>
+    <clipPath id="flag-corners">
+      <rect width="24" height="24" rx="4" fill="white"/>
+    </clipPath>
+  </defs>
+
+  <!-- マスクを適用した国旗のベース -->
+  <g clip-path="url(#flag-corners)">
+    <!-- 1. 一番ベース（全体を青で塗りつぶす） -->
+    <rect width="24" height="24" fill="#002F6C"/>
+    
+    <!-- 2. 内側の白いストライプ（上下の青を少し残す位置に配置） -->
+    <rect y="4" width="24" height="16" fill="#FFFFFF"/>
+    
+    <!-- 3. 中央の太い赤ストライプ -->
+    <rect y="8" width="24" height="8" fill="#D21034"/>
+  </g>
+</svg></div>
+<span class="text-golden-orange font-serif text-xl font-semibold">Costa Rica</span>
+</a>
+<!-- Desktop Navigation -->
+<div id="navMenu" class="hidden md:flex items-center gap-9 
+    absolute top-full left-0 w-full bg-c-green backdrop-blur-md flex-col p-6 shadow-lg z-50
+    md:absolute md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 md:w-auto md:flex-row md:p-0 md:shadow-none">
+<a class="text-golden-orange text-sm font-medium hover:text-white/80 transition-colors tracking-widest uppercase" href="#Landmarks">Landmarks</a>
+<a class="text-golden-orange text-sm font-medium hover:text-white/80 transition-colors tracking-widest uppercase" href="#cities">Cities</a>
+<a class="text-golden-orange text-sm font-medium hover:text-white/80 transition-colors tracking-widest uppercase" href="#cuisine">Cuisine</a>
+<a class="text-golden-orange text-sm font-medium hover:text-white/80 transition-colors tracking-widest uppercase" href="#history">History</a>
+</div>
+<!-- Search Bar -->
+<div class="relative hidden lg:block" data-purpose="search-container">
+<span class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+<svg class="w-4 h-4 text-B-purple-dark/50" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</span>
+<input id="searchInput" class="bg-white/5 border-white/10 text-white pl-10 pr-4 py-2 rounded-lg focus:ring-B-purple-dark focus:border-B-purple-dark w-64 text-sm" placeholder="Wikipedia検索" type="text"/>
+</div>
+
+<!-- Mobile Menu Button (Icon only) -->
+<div class="md:hidden">
+<button
+    id="menuButton"
+    class="md:hidden flex items-center justify-center text-white hover:text-white/80 transition-colors">
+    <span class="material-symbols-outlined text-3xl">
+        menu
+    </span>
+</button></div>
+</nav>
+</header>
+<!-- END: MainHeader -->
+<!-- BEGIN: HeroSection -->
+<main class="relative">
+<section class="relative flex items-center justify-center overflow-hidden h-[90vh]">
+<!-- Hero Background Image -->
+<div class="absolute inset-0 z-0">
+<img alt="Costa Rica" class="w-full h-full object-cover brightness-50" src="img/Costa_Rica.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-b from-[#E8F5E9]/60 via-transparent to-[#f0f9ff]"></div>
+</div>
+<div class="relative z-10 text-center px-6 max-w-4xl">
+<h2 class="text-t-green-light font-serif italic text-xl md:text-2xl mb-4 opacity-0 animate-[fadeIn_1s_ease-out_forwards]">Urban & Wild</h2>
+<h1 class="text-white text-4xl md:text-7xl lg:text-4xl font-serif mb-8 leading-tight opacity-0 animate-[fadeIn_1s_ease-out_0.3s_forwards]">
+         Discover the Heartbeats of Costa Rica</h1>
+<p class="text-lg md:text-xl text-k-yellow font-light max-w-2xl mx-auto mb-10 text-balance opacity-0 animate-[fadeIn_1s_ease-out_0.6s_forwards]">
+        From the bustling cultural epicenter of the capital to volcanic adventure hubs and laid-back Caribbean shores, explore the cities that define the Pura Vida lifestyle.</p>
+
+</div>
+</section>
+<!-- END: HeroSection -->
+
+
+<!-- BEGIN: LandmarksSection -->
+<section class="section-spacing px-6 relative" id="Landmarks">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
+<div class="max-w-2xl">
+<h2 class="text-Kaza-dark font-serif text-sm mb-2 uppercase tracking-[0.1em]">Eternal Green & Living Sanctuaries</h2>
+<h3 class="text-3xl text-c-green md:text-4xl font-serif">Iconic Landmarks</h3>
+</div>
+<p class="text-orange/90 max-w-md text-sm">A journey through Costa Rica’s timeless natural soul, where mist-shrouded volcanic peaks meet the vibrant, emerald pulse of pristine wilderness.</p>
+</div>
+<div class="grid grid-cols-2 lg:grid-cols-3 gap-4">
+<!-- Item 1: Arenal Volcano National Park -->
+<div class="flex flex-col">
+<div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+<img alt="Arenal Volcano National Park" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="img/Arenal_Volcano_National_Park.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+<div class="absolute bottom-0 left-0 p-4">
+<span class="text-[10px] text-lebanon-gold uppercase tracking-widest block mb-1">Fiery Grandeur & Solidified Echoes</span>
+<h4 class="text-lg font-serif text-white">Arenal Volcano National Park</h4>
+</div>
+</div>
+<!-- キャプション部分：写真の直下に配置 -->
+     <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4"> A colossal, near-perfect volcanic cone surrounded by jagged ancient lava fields and the emerald pulse of the central highlands.</p>
+  </div>
+<!-- Item 2: Monteverde Cloud Forest -->
+ <div class="flex flex-col">
+<div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+<img alt="Monteverde Cloud Forest" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="img/Monteverde_Cloud_Forest.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+<div class="absolute bottom-0 left-0 p-4">
+<span class="text-[10px] text-lebanon-gold uppercase tracking-widest block mb-1">Mystical Mists & Celestial Canopy</span>
+<h4 class="text-lg font-serif text-white">Monteverde Cloud Forest </h4>
+</div>
+</div>
+<!-- キャプション部分：写真の直下に配置 -->
+     <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4">A high-altitude paradise draped in persistent emerald fog, where giant moss-covered trees cradle a rare and sacred ecosystem.</p>
+  </div>
+<!-- Item 3: Manuel Antonio National Park-->
+ <div class="flex flex-col">
+<div class="group relative overflow-hidden rounded-xl aspect-[3/3] cursor-pointer">
+<img alt="anuel Antonio National Park" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="img/Manuelz_Antonio_National_Park.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-lebanon-dark via-transparent to-transparent opacity-90"></div>
+<div class="absolute bottom-0 left-0 p-4">
+<span class="text-[10px] text-lebanon-gold uppercase tracking-widest block mb-1">Pristine Sands & Wilderness Rhythms</span>
+<h4 class="text-lg font-serif text-white">Manuel Antonio National Park</h4>
+</div>
+</div>
+<!-- キャプション部分：写真の直下に配置 -->
+     <p class="mt-6 text-sm text-Af-navy font-serif leading-snug px-4">A sun-drenched coastal sanctuary where untamed tropical rainforest meets postcard-perfect white sands and turquoise blue waters.</p>
+  </div>
+</div>
+</div>
+</section>
+<!-- END: LandmarksSection -->
+<!-- BEGIN: CitiesSection -->
+<section class="section-spacing px-6 relative" id="cities">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
+<div class="max-w-2xl">
+<h2 class="text-Kaza-dark font-serif text-sm mb-2 uppercase tracking-[0.1em]">Colonial Echoes & Tropical Rhythms</h2>
+<h3 class="text-3xl text-c-green md:text-4xl font-serif">Cities of Distinction</h3>
+</div>
+<p class="text-orange/90 max-w-md text-sm">From the historic European-style avenues of San José to the reggae-infused beach streets of Puerto Viejo, discover towns where vibrant local culture meets the untamed edge of Central American wilderness.</p>
+</div>
+<div class="space-y-20">
+<!-- San José -->
+<div class="flex flex-col md:flex-row items-center gap-10">
+<div class="w-full md:w-1/2">
+<img alt="San José" class="rounded-2xl shadow-xl w-full h-80 object-cover" src="img/Pre-Columbian_Gold_Museum.jpg"/>
+</div>
+<div class="w-full md:w-1/2">
+<span class="text-primary font-bold uppercase tracking-widest text-sm">The Cultural Core</span>
+<h3 class="text-yemen-red text-3xl mt-2 mb-4">San José</h3>
+<p class="text-Af-navy dark:text-orange-100 text-lg mb-6 leading-relaxed font-serif">Nestled in the Central Valley, San José is a vibrant mosaic of history, art, and modern urban energy. It serves as the nation's cultural compass, boasting world-class museums, historic theaters, and a burgeoning culinary scene that redefines traditional flavors.</p>
+</div>
+</div>
+<!-- La Fortuna -->
+<div class="flex flex-col md:flex-row-reverse items-center gap-10">
+<div class="w-full md:w-1/2">
+<img alt="La Fortuna" class="rounded-2xl shadow-xl w-full h-80 object-cover" src="img/Parque_Central_square_in_La_Fortuna_village.jpg"/>
+</div>
+<div class="w-full md:w-1/2">
+<span class="text-primary font-bold uppercase tracking-widest text-sm">The Volcano Basecamp</span>
+<h3 class="text-yemen-red text-3xl mt-2 mb-4">La Fortuna</h3>
+<p class="text-Af-navy dark:text-orange-100 text-lg mb-6 leading-relaxed font-serif">Where the majestic Arenal Volcano meets dense rainforests, La Fortuna is Costa Rica's premier destination for adrenaline and natural rejuvenation. Spend your days zip-lining through the canopy and your evenings soaking in mineral-rich thermal hot springs.</p>
+</div>
+</div>
+<!-- Puerto Viejo -->
+<div class="flex flex-col md:flex-row items-center gap-10">
+<div class="w-full md:w-1/2">
+<img alt="Puerto Viejo" class="rounded-2xl shadow-xl w-full h-80 object-cover" src="img/Puerto_Viejo.jpg"/>
+</div>
+<div class="w-full md:w-1/2">
+<span class="text-primary font-bold uppercase tracking-widest text-sm">Caribbean Rhythm</span>
+<h3 class="text-yemen-red text-3xl mt-2 mb-4">Puerto Viejo</h3>
+<p class="text-Af-navy dark:text-orange-100 text-lg mb-6 leading-relaxed font-serif">Experience the soulful, laid-back atmosphere of the southern Caribbean coast. Puerto Viejo offers pristine beaches flanked by jungle, world-class surf breaks like Salsa Brava, and a rich Afro-Caribbean culture expressed through spicy cuisine and reggae rhythms.</p>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+<!-- END: Cities Section -->
+
+</div>
+</div>
+</section>
+<!-- END: CitiesSection -->
+<!--BEGIN: Cuisine -->
+<section class="px-4 py-16 md:px-10" id="cuisine">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-12">
+<h2 class="text-c-green text-3xl md:text-4xl font-serif">The Authentic Flavors of Costa Rica</h2>
+<p class="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">Discover a culinary landscape rich in fresh ingredients, vibrant colors, and centuries of tradition. From sunrise staples to coastal delicacies, every dish tells a story of the Pura Vida lifestyle.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Package 1 -->
+<div class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:shadow-xl transition-shadow">
+<div class="h-56 w-full overflow-hidden">
+<img alt="Gallo Pinto" class="w-full h-full object-cover transition-transform group-hover:scale-105" alt="" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCadBT-QqtUx4MG0-_BoI0Vc2f5WMIT0pX9PkB0oPIq7yx-bhf8_QvmYbLdiGdXJF1c3UiicCrGScKevb3HDimZtebulT5uA0XzW1uuaMBSr4riu7vfk1odlIIsJz3_Jytkxa4GaDNCFQHVEzKatpbs0Kwhc4ZMdE5JSaa5OFQrxJ3jdzL_2VmH_kV1V_nUksSBrB2aySraYUEDdwgs4eSv13l8LErd8745MZj_kKPgmjtLY1M0D2bm6Q"/>
+</div>
+<div class="p-4">
+<div class="flex justify-between items-start mb-1">
+<h3 class="text-xl text-B-orange font-bold">Gallo Pinto(Breakfast Staple)</h3>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-400 mb-6 line-clamp-2">The heartbeat of Costa Rican mornings. A masterful blend of day-old rice and black beans, fried together with onions, bell peppers, and fresh cilantro. Often infused with the iconic Lizano sauce for a signature tangy depth.</p>
+<div class="flex items-center justify-between">
+</div>
+</div>
+</div>
+<!-- Package 2 -->
+<div class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:shadow-xl transition-shadow">
+<div class="h-56 w-full overflow-hidden">
+<img alt="Tropical Ceviche" class="w-full h-full object-cover transition-transform group-hover:scale-105" alt="" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiStuqJdZ21jo8B_35dk92rR3364Fh8UUAbMdh05NnE0es7hFEXJDRq49x9faolpIvbObk621ZEdp3b-6H7i2aqyv4NRCixW9WfBYQVnT08s-dRCf9Fu8IJSliP5Q3-sWCea3eM4udDRdgdLtEUnEM0cfHBpMpSxgPpccyGOscofJo5x3w_YWg9ppHD2EAzW-8DLLz7wqBY1MDbLoPcWQejG-Icitk5-bX4RRRfnlSoF52gasdCvwE0Q"/>
+</div>
+<div class="p-4">
+<div class="flex justify-between items-start mb-1">
+<h3 class="text-xl text-B-orange font-bold">Tropical Ceviche</h3>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-400 mb-6 line-clamp-2">Freshly caught sea bass marinated in zesty citrus juices, brightened with finely chopped red onions, sweet peppers, and local herbs. A refreshing burst of the ocean.</p>
+<div class="flex items-center justify-between">
+</div>
+</div>
+</div>
+<!-- Package 3 -->
+<div class="group bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:shadow-xl transition-shadow">
+<div class="h-56 w-full overflow-hidden">
+<img alt="El Casado" class="w-full h-full object-cover transition-transform group-hover:scale-105" alt="" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6qkVOTQDZLCem3YlZBdQwdx1AYd5LUaxJva2rHF1EkfH0LjWBSzVX6650lak_Ut7G24Kys65wzWXqhieHuyuzqG0RSRmZygTKHQWBlJzfZEqFtN4z-ge73Zy1A3IZVK63nFHN3d3PzbPgDy0pNR2xR-iqmrctbKr9s0VCybr4MV_UWkHHimD09ETWvWb-e4RPzDjp5YaK7TxCxu0bY_yqJtFsCuuD3XJy7vy10cLkS1yIIOP_VRJk-w"/>
+</div>
+<div class="p-4">
+<div class="flex justify-between items-start mb-1">
+<h3 class="text-xl text-B-orange font-bold">El Casado(The Hearty Lunch)</h3>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-400 mb-6 line-clamp-2">Literally translating to "married," the Casado is a harmonious union of flavors and textures on a single plate. It represents the quintessential Costa Rican midday meal, offering a balanced, hearty, and deeply satisfying experience.</p>
+<div class="flex items-center justify-between">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- BEGIN: HistorySection -->
+<section class="bg-[#006699]/30 section-spacing px-6 relative overflow-hidden" id="history">
+<div class="max-w-5xl mx-auto"><div class="text-center mb-12">
+<h2 class="text-B-yellow font-serif text-sm mb-2 uppercase tracking-[0.3em]">コスタリカ共和国の歴史</h2>
+<h3 class="text-primary text-3xl md:text-4xl font-serif">Republic of Costa Rica</h3>
+<p class="text-xs text-B-yellow dark:text-slate-400 max-w-3xl mx-auto">Costa Rica's history is characterized by its journey from Spanish colonial rule and independence through the Federal Republic of Central America to establishing an advanced democracy and eco-state. Known as the "Miracle of Central America," this transformation was anchored by the permanent abolition of its military in the mid-20th century.</p>
+</div>
+<div class="max-w-3xl mx-auto space-y-8 relative border-l border-slate-300 pl-8">
+<!-- History: Ancient -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-primary"></div>
+<h4 class="text-primary font-sans text-xl font-semibold mb-6">古代・先植民地期</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">多様な先住民族文化<span class="text-xs text-B-yellow block md:inline md:ml-2">（紀元前1万年頃～） </span></h5>
+<p class="text-xs text-slate-800 leading-relaxed">メソアメリカ文化（マヤなど）と南米文化（インカなど）の結節点として発展。独自の「ディキスの石球」と呼ばれる精巧な石球が作られる。
+</p>
+</div>
+
+</div>
+</div>
+<!-- History: Early Modern -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-primary"></div>
+<h4 class="text-primary font-sans text-xl font-semibold mb-6">近世（植民地時代）</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">コロンブスの到達<span class="text-xs text-B-yellow block md:inline md:ml-2">（1502年）  </span></h5>
+<p class="text-xs text-slate-800 leading-relaxed">クリストファー・コロンブスが第4回航海で到達。先住民族が金の装飾品を身につけていたことから「豊かな海岸（コスタリカ）」と命名。</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">スペインによる統治<span class="text-xs text-B-yellow block md:inline md:ml-2">（1560年代～）   </span></h5>
+<p class="text-xs text-slate-800 leading-relaxed">貴金属が見つからず先住民族の人口も少なかったため、大農園（プランテーション）が発達せず、欧州系入植者による自営小農民中心の独特な社会が形成される。 
+</p>
+</div>
+
+</div>
+</div>
+<!-- History: Pre Modern -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-primary"></div>
+<h4 class="text-primary font-sans text-xl font-semibold mb-6">近代（独立と国家形成）</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">スペインからの独立 <span class="text-xs text-B-yellow block md:inline md:ml-2">（1821年）  </span></h5>
+<p class="text-xs text-slate-800 leading-relaxed">中米諸国とともにスペインからの独立を宣言。
+</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">中央アメリカ連邦共和国 <span class="text-xs text-B-yellow block md:inline md:ml-2">（1823年～1838年）  </span></h5>
+<p class="text-xs text-slate-800 leading-relaxed">連邦に参加するが、内紛による崩壊を経て1838年に完全独立。
+</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">コーヒー経済の発展 <span class="text-xs text-B-yellow block md:inline md:ml-2">（19世紀半ば～） </span></h5>
+<p class="text-xs text-slate-800 leading-relaxed">コーヒーの輸出で経済基盤が確立。19世紀末には米国のユナイテッド・フルーツ社によるバナナ栽培も本格化。 
+</p>
+</div>
+
+</div>
+</div>
+
+<!-- History: Pre Modern & Modern -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-primary"></div>
+<h4 class="text-primary font-sans text-xl font-semibold mb-6">近現代（軍隊廃止と民主化）</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">コスタリカ内戦 <span class="text-xs text-B-yellow block md:inline md:ml-2">（1948年）  </span></h5>
+<p class="text-xs text-slate-800 leading-relaxed">大統領選挙の不正を巡り、約40日間におよぶ内戦が勃発。ホセ・フィゲーレス・フェレールが率いる軍隊が勝利し、臨時政府を樹立。
+</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">歴史的な新憲法の制定 <span class="text-xs text-B-yellow block md:inline md:ml-2">（1949年）  </span></h5>
+<p class="text-xs text-slate-800 leading-relaxed">フィゲーレス臨時大統領のもとで新憲法が制定され、軍隊の恒久的廃止を宣言。軍事予算を教育や医療へ一挙に転換。女性や黒人の参政権も承認。 
+</p>
+</div>
+
+</div>
+</div>
+
+<!-- History: Modern -->
+<div class="relative">
+<div class="absolute -left-[36px] top-1.5 w-4 h-4 rounded-full bg-primary"></div>
+<h4 class="text-primary font-sans text-xl font-semibold mb-6">現代</h4>
+<div class="space-y-4">
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">平和と環境立国への歩み <span class="text-xs text-B-yellow block md:inline md:ml-2">（1980年代～現在） </span></h5>
+<p class="text-xs text-slate-800 leading-relaxed">近隣の中米諸国が内戦に苦しむ中、オスカル・アリアス大統領が「中米平和プラン」を提唱し、1987年にノーベル平和賞を受賞。
+</p>
+</div>
+<div>
+<h5 class="text-lg font-serif text-slate-800 font-bold mb-1">現代のエコ先進国 <span class="text-xs text-slate-500 block md:inline md:ml-2">  </span></h5>
+<p class="text-xs text-slate-800 leading-relaxed">豊かな熱帯雨林や生態系を守るため、国土の約4分の1を自然保護区に指定。エコツーリズムの世界的パイオニアとなり、再生可能エネルギーによる発電比率がほぼ100%に達するなど、世界で最も持続可能な国の一つとして発展を続けている。 
+</p>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+<p class="text-left text-Bahrain-red text-sm mt-6 font-bold max-w-2xl mx-auto">中米諸州連合からコスタリカが独立したのは1838年か1848年か</p>
+<p class="text-left text-slate-800 text-sm mt-2 font-bold max-w-2xl mx-auto">&nbsp;&nbsp;&nbsp;コスタリカが中米連邦（中米諸州連合）から脱退し、独立へ舵を切った年としては1838年と1848年のどちらも歴史的な事実として正しい意味を持ちますが、段階によって捉え方が異なります。</p>
+<p class="text-left text-Kaza-dark text-sm mt-2 max-w-2xl mx-auto"><span class="font-bold">1838年（実質的な脱退・独立）</span>中米連邦の内部崩壊に伴い、コスタリカが連邦からの離脱（主権宣言）を表明した年です。この時点で実質的に独立国家（コスタリカ自由国）として歩み始めました。</p>
+<p class="text-left text-Kaza-dark text-sm mt-2 max-w-2xl mx-auto"><span class="font-bold">1848年（正式な共和国としての完全独立）</span>初代大統領ホセ・マリア・カストロのもとで、国名を正式に「コスタリカ共和国」とし、完全な分離独立を宣言した年です。国旗や国章もこの時に制定されました。</p>
+<p class="text-left text-Kaza-dark text-sm mt-2 max-w-2xl mx-auto">&nbsp;&nbsp;&nbsp;結論として、連邦から「離脱・脱退した年」を指す場合は 1838年。現在の「コスタリカ共和国として正式に完全独立した年」を指す場合は 1848年 となります。</p>
+
+<p class="text-left text-Bahrain-red text-sm mt-6 font-bold max-w-2xl mx-auto">軍隊が勝利したが軍隊の恒久的廃止を宣言</p>
+<p class="text-left text-slate-800 text-sm mt-2 font-bold max-w-2xl mx-auto">&nbsp;&nbsp;&nbsp;コスタリカの歴史において、「軍隊（反乱軍）が内戦で勝利したにもかかわらず、その勝者が軍隊を恒永久的に廃止した」というのは、世界史的にも非常に珍しく、まさにコスタリカが「中米の奇跡」と呼ばれる最大の理由です。</p>
+<p class="text-left text-slate-800 text-sm mt-4 font-bold max-w-2xl mx-auto">1. 内戦での「反乱軍」の勝利</p>
+<p class="text-left text-Kaza-dark text-sm mt-0 max-w-2xl mx-auto">&nbsp;&nbsp;&nbsp;1948年、大統領選挙の不正疑惑をきっかけに、コスタリカで大規模な内戦（コスタリカ内戦）が勃発しました。この時、政府軍に対して反旗を翻したのが、ホセ・フィゲーレス・フェレール（愛称ドン・ペペ）が率いる「国家解放軍（反乱軍）」でした。フィゲーレスの軍は激しい戦闘の末に勝利を収め、彼が臨時政府の議長（事実上のトップ）に就任しました。</p>
+<p class="text-left text-slate-800 text-sm mt-4 font-bold max-w-2xl mx-auto">2. 勝者自身による軍隊の廃止</p>
+<p class="text-left text-Kaza-dark text-sm mt-0 max-w-2xl mx-auto">&nbsp;&nbsp;&nbsp;権力を握ったフィゲーレスは、普通であれば自分の権力を守るために軍隊を強化するところですが、真逆の行動に出ました。彼は内戦終結直後の1948年12月1日、かつて軍の本部だったカルトヘナ要塞の壁を大槌で叩き壊すパフォーマンスを行い、軍隊の廃止を宣言しました（翌1949年の憲法で恒久化）。</p>
+<p class="text-left text-slate-800 text-sm mt-4 font-bold max-w-2xl mx-auto">3. なぜ勝利した軍が、自ら軍をなくしたのか？</p>
+<p class="text-left text-Kaza-dark text-sm mt-0 max-w-2xl mx-auto">&nbsp;&nbsp;&nbsp;フィゲーレスが軍を廃止した背景には、主に3つの現実的かつ理想的な理由がありました。</p>
+<p class="text-left text-Kaza-dark text-sm mt-0 max-w-2xl mx-auto"><span class="font-bold">クーデターの防止（最大の理由）：</span>当時の中央アメリカでは、軍部がクーデターを起こして独裁政権を作るのが日常茶飯事でした。フィゲーレスは「軍隊が存在すること自体が、将来の民主主義と自分の政権を脅かす最大の敵になる」と見抜いていました。</p>
+<p class="text-left text-Kaza-dark text-sm mt-0 max-w-2xl mx-auto"><span class="font-bold">国家予算を教育と医療へ回すため：</span>貧しい国が軍隊を維持するには巨額の費用がかかります。その予算をすべて「教育」と「医療」に投資することで、国民を豊かにし、国を安定させようと考えました。実際、コスタリカの識字率や医療水準は中米で突出して高くなりました。</p>
+<p class="text-left text-Kaza-dark text-sm mt-0 max-w-2xl mx-auto"><span class="font-bold">アメリカによる安全保障の計算：</span>当時は冷戦期であり、周辺国から侵略されたとしても、最終的には米州相互援助条約（リオ条約）に基づき、アメリカや国際社会が介入して守ってくれるという計算（外交的な安全保障への信頼）もありました。</p>
+<p class="text-left text-Kaza-dark text-sm mt-2 max-w-2xl mx-auto">&nbsp;&nbsp;&nbsp;このように、「軍事力で権力を握ったリーダーが、自らの軍を解体して教育と福祉の国に作り変えた」というパラドックスこそが、コスタリカの民主主義の基盤となっています。</p>
+
+<p class="text-left text-Bahrain-red text-sm mt-6 font-bold max-w-2xl mx-auto">オスカル・アリアス大統領が「中米平和プラン」を提唱し、1987年にノーベル平和賞を受賞。</p>
+<p class="text-left text-slate-800 text-sm mt-2 font-bold max-w-2xl mx-auto">&nbsp;&nbsp;&nbsp;1980年代、隣国のニカラグアやエルサルバドル、グアテマラなどで激しい内戦が泥沼化し、中米全体が危機に瀕していました。アリアス大統領は、非武装中立を貫くコスタリカの立場から主導権を握り、中米5カ国の首脳をまとめて「中米和平合意（エスキプーラスII合意）」を成立させました。</p>
+<p class="text-left text-Kaza-dark text-sm mt-2 max-w-2xl mx-auto"><span class="font-bold">受賞の理由：</span> 周辺国の紛争を終わらせ、中央アメリカ全体に平和をもたらすための突出した外交努力が評価されました。</p>
+
+<p class="text-left text-Bahrain-red text-sm mt-6 font-bold max-w-2xl mx-auto">ウミガメの鼻にストローが刺さってしまったショッキングなニュースがありましたが。</p>
+<p class="text-left text-slate-800 text-sm mt-2 font-bold max-w-2xl mx-auto">&nbsp;&nbsp;&nbsp;2015年8月、テキサスA&M大学の研究チーム（海洋生物学者のクリスティーン・フィグナー氏ら）が、コスタリカの太平洋沖でヒメウミガメの調査をしていた際に偶然発見し、動画をYouTubeに投稿。</p>
+<p class="text-left text-Kaza-dark text-sm mt-2 max-w-2xl mx-auto"><span class="font-bold">「その後」のコスタリカ～使い捨てプラスチックの禁止へ</span></p>
+<p class="text-left text-Kaza-dark text-sm mt-0 max-w-2xl mx-auto">&nbsp;&nbsp;&nbsp;あの動画などをきっかけに、コスタリカ政府は国を挙げて使い捨てプラスチック（ストロー、レジ袋、ペットボトルなど）を削減・禁止する法整備を一気に進めました。</p>
+<p class="text-left text-Kaza-dark text-sm mt-2 max-w-2xl mx-auto"><span class="font-bold">環境モンスター級の取り組み</span></p>
+<p class="text-left text-Kaza-dark text-sm mt-0 max-w-2xl mx-auto">&nbsp;&nbsp;&nbsp;現在では、リゾート地の多くのカフェやホテルで、プラスチック製のストローは姿を消し、紙製や竹製、または「ストローなし」が当たり前になっています。</p>
+<p class="text-left text-Kaza-dark text-sm mt-2 max-w-2xl mx-auto"><span class="font-bold">世界的な脱プラスチックの引き金に</span></p>
+<p class="text-left text-Kaza-dark text-sm mt-0 max-w-2xl mx-auto">&nbsp;&nbsp;&nbsp;スターバックスやマクドナルドといった大企業がプラスチック製ストローの廃止・紙製への移行を決めた最大のきっかけが、まさにこの動画でした。</p>
+<p class="text-left text-Kaza-dark text-sm mt-2 max-w-2xl mx-auto"><span class="font-bold">コスタリカ政府の迅速な対応</span></p>
+<p class="text-left text-Kaza-dark text-sm mt-0 max-w-2xl mx-auto">&nbsp;&nbsp;&nbsp;コスタリカはその後、2019年に使い捨てプラスチックストローを禁止する法律を盛り込むなど、国を挙げた環境規制をさらに強化していきました。</p>
+
+
+
+
+
+<div><p class="text-on-surface-variant mb-6"></p></div>
+<div>
+<a href="Costa_Rica_h.html" target="_blank" rel="noopener noreferrer" class="text-Bahrain-red font-button flex items-center gap-2 group mx-auto w-fit">
+    Learn History 
+    <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</section>
+<!-- END: HistorySection -->
+<!-- BEGIN: Footer -->
+<footer class="bg-c-green py-20 px-6 border-t border-white/5 relative z-10">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="col-span-1 md:col-span-2">
+<div class="flex items-center gap-3 mb-6">
+<div class="text-emerald-500">
+<svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://w3.org">
+  <!-- 全体をくり抜くためのマスク定義（角丸 rx="4" を維持するため） -->
+  <defs>
+    <clipPath id="flag-corners">
+      <rect width="24" height="24" rx="4" fill="white"/>
+    </clipPath>
+  </defs>
+
+  <!-- マスクを適用した国旗のベース -->
+  <g clip-path="url(#flag-corners)">
+    <!-- 1. 一番ベース（全体を青で塗りつぶす） -->
+    <rect width="24" height="24" fill="#002F6C"/>
+    
+    <!-- 2. 内側の白いストライプ（上下の青を少し残す位置に配置） -->
+    <rect y="4" width="24" height="16" fill="#FFFFFF"/>
+    
+    <!-- 3. 中央の太い赤ストライプ -->
+    <rect y="8" width="24" height="8" fill="#D21034"/>
+  </g>
+</svg>
+</div>
+<span class="text-golden-orange font-serif text-lg tracking-wider font-semibold">Costa Rica Discovery</span>
+</div>
+<p class="text-white text-sm max-w-sm mb-8">
+            Curating bespoke luxury travel experiences for discerning explorers seeking the mist-shrouded rainforests of Arenal and the pristine, life-giving sanctuaries of the Caribbean coast.
+          </p>
+</div>
+<div>
+<h6 class="text-white/80 font-serif font-bold text-sm mb-6 uppercase tracking-widest">Navigation</h6>
+<ul class="space-y-4 text-sm text-white/60">
+<li><a class="text-Br-yellow hover:text-white transition-colors" href="#Landmarks">Landmarks</a></li>
+<li><a class="text-Br-yellow hover:text-white transition-colors" href="#cities">Cities</a></li>
+<li><a class="text-Br-yellow hover:text-white transition-colors" href="#cuisine">Cuisine</a></li>
+<li><a class="text-Br-yellow hover:text-white transition-colors" href="#history">History</a></li>
+</ul>
+</div>
+<div>
+<h6 class="text-white/80 font-serif font-bold text-sm mb-6 uppercase tracking-widest">Connect</h6>
+<ul class="space-y-4 text-sm text-white/60">
+<li><a class="text-Br-yellow hover:text-white transition-colors" href="#">Instagram</a></li>
+<li><a class="text-Br-yellow hover:text-white transition-colors" href="#">Twitter</a></li>
+<li><a class="text-Br-yellow hover:text-white transition-colors" href="#">Contact Us</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 mt-10 mb-4"><p class="text-xs text-Af-navy">© 2026 Brazil Discovery. All rights reserved.</p>
+<div class="flex gap-8 text-xs text-white/80">
+<a href="#">Privacy Policy</a>
+<a href="#">Terms of Service</a>
+</div></div>
+<button onclick="window.close(); setTimeout(() => { window.location.href = 'https://google.com'; }, 100);" 
+          class="flex items-center gap-1 px-3 py-0.5 ml-auto md:ml-auto bg-brand-emerald hover:opacity-80 text-white font-medium rounded-full transition-all shadow-sm">
+    <span class="material-symbols-outlined text-xs text-white/80">logout</span>
+    <span class="tracking-wider text-xs text-white/80">QUIT</span>
+  </button>
+</footer>
+<!-- END: Footer -->
+</main>
+<style data-purpose="animations">
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+<script>
+    document.getElementById('searchInput').addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+            const searchTerm = this.value.trim();
+            if (searchTerm) {
+                const wikipediaUrl = `https://ja.wikipedia.org/wiki/特別:検索?search=${encodeURIComponent(searchTerm)}`;
+                window.open(wikipediaUrl, '_blank');
+            }
+        }
+    });
+</script>
+</body></html>
