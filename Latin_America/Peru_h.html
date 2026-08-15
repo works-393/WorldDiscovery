@@ -277,7 +277,15 @@
                     
                     
                 </div>
+                </div>
+                <!-- Back to Top Button -->
+            <div class="mt-12 flex justify-end">
+                <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="flex flex-col items-center gap-1 group text-foreground-light dark:text-foreground-dark hover:text-primary transition-all duration-300">
+                    <span class="material-symbols-outlined text-4xl group-hover:-translate-y-2 transition-transform duration-300">expand_less</span>
+                    <span class="text-[10px] font-bold tracking-widest uppercase">Page Top</span>
+                </button>
             </div>
+
         </div>
     </main>
 </div>
@@ -306,5 +314,22 @@
 </div>
 </div>
 </footer>
+<style data-purpose="animations">
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+<script>
+    document.getElementById('searchInput').addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+            const searchTerm = this.value.trim();
+            if (searchTerm) {
+                const wikipediaUrl = `https://ja.wikipedia.org/wiki/特別:検索?search=${encodeURIComponent(searchTerm)}`;
+                window.open(wikipediaUrl, '_blank');
+            }
+        }
+    });
+</script>
 </body>
 </html>
